@@ -2,9 +2,12 @@
 
 Multi-company financial analytics dashboard for Indian listed companies.
 
-**Phase 1 — visual shell only.** Every number on screen is hardcoded. There is no
-scraper, no API, no backend and no data schema yet; this phase exists to lock in
-the layout, navigation, design tokens and widget states that later phases build on.
+**Phase 2 — schema and mock data.** The dashboard shell renders placeholder
+content from `src/mocks/placeholders.ts`. Alongside it now sits the real data
+schema (`src/types/`) and a realistic mock dataset for the five tracked
+companies (`src/mocks/financials.ts`, `kpis.ts`, `peers.ts`). Nothing in the
+views reads it yet — wiring is the next phase. There is still no scraper, no
+API and no backend.
 
 ---
 
@@ -63,14 +66,25 @@ npx wrangler deploy --dry-run   # validate config without deploying
     │   └── tokens.ts           typed `var(--…)` accessors for JS/SVG consumers
     ├── config/
     │   ├── app.ts              app name, tagline
-    │   └── navigation.ts       tab / sub-tab / period definitions and defaults
+    │   ├── navigation.ts       tab / sub-tab / period definitions and defaults
+    │   └── kpis.ts             the standard KPI definitions (label, unit, formula)
+    ├── types/                  ★ THE DATA SCHEMA
+    │   ├── common.ts           units, Reported<T>, Availability<T>, DataSource
+    │   ├── period.ts           PeriodRef, cadence, Indian FY conventions
+    │   ├── financials.ts       P&L / balance sheet / cash flow / segments
+    │   ├── kpi.ts              KPI definitions, values, peer stats
+    │   └── peers.ts            peer groups and comparison rows
     ├── lib/
     │   └── cn.ts               conditional class-name join
     ├── hooks/
     │   └── useOnClickOutside.ts
     ├── mocks/
     │   ├── companies.ts        5 hardcoded companies + search helper
-    │   └── placeholders.ts     static widget content, varies by period
+    │   ├── periods.ts          the 5 quarters and 5 years everything keys to
+    │   ├── financials.ts       authored inputs → derived statements
+    │   ├── peers.ts            4 sector cohorts with carried peer KPIs
+    │   ├── kpis.ts             KPIs derived from the statements + peer stats
+    │   └── placeholders.ts     static widget content for the shell (phase 1)
     ├── components/
     │   ├── layout/
     │   │   ├── AppShell.tsx        skip link, page wash, main, footer
@@ -156,6 +170,56 @@ and must never be reused as a series colour.
 
 ---
 
+## Data schema
+
+`src/types/` is the contract the Screener.in scraper must satisfy. Three things
+about the source shape it:
+
+**Money is ₹ crore, everywhere.** `Crore`, `Percent`, `Rupees` and `Ratio` are
+documented aliases so a field's unit is readable at the call site. `Percent` is
+the number a reader sees: `17.42` means 17.42%.
+
+**"Not available" is modelled, not faked.** Two levels:
+
+- `Reported<T> = T | null` for a single blank cell. `null` means the source did
+  not report the line — never zero. A bank has no CWIP row; that is `null`, and
+  a chart must skip the point rather than plot a zero.
+- `Availability<T>` for a whole statement, discriminated on `status`, carrying
+  an `UnavailableReason` (`not-reported` / `not-scraped` / `restated` /
+  `parse-failed`) and a human-readable note for an empty-state card. A consumer
+  cannot reach the data without handling the missing case first.
+
+Quarterly balance sheets and cash flow statements are `unavailable` with reason
+`not-reported` for all five companies, which is the real situation: SEBI LODR
+requires them half-yearly at the earliest and Screener publishes annual columns
+only. Quarterly segment disclosure is `not-scraped` — filed with the exchange,
+absent from the Screener company page.
+
+**Banks use a different P&L layout.** `CompanyFinancials.statementLayout` is
+`'standard'` or `'banking'`. The field names are identical either way; what
+changes is the identity:
+
+| | standard | banking |
+|---|---|---|
+| `sales` | Sales | Revenue (interest earned) |
+| `interest` | finance cost | interest **expended** |
+| `operatingProfit` | `sales − expenses` | `sales − expenses − interest` |
+| `opmPercent` | OPM % | Financing Margin % |
+| `profitBeforeTax` | `OP + otherIncome − interest − depreciation` | `OP + otherIncome − depreciation` |
+
+### Mock data
+
+`mocks/financials.ts` authors *inputs* and derives everything implied by them,
+so the accounting identities hold by construction: the balance sheet balances,
+CFO is the sum of its parts, segment revenues sum exactly to sales, and the four
+FY26 quarters sum to the FY26 annual column. Scale and ratios are modelled on
+the real companies so derived KPIs land in the right neighbourhood — but every
+figure is invented and none should be quoted as fact.
+
+`mocks/kpis.ts` computes the KPI set from those statements rather than authoring
+it, so a KPI cannot contradict the statement it summarises. The real pipeline
+will do the same thing with real inputs.
+
 ## Accessibility
 
 - Tabs follow the WAI-ARIA tabs pattern with **manual activation**: roving
@@ -179,5 +243,6 @@ and must never be reused as a series colour.
 
 ## Not in this phase
 
-Screener.in scraper, BSE fallback, GitHub Actions, the real data schema, API
-calls, peer-comparison logic, charts, routing, dark mode.
+Screener.in scraper, BSE fallback, GitHub Actions, API calls, charts, routing,
+dark mode — and wiring the schema above into the views, which still render the
+phase-1 placeholders.

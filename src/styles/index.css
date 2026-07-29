@@ -1,6 +1,13 @@
 @import 'tailwindcss';
 @import '../theme/theme.css';
 
+/* Tailwind scans the whole project for class names, and its extractor cannot
+ * tell a utility from an English word — a comment containing "grow" or "table"
+ * emits a real rule. These directories hold data and types with no markup in
+ * them, so excluding them keeps prose out of the stylesheet. */
+@source not '../types';
+@source not '../mocks';
+
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
