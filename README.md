@@ -2,12 +2,11 @@
 
 Multi-company financial analytics dashboard for Indian listed companies.
 
-**Phase 2 — schema and mock data.** The dashboard shell renders placeholder
-content from `src/mocks/placeholders.ts`. Alongside it now sits the real data
-schema (`src/types/`) and a realistic mock dataset for the five tracked
-companies (`src/mocks/financials.ts`, `kpis.ts`, `peers.ts`). Nothing in the
-views reads it yet — wiring is the next phase. There is still no scraper, no
-API and no backend.
+**Phase 3 — the P&L tab reads real data.** The Financials → P&L sub-tab renders
+from the schema in `src/types/` and the mock dataset in `src/mocks/`, reacting
+to the company switcher and the period toggle. Balance Sheet, Cash Flow and KPI
+Overview still render phase-1 placeholder content from
+`src/mocks/placeholders.ts`. There is still no scraper, no API and no backend.
 
 ---
 
@@ -75,7 +74,10 @@ npx wrangler deploy --dry-run   # validate config without deploying
     │   ├── kpi.ts              KPI definitions, values, peer stats
     │   └── peers.ts            peer groups and comparison rows
     ├── lib/
-    │   └── cn.ts               conditional class-name join
+    │   ├── cn.ts               conditional class-name join
+    │   ├── format.ts           en-IN number formatting; null → "—"
+    │   ├── statementLabels.ts  layout-aware P&L row labels (standard / banking)
+    │   └── statements.ts       period toggle → statement set selector
     ├── hooks/
     │   └── useOnClickOutside.ts
     ├── mocks/
@@ -97,6 +99,10 @@ npx wrangler deploy --dry-run   # validate config without deploying
     │   ├── company/
     │   │   ├── CompanySwitcher.tsx searchable ARIA combobox
     │   │   └── CompanyAvatar.tsx   monogram stand-in for a logo
+    │   ├── charts/
+    │   │   ├── RevenueMarginChart.tsx  revenue columns + margin line
+    │   │   ├── SegmentMixChart.tsx     100% stacked segment mix + legend
+    │   │   └── ChartTooltip.tsx        shared tooltip surface
     │   └── widgets/
     │       ├── WidgetCard.tsx      ★ the one card shell
     │       ├── WidgetGrid.tsx      responsive auto-fill grid
@@ -104,10 +110,12 @@ npx wrangler deploy --dry-run   # validate config without deploying
     │       ├── WidgetEmptyState.tsx ★ empty state
     │       ├── StatTile.tsx        StatTile + StatList
     │       ├── DeltaBadge.tsx      period-on-period change pill
+    │       ├── StatementTable.tsx  line items down, periods across
     │       └── widgetState.ts      'ready' | 'loading' | 'empty'
     └── views/
         ├── financials/
-        │   └── FinancialsView.tsx  period toggle + P&L / BS / CF sub-tabs
+        │   ├── FinancialsView.tsx  period toggle + P&L / BS / CF sub-tabs
+        │   └── ProfitLossPanel.tsx ★ the P&L tab, rendered from real data
         ├── kpi/
         │   └── KpiOverviewView.tsx
         └── shared/
@@ -220,6 +228,31 @@ figure is invented and none should be quoted as fact.
 it, so a KPI cannot contradict the statement it summarises. The real pipeline
 will do the same thing with real inputs.
 
+## Charts
+
+Recharts, styled entirely from the `--color-series-*` tokens via
+`seriesColor()`, so a chart cannot introduce a colour the design system has not
+validated. Two rules the charts here follow, both worth keeping:
+
+**No dual axes.** "Revenue and OPM%" is the classic dual-axis temptation, and a
+dual axis invents a correlation — where the two scales are pinned is arbitrary,
+so the reader sees a relationship that is an artefact of the layout. The trend
+widget is instead two stacked panels sharing one set of period categories and
+identical margins: revenue columns above, margin line below. It reads as a
+single figure, and each series keeps an honest scale.
+
+**Values are never gated behind a hover.** Each chart panel prints its latest
+value in the panel header, the axes carry the rest, and the P&L table on the
+same tab is the chart's table-view twin — every plotted number appears there as
+text. The segment legend carries each segment's name and latest value, which is
+what keeps series slots 3–5 readable: those sit below 3:1 contrast on white, so
+they must never be identified by hue alone.
+
+Axis ticks are computed rather than left to Recharts, which was producing scales
+like `30 · 26 · 24 · 22` — uneven steps that misstate the spacing between
+gridlines. The ₹ crore axis picks lakh-or-grouped once from the series maximum,
+so a single axis never mixes `1.0L` with `75,000`.
+
 ## Accessibility
 
 - Tabs follow the WAI-ARIA tabs pattern with **manual activation**: roving
@@ -243,6 +276,6 @@ will do the same thing with real inputs.
 
 ## Not in this phase
 
-Screener.in scraper, BSE fallback, GitHub Actions, API calls, charts, routing,
-dark mode — and wiring the schema above into the views, which still render the
-phase-1 placeholders.
+Screener.in scraper, BSE fallback, GitHub Actions, API calls, routing, dark
+mode — and wiring the Balance Sheet, Cash Flow and KPI Overview tabs, which
+still render the phase-1 placeholders.

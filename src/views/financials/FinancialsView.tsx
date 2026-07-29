@@ -11,6 +11,7 @@ import { WIDGET_STATES, type WidgetState } from '@/components/widgets/widgetStat
 import { financialsWidgets } from '@/mocks/placeholders'
 import type { MockCompany } from '@/mocks/companies'
 import { WidgetDeck } from '@/views/shared/WidgetDeck'
+import { ProfitLossPanel } from './ProfitLossPanel'
 
 const TAB_ID_PREFIX = 'financials'
 
@@ -68,7 +69,13 @@ export function FinancialsView({
       </nav>
 
       <TabPanel idPrefix={TAB_ID_PREFIX} id={activeStatement.id}>
-        <WidgetDeck widgets={financialsWidgets(activeStatement.id, period)} state={widgetState} />
+        {activeStatement.id === 'pl' ? (
+          // P&L renders from the real schema. Balance sheet and cash flow are
+          // still on placeholder content until their own phases.
+          <ProfitLossPanel company={company} period={period} state={widgetState} />
+        ) : (
+          <WidgetDeck widgets={financialsWidgets(activeStatement.id, period)} state={widgetState} />
+        )}
       </TabPanel>
     </>
   )
