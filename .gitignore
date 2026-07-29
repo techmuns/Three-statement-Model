@@ -1,0 +1,20 @@
+node_modules/
+dist/
+*.local
+.env
+.env.*
+!.env.example
+
+# Wrangler
+.wrangler/
+.dev.vars
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Build caches
+*.tsbuildinfo
+.vite/

@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+@import '../theme/theme.css';
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-surface-page);
+    color: var(--color-ink-primary);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* A single, consistent, always-visible focus treatment. Keyboard users get a
+   * ring on every interactive element; pointer users do not see it on click. */
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 2px solid var(--color-line-focus);
+    outline-offset: 2px;
+    border-radius: var(--radius-control);
+  }
+
+  /* Columns of figures that must align vertically. Standalone stat values keep
+   * proportional figures — see the typography note in theme.css. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Shimmer used by the skeleton primitives. A translating highlight rather
+   * than an animated background-position, so it stays smooth on long cards. */
+  @keyframes shimmer-sweep {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-line-hairline);
+  }
+
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: var(--gradient-shimmer);
+    animation: shimmer-sweep 1.6s var(--ease-standard) infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer::after {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

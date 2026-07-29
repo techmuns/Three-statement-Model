@@ -1,0 +1,194 @@
+/* ---------------------------------------------------------------------------
+ * theme.css — CANONICAL DESIGN TOKENS
+ * ---------------------------------------------------------------------------
+ * Single source of truth for colour, typography, spacing, radius, shadow and
+ * gradient across the whole app. Tailwind v4 reads the `@theme` block and
+ * (a) generates utilities from it (`bg-surface-card`, `text-ink-muted`,
+ * `rounded-card`, `text-title`, …) and (b) emits every token as a plain CSS
+ * custom property on `:root`.
+ *
+ * RULES FOR LATER PHASES
+ *   1. Add new tokens HERE. Never hardcode a hex value in a component.
+ *   2. Consume from TSX via Tailwind utility classes. Consume from JS/SVG
+ *      (chart libraries) via `src/theme/tokens.ts`, which exports the
+ *      `var(--…)` references — not copies of the values.
+ *   3. The `--color-series-*` ramp is the data-visualisation palette. It is
+ *      validated (CVD separation + normal-vision separation) against the card
+ *      surface `#ffffff`. Assign slots in order, never cycle, never recolour a
+ *      series when a filter changes the series count.
+ * ------------------------------------------------------------------------- */
+
+/* `static` forces every token below to be emitted as a CSS custom property.
+ * Without it Tailwind prunes any variable no utility class happens to
+ * reference — which silently breaks the tokens consumed through `var()` from
+ * `tokens.ts` (the series ramp, chart chrome, gradients). */
+@theme static {
+  /* -- Typeface -------------------------------------------------------- */
+  /* System sans only — no webfont is loaded anywhere in this app. */
+  --font-sans:
+    system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* -- Typography scale ------------------------------------------------ */
+  /* Named by role, not by size, so a scale change never means a find/replace. */
+  --text-micro: 0.625rem; /* 10px — badges, axis ticks           */
+  --text-micro--line-height: 1rem;
+  --text-micro--letter-spacing: 0.05em;
+
+  --text-caption: 0.6875rem; /* 11px — widget subtitles, captions  */
+  --text-caption--line-height: 0.9375rem;
+
+  --text-label: 0.75rem; /* 12px — form labels, table headers  */
+  --text-label--line-height: 1rem;
+
+  --text-body: 0.8125rem; /* 13px — dense dashboard body text   */
+  --text-body--line-height: 1.125rem;
+
+  --text-title: 0.875rem; /* 14px — widget titles, nav items    */
+  --text-title--line-height: 1.25rem;
+
+  --text-heading: 1rem; /* 16px — section headings            */
+  --text-heading--line-height: 1.5rem;
+
+  --text-stat: 1.5rem; /* 24px — stat-tile values            */
+  --text-stat--line-height: 1.875rem;
+  --text-stat--letter-spacing: -0.02em;
+
+  --text-hero: 2rem; /* 32px — single headline figure      */
+  --text-hero--line-height: 2.375rem;
+  --text-hero--letter-spacing: -0.025em;
+
+  /* -- Brand ramp (indigo → violet) ------------------------------------ */
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5; /* primary — 6.31:1 on white          */
+  --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+  --color-brand-900: #312e81;
+
+  --color-accent-400: #22d3ee; /* cyan — gradient terminus, sparingly */
+  --color-accent-500: #06b6d4;
+  --color-accent-600: #0891b2;
+
+  /* -- Surfaces -------------------------------------------------------- */
+  --color-surface-page: #f6f7fb; /* app background beneath the wash    */
+  --color-surface-card: #ffffff; /* widget card + validator surface    */
+  --color-surface-sunken: #f8fafc; /* card body / inset regions          */
+  --color-surface-header: rgba(255, 255, 255, 0.88); /* blurred sticky header */
+  --color-surface-overlay: #ffffff; /* popovers, listboxes                */
+
+  /* -- Ink (text) ------------------------------------------------------ */
+  --color-ink-primary: #0f172a; /* 16.9:1 on card                     */
+  --color-ink-secondary: #334155; /* 10.4:1                             */
+  --color-ink-muted: #52607a; /*  6.3:1                             */
+  --color-ink-subtle: #5d6b81; /*  5.4:1 — lightest ink permitted    */
+  --color-ink-inverse: #ffffff;
+
+  /* -- Lines ----------------------------------------------------------- */
+  --color-line-hairline: #e8ecf3; /* card borders, dividers             */
+  --color-line-strong: #cbd5e1; /* input borders, axis baseline       */
+  --color-line-focus: #4f46e5; /* focus ring                         */
+
+  /* -- Status (reserved — never reused as a series colour) -------------
+   * Each pairs with its own `-soft` background at >= 4.5:1, so status text is
+   * legible at badge sizes. Status always ships with a label, never colour
+   * alone. */
+  --color-status-good: #0a7a44;
+  --color-status-good-soft: #e8f6ef;
+  --color-status-warning: #b45309;
+  --color-status-warning-soft: #fef3c7;
+  --color-status-critical: #c0392b;
+  --color-status-critical-soft: #fdeceb;
+  --color-status-neutral: #52607a;
+  --color-status-neutral-soft: #eef1f6;
+
+  /* -- Data-visualisation series ramp ---------------------------------- */
+  /* Fixed assignment order. Validated on surface #ffffff:
+   *   worst adjacent CVD ΔE 9.1 (>=8 target)
+   *   worst adjacent normal-vision ΔE 19.6 (>=15 floor)
+   * Slots 3, 4 and 5 sit below 3:1 against white — whenever they carry
+   * meaning, ship a direct label or the table view alongside them. */
+  --color-series-1: #2a78d6; /* blue    */
+  --color-series-2: #eb6834; /* orange  */
+  --color-series-3: #1baf7a; /* aqua    */
+  --color-series-4: #eda100; /* yellow  */
+  --color-series-5: #e87ba4; /* magenta */
+  --color-series-6: #008300; /* green   */
+  --color-series-7: #4a3aa7; /* violet  */
+  --color-series-8: #e34948; /* red     */
+
+  /* Chart chrome */
+  --color-chart-grid: #eef1f6;
+  --color-chart-axis: #cbd5e1;
+
+  /* -- Radius ---------------------------------------------------------- */
+  --radius-control: 0.5rem; /*  8px — buttons, inputs             */
+  --radius-pill: 9999px;
+  --radius-card: 1rem; /* 16px — widget cards                */
+  --radius-panel: 1.25rem; /* 20px — large panels                */
+
+  /* -- Shadow ---------------------------------------------------------- */
+  --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.03);
+  --shadow-card-hover: 0 10px 24px rgba(15, 23, 42, 0.07), 0 3px 8px rgba(79, 70, 229, 0.06);
+  --shadow-overlay: 0 12px 32px rgba(15, 23, 42, 0.12), 0 2px 8px rgba(15, 23, 42, 0.06);
+
+  /* -- Motion ---------------------------------------------------------- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------------------------------------------------------------------------
+ * Gradients
+ * ---------------------------------------------------------------------------
+ * Kept outside `@theme` because Tailwind would try to generate colour
+ * utilities from them. Applied with the `.bg-gradient-*` helpers below.
+ * The gradient is an ACCENT: wordmark, active-tab indicator, hero panel and
+ * thin accent rules. It is never the fill of an ordinary card.
+ * ------------------------------------------------------------------------- */
+:root {
+  --gradient-brand: linear-gradient(135deg, #4f46e5 0%, #7c3aed 48%, #0891b2 100%);
+  --gradient-brand-soft: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 50%, #ecfeff 100%);
+  --gradient-accent-rule: linear-gradient(90deg, #4f46e5 0%, #7c3aed 55%, #22d3ee 100%);
+  --gradient-page-wash:
+    radial-gradient(1200px 560px at 6% -10%, rgba(79, 70, 229, 0.16), transparent 62%),
+    radial-gradient(1000px 500px at 98% -4%, rgba(8, 145, 178, 0.14), transparent 58%),
+    radial-gradient(900px 700px at 50% 120%, rgba(124, 58, 237, 0.07), transparent 60%);
+  --gradient-shimmer: linear-gradient(
+    90deg,
+    rgba(226, 232, 240, 0) 0%,
+    rgba(226, 232, 240, 0.85) 50%,
+    rgba(226, 232, 240, 0) 100%
+  );
+}
+
+@utility bg-gradient-brand {
+  background-image: var(--gradient-brand);
+}
+
+@utility bg-gradient-brand-soft {
+  background-image: var(--gradient-brand-soft);
+}
+
+@utility bg-gradient-accent-rule {
+  background-image: var(--gradient-accent-rule);
+}
+
+@utility bg-gradient-page-wash {
+  background-image: var(--gradient-page-wash);
+}
+
+/* Gradient-filled text for the wordmark. Falls back to solid brand ink where
+ * `background-clip: text` is unsupported. */
+@utility text-gradient-brand {
+  color: var(--color-brand-700);
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

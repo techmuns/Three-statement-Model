@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vittara",
+  "compatibility_date": "2026-01-15",
+
+  // Static-assets-only Worker: Cloudflare serves `dist/` directly from its
+  // edge cache and no Worker script runs, so there is no `main` entry here.
+  // Add one only when this app needs server-side logic.
+  "assets": {
+    "directory": "./dist",
+    // The app is a single-page app with no server routes, so any unknown path
+    // returns index.html rather than a 404.
+    "not_found_handling": "single-page-application"
+  },
+
+  "observability": {
+    "enabled": true
+  }
+}
