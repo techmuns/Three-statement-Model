@@ -8,10 +8,10 @@ import { PageToolbar } from '@/components/layout/PageToolbar'
 import { SegmentedControl } from '@/components/nav/SegmentedControl'
 import { TabPanel, Tabs } from '@/components/nav/Tabs'
 import { WIDGET_STATES, type WidgetState } from '@/components/widgets/widgetState'
-import { financialsWidgets } from '@/mocks/placeholders'
 import type { MockCompany } from '@/mocks/companies'
-import { WidgetDeck } from '@/views/shared/WidgetDeck'
 import { ProfitLossPanel } from './ProfitLossPanel'
+import { BalanceSheetPanel } from './BalanceSheetPanel'
+import { CashFlowPanel } from './CashFlowPanel'
 
 const TAB_ID_PREFIX = 'financials'
 
@@ -70,11 +70,11 @@ export function FinancialsView({
 
       <TabPanel idPrefix={TAB_ID_PREFIX} id={activeStatement.id}>
         {activeStatement.id === 'pl' ? (
-          // P&L renders from the real schema. Balance sheet and cash flow are
-          // still on placeholder content until their own phases.
           <ProfitLossPanel company={company} period={period} state={widgetState} />
+        ) : activeStatement.id === 'balance-sheet' ? (
+          <BalanceSheetPanel company={company} period={period} state={widgetState} />
         ) : (
-          <WidgetDeck widgets={financialsWidgets(activeStatement.id, period)} state={widgetState} />
+          <CashFlowPanel company={company} period={period} state={widgetState} />
         )}
       </TabPanel>
     </>
