@@ -3,6 +3,15 @@
   "name": "vittara",
   "compatibility_date": "2026-01-15",
 
+  // Build the app before deploying. Wrangler runs this command ahead of every
+  // `deploy`/`dev`, so a fresh clone (where `dist/` is gitignored and absent)
+  // is always built before its assets are served. Without it, `wrangler deploy`
+  // aborts because `assets.directory` does not exist — the deploy shows a blank
+  // page.
+  "build": {
+    "command": "npm run build"
+  },
+
   // Static-assets-only Worker: Cloudflare serves `dist/` directly from its
   // edge cache and no Worker script runs, so there is no `main` entry here.
   // Add one only when this app needs server-side logic.

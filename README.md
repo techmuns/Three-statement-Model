@@ -26,9 +26,16 @@ npm run typecheck    # types only, no build
 `wrangler.jsonc` is configured for a static-assets-only Worker: Cloudflare serves
 `dist/` from the edge and no Worker script runs.
 
+`dist/` is gitignored, so it never exists in a fresh clone. `wrangler.jsonc`
+therefore declares a `build.command` hook (`npm run build`) that wrangler runs
+*before* every `deploy`/`dev`. This is what lets the Cloudflare git integration
+(which only runs `npx wrangler deploy` on a fresh clone) build the app first —
+without it, `wrangler deploy` aborts because `assets.directory` (`./dist`) does
+not exist, and the deploy serves a blank page.
+
 ```bash
 npx wrangler login          # once, per machine
-npm run cf:deploy           # build + wrangler deploy
+npm run cf:deploy           # build + wrangler deploy (wrangler also builds via the hook)
 ```
 
 Other useful commands:
