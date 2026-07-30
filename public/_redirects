@@ -1,0 +1,5 @@
+# Serve the SPA for any path the static assets don't match, so client-side
+# routes work once routing is added. Mirrors `not_found_handling:
+# "single-page-application"` in wrangler.jsonc, so the Pages and Workers
+# deploy paths behave the same.
+/*  /index.html  200
