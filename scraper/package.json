@@ -1,0 +1,21 @@
+{
+  "name": "vittara-scraper",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Screener.in scraper that emits CompanyFinancials JSON for the Vittara dashboard. Backend-only; not wired into the app.",
+  "scripts": {
+    "scrape": "tsx src/cli.ts",
+    "scrape:all": "tsx src/cli.ts --all",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "playwright": "^1.49.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
