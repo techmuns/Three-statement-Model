@@ -1,13 +1,14 @@
 /**
  * Mapping Screener's peer-comparison table onto the peer schema.
  *
- * Screener's peer table is a current snapshot with these columns: S.No, Name,
- * CMP, P/E, Mar Cap, Div Yld, NP Qtr, Qtr Profit Var %, Sales Qtr, Qtr Sales
- * Var %, ROCE %. Of our six KPIs only **ROCE** is present, so that is the only
- * one carried; the other five are represented as `null` (unavailable) — never
- * guessed, never derived from unrelated columns (e.g. the quarterly variation
- * columns are not our annual revenue growth). Market cap maps to
- * `PeerCompany.marketCapCrore`.
+ * Screener's peer table is a current snapshot whose columns are configurable and
+ * vary from company to company — one page shows `… CMP | P/E | Mar Cap | … | ROCE
+ * %`, another shows only `… CMP | Mar Cap | EV/EBITDA`. So rather than assume any
+ * particular column is present, we **detect** which of our KPIs each header maps
+ * to and carry only those; a KPI with no matching column is represented as
+ * `null` (unavailable) — never guessed, never derived from an unrelated column
+ * (e.g. the quarterly-variation columns are not our annual revenue growth).
+ * Market cap maps to `PeerCompany.marketCapCrore`.
  *
  * The table is a snapshot with no history, so carried peers hold only these
  * point-in-time values — the `PeerCompany` shape carries no trend, so none is
@@ -28,7 +29,12 @@ export interface ScrapedPeer {
   readonly symbol: string
   readonly name: string
   readonly marketCapCrore: Reported<Crore>
-  readonly roce: Reported<number>
+  /**
+   * Values for the KPIs whose columns the table actually provided this scrape.
+   * A KPI absent from the table is simply absent here and becomes `null`
+   * downstream — the mapping never fabricates a value.
+   */
+  readonly kpis: Partial<Record<KpiId, Reported<number>>>
 }
 
 /** KPI render order, matching src/config/kpis.ts. */
@@ -42,50 +48,105 @@ const KPI_ORDER: readonly KpiId[] = [
 ]
 
 /**
- * The only one of our KPIs Screener's peer table provides. Adding a mapping
- * here (should Screener expose more columns) is all it takes to carry another.
+ * Header → KPI matchers, run against each normalised column header to discover
+ * which of our KPIs a peer table exposes. Matched against `\b`-bounded acronyms
+ * so `roce` never also matches `roe`. Quarterly-variation columns (`Qtr Sales
+ * Var %`, `Qtr Profit Var %`) are deliberately **not** mapped to the annual
+ * growth/margin KPIs. Extend this list to carry more KPIs as Screener exposes
+ * them.
  */
-const PROVIDED_KPI: Partial<Record<KpiId, (peer: ScrapedPeer) => Reported<number>>> = {
-  'return-on-capital-employed': (peer) => peer.roce,
-}
+const KPI_COLUMN_MATCHERS: readonly { readonly kpiId: KpiId; readonly test: (header: string) => boolean }[] = [
+  { kpiId: 'return-on-capital-employed', test: (h) => /\broce\b/.test(h) },
+  { kpiId: 'return-on-equity', test: (h) => /\broe\b/.test(h) || h.includes('return on equity') },
+  {
+    kpiId: 'operating-margin',
+    test: (h) => /\bopm\b/.test(h) || h.includes('operating margin') || h.includes('operating profit margin'),
+  },
+  {
+    kpiId: 'net-profit-margin',
+    test: (h) => /\bnpm\b/.test(h) || h.includes('net profit margin') || h.includes('net margin'),
+  },
+  { kpiId: 'debt-to-equity', test: (h) => h.includes('debt') && /\beq/.test(h) },
+  {
+    // Annual sales/revenue growth only — never the quarterly-variation columns.
+    kpiId: 'revenue-growth',
+    test: (h) =>
+      (h.includes('sales') || h.includes('revenue')) &&
+      h.includes('growth') &&
+      !h.includes('qtr') &&
+      !h.includes('quarter'),
+  },
+]
 
 function normalize(header: string): string {
   return header.toLowerCase().replace(/\s+/g, ' ').trim()
 }
 
-/** Map one company's raw peer table into `ScrapedPeer`s. Throws if the columns
- * we depend on aren't there — a loud signal that Screener changed the table. */
-export function mapPeersTable(table: RawPeerTable, symbol: string): ScrapedPeer[] {
+/** The outcome of mapping one peer table: the peers plus what was detected. */
+export interface MappedPeers {
+  readonly peers: ScrapedPeer[]
+  /** KPIs a column was found for, in `KPI_ORDER` — for logging/observability. */
+  readonly mappedKpis: readonly KpiId[]
+  readonly hasMarketCap: boolean
+  /** Raw headers exactly as the page presented them, for logging. */
+  readonly headers: readonly string[]
+}
+
+/**
+ * Map one company's raw peer table into `ScrapedPeer`s, detecting whichever of
+ * our KPIs its columns provide.
+ *
+ * Never throws for missing columns — that was the old ROCE-specific bug. A KPI
+ * with no column is left unset (→ `null` downstream); a table with no market-cap
+ * column yields peers with `marketCapCrore: null` that assembly drops rather
+ * than fabricates. Only genuinely unreadable tables (handled by the caller when
+ * `extractPeersTable` returns `null`) are treated as an error.
+ */
+export function mapPeersTable(table: RawPeerTable): MappedPeers {
   const headers = table.headers.map(normalize)
-  const roceIndex = headers.findIndex((header) => header.includes('roce'))
-  const capIndex = headers.findIndex((header) => header.includes('mar cap') || header.includes('market cap'))
-  if (roceIndex === -1) {
-    throw new Error(`${symbol} · peers: ROCE column not found (headers: ${table.headers.join(' | ')})`)
-  }
-  if (capIndex === -1) {
-    throw new Error(`${symbol} · peers: market-cap column not found (headers: ${table.headers.join(' | ')})`)
+  const capIndex = headers.findIndex((h) => h.includes('mar cap') || h.includes('market cap'))
+
+  const kpiColumn = new Map<KpiId, number>()
+  for (const { kpiId, test } of KPI_COLUMN_MATCHERS) {
+    if (kpiColumn.has(kpiId)) continue
+    const index = headers.findIndex((header) => test(header))
+    if (index !== -1) kpiColumn.set(kpiId, index)
   }
 
   const peers: ScrapedPeer[] = []
   for (const row of table.rows) {
     if (row.symbol === null) continue // a non-company row (spacer/total) — skip
+    const kpis: Partial<Record<KpiId, Reported<number>>> = {}
+    for (const [kpiId, index] of kpiColumn) kpis[kpiId] = parseCell(row.cells[index] ?? '')
     peers.push({
       symbol: row.symbol,
       name: row.name,
-      marketCapCrore: parseCell(row.cells[capIndex] ?? ''),
-      roce: parseCell(row.cells[roceIndex] ?? ''),
+      marketCapCrore: capIndex === -1 ? null : parseCell(row.cells[capIndex] ?? ''),
+      kpis,
     })
   }
-  return peers
+
+  return {
+    peers,
+    mappedKpis: KPI_ORDER.filter((kpiId) => kpiColumn.has(kpiId)),
+    hasMarketCap: capIndex !== -1,
+    headers: table.headers,
+  }
 }
 
 function toPeerCompany(peer: ScrapedPeer): PeerCompany {
   const kpis: PeerKpiSnapshot[] = KPI_ORDER.map((kpiId) => ({
     kpiId,
-    value: PROVIDED_KPI[kpiId]?.(peer) ?? null,
+    value: peer.kpis[kpiId] ?? null,
   }))
   // marketCapCrore is guaranteed non-null by the caller's filter.
-  return { id: peer.symbol.toLowerCase(), name: peer.name, ticker: peer.symbol, marketCapCrore: peer.marketCapCrore as number, kpis }
+  return {
+    id: peer.symbol.toLowerCase(),
+    name: peer.name,
+    ticker: peer.symbol,
+    marketCapCrore: peer.marketCapCrore as number,
+    kpis,
+  }
 }
 
 /**

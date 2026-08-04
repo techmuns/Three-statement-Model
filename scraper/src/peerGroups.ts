@@ -24,20 +24,20 @@ export const PEER_GROUP_CONFIG: readonly PeerGroupConfig[] = [
     id: 'it-services',
     label: 'IT Services',
     sector: 'IT Services',
-    memberCompanyIds: ['tata-consultancy-services', 'infosys'],
+    memberCompanyIds: ['TCS', 'INFY'],
   },
   {
     id: 'private-banks',
     label: 'Private Sector Banks',
     sector: 'Private Sector Bank',
-    memberCompanyIds: ['hdfc-bank'],
+    memberCompanyIds: ['HDFCBANK'],
   },
-  { id: 'fmcg', label: 'FMCG', sector: 'FMCG', memberCompanyIds: ['hindustan-unilever'] },
+  { id: 'fmcg', label: 'FMCG', sector: 'FMCG', memberCompanyIds: ['HINDUNILVR'] },
   {
     id: 'oil-gas-energy',
     label: 'Oil, Gas & Energy',
     sector: 'Oil, Gas & Consumer',
-    memberCompanyIds: ['reliance-industries'],
+    memberCompanyIds: ['RELIANCE'],
   },
 ]
 

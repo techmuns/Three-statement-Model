@@ -3,12 +3,16 @@
 Multi-company financial analytics dashboard for Indian listed companies.
 
 Vittara presents the three financial statements — profit & loss, balance sheet
-and cash flow — plus a KPI overview and peer comparison, for five large Indian
-companies (Reliance, TCS, HDFC Bank, Infosys, Hindustan Unilever). Pick a
-company from the switcher, toggle between the last five quarters and the last
-five financial years, and move across the **Financials** and **KPI Overview**
-tabs. Every widget renders real numbers where they have been scraped and clearly
-labelled placeholder numbers otherwise — the data is never faked as real.
+and cash flow — plus a KPI overview and peer comparison for the **Nifty 500**
+universe of Indian listed companies. Pick a company from the switcher, toggle
+between the last five quarters and the last five financial years, and move
+across the **Financials** and **KPI Overview** tabs. Every widget renders real
+numbers where the company has been scraped, and an honest "awaiting data" state
+where it has not — the data is never faked as real.
+
+Today five companies (Reliance, TCS, HDFC Bank, Infosys, Hindustan Unilever)
+have real scraped statements; the rest of the 500 are listed and searchable and
+show an "awaiting data" state until the scraper is scaled to cover them.
 
 The app is a static single-page React site. There is no backend at request time:
 financial data is scraped ahead of time into JSON files that Vite inlines at
@@ -24,8 +28,15 @@ Screener.in ──(Playwright scraper)──▶ data/<SYMBOL>.json ──(import
  login + read                          validated at load;
  statement tables                      malformed → dropped
                                               │
-                                    missing company → authored mock
+                              missing → authored mock (original 5)
+                                        else → "awaiting data" state
 ```
+
+The company universe — all ~500 Nifty 500 constituents — comes from one shared
+registry, **`company-registry.json`** at the repo root, which both the scraper
+and the frontend import (see [Company registry](#company-registry) below). It is
+the list of *which* companies exist; `data/*.json` is the *data* behind the few
+that have been scraped.
 
 1. **Scrape.** `scraper/` logs into Screener.in with Playwright and reads each
    company's statement tables and peer table, writing one
@@ -34,20 +45,54 @@ Screener.in ──(Playwright scraper)──▶ data/<SYMBOL>.json ──(import
    `data/*.json` via `import.meta.glob`. Each file self-identifies by its
    `companyId`. Files that fail runtime validation
    (`src/data/validateFinancials.ts`) are dropped with a warning.
-3. **Prefer real, fall back to mock — per company.** The data accessors
-   (`getCompanyFinancials`, `getCompanyDataSource` in `src/mocks/financials.ts`)
-   return the scraped record when one loaded and validated for that company, and
-   the authored mock otherwise. So a company with a good scrape shows live data
-   while the rest stay on mock, independently.
-4. **Say which it is.** The header badge reads **“Live · updated &lt;date&gt;”**
-   for a company backed by real data and **“Mock data”** when it fell back, and
-   each statement's footnote names its source (`source: screener, updated …`) or
-   admits it is placeholder. `data/` is empty in a fresh clone, so with no scrape
-   the whole app is honestly all-mock until the scheduled job (below) populates
-   it.
+3. **Prefer real, then authored mock, then nothing — per company.** The data
+   accessors (`getCompanyFinancials`, `getCompanyDataSource` in
+   `src/mocks/financials.ts`) return the scraped record when one loaded and
+   validated, else the authored mock (only the original five have one), else
+   `null` — which every panel renders as an honest "awaiting data" empty state.
+4. **Say which it is.** The header badge has three honest states — **“Live ·
+   updated &lt;date&gt;”** for real scraped data, **“Mock data”** for one of the
+   original five falling back to authored mock, and **“Awaiting data”** for a
+   company in the universe that has not been scraped — and each statement's
+   footnote names its source (`source: screener, updated …`) or admits it is
+   placeholder. In a fresh clone `data/` is empty, so every company shows
+   "awaiting data" until the scheduled job (below) populates it.
 
 `data/*.json` are generated artifacts, not hand-authored — `data/` tracks only
 `.gitkeep`, and the scheduled GitHub Action commits the refreshed files.
+
+---
+
+## Company registry
+
+`company-registry.json` (repo root) is the **single source of truth for the
+company universe** — the ~500 Nifty 500 constituents — shared by the scraper and
+the frontend so the two can never drift:
+
+```json
+{
+  "index": "NIFTY 500",
+  "source": "NSE / niftyindices.com — ind_nifty500list.csv",
+  "retrievedAt": "2026-08-04",
+  "count": 500,
+  "companies": [
+    { "symbol": "RELIANCE", "name": "Reliance Industries", "sector": "Oil Gas & Consumable Fuels" }
+  ]
+}
+```
+
+- **`symbol` is the canonical id.** It is the NSE trading symbol, which doubles
+  as the Screener slug, the `data/<symbol>.json` filename stem, and
+  `CompanyFinancials.companyId` — one identifier, no mapping table.
+- **The frontend** (`src/mocks/companies.ts`) adapts each entry into the UI
+  shape, deriving the monogram and colour it deliberately does not store.
+- **The scraper** (`scraper/src/companies.ts`) reads the same file. A batch run
+  (`--all`, and so the scheduled Action) is bounded to `ACTIVE_SYMBOLS` — the
+  five proven companies — because scraping all 500 is a separate scaling phase;
+  `--company <SYMBOL>` can still scrape any registry company on demand.
+
+To refresh the universe, re-download the official CSV
+(`ind_nifty500list.csv`) and regenerate the file.
 
 ---
 
@@ -79,7 +124,7 @@ export SCREENER_PASSWORD="…"
 # from the repo root:
 cd ..
 npm run scrape -- RELIANCE      # one company by Screener symbol
-npm run scrape:all              # all five companies + peer groups
+npm run scrape:all              # the active batch (5 companies) + peer groups
 ```
 
 Output lands in `data/` at the repo root. The scraper writes each company's file
@@ -169,6 +214,7 @@ where real-vs-mock fallback lives.
 ├── vite.config.ts              Vite + React + Tailwind v4 plugin, `@/` alias
 ├── wrangler.jsonc              Cloudflare Workers static-assets config
 ├── tsconfig*.json              project references (app / node)
+├── company-registry.json       ★ SHARED COMPANY REGISTRY (Nifty 500 universe)
 ├── .github/workflows/
 │   └── refresh-scraped-data.yml  scheduled + manual scrape → commit to main
 ├── data/                       ★ SCRAPER OUTPUT (generated; only .gitkeep tracked)
@@ -179,7 +225,7 @@ where real-vs-mock fallback lives.
 │       ├── cli.ts              entry: `scrape <SYMBOL>` / `scrape --all`
 │       ├── browser.ts          launch + one shared logged-in context
 │       ├── env.ts              reads SCREENER_EMAIL / SCREENER_PASSWORD
-│       ├── companies.ts        the five companies + symbol lookup
+│       ├── companies.ts        registry adapter → scrape batch + symbol lookup
 │       ├── scrape.ts           per-company orchestration (graceful failure)
 │       ├── extract.ts          reads Screener DOM sections into raw tables
 │       ├── normalize.ts        raw tables → CompanyFinancials (schema-shaped)
@@ -217,7 +263,7 @@ where real-vs-mock fallback lives.
     │   └── statements.ts       period toggle → statement set selector
     ├── hooks/useOnClickOutside.ts
     ├── mocks/                  authored fallback data + the data accessors
-    │   ├── companies.ts        5 companies + search helper
+    │   ├── companies.ts        registry adapter → MockCompany + search helper
     │   ├── periods.ts          the 5 quarters and 5 years everything keys to
     │   ├── financials.ts       authored inputs → derived statements; ★ accessors
     │   ├── peers.ts            4 sector cohorts with carried peer KPIs
@@ -335,15 +381,20 @@ changes is the identity:
 | `opmPercent` | OPM % | Financing Margin % |
 | `profitBeforeTax` | `OP + otherIncome − interest − depreciation` | `OP + otherIncome − depreciation` |
 
-### Mock data (the fallback)
+### Mock data (the original five only)
 
 `mocks/financials.ts` authors *inputs* and derives everything implied by them,
 so the accounting identities hold by construction: the balance sheet balances,
 CFO is the sum of its parts, segment revenues sum exactly to sales, and the four
 FY26 quarters sum to the FY26 annual column. Scale and ratios are modelled on
 the real companies so derived KPIs land in the right neighbourhood — but every
-figure is invented and none should be quoted as fact. This is what a company
-falls back to when no valid scraped file exists for it.
+figure is invented and none should be quoted as fact. This is what the original
+five companies fall back to when no valid scraped file exists for them.
+
+Authored mock is deliberately **not** extended to the rest of the Nifty 500 —
+fabricating statements for ~495 companies would be dishonest at scale. A company
+with neither a scraped file nor authored mock resolves to `null` and every panel
+shows an honest "awaiting data" empty state instead of invented numbers.
 
 `mocks/kpis.ts` computes the KPI set from those statements rather than authoring
 it, so a KPI cannot contradict the statement it summarises — and it does the same
@@ -402,6 +453,10 @@ so a single axis never mixes `1.0L` with `75,000`.
 
 ## Not yet built
 
-BSE fallback for figures Screener omits, quarterly segment scraping, per-company
-routing/deep-links, and dark mode. Peer comparison is still carried from mock
-sector data rather than assembled from each peer's own scraped statements.
+**Scaling the scraper to the full Nifty 500** — the registry lists all 500, but
+a batch scrape (`--all` / the scheduled Action) is bounded to `ACTIVE_SYMBOLS`
+(five companies) until the scraper gets batching, rate-limiting and a larger CI
+time budget. BSE fallback for figures Screener omits, quarterly segment
+scraping, per-company routing/deep-links, and dark mode. Peer comparison is
+still carried from mock sector data rather than assembled from each peer's own
+scraped statements.
