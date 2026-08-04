@@ -11,7 +11,7 @@
     "cf:preview": "npm run build && wrangler dev",
     "cf:deploy": "npm run build && wrangler deploy",
     "scrape": "npm --prefix scraper run scrape --",
-    "scrape:all": "npm --prefix scraper run scrape:all"
+    "scrape:rotate": "npm --prefix scraper run scrape:rotate"
   },
   "dependencies": {
     "react": "^19.2.8",

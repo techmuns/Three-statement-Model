@@ -1,54 +1,83 @@
 /**
  * CLI entry point.
  *
- *   npm run scrape -- --company=RELIANCE   # one company
- *   npm run scrape:all                     # every configured company
+ *   npm run scrape -- --company=RELIANCE     # one company (any of the ~500)
+ *   npm run scrape:rotate                    # the stalest N companies (rotation)
+ *   npm run scrape:rotate -- --batch=30      # …with a custom batch size
  *
  * Logs in once, reuses the context across companies, pauses between page loads
  * to stay a polite scraper, and reports each company's outcome. A company that
  * fails to parse is reported loudly (company + statement + reason) and its file
  * is not written — no silent partial output. The process exits non-zero if any
  * company failed.
+ *
+ * Rotation mode scrapes only the stalest `--batch` companies (default 25) of the
+ * full registry, so coverage grows across all ~500 over many runs; see
+ * `rotation.ts`.
  */
 
 import { parseArgs } from 'node:util'
 import { launchBrowser, createLoggedInContext } from './browser'
-import { SCRAPER_COMPANIES, findScraperCompany, type ScraperCompany } from './companies'
+import { ALL_COMPANIES, findScraperCompany, type ScraperCompany } from './companies'
 import { readCredentials } from './env'
-import { writeCompanyFile, writePeerGroupFile } from './output'
+import { readFetchedAt, writeCompanyFile, writePeerGroupFile } from './output'
 import { PEER_GROUP_CONFIG } from './peerGroups'
 import { assemblePeerGroups, type ScrapedPeer } from './peers'
+import { selectStalest } from './rotation'
 import { scrapeCompany } from './scrape'
 
 /** Polite pause between company page loads. */
 const DELAY_MS = 2_500
 
+/** Default rotation batch size — see the task's slow, safe coverage pace. */
+const DEFAULT_BATCH = 25
+
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 function usage(message: string): never {
   console.error(message)
-  console.error('Usage: npm run scrape -- --company=<SYMBOL>   |   npm run scrape:all')
-  console.error(`Symbols: ${SCRAPER_COMPANIES.map((c) => c.screenerSymbol).join(', ')}`)
+  console.error('Usage: npm run scrape -- --company=<SYMBOL>   |   npm run scrape:rotate [-- --batch=<N>]')
   process.exit(1)
 }
 
-function resolveTargets(): readonly ScraperCompany[] {
+function parseBatch(raw: string | undefined): number {
+  if (raw === undefined) return DEFAULT_BATCH
+  const value = Number(raw)
+  if (!Number.isInteger(value) || value <= 0) usage(`Invalid --batch: ${raw} (want a positive integer)`)
+  return value
+}
+
+async function resolveTargets(): Promise<readonly ScraperCompany[]> {
   const { values } = parseArgs({
-    options: { company: { type: 'string' }, all: { type: 'boolean' } },
+    options: {
+      company: { type: 'string' },
+      rotate: { type: 'boolean' },
+      batch: { type: 'string' },
+    },
     allowPositionals: false,
   })
 
-  if (values.all) return SCRAPER_COMPANIES
   if (values.company) {
     const company = findScraperCompany(values.company)
     if (!company) usage(`Unknown company: ${values.company}`)
     return [company]
   }
-  usage('Specify --company=<SYMBOL> or --all.')
+
+  if (values.rotate) {
+    const batch = parseBatch(values.batch)
+    const targets = await selectStalest(ALL_COMPANIES, batch, readFetchedAt)
+    console.log(
+      `Rotation: selected the ${targets.length} stalest of ${ALL_COMPANIES.length} companies ` +
+        `(batch ${batch}) — ${targets.map((c) => c.screenerSymbol).join(', ')}`,
+    )
+    return targets
+  }
+
+  usage('Specify --company=<SYMBOL> or --rotate [--batch=<N>].')
 }
 
 async function main(): Promise<void> {
-  const targets = resolveTargets()
+  const targets = await resolveTargets()
   const credentials = readCredentials() // Throws loudly if unset.
 
   const browser = await launchBrowser()
@@ -62,13 +91,14 @@ async function main(): Promise<void> {
       const company = targets[i]
       console.log(`→ ${company.screenerSymbol} (${company.name})`)
       try {
-        const { financials, peers, peerError } = await scrapeCompany(context, company)
+        const { financials, peers, peerError, peerColumns } = await scrapeCompany(context, company)
         const file = await writeCompanyFile(company.screenerSymbol, financials)
         console.log(
           `✓ ${company.screenerSymbol}: ${financials.statementLayout} layout, ` +
             `${financials.source.basis} basis, ${peers.length} peers → ${file}`,
         )
         scrapedPeersByCompany.set(company.companyId, peers)
+        if (peerColumns) console.log(`  · ${company.screenerSymbol} peers: ${peerColumns}`)
         if (peerError) console.error(`  ! ${peerError}`)
       } catch (error) {
         failures.push(company.screenerSymbol)
@@ -77,8 +107,12 @@ async function main(): Promise<void> {
       if (i < targets.length - 1) await sleep(DELAY_MS)
     }
 
-    // Assemble the peer groups whose members were scraped this run.
-    const trackedSymbols = new Set(SCRAPER_COMPANIES.map((c) => c.screenerSymbol.toUpperCase()))
+    // Assemble the peer groups whose members were scraped this run. Tracked
+    // companies (the ones we hold full statements for) are the peer-group
+    // members themselves, and are excluded from the carried peer lists.
+    const trackedSymbols = new Set(
+      PEER_GROUP_CONFIG.flatMap((group) => group.memberCompanyIds.map((id) => id.toUpperCase())),
+    )
     const groups = assemblePeerGroups(PEER_GROUP_CONFIG, scrapedPeersByCompany, trackedSymbols)
     for (const group of groups) {
       const file = await writePeerGroupFile(group)

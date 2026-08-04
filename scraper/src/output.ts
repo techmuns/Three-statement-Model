@@ -6,7 +6,7 @@
  * where it is invoked from.
  */
 
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { CompanyFinancials } from '../../src/types/financials'
@@ -25,6 +25,23 @@ export async function writeCompanyFile(
   const file = path.join(dataDir, `${symbol}.json`)
   await writeFile(file, `${JSON.stringify(financials, null, 2)}\n`, 'utf8')
   return path.relative(process.cwd(), file)
+}
+
+/**
+ * The `source.fetchedAt` ISO timestamp of a company's existing data file, or
+ * `null` when it has never been scraped (no file) or the file is unreadable /
+ * malformed. Used by the rotation selector to rank companies by staleness — a
+ * `null` result is treated as maximally stale, so both never-scraped and broken
+ * files get re-scraped first.
+ */
+export async function readFetchedAt(symbol: string): Promise<string | null> {
+  try {
+    const raw = await readFile(path.join(dataDir, `${symbol}.json`), 'utf8')
+    const parsed = JSON.parse(raw) as { source?: { fetchedAt?: unknown } }
+    return typeof parsed.source?.fetchedAt === 'string' ? parsed.source.fetchedAt : null
+  } catch {
+    return null
+  }
 }
 
 /** Write one peer group to data/peer-groups/<id>.json; returns its path. */

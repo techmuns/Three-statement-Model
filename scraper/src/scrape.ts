@@ -26,6 +26,8 @@ export interface CompanyScrape {
   readonly peers: readonly ScrapedPeer[]
   /** Set when the peer table couldn't be read; the financials are unaffected. */
   readonly peerError: string | null
+  /** What the peer table actually exposed (headers + mapped KPIs), for logging. */
+  readonly peerColumns: string | null
 }
 
 function companyUrl(symbol: string): string {
@@ -69,6 +71,7 @@ export async function scrapeCompany(
     // financials, which are the primary deliverable.
     let peers: readonly ScrapedPeer[] = []
     let peerError: string | null = null
+    let peerColumns: string | null = null
     await page
       .waitForSelector('#peers table.data-table', { timeout: 20_000 })
       .catch(() => undefined)
@@ -76,14 +79,17 @@ export async function scrapeCompany(
     if (!rawPeers) {
       peerError = `${company.screenerSymbol} · peers: table not found or not loaded on page`
     } else {
-      try {
-        peers = mapPeersTable(rawPeers, company.screenerSymbol)
-      } catch (error) {
-        peerError = (error as Error).message
-      }
+      // Column detection never throws: whatever KPIs the table exposes are
+      // mapped, the rest are left null. Record what was found for the log.
+      const mapped = mapPeersTable(rawPeers)
+      peers = mapped.peers
+      peerColumns =
+        `${mapped.peers.length} peers · headers [${mapped.headers.join(' | ')}] · ` +
+        `market-cap ${mapped.hasMarketCap ? 'yes' : 'no'} · ` +
+        `KPIs mapped [${mapped.mappedKpis.join(', ') || 'none'}]`
     }
 
-    return { financials, peers, peerError }
+    return { financials, peers, peerError, peerColumns }
   } finally {
     await page.close()
   }

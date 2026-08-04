@@ -6,7 +6,7 @@
   "description": "Screener.in scraper that emits CompanyFinancials JSON for the Vittara dashboard. Backend-only; not wired into the app.",
   "scripts": {
     "scrape": "tsx src/cli.ts",
-    "scrape:all": "tsx src/cli.ts --all",
+    "scrape:rotate": "tsx src/cli.ts --rotate",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

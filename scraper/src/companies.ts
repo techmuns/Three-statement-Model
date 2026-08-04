@@ -7,6 +7,10 @@
  * (`https://www.screener.in/company/<symbol>/`), the `data/<symbol>.json`
  * output stem, and `CompanyFinancials.companyId` — so `companyId` and
  * `screenerSymbol` are the same value here.
+ *
+ * A batch run no longer scrapes a fixed subset; it scrapes the stalest N of
+ * `ALL_COMPANIES` (see `rotation.ts`), so coverage grows across the whole
+ * registry over many runs. `--company <SYMBOL>` still resolves any single one.
  */
 
 import registryDoc from '../../company-registry.json'
@@ -27,39 +31,17 @@ interface RegistryEntry {
 }
 
 const REGISTRY = (registryDoc as { companies: readonly RegistryEntry[] }).companies
-const REGISTRY_BY_SYMBOL = new Map(REGISTRY.map((entry) => [entry.symbol, entry]))
 
 function toScraperCompany(entry: RegistryEntry): ScraperCompany {
   return { companyId: entry.symbol, screenerSymbol: entry.symbol, name: entry.name }
 }
 
-/**
- * The subset a batch run (`--all`, and so the scheduled GitHub Action) actually
- * scrapes today.
- *
- * The registry is the full ~500-company universe, but scraping all of them is a
- * separate scaling phase — it needs batching, rate-limiting and a bigger CI
- * time budget than the current workflow allows. Until then, `--all` stays
- * bounded to this proven set so the scheduled job keeps finishing quickly.
- * `--company <SYMBOL>` still resolves against the whole registry, so any of the
- * 500 can be scraped on demand.
- */
-export const ACTIVE_SYMBOLS: readonly string[] = [
-  'RELIANCE',
-  'TCS',
-  'HDFCBANK',
-  'INFY',
-  'HINDUNILVR',
-]
+/** The full ~500-company registry, in registry order. */
+export const ALL_COMPANIES: readonly ScraperCompany[] = REGISTRY.map(toScraperCompany)
 
-export const SCRAPER_COMPANIES: readonly ScraperCompany[] = ACTIVE_SYMBOLS.map((symbol) =>
-  REGISTRY_BY_SYMBOL.get(symbol),
-)
-  .filter((entry): entry is RegistryEntry => entry !== undefined)
-  .map(toScraperCompany)
+const BY_SYMBOL = new Map(ALL_COMPANIES.map((company) => [company.screenerSymbol, company]))
 
 /** Resolve a `--company` argument (any registry symbol) to a company. */
 export function findScraperCompany(query: string): ScraperCompany | undefined {
-  const entry = REGISTRY_BY_SYMBOL.get(query.trim().toUpperCase())
-  return entry ? toScraperCompany(entry) : undefined
+  return BY_SYMBOL.get(query.trim().toUpperCase())
 }

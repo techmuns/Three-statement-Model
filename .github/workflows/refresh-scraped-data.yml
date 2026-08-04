@@ -44,7 +44,10 @@ jobs:
         working-directory: scraper
         run: npx playwright install --with-deps chromium
 
-      # Scrapes financials + peers for all companies. The scraper writes each
+      # Rotation scrape: each run refreshes the stalest ~25 companies of the
+      # ~500-company registry (never-scraped first), so full coverage builds up
+      # over many runs — at ~25/run x 3 runs/week, roughly 6-7 weeks — and then
+      # naturally recycles to whatever is oldest. The scraper writes each
       # company's file as it succeeds and exits non-zero only to signal that some
       # company failed — successful output is already on disk either way, so we
       # let the job continue and commit whatever was produced.
@@ -55,7 +58,7 @@ jobs:
         env:
           SCREENER_EMAIL: ${{ secrets.SCREENER_EMAIL }}
           SCREENER_PASSWORD: ${{ secrets.SCREENER_PASSWORD }}
-        run: npm run scrape:all
+        run: npm run scrape:rotate
 
       - name: Commit and push refreshed data
         run: |
