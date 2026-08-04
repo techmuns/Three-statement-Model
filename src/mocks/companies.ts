@@ -5,7 +5,8 @@
  * the ~500 Nifty 500 constituents; the scraper reads the same file. This module
  * adapts each registry entry into the `MockCompany` shape the UI renders and
  * derives the presentational bits (monogram, colour slot) that the registry
- * deliberately does not store.
+ * deliberately does not store. The universe shown is scoped to `ACTIVE_INDEX`
+ * (NIFTY 50 for now) via a single filter — see below.
  *
  * The `id` is the NSE trading symbol — the canonical company identifier used
  * everywhere: it is the join key to `CompanyFinancials.companyId`, the Screener
@@ -35,9 +36,21 @@ interface RegistryEntry {
   symbol: string
   name: string
   sector: string
+  /** NSE indices this company belongs to, e.g. ["NIFTY 500", "NIFTY 50"]. */
+  indices: readonly string[]
 }
 
-const REGISTRY = (registryDoc as { companies: readonly RegistryEntry[] }).companies
+/**
+ * The index the switcher is scoped to. Narrowed to NIFTY 50 for now, for a
+ * dense, well-covered universe; widen it back to `'NIFTY 500'` (every entry
+ * carries that tag) to show the full list again — this one constant is the
+ * whole switch, applied as a single filter below.
+ */
+const ACTIVE_INDEX = 'NIFTY 50'
+
+const REGISTRY = (registryDoc as { companies: readonly RegistryEntry[] }).companies.filter(
+  (entry) => entry.indices.includes(ACTIVE_INDEX),
+)
 
 /** First letters of the first two words, or the first two letters of one word. */
 function monogramOf(name: string): string {

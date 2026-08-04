@@ -18,7 +18,7 @@
 
 import { parseArgs } from 'node:util'
 import { launchBrowser, createLoggedInContext } from './browser'
-import { ALL_COMPANIES, findScraperCompany, type ScraperCompany } from './companies'
+import { ROTATION_COMPANIES, findScraperCompany, type ScraperCompany } from './companies'
 import { readCredentials } from './env'
 import { readFetchedAt, writeCompanyFile, writePeerGroupFile } from './output'
 import { PEER_GROUP_CONFIG } from './peerGroups'
@@ -65,9 +65,9 @@ async function resolveTargets(): Promise<readonly ScraperCompany[]> {
 
   if (values.rotate) {
     const batch = parseBatch(values.batch)
-    const targets = await selectStalest(ALL_COMPANIES, batch, readFetchedAt)
+    const targets = await selectStalest(ROTATION_COMPANIES, batch, readFetchedAt)
     console.log(
-      `Rotation: selected the ${targets.length} stalest of ${ALL_COMPANIES.length} companies ` +
+      `Rotation: selected the ${targets.length} stalest of ${ROTATION_COMPANIES.length} active companies ` +
         `(batch ${batch}) — ${targets.map((c) => c.screenerSymbol).join(', ')}`,
     )
     return targets
