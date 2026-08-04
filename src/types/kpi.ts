@@ -51,11 +51,46 @@ export interface KpiTrendPoint {
 export interface KpiPeerStats {
   readonly average: Reported<number>
   readonly median: Reported<number>
+  /** Lowest value across the same peer set used for `average`/`median`.
+   * `null` when the peer set has no value for this KPI. */
+  readonly low: Reported<number>
+  /** Highest value across the same peer set. `null` on an empty set. */
+  readonly high: Reported<number>
   /** Best-to-worst position of the company within peers + itself, 1 = best.
    * Direction-aware: for `lower-is-better`, the smallest value ranks 1. */
   readonly rank: Reported<number>
   /** Number of companies the rank is out of, the company included. */
   readonly rankedOutOf: number
+}
+
+/**
+ * How a KPI's latest value sits against the company's **own** recent history —
+ * a self-comparison, distinct from the peer comparison in `KpiPeerStats`.
+ * Computed from the trailing annual `trend`.
+ */
+export interface KpiHistoryStat {
+  readonly kpiId: KpiId
+  /** Latest value — the same as `KpiValue.value`, carried here for convenience. */
+  readonly current: Reported<number>
+  /** Mean of the trailing values held, `null`-values excluded. */
+  readonly periodAverage: Reported<number>
+  /** The best of the held periods — direction-aware (the max for a
+   * `higher-is-better` KPI, the min for `lower-is-better`) — or `null` when no
+   * period has a value. */
+  readonly best: { readonly periodId: string; readonly value: number } | null
+  /** `current − periodAverage`; `null` when either side is missing. */
+  readonly deltaVsAverage: Reported<number>
+  /** Whether the latest value is better than, worse than, or in line with the
+   * company's own average — direction-aware; `null` when not computable. */
+  readonly standing: 'better' | 'worse' | 'in-line' | null
+}
+
+/** A company's per-KPI historical self-comparison. */
+export interface CompanyKpiHistory {
+  readonly companyId: string
+  /** Period the `current` values are as of. Matches `PeriodRef.id`. */
+  readonly asOfPeriodId: string
+  readonly stats: readonly KpiHistoryStat[]
 }
 
 export interface KpiValue {
