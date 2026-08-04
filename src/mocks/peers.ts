@@ -45,7 +45,7 @@ export const PEER_GROUPS: readonly PeerGroup[] = [
     id: 'it-services',
     label: 'IT Services',
     sector: 'IT Services',
-    memberCompanyIds: ['tata-consultancy-services', 'infosys'],
+    memberCompanyIds: ['TCS', 'INFY'],
     peers: [
       //                                              growth  OPM   NPM   ROE   ROCE  D/E
       peer('hcl-technologies', 'HCL Technologies', 'HCLTC', 468200, [8.4, 22.1, 14.8, 24.5, 33.8, 0.08]),
@@ -58,7 +58,7 @@ export const PEER_GROUPS: readonly PeerGroup[] = [
     id: 'private-banks',
     label: 'Private Sector Banks',
     sector: 'Private Sector Bank',
-    memberCompanyIds: ['hdfc-bank'],
+    memberCompanyIds: ['HDFCBANK'],
     peers: [
       peer('icici-bank', 'ICICI Bank', 'ICICB', 1024600, [14.2, 24.8, 22.4, 17.8, 7.2, 6.8]),
       peer('axis-bank', 'Axis Bank', 'AXISB', 372800, [11.6, 21.4, 18.2, 16.4, 6.8, 7.4]),
@@ -70,7 +70,7 @@ export const PEER_GROUPS: readonly PeerGroup[] = [
     id: 'fmcg',
     label: 'FMCG',
     sector: 'FMCG',
-    memberCompanyIds: ['hindustan-unilever'],
+    memberCompanyIds: ['HINDUNILVR'],
     peers: [
       peer('itc', 'ITC', 'ITCLD', 542700, [7.2, 33.8, 25.4, 28.4, 36.2, 0.01]),
       peer('nestle-india', 'Nestlé India', 'NESTI', 218400, [5.8, 23.4, 15.9, 82.6, 108.4, 0.04]),
@@ -82,7 +82,7 @@ export const PEER_GROUPS: readonly PeerGroup[] = [
     id: 'oil-gas-energy',
     label: 'Oil, Gas & Energy',
     sector: 'Oil, Gas & Consumer',
-    memberCompanyIds: ['reliance-industries'],
+    memberCompanyIds: ['RELIANCE'],
     peers: [
       peer('ongc', 'Oil & Natural Gas Corporation', 'ONGCO', 312600, [3.4, 24.6, 8.1, 13.2, 16.8, 0.42]),
       peer('indian-oil', 'Indian Oil Corporation', 'IOCLD', 204800, [2.8, 6.4, 2.6, 9.4, 11.2, 0.86]),

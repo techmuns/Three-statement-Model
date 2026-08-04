@@ -18,9 +18,15 @@ export interface CompanySwitcherProps {
  * Down/Up move the active option (wrapping), Home/End jump to the ends, Enter
  * commits, Escape closes and restores the committed company, Tab closes.
  *
- * Filtering is a substring match over the hardcoded list. When the real company
- * universe arrives this becomes a debounced query — the markup does not change.
+ * Filtering is a case-insensitive substring match over the ~500-company
+ * registry (name, ticker and sector). A plain `Array.filter` over 500 short
+ * strings is sub-millisecond, so the query stays synchronous; what does not
+ * scale is painting 500 options, so the rendered list is capped at
+ * `MAX_VISIBLE` and a footer notes when matches were withheld — typing narrows
+ * to them. Keyboard navigation is bounded to the visible slice.
  */
+const MAX_VISIBLE = 50
+
 export function CompanySwitcher({ company, onSelect }: CompanySwitcherProps) {
   const [open, setOpen] = useState(false)
   const [query, setQuery] = useState('')
@@ -34,7 +40,11 @@ export function CompanySwitcher({ company, onSelect }: CompanySwitcherProps) {
   const listboxId = `${baseId}-listbox`
   const optionId = (id: string) => `${baseId}-option-${id}`
 
-  const matches = useMemo(() => (open ? searchCompanies(query) : MOCK_COMPANIES), [open, query])
+  const allMatches = useMemo(() => (open ? searchCompanies(query) : MOCK_COMPANIES), [open, query])
+  // Only the first slice is rendered and navigable; the rest are reachable by
+  // narrowing the query. Keeps the option DOM small at 500 companies.
+  const matches = useMemo(() => allMatches.slice(0, MAX_VISIBLE), [allMatches])
+  const withheldCount = allMatches.length - matches.length
 
   const close = useCallback(() => {
     setOpen(false)
@@ -63,8 +73,10 @@ export function CompanySwitcher({ company, onSelect }: CompanySwitcherProps) {
   const openWith = (nextQuery = '') => {
     setQuery(nextQuery)
     setOpen(true)
+    // Highlight the committed company when it falls within the visible slice;
+    // otherwise start at the top (the clamp effect is the backstop).
     const index = MOCK_COMPANIES.findIndex((item) => item.id === company.id)
-    setActiveIndex(nextQuery ? 0 : Math.max(index, 0))
+    setActiveIndex(!nextQuery && index >= 0 && index < MAX_VISIBLE ? index : 0)
   }
 
   const commit = (selected: MockCompany | undefined) => {
@@ -235,6 +247,16 @@ export function CompanySwitcher({ company, onSelect }: CompanySwitcherProps) {
               </li>
             )
           })}
+
+          {withheldCount > 0 && (
+            <li
+              role="presentation"
+              className="border-t border-line-hairline px-3 py-2 text-center text-caption text-ink-subtle"
+            >
+              Showing {matches.length} of {allMatches.length.toLocaleString('en-IN')} — keep typing
+              to narrow.
+            </li>
+          )}
         </ul>
       )}
     </div>

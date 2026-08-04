@@ -207,8 +207,8 @@ export function ProfitLossPanel({ company, period }: ProfitLossPanelProps) {
       <WidgetGrid>
         <WidgetCard title="Profit & loss" subtitle={company.name}>
           <WidgetEmptyState
-            message="No financials for this company"
-            hint="Nothing has been ingested for it yet."
+            message="Awaiting data"
+            hint={`${company.name} hasn't been scraped yet — figures appear here once the scraper has run for it.`}
           />
         </WidgetCard>
       </WidgetGrid>

@@ -313,7 +313,7 @@ function buildFinancials(input: CompanyInput): CompanyFinancials {
 /* -------------------------------------------------------------------------- */
 
 const RELIANCE: CompanyInput = {
-  companyId: 'reliance-industries',
+  companyId: 'RELIANCE',
   statementLayout: 'standard',
   sharesOutstandingCrore: 1353,
   quarterlyProfitLoss: [
@@ -355,7 +355,7 @@ const RELIANCE: CompanyInput = {
 }
 
 const TCS: CompanyInput = {
-  companyId: 'tata-consultancy-services',
+  companyId: 'TCS',
   statementLayout: 'standard',
   sharesOutstandingCrore: 362,
   quarterlyProfitLoss: [
@@ -397,7 +397,7 @@ const TCS: CompanyInput = {
 }
 
 const HDFC_BANK: CompanyInput = {
-  companyId: 'hdfc-bank',
+  companyId: 'HDFCBANK',
   statementLayout: 'banking',
   sharesOutstandingCrore: 765,
   quarterlyProfitLoss: [
@@ -439,7 +439,7 @@ const HDFC_BANK: CompanyInput = {
 }
 
 const INFOSYS: CompanyInput = {
-  companyId: 'infosys',
+  companyId: 'INFY',
   statementLayout: 'standard',
   sharesOutstandingCrore: 415,
   quarterlyProfitLoss: [
@@ -481,7 +481,7 @@ const INFOSYS: CompanyInput = {
 }
 
 const HINDUSTAN_UNILEVER: CompanyInput = {
-  companyId: 'hindustan-unilever',
+  companyId: 'HINDUNILVR',
   statementLayout: 'standard',
   sharesOutstandingCrore: 235,
   quarterlyProfitLoss: [

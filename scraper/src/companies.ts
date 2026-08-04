@@ -1,16 +1,18 @@
 /**
- * The five tracked companies mapped to their Screener.in URL symbols.
+ * The company universe the scraper walks, sourced from the shared registry.
  *
- * `companyId` is the join key used everywhere in the app — it matches
- * `MockCompany.id` in `src/mocks/companies.ts` and `CompanyFinancials.companyId`
- * in the schema. The symbols are the slugs Screener uses in its company URLs
- * (`https://www.screener.in/company/<symbol>/`). Kept as a hardcoded table
- * rather than imported from the frontend so the scraper has no dependency on
- * `src/`.
+ * `company-registry.json` at the repo root is the single source of truth shared
+ * with the frontend, so the two can never drift. Each entry's NSE `symbol` is
+ * the canonical id: it is the Screener slug in the company URL
+ * (`https://www.screener.in/company/<symbol>/`), the `data/<symbol>.json`
+ * output stem, and `CompanyFinancials.companyId` — so `companyId` and
+ * `screenerSymbol` are the same value here.
  */
 
+import registryDoc from '../../company-registry.json'
+
 export interface ScraperCompany {
-  /** Joins to `MockCompany.id` and `CompanyFinancials.companyId`. */
+  /** Joins to `CompanyFinancials.companyId` — the NSE symbol. */
   readonly companyId: string
   /** Screener.in URL symbol, e.g. `RELIANCE`. Also the output filename stem. */
   readonly screenerSymbol: string
@@ -18,19 +20,46 @@ export interface ScraperCompany {
   readonly name: string
 }
 
-export const SCRAPER_COMPANIES: readonly ScraperCompany[] = [
-  { companyId: 'reliance-industries', screenerSymbol: 'RELIANCE', name: 'Reliance Industries' },
-  { companyId: 'tata-consultancy-services', screenerSymbol: 'TCS', name: 'Tata Consultancy Services' },
-  { companyId: 'hdfc-bank', screenerSymbol: 'HDFCBANK', name: 'HDFC Bank' },
-  { companyId: 'infosys', screenerSymbol: 'INFY', name: 'Infosys' },
-  { companyId: 'hindustan-unilever', screenerSymbol: 'HINDUNILVR', name: 'Hindustan Unilever' },
+interface RegistryEntry {
+  symbol: string
+  name: string
+  sector: string
+}
+
+const REGISTRY = (registryDoc as { companies: readonly RegistryEntry[] }).companies
+const REGISTRY_BY_SYMBOL = new Map(REGISTRY.map((entry) => [entry.symbol, entry]))
+
+function toScraperCompany(entry: RegistryEntry): ScraperCompany {
+  return { companyId: entry.symbol, screenerSymbol: entry.symbol, name: entry.name }
+}
+
+/**
+ * The subset a batch run (`--all`, and so the scheduled GitHub Action) actually
+ * scrapes today.
+ *
+ * The registry is the full ~500-company universe, but scraping all of them is a
+ * separate scaling phase — it needs batching, rate-limiting and a bigger CI
+ * time budget than the current workflow allows. Until then, `--all` stays
+ * bounded to this proven set so the scheduled job keeps finishing quickly.
+ * `--company <SYMBOL>` still resolves against the whole registry, so any of the
+ * 500 can be scraped on demand.
+ */
+export const ACTIVE_SYMBOLS: readonly string[] = [
+  'RELIANCE',
+  'TCS',
+  'HDFCBANK',
+  'INFY',
+  'HINDUNILVR',
 ]
 
-/** Resolve a `--company` argument (a Screener symbol or a companyId) to a company. */
+export const SCRAPER_COMPANIES: readonly ScraperCompany[] = ACTIVE_SYMBOLS.map((symbol) =>
+  REGISTRY_BY_SYMBOL.get(symbol),
+)
+  .filter((entry): entry is RegistryEntry => entry !== undefined)
+  .map(toScraperCompany)
+
+/** Resolve a `--company` argument (any registry symbol) to a company. */
 export function findScraperCompany(query: string): ScraperCompany | undefined {
-  const symbol = query.trim().toUpperCase()
-  const id = query.trim().toLowerCase()
-  return SCRAPER_COMPANIES.find(
-    (company) => company.screenerSymbol === symbol || company.companyId === id,
-  )
+  const entry = REGISTRY_BY_SYMBOL.get(query.trim().toUpperCase())
+  return entry ? toScraperCompany(entry) : undefined
 }

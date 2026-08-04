@@ -44,8 +44,8 @@ export function KpiOverviewPanel({ company }: KpiOverviewPanelProps) {
       <WidgetGrid>
         <WidgetCard title="KPI overview" subtitle={company.name}>
           <WidgetEmptyState
-            message="No KPIs for this company"
-            hint="Nothing has been ingested for it yet."
+            message="Awaiting data"
+            hint={`${company.name} hasn't been scraped yet — KPIs appear here once its statements have been scraped.`}
           />
         </WidgetCard>
       </WidgetGrid>
