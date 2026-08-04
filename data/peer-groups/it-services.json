@@ -1,0 +1,10 @@
+{
+  "id": "it-services",
+  "label": "IT Services",
+  "sector": "IT Services",
+  "memberCompanyIds": [
+    "tata-consultancy-services",
+    "infosys"
+  ],
+  "peers": []
+}

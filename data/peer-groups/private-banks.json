@@ -1,0 +1,9 @@
+{
+  "id": "private-banks",
+  "label": "Private Sector Banks",
+  "sector": "Private Sector Bank",
+  "memberCompanyIds": [
+    "hdfc-bank"
+  ],
+  "peers": []
+}

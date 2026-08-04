@@ -1,0 +1,9 @@
+{
+  "id": "fmcg",
+  "label": "FMCG",
+  "sector": "FMCG",
+  "memberCompanyIds": [
+    "hindustan-unilever"
+  ],
+  "peers": []
+}

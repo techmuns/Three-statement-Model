@@ -1,0 +1,9 @@
+{
+  "id": "oil-gas-energy",
+  "label": "Oil, Gas & Energy",
+  "sector": "Oil, Gas & Consumer",
+  "memberCompanyIds": [
+    "reliance-industries"
+  ],
+  "peers": []
+}
