@@ -21,3 +21,4 @@ dist/
 
 # Scraper output (generated per run by `npm run scrape`)
 /data/*.json
+/data/peer-groups/*.json

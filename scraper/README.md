@@ -1,10 +1,11 @@
 # Vittara scraper
 
 Backend-only Screener.in scraper. It logs in, reads each company's statement
-tables, and writes one `CompanyFinancials` JSON file per company to the
-repo-root `data/` directory. It is **not** wired into the dashboard — that is a
-later phase. Nothing here imports from or modifies `src/` (the frontend); it
-only reuses the schema **types** from `src/types/`.
+tables and its peer-comparison table, and writes one `CompanyFinancials` JSON
+per company to `data/` plus one `PeerGroup` JSON per sector to
+`data/peer-groups/`. It is **not** wired into the dashboard — that is a later
+phase. Nothing here imports from or modifies `src/` (the frontend); it only
+reuses the schema **types** from `src/types/`.
 
 ## Setup
 
@@ -36,8 +37,9 @@ npm run scrape -- --company=RELIANCE
 npm run scrape:all
 ```
 
-Output lands in `data/RELIANCE.json`, `data/TCS.json`, etc. Those JSON files are
-gitignored (generated per run); the `data/` directory itself is kept.
+Per-company financials land in `data/RELIANCE.json`, `data/TCS.json`, etc.;
+sector peer groups land in `data/peer-groups/<group-id>.json`. All are gitignored
+(generated per run); the directories themselves are kept.
 
 ## What it extracts
 
@@ -51,6 +53,7 @@ Per company, into the exact `src/types/financials.ts` shapes:
 | Cash Flow            | annual    | `#cash-flow`       | available (last 5 FYs)        |
 | Balance Sheet / Cash Flow | quarterly | —             | `unavailable` / `not-reported`|
 | Segment mix          | both      | —                  | `unavailable` / `not-scraped` |
+| Peer comparison      | snapshot  | `#peers` (AJAX)    | `data/peer-groups/<id>.json`  |
 
 - **Banking layout** (banks/NBFCs) is detected from the P&L rows (a `Financing
   Profit` row instead of `Operating Profit`) and mapped to
@@ -64,6 +67,24 @@ Per company, into the exact `src/types/financials.ts` shapes:
 - **Missing values** use the schema conventions: a blank cell (e.g. a lender's
   CWIP) is `null`, never `0`; an absent statement is `Availability` `unavailable`
   with a reason, never a fabricated block of zeros.
+
+### Peers
+
+Screener's peer-comparison table (loaded into `#peers` by a client-side request)
+carries these columns: **S.No, Name, CMP, P/E, Mar Cap, Div Yld, NP Qtr, Qtr
+Profit Var %, Sales Qtr, Qtr Sales Var %, ROCE %**. Of our six KPIs, only
+**ROCE** is present, so it is the only one carried; the other five
+(revenue growth, OPM %, NPM %, ROE, D/E) are `null` — never guessed or derived
+from the unrelated columns. Market cap maps to `PeerCompany.marketCapCrore`.
+
+A peer whose URL symbol matches one of our five tracked companies is a
+**derived** member (it has its own fully scraped statements) and is left out of
+the carried list; every other peer is **carried** with only its snapshot values.
+The table is a point-in-time snapshot, so carried peers hold no history — the
+`PeerCompany` shape has no trend field, so none is fabricated. Peers are grouped
+by sector into `PeerGroup`s and written to `data/peer-groups/<group-id>.json`.
+`scrape:all` produces complete groups; a single-company run produces its group
+from that company's peer table only.
 
 ## Fragile assumptions
 
@@ -84,6 +105,10 @@ any of these, the corresponding parser throws a loud, specific error:
   `Depreciation`, `Profit before tax`, `Net Profit`, `EPS in Rs`; balance-sheet
   and cash-flow lines by their Screener names.
 - **Basis marker**: the text `"Consolidated Figures…"` / `"Standalone Figures…"`.
+- **Peers table**: a `table.data-table` loaded into `#peers` /
+  `#peers-table-placeholder` after page load; row 0 is the header, each data row
+  links to `/company/<symbol>/`, and a `ROCE %` and a `Mar Cap` column are
+  present (a missing ROCE or market-cap column raises a loud error).
 - **Numbers**: comma-grouped, `%`-suffixed percents, `-` negatives; a blank or
   lone dash means not-reported.
 
@@ -99,10 +124,12 @@ scraper/
     ├── companies.ts        the 5 companies → Screener symbols
     ├── env.ts              credentials from env/.env (never logged)
     ├── browser.ts          launch + one reused logged-in context
-    ├── scrape.ts           navigate one company, gather sections
-    ├── extract.ts          DOM → raw header/row strings; basis detection
+    ├── scrape.ts           navigate one company, gather sections + peer table
+    ├── extract.ts          DOM → raw strings (statements + peers); basis detection
     ├── normalize.ts        raw tables → CompanyFinancials (layout, Availability)
+    ├── peerGroups.ts       the 4 sector cohorts → tracked members
+    ├── peers.ts            peer table → PeerGroup (ROCE-only, derived vs carried)
     ├── periods.ts          Screener column header → PeriodRef
     ├── numbers.ts          cell string → Reported<number>
-    └── output.ts           write data/<SYMBOL>.json
+    └── output.ts           write data/<SYMBOL>.json + data/peer-groups/<id>.json
 ```

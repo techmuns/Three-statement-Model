@@ -15,7 +15,9 @@ import { parseArgs } from 'node:util'
 import { launchBrowser, createLoggedInContext } from './browser'
 import { SCRAPER_COMPANIES, findScraperCompany, type ScraperCompany } from './companies'
 import { readCredentials } from './env'
-import { writeCompanyFile } from './output'
+import { writeCompanyFile, writePeerGroupFile } from './output'
+import { PEER_GROUP_CONFIG } from './peerGroups'
+import { assemblePeerGroups, type ScrapedPeer } from './peers'
 import { scrapeCompany } from './scrape'
 
 /** Polite pause between company page loads. */
@@ -51,6 +53,7 @@ async function main(): Promise<void> {
 
   const browser = await launchBrowser()
   const failures: string[] = []
+  const scrapedPeersByCompany = new Map<string, readonly ScrapedPeer[]>()
   try {
     const context = await createLoggedInContext(browser, credentials)
     console.log(`Logged in. Scraping ${targets.length} compan${targets.length === 1 ? 'y' : 'ies'}…`)
@@ -59,17 +62,27 @@ async function main(): Promise<void> {
       const company = targets[i]
       console.log(`→ ${company.screenerSymbol} (${company.name})`)
       try {
-        const financials = await scrapeCompany(context, company)
+        const { financials, peers, peerError } = await scrapeCompany(context, company)
         const file = await writeCompanyFile(company.screenerSymbol, financials)
         console.log(
           `✓ ${company.screenerSymbol}: ${financials.statementLayout} layout, ` +
-            `${financials.source.basis} basis → ${file}`,
+            `${financials.source.basis} basis, ${peers.length} peers → ${file}`,
         )
+        scrapedPeersByCompany.set(company.companyId, peers)
+        if (peerError) console.error(`  ! ${peerError}`)
       } catch (error) {
         failures.push(company.screenerSymbol)
         console.error(`✗ ${(error as Error).message}`)
       }
       if (i < targets.length - 1) await sleep(DELAY_MS)
+    }
+
+    // Assemble the peer groups whose members were scraped this run.
+    const trackedSymbols = new Set(SCRAPER_COMPANIES.map((c) => c.screenerSymbol.toUpperCase()))
+    const groups = assemblePeerGroups(PEER_GROUP_CONFIG, scrapedPeersByCompany, trackedSymbols)
+    for (const group of groups) {
+      const file = await writePeerGroupFile(group)
+      console.log(`✓ peer group ${group.id}: ${group.peers.length} carried peers → ${file}`)
     }
   } finally {
     await browser.close()

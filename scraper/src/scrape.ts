@@ -16,8 +16,17 @@
 import type { BrowserContext } from 'playwright'
 import type { CompanyFinancials } from '../../src/types/financials'
 import type { ScraperCompany } from './companies'
-import { detectBasis, extractSection, preparePage, SECTION_IDS } from './extract'
+import { detectBasis, extractPeersTable, extractSection, preparePage, SECTION_IDS } from './extract'
 import { normalizeCompany } from './normalize'
+import { mapPeersTable, type ScrapedPeer } from './peers'
+
+export interface CompanyScrape {
+  readonly financials: CompanyFinancials
+  /** Peers read from this company's Screener peer table, empty if unreadable. */
+  readonly peers: readonly ScrapedPeer[]
+  /** Set when the peer table couldn't be read; the financials are unaffected. */
+  readonly peerError: string | null
+}
 
 function companyUrl(symbol: string): string {
   return `https://www.screener.in/company/${symbol}/consolidated/`
@@ -26,7 +35,7 @@ function companyUrl(symbol: string): string {
 export async function scrapeCompany(
   context: BrowserContext,
   company: ScraperCompany,
-): Promise<CompanyFinancials> {
+): Promise<CompanyScrape> {
   const page = await context.newPage()
   try {
     await page.goto(companyUrl(company.screenerSymbol), {
@@ -47,13 +56,34 @@ export async function scrapeCompany(
       extractSection(page, SECTION_IDS.cashFlow),
     ])
 
-    return normalizeCompany(
+    const financials = normalizeCompany(
       company,
       { quarters, profitLoss, balanceSheet, cashFlow },
       basis,
       page.url(),
       new Date().toISOString(),
     )
+
+    // Peers load asynchronously into #peers-table-placeholder after the page
+    // settles. Best-effort: a peer-table miss is reported but never discards the
+    // financials, which are the primary deliverable.
+    let peers: readonly ScrapedPeer[] = []
+    let peerError: string | null = null
+    await page
+      .waitForSelector('#peers table.data-table', { timeout: 20_000 })
+      .catch(() => undefined)
+    const rawPeers = await extractPeersTable(page)
+    if (!rawPeers) {
+      peerError = `${company.screenerSymbol} · peers: table not found or not loaded on page`
+    } else {
+      try {
+        peers = mapPeersTable(rawPeers, company.screenerSymbol)
+      } catch (error) {
+        peerError = (error as Error).message
+      }
+    }
+
+    return { financials, peers, peerError }
   } finally {
     await page.close()
   }

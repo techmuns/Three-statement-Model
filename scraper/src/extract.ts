@@ -78,6 +78,63 @@ export function extractSection(page: Page, sectionId: string): Promise<RawTable 
   }, sectionId)
 }
 
+export interface RawPeerRow {
+  /** Screener URL symbol from the row's company link, e.g. `JIOFIN`. */
+  readonly symbol: string | null
+  readonly name: string
+  /** All `<td>` cells, aligned 1:1 with `RawPeerTable.headers`. */
+  readonly cells: readonly string[]
+}
+
+export interface RawPeerTable {
+  readonly headers: readonly string[]
+  readonly rows: readonly RawPeerRow[]
+}
+
+/**
+ * Extract the peer-comparison table, or `null` if it hasn't loaded.
+ *
+ * Screener injects this table into `#peers-table-placeholder` (inside the
+ * `#peers` section) via a client-side request after the page loads, so a caller
+ * must wait for it before reading. Unlike the statement tables it has no
+ * `thead`/`tbody`: the first `<tr>` (of `<th>`) is the header, and each data
+ * row's company link carries the peer's URL symbol.
+ *
+ * ── Fragile page-structure assumptions ──
+ *   • The table is a `table.data-table` under `#peers` /
+ *     `#peers-table-placeholder`.
+ *   • Row 0 holds the column headers; data rows link to `/company/<symbol>/`.
+ */
+export function extractPeersTable(page: Page): Promise<RawPeerTable | null> {
+  return page.evaluate(() => {
+    const section = document.getElementById('peers')
+    const table =
+      section?.querySelector('table.data-table') ??
+      document.querySelector('#peers-table-placeholder table')
+    if (!table) return null
+
+    const clean = (element: Element | null): string =>
+      (element?.textContent ?? '').replace(/\s+/g, ' ').trim()
+
+    const trs = Array.from(table.querySelectorAll('tr'))
+    if (trs.length < 2) return null
+
+    const headers = Array.from(trs[0].querySelectorAll('th, td')).map((cell) => clean(cell))
+    const rows = trs
+      .slice(1)
+      .filter((tr) => tr.querySelector('td'))
+      .map((tr) => {
+        const link = tr.querySelector('a[href*="/company/"]')
+        const href = link?.getAttribute('href') ?? ''
+        const match = href.match(/\/company\/([^/]+)/)
+        const cells = Array.from(tr.querySelectorAll('td')).map((td) => clean(td))
+        return { symbol: match ? match[1] : null, name: clean(link) || (cells[1] ?? ''), cells }
+      })
+
+    return { headers, rows }
+  })
+}
+
 /**
  * Which basis Screener served for this page. Reads the on-page
  * "Consolidated/Standalone Figures…" marker, falling back to the URL shape.
