@@ -2,24 +2,90 @@
 
 Multi-company financial analytics dashboard for Indian listed companies.
 
-**Phase 3 — the P&L tab reads real data.** The Financials → P&L sub-tab renders
-from the schema in `src/types/` and the mock dataset in `src/mocks/`, reacting
-to the company switcher and the period toggle. Balance Sheet, Cash Flow and KPI
-Overview still render phase-1 placeholder content from
-`src/mocks/placeholders.ts`. There is still no scraper, no API and no backend.
+Vittara presents the three financial statements — profit & loss, balance sheet
+and cash flow — plus a KPI overview and peer comparison, for five large Indian
+companies (Reliance, TCS, HDFC Bank, Infosys, Hindustan Unilever). Pick a
+company from the switcher, toggle between the last five quarters and the last
+five financial years, and move across the **Financials** and **KPI Overview**
+tabs. Every widget renders real numbers where they have been scraped and clearly
+labelled placeholder numbers otherwise — the data is never faked as real.
+
+The app is a static single-page React site. There is no backend at request time:
+financial data is scraped ahead of time into JSON files that Vite inlines at
+build, and Cloudflare serves the built assets from the edge.
+
+---
+
+## How data flows
+
+```
+Screener.in ──(Playwright scraper)──▶ data/<SYMBOL>.json ──(import.meta.glob at build)──▶ dashboard
+     │                                        │
+ login + read                          validated at load;
+ statement tables                      malformed → dropped
+                                              │
+                                    missing company → authored mock
+```
+
+1. **Scrape.** `scraper/` logs into Screener.in with Playwright and reads each
+   company's statement tables and peer table, writing one
+   `data/<SYMBOL>.json` per company (plus `data/peer-groups/*.json`).
+2. **Load at build.** `src/data/scrapedFinancials.ts` inlines whatever exists in
+   `data/*.json` via `import.meta.glob`. Each file self-identifies by its
+   `companyId`. Files that fail runtime validation
+   (`src/data/validateFinancials.ts`) are dropped with a warning.
+3. **Prefer real, fall back to mock — per company.** The data accessors
+   (`getCompanyFinancials`, `getCompanyDataSource` in `src/mocks/financials.ts`)
+   return the scraped record when one loaded and validated for that company, and
+   the authored mock otherwise. So a company with a good scrape shows live data
+   while the rest stay on mock, independently.
+4. **Say which it is.** The header badge reads **“Live · updated &lt;date&gt;”**
+   for a company backed by real data and **“Mock data”** when it fell back, and
+   each statement's footnote names its source (`source: screener, updated …`) or
+   admits it is placeholder. `data/` is empty in a fresh clone, so with no scrape
+   the whole app is honestly all-mock until the scheduled job (below) populates
+   it.
+
+`data/*.json` are generated artifacts, not hand-authored — `data/` tracks only
+`.gitkeep`, and the scheduled GitHub Action commits the refreshed files.
 
 ---
 
 ## Commands
 
 ```bash
-npm install          # once
+npm install          # once (installs the app; scraper deps install separately)
 
 npm run dev          # local dev server (Vite, http://localhost:5173)
 npm run build        # typecheck + production build into dist/
 npm run preview      # serve the production build locally
 npm run typecheck    # types only, no build
 ```
+
+### Running the scraper locally
+
+The scraper is a separate workspace under `scraper/` with its own dependencies.
+It needs Screener.in credentials, which are read **only** from the environment —
+never hardcoded, never logged.
+
+```bash
+cd scraper
+npm install
+npx playwright install --with-deps chromium   # once, to fetch the browser
+
+export SCREENER_EMAIL="you@example.com"
+export SCREENER_PASSWORD="…"
+
+# from the repo root:
+cd ..
+npm run scrape -- RELIANCE      # one company by Screener symbol
+npm run scrape:all              # all five companies + peer groups
+```
+
+Output lands in `data/` at the repo root. The scraper writes each company's file
+as it succeeds and exits non-zero only to signal that *some* company failed — so
+a single company's failure never discards the others' output. Rebuild
+(`npm run build`) to pick up refreshed files.
 
 ### Deploying to Cloudflare Workers
 
@@ -36,11 +102,6 @@ not exist, and the deploy serves a blank page.
 ```bash
 npx wrangler login          # once, per machine
 npm run cf:deploy           # build + wrangler deploy (wrangler also builds via the hook)
-```
-
-Other useful commands:
-
-```bash
 npm run cf:preview          # build + wrangler dev (Workers runtime, locally)
 npx wrangler deploy --dry-run   # validate config without deploying
 ```
@@ -50,95 +111,38 @@ npx wrangler deploy --dry-run   # validate config without deploying
 
 ---
 
-## Folder structure
+## Refreshing data on a schedule (GitHub Actions)
 
-```
-.
-├── index.html                  Vite entry document
-├── vite.config.ts              Vite + React + Tailwind v4 plugin, `@/` alias
-├── wrangler.jsonc              Cloudflare Workers static-assets config
-├── tsconfig.json               project references
-├── tsconfig.app.json           app compiler options (strict)
-├── tsconfig.node.json          build-tooling compiler options
-├── public/
-│   └── favicon.svg             inline gradient mark, no raster assets
-└── src/
-    ├── main.tsx                React root
-    ├── App.tsx                 all dashboard state lives here
-    ├── styles/
-    │   └── index.css           Tailwind import, base layer, shimmer keyframes
-    ├── theme/
-    │   ├── theme.css           ★ CANONICAL DESIGN TOKENS
-    │   └── tokens.ts           typed `var(--…)` accessors for JS/SVG consumers
-    ├── config/
-    │   ├── app.ts              app name, tagline
-    │   ├── navigation.ts       tab / sub-tab / period definitions and defaults
-    │   └── kpis.ts             the standard KPI definitions (label, unit, formula)
-    ├── types/                  ★ THE DATA SCHEMA
-    │   ├── common.ts           units, Reported<T>, Availability<T>, DataSource
-    │   ├── period.ts           PeriodRef, cadence, Indian FY conventions
-    │   ├── financials.ts       P&L / balance sheet / cash flow / segments
-    │   ├── kpi.ts              KPI definitions, values, peer stats
-    │   └── peers.ts            peer groups and comparison rows
-    ├── lib/
-    │   ├── cn.ts               conditional class-name join
-    │   ├── format.ts           en-IN number formatting; null → "—"
-    │   ├── statementLabels.ts  layout-aware P&L row labels (standard / banking)
-    │   └── statements.ts       period toggle → statement set selector
-    ├── hooks/
-    │   └── useOnClickOutside.ts
-    ├── mocks/
-    │   ├── companies.ts        5 hardcoded companies + search helper
-    │   ├── periods.ts          the 5 quarters and 5 years everything keys to
-    │   ├── financials.ts       authored inputs → derived statements
-    │   ├── peers.ts            4 sector cohorts with carried peer KPIs
-    │   ├── kpis.ts             KPIs derived from the statements + peer stats
-    │   └── placeholders.ts     static widget content for the shell (phase 1)
-    ├── components/
-    │   ├── layout/
-    │   │   ├── AppShell.tsx        skip link, page wash, main, footer
-    │   │   ├── AppHeader.tsx       sticky header: wordmark, switcher, tabs
-    │   │   ├── Wordmark.tsx        logo glyph + gradient wordmark
-    │   │   └── PageToolbar.tsx     view title + control strip
-    │   ├── nav/
-    │   │   ├── Tabs.tsx            ARIA tabs (primary + sub variants), TabPanel
-    │   │   └── SegmentedControl.tsx single-choice control on native radios
-    │   ├── company/
-    │   │   ├── CompanySwitcher.tsx searchable ARIA combobox
-    │   │   └── CompanyAvatar.tsx   monogram stand-in for a logo
-    │   ├── charts/
-    │   │   ├── RevenueMarginChart.tsx  revenue columns + margin line
-    │   │   ├── SegmentMixChart.tsx     100% stacked segment mix + legend
-    │   │   └── ChartTooltip.tsx        shared tooltip surface
-    │   └── widgets/
-    │       ├── WidgetCard.tsx      ★ the one card shell
-    │       ├── WidgetGrid.tsx      responsive auto-fill grid
-    │       ├── WidgetSkeleton.tsx  ★ shimmer loading state
-    │       ├── WidgetEmptyState.tsx ★ empty state
-    │       ├── StatTile.tsx        StatTile + StatList
-    │       ├── DeltaBadge.tsx      period-on-period change pill
-    │       ├── StatementTable.tsx  line items down, periods across
-    │       └── widgetState.ts      'ready' | 'loading' | 'empty'
-    └── views/
-        ├── financials/
-        │   ├── FinancialsView.tsx  period toggle + P&L / BS / CF sub-tabs
-        │   └── ProfitLossPanel.tsx ★ the P&L tab, rendered from real data
-        ├── kpi/
-        │   └── KpiOverviewView.tsx
-        └── shared/
-            └── WidgetDeck.tsx      maps widget definitions → cards + states
-```
+`.github/workflows/refresh-scraped-data.yml` runs the scraper and commits the
+refreshed `data/` back to `main`. **It does not deploy** — Cloudflare's own git
+integration redeploys when `main` changes.
+
+- **Schedule:** Mon/Wed/Fri at 21:00 UTC (≈ 02:30 IST, after the day's Indian
+  filings, at a quiet hour). Statements only change when companies report, so a
+  few times a week is plenty.
+- **Manual run:** `workflow_dispatch` — trigger it on demand from the repo's
+  **Actions → Refresh scraped data → Run workflow**.
+- **Credentials:** the workflow reads `SCREENER_EMAIL` and `SCREENER_PASSWORD`
+  from **repository secrets** (Settings → Secrets and variables → Actions). They
+  are never printed.
+- **Partial failure:** if one company fails, the others are still committed; the
+  run is then marked failed so GitHub notifies you that Screener's page
+  structure may have drifted or a login broke.
+- **Branch protection:** the job pushes directly to `main`. If `main` is
+  protected against the `github-actions` bot, the push is rejected and the run
+  fails with a message explaining the fix (allow the bot to bypass protection,
+  or switch the workflow to open a PR).
 
 ---
 
 ## Naming conventions
 
-Keep future phases consistent with these:
+Keep future work consistent with these:
 
 | Thing | Convention | Example |
 |---|---|---|
 | Component file | `PascalCase.tsx`, one main component per file, named export | `WidgetCard.tsx` |
-| Non-component module | `camelCase.ts` | `useOnClickOutside.ts`, `widgetState.ts` |
+| Non-component module | `camelCase.ts` | `useOnClickOutside.ts`, `provenance.ts` |
 | Directory | lowercase, plural for collections | `components/widgets/` |
 | Route-level screen | `<Name>View.tsx` in `views/<area>/` | `FinancialsView.tsx` |
 | Reusable card | `Widget*` prefix | `WidgetSkeleton`, `WidgetEmptyState` |
@@ -150,7 +154,115 @@ Keep future phases consistent with these:
 
 `App.tsx` is the only stateful component. Views and components are presentational
 and take state plus callbacks as props — so moving state to a router or a store
-later touches one file.
+later touches one file. Views read data only through the accessor functions in
+`src/mocks/` (`getCompanyFinancials`, `getCompanyKpis`, `getPeerComparison`,
+`getCompanyDataSource`), never from a data file directly — that indirection is
+where real-vs-mock fallback lives.
+
+---
+
+## Folder structure
+
+```
+.
+├── index.html                  Vite entry document
+├── vite.config.ts              Vite + React + Tailwind v4 plugin, `@/` alias
+├── wrangler.jsonc              Cloudflare Workers static-assets config
+├── tsconfig*.json              project references (app / node)
+├── .github/workflows/
+│   └── refresh-scraped-data.yml  scheduled + manual scrape → commit to main
+├── data/                       ★ SCRAPER OUTPUT (generated; only .gitkeep tracked)
+│   ├── <SYMBOL>.json           one company's financials
+│   └── peer-groups/<id>.json   one sector cohort's peer snapshot
+├── scraper/                    ★ standalone Playwright scraper (own package.json)
+│   └── src/
+│       ├── cli.ts              entry: `scrape <SYMBOL>` / `scrape --all`
+│       ├── browser.ts          launch + one shared logged-in context
+│       ├── env.ts              reads SCREENER_EMAIL / SCREENER_PASSWORD
+│       ├── companies.ts        the five companies + symbol lookup
+│       ├── scrape.ts           per-company orchestration (graceful failure)
+│       ├── extract.ts          reads Screener DOM sections into raw tables
+│       ├── normalize.ts        raw tables → CompanyFinancials (schema-shaped)
+│       ├── numbers.ts          Screener number/percent parsing
+│       ├── periods.ts          Screener column headers → PeriodRef
+│       ├── peers.ts            the #peers table → peer KPI snapshots
+│       ├── peerGroups.ts       assembles a PeerGroup per sector
+│       └── output.ts           writes data/*.json and data/peer-groups/*.json
+└── src/
+    ├── main.tsx                React root
+    ├── App.tsx                 all dashboard state lives here
+    ├── styles/index.css        Tailwind import, base layer, shimmer keyframes
+    ├── theme/
+    │   ├── theme.css           ★ CANONICAL DESIGN TOKENS
+    │   └── tokens.ts           typed `var(--…)` accessors for JS/SVG consumers
+    ├── config/
+    │   ├── app.ts              app name, tagline, data-stage label
+    │   ├── navigation.ts       tab / sub-tab / period definitions and defaults
+    │   └── kpis.ts             the standard KPI definitions (label, unit, formula)
+    ├── types/                  ★ THE DATA SCHEMA (the scraper's contract)
+    │   ├── common.ts           units, Reported<T>, Availability<T>, DataSource
+    │   ├── period.ts           PeriodRef, cadence, Indian FY conventions
+    │   ├── financials.ts       P&L / balance sheet / cash flow / segments
+    │   ├── kpi.ts              KPI definitions, values, peer stats
+    │   └── peers.ts            peer groups and comparison rows
+    ├── data/                   ★ real scraped data, loaded + validated at build
+    │   ├── scrapedFinancials.ts  import.meta.glob('/data/*.json'), by companyId
+    │   └── validateFinancials.ts runtime shape check; bad file → mock fallback
+    ├── lib/
+    │   ├── cn.ts               conditional class-name join
+    │   ├── format.ts           en-IN number formatting; null → "—"
+    │   ├── kpiFormat.ts        KPI value formatting by unit
+    │   ├── provenance.ts       source-aware badge/footnote strings (live vs mock)
+    │   ├── statementLabels.ts  layout-aware P&L row labels (standard / banking)
+    │   └── statements.ts       period toggle → statement set selector
+    ├── hooks/useOnClickOutside.ts
+    ├── mocks/                  authored fallback data + the data accessors
+    │   ├── companies.ts        5 companies + search helper
+    │   ├── periods.ts          the 5 quarters and 5 years everything keys to
+    │   ├── financials.ts       authored inputs → derived statements; ★ accessors
+    │   ├── peers.ts            4 sector cohorts with carried peer KPIs
+    │   └── kpis.ts             KPIs derived from the statements + peer stats
+    ├── components/
+    │   ├── layout/
+    │   │   ├── AppShell.tsx        skip link, page wash, main, footer
+    │   │   ├── AppHeader.tsx       sticky header: wordmark, badge, switcher, tabs
+    │   │   ├── DataSourceBadge.tsx live / mock badge for the selected company
+    │   │   ├── Wordmark.tsx        logo glyph + gradient wordmark
+    │   │   └── PageToolbar.tsx     view title + control strip
+    │   ├── nav/
+    │   │   ├── Tabs.tsx            ARIA tabs (primary + sub variants), TabPanel
+    │   │   └── SegmentedControl.tsx single-choice control on native radios
+    │   ├── company/
+    │   │   ├── CompanySwitcher.tsx searchable ARIA combobox
+    │   │   └── CompanyAvatar.tsx   monogram stand-in for a logo
+    │   ├── charts/
+    │   │   ├── RevenueMarginChart.tsx      revenue columns + margin line
+    │   │   ├── SegmentMixChart.tsx         stacked segment mix + legend
+    │   │   ├── BalanceSheetCompositionChart.tsx  funding mix, stacked
+    │   │   ├── CashFlowActivityChart.tsx   CFO / CFI / CFF by period
+    │   │   ├── KpiSparkline.tsx            per-KPI trend line
+    │   │   └── ChartTooltip.tsx            shared tooltip surface
+    │   └── widgets/
+    │       ├── WidgetCard.tsx      ★ the one card shell
+    │       ├── WidgetGrid.tsx      responsive auto-fill grid
+    │       ├── WidgetSkeleton.tsx  shimmer loading state (genuine loads)
+    │       ├── WidgetEmptyState.tsx honest empty / unavailable state
+    │       ├── AnnualOnlyNotice.tsx  “reported annually only” banner (BS/CF)
+    │       ├── StatTile.tsx        StatTile + StatList
+    │       ├── KpiStatTile.tsx     a KPI value + peer context + sparkline
+    │       ├── DeltaBadge.tsx      period-on-period change pill
+    │       ├── PeerComparisonTable.tsx  tracked vs carried peer rows
+    │       └── StatementTable.tsx  line items down, periods across
+    └── views/
+        ├── financials/
+        │   ├── FinancialsView.tsx   period toggle + P&L / BS / CF sub-tabs
+        │   ├── ProfitLossPanel.tsx  P&L tab
+        │   ├── BalanceSheetPanel.tsx balance-sheet tab
+        │   └── CashFlowPanel.tsx    cash-flow tab
+        └── kpi/
+            ├── KpiOverviewView.tsx  the KPI Overview tab
+            └── KpiOverviewPanel.tsx KPI groups + peer comparison
+```
 
 ---
 
@@ -187,7 +299,7 @@ and must never be reused as a series colour.
 
 ## Data schema
 
-`src/types/` is the contract the Screener.in scraper must satisfy. Three things
+`src/types/` is the contract the Screener.in scraper satisfies. Three things
 about the source shape it:
 
 **Money is ₹ crore, everywhere.** `Crore`, `Percent`, `Rupees` and `Ratio` are
@@ -208,7 +320,8 @@ Quarterly balance sheets and cash flow statements are `unavailable` with reason
 `not-reported` for all five companies, which is the real situation: SEBI LODR
 requires them half-yearly at the earliest and Screener publishes annual columns
 only. Quarterly segment disclosure is `not-scraped` — filed with the exchange,
-absent from the Screener company page.
+absent from the Screener company page. Both surface as an honest empty-state card
+rather than a blank.
 
 **Banks use a different P&L layout.** `CompanyFinancials.statementLayout` is
 `'standard'` or `'banking'`. The field names are identical either way; what
@@ -222,18 +335,20 @@ changes is the identity:
 | `opmPercent` | OPM % | Financing Margin % |
 | `profitBeforeTax` | `OP + otherIncome − interest − depreciation` | `OP + otherIncome − depreciation` |
 
-### Mock data
+### Mock data (the fallback)
 
 `mocks/financials.ts` authors *inputs* and derives everything implied by them,
 so the accounting identities hold by construction: the balance sheet balances,
 CFO is the sum of its parts, segment revenues sum exactly to sales, and the four
 FY26 quarters sum to the FY26 annual column. Scale and ratios are modelled on
 the real companies so derived KPIs land in the right neighbourhood — but every
-figure is invented and none should be quoted as fact.
+figure is invented and none should be quoted as fact. This is what a company
+falls back to when no valid scraped file exists for it.
 
 `mocks/kpis.ts` computes the KPI set from those statements rather than authoring
-it, so a KPI cannot contradict the statement it summarises. The real pipeline
-will do the same thing with real inputs.
+it, so a KPI cannot contradict the statement it summarises — and it does the same
+whether the statements came from a scrape or the mock, so KPIs are correct on
+real data too. Peer comparison remains carried from `mocks/peers.ts`.
 
 ## Charts
 
@@ -249,11 +364,12 @@ identical margins: revenue columns above, margin line below. It reads as a
 single figure, and each series keeps an honest scale.
 
 **Values are never gated behind a hover.** Each chart panel prints its latest
-value in the panel header, the axes carry the rest, and the P&L table on the
-same tab is the chart's table-view twin — every plotted number appears there as
-text. The segment legend carries each segment's name and latest value, which is
-what keeps series slots 3–5 readable: those sit below 3:1 contrast on white, so
-they must never be identified by hue alone.
+value in the panel header, the axes carry the rest, and the statement table on
+the same tab is the chart's table-view twin — every plotted number appears there
+as text. The segment mix has no table twin, so its `aria-label` enumerates every
+period's shares, not just the latest. The segment legend carries each segment's
+name and latest value, which keeps series slots 3–5 readable: those sit below
+3:1 contrast on white, so they must never be identified by hue alone.
 
 Axis ticks are computed rather than left to Recharts, which was producing scales
 like `30 · 26 · 24 · 22` — uneven steps that misstate the spacing between
@@ -264,25 +380,28 @@ so a single axis never mixes `1.0L` with `75,000`.
 
 - Tabs follow the WAI-ARIA tabs pattern with **manual activation**: roving
   tabindex, Left/Right with wraparound, Home/End, Enter or Space to select.
-  Manual rather than automatic because a later phase will fetch on tab change,
-  and arrowing across would fire every request in between.
 - The company switcher is an ARIA combobox with an attached listbox:
   `aria-expanded`, `aria-controls`, `aria-activedescendant`, Up/Down/Home/End,
   Enter to commit, Escape to cancel.
-- The period and preview controls are native radio groups in a `fieldset`, so
-  arrow-key behaviour and group semantics come from the platform.
+- The period control is a native radio group in a `fieldset`, so arrow-key
+  behaviour and group semantics come from the platform.
+- Statement and peer tables use real `<th>` with `scope`, so a screen reader
+  announces each figure with its row and column.
+- Charts expose a text equivalent via `role="img"` and an `aria-label` that
+  states the values, so nothing meaningful is reachable only by hovering.
 - One focus treatment, defined once in `styles/index.css`, on every interactive
   element.
-- Every text/background pair meets WCAG AA (≥ 4.5:1); the lightest ink token is
-  5.4:1 on the page surface.
+- Every text/background pair meets WCAG AA (≥ 4.5:1). Status colours used on
+  badges (live/mock, KPI up/down, tracked/carried) were checked on their own
+  soft backgrounds and pass AA.
 - Delta direction is carried by an arrow glyph and the sign in the label, not by
   colour alone.
 - `prefers-reduced-motion` stops the shimmer and all transitions.
 
 ---
 
-## Not in this phase
+## Not yet built
 
-Screener.in scraper, BSE fallback, GitHub Actions, API calls, routing, dark
-mode — and wiring the Balance Sheet, Cash Flow and KPI Overview tabs, which
-still render the phase-1 placeholders.
+BSE fallback for figures Screener omits, quarterly segment scraping, per-company
+routing/deep-links, and dark mode. Peer comparison is still carried from mock
+sector data rather than assembled from each peer's own scraped statements.

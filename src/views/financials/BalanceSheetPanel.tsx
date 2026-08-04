@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react'
 import type { PeriodViewId } from '@/config/navigation'
 import { BalanceSheetCompositionChart } from '@/components/charts/BalanceSheetCompositionChart'
 import { AnnualOnlyNotice } from '@/components/widgets/AnnualOnlyNotice'
@@ -7,9 +6,8 @@ import { StatList, type StatTileProps } from '@/components/widgets/StatTile'
 import { WidgetCard } from '@/components/widgets/WidgetCard'
 import { WidgetEmptyState } from '@/components/widgets/WidgetEmptyState'
 import { WidgetGrid } from '@/components/widgets/WidgetGrid'
-import { SkeletonBlock, WidgetSkeleton } from '@/components/widgets/WidgetSkeleton'
-import type { WidgetState } from '@/components/widgets/widgetState'
 import { formatCrore, formatSignedPercent, percentChange } from '@/lib/format'
+import { sourceFootnote } from '@/lib/provenance'
 import { basisLabel } from '@/lib/statementLabels'
 import type { MockCompany } from '@/mocks/companies'
 import { getCompanyFinancials } from '@/mocks/financials'
@@ -19,14 +17,6 @@ import { periodsOf, type BalanceSheetPeriod } from '@/types/financials'
 export interface BalanceSheetPanelProps {
   company: MockCompany
   period: PeriodViewId
-  /** Drives the shared preview-state control in the toolbar. */
-  state: WidgetState
-}
-
-/** Every card in this panel shares one empty message when the toggle forces it. */
-const PREVIEW_EMPTY = {
-  message: 'Nothing to show yet',
-  hint: 'The preview control above is set to the empty state.',
 }
 
 /**
@@ -106,7 +96,7 @@ function statementRows(periods: readonly BalanceSheetPeriod[]): StatementTableRo
  * annual-only notice on, it never switches the figures to (absent) quarterly
  * data. Deltas are therefore always year-on-year.
  */
-export function BalanceSheetPanel({ company, period, state }: BalanceSheetPanelProps) {
+export function BalanceSheetPanel({ company, period }: BalanceSheetPanelProps) {
   const financials = getCompanyFinancials(company.id)
 
   if (!financials) {
@@ -125,8 +115,6 @@ export function BalanceSheetPanel({ company, period, state }: BalanceSheetPanelP
   const annual = financials.annual
   const basis = basisLabel(financials.source.basis)
   const scope = 'Last 5 financial years'
-  const loading = state === 'loading'
-  const forcedEmpty = state === 'empty'
   const annualOnly = period === 'quarters'
 
   // Reuse the source's own reason for the notice, so its wording tracks the data.
@@ -145,41 +133,21 @@ export function BalanceSheetPanel({ company, period, state }: BalanceSheetPanelP
       ? (annual.balanceSheet.note ?? 'The source does not report it at this cadence.')
       : 'No periods have been ingested yet.'
 
-  /** Wraps a card body in the loading and forced-empty states. */
-  const body = (content: ReactNode, skeletonRows = 2): ReactNode => {
-    if (loading) return <WidgetSkeleton rows={skeletonRows} />
-    if (forcedEmpty) return <WidgetEmptyState {...PREVIEW_EMPTY} />
-    return content
-  }
-
   return (
     <>
-      {annualOnly && !forcedEmpty && (
-        <AnnualOnlyNotice statement="Balance sheet" note={quarterlyNote} />
-      )}
+      {annualOnly && <AnnualOnlyNotice statement="Balance sheet" note={quarterlyNote} />}
 
       <WidgetGrid>
         <WidgetCard title="Position" subtitle={`${scope} · ₹ crore`} badge={basis}>
-          {body(
-            stats ? (
-              <StatList stats={stats} />
-            ) : (
-              <WidgetEmptyState message="Balance sheet not available" hint={unavailableHint} />
-            ),
-            4,
+          {stats ? (
+            <StatList stats={stats} />
+          ) : (
+            <WidgetEmptyState message="Balance sheet not available" hint={unavailableHint} />
           )}
         </WidgetCard>
 
         <WidgetCard title="Funding composition" subtitle={`${scope} · ₹ crore`} wide>
-          {loading ? (
-            <div className="flex flex-col gap-3">
-              <SkeletonBlock className="h-48 w-full" />
-              <SkeletonBlock className="h-3 w-full" />
-              <SkeletonBlock className="h-3 w-4/5" />
-            </div>
-          ) : forcedEmpty ? (
-            <WidgetEmptyState {...PREVIEW_EMPTY} />
-          ) : hasData ? (
+          {hasData ? (
             <BalanceSheetCompositionChart periods={balanceSheetPeriods} />
           ) : (
             <WidgetEmptyState message="Nothing to plot" hint={unavailableHint} />
@@ -190,14 +158,10 @@ export function BalanceSheetPanel({ company, period, state }: BalanceSheetPanelP
           title="Balance sheet statement"
           subtitle={`${scope} · ₹ crore`}
           badge={basis}
-          footnote={`${basis} figures · source: ${financials.source.provider} · every figure is placeholder data.`}
+          footnote={sourceFootnote(basis, financials.source)}
           wide
         >
-          {loading ? (
-            <WidgetSkeleton rows={4} label="Loading balance sheet statement" />
-          ) : forcedEmpty ? (
-            <WidgetEmptyState {...PREVIEW_EMPTY} />
-          ) : hasData ? (
+          {hasData ? (
             <StatementTable
               caption={`${company.name} balance sheet, ${scope.toLowerCase()}, ${basis.toLowerCase()} basis, ₹ crore`}
               periods={periodRefs}

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { AppHeader } from '@/components/layout/AppHeader'
 import { AppShell } from '@/components/layout/AppShell'
 import { TabPanel } from '@/components/nav/Tabs'
-import type { WidgetState } from '@/components/widgets/widgetState'
 import {
   DEFAULT_FINANCIALS_TAB,
   DEFAULT_PERIOD_VIEW,
@@ -27,7 +26,6 @@ export default function App() {
   const [primaryTab, setPrimaryTab] = useState<PrimaryTabId>(DEFAULT_PRIMARY_TAB)
   const [statement, setStatement] = useState<FinancialsTabId>(DEFAULT_FINANCIALS_TAB)
   const [period, setPeriod] = useState<PeriodViewId>(DEFAULT_PERIOD_VIEW)
-  const [widgetState, setWidgetState] = useState<WidgetState>('ready')
 
   const company = findCompany(companyId)
 
@@ -53,15 +51,9 @@ export default function App() {
             onStatementChange={setStatement}
             period={period}
             onPeriodChange={setPeriod}
-            widgetState={widgetState}
-            onWidgetStateChange={setWidgetState}
           />
         ) : (
-          <KpiOverviewView
-            company={company}
-            widgetState={widgetState}
-            onWidgetStateChange={setWidgetState}
-          />
+          <KpiOverviewView company={company} />
         )}
       </TabPanel>
     </AppShell>

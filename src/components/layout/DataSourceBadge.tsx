@@ -1,17 +1,7 @@
 import { APP } from '@/config/app'
 import { cn } from '@/lib/cn'
+import { formatUpdatedAt, isLiveSource } from '@/lib/provenance'
 import { getCompanyDataSource } from '@/mocks/financials'
-
-const UPDATED_FORMAT = new Intl.DateTimeFormat('en-IN', {
-  day: 'numeric',
-  month: 'short',
-  year: 'numeric',
-})
-
-function formatFetchedAt(iso: string): string {
-  const date = new Date(iso)
-  return Number.isNaN(date.getTime()) ? iso : UPDATED_FORMAT.format(date)
-}
 
 /**
  * Honest, per-company data-source badge shown beside the wordmark.
@@ -24,7 +14,7 @@ function formatFetchedAt(iso: string): string {
  */
 export function DataSourceBadge({ companyId }: { companyId: string }) {
   const source = getCompanyDataSource(companyId)
-  const live = source !== null && source.provider !== 'mock' ? source : null
+  const live = source !== null && isLiveSource(source) ? source : null
 
   return (
     <span
@@ -40,7 +30,7 @@ export function DataSourceBadge({ companyId }: { companyId: string }) {
           : 'border-line-hairline bg-surface-sunken text-ink-muted',
       )}
     >
-      {live ? `Live · updated ${formatFetchedAt(live.fetchedAt)}` : APP.dataStage}
+      {live ? `Live · updated ${formatUpdatedAt(live.fetchedAt)}` : APP.dataStage}
     </span>
   )
 }

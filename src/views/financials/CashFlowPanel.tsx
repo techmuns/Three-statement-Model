@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react'
 import type { PeriodViewId } from '@/config/navigation'
 import { CashFlowActivityChart } from '@/components/charts/CashFlowActivityChart'
 import { AnnualOnlyNotice } from '@/components/widgets/AnnualOnlyNotice'
@@ -7,9 +6,8 @@ import { StatList, type StatTileProps } from '@/components/widgets/StatTile'
 import { WidgetCard } from '@/components/widgets/WidgetCard'
 import { WidgetEmptyState } from '@/components/widgets/WidgetEmptyState'
 import { WidgetGrid } from '@/components/widgets/WidgetGrid'
-import { SkeletonBlock, WidgetSkeleton } from '@/components/widgets/WidgetSkeleton'
-import type { WidgetState } from '@/components/widgets/widgetState'
 import { formatCrore, formatSignedCrore } from '@/lib/format'
+import { sourceFootnote } from '@/lib/provenance'
 import { basisLabel } from '@/lib/statementLabels'
 import type { MockCompany } from '@/mocks/companies'
 import { getCompanyFinancials } from '@/mocks/financials'
@@ -19,14 +17,6 @@ import { periodsOf, type CashFlowPeriod } from '@/types/financials'
 export interface CashFlowPanelProps {
   company: MockCompany
   period: PeriodViewId
-  /** Drives the shared preview-state control in the toolbar. */
-  state: WidgetState
-}
-
-/** Every card in this panel shares one empty message when the toggle forces it. */
-const PREVIEW_EMPTY = {
-  message: 'Nothing to show yet',
-  hint: 'The preview control above is set to the empty state.',
 }
 
 /**
@@ -116,7 +106,7 @@ function statementRows(periods: readonly CashFlowPeriod[]): StatementTableRow[] 
  * year-on-year, and in absolute ₹ crore rather than percent because the lines
  * can be negative.
  */
-export function CashFlowPanel({ company, period, state }: CashFlowPanelProps) {
+export function CashFlowPanel({ company, period }: CashFlowPanelProps) {
   const financials = getCompanyFinancials(company.id)
 
   if (!financials) {
@@ -135,8 +125,6 @@ export function CashFlowPanel({ company, period, state }: CashFlowPanelProps) {
   const annual = financials.annual
   const basis = basisLabel(financials.source.basis)
   const scope = 'Last 5 financial years'
-  const loading = state === 'loading'
-  const forcedEmpty = state === 'empty'
   const annualOnly = period === 'quarters'
 
   const quarterlyNote =
@@ -154,39 +142,21 @@ export function CashFlowPanel({ company, period, state }: CashFlowPanelProps) {
       ? (annual.cashFlow.note ?? 'The source does not report it at this cadence.')
       : 'No periods have been ingested yet.'
 
-  /** Wraps a card body in the loading and forced-empty states. */
-  const body = (content: ReactNode, skeletonRows = 2): ReactNode => {
-    if (loading) return <WidgetSkeleton rows={skeletonRows} />
-    if (forcedEmpty) return <WidgetEmptyState {...PREVIEW_EMPTY} />
-    return content
-  }
-
   return (
     <>
-      {annualOnly && !forcedEmpty && <AnnualOnlyNotice statement="Cash flow" note={quarterlyNote} />}
+      {annualOnly && <AnnualOnlyNotice statement="Cash flow" note={quarterlyNote} />}
 
       <WidgetGrid>
         <WidgetCard title="Cash flows" subtitle={`${scope} · ₹ crore`} badge={basis}>
-          {body(
-            stats ? (
-              <StatList stats={stats} />
-            ) : (
-              <WidgetEmptyState message="Cash flow not available" hint={unavailableHint} />
-            ),
-            4,
+          {stats ? (
+            <StatList stats={stats} />
+          ) : (
+            <WidgetEmptyState message="Cash flow not available" hint={unavailableHint} />
           )}
         </WidgetCard>
 
         <WidgetCard title="Cash flow by activity" subtitle={`${scope} · ₹ crore`} wide>
-          {loading ? (
-            <div className="flex flex-col gap-3">
-              <SkeletonBlock className="h-48 w-full" />
-              <SkeletonBlock className="h-3 w-full" />
-              <SkeletonBlock className="h-3 w-4/5" />
-            </div>
-          ) : forcedEmpty ? (
-            <WidgetEmptyState {...PREVIEW_EMPTY} />
-          ) : hasData ? (
+          {hasData ? (
             <CashFlowActivityChart periods={cashFlowPeriods} />
           ) : (
             <WidgetEmptyState message="Nothing to plot" hint={unavailableHint} />
@@ -197,14 +167,10 @@ export function CashFlowPanel({ company, period, state }: CashFlowPanelProps) {
           title="Cash flow statement"
           subtitle={`${scope} · ₹ crore`}
           badge={basis}
-          footnote={`${basis} figures · source: ${financials.source.provider} · every figure is placeholder data.`}
+          footnote={sourceFootnote(basis, financials.source)}
           wide
         >
-          {loading ? (
-            <WidgetSkeleton rows={4} label="Loading cash flow statement" />
-          ) : forcedEmpty ? (
-            <WidgetEmptyState {...PREVIEW_EMPTY} />
-          ) : hasData ? (
+          {hasData ? (
             <StatementTable
               caption={`${company.name} cash flow statement, ${scope.toLowerCase()}, ${basis.toLowerCase()} basis, ₹ crore`}
               periods={periodRefs}

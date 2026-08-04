@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react'
 import type { PeriodViewId } from '@/config/navigation'
 import { RevenueMarginChart } from '@/components/charts/RevenueMarginChart'
 import { SegmentMixChart } from '@/components/charts/SegmentMixChart'
@@ -7,8 +6,6 @@ import { StatList, type StatTileProps } from '@/components/widgets/StatTile'
 import { WidgetCard } from '@/components/widgets/WidgetCard'
 import { WidgetEmptyState } from '@/components/widgets/WidgetEmptyState'
 import { WidgetGrid } from '@/components/widgets/WidgetGrid'
-import { SkeletonBlock, WidgetSkeleton } from '@/components/widgets/WidgetSkeleton'
-import type { WidgetState } from '@/components/widgets/widgetState'
 import {
   formatBasisPoints,
   formatCrore,
@@ -17,6 +14,7 @@ import {
   formatSignedPercent,
   percentChange,
 } from '@/lib/format'
+import { sourceFootnote } from '@/lib/provenance'
 import { basisLabel, profitLossLabels, type ProfitLossLabels } from '@/lib/statementLabels'
 import { statementSetFor } from '@/lib/statements'
 import type { MockCompany } from '@/mocks/companies'
@@ -27,14 +25,6 @@ import { periodsOf, type ProfitLossPeriod } from '@/types/financials'
 export interface ProfitLossPanelProps {
   company: MockCompany
   period: PeriodViewId
-  /** Drives the shared preview-state control in the toolbar. */
-  state: WidgetState
-}
-
-/** Every card in this panel shares one empty message when the toggle forces it. */
-const PREVIEW_EMPTY = {
-  message: 'Nothing to show yet',
-  hint: 'The preview control above is set to the empty state.',
 }
 
 function changeSuffix(period: PeriodViewId): string {
@@ -63,8 +53,7 @@ function headlineStats(
     previous?.operatingProfit ?? null,
   )
   const otherIncomeChange = percentChange(latest.otherIncome, previous?.otherIncome ?? null)
-  const marginChange =
-    previous === null ? null : latest.opmPercent - previous.opmPercent
+  const marginChange = previous === null ? null : latest.opmPercent - previous.opmPercent
   const netProfitChange = percentChange(latest.netProfit, previous?.netProfit ?? null)
 
   return {
@@ -184,7 +173,12 @@ function statementRows(
       format: crore,
       emphasis: true,
     },
-    { key: 'tax', label: labels.taxPercent, values: periods.map((p) => p.taxPercent), format: percent },
+    {
+      key: 'tax',
+      label: labels.taxPercent,
+      values: periods.map((p) => p.taxPercent),
+      format: percent,
+    },
     {
       key: 'net-profit',
       label: labels.netProfit,
@@ -202,8 +196,10 @@ function statementRows(
  * Reads `getCompanyFinancials` for the selected company and picks the statement
  * set the period toggle selects, so changing either control re-renders real
  * figures. Row and series labels come from the company's `statementLayout`.
+ * Cards fall back to an honest empty state when a statement isn't available at
+ * the selected cadence.
  */
-export function ProfitLossPanel({ company, period, state }: ProfitLossPanelProps) {
+export function ProfitLossPanel({ company, period }: ProfitLossPanelProps) {
   const financials = getCompanyFinancials(company.id)
 
   if (!financials) {
@@ -223,50 +219,35 @@ export function ProfitLossPanel({ company, period, state }: ProfitLossPanelProps
   const labels = profitLossLabels(financials.statementLayout)
   const basis = basisLabel(financials.source.basis)
   const scope = period === 'quarters' ? 'Last 5 quarters' : 'Last 5 financial years'
-  const loading = state === 'loading'
-  const forcedEmpty = state === 'empty'
 
   const profitLossPeriods = periodsOf(set.profitLoss)
   const periodRefs = profitLossPeriods.map((entry) => entry.period)
   const hasProfitLoss = set.profitLoss.status === 'available' && profitLossPeriods.length > 0
   const stats = hasProfitLoss ? headlineStats(profitLossPeriods, period, labels) : null
 
-  /** Wraps a card body in the loading and forced-empty states. */
-  const body = (content: ReactNode, skeletonRows = 2): ReactNode => {
-    if (loading) return <WidgetSkeleton rows={skeletonRows} />
-    if (forcedEmpty) return <WidgetEmptyState {...PREVIEW_EMPTY} />
-    return content
-  }
+  const unavailableHint =
+    set.profitLoss.status === 'unavailable'
+      ? (set.profitLoss.note ?? 'The source does not report it at this cadence.')
+      : 'No periods have been ingested yet.'
 
   return (
     <WidgetGrid>
       <WidgetCard title={labels.salesShort} subtitle={`${scope} · ₹ crore`} badge={basis}>
-        {body(
-          stats && set.profitLoss.status === 'available' ? (
-            <StatList stats={stats.revenue} />
-          ) : (
-            <WidgetEmptyState
-              message={`${labels.sales} not available`}
-              hint={
-                set.profitLoss.status === 'unavailable'
-                  ? (set.profitLoss.note ?? 'The source does not report it at this cadence.')
-                  : 'No periods have been ingested yet.'
-              }
-            />
-          ),
+        {stats ? (
+          <StatList stats={stats.revenue} />
+        ) : (
+          <WidgetEmptyState message={`${labels.sales} not available`} hint={unavailableHint} />
         )}
       </WidgetCard>
 
       <WidgetCard title="Profitability" subtitle={`${scope} · margin profile`}>
-        {body(
-          stats ? (
-            <StatList stats={stats.profitability} />
-          ) : (
-            <WidgetEmptyState
-              message="Profitability not available"
-              hint="The P&L has not been ingested for this cadence."
-            />
-          ),
+        {stats ? (
+          <StatList stats={stats.profitability} />
+        ) : (
+          <WidgetEmptyState
+            message="Profitability not available"
+            hint="The P&L has not been ingested for this cadence."
+          />
         )}
       </WidgetCard>
 
@@ -277,15 +258,7 @@ export function ProfitLossPanel({ company, period, state }: ProfitLossPanelProps
         title="Segment revenue mix"
         subtitle={`${scope} · share of ${labels.salesShort.toLowerCase()}`}
       >
-        {loading ? (
-          <div className="flex flex-col gap-3">
-            <SkeletonBlock className="h-40 w-full" />
-            <SkeletonBlock className="h-3 w-full" />
-            <SkeletonBlock className="h-3 w-4/5" />
-          </div>
-        ) : forcedEmpty ? (
-          <WidgetEmptyState {...PREVIEW_EMPTY} />
-        ) : set.segmentMix.status === 'available' ? (
+        {set.segmentMix.status === 'available' ? (
           <SegmentMixChart segments={set.segmentMix.segments} periods={periodRefs} />
         ) : (
           // The union's unavailable branch carries the reason, so the card can
@@ -307,15 +280,7 @@ export function ProfitLossPanel({ company, period, state }: ProfitLossPanelProps
         footnote={labels.operatingProfitNote}
         wide
       >
-        {loading ? (
-          <div className="flex flex-col gap-3">
-            <SkeletonBlock className="h-3 w-32" />
-            <SkeletonBlock className="h-36 w-full" />
-            <SkeletonBlock className="h-28 w-full" />
-          </div>
-        ) : forcedEmpty ? (
-          <WidgetEmptyState {...PREVIEW_EMPTY} />
-        ) : hasProfitLoss ? (
+        {hasProfitLoss ? (
           <RevenueMarginChart periods={profitLossPeriods} labels={labels} />
         ) : (
           <WidgetEmptyState
@@ -329,28 +294,17 @@ export function ProfitLossPanel({ company, period, state }: ProfitLossPanelProps
         title="Profit & loss statement"
         subtitle={`${scope} · ₹ crore unless stated`}
         badge={basis}
-        footnote={`${basis} figures · source: ${financials.source.provider} · every figure is placeholder data.`}
+        footnote={sourceFootnote(basis, financials.source)}
         wide
       >
-        {loading ? (
-          <WidgetSkeleton rows={4} label="Loading profit and loss statement" />
-        ) : forcedEmpty ? (
-          <WidgetEmptyState {...PREVIEW_EMPTY} />
-        ) : hasProfitLoss ? (
+        {hasProfitLoss ? (
           <StatementTable
             caption={`${company.name} profit and loss statement, ${scope.toLowerCase()}, ${basis.toLowerCase()} basis, ₹ crore unless stated`}
             periods={periodRefs}
             rows={statementRows(profitLossPeriods, labels)}
           />
         ) : (
-          <WidgetEmptyState
-            message="Statement not available"
-            hint={
-              set.profitLoss.status === 'unavailable'
-                ? (set.profitLoss.note ?? 'The source does not report it at this cadence.')
-                : 'No periods have been ingested yet.'
-            }
-          />
+          <WidgetEmptyState message="Statement not available" hint={unavailableHint} />
         )}
       </WidgetCard>
     </WidgetGrid>

@@ -7,7 +7,6 @@ import {
 import { PageToolbar } from '@/components/layout/PageToolbar'
 import { SegmentedControl } from '@/components/nav/SegmentedControl'
 import { TabPanel, Tabs } from '@/components/nav/Tabs'
-import { WIDGET_STATES, type WidgetState } from '@/components/widgets/widgetState'
 import type { MockCompany } from '@/mocks/companies'
 import { ProfitLossPanel } from './ProfitLossPanel'
 import { BalanceSheetPanel } from './BalanceSheetPanel'
@@ -21,8 +20,6 @@ export interface FinancialsViewProps {
   onStatementChange: (statement: FinancialsTabId) => void
   period: PeriodViewId
   onPeriodChange: (period: PeriodViewId) => void
-  widgetState: WidgetState
-  onWidgetStateChange: (state: WidgetState) => void
 }
 
 export function FinancialsView({
@@ -31,8 +28,6 @@ export function FinancialsView({
   onStatementChange,
   period,
   onPeriodChange,
-  widgetState,
-  onWidgetStateChange,
 }: FinancialsViewProps) {
   const activeStatement = FINANCIALS_TABS.find((tab) => tab.id === statement) ?? FINANCIALS_TABS[0]
 
@@ -47,13 +42,6 @@ export function FinancialsView({
           items={PERIOD_VIEWS}
           value={period}
           onChange={onPeriodChange}
-        />
-        <SegmentedControl
-          label="Preview state"
-          showLabel
-          items={WIDGET_STATES}
-          value={widgetState}
-          onChange={onWidgetStateChange}
         />
       </PageToolbar>
 
@@ -70,11 +58,11 @@ export function FinancialsView({
 
       <TabPanel idPrefix={TAB_ID_PREFIX} id={activeStatement.id}>
         {activeStatement.id === 'pl' ? (
-          <ProfitLossPanel company={company} period={period} state={widgetState} />
+          <ProfitLossPanel company={company} period={period} />
         ) : activeStatement.id === 'balance-sheet' ? (
-          <BalanceSheetPanel company={company} period={period} state={widgetState} />
+          <BalanceSheetPanel company={company} period={period} />
         ) : (
-          <CashFlowPanel company={company} period={period} state={widgetState} />
+          <CashFlowPanel company={company} period={period} />
         )}
       </TabPanel>
     </>

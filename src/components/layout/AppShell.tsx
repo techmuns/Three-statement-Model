@@ -29,8 +29,9 @@ export function AppShell({ header, children }: { header: ReactNode; children: Re
 
       <footer className="mx-auto w-full max-w-[110rem] px-4 pb-8 sm:px-6">
         <p className="border-t border-line-hairline pt-4 text-caption text-ink-subtle">
-          {APP.name} · {APP.tagline}. Every figure on this screen is placeholder data for layout
-          purposes and must not be used for investment decisions.
+          {APP.name} · {APP.tagline}. Figures are scraped from Screener.in where available and
+          placeholder otherwise — see each company's badge and each statement's footnote for its
+          source. Not investment advice.
         </p>
       </footer>
     </div>
