@@ -39,6 +39,7 @@ import type {
   StatementSet,
 } from '@/types/financials'
 import type { PeriodRef } from '@/types/period'
+import { getScrapedFinancials } from '@/data/scrapedFinancials'
 import { ANNUAL_PERIODS, QUARTERLY_PERIODS } from './periods'
 
 /* -------------------------------------------------------------------------- */
@@ -533,11 +534,24 @@ const COMPANY_INPUTS: readonly CompanyInput[] = [
   HINDUSTAN_UNILEVER,
 ]
 
-/** Keyed by `MockCompany.id`. */
+/** Authored mock financials, keyed by `MockCompany.id`. */
 export const COMPANY_FINANCIALS: Readonly<Record<string, CompanyFinancials>> =
   Object.fromEntries(COMPANY_INPUTS.map((input) => [input.companyId, buildFinancials(input)]))
 
-/** `null` for an unknown company, so callers handle the miss explicitly. */
+/**
+ * A company's financials, real if we have scraped them, mock otherwise.
+ *
+ * The decision is per company and made here, in the one accessor every
+ * financials view already reads through: a valid `data/<SYMBOL>.json` wins;
+ * absent or malformed, the authored mock is used; unknown company → `null`.
+ * `DataSource.provider` on the result records which it was (`'screener'` vs
+ * `'mock'`), so the UI can be honest about it without a second lookup.
+ */
 export function getCompanyFinancials(companyId: string): CompanyFinancials | null {
-  return COMPANY_FINANCIALS[companyId] ?? null
+  return getScrapedFinancials(companyId) ?? COMPANY_FINANCIALS[companyId] ?? null
+}
+
+/** The provenance of whatever `getCompanyFinancials` would return, for the UI. */
+export function getCompanyDataSource(companyId: string): DataSource | null {
+  return getCompanyFinancials(companyId)?.source ?? null
 }

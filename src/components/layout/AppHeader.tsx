@@ -1,8 +1,8 @@
-import { APP } from '@/config/app'
 import { PRIMARY_TABS, type PrimaryTabId } from '@/config/navigation'
 import { CompanySwitcher } from '@/components/company/CompanySwitcher'
 import { Tabs } from '@/components/nav/Tabs'
 import type { MockCompany } from '@/mocks/companies'
+import { DataSourceBadge } from './DataSourceBadge'
 import { Wordmark } from './Wordmark'
 
 export interface AppHeaderProps {
@@ -36,9 +36,7 @@ export function AppHeader({
         <div className="flex flex-col gap-3 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
           <div className="flex items-center gap-3">
             <Wordmark />
-            <span className="hidden rounded-pill border border-line-hairline bg-surface-sunken px-2 py-0.5 text-micro font-semibold tracking-wide text-ink-muted uppercase md:inline">
-              {APP.dataStage}
-            </span>
+            <DataSourceBadge companyId={company.id} />
           </div>
 
           <CompanySwitcher company={company} onSelect={onCompanyChange} />

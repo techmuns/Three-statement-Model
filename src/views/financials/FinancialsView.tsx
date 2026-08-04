@@ -7,11 +7,10 @@ import {
 import { PageToolbar } from '@/components/layout/PageToolbar'
 import { SegmentedControl } from '@/components/nav/SegmentedControl'
 import { TabPanel, Tabs } from '@/components/nav/Tabs'
-import { WIDGET_STATES, type WidgetState } from '@/components/widgets/widgetState'
-import { financialsWidgets } from '@/mocks/placeholders'
 import type { MockCompany } from '@/mocks/companies'
-import { WidgetDeck } from '@/views/shared/WidgetDeck'
 import { ProfitLossPanel } from './ProfitLossPanel'
+import { BalanceSheetPanel } from './BalanceSheetPanel'
+import { CashFlowPanel } from './CashFlowPanel'
 
 const TAB_ID_PREFIX = 'financials'
 
@@ -21,8 +20,6 @@ export interface FinancialsViewProps {
   onStatementChange: (statement: FinancialsTabId) => void
   period: PeriodViewId
   onPeriodChange: (period: PeriodViewId) => void
-  widgetState: WidgetState
-  onWidgetStateChange: (state: WidgetState) => void
 }
 
 export function FinancialsView({
@@ -31,8 +28,6 @@ export function FinancialsView({
   onStatementChange,
   period,
   onPeriodChange,
-  widgetState,
-  onWidgetStateChange,
 }: FinancialsViewProps) {
   const activeStatement = FINANCIALS_TABS.find((tab) => tab.id === statement) ?? FINANCIALS_TABS[0]
 
@@ -47,13 +42,6 @@ export function FinancialsView({
           items={PERIOD_VIEWS}
           value={period}
           onChange={onPeriodChange}
-        />
-        <SegmentedControl
-          label="Preview state"
-          showLabel
-          items={WIDGET_STATES}
-          value={widgetState}
-          onChange={onWidgetStateChange}
         />
       </PageToolbar>
 
@@ -70,11 +58,11 @@ export function FinancialsView({
 
       <TabPanel idPrefix={TAB_ID_PREFIX} id={activeStatement.id}>
         {activeStatement.id === 'pl' ? (
-          // P&L renders from the real schema. Balance sheet and cash flow are
-          // still on placeholder content until their own phases.
-          <ProfitLossPanel company={company} period={period} state={widgetState} />
+          <ProfitLossPanel company={company} period={period} />
+        ) : activeStatement.id === 'balance-sheet' ? (
+          <BalanceSheetPanel company={company} period={period} />
         ) : (
-          <WidgetDeck widgets={financialsWidgets(activeStatement.id, period)} state={widgetState} />
+          <CashFlowPanel company={company} period={period} />
         )}
       </TabPanel>
     </>

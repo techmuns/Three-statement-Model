@@ -1,0 +1,85 @@
+name: Refresh scraped data
+
+# Scrapes Screener.in and commits the refreshed data/ back to main.
+# (Cloudflare deployment is handled separately, outside this repo.)
+
+on:
+  # The underlying statements only change when companies report, so a few times
+  # a week is plenty. Mon/Wed/Fri at 21:00 UTC ≈ 02:30 IST — after the day's
+  # Indian filings are in, at a quiet hour.
+  schedule:
+    - cron: "0 21 * * 1,3,5"
+  # Manual, on-demand runs from the Actions tab.
+  workflow_dispatch: {}
+
+# The job commits refreshed data back to the repository.
+permissions:
+  contents: write
+
+# Never let two refreshes run at once (they both push to main).
+concurrency:
+  group: refresh-scraped-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: Install scraper dependencies
+        working-directory: scraper
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        working-directory: scraper
+        run: npx playwright install --with-deps chromium
+
+      # Scrapes financials + peers for all companies. The scraper writes each
+      # company's file as it succeeds and exits non-zero only to signal that some
+      # company failed — successful output is already on disk either way, so we
+      # let the job continue and commit whatever was produced.
+      - name: Scrape Screener data
+        id: scrape
+        continue-on-error: true
+        working-directory: scraper
+        env:
+          SCREENER_EMAIL: ${{ secrets.SCREENER_EMAIL }}
+          SCREENER_PASSWORD: ${{ secrets.SCREENER_PASSWORD }}
+        run: npm run scrape:all
+
+      - name: Commit and push refreshed data
+        run: |
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes in data/ — nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh scraped financial data"
+          if git push origin HEAD:main; then
+            echo "Refreshed data committed and pushed to main."
+          else
+            echo "::error::Push to main was rejected. Most likely branch protection on main is blocking the github-actions bot's direct push (or main advanced during the run). Either allow the bot to bypass protection, or switch this workflow to open a pull request instead."
+            exit 1
+          fi
+
+      # Turn the run red if scraping errored, so GitHub's failure notification
+      # reaches us — a signal that Screener's page structure may have drifted (or
+      # a login/credential problem). Any companies that did succeed above were
+      # still committed.
+      - name: Fail the run if scraping errored
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "::error::The scrape step failed — see the 'Scrape Screener data' step logs. Screener's page structure may have drifted, or there was a login/credential problem."
+          exit 1

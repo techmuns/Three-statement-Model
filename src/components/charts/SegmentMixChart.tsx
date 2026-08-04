@@ -58,6 +58,22 @@ export function SegmentMixChart({
     return row
   })
 
+  // The full text equivalent of the chart. Unlike the statement tabs, segment
+  // mix has no table twin, so per-period shares would otherwise be reachable
+  // only by hovering — the aria-label therefore enumerates every period, not
+  // just the latest.
+  const chartDescription = `Revenue mix by segment, share of sales across ${periods.length} periods. ${periods
+    .map(
+      (period) =>
+        `${period.label}: ${segments
+          .map((segment) => {
+            const value = segment.values.find((entry) => entry.periodId === period.id)
+            return `${segment.name} ${formatPercent(value?.sharePercent ?? null)}`
+          })
+          .join(', ')}`,
+    )
+    .join('. ')}.`
+
   const renderTooltip = (props: ChartTooltipProps) => {
     if (!props.active || !props.payload) return null
 
@@ -80,14 +96,7 @@ export function SegmentMixChart({
 
   return (
     <div className="flex flex-col gap-3">
-      <div
-        role="img"
-        aria-label={`Revenue mix by segment. Latest period ${
-          periods[periods.length - 1].label
-        }: ${series
-          .map((item) => `${item.name} ${formatPercent(item.latestShare)}`)
-          .join('; ')}.`}
-      >
+      <div role="img" aria-label={chartDescription}>
         <ResponsiveContainer width="100%" height={176}>
           <BarChart data={rows} margin={{ top: 4, right: 8, bottom: 0, left: 0 }} barCategoryGap="30%">
             <CartesianGrid vertical={false} stroke="var(--color-chart-grid)" strokeWidth={1} />

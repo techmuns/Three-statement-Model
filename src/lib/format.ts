@@ -53,6 +53,16 @@ export function formatRupees(value: Reported<number>, fractionDigits = 2): strin
 }
 
 /**
+ * A dimensionless ratio: `0.34`, `6.80`. The unit some KPIs (debt-to-equity)
+ * report in — a plain Indian-grouped decimal with no currency or percent sign,
+ * sharing the same not-reported and minus-sign handling as the others.
+ */
+export function formatRatio(value: Reported<number>, fractionDigits = 2): string {
+  if (value === null) return NOT_REPORTED
+  return decimalFormatter(fractionDigits).format(value).replace('-', '−')
+}
+
+/**
  * Builds a ₹ crore tick formatter for one chart axis.
  *
  * Whether to switch to lakh ("10.3L crore" is how the Indian press writes 10.3
@@ -77,6 +87,20 @@ export function formatSignedPercent(value: Reported<number>, fractionDigits = 1)
   if (value === null) return NOT_REPORTED
   const sign = value > 0 ? '+' : ''
   return `${sign}${formatPercent(value, fractionDigits)}`
+}
+
+/**
+ * A signed ₹ crore change for a delta badge: `+17,860`, `−6,220`.
+ *
+ * The absolute-change sibling of `formatSignedPercent`, for figures whose sign
+ * makes a percentage change misleading — a cash flow line that crosses zero, or
+ * an outflow that grows more negative, has no honest percentage. Delegates the
+ * digit grouping to `formatCrore`, which also renders the true minus sign.
+ */
+export function formatSignedCrore(value: Reported<number>, fractionDigits = 0): string {
+  if (value === null) return NOT_REPORTED
+  const sign = value > 0 ? '+' : ''
+  return `${sign}${formatCrore(value, fractionDigits)}`
 }
 
 /** Percentage-point change, the right unit for a margin: `+40 bps`. */

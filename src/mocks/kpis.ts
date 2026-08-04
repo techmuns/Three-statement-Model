@@ -16,7 +16,7 @@ import { periodsOf } from '@/types/financials'
 import type { CompanyKpis, KpiId, KpiPeerStats, KpiTrendPoint, KpiValue } from '@/types/kpi'
 import type { PeerComparisonRow, PeerGroup, PeerKpiSnapshot } from '@/types/peers'
 import { MOCK_COMPANIES } from './companies'
-import { COMPANY_FINANCIALS } from './financials'
+import { getCompanyFinancials } from './financials'
 import { getPeerGroupForCompany } from './peers'
 
 function round(value: number, decimals: number): number {
@@ -116,7 +116,10 @@ function peerStats(
 }
 
 function buildCompanyKpis(companyId: string): CompanyKpis | null {
-  const financials = COMPANY_FINANCIALS[companyId]
+  // Derives from whatever `getCompanyFinancials` returns — real scraped data
+  // where present, mock otherwise — so KPIs track the real statements with no
+  // extra wiring. (Peer stats below stay mock until peers are scraped.)
+  const financials = getCompanyFinancials(companyId)
   if (!financials) return null
 
   const profitLossPeriods = periodsOf(financials.annual.profitLoss)
