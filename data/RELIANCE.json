@@ -139,9 +139,114 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "oil-to-chemicals-o2c",
+          "name": "Oil to Chemicals (O2C)",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 154804,
+              "sharePercent": 50.67
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 184944,
+              "sharePercent": 50.92
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 201803,
+              "sharePercent": 53.58
+            }
+          ]
+        },
+        {
+          "id": "oil-and-gas",
+          "name": "Oil and Gas",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 6103,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 5867,
+              "sharePercent": 1.62
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 6298,
+              "sharePercent": 1.67
+            }
+          ]
+        },
+        {
+          "id": "retail",
+          "name": "Retail",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 84172,
+              "sharePercent": 27.55
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 98457,
+              "sharePercent": 27.11
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 90409,
+              "sharePercent": 24.01
+            }
+          ]
+        },
+        {
+          "id": "digital-services",
+          "name": "Digital Services",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 41949,
+              "sharePercent": 13.73
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 45945,
+              "sharePercent": 12.65
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 46900,
+              "sharePercent": 12.45
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 18470,
+              "sharePercent": 6.05
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 27976,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 31204,
+              "sharePercent": 8.29
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -469,7 +574,7 @@
     "segmentMix": {
       "status": "unavailable",
       "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "note": "Quarterly segment mix is sourced from BSE Reg-33 Financial Results filings (scrip 500325); annual segment history is not yet back-filled."
     }
   }
 }
