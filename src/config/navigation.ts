@@ -6,7 +6,7 @@
  * view component; nothing else in the shell needs to change.
  */
 
-export type PrimaryTabId = 'financials' | 'kpi'
+export type PrimaryTabId = 'overview' | 'financials' | 'peers'
 export type FinancialsTabId = 'pl' | 'balance-sheet' | 'cash-flow'
 export type PeriodViewId = 'quarters' | 'years'
 
@@ -18,8 +18,9 @@ export interface NavItem<Id extends string> {
 }
 
 export const PRIMARY_TABS: readonly NavItem<PrimaryTabId>[] = [
+  { id: 'overview', label: 'Overview', description: 'Headline KPIs, trend and peer positioning' },
   { id: 'financials', label: 'Financials', description: 'Statement-level financials' },
-  { id: 'kpi', label: 'KPI Overview', description: 'Headline operating metrics' },
+  { id: 'peers', label: 'Peer Comparison', description: 'Full peer comparison table' },
 ]
 
 export const FINANCIALS_TABS: readonly NavItem<FinancialsTabId>[] = [
@@ -33,6 +34,6 @@ export const PERIOD_VIEWS: readonly NavItem<PeriodViewId>[] = [
   { id: 'years', label: 'Last 5 Years' },
 ]
 
-export const DEFAULT_PRIMARY_TAB: PrimaryTabId = 'financials'
+export const DEFAULT_PRIMARY_TAB: PrimaryTabId = 'overview'
 export const DEFAULT_FINANCIALS_TAB: FinancialsTabId = 'pl'
 export const DEFAULT_PERIOD_VIEW: PeriodViewId = 'quarters'

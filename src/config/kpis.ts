@@ -63,7 +63,7 @@ export const KPI_DEFINITIONS: readonly KpiDefinition[] = [
   },
   {
     id: 'debt-to-equity',
-    label: 'Debt to Equity',
+    label: 'Debt/Equity',
     shortLabel: 'D/E',
     unit: 'ratio',
     direction: 'lower-is-better',

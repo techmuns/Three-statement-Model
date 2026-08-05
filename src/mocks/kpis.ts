@@ -13,7 +13,16 @@ import { KPI_DEFINITIONS, KPI_IDS, findKpiDefinition } from '@/config/kpis'
 import type { Reported } from '@/types/common'
 import type { BalanceSheetPeriod, ProfitLossPeriod } from '@/types/financials'
 import { periodsOf } from '@/types/financials'
-import type { CompanyKpis, KpiId, KpiPeerStats, KpiTrendPoint, KpiValue } from '@/types/kpi'
+import type {
+  CompanyKpiHistory,
+  CompanyKpis,
+  KpiDirection,
+  KpiHistoryStat,
+  KpiId,
+  KpiPeerStats,
+  KpiTrendPoint,
+  KpiValue,
+} from '@/types/kpi'
 import type { PeerComparisonRow, PeerGroup, PeerKpiSnapshot } from '@/types/peers'
 import { MOCK_COMPANIES } from './companies'
 import { getCompanyFinancials } from './financials'
@@ -96,6 +105,10 @@ function peerStats(
   const definition = findKpiDefinition(kpiId)
   const averageValue = average(peerValues)
   const medianValue = median(peerValues)
+  // Low/high are the min/max of the very same set used for average/median, so
+  // they can never disagree with it (e.g. low ≤ average ≤ high always holds).
+  const lowValue = peerValues.length > 0 ? Math.min(...peerValues) : null
+  const highValue = peerValues.length > 0 ? Math.max(...peerValues) : null
 
   // Rank the company against the peers plus itself. Direction-aware: for a
   // lower-is-better KPI such as debt-to-equity, the smallest value ranks 1.
@@ -110,6 +123,8 @@ function peerStats(
   return {
     average: averageValue === null ? null : round(averageValue, definition.precision),
     median: medianValue === null ? null : round(medianValue, definition.precision),
+    low: lowValue === null ? null : round(lowValue, definition.precision),
+    high: highValue === null ? null : round(highValue, definition.precision),
     rank,
     rankedOutOf: peerValues.length + 1,
   }
@@ -167,6 +182,64 @@ export const COMPANY_KPIS: Readonly<Record<string, CompanyKpis>> = Object.fromEn
 
 export function getCompanyKpis(companyId: string): CompanyKpis | null {
   return COMPANY_KPIS[companyId] ?? null
+}
+
+/* -------------------------------------------------------------------------- */
+/* Historical self-comparison                                                 */
+/* -------------------------------------------------------------------------- */
+
+function isBetter(candidate: number, incumbent: number, direction: KpiDirection): boolean {
+  return direction === 'higher-is-better' ? candidate > incumbent : candidate < incumbent
+}
+
+/**
+ * Summarise one KPI's trailing `trend` into a self-comparison: the average of
+ * the periods held, the best period (direction-aware), and how the latest value
+ * sits against that average.
+ */
+function buildHistoryStat(value: KpiValue): KpiHistoryStat {
+  const definition = findKpiDefinition(value.kpiId)
+  // Drop periods with no value (e.g. revenue growth's oldest year), narrowing
+  // to a concrete number so the reductions below need no further null checks.
+  const points = value.trend.flatMap((point) =>
+    point.value === null ? [] : [{ periodId: point.periodId, value: point.value }],
+  )
+
+  const averageValue = average(points.map((point) => point.value))
+  const periodAverage = averageValue === null ? null : round(averageValue, definition.precision)
+
+  let best: KpiHistoryStat['best'] = null
+  for (const point of points) {
+    if (best === null || isBetter(point.value, best.value, definition.direction)) best = point
+  }
+
+  const deltaVsAverage =
+    value.value !== null && periodAverage !== null
+      ? round(value.value - periodAverage, definition.precision)
+      : null
+
+  let standing: KpiHistoryStat['standing'] = null
+  if (deltaVsAverage !== null) {
+    if (deltaVsAverage === 0) standing = 'in-line'
+    else standing = deltaVsAverage > 0 === (definition.direction === 'higher-is-better') ? 'better' : 'worse'
+  }
+
+  return { kpiId: value.kpiId, current: value.value, periodAverage, best, deltaVsAverage, standing }
+}
+
+/**
+ * Per-KPI historical self-comparison for a company. Generic over real/mock data
+ * — it derives from `getCompanyKpis`, so it works identically for a scraped
+ * company and a mock one. `null` when the company has no computable KPIs.
+ */
+export function getCompanyKpiHistory(companyId: string): CompanyKpiHistory | null {
+  const kpis = getCompanyKpis(companyId)
+  if (!kpis) return null
+  return {
+    companyId,
+    asOfPeriodId: kpis.asOfPeriodId,
+    stats: kpis.values.map(buildHistoryStat),
+  }
 }
 
 /** A company's KPI values flattened into peer-comparison snapshots. */
