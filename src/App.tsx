@@ -12,14 +12,15 @@ import {
 } from '@/config/navigation'
 import { DEFAULT_COMPANY_ID, findCompany, type MockCompany } from '@/mocks/companies'
 import { FinancialsView } from '@/views/financials/FinancialsView'
-import { KpiOverviewView } from '@/views/kpi/KpiOverviewView'
+import { OverviewView } from '@/views/overview/OverviewView'
+import { PeerComparisonView } from '@/views/peers/PeerComparisonView'
 
 const ROOT_TAB_PREFIX = 'root'
 
 /**
  * All dashboard state lives here for now: plain `useState`, no router and no
- * store. When deep-linking is needed, this is the single place that swaps to
- * URL-derived state — nothing below reads global state directly.
+ * store. The period toggle is app-wide (it lives in the header and applies to
+ * Overview and Financials), so it sits here beside the company and tab state.
  */
 export default function App() {
   const [companyId, setCompanyId] = useState<string>(DEFAULT_COMPANY_ID)
@@ -39,21 +40,24 @@ export default function App() {
           onCompanyChange={handleCompanyChange}
           primaryTab={primaryTab}
           onPrimaryTabChange={setPrimaryTab}
+          period={period}
+          onPeriodChange={setPeriod}
           tabIdPrefix={ROOT_TAB_PREFIX}
         />
       }
     >
       <TabPanel idPrefix={ROOT_TAB_PREFIX} id={primaryTab}>
-        {primaryTab === 'financials' ? (
+        {primaryTab === 'overview' ? (
+          <OverviewView company={company} period={period} />
+        ) : primaryTab === 'financials' ? (
           <FinancialsView
             company={company}
             statement={statement}
             onStatementChange={setStatement}
             period={period}
-            onPeriodChange={setPeriod}
           />
         ) : (
-          <KpiOverviewView company={company} />
+          <PeerComparisonView company={company} />
         )}
       </TabPanel>
     </AppShell>

@@ -1,11 +1,5 @@
-import {
-  FINANCIALS_TABS,
-  PERIOD_VIEWS,
-  type FinancialsTabId,
-  type PeriodViewId,
-} from '@/config/navigation'
+import { FINANCIALS_TABS, type FinancialsTabId, type PeriodViewId } from '@/config/navigation'
 import { PageToolbar } from '@/components/layout/PageToolbar'
-import { SegmentedControl } from '@/components/nav/SegmentedControl'
 import { TabPanel, Tabs } from '@/components/nav/Tabs'
 import type { MockCompany } from '@/mocks/companies'
 import { ProfitLossPanel } from './ProfitLossPanel'
@@ -18,8 +12,8 @@ export interface FinancialsViewProps {
   company: MockCompany
   statement: FinancialsTabId
   onStatementChange: (statement: FinancialsTabId) => void
+  /** The period toggle now lives in the app header, so this view only reads it. */
   period: PeriodViewId
-  onPeriodChange: (period: PeriodViewId) => void
 }
 
 export function FinancialsView({
@@ -27,7 +21,6 @@ export function FinancialsView({
   statement,
   onStatementChange,
   period,
-  onPeriodChange,
 }: FinancialsViewProps) {
   const activeStatement = FINANCIALS_TABS.find((tab) => tab.id === statement) ?? FINANCIALS_TABS[0]
 
@@ -36,14 +29,7 @@ export function FinancialsView({
       <PageToolbar
         title={`${company.name} · Financials`}
         description={`${company.ticker} · ${company.sector}`}
-      >
-        <SegmentedControl
-          label="Period view"
-          items={PERIOD_VIEWS}
-          value={period}
-          onChange={onPeriodChange}
-        />
-      </PageToolbar>
+      />
 
       <nav aria-label="Financial statements" className="mb-4">
         <Tabs
