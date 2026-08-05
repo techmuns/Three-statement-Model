@@ -2377,7 +2377,8 @@
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
       "sector": "Oil Gas & Consumable Fuels",
-      "indices": ["NIFTY 500", "NIFTY 50"]
+      "indices": ["NIFTY 500", "NIFTY 50"],
+      "bseScripCode": "500325"
     },
     {
       "symbol": "RPOWER",

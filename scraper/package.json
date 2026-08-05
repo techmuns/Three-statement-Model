@@ -7,10 +7,12 @@
   "scripts": {
     "scrape": "tsx src/cli.ts",
     "scrape:rotate": "tsx src/cli.ts --rotate",
+    "scrape:bse-segments": "tsx src/bse/cli.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
+    "pdfjs-dist": "^4.7.76",
     "playwright": "^1.49.1"
   },
   "devDependencies": {

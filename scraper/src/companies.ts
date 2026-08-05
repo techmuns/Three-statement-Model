@@ -31,6 +31,9 @@ interface RegistryEntry {
   sector: string
   /** NSE indices this company belongs to, e.g. `["NIFTY 500", "NIFTY 50"]`. */
   indices: readonly string[]
+  /** BSE numeric scrip code, e.g. `"500325"`. Present only where sourced; BSE
+   * identifies companies by this, not the NSE `symbol`. */
+  bseScripCode?: string
 }
 
 const REGISTRY = (registryDoc as { companies: readonly RegistryEntry[] }).companies
@@ -64,4 +67,13 @@ const BY_SYMBOL = new Map(ALL_COMPANIES.map((company) => [company.screenerSymbol
 /** Resolve a `--company` argument (any registry symbol) to a company. */
 export function findScraperCompany(query: string): ScraperCompany | undefined {
   return BY_SYMBOL.get(query.trim().toUpperCase())
+}
+
+const SCRIP_BY_SYMBOL = new Map(
+  REGISTRY.filter((entry) => entry.bseScripCode).map((entry) => [entry.symbol, entry.bseScripCode!]),
+)
+
+/** The BSE scrip code for a registry symbol, or `undefined` if not sourced. */
+export function bseScripCodeFor(symbol: string): string | undefined {
+  return SCRIP_BY_SYMBOL.get(symbol.trim().toUpperCase())
 }
