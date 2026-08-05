@@ -3,7 +3,200 @@
   "label": "Private Sector Banks",
   "sector": "Private Sector Bank",
   "memberCompanyIds": [
-    "hdfc-bank"
+    "HDFCBANK"
   ],
-  "peers": []
+  "peers": [
+    {
+      "id": "icicibank",
+      "name": "ICICI Bank",
+      "ticker": "ICICIBANK",
+      "marketCapCrore": 1040534.07,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": null
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "kotakbank",
+      "name": "Kotak Mah. Bank",
+      "ticker": "KOTAKBANK",
+      "marketCapCrore": 397894.83,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": null
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "axisbank",
+      "name": "Axis Bank",
+      "ticker": "AXISBANK",
+      "marketCapCrore": 390169.74,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": null
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "idbi",
+      "name": "IDBI Bank",
+      "ticker": "IDBI",
+      "marketCapCrore": 90664.26,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": null
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "federalbnk",
+      "name": "Federal Bank",
+      "ticker": "FEDERALBNK",
+      "marketCapCrore": 88049.05,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": null
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "indusindbk",
+      "name": "IndusInd Bank",
+      "ticker": "INDUSINDBK",
+      "marketCapCrore": 79393.63,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": null
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    }
+  ]
 }

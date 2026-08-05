@@ -1,14 +1,14 @@
 {
-  "companyId": "ADANIENT",
+  "companyId": "SHRIRAMFIN",
   "currency": "INR",
   "unit": "crore",
-  "statementLayout": "standard",
+  "statementLayout": "banking",
   "fiscalYearEndMonth": 3,
-  "sharesOutstandingCrore": 138,
+  "sharesOutstandingCrore": 188,
   "source": {
     "provider": "screener",
-    "url": "https://www.screener.in/company/ADANIENT/consolidated/",
-    "fetchedAt": "2026-08-05T22:16:45.198Z",
+    "url": "https://www.screener.in/company/SHRIRAMFIN/consolidated/",
+    "fetchedAt": "2026-08-05T22:15:28.900Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -26,17 +26,17 @@
             "quarter": 1,
             "endDate": "2025-06-30"
           },
-          "sales": 21961,
-          "expenses": 18651,
-          "operatingProfit": 3310,
-          "opmPercent": 15.07,
-          "otherIncome": 475,
-          "interest": 1035,
-          "depreciation": 1284,
-          "profitBeforeTax": 1466,
-          "taxPercent": 33.42,
-          "netProfit": 976,
-          "eps": 6.85
+          "sales": 11536,
+          "expenses": 3062,
+          "operatingProfit": 3073,
+          "opmPercent": 26.64,
+          "otherIncome": 6,
+          "interest": 5401,
+          "depreciation": 173,
+          "profitBeforeTax": 2906,
+          "taxPercent": 25.71,
+          "netProfit": 2159,
+          "eps": 11.48
         },
         {
           "period": {
@@ -48,17 +48,17 @@
             "quarter": 2,
             "endDate": "2025-09-30"
           },
-          "sales": 21249,
-          "expenses": 17942,
-          "operatingProfit": 3307,
-          "opmPercent": 15.56,
-          "otherIncome": 4179,
-          "interest": 1711,
-          "depreciation": 1377,
-          "profitBeforeTax": 4398,
-          "taxPercent": 22.37,
-          "netProfit": 3414,
-          "eps": 24.74
+          "sales": 11912,
+          "expenses": 3109,
+          "operatingProfit": 3279,
+          "opmPercent": 27.53,
+          "otherIncome": 9,
+          "interest": 5525,
+          "depreciation": 174,
+          "profitBeforeTax": 3113,
+          "taxPercent": 25.67,
+          "netProfit": 2314,
+          "eps": 12.3
         },
         {
           "period": {
@@ -70,17 +70,17 @@
             "quarter": 3,
             "endDate": "2025-12-31"
           },
-          "sales": 24820,
-          "expenses": 21178,
-          "operatingProfit": 3642,
-          "opmPercent": 14.67,
-          "otherIncome": 6288,
-          "interest": 1626,
-          "depreciation": 1372,
-          "profitBeforeTax": 6932,
-          "taxPercent": 17.38,
-          "netProfit": 5727,
-          "eps": 43.53
+          "sales": 12171,
+          "expenses": 3397,
+          "operatingProfit": 3514,
+          "opmPercent": 28.87,
+          "otherIncome": 26,
+          "interest": 5259,
+          "depreciation": 177,
+          "profitBeforeTax": 3363,
+          "taxPercent": 24.77,
+          "netProfit": 2530,
+          "eps": 13.45
         },
         {
           "period": {
@@ -92,17 +92,17 @@
             "quarter": 4,
             "endDate": "2026-03-31"
           },
-          "sales": 32439,
-          "expenses": 28709,
-          "operatingProfit": 3731,
-          "opmPercent": 11.5,
-          "otherIncome": 748,
-          "interest": 1646,
-          "depreciation": 2103,
-          "profitBeforeTax": 729,
-          "taxPercent": 122.91,
-          "netProfit": -167,
-          "eps": -0.81
+          "sales": 12513,
+          "expenses": 3104,
+          "operatingProfit": 4073,
+          "opmPercent": 32.55,
+          "otherIncome": 18,
+          "interest": 5336,
+          "depreciation": 175,
+          "profitBeforeTax": 3917,
+          "taxPercent": 22.87,
+          "netProfit": 3021,
+          "eps": 16.06
         },
         {
           "period": {
@@ -114,17 +114,17 @@
             "quarter": 1,
             "endDate": "2026-06-30"
           },
-          "sales": 32924,
-          "expenses": 27905,
-          "operatingProfit": 5019,
-          "opmPercent": 15.24,
-          "otherIncome": -2022,
-          "interest": 2421,
-          "depreciation": 1926,
-          "profitBeforeTax": -1349,
-          "taxPercent": -8.38,
-          "netProfit": -1462,
-          "eps": -8.92
+          "sales": 13400,
+          "expenses": 3406,
+          "operatingProfit": 4790,
+          "opmPercent": 35.75,
+          "otherIncome": 18,
+          "interest": 5204,
+          "depreciation": 183,
+          "profitBeforeTax": 4626,
+          "taxPercent": 25.36,
+          "netProfit": 3453,
+          "eps": 14.67
         }
       ]
     },
@@ -159,17 +159,17 @@
             "quarter": null,
             "endDate": "2022-03-31"
           },
-          "sales": 69420,
-          "expenses": 65707,
-          "operatingProfit": 3714,
-          "opmPercent": 5.35,
-          "otherIncome": 1012,
-          "interest": 2526,
-          "depreciation": 1248,
-          "profitBeforeTax": 952,
-          "taxPercent": 17.23,
-          "netProfit": 788,
-          "eps": 6.3
+          "sales": 19255,
+          "expenses": 5816,
+          "operatingProfit": 3666,
+          "opmPercent": 19.04,
+          "otherIncome": 18,
+          "interest": 9773,
+          "depreciation": 135,
+          "profitBeforeTax": 3549,
+          "taxPercent": 23.33,
+          "netProfit": 2721,
+          "eps": 20.12
         },
         {
           "period": {
@@ -181,17 +181,17 @@
             "quarter": null,
             "endDate": "2023-03-31"
           },
-          "sales": 127540,
-          "expenses": 118722,
-          "operatingProfit": 8818,
-          "opmPercent": 6.91,
-          "otherIncome": 834,
-          "interest": 3969,
-          "depreciation": 2436,
-          "profitBeforeTax": 3247,
-          "taxPercent": 25.41,
-          "netProfit": 2422,
-          "eps": 19.3
+          "sales": 30492,
+          "expenses": 8706,
+          "operatingProfit": 8799,
+          "opmPercent": 28.86,
+          "otherIncome": 16,
+          "interest": 12987,
+          "depreciation": 601,
+          "profitBeforeTax": 8214,
+          "taxPercent": 26.71,
+          "netProfit": 6020,
+          "eps": 32.11
         },
         {
           "period": {
@@ -203,17 +203,17 @@
             "quarter": null,
             "endDate": "2024-03-31"
           },
-          "sales": 96421,
-          "expenses": 85044,
-          "operatingProfit": 11377,
-          "opmPercent": 11.8,
-          "otherIncome": 1146,
-          "interest": 4555,
-          "depreciation": 3042,
-          "profitBeforeTax": 4926,
-          "taxPercent": 32.3,
-          "netProfit": 3335,
-          "eps": 25.37
+          "sales": 36388,
+          "expenses": 10278,
+          "operatingProfit": 10523,
+          "opmPercent": 28.92,
+          "otherIncome": 25,
+          "interest": 15588,
+          "depreciation": 588,
+          "profitBeforeTax": 9960,
+          "taxPercent": 25.71,
+          "netProfit": 7399,
+          "eps": 39.2
         },
         {
           "period": {
@@ -225,17 +225,17 @@
             "quarter": null,
             "endDate": "2025-03-31"
           },
-          "sales": 97895,
-          "expenses": 83643,
-          "operatingProfit": 14252,
-          "opmPercent": 14.56,
-          "otherIncome": 6403,
-          "interest": 5978,
-          "depreciation": 4211,
-          "profitBeforeTax": 10466,
-          "taxPercent": 23.51,
-          "netProfit": 8005,
-          "eps": 55.02
+          "sales": 43941,
+          "expenses": 12279,
+          "operatingProfit": 13132,
+          "opmPercent": 29.89,
+          "otherIncome": 157,
+          "interest": 18529,
+          "depreciation": 645,
+          "profitBeforeTax": 12644,
+          "taxPercent": 24.26,
+          "netProfit": 9576,
+          "eps": 50.81
         },
         {
           "period": {
@@ -247,17 +247,17 @@
             "quarter": null,
             "endDate": "2026-03-31"
           },
-          "sales": 100469,
-          "expenses": 86478,
-          "operatingProfit": 13991,
-          "opmPercent": 13.93,
-          "otherIncome": 11688,
-          "interest": 6019,
-          "depreciation": 6135,
-          "profitBeforeTax": 13525,
-          "taxPercent": 26.43,
-          "netProfit": 9951,
-          "eps": 72.31
+          "sales": 48135,
+          "expenses": 12602,
+          "operatingProfit": 13947,
+          "opmPercent": 28.97,
+          "otherIncome": 52,
+          "interest": 21586,
+          "depreciation": 699,
+          "profitBeforeTax": 13300,
+          "taxPercent": 24.63,
+          "netProfit": 10024,
+          "eps": 53.28
         }
       ]
     },
@@ -274,16 +274,16 @@
             "quarter": null,
             "endDate": "2022-03-31"
           },
-          "equityCapital": 110,
-          "reserves": 22147,
-          "borrowings": 41604,
-          "otherLiabilities": 37726,
-          "totalLiabilities": 101586,
-          "fixedAssets": 30123,
-          "cwip": 23544,
-          "investments": 4292,
-          "otherAssets": 43627,
-          "totalAssets": 101586
+          "equityCapital": 271,
+          "reserves": 25824,
+          "borrowings": 114846,
+          "otherLiabilities": 1328,
+          "totalLiabilities": 142268,
+          "fixedAssets": 418,
+          "cwip": 0,
+          "investments": 6971,
+          "otherAssets": 134879,
+          "totalAssets": 142268
         },
         {
           "period": {
@@ -295,16 +295,16 @@
             "quarter": null,
             "endDate": "2023-03-31"
           },
-          "equityCapital": 114,
-          "reserves": 32937,
-          "borrowings": 53200,
-          "otherLiabilities": 55027,
-          "totalLiabilities": 141278,
-          "fixedAssets": 56881,
-          "cwip": 24025,
-          "investments": 6310,
-          "otherAssets": 54062,
-          "totalAssets": 141278
+          "equityCapital": 374,
+          "reserves": 43138,
+          "borrowings": 164202,
+          "otherLiabilities": 2858,
+          "totalLiabilities": 210573,
+          "fixedAssets": 3714,
+          "cwip": 66,
+          "investments": 7430,
+          "otherAssets": 199363,
+          "totalAssets": 210573
         },
         {
           "period": {
@@ -316,16 +316,16 @@
             "quarter": null,
             "endDate": "2024-03-31"
           },
-          "equityCapital": 114,
-          "reserves": 38962,
-          "borrowings": 65310,
-          "otherLiabilities": 56200,
-          "totalLiabilities": 160586,
-          "fixedAssets": 65978,
-          "cwip": 35180,
-          "investments": 8701,
-          "otherAssets": 50728,
-          "totalAssets": 160586
+          "equityCapital": 376,
+          "reserves": 48571,
+          "borrowings": 195496,
+          "otherLiabilities": 3823,
+          "totalLiabilities": 248266,
+          "fixedAssets": 3718,
+          "cwip": 0,
+          "investments": 9472,
+          "otherAssets": 235076,
+          "totalAssets": 248266
         },
         {
           "period": {
@@ -337,16 +337,16 @@
             "quarter": null,
             "endDate": "2025-03-31"
           },
-          "equityCapital": 115,
-          "reserves": 50199,
-          "borrowings": 91473,
-          "otherLiabilities": 56056,
-          "totalLiabilities": 197843,
-          "fixedAssets": 77260,
-          "cwip": 51516,
-          "investments": 9887,
-          "otherAssets": 59180,
-          "totalAssets": 197843
+          "equityCapital": 376,
+          "reserves": 56094,
+          "borrowings": 234197,
+          "otherLiabilities": 3330,
+          "totalLiabilities": 293998,
+          "fixedAssets": 2914,
+          "cwip": 0,
+          "investments": 15788,
+          "otherAssets": 275296,
+          "totalAssets": 293998
         },
         {
           "period": {
@@ -358,16 +358,16 @@
             "quarter": null,
             "endDate": "2026-03-31"
           },
-          "equityCapital": 129,
-          "reserves": 80797,
-          "borrowings": 106622,
-          "otherLiabilities": 73321,
-          "totalLiabilities": 260868,
-          "fixedAssets": 115174,
-          "cwip": 51753,
-          "investments": 9428,
-          "otherAssets": 84513,
-          "totalAssets": 260868
+          "equityCapital": 376,
+          "reserves": 65542,
+          "borrowings": 250692,
+          "otherLiabilities": 4764,
+          "totalLiabilities": 321375,
+          "fixedAssets": 2635,
+          "cwip": 0,
+          "investments": 14993,
+          "otherAssets": 303746,
+          "totalAssets": 321375
         }
       ]
     },
@@ -387,10 +387,10 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 1385,
-          "cashFromInvesting": -17041,
-          "cashFromFinancing": 15901,
-          "netCashFlow": 246
+          "cashFromOperating": -8859,
+          "cashFromInvesting": -34,
+          "cashFromFinancing": 8505,
+          "netCashFlow": -388
         },
         {
           "period": {
@@ -405,10 +405,10 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 17626,
-          "cashFromInvesting": -15459,
-          "cashFromFinancing": -1198,
-          "netCashFlow": 970
+          "cashFromOperating": -17625,
+          "cashFromInvesting": 5076,
+          "cashFromFinancing": 11820,
+          "netCashFlow": -730
         },
         {
           "period": {
@@ -423,10 +423,10 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 10312,
-          "cashFromInvesting": -18767,
-          "cashFromFinancing": 8879,
-          "netCashFlow": 424
+          "cashFromOperating": -31101,
+          "cashFromInvesting": -258,
+          "cashFromFinancing": 27609,
+          "netCashFlow": -3750
         },
         {
           "period": {
@@ -441,10 +441,10 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 4513,
-          "cashFromInvesting": -26417,
-          "cashFromFinancing": 22655,
-          "netCashFlow": 751
+          "cashFromOperating": -43652,
+          "cashFromInvesting": 3630,
+          "cashFromFinancing": 44521,
+          "netCashFlow": 4499
         },
         {
           "period": {
@@ -459,10 +459,10 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 2357,
-          "cashFromInvesting": -27680,
-          "cashFromFinancing": 28484,
-          "netCashFlow": 3161
+          "cashFromOperating": -13281,
+          "cashFromInvesting": -241,
+          "cashFromFinancing": 8587,
+          "netCashFlow": -4936
         }
       ]
     },
