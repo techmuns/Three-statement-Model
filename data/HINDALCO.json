@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/HINDALCO/consolidated/",
-    "fetchedAt": "2026-08-05T11:15:38.017Z",
+    "fetchedAt": "2026-08-07T21:44:03.999Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 64890,
-          "expenses": 56054,
-          "operatingProfit": 8836,
-          "opmPercent": 13.62,
-          "otherIncome": 706,
-          "interest": 874,
-          "depreciation": 2118,
-          "profitBeforeTax": 6550,
-          "taxPercent": 19.33,
-          "netProfit": 5284,
-          "eps": 23.51
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 24.75,
           "netProfit": 2597,
           "eps": 11.56
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 84825,
+          "expenses": 70893,
+          "operatingProfit": 13932,
+          "opmPercent": 16.42,
+          "otherIncome": -1236,
+          "interest": 966,
+          "depreciation": 2337,
+          "profitBeforeTax": 9393,
+          "taxPercent": 25.34,
+          "netProfit": 7013,
+          "eps": 31.21
         }
       ]
     },

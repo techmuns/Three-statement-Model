@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/JIOFIN/consolidated/",
-    "fetchedAt": "2026-08-05T11:15:52.061Z",
+    "fetchedAt": "2026-08-07T21:44:37.573Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -225,11 +225,11 @@
             "quarter": null,
             "endDate": "2026-03-31"
           },
-          "sales": 3513,
+          "sales": 3521,
           "expenses": 1208,
-          "operatingProfit": 2305,
-          "opmPercent": 65.61,
-          "otherIncome": 381,
+          "operatingProfit": 2312,
+          "opmPercent": 65.66,
+          "otherIncome": 374,
           "interest": 745,
           "depreciation": 29,
           "profitBeforeTax": 1912,
@@ -318,13 +318,13 @@
           "equityCapital": 6353,
           "reserves": 127500,
           "borrowings": 21768,
-          "otherLiabilities": 7875,
-          "totalLiabilities": 163497,
-          "fixedAssets": 418,
-          "cwip": 13,
+          "otherLiabilities": 7845,
+          "totalLiabilities": 163467,
+          "fixedAssets": 326,
+          "cwip": 105,
           "investments": 133089,
-          "otherAssets": 29977,
-          "totalAssets": 163497
+          "otherAssets": 29947,
+          "totalAssets": 163467
         }
       ]
     },
@@ -380,9 +380,9 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": -10083,
+          "cashFromOperating": -10089,
           "cashFromInvesting": 6406,
-          "cashFromFinancing": 3962,
+          "cashFromFinancing": 3968,
           "netCashFlow": 285
         },
         {
@@ -399,9 +399,9 @@
           "workingCapitalChange": null,
           "taxPaid": null,
           "cashFromOperating": -15439,
-          "cashFromInvesting": -5697,
+          "cashFromInvesting": -5652,
           "cashFromFinancing": 21454,
-          "netCashFlow": 318
+          "netCashFlow": 363
         }
       ]
     },

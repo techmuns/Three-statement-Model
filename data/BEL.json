@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BEL/consolidated/",
-    "fetchedAt": "2026-08-05T11:15:02.702Z",
+    "fetchedAt": "2026-08-07T21:43:29.049Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -248,11 +248,11 @@
             "endDate": "2026-03-31"
           },
           "sales": 27610,
-          "expenses": 19561,
-          "operatingProfit": 8049,
-          "opmPercent": 29.15,
+          "expenses": 19557,
+          "operatingProfit": 8053,
+          "opmPercent": 29.17,
           "otherIncome": 566,
-          "interest": 7,
+          "interest": 10,
           "depreciation": 556,
           "profitBeforeTax": 8053,
           "taxPercent": 24.72,
@@ -361,13 +361,13 @@
           "equityCapital": 731,
           "reserves": 23257,
           "borrowings": 65,
-          "otherLiabilities": 20484,
-          "totalLiabilities": 44538,
-          "fixedAssets": 4366,
-          "cwip": 486,
+          "otherLiabilities": 20473,
+          "totalLiabilities": 44527,
+          "fixedAssets": 4121,
+          "cwip": 731,
           "investments": 800,
-          "otherAssets": 38886,
-          "totalAssets": 44538
+          "otherAssets": 38876,
+          "totalAssets": 44527
         }
       ]
     },
@@ -441,8 +441,8 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 587,
-          "cashFromInvesting": 617,
+          "cashFromOperating": 564,
+          "cashFromInvesting": 639,
           "cashFromFinancing": -1696,
           "netCashFlow": -493
         },
