@@ -72,6 +72,49 @@ function candidatesFor(subject: CompanyFinancials): Candidate[] {
 
 const ORDER: Record<PeerOrigin, number> = { derived: 0, carried: 1, absent: 2 }
 
+/**
+ * Build the peer-comparison rows for a subject (subject first, then peers).
+ * Pure and async — reused by the hook and by the Excel export. Fetches each
+ * peer's statements and derives its KPIs; falls back to the carried snapshot,
+ * then to an absent row.
+ */
+export async function buildPeerRows(
+  subject: CompanyFinancials,
+  subjectName: string,
+): Promise<PeerRow[]> {
+  const subjectRow: PeerRow = {
+    symbol: subject.companyId.toUpperCase(),
+    name: subjectName,
+    isSubject: true,
+    origin: 'derived',
+    marketCap: null,
+    kpis: latestKpiMap(subject),
+  }
+
+  const candidates = candidatesFor(subject)
+  if (candidates.length === 0) return [subjectRow]
+
+  const peerRows = await Promise.all(
+    candidates.map(async (c): Promise<PeerRow> => {
+      let data: CompanyFinancials | null = null
+      try {
+        data = await fetchFinancials(c.symbol)
+      } catch {
+        data = null
+      }
+      if (data) {
+        return { symbol: c.symbol, name: c.name, isSubject: false, origin: 'derived', marketCap: c.carriedMarketCap, kpis: latestKpiMap(data) }
+      }
+      if (c.carriedKpis) {
+        return { symbol: c.symbol, name: c.name, isSubject: false, origin: 'carried', marketCap: c.carriedMarketCap, kpis: c.carriedKpis }
+      }
+      return { symbol: c.symbol, name: c.name, isSubject: false, origin: 'absent', marketCap: c.carriedMarketCap, kpis: new Map() }
+    }),
+  )
+  peerRows.sort((a, b) => ORDER[a.origin] - ORDER[b.origin] || (b.marketCap ?? 0) - (a.marketCap ?? 0))
+  return [subjectRow, ...peerRows]
+}
+
 export function usePeerKpis(
   subject: CompanyFinancials,
   subjectName: string,
@@ -82,69 +125,11 @@ export function usePeerKpis(
   useEffect(() => {
     let live = true
     setLoading(true)
-
-    const subjectRow: PeerRow = {
-      symbol: subject.companyId.toUpperCase(),
-      name: subjectName,
-      isSubject: true,
-      origin: 'derived',
-      marketCap: null,
-      kpis: latestKpiMap(subject),
-    }
-
-    const candidates = candidatesFor(subject)
-    if (candidates.length === 0) {
-      setRows([subjectRow])
-      setLoading(false)
-      return
-    }
-
-    Promise.all(
-      candidates.map(async (c): Promise<PeerRow> => {
-        let data: CompanyFinancials | null = null
-        try {
-          data = await fetchFinancials(c.symbol)
-        } catch {
-          data = null
-        }
-        if (data) {
-          return {
-            symbol: c.symbol,
-            name: c.name,
-            isSubject: false,
-            origin: 'derived',
-            marketCap: c.carriedMarketCap,
-            kpis: latestKpiMap(data),
-          }
-        }
-        if (c.carriedKpis) {
-          return {
-            symbol: c.symbol,
-            name: c.name,
-            isSubject: false,
-            origin: 'carried',
-            marketCap: c.carriedMarketCap,
-            kpis: c.carriedKpis,
-          }
-        }
-        return {
-          symbol: c.symbol,
-          name: c.name,
-          isSubject: false,
-          origin: 'absent',
-          marketCap: c.carriedMarketCap,
-          kpis: new Map(),
-        }
-      }),
-    ).then((peerRows) => {
+    buildPeerRows(subject, subjectName).then((built) => {
       if (!live) return
-      peerRows.sort(
-        (a, b) => ORDER[a.origin] - ORDER[b.origin] || (b.marketCap ?? 0) - (a.marketCap ?? 0),
-      )
-      setRows([subjectRow, ...peerRows])
+      setRows(built)
       setLoading(false)
     })
-
     return () => {
       live = false
     }
