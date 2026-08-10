@@ -12,7 +12,7 @@
 import { toBlob } from 'html-to-image'
 import { sdk } from './sdk'
 
-function captureRoot(): HTMLElement {
+export function captureRoot(): HTMLElement {
   const el =
     document.querySelector('#dashboard-main') ||
     document.querySelector('[data-dashboard-capture-root="true"]') ||

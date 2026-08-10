@@ -13,6 +13,8 @@ import { DEFAULT_PERIOD_VIEW, type PeriodViewId } from '@/config/navigation'
 import { useHostContext } from './lib/hostContext'
 import { useCompanyData } from './data/useCompanyData'
 import { downloadDashboardPng, registerVisualCapture } from './lib/capture'
+import { exportDashboardPdf } from './lib/exportPdf'
+import { exportFinancialsXlsx } from './lib/exportExcel'
 import { Shell, Footer } from './ui/Shell'
 import { Header, type DashboardTabId } from './ui/Header'
 import { EmptyState, ErrorState, LoadingState, WaitingForSession } from './ui/states'
@@ -47,7 +49,13 @@ export default function EarningsDashboard() {
   }, [])
 
   const companyName = tickerCompany ?? data?.companyId ?? ticker ?? null
-  const handleExport = () => downloadDashboardPng(`${ticker ?? 'dashboard'}-${tab}`)
+  const fileStem = `${ticker ?? 'dashboard'}-${tab}`
+  const onExportPng = () => downloadDashboardPng(fileStem)
+  const onExportPdf = () => exportDashboardPdf(fileStem)
+  const onExportExcel =
+    phase === 'ready' && data
+      ? () => exportFinancialsXlsx(data, period, companyName ?? data.companyId)
+      : null
 
   let body: ReactNode
   if (!ticker) {
@@ -129,7 +137,9 @@ export default function EarningsDashboard() {
           onTabChange={setTab}
           period={period}
           onPeriodChange={setPeriod}
-          onExport={handleExport}
+          onExportExcel={onExportExcel}
+          onExportPdf={onExportPdf}
+          onExportPng={onExportPng}
         />
       }
       footer={footer}
