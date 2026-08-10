@@ -12,13 +12,16 @@
     "command": "npm run build"
   },
 
-  // Static-assets-only Worker: Cloudflare serves `dist/` directly from its
-  // edge cache and no Worker script runs, so there is no `main` entry here.
-  // Add one only when this app needs server-side logic.
+  // The Worker (worker/index.js) handles the dynamic /api/* routes
+  // (Analyze dispatch + runtime data reads) and falls through to the static
+  // assets for everything else via the ASSETS binding.
+  "main": "worker/index.js",
+
   "assets": {
     "directory": "./dist",
-    // The app is a single-page app with no server routes, so any unknown path
-    // returns index.html rather than a 404.
+    // Exposed to the Worker so it can serve the SPA for non-API routes.
+    "binding": "ASSETS",
+    // Single-page app: any unknown non-API path returns index.html, not a 404.
     "not_found_handling": "single-page-application"
   },
 

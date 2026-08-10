@@ -1,21 +1,22 @@
 /**
  * Dhamma Capital · Earnings Dashboard (Munshot embedded).
  *
- * The dashboard is the first and only screen — no landing page. It reads the
- * selected ticker and session from the Munshot host, resolves that company's
- * real statements through the data seam, and renders the Financials and KPIs
- * tabs. Every missing case (no ticker, no session yet, no data, load error) has
- * an honest state; nothing is faked.
+ * The dashboard is the first and only screen. It reads the selected ticker and
+ * session from the Munshot host and resolves that company's statements at
+ * runtime. If nothing is scraped yet, it offers Analyze — which dispatches a
+ * scrape and then fills itself in. Every missing case has an honest state;
+ * nothing is faked.
  */
 
 import { useEffect, useState, type ReactNode } from 'react'
 import { DEFAULT_PERIOD_VIEW, type PeriodViewId } from '@/config/navigation'
 import { useHostContext } from './lib/hostContext'
-import { useFinancials } from './data/financials'
+import { useCompanyData } from './data/useCompanyData'
 import { downloadDashboardPng, registerVisualCapture } from './lib/capture'
 import { Shell, Footer } from './ui/Shell'
 import { Header, type DashboardTabId } from './ui/Header'
 import { EmptyState, ErrorState, LoadingState, WaitingForSession } from './ui/states'
+import { AnalyzePrompt, AnalyzingState } from './components/AnalyzePanel'
 import { FinancialsTab } from './tabs/FinancialsTab'
 import { KpisTab } from './tabs/KpisTab'
 import { T } from './ui/tokens'
@@ -30,7 +31,7 @@ function shortDate(iso: string): string {
 function FullState({ children }: { children: ReactNode }) {
   return (
     <div style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ maxWidth: 420, width: '100%' }}>{children}</div>
+      <div style={{ maxWidth: 440, width: '100%' }}>{children}</div>
     </div>
   )
 }
@@ -39,14 +40,13 @@ export default function EarningsDashboard() {
   const { session, ticker, tickerCompany } = useHostContext()
   const [tab, setTab] = useState<DashboardTabId>('financials')
   const [period, setPeriod] = useState<PeriodViewId>(DEFAULT_PERIOD_VIEW)
-  const result = useFinancials(ticker, session.token)
+  const { phase, data, message, analyze } = useCompanyData(ticker, session.token)
 
   useEffect(() => {
     registerVisualCapture()
   }, [])
 
-  const companyName = tickerCompany ?? (result.status === 'ok' ? result.data.companyId : ticker) ?? null
-
+  const companyName = tickerCompany ?? data?.companyId ?? ticker ?? null
   const handleExport = () => downloadDashboardPng(`${ticker ?? 'dashboard'}-${tab}`)
 
   let body: ReactNode
@@ -65,7 +65,7 @@ export default function EarningsDashboard() {
         <WaitingForSession />
       </FullState>
     )
-  } else if (result.status === 'loading') {
+  } else if (phase === 'loading') {
     body = (
       <div style={{ display: 'grid', gap: 20, gridTemplateColumns: 'repeat(auto-fill, minmax(480px, 1fr))' }}>
         {[0, 1].map((i) => (
@@ -75,41 +75,47 @@ export default function EarningsDashboard() {
         ))}
       </div>
     )
-  } else if (result.status === 'error') {
+  } else if (phase === 'error') {
     body = (
       <FullState>
-        <ErrorState hint={result.error} />
+        <ErrorState hint={message ?? undefined} />
       </FullState>
     )
-  } else if (result.status === 'empty') {
+  } else if (phase === 'analyzing') {
     body = (
       <FullState>
-        <EmptyState
-          message={`No statements for ${ticker} yet`}
-          hint="This company isn’t in the scraped set yet. It will appear here once its Screener data is ingested — no placeholder numbers are shown in the meantime."
-        />
+        <AnalyzingState ticker={ticker} />
+      </FullState>
+    )
+  } else if (phase === 'absent' || !data) {
+    body = (
+      <FullState>
+        <AnalyzePrompt ticker={ticker} onAnalyze={analyze} />
+        {message && (
+          <p style={{ textAlign: 'center', fontSize: 12, color: T.inkHint, marginTop: 12 }}>{message}</p>
+        )}
       </FullState>
     )
   } else {
     body =
       tab === 'financials' ? (
-        <FinancialsTab financials={result.data} period={period} />
+        <FinancialsTab financials={data} period={period} />
       ) : (
-        <KpisTab financials={result.data} companyName={companyName ?? result.data.companyId} period={period} />
+        <KpisTab financials={data} companyName={companyName ?? data.companyId} period={period} />
       )
   }
 
   const footer =
-    result.status === 'ok' ? (
+    phase === 'ready' && data ? (
       <Footer>
         <span>
-          Source: Screener.in · {result.data.source.basis} · updated {shortDate(result.data.source.fetchedAt)}
+          Source: Screener.in · {data.source.basis} · updated {shortDate(data.source.fetchedAt)}
         </span>
         <span style={{ marginLeft: 'auto' }}>Figures in ₹ crore · “—” = not reported</span>
       </Footer>
     ) : (
       <Footer>
-        <span>Source: Screener.in — real scraped statements, honest empty states where a company isn’t covered yet.</span>
+        <span>Source: Screener.in — real scraped statements, on demand. Honest empty states where a company isn’t analyzed yet.</span>
       </Footer>
     )
 

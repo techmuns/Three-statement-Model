@@ -1,70 +1,62 @@
 /**
  * The single data seam.
  *
- * Every widget reads financials through `useFinancials(ticker)` and nothing
- * else. The host's selected ticker IS the NSE symbol, which is also our
+ * The host's selected ticker IS the NSE symbol, which is also our
  * `CompanyFinancials.companyId` — so there is no symbol↔id mapping.
  *
  * ── Where the real numbers come from ──
- * Today this resolves the company's already-scraped Screener statements from
- * `data/<SYMBOL>.json` (real figures, validated at load). A ticker with no file
- * yet resolves to `null`, which every widget renders as an honest "awaiting
- * data" state — never invented numbers.
+ * In production the dashboard reads the company's already-scraped statements at
+ * runtime from the Worker (`GET /api/financials`), which serves the committed
+ * `data/<SYMBOL>.json` fresh from the repo. A 404 means "not scraped yet" →
+ * `null`, which the UI turns into an Analyze prompt (never invented numbers).
  *
- * When a Munshot fundamentals datasource is confirmed, `fetchFinancials` is the
- * one place to swap: call it with the host bearer token and adapt the response
- * into `CompanyFinancials`. The widgets do not change.
+ * In local dev there is no Worker, so it reads the same real files straight off
+ * disk via the build-time glob — so `npm run dev` still renders real data.
  */
 
-import { useEffect, useState } from 'react'
-import { getScrapedFinancials } from '@/data/scrapedFinancials'
 import type { CompanyFinancials } from '@/types/financials'
 
-export type FinancialsResult =
-  | { status: 'loading' }
-  | { status: 'empty' }
-  | { status: 'error'; error: string }
-  | { status: 'ok'; data: CompanyFinancials }
+const DEV = import.meta.env.DEV
 
-/**
- * Resolve one company's financials by NSE symbol. Async on purpose: it mirrors
- * the shape of a real host API call and lets widgets exercise their loading
- * state honestly.
- */
+/** Resolve one company's financials by NSE symbol; `null` when not scraped yet. */
 export async function fetchFinancials(ticker: string): Promise<CompanyFinancials | null> {
   const symbol = ticker.trim().toUpperCase()
-  // Real, on-disk scraped statements. Swap this line for the Munshot
-  // fundamentals call (with the host token) once that datasource exists.
-  return getScrapedFinancials(symbol)
+
+  if (DEV) {
+    // Real on-disk scraped data, no Worker needed. Dynamic import so the build
+    // does not inline every data file into the production bundle.
+    const mod = await import('@/data/scrapedFinancials')
+    return mod.getScrapedFinancials(symbol)
+  }
+
+  const res = await fetch(`/api/financials?ticker=${encodeURIComponent(symbol)}`, {
+    headers: { Accept: 'application/json' },
+  })
+  if (res.status === 404) return null // not scraped yet
+  if (!res.ok) throw new Error(`financials request failed (${res.status})`)
+  const payload = (await res.json()) as { status?: string; data?: CompanyFinancials }
+  return payload.data ?? null
 }
 
-/** React binding: re-fetches whenever the ticker (or session token) changes. */
-export function useFinancials(ticker: string | null, token: string | null): FinancialsResult {
-  const [result, setResult] = useState<FinancialsResult>(
-    ticker ? { status: 'loading' } : { status: 'empty' },
-  )
+export interface AnalyzeResult {
+  ok: boolean
+  message?: string
+}
 
-  useEffect(() => {
-    if (!ticker) {
-      setResult({ status: 'empty' })
-      return
-    }
-    let live = true
-    setResult({ status: 'loading' })
-    fetchFinancials(ticker)
-      .then((data) => {
-        if (!live) return
-        setResult(data ? { status: 'ok', data } : { status: 'empty' })
-      })
-      .catch((err: unknown) => {
-        if (!live) return
-        setResult({ status: 'error', error: err instanceof Error ? err.message : 'Unknown error' })
-      })
-    return () => {
-      live = false
-    }
-    // token is intentionally a dependency: a session refresh must re-fetch.
-  }, [ticker, token])
+/** Ask the Worker to dispatch a scrape of one company. */
+export async function requestAnalyze(ticker: string): Promise<AnalyzeResult> {
+  const symbol = ticker.trim().toUpperCase()
 
-  return result
+  if (DEV) {
+    return { ok: false, message: 'Analyze runs on the deployed dashboard, not in local dev.' }
+  }
+
+  const res = await fetch('/api/analyze', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ticker: symbol }),
+  })
+  const payload = (await res.json().catch(() => ({}))) as { status?: string; message?: string }
+  if (res.ok && payload.status === 'dispatched') return { ok: true }
+  return { ok: false, message: payload.message ?? `Couldn’t start analysis (${res.status}).` }
 }
