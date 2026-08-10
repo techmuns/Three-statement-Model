@@ -3,20 +3,18 @@
  * company's own history ("own comparables") and to peers.
  *
  * KPI cards carry the trailing series and the change vs the prior period — the
- * self-comparison. The peer table sets the latest values beside sector
- * comparables. Every number is derived from the scraped statements; peers are
- * carried from Screener's peer table, which is honest about its thin coverage.
+ * self-comparison, on the selected cadence. The peer table sets the company's
+ * latest-year KPIs beside its comparables, each peer's KPIs derived from that
+ * peer's own scraped statements (not a single carried column).
  */
 
 import type { PeriodViewId } from '@/config/navigation'
 import type { CompanyFinancials } from '@/types/financials'
-import type { KpiId } from '@/types/kpi'
-import type { Reported } from '@/types/common'
 import { statementSetFor } from '@/lib/statements'
 import { deriveKpis } from '../data/metrics'
-import { peerGroupFor } from '../data/peers'
+import { usePeerKpis } from '../data/peerKpis'
 import { WidgetCard } from '../ui/WidgetCard'
-import { UnavailableState } from '../ui/states'
+import { LoadingState, UnavailableState } from '../ui/states'
 import { KpiCard } from '../components/KpiCard'
 import { PeerTable } from '../components/PeerTable'
 import { T } from '../ui/tokens'
@@ -32,10 +30,11 @@ export function KpisTab({
 }) {
   const set = statementSetFor(financials, period)
   const kpis = deriveKpis(set)
-  const group = peerGroupFor(financials.companyId)
+  const { rows, loading } = usePeerKpis(financials, companyName)
   const periodLabel = period === 'quarters' ? 'last 5 quarters' : 'last 5 financial years'
 
-  const subjectKpis = new Map<KpiId, Reported<number>>(kpis.map((k) => [k.id, k.latest]))
+  const hasPeers = rows.length > 1
+  const derivedCount = rows.filter((r) => !r.isSubject && r.origin === 'derived').length
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
@@ -49,22 +48,29 @@ export function KpisTab({
 
       <WidgetCard
         title="Peer Comparison"
-        subtitle={group ? `${group.label} · subject vs carried peers` : 'Sector comparables'}
+        subtitle={
+          hasPeers
+            ? `${derivedCount} peer${derivedCount === 1 ? '' : 's'} with full statements · latest FY, derived like-for-like`
+            : 'Sector comparables'
+        }
       >
-        {group ? (
-          <PeerTable subjectName={companyName} subjectKpis={subjectKpis} group={group} />
+        {loading ? (
+          <LoadingState rows={6} />
+        ) : hasPeers ? (
+          <PeerTable rows={rows} />
         ) : (
           <UnavailableState
-            note="No peer group mapped for this company yet."
-            hint="Peer cohorts are assembled per sector from Screener's peer table."
+            note="No peers mapped for this company yet."
+            hint="Peers come from Screener's peer table, captured when the company is analyzed."
           />
         )}
       </WidgetCard>
 
       <div style={{ fontSize: 12, color: T.inkHint }}>
         KPIs are computed from the scraped statements, so they match the P&L and balance sheet exactly.
-        Balance-sheet KPIs (ROE, ROCE, D/E) need the annual balance sheet — in the 5-quarter view they show “—”.
-        Peer values are carried from Screener’s peer table (market cap, ROCE); other peer columns aren’t exposed by that source.
+        Balance-sheet KPIs (ROE, ROCE, D/E) need the annual balance sheet — in the 5-quarter view the cards show “—”.
+        In the peer table, a <strong>peer</strong> row is derived from that company’s own statements; a
+        <strong> carried</strong> row is Screener’s snapshot; <strong>not analyzed</strong> means we haven’t scraped it yet.
       </div>
     </div>
   )

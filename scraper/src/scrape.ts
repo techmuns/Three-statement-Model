@@ -118,7 +118,18 @@ export async function scrapeCompany(
       // Segment mix stays as normalize left it.
     }
 
-    return { financials: withSegments, peers, peerError, peerColumns }
+    // Store the company's own peer list (identity only) so the dashboard can
+    // derive each peer's KPIs from that peer's statements — this scales peer
+    // comparison to any company, not just the seeded sector groups.
+    const peerRefs = peers.map((p) => ({
+      symbol: p.symbol,
+      name: p.name,
+      marketCapCrore: p.marketCapCrore,
+    }))
+    const financialsOut: CompanyFinancials =
+      peerRefs.length > 0 ? { ...withSegments, peers: peerRefs } : withSegments
+
+    return { financials: financialsOut, peers, peerError, peerColumns }
   } finally {
     await page.close()
   }

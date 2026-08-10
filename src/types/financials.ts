@@ -166,6 +166,19 @@ export interface StatementSet {
   readonly segmentMix: SegmentMix
 }
 
+/**
+ * A peer reference: another listed company Screener names as a comparable. Just
+ * the identity — the peer's KPIs are derived from *its own* scraped statements
+ * when we hold them, so nothing is carried or fabricated here.
+ */
+export interface PeerRef {
+  /** NSE symbol — joins to that company's `data/<symbol>.json`. */
+  readonly symbol: string
+  readonly name: string
+  /** Market cap as Screener's peer table showed it, for ranking/labels. */
+  readonly marketCapCrore?: Reported<Crore>
+}
+
 export interface CompanyFinancials {
   /** Joins to `MockCompany.id` in `src/mocks/companies.ts`. */
   readonly companyId: string
@@ -183,6 +196,9 @@ export interface CompanyFinancials {
   readonly quarterly: StatementSet
   /** Last 5 financial years. All three statements available. */
   readonly annual: StatementSet
+  /** Comparable companies from Screener's peer table. Optional: older files
+   * predate it, and a company may have no peer table. */
+  readonly peers?: readonly PeerRef[]
 }
 
 /* -------------------------------------------------------------------------- */
