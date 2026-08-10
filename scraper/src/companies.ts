@@ -69,6 +69,20 @@ export function findScraperCompany(query: string): ScraperCompany | undefined {
   return BY_SYMBOL.get(query.trim().toUpperCase())
 }
 
+/**
+ * Resolve a symbol for an on-demand scrape of **any listed company** — not only
+ * the ~500 in the registry. If we hold a registry entry we use it (for the
+ * proper display name); otherwise we synthesise one, because Screener has a
+ * company page per NSE symbol (`/company/<SYMBOL>/`). An unknown or delisted
+ * symbol simply fails loudly when the page has no statement table — it never
+ * produces fabricated data. This is what lets an analyst pull any ticker the
+ * Munshot host selects, rather than being gated to a fixed universe.
+ */
+export function resolveScraperCompany(query: string): ScraperCompany {
+  const symbol = query.trim().toUpperCase()
+  return BY_SYMBOL.get(symbol) ?? { companyId: symbol, screenerSymbol: symbol, name: symbol }
+}
+
 const SCRIP_BY_SYMBOL = new Map(
   REGISTRY.filter((entry) => entry.bseScripCode).map((entry) => [entry.symbol, entry.bseScripCode!]),
 )
