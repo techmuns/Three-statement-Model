@@ -32,6 +32,22 @@ body {
   border-radius: 6px;
 }
 
+/* Analyze progress spinner. */
+@keyframes dash-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dash-spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+  border-top-color: #4f46e5;
+  animation: dash-spin 0.9s linear infinite;
+}
+
 /* One focus treatment for every interactive element. */
 :focus-visible {
   outline: 2px solid #4f46e5;
@@ -42,6 +58,9 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .dash-shimmer {
     animation: none;
+  }
+  .dash-spinner {
+    animation-duration: 2.4s;
   }
   * {
     transition: none !important;
