@@ -11,7 +11,7 @@
       "id": "hcltech",
       "name": "HCL Technologies",
       "ticker": "HCLTECH",
-      "marketCapCrore": 366344.79,
+      "marketCapCrore": 368298.63,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -31,7 +31,7 @@
         },
         {
           "kpiId": "return-on-capital-employed",
-          "value": null
+          "value": 30.4
         },
         {
           "kpiId": "debt-to-equity",
@@ -43,7 +43,7 @@
       "id": "wipro",
       "name": "Wipro",
       "ticker": "WIPRO",
-      "marketCapCrore": 185199.7,
+      "marketCapCrore": 183726.54,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -63,7 +63,7 @@
         },
         {
           "kpiId": "return-on-capital-employed",
-          "value": null
+          "value": 17.84
         },
         {
           "kpiId": "debt-to-equity",
@@ -75,7 +75,7 @@
       "id": "techm",
       "name": "Tech Mahindra",
       "ticker": "TECHM",
-      "marketCapCrore": 161713.99,
+      "marketCapCrore": 160733.91,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -95,7 +95,7 @@
         },
         {
           "kpiId": "return-on-capital-employed",
-          "value": null
+          "value": 23.12
         },
         {
           "kpiId": "debt-to-equity",
@@ -107,7 +107,7 @@
       "id": "ltm",
       "name": "LTM",
       "ticker": "LTM",
-      "marketCapCrore": 133657.57,
+      "marketCapCrore": 142229.92,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -127,7 +127,7 @@
         },
         {
           "kpiId": "return-on-capital-employed",
-          "value": null
+          "value": 29.6
         },
         {
           "kpiId": "debt-to-equity",
@@ -139,7 +139,7 @@
       "id": "persistent",
       "name": "Persistent Systems",
       "ticker": "PERSISTENT",
-      "marketCapCrore": 87078,
+      "marketCapCrore": 86352.35,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -159,7 +159,7 @@
         },
         {
           "kpiId": "return-on-capital-employed",
-          "value": null
+          "value": 34.36
         },
         {
           "kpiId": "debt-to-equity",

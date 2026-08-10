@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/INFY/consolidated/",
-    "fetchedAt": "2026-08-05T22:16:38.119Z",
+    "fetchedAt": "2026-08-10T21:47:13.764Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "TCS",
+      "name": "TCS",
+      "marketCapCrore": 877639.49
+    },
+    {
+      "symbol": "INFY",
+      "name": "Infosys",
+      "marketCapCrore": 480011.58
+    },
+    {
+      "symbol": "HCLTECH",
+      "name": "HCL Technologies",
+      "marketCapCrore": 368298.63
+    },
+    {
+      "symbol": "WIPRO",
+      "name": "Wipro",
+      "marketCapCrore": 183726.54
+    },
+    {
+      "symbol": "TECHM",
+      "name": "Tech Mahindra",
+      "marketCapCrore": 160733.91
+    },
+    {
+      "symbol": "LTM",
+      "name": "LTM",
+      "marketCapCrore": 142229.92
+    },
+    {
+      "symbol": "PERSISTENT",
+      "name": "Persistent Systems",
+      "marketCapCrore": 86352.35
+    }
+  ]
 }

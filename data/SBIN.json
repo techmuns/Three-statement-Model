@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/SBIN/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:32.433Z",
+    "fetchedAt": "2026-08-10T21:46:27.473Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 126840,
-          "expenses": 74438,
-          "operatingProfit": -25825,
-          "opmPercent": -20.36,
-          "otherIncome": 52722,
-          "interest": 78227,
-          "depreciation": 0,
-          "profitBeforeTax": 26897,
-          "taxPercent": 24.23,
-          "netProfit": 20379,
-          "eps": 21.96
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 21.35,
           "netProfit": 20508,
           "eps": 21.28
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 136240,
+          "expenses": 64930,
+          "operatingProfit": -10938,
+          "opmPercent": -8.03,
+          "otherIncome": 43821,
+          "interest": 82248,
+          "depreciation": 0,
+          "profitBeforeTax": 32884,
+          "taxPercent": 23.61,
+          "netProfit": 25121,
+          "eps": 26.12
         }
       ]
     },
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "SBIN",
+      "name": "SBI",
+      "marketCapCrore": 988599.14
+    },
+    {
+      "symbol": "UNIONBANK",
+      "name": "Union Bank (I)",
+      "marketCapCrore": 138275.13
+    },
+    {
+      "symbol": "PNB",
+      "name": "Punjab Natl.Bank",
+      "marketCapCrore": 130444.91
+    },
+    {
+      "symbol": "BANKBARODA",
+      "name": "Bank of Baroda",
+      "marketCapCrore": 128151.53
+    },
+    {
+      "symbol": "INDIANB",
+      "name": "Indian Bank",
+      "marketCapCrore": 119091.82
+    },
+    {
+      "symbol": "CANBK",
+      "name": "Canara Bank",
+      "marketCapCrore": 117011.4
+    },
+    {
+      "symbol": "IOB",
+      "name": "I O B",
+      "marketCapCrore": 65241.33
+    }
+  ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/TRENT/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:57.173Z",
+    "fetchedAt": "2026-08-10T21:46:52.450Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 4217,
-          "expenses": 3566,
-          "operatingProfit": 651,
-          "opmPercent": 15.44,
-          "otherIncome": 74,
-          "interest": 38,
-          "depreciation": 272,
-          "profitBeforeTax": 416,
-          "taxPercent": 25,
-          "netProfit": 312,
-          "eps": 5.97
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 20.42,
           "netProfit": 413,
           "eps": 7.51
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 5755,
+          "expenses": 4636,
+          "operatingProfit": 1119,
+          "opmPercent": 19.44,
+          "otherIncome": 30,
+          "interest": 47,
+          "depreciation": 410,
+          "profitBeforeTax": 692,
+          "taxPercent": 25.14,
+          "netProfit": 518,
+          "eps": 9.73
         }
       ]
     },
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "TRENT",
+      "name": "Trent",
+      "marketCapCrore": 161302.77
+    },
+    {
+      "symbol": "LENSKART",
+      "name": "Lenskart Solut.",
+      "marketCapCrore": 101915.11
+    },
+    {
+      "symbol": "MANYAVAR",
+      "name": "Vedant Fashions",
+      "marketCapCrore": 12753.93
+    },
+    {
+      "symbol": "ABLBL",
+      "name": "A B Lifestyle",
+      "marketCapCrore": 11173.88
+    },
+    {
+      "symbol": "AVL",
+      "name": "Aditya Vision",
+      "marketCapCrore": 8062.09
+    },
+    {
+      "symbol": "V2RETAIL",
+      "name": "V2 Retail",
+      "marketCapCrore": 7966.6
+    },
+    {
+      "symbol": "ABFRL",
+      "name": "Aditya Bir. Fas.",
+      "marketCapCrore": 7449.99
+    }
+  ]
 }

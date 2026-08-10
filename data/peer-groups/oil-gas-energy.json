@@ -5,5 +5,198 @@
   "memberCompanyIds": [
     "RELIANCE"
   ],
-  "peers": []
+  "peers": [
+    {
+      "id": "ioc",
+      "name": "I O C L",
+      "ticker": "IOC",
+      "marketCapCrore": 200521.59,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 18.66
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "bpcl",
+      "name": "B P C L",
+      "ticker": "BPCL",
+      "marketCapCrore": 138181.4,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 25.64
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "hindpetro",
+      "name": "H P C L",
+      "ticker": "HINDPETRO",
+      "marketCapCrore": 83655.34,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 22.24
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "mrpl",
+      "name": "M R P L",
+      "ticker": "MRPL",
+      "marketCapCrore": 28560.35,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 18.03
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "chennpetro",
+      "name": "C P C L",
+      "ticker": "CHENNPETRO",
+      "marketCapCrore": 18466.5,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 34.94
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "kotyark",
+      "name": "Kotyark Indust.",
+      "ticker": "KOTYARK",
+      "marketCapCrore": 472.52,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 15.3
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    }
+  ]
 }

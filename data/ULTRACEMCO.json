@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ULTRACEMCO/consolidated/",
-    "fetchedAt": "2026-08-05T22:16:00.747Z",
+    "fetchedAt": "2026-08-10T21:46:55.962Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ULTRACEMCO",
+      "name": "UltraTech Cem.",
+      "marketCapCrore": 354734.79
+    },
+    {
+      "symbol": "GRASIM",
+      "name": "Grasim Inds",
+      "marketCapCrore": 230055.12
+    },
+    {
+      "symbol": "AMBUJACEM",
+      "name": "Ambuja Cements",
+      "marketCapCrore": 107058.35
+    },
+    {
+      "symbol": "SHREECEM",
+      "name": "Shree Cement",
+      "marketCapCrore": 94170.75
+    },
+    {
+      "symbol": "JKCEMENT",
+      "name": "J K Cements",
+      "marketCapCrore": 41628.27
+    },
+    {
+      "symbol": "DALBHARAT",
+      "name": "Dalmia BharatLtd",
+      "marketCapCrore": 34605.92
+    },
+    {
+      "symbol": "ACC",
+      "name": "ACC",
+      "marketCapCrore": 25494
+    }
+  ]
 }

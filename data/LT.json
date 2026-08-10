@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/LT/consolidated/",
-    "fetchedAt": "2026-08-05T11:16:22.404Z",
+    "fetchedAt": "2026-08-10T21:45:58.718Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "LT",
+      "name": "Larsen & Toubro",
+      "marketCapCrore": 561353.36
+    },
+    {
+      "symbol": "RVNL",
+      "name": "Rail Vikas",
+      "marketCapCrore": 48097.24
+    },
+    {
+      "symbol": "NBCC",
+      "name": "NBCC",
+      "marketCapCrore": 25609.5
+    },
+    {
+      "symbol": "IRB",
+      "name": "IRB Infra.Devl.",
+      "marketCapCrore": 23576.26
+    },
+    {
+      "symbol": "KPIL",
+      "name": "Kalpataru Proj.",
+      "marketCapCrore": 22463.42
+    },
+    {
+      "symbol": "CEMPRO",
+      "name": "Cemindia Project",
+      "marketCapCrore": 21755.18
+    },
+    {
+      "symbol": "CMPDI",
+      "name": "Central Mine Pla",
+      "marketCapCrore": 17623.66
+    }
+  ]
 }

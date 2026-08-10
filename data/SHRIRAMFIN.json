@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/SHRIRAMFIN/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:28.900Z",
+    "fetchedAt": "2026-08-10T21:46:23.819Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "BAJFINANCE",
+      "name": "Bajaj Finance",
+      "marketCapCrore": 686224.68
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "name": "Shriram Finance",
+      "marketCapCrore": 267718.47
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "name": "Cholaman.Inv.&Fn",
+      "marketCapCrore": 163710.35
+    },
+    {
+      "symbol": "TATACAP",
+      "name": "Tata Capital",
+      "marketCapCrore": 156147.51
+    },
+    {
+      "symbol": "MUTHOOTFIN",
+      "name": "Muthoot Finance",
+      "marketCapCrore": 116666.74
+    },
+    {
+      "symbol": "LTF",
+      "name": "L&T Finance Ltd",
+      "marketCapCrore": 78401.64
+    },
+    {
+      "symbol": "SBICARD",
+      "name": "SBI Cards",
+      "marketCapCrore": 62332.58
+    }
+  ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/TATACONSUM/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:39.493Z",
+    "fetchedAt": "2026-08-10T21:46:34.772Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "TATACONSUM",
+      "name": "Tata Consumer",
+      "marketCapCrore": 109726.93
+    },
+    {
+      "symbol": "CCL",
+      "name": "CCL Products",
+      "marketCapCrore": 14991.18
+    },
+    {
+      "symbol": "VINCOFE",
+      "name": "Vintage Coffee",
+      "marketCapCrore": 2143.22
+    },
+    {
+      "symbol": "ANDREWYU",
+      "name": "Andrew Yule & Co",
+      "marketCapCrore": 1340.7
+    },
+    {
+      "symbol": "MCLEODRUSS",
+      "name": "Mcleod Russel",
+      "marketCapCrore": 537.22
+    },
+    {
+      "symbol": "500166",
+      "name": "Goodricke Group",
+      "marketCapCrore": 393.44
+    },
+    {
+      "symbol": "JAYSREETEA",
+      "name": "Jay Shree Tea",
+      "marketCapCrore": 247.79
+    }
+  ]
 }

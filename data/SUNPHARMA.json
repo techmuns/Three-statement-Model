@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/SUNPHARMA/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:35.952Z",
+    "fetchedAt": "2026-08-10T21:46:31.076Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "SUNPHARMA",
+      "name": "Sun Pharma.Inds.",
+      "marketCapCrore": 466526.69
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "Divi's Lab.",
+      "marketCapCrore": 220338.92
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "name": "Torrent Pharma.",
+      "marketCapCrore": 187293.13
+    },
+    {
+      "symbol": "CIPLA",
+      "name": "Cipla",
+      "marketCapCrore": 118567.46
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "name": "Zydus Lifesci.",
+      "marketCapCrore": 111620.68
+    },
+    {
+      "symbol": "LUPIN",
+      "name": "Lupin",
+      "marketCapCrore": 105163.48
+    },
+    {
+      "symbol": "MANKIND",
+      "name": "Mankind Pharma",
+      "marketCapCrore": 100688.42
+    }
+  ]
 }

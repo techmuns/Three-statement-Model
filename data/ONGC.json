@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ONGC/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:18.619Z",
+    "fetchedAt": "2026-08-10T21:46:16.594Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ONGC",
+      "name": "O N G C",
+      "marketCapCrore": 301725.42
+    },
+    {
+      "symbol": "OIL",
+      "name": "Oil India",
+      "marketCapCrore": 73685.33
+    },
+    {
+      "symbol": "VOGL",
+      "name": "Vedanta Oil and Gas",
+      "marketCapCrore": 15535.97
+    },
+    {
+      "symbol": "ANTELOPUS",
+      "name": "Antelopus Selan",
+      "marketCapCrore": 2785.21
+    },
+    {
+      "symbol": "HINDOILEXP",
+      "name": "Hind.Oil Explor.",
+      "marketCapCrore": 2166.67
+    },
+    {
+      "symbol": "PRABHA",
+      "name": "Prabha Energy",
+      "marketCapCrore": 2157.08
+    },
+    {
+      "symbol": "GNRL",
+      "name": "Guj.Nat.Resour.",
+      "marketCapCrore": 1569.31
+    }
+  ]
 }

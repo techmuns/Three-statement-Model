@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/POWERGRID/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:22.150Z",
+    "fetchedAt": "2026-08-10T21:46:20.219Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,27 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "POWERGRID",
+      "name": "Power Grid Corpn",
+      "marketCapCrore": 251209.31
+    },
+    {
+      "symbol": "INDIGRID",
+      "name": "IndiGrid Trust",
+      "marketCapCrore": 20342.02
+    },
+    {
+      "symbol": "PGINVIT",
+      "name": "Powergrid Infra.",
+      "marketCapCrore": 9098.17
+    },
+    {
+      "symbol": "ANZEN",
+      "name": "Anzen IYEP Trust",
+      "marketCapCrore": 3309
+    }
+  ]
 }

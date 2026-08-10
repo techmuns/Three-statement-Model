@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/MARUTI/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:04.667Z",
+    "fetchedAt": "2026-08-10T21:46:05.902Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "MARUTI",
+      "name": "Maruti Suzuki",
+      "marketCapCrore": 443213.31
+    },
+    {
+      "symbol": "M&M",
+      "name": "M & M",
+      "marketCapCrore": 437349.09
+    },
+    {
+      "symbol": "HYUNDAI",
+      "name": "Hyundai Motor I",
+      "marketCapCrore": 180627.89
+    },
+    {
+      "symbol": "TMPV",
+      "name": "Tata Motors PVeh",
+      "marketCapCrore": 127833.17
+    },
+    {
+      "symbol": "FORCEMOT",
+      "name": "Force Motors",
+      "marketCapCrore": 24112.56
+    },
+    {
+      "symbol": "OLECTRA",
+      "name": "Olectra Greentec",
+      "marketCapCrore": 11231.11
+    },
+    {
+      "symbol": "MERCURYEV",
+      "name": "Mercury EV-Tech",
+      "marketCapCrore": 657.31
+    }
+  ]
 }

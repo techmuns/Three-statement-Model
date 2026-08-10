@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/MAXHEALTH/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:08.247Z",
+    "fetchedAt": "2026-08-10T21:46:09.468Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "APOLLOHOSP",
+      "name": "Apollo Hospitals",
+      "marketCapCrore": 128140.89
+    },
+    {
+      "symbol": "MAXHEALTH",
+      "name": "Max Healthcare",
+      "marketCapCrore": 104039.76
+    },
+    {
+      "symbol": "MANIPALHOS",
+      "name": "Manipal Health",
+      "marketCapCrore": 90280.91
+    },
+    {
+      "symbol": "ASTERDM",
+      "name": "Aster DM Quality",
+      "marketCapCrore": 75587.08
+    },
+    {
+      "symbol": "FORTIS",
+      "name": "Fortis Health.",
+      "marketCapCrore": 71354.87
+    },
+    {
+      "symbol": "MEDANTA",
+      "name": "Global Health",
+      "marketCapCrore": 39690.85
+    },
+    {
+      "symbol": "NH",
+      "name": "Narayana Hrudaya",
+      "marketCapCrore": 37492.03
+    }
+  ]
 }

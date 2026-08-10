@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/TITAN/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:53.647Z",
+    "fetchedAt": "2026-08-10T21:46:48.854Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 14916,
-          "expenses": 13379,
-          "operatingProfit": 1537,
-          "opmPercent": 10.3,
-          "otherIncome": 116,
-          "interest": 252,
-          "depreciation": 183,
-          "profitBeforeTax": 1218,
-          "taxPercent": 28.49,
-          "netProfit": 871,
-          "eps": 9.81
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 25.24,
           "netProfit": 1179,
           "eps": 13.28
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 21356,
+          "expenses": 18466,
+          "operatingProfit": 2890,
+          "opmPercent": 13.53,
+          "otherIncome": 148,
+          "interest": 353,
+          "depreciation": 256,
+          "profitBeforeTax": 2429,
+          "taxPercent": 26.84,
+          "netProfit": 1777,
+          "eps": 20.02
         }
       ]
     },
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "TITAN",
+      "name": "Titan Company",
+      "marketCapCrore": 451883.16
+    },
+    {
+      "symbol": "KALYANKJIL",
+      "name": "Kalyan Jewellers",
+      "marketCapCrore": 61990.88
+    },
+    {
+      "symbol": "THANGAMAYL",
+      "name": "Thangamayil Jew.",
+      "marketCapCrore": 16625.77
+    },
+    {
+      "symbol": "BLUESTONE",
+      "name": "Bluestone Jewel",
+      "marketCapCrore": 12680.49
+    },
+    {
+      "symbol": "SKYGOLD",
+      "name": "Sky Gold & Diam.",
+      "marketCapCrore": 12073.97
+    },
+    {
+      "symbol": "PCJEWELLER",
+      "name": "PC Jeweller",
+      "marketCapCrore": 9576.6
+    },
+    {
+      "symbol": "PNGJL",
+      "name": "P N Gadgil Jewe.",
+      "marketCapCrore": 9386.37
+    }
+  ]
 }

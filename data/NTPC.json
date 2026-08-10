@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/NTPC/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:15.065Z",
+    "fetchedAt": "2026-08-10T21:46:12.990Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "NTPC",
+      "name": "NTPC",
+      "marketCapCrore": 330123
+    },
+    {
+      "symbol": "ADANIGREEN",
+      "name": "Adani Green",
+      "marketCapCrore": 225498.42
+    },
+    {
+      "symbol": "JSWENERGY",
+      "name": "JSW Energy",
+      "marketCapCrore": 105975.3
+    },
+    {
+      "symbol": "NHPC",
+      "name": "NHPC Ltd",
+      "marketCapCrore": 77547.67
+    },
+    {
+      "symbol": "NTPCGREEN",
+      "name": "NTPC Green Ene.",
+      "marketCapCrore": 77421.12
+    },
+    {
+      "symbol": "NLCINDIA",
+      "name": "NLC India",
+      "marketCapCrore": 39567.68
+    },
+    {
+      "symbol": "SJVN",
+      "name": "SJVN",
+      "marketCapCrore": 26683.31
+    }
+  ]
 }

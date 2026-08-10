@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/TATASTEEL/consolidated/",
-    "fetchedAt": "2026-08-05T22:15:46.585Z",
+    "fetchedAt": "2026-08-10T21:46:41.976Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "JSWSTEEL",
+      "name": "JSW Steel",
+      "marketCapCrore": 318398.11
+    },
+    {
+      "symbol": "TATASTEEL",
+      "name": "Tata Steel",
+      "marketCapCrore": 237486.62
+    },
+    {
+      "symbol": "JINDALSTEL",
+      "name": "Jindal Steel",
+      "marketCapCrore": 114759.91
+    },
+    {
+      "symbol": "SAIL",
+      "name": "S A I L",
+      "marketCapCrore": 71230.91
+    },
+    {
+      "symbol": "JSL",
+      "name": "Jindal Stain.",
+      "marketCapCrore": 60409.35
+    },
+    {
+      "symbol": "SARDAEN",
+      "name": "Sarda Energy",
+      "marketCapCrore": 17636.68
+    },
+    {
+      "symbol": "VISL",
+      "name": "Vedanta Iron & Steel",
+      "marketCapCrore": 14456.7
+    }
+  ]
 }
