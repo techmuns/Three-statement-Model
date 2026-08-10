@@ -52,6 +52,29 @@ export function preparePage(page: Page): Promise<unknown> {
 }
 
 /**
+ * Read the company's BSE scrip code (6 digits) from the page.
+ *
+ * Screener's company page links to the BSE quote page, whose URL carries the
+ * scrip code (e.g. `.../reliance/500325/`). We read it there so the BSE segment
+ * fetcher can find the company's filings without a hand-maintained code table.
+ * Returns `null` when no BSE link is present.
+ */
+export function extractBseScripCode(page: Page): Promise<string | null> {
+  return page.evaluate(() => {
+    const anchors = Array.from(
+      document.querySelectorAll('a[href*="bseindia.com"]'),
+    ) as HTMLAnchorElement[]
+    for (const a of anchors) {
+      const m = /bseindia\.com\/[^\s"']*?(\d{6})(?:[/?#]|$)/i.exec(a.href)
+      if (m) return m[1]
+    }
+    const text = document.body?.innerText ?? ''
+    const m2 = /\bBSE:?\s*(\d{6})\b/.exec(text)
+    return m2 ? m2[1] : null
+  })
+}
+
+/**
  * Extract one statement section's first data-table as raw header/row strings,
  * or `null` if the section or table is absent from the page.
  */
