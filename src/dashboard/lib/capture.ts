@@ -1,16 +1,9 @@
 /**
- * Visual export.
- *
- * Two entry points, both capturing Zone 2 (the scrollable main, tagged
- * `#dashboard-main`) at 2× for a sharp image:
- *  - `registerVisualCapture()` answers the host's `dashboard.capture.visual`
- *    request with a native Blob (per Munshot auth-standards).
- *  - `downloadDashboardPng()` backs the header Export button for local/manual
- *    use, saving a PNG straight from the browser.
+ * Visual export: capture Zone 2 (the scrollable main, tagged `#dashboard-main`)
+ * at 2× and save it as a PNG. Backs the header Export → PNG action.
  */
 
 import { toBlob } from 'html-to-image'
-import { sdk } from './sdk'
 
 export function captureRoot(): HTMLElement {
   const el =
@@ -25,14 +18,6 @@ async function captureBlob(): Promise<Blob> {
   const blob = await toBlob(captureRoot(), { pixelRatio: 2, backgroundColor: '#ffffff' })
   if (!blob) throw new Error('Visual snapshot capture returned an empty Blob')
   return blob
-}
-
-/** Register the host-driven capture channel. Call once at app start. */
-export function registerVisualCapture(): void {
-  sdk.onRequest('dashboard.capture.visual', async () => ({
-    visualSnapshot: await captureBlob(),
-    capturedAt: new Date().toISOString(),
-  }))
 }
 
 /** Save the current dashboard view as a PNG (header Export button). */

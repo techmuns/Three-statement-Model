@@ -26,7 +26,7 @@ export interface CompanyDataState {
   analyze: () => void
 }
 
-export function useCompanyData(ticker: string | null, token: string | null): CompanyDataState {
+export function useCompanyData(ticker: string | null): CompanyDataState {
   const [phase, setPhase] = useState<CompanyPhase>('loading')
   const [data, setData] = useState<CompanyFinancials | null>(null)
   const [message, setMessage] = useState<string | null>(null)
@@ -70,7 +70,7 @@ export function useCompanyData(ticker: string | null, token: string | null): Com
       liveRef.current = false
       stopPolling()
     }
-  }, [ticker, token])
+  }, [ticker])
 
   const analyze = useCallback(() => {
     if (!ticker) return
