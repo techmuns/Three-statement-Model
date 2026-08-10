@@ -16,7 +16,16 @@
 import type { BrowserContext } from 'playwright'
 import type { CompanyFinancials } from '../../src/types/financials'
 import type { ScraperCompany } from './companies'
-import { detectBasis, extractPeersTable, extractSection, preparePage, SECTION_IDS } from './extract'
+import { bseScripCodeFor } from './companies'
+import { fetchCompanySegmentMix } from './bse/companySegments'
+import {
+  detectBasis,
+  extractBseScripCode,
+  extractPeersTable,
+  extractSection,
+  preparePage,
+  SECTION_IDS,
+} from './extract'
 import { normalizeCompany } from './normalize'
 import { mapPeersTable, type ScrapedPeer } from './peers'
 
@@ -89,7 +98,27 @@ export async function scrapeCompany(
         `KPIs mapped [${mapped.mappedKpis.join(', ') || 'none'}]`
     }
 
-    return { financials, peers, peerError, peerColumns }
+    // Best-effort quarterly segment mix from the company's BSE filings. Never
+    // allowed to break the statements scrape — any failure keeps the honest
+    // "not reported" state that normalize already set.
+    let withSegments = financials
+    try {
+      const scrip = (await extractBseScripCode(page)) ?? bseScripCodeFor(company.companyId) ?? null
+      if (scrip) {
+        const quarterlyIds =
+          financials.quarterly.profitLoss.status === 'available'
+            ? financials.quarterly.profitLoss.periods.map((p) => p.period.id)
+            : []
+        const segmentMix = await fetchCompanySegmentMix(scrip, quarterlyIds)
+        if (segmentMix) {
+          withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
+        }
+      }
+    } catch {
+      // Segment mix stays as normalize left it.
+    }
+
+    return { financials: withSegments, peers, peerError, peerColumns }
   } finally {
     await page.close()
   }
