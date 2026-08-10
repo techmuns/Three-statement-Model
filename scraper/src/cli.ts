@@ -18,7 +18,7 @@
 
 import { parseArgs } from 'node:util'
 import { launchBrowser, createLoggedInContext } from './browser'
-import { ROTATION_COMPANIES, findScraperCompany, type ScraperCompany } from './companies'
+import { ROTATION_COMPANIES, resolveScraperCompany, type ScraperCompany } from './companies'
 import { readCredentials } from './env'
 import { readFetchedAt, writeCompanyFile, writePeerGroupFile } from './output'
 import { PEER_GROUP_CONFIG } from './peerGroups'
@@ -58,9 +58,8 @@ async function resolveTargets(): Promise<readonly ScraperCompany[]> {
   })
 
   if (values.company) {
-    const company = findScraperCompany(values.company)
-    if (!company) usage(`Unknown company: ${values.company}`)
-    return [company]
+    // Any listed symbol, registry member or not — see resolveScraperCompany.
+    return [resolveScraperCompany(values.company)]
   }
 
   if (values.rotate) {
