@@ -51,10 +51,26 @@ export async function requestAnalyze(ticker: string): Promise<AnalyzeResult> {
     return { ok: false, message: 'Analyze runs on the deployed dashboard, not in local dev.' }
   }
 
+  return requestAnalyzeMany([symbol])
+}
+
+/**
+ * Ask the Worker to dispatch a scrape of several companies in one run — what the
+ * peer "Run all" uses, so every peer is scraped in a single workflow run instead
+ * of one queued run each.
+ */
+export async function requestAnalyzeMany(tickers: readonly string[]): Promise<AnalyzeResult> {
+  const list = [...new Set(tickers.map((t) => t.trim().toUpperCase()).filter(Boolean))]
+  if (list.length === 0) return { ok: false, message: 'No companies to analyze.' }
+
+  if (DEV) {
+    return { ok: false, message: 'Analyze runs on the deployed dashboard, not in local dev.' }
+  }
+
   const res = await fetch('/api/analyze', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ ticker: symbol }),
+    body: JSON.stringify({ tickers: list }),
   })
   const payload = (await res.json().catch(() => ({}))) as { status?: string; message?: string }
   if (res.ok && payload.status === 'dispatched') return { ok: true }

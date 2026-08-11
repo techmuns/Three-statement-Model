@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       ticker:
-        description: "One listed symbol to scrape on demand (e.g. SHAILY). Leave blank to run the normal staleness rotation."
+        description: "One symbol, or a comma-separated list (e.g. SHAILY or BPCL,IOC,HINDPETRO), to scrape on demand. A list is scraped in one logged-in session. Leave blank to run the normal staleness rotation."
         required: false
         type: string
       batch:

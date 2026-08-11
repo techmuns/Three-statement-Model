@@ -4,7 +4,7 @@
  * tables ever live here.
  */
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { PERIOD_VIEWS, type PeriodViewId } from '@/config/navigation'
 import { Segmented, type SegmentedOption } from './Segmented'
 import { SearchBox } from './SearchBox'
@@ -13,6 +13,18 @@ import { T } from './tokens'
 export type DashboardTabId = 'financials' | 'kpis'
 
 type ExportFn = () => void | Promise<void>
+
+const findPeersBtn: CSSProperties = {
+  fontSize: 12,
+  fontWeight: 600,
+  color: T.primaryText,
+  background: T.primaryLight,
+  border: `1px solid ${T.primaryBorder}`,
+  borderRadius: 8,
+  padding: '5px 12px',
+  cursor: 'pointer',
+  whiteSpace: 'nowrap',
+}
 
 const TAB_OPTIONS: readonly SegmentedOption<DashboardTabId>[] = [
   { id: 'financials', label: 'Financials' },
@@ -142,6 +154,7 @@ export function Header({
   onExportExcel,
   onExportPdf,
   onExportPng,
+  onFindPeers,
 }: {
   currentSymbol: string | null
   currentName: string | null
@@ -153,6 +166,8 @@ export function Header({
   onExportExcel: ExportFn | null
   onExportPdf: ExportFn
   onExportPng: ExportFn
+  /** Jump to the peer comparison; shown only once a company is loaded. */
+  onFindPeers?: () => void
 }) {
   return (
     <header
@@ -177,6 +192,16 @@ export function Header({
           Dhamma Capital · Earnings
         </h1>
         <SearchBox currentSymbol={currentSymbol} currentName={currentName} onSelect={onSelectCompany} />
+        {onFindPeers && (
+          <button
+            type="button"
+            onClick={onFindPeers}
+            style={findPeersBtn}
+            title="Show this company's peers and compare their KPIs"
+          >
+            Find peers
+          </button>
+        )}
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>

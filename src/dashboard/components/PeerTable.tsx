@@ -2,9 +2,9 @@
  * Peer comparison table: the subject beside its comparables, all six KPIs.
  *
  * Derived rows carry KPIs computed from that peer's own scraped statements;
- * carried rows show only what Screener's peer snapshot held; absent rows are
- * peers we haven't scraped yet. A blank cell means "not available from that
- * peer's data", never zero.
+ * carried rows show only what Screener's peer snapshot held; not-yet-analyzed
+ * rows offer an inline Analyze (or show a spinner while running) and fill in the
+ * moment their scrape lands. A blank cell means "not available", never zero.
  */
 
 import type { CSSProperties } from 'react'
@@ -26,7 +26,17 @@ const ORIGIN_CHIP: Record<PeerRow['origin'], { label: string; bg: string; color:
   absent: { label: 'not analyzed', bg: '#fffbeb', color: '#d97706' },
 }
 
-export function PeerTable({ rows }: { rows: readonly PeerRow[] }) {
+export function PeerTable({
+  rows,
+  analyzing,
+  canAnalyze,
+  onAnalyze,
+}: {
+  rows: readonly PeerRow[]
+  analyzing: ReadonlySet<string>
+  canAnalyze: boolean
+  onAnalyze: (symbol: string) => void
+}) {
   const th: CSSProperties = {
     padding: '8px 12px',
     fontSize: 11,
@@ -38,6 +48,19 @@ export function PeerTable({ rows }: { rows: readonly PeerRow[] }) {
     background: T.cardHeaderBg,
     position: 'sticky',
     top: 0,
+  }
+
+  const analyzeBtn: CSSProperties = {
+    fontSize: 10,
+    fontWeight: 700,
+    color: '#fff',
+    background: T.primary,
+    border: 'none',
+    borderRadius: 6,
+    padding: '2px 9px',
+    cursor: 'pointer',
+    whiteSpace: 'nowrap',
+    alignSelf: 'flex-start',
   }
 
   return (
@@ -71,6 +94,8 @@ export function PeerTable({ rows }: { rows: readonly PeerRow[] }) {
           const chip = row.isSubject
             ? { label: 'This co.', bg: T.primaryLight, color: T.primaryText }
             : ORIGIN_CHIP[row.origin]
+          const isAnalyzing = analyzing.has(row.symbol)
+          const canRun = !row.isSubject && row.origin !== 'derived' && canAnalyze
           return (
             <tr key={row.symbol}>
               <th
@@ -85,24 +110,41 @@ export function PeerTable({ rows }: { rows: readonly PeerRow[] }) {
                   background: row.isSubject ? '#eef2ff' : T.cardBodyBg,
                 }}
               >
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, minWidth: 0 }}>
-                  <span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>{row.name}</span>
-                  <span
-                    style={{
-                      fontSize: 9,
-                      fontWeight: 600,
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.04em',
-                      padding: '1px 6px',
-                      borderRadius: 5,
-                      color: chip.color,
-                      background: chip.bg,
-                      flexShrink: 0,
-                    }}
-                  >
-                    {chip.label}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 3, minWidth: 0 }}>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, minWidth: 0 }}>
+                    <span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>{row.name}</span>
+                    <span
+                      style={{
+                        fontSize: 9,
+                        fontWeight: 600,
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.04em',
+                        padding: '1px 6px',
+                        borderRadius: 5,
+                        color: chip.color,
+                        background: chip.bg,
+                        flexShrink: 0,
+                      }}
+                    >
+                      {chip.label}
+                    </span>
                   </span>
-                </span>
+                  {isAnalyzing ? (
+                    <span
+                      role="status"
+                      style={{ fontSize: 10, fontWeight: 700, color: '#d97706', letterSpacing: '0.02em' }}
+                    >
+                      <span className="dash-spin" style={{ display: 'inline-block' }}>
+                        ⟳
+                      </span>{' '}
+                      analyzing…
+                    </span>
+                  ) : canRun ? (
+                    <button type="button" onClick={() => onAnalyze(row.symbol)} style={analyzeBtn}>
+                      Analyze
+                    </button>
+                  ) : null}
+                </div>
               </th>
               <td style={cell}>{formatCrore(row.marketCap)}</td>
               {KPI_DEFINITIONS.map((def) => (

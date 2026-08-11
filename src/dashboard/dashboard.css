@@ -48,6 +48,11 @@ body {
   animation: dash-spin 0.9s linear infinite;
 }
 
+/* Inline glyph spinner (e.g. a peer row's "⟳ analyzing…"). */
+.dash-spin {
+  animation: dash-spin 1.1s linear infinite;
+}
+
 /* One focus treatment for every interactive element. */
 :focus-visible {
   outline: 2px solid #4f46e5;
@@ -59,7 +64,8 @@ body {
   .dash-shimmer {
     animation: none;
   }
-  .dash-spinner {
+  .dash-spinner,
+  .dash-spin {
     animation-duration: 2.4s;
   }
   * {

@@ -5,10 +5,11 @@
  *   GET  /api/financials?ticker=SYMBOL  → the company's scraped statements,
  *        read fresh from the repo (404 when that company hasn't been scraped
  *        yet — the dashboard turns that into an "Analyze" prompt).
- *   POST /api/analyze  { ticker }       → dispatches the scrape workflow for one
- *        company. The GitHub token lives only in the Worker env, never the
- *        browser. Data lands back in the repo a few minutes later, and the
- *        dashboard's polling picks it up.
+ *   POST /api/analyze  { ticker } | { tickers: [...] }
+ *        → dispatches the scrape workflow for one company or a batch (the peer
+ *        "Run all" sends a batch, scraped in a single run). The GitHub token
+ *        lives only in the Worker env, never the browser. Data lands back in the
+ *        repo a few minutes later, and the dashboard's polling picks it up.
  *   everything else                     → the static SPA via the ASSETS binding.
  *
  * Secrets/vars (Cloudflare → Worker → Settings → Variables):
@@ -26,6 +27,8 @@ const DEFAULT_REPO = 'techmuns/three-statement-model'
 const DEFAULT_BRANCH = 'main'
 const DEFAULT_WORKFLOW = 'refresh-scraped-data.yml'
 const TICKER_RE = /^[A-Z0-9&.\-]{1,20}$/
+// Upper bound on a single batch (peer "Run all"), to cap run time and abuse.
+const MAX_ANALYZE_TICKERS = 12
 const GH_HEADERS = (token) => ({
   Authorization: `Bearer ${token}`,
   Accept: 'application/vnd.github+json',
@@ -83,8 +86,14 @@ async function handleAnalyze(request, env) {
   if (request.method !== 'POST') return json({ error: 'method' }, 405)
 
   const body = await request.json().catch(() => ({}))
-  const ticker = String(body.ticker || '').trim().toUpperCase()
-  if (!TICKER_RE.test(ticker)) return json({ error: 'bad-ticker' }, 400)
+  // Accept one company ({ ticker }, optionally comma-separated) or a batch
+  // ({ tickers: [...] }). The batch form is what "Run all peers" uses, so every
+  // peer is scraped in a single run rather than one queued run each.
+  const raw = Array.isArray(body.tickers) ? body.tickers : String(body.ticker || '').split(',')
+  const tickers = [...new Set(raw.map((t) => String(t).trim().toUpperCase()).filter(Boolean))]
+  if (tickers.length === 0) return json({ error: 'bad-ticker' }, 400)
+  if (tickers.length > MAX_ANALYZE_TICKERS) return json({ error: 'too-many', max: MAX_ANALYZE_TICKERS }, 400)
+  if (!tickers.every((t) => TICKER_RE.test(t))) return json({ error: 'bad-ticker' }, 400)
 
   // Only the token must be a real secret. Repo/branch fall back to the repo's
   // own defaults (and are also set in wrangler.jsonc), so a redeploy that drops
@@ -112,11 +121,11 @@ async function handleAnalyze(request, env) {
     {
       method: 'POST',
       headers: { ...GH_HEADERS(env.GITHUB_TOKEN), 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ref: branch, inputs: { ticker } }),
+      body: JSON.stringify({ ref: branch, inputs: { ticker: tickers.join(',') } }),
     },
   )
 
-  if (res.status === 204) return json({ status: 'dispatched', ticker })
+  if (res.status === 204) return json({ status: 'dispatched', tickers })
   const detail = (await res.text().catch(() => '')).slice(0, 300)
   return json({ error: 'dispatch-failed', status: res.status, detail }, 502)
 }

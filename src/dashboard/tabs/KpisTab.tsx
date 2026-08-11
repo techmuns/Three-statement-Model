@@ -3,21 +3,52 @@
  * company's own history ("own comparables") and to peers.
  *
  * KPI cards carry the trailing series and the change vs the prior period — the
- * self-comparison, on the selected cadence. The peer table sets the company's
- * latest-year KPIs beside its comparables, each peer's KPIs derived from that
- * peer's own scraped statements (not a single carried column).
+ * self-comparison, on the selected cadence. The Peer Comparison sets the
+ * company's latest-year KPIs beside its comparables, each peer's KPIs derived
+ * from that peer's own scraped statements. Peers that aren't analyzed yet can be
+ * filled in right here — "Run all peers" scrapes them all in one run, and each
+ * row turns from "—" into real KPIs the moment its data lands.
  */
 
+import type { CSSProperties } from 'react'
 import type { PeriodViewId } from '@/config/navigation'
 import type { CompanyFinancials } from '@/types/financials'
 import { statementSetFor } from '@/lib/statements'
 import { deriveKpis } from '../data/metrics'
-import { usePeerKpis } from '../data/peerKpis'
+import { usePeerComparison } from '../data/peerKpis'
 import { WidgetCard } from '../ui/WidgetCard'
 import { LoadingState, UnavailableState } from '../ui/states'
 import { KpiCard } from '../components/KpiCard'
 import { PeerTable } from '../components/PeerTable'
 import { T } from '../ui/tokens'
+
+const runAllBtn: CSSProperties = {
+  fontSize: 12,
+  fontWeight: 700,
+  color: '#fff',
+  background: T.primary,
+  border: 'none',
+  borderRadius: 8,
+  padding: '5px 13px',
+  cursor: 'pointer',
+  whiteSpace: 'nowrap',
+  boxShadow: '0 4px 10px rgba(79,70,229,0.22)',
+}
+
+function pill(bg: string, color: string): CSSProperties {
+  return {
+    fontSize: 11,
+    fontWeight: 700,
+    color,
+    background: bg,
+    borderRadius: 999,
+    padding: '4px 10px',
+    whiteSpace: 'nowrap',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: 5,
+  }
+}
 
 export function KpisTab({
   financials,
@@ -30,11 +61,31 @@ export function KpisTab({
 }) {
   const set = statementSetFor(financials, period)
   const kpis = deriveKpis(set)
-  const { rows, loading } = usePeerKpis(financials, companyName)
+  const { rows, loading, analyzing, runnable, message, canAnalyze, runAll, runPeer } =
+    usePeerComparison(financials, companyName)
   const periodLabel = period === 'quarters' ? 'last 5 quarters' : 'last 5 financial years'
 
-  const hasPeers = rows.length > 1
+  const peerCount = rows.length - 1
+  const hasPeers = peerCount > 0
   const derivedCount = rows.filter((r) => !r.isSubject && r.origin === 'derived').length
+  const analyzingCount = analyzing.size
+  const runnableCount = runnable.length
+
+  const peerAction =
+    !canAnalyze || !hasPeers ? undefined : analyzingCount > 0 ? (
+      <span style={pill('#fffbeb', '#d97706')}>
+        <span className="dash-spin" style={{ display: 'inline-block' }}>
+          ⟳
+        </span>
+        Analyzing {analyzingCount}…
+      </span>
+    ) : runnableCount > 0 ? (
+      <button type="button" onClick={runAll} style={runAllBtn}>
+        Run all peers ({runnableCount})
+      </button>
+    ) : (
+      <span style={pill('#f0fdf4', '#16a34a')}>All peers analyzed ✓</span>
+    )
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
@@ -50,14 +101,30 @@ export function KpisTab({
         title="Peer Comparison"
         subtitle={
           hasPeers
-            ? `${derivedCount} peer${derivedCount === 1 ? '' : 's'} with full statements · latest FY, derived like-for-like`
+            ? `${companyName} vs ${peerCount} peer${peerCount === 1 ? '' : 's'} · ${derivedCount} analyzed · latest FY, derived like-for-like`
             : 'Sector comparables'
         }
+        right={peerAction}
       >
         {loading ? (
           <LoadingState rows={6} />
         ) : hasPeers ? (
-          <PeerTable rows={rows} />
+          <>
+            {message && (
+              <div
+                style={{
+                  padding: '8px 16px',
+                  fontSize: 12,
+                  color: '#b45309',
+                  background: '#fffbeb',
+                  borderBottom: `1px solid ${T.borderDefault}`,
+                }}
+              >
+                {message}
+              </div>
+            )}
+            <PeerTable rows={rows} analyzing={analyzing} canAnalyze={canAnalyze} onAnalyze={runPeer} />
+          </>
         ) : (
           <UnavailableState
             note="No peers mapped for this company yet."
@@ -70,7 +137,9 @@ export function KpisTab({
         KPIs are computed from the scraped statements, so they match the P&L and balance sheet exactly.
         Balance-sheet KPIs (ROE, ROCE, D/E) need the annual balance sheet — in the 5-quarter view the cards show “—”.
         In the peer table, a <strong>peer</strong> row is derived from that company’s own statements; a
-        <strong> carried</strong> row is Screener’s snapshot; <strong>not analyzed</strong> means we haven’t scraped it yet.
+        <strong> carried</strong> row is Screener’s snapshot; <strong>not analyzed</strong> means we haven’t scraped it
+        yet — use <strong>Run all peers</strong> (or a row’s Analyze) to fill those in; each fills in automatically when
+        its scrape lands.
       </div>
     </div>
   )

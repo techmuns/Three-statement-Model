@@ -2,6 +2,7 @@
  * CLI entry point.
  *
  *   npm run scrape -- --company=RELIANCE     # one company (any of the ~500)
+ *   npm run scrape -- --company=BPCL,IOC     # several, one logged-in session
  *   npm run scrape:rotate                    # the stalest N companies (rotation)
  *   npm run scrape:rotate -- --batch=30      # …with a custom batch size
  *
@@ -60,8 +61,18 @@ async function resolveTargets(): Promise<readonly ScraperCompany[]> {
   })
 
   if (values.company) {
-    // Any listed symbol, registry member or not — see resolveScraperCompany.
-    return [resolveScraperCompany(values.company)]
+    // One or more symbols, comma-separated — any listed symbol, registry member
+    // or not (see resolveScraperCompany). A list is scraped in a single logged-in
+    // session, which is what makes the dashboard's "Run all peers" fast: one run
+    // instead of one queued run per peer.
+    const symbols = values.company
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean)
+    if (symbols.length === 0) usage('--company was empty (expected one or more symbols).')
+    // De-dupe while preserving order, so "BPCL,BPCL" doesn't scrape twice.
+    const unique = [...new Set(symbols.map((s) => s.toUpperCase()))]
+    return unique.map(resolveScraperCompany)
   }
 
   if (values.rotate) {

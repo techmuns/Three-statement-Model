@@ -146,6 +146,7 @@ export default function EarningsDashboard() {
           onExportExcel={onExportExcel}
           onExportPdf={onExportPdf}
           onExportPng={onExportPng}
+          onFindPeers={phase === 'ready' && data ? () => setTab('kpis') : undefined}
         />
       }
       footer={footer}
