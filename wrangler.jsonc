@@ -3,6 +3,14 @@
   "name": "vittara",
   "compatibility_date": "2026-01-15",
 
+  // Non-secret config for the Analyze route, kept in-repo so a redeploy always
+  // restores it — dashboard-set plain vars get dropped on each deploy. The
+  // GitHub token stays a Worker *secret* (set in the dashboard); never commit it.
+  "vars": {
+    "GITHUB_REPO": "techmuns/three-statement-model",
+    "GITHUB_BRANCH": "main"
+  },
+
   // Build the app before deploying. Wrangler runs this command ahead of every
   // `deploy`/`dev`, so a fresh clone (where `dist/` is gitignored and absent)
   // is always built before its assets are served. Without it, `wrangler deploy`

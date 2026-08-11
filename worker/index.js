@@ -86,11 +86,14 @@ async function handleAnalyze(request, env) {
   const ticker = String(body.ticker || '').trim().toUpperCase()
   if (!TICKER_RE.test(ticker)) return json({ error: 'bad-ticker' }, 400)
 
-  if (!env.GITHUB_TOKEN || !env.GITHUB_REPO) {
+  // Only the token must be a real secret. Repo/branch fall back to the repo's
+  // own defaults (and are also set in wrangler.jsonc), so a redeploy that drops
+  // dashboard-set plain vars can never switch Analyze back off.
+  if (!env.GITHUB_TOKEN) {
     return json(
       {
         error: 'not-configured',
-        message: 'Analyze is not switched on yet — set GITHUB_TOKEN and GITHUB_REPO on the Worker.',
+        message: 'Analyze is not switched on yet — set the GITHUB_TOKEN secret on the Worker.',
       },
       503,
     )
@@ -101,10 +104,11 @@ async function handleAnalyze(request, env) {
     if (provided !== env.ANALYZE_PASSCODE) return json({ error: 'unauthorized' }, 401)
   }
 
+  const repo = env.GITHUB_REPO || DEFAULT_REPO
   const branch = env.GITHUB_BRANCH || DEFAULT_BRANCH
   const workflow = env.ANALYZE_WORKFLOW || DEFAULT_WORKFLOW
   const res = await fetch(
-    `https://api.github.com/repos/${env.GITHUB_REPO}/actions/workflows/${workflow}/dispatches`,
+    `https://api.github.com/repos/${repo}/actions/workflows/${workflow}/dispatches`,
     {
       method: 'POST',
       headers: { ...GH_HEADERS(env.GITHUB_TOKEN), 'Content-Type': 'application/json' },
