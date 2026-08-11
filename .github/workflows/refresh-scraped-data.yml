@@ -62,9 +62,10 @@ jobs:
         env:
           SCREENER_EMAIL: ${{ secrets.SCREENER_EMAIL }}
           SCREENER_PASSWORD: ${{ secrets.SCREENER_PASSWORD }}
-          # Optional: enables automatic BSE segment-mix discovery. Without it,
-          # segment mix stays an honest "not reported" and nothing else changes.
-          SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
+          # Optional: enables automatic BSE segment-mix discovery (Firecrawl
+          # fetches BSE's Akamai-gated announcement API). Without it, segment
+          # mix stays an honest "not reported" and nothing else changes.
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           INPUT_TICKER: ${{ inputs.ticker }}
         run: |
           if [ -n "$INPUT_TICKER" ]; then

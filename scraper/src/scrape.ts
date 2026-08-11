@@ -108,8 +108,8 @@ export async function scrapeCompany(
       if (!scrip) {
         console.log(`  · ${sym} segment mix: skipped (no BSE scrip code found on page or in registry)`)
       } else {
-        const hasKey = Boolean(process.env.SCRAPEDO_API_KEY?.trim())
-        console.log(`  · ${sym} segment mix: scrip ${scrip}, SCRAPEDO_API_KEY ${hasKey ? 'set' : 'NOT set'}`)
+        const hasKey = Boolean(process.env.FIRECRAWL_API_KEY?.trim())
+        console.log(`  · ${sym} segment mix: scrip ${scrip}, FIRECRAWL_API_KEY ${hasKey ? 'set' : 'NOT set'}`)
         const quarterlyIds =
           financials.quarterly.profitLoss.status === 'available'
             ? financials.quarterly.profitLoss.periods.map((p) => p.period.id)
