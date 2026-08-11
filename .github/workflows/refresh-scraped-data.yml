@@ -16,6 +16,10 @@ on:
         description: "One listed symbol to scrape on demand (e.g. SHAILY). Leave blank to run the normal staleness rotation."
         required: false
         type: string
+      batch:
+        description: "Bulk pre-load: how many companies to scrape this run, stalest (unscraped) first, in chunks committed as they finish. E.g. 500 for the whole NIFTY 500. Ignored if 'ticker' is set."
+        required: false
+        type: string
 
 # The job commits refreshed data back to the repository.
 permissions:
@@ -29,7 +33,9 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # A full NIFTY-500 pre-load runs a couple of hours; leave generous headroom
+    # under the 6-hour job cap. Ordinary rotation runs finish in minutes.
+    timeout-minutes: 350
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -49,58 +55,85 @@ jobs:
         working-directory: scraper
         run: npx playwright install --with-deps chromium
 
-      # On-demand: if a ticker was supplied to workflow_dispatch, scrape just
-      # that one company (any listed symbol, registry member or not). Otherwise
-      # run the staleness rotation over the active universe (stalest first, so
-      # coverage builds up and then recycles to whatever is oldest). Either way
-      # the scraper writes each file as it succeeds and exits non-zero only to
-      # signal a failure, so we continue and commit whatever was produced.
-      - name: Scrape Screener data
+      # Modes:
+      #   • ticker set  → scrape that one company, then commit.
+      #   • batch set   → bulk pre-load: scrape `batch` companies in chunks of 25,
+      #                   committing after each so progress survives a mid-run
+      #                   failure and the site fills in gradually.
+      #   • neither     → the normal staleness rotation (default batch size).
+      # The scraper writes each file as it succeeds and exits non-zero only to
+      # signal a failure; continue-on-error keeps us going and commits whatever
+      # was produced. Stalest-first rotation means each chunk picks the next
+      # unscraped / oldest companies, so chunks march through the universe.
+      - name: Scrape Screener data and commit
         id: scrape
         continue-on-error: true
         working-directory: scraper
         env:
           SCREENER_EMAIL: ${{ secrets.SCREENER_EMAIL }}
           SCREENER_PASSWORD: ${{ secrets.SCREENER_PASSWORD }}
-          # Optional: enables automatic BSE segment-mix discovery (Firecrawl
-          # fetches BSE's Akamai-gated announcement API). Without it, segment
-          # mix stays an honest "not reported" and nothing else changes.
-          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           INPUT_TICKER: ${{ inputs.ticker }}
-        run: |
-          if [ -n "$INPUT_TICKER" ]; then
-            echo "On-demand scrape: $INPUT_TICKER"
-            npm run scrape -- --company="$INPUT_TICKER"
-          else
-            echo "Staleness rotation scrape"
-            npm run scrape:rotate
-          fi
-
-      - name: Commit and push refreshed data
-        env:
+          INPUT_BATCH: ${{ inputs.batch }}
           BRANCH: ${{ github.ref_name }}
         run: |
-          git add data/
-          if git diff --cached --quiet; then
-            echo "No changes in data/ — nothing to commit."
-            exit 0
-          fi
+          set -u
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: refresh scraped financial data"
-          if git push origin "HEAD:${BRANCH}"; then
-            echo "Refreshed data committed and pushed to ${BRANCH}."
+
+          # Commit any new data/ files and push, with a few network retries. A
+          # push race (or nothing to commit) is tolerated so scraping continues.
+          commit_data() {
+            git add data/ || return 0
+            if git diff --cached --quiet; then
+              echo "No new data to commit."
+              return 0
+            fi
+            git commit -m "chore: refresh scraped financial data" || return 0
+            for attempt in 1 2 3 4; do
+              if git push origin "HEAD:${BRANCH}"; then
+                echo "Pushed refreshed data to ${BRANCH}."
+                return 0
+              fi
+              echo "Push failed (attempt ${attempt}); rebasing on ${BRANCH} and retrying…"
+              git pull --rebase origin "${BRANCH}" || true
+              sleep 3
+            done
+            echo "::error::Could not push scraped data to ${BRANCH} after retries."
+            return 1
+          }
+
+          rc=0
+          if [ -n "${INPUT_TICKER}" ]; then
+            echo "On-demand scrape: ${INPUT_TICKER}"
+            npm run scrape -- --company="${INPUT_TICKER}" || rc=$?
+            commit_data || true
+          elif [ -n "${INPUT_BATCH}" ]; then
+            echo "Bulk pre-load: up to ${INPUT_BATCH} companies, in chunks of 25 (commit after each)."
+            remaining="${INPUT_BATCH}"
+            chunk=25
+            while [ "${remaining}" -gt 0 ]; do
+              size=${chunk}
+              [ "${remaining}" -lt "${chunk}" ] && size=${remaining}
+              echo "── Chunk: scraping ${size} (≈${remaining} to go) ──"
+              npm run scrape:rotate -- --batch="${size}" || rc=$?
+              commit_data || true
+              remaining=$((remaining - size))
+            done
           else
-            echo "::error::Push to ${BRANCH} was rejected. Most likely branch protection is blocking the github-actions bot's direct push (or the branch advanced during the run). Either allow the bot to bypass protection, or switch this workflow to open a pull request instead."
-            exit 1
+            echo "Staleness rotation scrape"
+            npm run scrape:rotate || rc=$?
+            commit_data || true
           fi
+          # Surface scrape failures as a red step (see the next step) while still
+          # having committed everything that succeeded above.
+          exit "${rc}"
 
       # Turn the run red if scraping errored, so GitHub's failure notification
       # reaches us — a signal that Screener's page structure may have drifted (or
       # a login/credential problem). Any companies that did succeed above were
-      # still committed.
+      # still committed inside the previous step.
       - name: Fail the run if scraping errored
         if: steps.scrape.outcome == 'failure'
         run: |
-          echo "::error::The scrape step failed — see the 'Scrape Screener data' step logs. Screener's page structure may have drifted, or there was a login/credential problem."
+          echo "::error::The scrape step failed — see the 'Scrape Screener data and commit' step logs. Screener's page structure may have drifted, or there was a login/credential problem."
           exit 1

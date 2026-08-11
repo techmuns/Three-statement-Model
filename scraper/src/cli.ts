@@ -26,8 +26,10 @@ import { assemblePeerGroups, type ScrapedPeer } from './peers'
 import { selectStalest } from './rotation'
 import { scrapeCompany } from './scrape'
 
-/** Polite pause between company page loads. */
-const DELAY_MS = 2_500
+/** Polite pause between company page loads. Kept short (page loads themselves
+ * add several seconds of natural spacing) so a full NIFTY-500 pre-load finishes
+ * in a couple of hours rather than many. */
+const DELAY_MS = 1_000
 
 /** Default rotation batch size — see the task's slow, safe coverage pace. */
 const DEFAULT_BATCH = 25

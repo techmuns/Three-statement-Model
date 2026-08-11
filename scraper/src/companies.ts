@@ -9,9 +9,9 @@
  * `screenerSymbol` are the same value here.
  *
  * A batch run scrapes the stalest N of `ROTATION_COMPANIES` — the registry
- * filtered to `ACTIVE_INDEX` (NIFTY 50 for now; see `rotation.ts`) — so coverage
- * grows across the active universe over many runs. `--company <SYMBOL>` still
- * resolves any single one of the full registry.
+ * filtered to `ACTIVE_INDEX` (NIFTY 500; see `rotation.ts`) — so coverage grows
+ * across the active universe over many runs. `--company <SYMBOL>` still resolves
+ * any single one of the full registry.
  */
 
 import registryDoc from '../../company-registry.json'
@@ -47,12 +47,12 @@ function toScraperCompany(entry: RegistryEntry): ScraperCompany {
 export const ALL_COMPANIES: readonly ScraperCompany[] = REGISTRY.map(toScraperCompany)
 
 /**
- * The index the rotation is scoped to. Narrowed to NIFTY 50 for now, to get
- * fast, dense real coverage of the 50 largest companies. Widen it back to
- * `'NIFTY 500'` (every entry carries that tag) to resume full-registry
- * rotation — this one constant is the whole switch.
+ * The index the rotation is scoped to. Set to the full `'NIFTY 500'` so a bulk
+ * pre-load covers every company the frontend can search. Narrow it back to
+ * `'NIFTY 50'` (the 50 largest) if you ever want fast, dense coverage of just
+ * the megacaps — this one constant is the whole switch.
  */
-export const ACTIVE_INDEX = 'NIFTY 50'
+export const ACTIVE_INDEX = 'NIFTY 500'
 
 /**
  * The rotation pool: the registry filtered to `ACTIVE_INDEX`. `rotation.ts`
