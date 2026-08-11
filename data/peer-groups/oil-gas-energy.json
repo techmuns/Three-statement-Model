@@ -10,7 +10,7 @@
       "id": "ioc",
       "name": "I O C L",
       "ticker": "IOC",
-      "marketCapCrore": 198403.31,
+      "marketCapCrore": 198120.88,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -42,7 +42,7 @@
       "id": "bpcl",
       "name": "B P C L",
       "ticker": "BPCL",
-      "marketCapCrore": 137595.78,
+      "marketCapCrore": 137465.63,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -74,7 +74,7 @@
       "id": "hindpetro",
       "name": "H P C L",
       "ticker": "HINDPETRO",
-      "marketCapCrore": 83325.56,
+      "marketCapCrore": 83283,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -106,7 +106,7 @@
       "id": "mrpl",
       "name": "M R P L",
       "ticker": "MRPL",
-      "marketCapCrore": 30828.22,
+      "marketCapCrore": 30863.27,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -138,7 +138,7 @@
       "id": "chennpetro",
       "name": "C P C L",
       "ticker": "CHENNPETRO",
-      "marketCapCrore": 20750.09,
+      "marketCapCrore": 20761.99,
       "kpis": [
         {
           "kpiId": "revenue-growth",
