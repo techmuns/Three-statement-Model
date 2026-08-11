@@ -70,7 +70,8 @@ export async function discoverResultFilings(scripCode: string, limit = 2): Promi
       { maxBuffer: 8 * 1024 * 1024 },
     )
     body = stdout
-  } catch {
+  } catch (err) {
+    console.error(`  ! BSE discovery: Scrape.do request failed for scrip ${scripCode}: ${(err as Error).message}`)
     return []
   }
 
@@ -79,6 +80,10 @@ export async function discoverResultFilings(scripCode: string, limit = 2): Promi
     const parsed = JSON.parse(body) as { Table?: AnnouncementRow[] }
     rows = Array.isArray(parsed.Table) ? parsed.Table : []
   } catch {
+    console.error(
+      `  ! BSE discovery: non-JSON response for scrip ${scripCode} (likely blocked). First 140 chars: ` +
+        body.slice(0, 140).replace(/\s+/g, ' '),
+    )
     return []
   }
 
@@ -90,5 +95,6 @@ export async function discoverResultFilings(scripCode: string, limit = 2): Promi
     urls.push(`${BSE_ATTACH_BASE}${attachment}`)
     if (urls.length >= limit) break
   }
+  console.log(`  · BSE discovery: ${rows.length} announcements, ${urls.length} results-PDF(s) for scrip ${scripCode}`)
   return urls
 }

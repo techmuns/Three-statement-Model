@@ -104,18 +104,29 @@ export async function scrapeCompany(
     let withSegments = financials
     try {
       const scrip = (await extractBseScripCode(page)) ?? bseScripCodeFor(company.companyId) ?? null
-      if (scrip) {
+      const sym = company.screenerSymbol
+      if (!scrip) {
+        console.log(`  · ${sym} segment mix: skipped (no BSE scrip code found on page or in registry)`)
+      } else {
+        const hasKey = Boolean(process.env.SCRAPEDO_API_KEY?.trim())
+        console.log(`  · ${sym} segment mix: scrip ${scrip}, SCRAPEDO_API_KEY ${hasKey ? 'set' : 'NOT set'}`)
         const quarterlyIds =
           financials.quarterly.profitLoss.status === 'available'
             ? financials.quarterly.profitLoss.periods.map((p) => p.period.id)
             : []
         const segmentMix = await fetchCompanySegmentMix(scrip, quarterlyIds)
-        if (segmentMix) {
+        if (segmentMix?.status === 'available') {
+          console.log(`  · ${sym} segment mix: ✓ filled ${segmentMix.segments.length} segments`)
           withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
+        } else if (segmentMix?.status === 'unavailable') {
+          console.log(`  · ${sym} segment mix: single-segment / not reported`)
+          withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
+        } else {
+          console.log(`  · ${sym} segment mix: no usable BSE filing found`)
         }
       }
-    } catch {
-      // Segment mix stays as normalize left it.
+    } catch (error) {
+      console.error(`  ! ${company.screenerSymbol} segment mix error: ${(error as Error).message}`)
     }
 
     // Store the company's own peer list (identity only) so the dashboard can
