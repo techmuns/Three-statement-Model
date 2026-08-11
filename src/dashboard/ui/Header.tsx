@@ -7,6 +7,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { PERIOD_VIEWS, type PeriodViewId } from '@/config/navigation'
 import { Segmented, type SegmentedOption } from './Segmented'
+import { SearchBox } from './SearchBox'
 import { T } from './tokens'
 
 export type DashboardTabId = 'financials' | 'kpis'
@@ -22,29 +23,6 @@ const PERIOD_OPTIONS: readonly SegmentedOption<PeriodViewId>[] = PERIOD_VIEWS.ma
   id: v.id,
   label: v.id === 'quarters' ? '5 Quarters' : '5 Years',
 }))
-
-function TickerPill({ ticker, company }: { ticker: string; company: string | null }) {
-  return (
-    <span
-      style={{
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: 6,
-        padding: '2px 10px',
-        background: T.primaryLight,
-        color: T.primaryText,
-        borderRadius: 99,
-        fontSize: 12,
-        fontWeight: 600,
-        border: `1px solid ${T.primaryBorder}`,
-      }}
-    >
-      <span style={{ width: 6, height: 6, background: T.primaryDot, borderRadius: '50%' }} />
-      {ticker}
-      {company && <span style={{ color: '#818cf8', fontWeight: 400 }}>· {company}</span>}
-    </span>
-  )
-}
 
 function ExportMenu({
   onExcel,
@@ -154,8 +132,9 @@ function ExportMenu({
 }
 
 export function Header({
-  ticker,
-  company,
+  currentSymbol,
+  currentName,
+  onSelectCompany,
   tab,
   onTabChange,
   period,
@@ -164,8 +143,9 @@ export function Header({
   onExportPdf,
   onExportPng,
 }: {
-  ticker: string | null
-  company: string | null
+  currentSymbol: string | null
+  currentName: string | null
+  onSelectCompany: (symbol: string) => void
   tab: DashboardTabId
   onTabChange: (id: DashboardTabId) => void
   period: PeriodViewId
@@ -192,11 +172,11 @@ export function Header({
         flexShrink: 0,
       }}
     >
-      <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 14, minWidth: 0 }}>
         <h1 style={{ fontSize: 15, fontWeight: 700, color: T.ink, margin: 0, whiteSpace: 'nowrap' }}>
           Dhamma Capital · Earnings
         </h1>
-        {ticker && <TickerPill ticker={ticker} company={company} />}
+        <SearchBox currentSymbol={currentSymbol} currentName={currentName} onSelect={onSelectCompany} />
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>

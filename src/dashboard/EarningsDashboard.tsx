@@ -1,23 +1,22 @@
 /**
- * Dhamma Capital · Earnings Dashboard (Munshot embedded).
+ * Dhamma Capital · Earnings Dashboard (standalone).
  *
- * The dashboard is the first and only screen. It reads the selected ticker and
- * session from the Munshot host and resolves that company's statements at
- * runtime. If nothing is scraped yet, it offers Analyze — which dispatches a
- * scrape and then fills itself in. Every missing case has an honest state;
- * nothing is faked.
+ * Self-contained: the company is chosen with the header search (or a `?ticker=`
+ * URL param), its statements are resolved at runtime from the Worker, and if
+ * nothing is scraped yet it offers Analyze — which dispatches a scrape and then
+ * fills itself in. Every missing case has an honest state; nothing is faked.
  */
 
-import { useEffect, useState, type ReactNode } from 'react'
+import { useState, type ReactNode } from 'react'
 import { DEFAULT_PERIOD_VIEW, type PeriodViewId } from '@/config/navigation'
-import { useHostContext } from './lib/hostContext'
 import { useCompanyData } from './data/useCompanyData'
-import { downloadDashboardPng, registerVisualCapture } from './lib/capture'
+import { companyName as registryName } from './data/companySearch'
+import { downloadDashboardPng } from './lib/capture'
 import { exportDashboardPdf } from './lib/exportPdf'
 import { exportFinancialsXlsx } from './lib/exportExcel'
 import { Shell, Footer } from './ui/Shell'
 import { Header, type DashboardTabId } from './ui/Header'
-import { EmptyState, ErrorState, LoadingState, WaitingForSession } from './ui/states'
+import { EmptyState, ErrorState, LoadingState } from './ui/states'
 import { AnalyzePrompt, AnalyzingState } from './components/AnalyzePanel'
 import { FinancialsTab } from './tabs/FinancialsTab'
 import { KpisTab } from './tabs/KpisTab'
@@ -29,7 +28,6 @@ function shortDate(iso: string): string {
   return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
 }
 
-/** Centre a state message in the scroll area. */
 function FullState({ children }: { children: ReactNode }) {
   return (
     <div style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -38,17 +36,30 @@ function FullState({ children }: { children: ReactNode }) {
   )
 }
 
+/** Seed the company from `?ticker=` so the view is shareable and deep-linkable. */
+function initialTicker(): string | null {
+  if (typeof window === 'undefined') return null
+  const t = new URLSearchParams(window.location.search).get('ticker')
+  return t ? t.trim().toUpperCase() : null
+}
+
 export default function EarningsDashboard() {
-  const { session, ticker, tickerCompany } = useHostContext()
+  const [ticker, setTicker] = useState<string | null>(initialTicker)
   const [tab, setTab] = useState<DashboardTabId>('financials')
   const [period, setPeriod] = useState<PeriodViewId>(DEFAULT_PERIOD_VIEW)
-  const { phase, data, message, analyze } = useCompanyData(ticker, session.token)
+  const { phase, data, message, analyze } = useCompanyData(ticker)
 
-  useEffect(() => {
-    registerVisualCapture()
-  }, [])
+  const selectCompany = (symbol: string) => {
+    const sym = symbol.trim().toUpperCase()
+    setTicker(sym)
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href)
+      url.searchParams.set('ticker', sym)
+      window.history.replaceState(null, '', url.toString())
+    }
+  }
 
-  const companyName = tickerCompany ?? data?.companyId ?? ticker ?? null
+  const companyName = ticker ? registryName(ticker) ?? data?.companyId ?? ticker : null
   const fileStem = `${ticker ?? 'dashboard'}-${tab}`
   const onExportPng = () => downloadDashboardPng(fileStem)
   const onExportPdf = () => exportDashboardPdf(fileStem)
@@ -62,15 +73,9 @@ export default function EarningsDashboard() {
     body = (
       <FullState>
         <EmptyState
-          message="No company selected"
-          hint="Pick a stock in Munshot to load its P&L, balance sheet, cash flow and KPIs."
+          message="Search a company to begin"
+          hint="Type a name or ticker in the search box above — e.g. RELIANCE, TCS, SHAILY. Any listed company works."
         />
-      </FullState>
-    )
-  } else if (!session.token) {
-    body = (
-      <FullState>
-        <WaitingForSession />
       </FullState>
     )
   } else if (phase === 'loading') {
@@ -131,8 +136,9 @@ export default function EarningsDashboard() {
     <Shell
       header={
         <Header
-          ticker={ticker}
-          company={companyName}
+          currentSymbol={ticker}
+          currentName={companyName}
+          onSelectCompany={selectCompany}
           tab={tab}
           onTabChange={setTab}
           period={period}
