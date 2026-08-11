@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/RELIANCE/consolidated/",
-    "fetchedAt": "2026-08-11T06:56:49.472Z",
+    "fetchedAt": "2026-08-11T08:06:44.400Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -476,37 +476,37 @@
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "marketCapCrore": 1786835.91
+      "marketCapCrore": 1797120.62
     },
     {
       "symbol": "IOC",
       "name": "I O C L",
-      "marketCapCrore": 196991.2
+      "marketCapCrore": 198403.31
     },
     {
       "symbol": "BPCL",
       "name": "B P C L",
-      "marketCapCrore": 136988.35
+      "marketCapCrore": 137595.78
     },
     {
       "symbol": "HINDPETRO",
       "name": "H P C L",
-      "marketCapCrore": 83091.51
+      "marketCapCrore": 83325.56
     },
     {
       "symbol": "MRPL",
       "name": "M R P L",
-      "marketCapCrore": 30337.48
+      "marketCapCrore": 30828.22
     },
     {
       "symbol": "CHENNPETRO",
       "name": "C P C L",
-      "marketCapCrore": 20266.11
+      "marketCapCrore": 20750.09
     },
     {
       "symbol": "KOTYARK",
       "name": "Kotyark Indust.",
-      "marketCapCrore": 472.72
+      "marketCapCrore": 478.83
     }
   ]
 }
