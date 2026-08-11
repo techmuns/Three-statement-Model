@@ -45,6 +45,13 @@ interface AnnouncementRow {
   CATEGORYNAME?: string
 }
 
+/** A results-statement announcement (has "Result" in its category/subject). */
+function isResultAnnouncement(row: AnnouncementRow): boolean {
+  const cat = (row.CATEGORYNAME ?? '').toLowerCase()
+  const sub = (row.NEWSSUB ?? '').toLowerCase()
+  return cat.includes('result') || /result/.test(sub)
+}
+
 /**
  * The URLs of a company's most recent results-statement PDFs (newest first),
  * up to `limit`. Each filing covers three quarters, so two is enough for a
@@ -56,9 +63,11 @@ export async function discoverResultFilings(scripCode: string, limit = 2): Promi
   if (!token) return []
 
   const now = new Date()
-  const oneYearAgo = new Date(now.getTime() - 370 * 24 * 60 * 60 * 1000)
+  const oneYearAgo = new Date(now.getTime() - 400 * 24 * 60 * 60 * 1000)
+  // strCat=-1 (all categories) is more robust than a specific category string;
+  // we filter for results-statements in code below.
   const api =
-    `https://api.bseindia.com/BseIndiaAPI/api/AnnGetData/w?pageno=1&strCat=Result` +
+    `https://api.bseindia.com/BseIndiaAPI/api/AnnGetData/w?pageno=1&strCat=-1` +
     `&strPrevDate=${yyyymmdd(oneYearAgo)}&strScrip=${encodeURIComponent(scripCode)}` +
     `&strSearch=P&strToDate=${yyyymmdd(now)}&strType=C`
 
@@ -91,10 +100,15 @@ export async function discoverResultFilings(scripCode: string, limit = 2): Promi
   for (const row of rows) {
     const attachment = row.ATTACHMENTNAME?.trim()
     if (!attachment || !/\.pdf$/i.test(attachment)) continue
-    // strCat=Result already scopes to results; keep the guard cheap and lenient.
+    if (!isResultAnnouncement(row)) continue
     urls.push(`${BSE_ATTACH_BASE}${attachment}`)
     if (urls.length >= limit) break
   }
   console.log(`  · BSE discovery: ${rows.length} announcements, ${urls.length} results-PDF(s) for scrip ${scripCode}`)
+  // When nothing matched, surface a snippet of the raw response so we can tell a
+  // genuinely empty result from a Scrape.do error / block.
+  if (urls.length === 0) {
+    console.log(`  · BSE discovery raw (first 300): ${body.slice(0, 300).replace(/\s+/g, ' ')}`)
+  }
   return urls
 }
