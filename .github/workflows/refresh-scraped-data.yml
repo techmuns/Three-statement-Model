@@ -77,25 +77,30 @@ jobs:
           BRANCH: ${{ github.ref_name }}
         run: |
           set -u
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # This step's working-directory is scraper/, but the scraper writes the
+          # JSON to data/ at the REPO ROOT — so every git operation must target the
+          # root explicitly (git -C "$ROOT"), or `git add data/` looks for a
+          # non-existent scraper/data/ and silently commits nothing.
+          ROOT="${GITHUB_WORKSPACE}"
+          git -C "${ROOT}" config user.name "github-actions[bot]"
+          git -C "${ROOT}" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Commit any new data/ files and push, with a few network retries. A
           # push race (or nothing to commit) is tolerated so scraping continues.
           commit_data() {
-            git add data/ || return 0
-            if git diff --cached --quiet; then
+            git -C "${ROOT}" add data/ || return 0
+            if git -C "${ROOT}" diff --cached --quiet; then
               echo "No new data to commit."
               return 0
             fi
-            git commit -m "chore: refresh scraped financial data" || return 0
+            git -C "${ROOT}" commit -m "chore: refresh scraped financial data" || return 0
             for attempt in 1 2 3 4; do
-              if git push origin "HEAD:${BRANCH}"; then
+              if git -C "${ROOT}" push origin "HEAD:${BRANCH}"; then
                 echo "Pushed refreshed data to ${BRANCH}."
                 return 0
               fi
               echo "Push failed (attempt ${attempt}); rebasing on ${BRANCH} and retrying…"
-              git pull --rebase origin "${BRANCH}" || true
+              git -C "${ROOT}" pull --rebase origin "${BRANCH}" || true
               sleep 3
             done
             echo "::error::Could not push scraped data to ${BRANCH} after retries."
