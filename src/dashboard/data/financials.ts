@@ -38,6 +38,27 @@ export async function fetchFinancials(ticker: string): Promise<CompanyFinancials
   return payload.data ?? null
 }
 
+/** Symbols already scraped (data exists) — for the "open instantly" dropdown. */
+export async function fetchAnalyzedCompanies(): Promise<string[]> {
+  if (DEV) {
+    try {
+      const mod = await import('@/data/scrapedFinancials')
+      const listed = (mod as { scrapedSymbols?: readonly string[] }).scrapedSymbols
+      return listed ? [...listed] : []
+    } catch {
+      return []
+    }
+  }
+  try {
+    const res = await fetch('/api/companies', { headers: { Accept: 'application/json' } })
+    if (!res.ok) return []
+    const payload = (await res.json()) as { companies?: string[] }
+    return Array.isArray(payload.companies) ? payload.companies : []
+  } catch {
+    return []
+  }
+}
+
 export interface AnalyzeResult {
   ok: boolean
   message?: string

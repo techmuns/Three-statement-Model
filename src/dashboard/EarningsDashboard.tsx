@@ -10,6 +10,7 @@
 import { useState, type ReactNode } from 'react'
 import { DEFAULT_PERIOD_VIEW, type PeriodViewId } from '@/config/navigation'
 import { useCompanyData } from './data/useCompanyData'
+import { useAnalyzedCompanies } from './data/useAnalyzedCompanies'
 import { companyName as registryName } from './data/companySearch'
 import { downloadDashboardPng } from './lib/capture'
 import { exportDashboardPdf } from './lib/exportPdf'
@@ -48,6 +49,9 @@ export default function EarningsDashboard() {
   const [tab, setTab] = useState<DashboardTabId>('financials')
   const [period, setPeriod] = useState<PeriodViewId>(DEFAULT_PERIOD_VIEW)
   const { phase, data, message, analyze } = useCompanyData(ticker)
+  // Refresh the instant-open list whenever a company finishes loading (a newly
+  // analyzed one should appear without a manual reload).
+  const analyzed = useAnalyzedCompanies(phase === 'ready' ? ticker : 'init')
 
   const selectCompany = (symbol: string) => {
     const sym = symbol.trim().toUpperCase()
@@ -139,6 +143,7 @@ export default function EarningsDashboard() {
           currentSymbol={ticker}
           currentName={companyName}
           onSelectCompany={selectCompany}
+          analyzed={analyzed}
           tab={tab}
           onTabChange={setTab}
           period={period}

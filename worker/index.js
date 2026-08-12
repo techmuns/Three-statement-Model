@@ -43,6 +43,7 @@ export default {
     if (request.method === 'OPTIONS') return cors(new Response(null, { status: 204 }))
     if (pathname === '/api/financials') return cors(await handleFinancials(url, env))
     if (pathname === '/api/analyze') return cors(await handleAnalyze(request, env))
+    if (pathname === '/api/companies') return cors(await handleCompanies(env))
 
     // Static single-page app for everything else.
     return env.ASSETS.fetch(request)
@@ -80,6 +81,36 @@ async function handleFinancials(url, env) {
     return json({ error: 'parse' }, 502)
   }
   return json({ status: 'ok', ticker, data })
+}
+
+/**
+ * The symbols already scraped (a data/<SYMBOL>.json exists) — powers the
+ * "already analyzed, open instantly" dropdown. Best-effort: any hiccup returns
+ * an empty list and the dropdown simply falls back to search-as-you-type.
+ */
+async function handleCompanies(env) {
+  const repo = env.GITHUB_REPO || DEFAULT_REPO
+  const branch = env.GITHUB_BRANCH || DEFAULT_BRANCH
+  const headers = env.GITHUB_TOKEN
+    ? GH_HEADERS(env.GITHUB_TOKEN)
+    : { Accept: 'application/vnd.github+json', 'User-Agent': 'dhamma-earnings-dashboard' }
+
+  let res
+  try {
+    res = await fetch(`https://api.github.com/repos/${repo}/contents/data?ref=${branch}`, { headers })
+  } catch {
+    return json({ companies: [] })
+  }
+  if (!res.ok) return json({ companies: [] })
+
+  const files = await res.json().catch(() => null)
+  const companies = Array.isArray(files)
+    ? files
+        .filter((f) => f.type === 'file' && /\.json$/i.test(f.name))
+        .map((f) => f.name.replace(/\.json$/i, '').toUpperCase())
+        .sort()
+    : []
+  return json({ companies })
 }
 
 async function handleAnalyze(request, env) {

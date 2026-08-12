@@ -6,6 +6,7 @@
 
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { PERIOD_VIEWS, type PeriodViewId } from '@/config/navigation'
+import type { CompanyHit } from '../data/companySearch'
 import { Segmented, type SegmentedOption } from './Segmented'
 import { SearchBox } from './SearchBox'
 import { T } from './tokens'
@@ -147,6 +148,7 @@ export function Header({
   currentSymbol,
   currentName,
   onSelectCompany,
+  analyzed,
   tab,
   onTabChange,
   period,
@@ -159,6 +161,8 @@ export function Header({
   currentSymbol: string | null
   currentName: string | null
   onSelectCompany: (symbol: string) => void
+  /** Already-analyzed companies, for the search box's instant-open dropdown. */
+  analyzed?: readonly CompanyHit[]
   tab: DashboardTabId
   onTabChange: (id: DashboardTabId) => void
   period: PeriodViewId
@@ -191,7 +195,12 @@ export function Header({
         <h1 style={{ fontSize: 15, fontWeight: 700, color: T.ink, margin: 0, whiteSpace: 'nowrap' }}>
           Dhamma Capital · Earnings
         </h1>
-        <SearchBox currentSymbol={currentSymbol} currentName={currentName} onSelect={onSelectCompany} />
+        <SearchBox
+          currentSymbol={currentSymbol}
+          currentName={currentName}
+          onSelect={onSelectCompany}
+          analyzed={analyzed}
+        />
         {onFindPeers && (
           <button
             type="button"

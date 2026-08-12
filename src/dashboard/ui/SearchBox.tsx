@@ -1,30 +1,40 @@
 /**
  * Standalone company search — an ARIA combobox in the header.
  *
- * Autocompletes over the bundled registry and also accepts a free-text ticker
- * (press Enter) so any listed symbol can be pulled on demand. Selecting a
- * company sets the active ticker; the dashboard loads it (or offers Analyze).
+ * Two modes in one dropdown:
+ *  • Empty + focused → the companies already analyzed (data on the site), so an
+ *    analyst can click one and open it instantly — no waiting, no re-typing.
+ *  • Typing → autocomplete over the full registry (with an "instant" dot on the
+ *    ones already analyzed), plus free-text Enter to pull any listed symbol.
  */
 
-import { useEffect, useRef, useState, type KeyboardEvent } from 'react'
-import { searchCompanies } from '../data/companySearch'
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from 'react'
+import { searchCompanies, type CompanyHit } from '../data/companySearch'
 import { T } from './tokens'
 
 export function SearchBox({
   currentSymbol,
   currentName,
   onSelect,
+  analyzed = [],
 }: {
   currentSymbol: string | null
   currentName: string | null
   onSelect: (symbol: string) => void
+  /** Already-analyzed companies, shown as instant picks when the box is empty. */
+  analyzed?: readonly CompanyHit[]
 }) {
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState(0)
   const ref = useRef<HTMLDivElement>(null)
 
-  const hits = query.trim() ? searchCompanies(query) : []
+  const typing = query.trim().length > 0
+  const analyzedSet = useMemo(
+    () => new Set(analyzed.map((a) => a.symbol.toUpperCase())),
+    [analyzed],
+  )
+  const list: readonly CompanyHit[] = typing ? searchCompanies(query) : analyzed
 
   useEffect(() => {
     if (!open) return
@@ -47,13 +57,13 @@ export function SearchBox({
     if (e.key === 'ArrowDown') {
       e.preventDefault()
       setOpen(true)
-      setActive((a) => Math.min(a + 1, Math.max(hits.length - 1, 0)))
+      setActive((a) => Math.min(a + 1, Math.max(list.length - 1, 0)))
     } else if (e.key === 'ArrowUp') {
       e.preventDefault()
       setActive((a) => Math.max(a - 1, 0))
     } else if (e.key === 'Enter') {
       e.preventDefault()
-      if (open && hits[active]) commit(hits[active].symbol)
+      if (open && list[active]) commit(list[active].symbol)
       else if (query.trim()) commit(query)
     } else if (e.key === 'Escape') {
       setOpen(false)
@@ -63,6 +73,8 @@ export function SearchBox({
   const placeholder = currentSymbol
     ? `${currentSymbol}${currentName && currentName !== currentSymbol ? ` · ${currentName}` : ''}`
     : 'Search a company…'
+
+  const activeIdx = Math.min(active, Math.max(list.length - 1, 0))
 
   return (
     <div ref={ref} style={{ position: 'relative', width: 264 }}>
@@ -79,7 +91,10 @@ export function SearchBox({
           setOpen(true)
           setActive(0)
         }}
-        onFocus={() => query.trim() && setOpen(true)}
+        onFocus={() => {
+          setActive(0)
+          setOpen(true)
+        }}
         onKeyDown={onKeyDown}
         style={{
           width: '100%',
@@ -94,64 +109,126 @@ export function SearchBox({
           outline: 'none',
         }}
       />
-      {open && hits.length > 0 && (
-        <ul
-          id="company-search-list"
-          role="listbox"
+      {open && list.length > 0 && (
+        <div
           style={{
             position: 'absolute',
             left: 0,
             top: 'calc(100% + 4px)',
             width: 320,
-            maxHeight: 340,
-            overflowY: 'auto',
-            margin: 0,
-            padding: 4,
-            listStyle: 'none',
             background: '#fff',
             border: `1px solid ${T.hairline}`,
             borderRadius: 10,
             boxShadow: '0 12px 28px rgba(0,0,0,0.12)',
             zIndex: 30,
+            overflow: 'hidden',
           }}
         >
-          {hits.map((h, i) => (
-            <li
-              key={h.symbol}
-              role="option"
-              aria-selected={i === active}
-              onMouseDown={(e) => {
-                e.preventDefault()
-                commit(h.symbol)
-              }}
-              onMouseEnter={() => setActive(i)}
+          <div
+            style={{
+              padding: '7px 12px 6px',
+              fontSize: 10,
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+              color: T.inkHint,
+              borderBottom: `1px solid ${T.borderDefault}`,
+              background: T.cardHeaderBg,
+            }}
+          >
+            {typing ? 'Results' : `Analyzed · open instantly (${analyzed.length})`}
+          </div>
+          <ul
+            id="company-search-list"
+            role="listbox"
+            style={{
+              margin: 0,
+              padding: 4,
+              maxHeight: 320,
+              overflowY: 'auto',
+              listStyle: 'none',
+            }}
+          >
+            {list.map((h, i) => {
+              const instant = analyzedSet.has(h.symbol.toUpperCase())
+              return (
+                <li
+                  key={h.symbol}
+                  role="option"
+                  aria-selected={i === activeIdx}
+                  onMouseDown={(e) => {
+                    e.preventDefault()
+                    commit(h.symbol)
+                  }}
+                  onMouseEnter={() => setActive(i)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'baseline',
+                    gap: 8,
+                    padding: '7px 10px',
+                    borderRadius: 6,
+                    cursor: 'pointer',
+                    background: i === activeIdx ? T.primaryLight : 'transparent',
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: 12,
+                      fontWeight: 700,
+                      color: T.primaryText,
+                      fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
+                      minWidth: 76,
+                    }}
+                  >
+                    {h.symbol}
+                  </span>
+                  <span
+                    style={{
+                      flex: 1,
+                      fontSize: 13,
+                      color: T.inkSecondary,
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    {h.name}
+                  </span>
+                  {instant && (
+                    <span
+                      title="Already analyzed — opens instantly"
+                      style={{
+                        flexShrink: 0,
+                        fontSize: 9,
+                        fontWeight: 700,
+                        color: '#16a34a',
+                        background: '#f0fdf4',
+                        borderRadius: 5,
+                        padding: '1px 6px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.04em',
+                      }}
+                    >
+                      instant
+                    </span>
+                  )}
+                </li>
+              )
+            })}
+          </ul>
+          {!typing && (
+            <div
               style={{
-                display: 'flex',
-                alignItems: 'baseline',
-                gap: 8,
-                padding: '7px 10px',
-                borderRadius: 6,
-                cursor: 'pointer',
-                background: i === active ? T.primaryLight : 'transparent',
+                padding: '6px 12px',
+                fontSize: 11,
+                color: T.inkHint,
+                borderTop: `1px solid ${T.borderDefault}`,
               }}
             >
-              <span
-                style={{
-                  fontSize: 12,
-                  fontWeight: 700,
-                  color: T.primaryText,
-                  fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
-                  minWidth: 76,
-                }}
-              >
-                {h.symbol}
-              </span>
-              <span style={{ fontSize: 13, color: T.inkSecondary, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                {h.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+              Type to search all ~500 companies.
+            </div>
+          )}
+        </div>
       )}
     </div>
   )

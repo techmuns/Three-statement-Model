@@ -4,7 +4,7 @@
  */
 
 import { useState, type CSSProperties, type ReactNode } from 'react'
-import { T, TRANSITION } from './tokens'
+import { T } from './tokens'
 
 export interface WidgetCardProps {
   title: string
@@ -29,11 +29,10 @@ export function WidgetCard({ title, subtitle, right, wide, padded, children }: W
     display: 'flex',
     flexDirection: 'column',
     backdropFilter: 'blur(8px)',
-    boxShadow: hover
-      ? '0 20px 40px rgba(0,0,0,0.08), 0 8px 16px rgba(79,70,229,0.06)'
-      : '0 1px 4px rgba(0,0,0,0.04)',
-    transform: hover ? 'translateY(-4px)' : 'none',
-    transition: TRANSITION,
+    // Calm, static cards — no lift/translate on hover (that read as the widgets
+    // "dancing" as the cursor moved across them). Just a gentle border on hover.
+    boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
+    transition: 'border-color 120ms ease',
     gridColumn: wide ? 'span 2' : undefined,
     minWidth: 0,
   }
