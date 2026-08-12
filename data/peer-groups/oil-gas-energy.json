@@ -10,7 +10,7 @@
       "id": "ioc",
       "name": "I O C L",
       "ticker": "IOC",
-      "marketCapCrore": 198685.83,
+      "marketCapCrore": 198190.35,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -42,7 +42,7 @@
       "id": "bpcl",
       "name": "B P C L",
       "ticker": "BPCL",
-      "marketCapCrore": 136662.94,
+      "marketCapCrore": 136921.43,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -74,7 +74,7 @@
       "id": "hindpetro",
       "name": "H P C L",
       "ticker": "HINDPETRO",
-      "marketCapCrore": 83059.5,
+      "marketCapCrore": 82964.03,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -106,7 +106,7 @@
       "id": "mrpl",
       "name": "M R P L",
       "ticker": "MRPL",
-      "marketCapCrore": 30723.08,
+      "marketCapCrore": 30721.36,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -138,7 +138,7 @@
       "id": "chennpetro",
       "name": "C P C L",
       "ticker": "CHENNPETRO",
-      "marketCapCrore": 20519.21,
+      "marketCapCrore": 20522.83,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -170,7 +170,7 @@
       "id": "kotyark",
       "name": "Kotyark Indust.",
       "ticker": "KOTYARK",
-      "marketCapCrore": 480.19,
+      "marketCapCrore": 483.94,
       "kpis": [
         {
           "kpiId": "revenue-growth",
