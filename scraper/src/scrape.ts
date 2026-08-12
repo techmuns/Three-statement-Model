@@ -109,14 +109,23 @@ export async function scrapeCompany(
         financials.quarterly.profitLoss.status === 'available'
           ? financials.quarterly.profitLoss.periods.map((p) => p.period.id)
           : []
-      const scrip = (await extractBseScripCode(page)) ?? bseScripCodeFor(company.companyId) ?? null
+      // Segment revenue is disclosed only in BSE results filings, and BSE blocks
+      // our GitHub-Actions egress IP (HTTP 403 at the edge — confirmed in run
+      // logs). So this is OFF by default: scrapes stay fast and segment stays an
+      // honest "not reported". Set ENABLE_BSE_SEGMENTS=1 when the scraper runs
+      // from an India/residential IP that BSE actually serves.
       let filingUrls: string[] = []
-      if (!scrip) {
-        console.log(`  · ${sym} segment mix: no BSE scrip code found`)
+      if (process.env.ENABLE_BSE_SEGMENTS) {
+        const scrip = (await extractBseScripCode(page)) ?? bseScripCodeFor(company.companyId) ?? null
+        if (!scrip) {
+          console.log(`  · ${sym} segment mix: no BSE scrip code found`)
+        } else {
+          const filings = await fetchBseResultFilings(context, scrip, 3)
+          for (const f of filings) console.log(`      results filing: "${f.subject.slice(0, 55)}" → ${f.url}`)
+          filingUrls = filings.map((f) => f.url)
+        }
       } else {
-        const filings = await fetchBseResultFilings(context, scrip, 3)
-        for (const f of filings) console.log(`      results filing: "${f.subject.slice(0, 55)}" → ${f.url}`)
-        filingUrls = filings.map((f) => f.url)
+        console.log(`  · ${sym} segment mix: BSE fetch disabled (runner IP is 403'd by BSE)`)
       }
       const segmentMix = await fetchCompanySegmentMix(filingUrls, quarterlyIds)
       if (segmentMix?.status === 'available') {
