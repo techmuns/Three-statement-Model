@@ -16,10 +16,12 @@
 import type { BrowserContext } from 'playwright'
 import type { CompanyFinancials } from '../../src/types/financials'
 import type { ScraperCompany } from './companies'
+import { bseScripCodeFor } from './companies'
 import { fetchCompanySegmentMix } from './bse/companySegments'
-import { collectBseFilingLinks, resultFilingCandidates } from './bse/screenerFilings'
+import { fetchBseResultFilings } from './bse/bseAnnouncements'
 import {
   detectBasis,
+  extractBseScripCode,
   extractPeersTable,
   extractSection,
   preparePage,
@@ -107,13 +109,16 @@ export async function scrapeCompany(
         financials.quarterly.profitLoss.status === 'available'
           ? financials.quarterly.profitLoss.periods.map((p) => p.period.id)
           : []
-      const links = await collectBseFilingLinks(page)
-      const candidates = resultFilingCandidates(links)
-      console.log(
-        `  · ${sym} segment mix: ${links.length} BSE link(s) on page, ${candidates.length} results-filing candidate(s)`,
-      )
-      for (const l of candidates) console.log(`      candidate: "${l.label.slice(0, 60)}" → ${l.url}`)
-      const segmentMix = await fetchCompanySegmentMix(candidates.map((c) => c.url), quarterlyIds)
+      const scrip = (await extractBseScripCode(page)) ?? bseScripCodeFor(company.companyId) ?? null
+      let filingUrls: string[] = []
+      if (!scrip) {
+        console.log(`  · ${sym} segment mix: no BSE scrip code found`)
+      } else {
+        const filings = await fetchBseResultFilings(context, scrip, 3)
+        for (const f of filings) console.log(`      results filing: "${f.subject.slice(0, 55)}" → ${f.url}`)
+        filingUrls = filings.map((f) => f.url)
+      }
+      const segmentMix = await fetchCompanySegmentMix(filingUrls, quarterlyIds)
       if (segmentMix?.status === 'available') {
         console.log(`  · ${sym} segment mix: ✓ filled ${segmentMix.segments.length} segments`)
         withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
@@ -122,8 +127,6 @@ export async function scrapeCompany(
         withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
       } else {
         console.log(`  · ${sym} segment mix: no usable results filing found`)
-        // Diagnostic: show what BSE links Screener did expose, so we can refine.
-        for (const l of links.slice(0, 30)) console.log(`      link: "${l.label.slice(0, 50)}" → ${l.url}`)
       }
     } catch (error) {
       console.error(`  ! ${company.screenerSymbol} segment mix error: ${(error as Error).message}`)
