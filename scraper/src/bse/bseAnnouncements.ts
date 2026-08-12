@@ -56,10 +56,14 @@ export async function fetchBseResultFilings(
   const page = await context.newPage()
   try {
     // Load a real BSE page so Akamai issues valid cookies for this context.
-    await page
-      .goto('https://www.bseindia.com/corporates/ann.html', { waitUntil: 'domcontentloaded', timeout: 45_000 })
-      .catch(() => undefined)
-    await page.waitForTimeout(4_000)
+    const warm = await page
+      .goto('https://www.bseindia.com/', { waitUntil: 'domcontentloaded', timeout: 45_000 })
+      .catch((e: Error) => {
+        console.log(`      BSE warmup goto error: ${e.message}`)
+        return null
+      })
+    await page.waitForTimeout(3_500)
+    console.log(`      BSE warmup: status ${warm?.status() ?? 'n/a'}, url ${page.url()}`)
 
     const now = new Date()
     const from = new Date(now.getTime() - 400 * 24 * 60 * 60 * 1000)
@@ -68,20 +72,20 @@ export async function fetchBseResultFilings(
       `&strPrevDate=${yyyymmdd(from)}&strScrip=${encodeURIComponent(scripCode)}` +
       `&strSearch=P&strToDate=${yyyymmdd(now)}&strType=C`
 
-    const raw: string = await page.evaluate(async (url) => {
-      try {
-        const r = await fetch(url, {
-          credentials: 'include',
-          headers: { Accept: 'application/json, text/plain, */*' },
-        })
-        return await r.text()
-      } catch (e) {
-        return `FETCH-ERR ${(e as Error).message}`
-      }
-    }, api)
-
-    // Diagnostic: the first run tells us the true response shape / any block.
-    console.log(`      BSE ann API (scrip ${scripCode}): ${raw.slice(0, 160).replace(/\s+/g, ' ')}`)
+    // Navigate straight to the API URL (a top-level request carries the Akamai
+    // cookies and avoids the cross-origin CORS block a fetch() hit). The JSON
+    // renders as the page body.
+    let raw = ''
+    try {
+      const resp = await page.goto(api, { waitUntil: 'domcontentloaded', timeout: 30_000 })
+      raw = await page.evaluate(() => document.body?.innerText ?? '')
+      console.log(
+        `      BSE ann API (scrip ${scripCode}) nav ${resp?.status() ?? '?'}: ${raw.slice(0, 140).replace(/\s+/g, ' ')}`,
+      )
+    } catch (e) {
+      console.log(`      BSE ann API nav error: ${(e as Error).message}`)
+      return []
+    }
 
     let parsed: { Table?: AnnRow[] } | null = null
     try {
