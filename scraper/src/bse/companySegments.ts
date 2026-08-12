@@ -13,7 +13,6 @@ import { mkdtemp } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import path from 'node:path'
 import type { SegmentMix } from '../../../src/types/financials'
-import { discoverResultFilings } from './discover'
 import { downloadFiling } from './download'
 import { buildSegmentMix } from './normalize'
 import { extractSegments, type SegmentTable } from './segments'
@@ -25,17 +24,14 @@ import { extractSegments, type SegmentTable } from './segments'
  * mix — that is the honest answer, not a failure.
  */
 export async function fetchCompanySegmentMix(
-  scripCode: string,
+  filingUrls: readonly string[],
   quarterlyPeriodIds: readonly string[],
 ): Promise<SegmentMix | null> {
-  if (quarterlyPeriodIds.length === 0) return null
-
-  const filings = await discoverResultFilings(scripCode, 2)
-  if (filings.length === 0) return null
+  if (quarterlyPeriodIds.length === 0 || filingUrls.length === 0) return null
 
   const tmp = await mkdtemp(path.join(tmpdir(), 'bse-seg-'))
   const tables: SegmentTable[] = []
-  for (const [i, url] of filings.entries()) {
+  for (const [i, url] of filingUrls.entries()) {
     const dest = path.join(tmp, `filing-${i}.pdf`)
     try {
       await downloadFiling(url, dest)
@@ -44,8 +40,13 @@ export async function fetchCompanySegmentMix(
         return { status: 'unavailable', reason: 'not-reported', note: extraction.note }
       }
       tables.push(extraction.table)
-    } catch {
-      // Skip an unreadable or mismatched filing and try the next one.
+      console.log(
+        `      segment PDF ${i}: parsed ${extraction.table.segments.length} segments (${extraction.table.quarterEndISO})`,
+      )
+    } catch (err) {
+      // Skip an unreadable or mismatched filing (e.g. an annual report, not the
+      // quarterly results format) and try the next candidate.
+      console.log(`      segment PDF ${i}: skipped — ${(err as Error).message}`)
     }
   }
   if (tables.length === 0) return null
@@ -54,7 +55,10 @@ export async function fetchCompanySegmentMix(
   const latestId = quarterlyPeriodIds[quarterlyPeriodIds.length - 1]
   // Only claim a mix when the latest quarter (the one the dashboard shows) is
   // covered; otherwise stay honest and let the caller keep "not reported".
-  if (!built.coveredPeriodIds.includes(latestId)) return null
+  if (!built.coveredPeriodIds.includes(latestId)) {
+    console.log(`      segment mix: parsed ${tables.length} filing(s) but latest quarter not covered`)
+    return null
+  }
 
   return { status: 'available', segments: built.segments }
 }

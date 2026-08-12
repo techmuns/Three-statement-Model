@@ -16,11 +16,10 @@
 import type { BrowserContext } from 'playwright'
 import type { CompanyFinancials } from '../../src/types/financials'
 import type { ScraperCompany } from './companies'
-import { bseScripCodeFor } from './companies'
 import { fetchCompanySegmentMix } from './bse/companySegments'
+import { collectBseFilingLinks, resultFilingCandidates } from './bse/screenerFilings'
 import {
   detectBasis,
-  extractBseScripCode,
   extractPeersTable,
   extractSection,
   preparePage,
@@ -103,27 +102,28 @@ export async function scrapeCompany(
     // "not reported" state that normalize already set.
     let withSegments = financials
     try {
-      const scrip = (await extractBseScripCode(page)) ?? bseScripCodeFor(company.companyId) ?? null
       const sym = company.screenerSymbol
-      if (!scrip) {
-        console.log(`  · ${sym} segment mix: skipped (no BSE scrip code found on page or in registry)`)
+      const quarterlyIds =
+        financials.quarterly.profitLoss.status === 'available'
+          ? financials.quarterly.profitLoss.periods.map((p) => p.period.id)
+          : []
+      const links = await collectBseFilingLinks(page)
+      const candidates = resultFilingCandidates(links)
+      console.log(
+        `  · ${sym} segment mix: ${links.length} BSE link(s) on page, ${candidates.length} results-filing candidate(s)`,
+      )
+      for (const l of candidates) console.log(`      candidate: "${l.label.slice(0, 60)}" → ${l.url}`)
+      const segmentMix = await fetchCompanySegmentMix(candidates.map((c) => c.url), quarterlyIds)
+      if (segmentMix?.status === 'available') {
+        console.log(`  · ${sym} segment mix: ✓ filled ${segmentMix.segments.length} segments`)
+        withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
+      } else if (segmentMix?.status === 'unavailable') {
+        console.log(`  · ${sym} segment mix: single-segment / not reported`)
+        withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
       } else {
-        const hasKey = Boolean(process.env.FIRECRAWL_API_KEY?.trim())
-        console.log(`  · ${sym} segment mix: scrip ${scrip}, FIRECRAWL_API_KEY ${hasKey ? 'set' : 'NOT set'}`)
-        const quarterlyIds =
-          financials.quarterly.profitLoss.status === 'available'
-            ? financials.quarterly.profitLoss.periods.map((p) => p.period.id)
-            : []
-        const segmentMix = await fetchCompanySegmentMix(scrip, quarterlyIds)
-        if (segmentMix?.status === 'available') {
-          console.log(`  · ${sym} segment mix: ✓ filled ${segmentMix.segments.length} segments`)
-          withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
-        } else if (segmentMix?.status === 'unavailable') {
-          console.log(`  · ${sym} segment mix: single-segment / not reported`)
-          withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
-        } else {
-          console.log(`  · ${sym} segment mix: no usable BSE filing found`)
-        }
+        console.log(`  · ${sym} segment mix: no usable results filing found`)
+        // Diagnostic: show what BSE links Screener did expose, so we can refine.
+        for (const l of links.slice(0, 30)) console.log(`      link: "${l.label.slice(0, 50)}" → ${l.url}`)
       }
     } catch (error) {
       console.error(`  ! ${company.screenerSymbol} segment mix error: ${(error as Error).message}`)
