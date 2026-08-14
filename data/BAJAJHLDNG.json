@@ -1,0 +1,512 @@
+{
+  "companyId": "BAJAJHLDNG",
+  "currency": "INR",
+  "unit": "crore",
+  "statementLayout": "standard",
+  "fiscalYearEndMonth": 3,
+  "sharesOutstandingCrore": 11,
+  "source": {
+    "provider": "screener",
+    "url": "https://www.screener.in/company/BAJAJHLDNG/consolidated/",
+    "fetchedAt": "2026-08-14T21:29:20.929Z",
+    "basis": "consolidated"
+  },
+  "quarterly": {
+    "cadence": "quarterly",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY26Q1",
+            "label": "Q1 FY26",
+            "longLabel": "Quarter ended Jun 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 1,
+            "endDate": "2025-06-30"
+          },
+          "sales": 325,
+          "expenses": 41,
+          "operatingProfit": 284,
+          "opmPercent": 87.38,
+          "otherIncome": 3428,
+          "interest": 0,
+          "depreciation": 8,
+          "profitBeforeTax": 3704,
+          "taxPercent": 5.4,
+          "netProfit": 3504,
+          "eps": 313.27
+        },
+        {
+          "period": {
+            "id": "FY26Q2",
+            "label": "Q2 FY26",
+            "longLabel": "Quarter ended Sep 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 2,
+            "endDate": "2025-09-30"
+          },
+          "sales": 397,
+          "expenses": 43,
+          "operatingProfit": 353,
+          "opmPercent": 88.92,
+          "otherIncome": 1630,
+          "interest": 0,
+          "depreciation": 8,
+          "profitBeforeTax": 1976,
+          "taxPercent": 14.47,
+          "netProfit": 1690,
+          "eps": 140.08
+        },
+        {
+          "period": {
+            "id": "FY26Q3",
+            "label": "Q3 FY26",
+            "longLabel": "Quarter ended Dec 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 3,
+            "endDate": "2025-12-31"
+          },
+          "sales": 288,
+          "expenses": 41,
+          "operatingProfit": 247,
+          "opmPercent": 85.76,
+          "otherIncome": 1846,
+          "interest": 0,
+          "depreciation": 8,
+          "profitBeforeTax": 2084,
+          "taxPercent": 3.17,
+          "netProfit": 2018,
+          "eps": 181.16
+        },
+        {
+          "period": {
+            "id": "FY26Q4",
+            "label": "Q4 FY26",
+            "longLabel": "Quarter ended Mar 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 4,
+            "endDate": "2026-03-31"
+          },
+          "sales": 61,
+          "expenses": 37,
+          "operatingProfit": 24,
+          "opmPercent": 39.34,
+          "otherIncome": 2278,
+          "interest": 0,
+          "depreciation": 8,
+          "profitBeforeTax": 2293,
+          "taxPercent": -12.39,
+          "netProfit": 2577,
+          "eps": 231.37
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 394,
+          "expenses": 53,
+          "operatingProfit": 341,
+          "opmPercent": 86.55,
+          "otherIncome": 2384,
+          "interest": 0,
+          "depreciation": 11,
+          "profitBeforeTax": 2714,
+          "taxPercent": 0.22,
+          "netProfit": 2708,
+          "eps": 243.18
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "cashFlow": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "segmentMix": {
+      "status": "unavailable",
+      "reason": "not-scraped",
+      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+    }
+  },
+  "annual": {
+    "cadence": "annual",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "sales": 484,
+          "expenses": 117,
+          "operatingProfit": 367,
+          "opmPercent": 75.83,
+          "otherIncome": 3896,
+          "interest": 3,
+          "depreciation": 34,
+          "profitBeforeTax": 4226,
+          "taxPercent": 2.37,
+          "netProfit": 4126,
+          "eps": 364.41
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "sales": 522,
+          "expenses": 142,
+          "operatingProfit": 380,
+          "opmPercent": 72.8,
+          "otherIncome": 4673,
+          "interest": 7,
+          "depreciation": 34,
+          "profitBeforeTax": 5012,
+          "taxPercent": 1.32,
+          "netProfit": 4946,
+          "eps": 435.83
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "sales": 1702,
+          "expenses": 140,
+          "operatingProfit": 1562,
+          "opmPercent": 91.77,
+          "otherIncome": 5967,
+          "interest": 2,
+          "depreciation": 34,
+          "profitBeforeTax": 7493,
+          "taxPercent": 1.71,
+          "netProfit": 7365,
+          "eps": 652.98
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "sales": 739,
+          "expenses": 180,
+          "operatingProfit": 559,
+          "opmPercent": 75.64,
+          "otherIncome": 6224,
+          "interest": 1,
+          "depreciation": 34,
+          "profitBeforeTax": 6748,
+          "taxPercent": 1.81,
+          "netProfit": 6626,
+          "eps": 585.9
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "sales": 1121,
+          "expenses": 162,
+          "operatingProfit": 959,
+          "opmPercent": 85.55,
+          "otherIncome": 9130,
+          "interest": 1,
+          "depreciation": 32,
+          "profitBeforeTax": 10057,
+          "taxPercent": 2.66,
+          "netProfit": 9789,
+          "eps": 865.89
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "equityCapital": 111,
+          "reserves": 42731,
+          "borrowings": 114,
+          "otherLiabilities": 10632,
+          "totalLiabilities": 53588,
+          "fixedAssets": 310,
+          "cwip": 0,
+          "investments": 52964,
+          "otherAssets": 314,
+          "totalAssets": 53588
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "equityCapital": 111,
+          "reserves": 44071,
+          "borrowings": 93,
+          "otherLiabilities": 8913,
+          "totalLiabilities": 53188,
+          "fixedAssets": 278,
+          "cwip": 0,
+          "investments": 52555,
+          "otherAssets": 355,
+          "totalAssets": 53188
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "equityCapital": 111,
+          "reserves": 54136,
+          "borrowings": 63,
+          "otherLiabilities": 10851,
+          "totalLiabilities": 65161,
+          "fixedAssets": 244,
+          "cwip": 0,
+          "investments": 64715,
+          "otherAssets": 203,
+          "totalAssets": 65161
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "equityCapital": 111,
+          "reserves": 62576,
+          "borrowings": 31,
+          "otherLiabilities": 12547,
+          "totalLiabilities": 75266,
+          "fixedAssets": 203,
+          "cwip": 0,
+          "investments": 73808,
+          "otherAssets": 1254,
+          "totalAssets": 75266
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "equityCapital": 111,
+          "reserves": 73039,
+          "borrowings": 10,
+          "otherLiabilities": 12027,
+          "totalLiabilities": 85187,
+          "fixedAssets": 181,
+          "cwip": 0,
+          "investments": 84865,
+          "otherAssets": 142,
+          "totalAssets": 85187
+        }
+      ]
+    },
+    "cashFlow": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 1610,
+          "cashFromInvesting": -151,
+          "cashFromFinancing": -1460,
+          "netCashFlow": -1
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 1728,
+          "cashFromInvesting": -137,
+          "cashFromFinancing": -1587,
+          "netCashFlow": 4
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 1941,
+          "cashFromInvesting": -472,
+          "cashFromFinancing": -1455,
+          "netCashFlow": 14
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -1957,
+          "cashFromInvesting": 3054,
+          "cashFromFinancing": -1055,
+          "netCashFlow": 43
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 4780,
+          "cashFromInvesting": -3695,
+          "cashFromFinancing": -1156,
+          "netCashFlow": -71
+        }
+      ]
+    },
+    "segmentMix": {
+      "status": "unavailable",
+      "reason": "not-scraped",
+      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+    }
+  },
+  "peers": [
+    {
+      "symbol": "BAJAJFINSV",
+      "name": "Bajaj Finserv",
+      "marketCapCrore": 321741.98
+    },
+    {
+      "symbol": "BAJAJHLDNG",
+      "name": "Bajaj Holdings",
+      "marketCapCrore": 127705.28
+    },
+    {
+      "symbol": "CHOICEIN",
+      "name": "Choice Intl.",
+      "marketCapCrore": 17919.03
+    },
+    {
+      "symbol": "JMFINANCIL",
+      "name": "JM Financial",
+      "marketCapCrore": 12098.84
+    },
+    {
+      "symbol": "EDELWEISS",
+      "name": "Edelweiss.Fin.",
+      "marketCapCrore": 11545.79
+    },
+    {
+      "symbol": "KAMAHOLD",
+      "name": "Kama Holdings",
+      "marketCapCrore": 7860.59
+    },
+    {
+      "symbol": "RANEHOLDIN",
+      "name": "Rane Holdings",
+      "marketCapCrore": 2391.04
+    }
+  ]
+}

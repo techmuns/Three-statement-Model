@@ -1,0 +1,268 @@
+{
+  "companyId": "BAYERCROP",
+  "currency": "INR",
+  "unit": "crore",
+  "statementLayout": "standard",
+  "fiscalYearEndMonth": 12,
+  "sharesOutstandingCrore": 4,
+  "source": {
+    "provider": "screener",
+    "url": "https://www.screener.in/company/BAYERCROP/consolidated/",
+    "fetchedAt": "2026-08-14T21:29:57.712Z",
+    "basis": "consolidated"
+  },
+  "quarterly": {
+    "cadence": "quarterly",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY06Q3",
+            "label": "Q3 FY06",
+            "longLabel": "Quarter ended Dec 2005",
+            "cadence": "quarterly",
+            "fiscalYear": 2006,
+            "quarter": 3,
+            "endDate": "2005-12-31"
+          },
+          "sales": 223,
+          "expenses": 194,
+          "operatingProfit": 29,
+          "opmPercent": 13,
+          "otherIncome": 7,
+          "interest": 2,
+          "depreciation": 6,
+          "profitBeforeTax": 27,
+          "taxPercent": 70.37,
+          "netProfit": 8,
+          "eps": 1.97
+        },
+        {
+          "period": {
+            "id": "FY07Q3",
+            "label": "Q3 FY07",
+            "longLabel": "Quarter ended Dec 2006",
+            "cadence": "quarterly",
+            "fiscalYear": 2007,
+            "quarter": 3,
+            "endDate": "2006-12-31"
+          },
+          "sales": 242,
+          "expenses": 225,
+          "operatingProfit": 18,
+          "opmPercent": 7.44,
+          "otherIncome": 18,
+          "interest": 3,
+          "depreciation": 6,
+          "profitBeforeTax": 27,
+          "taxPercent": 37.04,
+          "netProfit": 17,
+          "eps": 4.37
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "cashFlow": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "segmentMix": {
+      "status": "unavailable",
+      "reason": "not-scraped",
+      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+    }
+  },
+  "annual": {
+    "cadence": "annual",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY05",
+            "label": "FY05",
+            "longLabel": "Year ended Dec 2005",
+            "cadence": "annual",
+            "fiscalYear": 2005,
+            "quarter": null,
+            "endDate": "2005-12-31"
+          },
+          "sales": 667,
+          "expenses": 610,
+          "operatingProfit": 57,
+          "opmPercent": 8.55,
+          "otherIncome": 50,
+          "interest": 8,
+          "depreciation": 23,
+          "profitBeforeTax": 77,
+          "taxPercent": 50.65,
+          "netProfit": 38,
+          "eps": 9.71
+        },
+        {
+          "period": {
+            "id": "FY06",
+            "label": "FY06",
+            "longLabel": "Year ended Dec 2006",
+            "cadence": "annual",
+            "fiscalYear": 2006,
+            "quarter": null,
+            "endDate": "2006-12-31"
+          },
+          "sales": 727,
+          "expenses": 692,
+          "operatingProfit": 35,
+          "opmPercent": 4.81,
+          "otherIncome": 84,
+          "interest": 9,
+          "depreciation": 23,
+          "profitBeforeTax": 87,
+          "taxPercent": 36.78,
+          "netProfit": 55,
+          "eps": 14.03
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY05",
+            "label": "FY05",
+            "longLabel": "Year ended Dec 2005",
+            "cadence": "annual",
+            "fiscalYear": 2005,
+            "quarter": null,
+            "endDate": "2005-12-31"
+          },
+          "equityCapital": 40,
+          "reserves": 250,
+          "borrowings": 120,
+          "otherLiabilities": 436,
+          "totalLiabilities": 846,
+          "fixedAssets": 161,
+          "cwip": 8,
+          "investments": 4,
+          "otherAssets": 674,
+          "totalAssets": 846
+        },
+        {
+          "period": {
+            "id": "FY06",
+            "label": "FY06",
+            "longLabel": "Year ended Dec 2006",
+            "cadence": "annual",
+            "fiscalYear": 2006,
+            "quarter": null,
+            "endDate": "2006-12-31"
+          },
+          "equityCapital": 40,
+          "reserves": 294,
+          "borrowings": 112,
+          "otherLiabilities": 468,
+          "totalLiabilities": 914,
+          "fixedAssets": 153,
+          "cwip": 4,
+          "investments": 4,
+          "otherAssets": 754,
+          "totalAssets": 914
+        }
+      ]
+    },
+    "cashFlow": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY05",
+            "label": "FY05",
+            "longLabel": "Year ended Dec 2005",
+            "cadence": "annual",
+            "fiscalYear": 2005,
+            "quarter": null,
+            "endDate": "2005-12-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -12,
+          "cashFromInvesting": -34,
+          "cashFromFinancing": 25,
+          "netCashFlow": -21
+        },
+        {
+          "period": {
+            "id": "FY06",
+            "label": "FY06",
+            "longLabel": "Year ended Dec 2006",
+            "cadence": "annual",
+            "fiscalYear": 2006,
+            "quarter": null,
+            "endDate": "2006-12-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 38,
+          "cashFromInvesting": -16,
+          "cashFromFinancing": -26,
+          "netCashFlow": -4
+        }
+      ]
+    },
+    "segmentMix": {
+      "status": "unavailable",
+      "reason": "not-scraped",
+      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+    }
+  },
+  "peers": [
+    {
+      "symbol": "UPL",
+      "name": "UPL",
+      "marketCapCrore": 47511.85
+    },
+    {
+      "symbol": "PIIND",
+      "name": "P I Industries",
+      "marketCapCrore": 37779.33
+    },
+    {
+      "symbol": "SUMICHEM",
+      "name": "Sumitomo Chemi.",
+      "marketCapCrore": 28290.41
+    },
+    {
+      "symbol": "BAYERCROP",
+      "name": "Bayer Crop Sci.",
+      "marketCapCrore": 18182.67
+    },
+    {
+      "symbol": "SHARDACROP",
+      "name": "Sharda Cropchem",
+      "marketCapCrore": 7094.94
+    },
+    {
+      "symbol": "DHANUKA",
+      "name": "Dhanuka Agritech",
+      "marketCapCrore": 4501.07
+    },
+    {
+      "symbol": "RALLIS",
+      "name": "Rallis India",
+      "marketCapCrore": 4132.07
+    },
+    {
+      "symbol": "NACLIND",
+      "name": "NACL Industries",
+      "marketCapCrore": 3901.09
+    }
+  ]
+}
