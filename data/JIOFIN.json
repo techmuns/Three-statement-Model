@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/JIOFIN/consolidated/",
-    "fetchedAt": "2026-08-16T19:16:39.164Z",
+    "fetchedAt": "2026-08-16T19:53:29.021Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -410,5 +410,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "JIOFIN",
+      "name": "Jio Financial",
+      "marketCapCrore": 164451.24
+    },
+    {
+      "symbol": "ABCAPITAL",
+      "name": "Aditya Birla Cap",
+      "marketCapCrore": 109732.24
+    },
+    {
+      "symbol": "TATAINVEST",
+      "name": "Tata Inv.Corpn.",
+      "marketCapCrore": 33762.24
+    },
+    {
+      "symbol": "CHOLAHLDNG",
+      "name": "Chola Financial",
+      "marketCapCrore": 29991.82
+    },
+    {
+      "symbol": "TVSHLTD",
+      "name": "TVS Holdings",
+      "marketCapCrore": 28312.81
+    },
+    {
+      "symbol": "MAHSCOOTER",
+      "name": "Mah. Scooters",
+      "marketCapCrore": 15234.28
+    },
+    {
+      "symbol": "JSWHL",
+      "name": "JSW Holdings",
+      "marketCapCrore": 13180.14
+    }
+  ]
 }

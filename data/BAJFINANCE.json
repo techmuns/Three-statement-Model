@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BAJFINANCE/consolidated/",
-    "fetchedAt": "2026-08-16T19:30:50.735Z",
+    "fetchedAt": "2026-08-16T19:53:24.823Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "BAJFINANCE",
+      "name": "Bajaj Finance",
+      "marketCapCrore": 676761.23
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "name": "Shriram Finance",
+      "marketCapCrore": 264004.75
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "name": "Cholaman.Inv.&Fn",
+      "marketCapCrore": 161527.55
+    },
+    {
+      "symbol": "TATACAP",
+      "name": "Tata Capital",
+      "marketCapCrore": 154598.13
+    },
+    {
+      "symbol": "MUTHOOTFIN",
+      "name": "Muthoot Finance",
+      "marketCapCrore": 114097.34
+    },
+    {
+      "symbol": "LTF",
+      "name": "L&T Finance Ltd",
+      "marketCapCrore": 76760.18
+    },
+    {
+      "symbol": "SBICARD",
+      "name": "SBI Cards",
+      "marketCapCrore": 60238.97
+    }
+  ]
 }

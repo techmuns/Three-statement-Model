@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ARE&M/consolidated/",
-    "fetchedAt": "2026-08-16T19:30:06.447Z",
+    "fetchedAt": "2026-08-16T19:53:22.714Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,47 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "MOTHERSON",
+      "name": "Samvardh. Mothe.",
+      "marketCapCrore": 177631.27
+    },
+    {
+      "symbol": "BOSCHLTD",
+      "name": "Bosch",
+      "marketCapCrore": 138926.63
+    },
+    {
+      "symbol": "BHARATFORG",
+      "name": "Bharat Forge",
+      "marketCapCrore": 98725.3
+    },
+    {
+      "symbol": "UNOMINDA",
+      "name": "Uno Minda",
+      "marketCapCrore": 71605.93
+    },
+    {
+      "symbol": "SCHAEFFLER",
+      "name": "Schaeffler India",
+      "marketCapCrore": 63196.7
+    },
+    {
+      "symbol": "TIINDIA",
+      "name": "Tube Investments",
+      "marketCapCrore": 52912.99
+    },
+    {
+      "symbol": "SONACOMS",
+      "name": "Sona BLW Precis.",
+      "marketCapCrore": 49385.39
+    },
+    {
+      "symbol": "ARE&M",
+      "name": "Amara Raja Ener.",
+      "marketCapCrore": 17313.28
+    }
+  ]
 }
