@@ -51,14 +51,6 @@ jobs:
         working-directory: scraper
         run: npm ci
 
-      # Cache the downloaded browser so on-demand runs skip the ~50s re-download.
-      # (System deps below are still applied each run, so launches stay reliable.)
-      - name: Cache Playwright browser
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-chromium-${{ runner.os }}-${{ hashFiles('scraper/package-lock.json') }}
-
       - name: Install Playwright Chromium
         working-directory: scraper
         run: npx playwright install --with-deps chromium

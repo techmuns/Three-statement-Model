@@ -83,7 +83,7 @@ export async function scrapeCompany(
     let peerError: string | null = null
     let peerColumns: string | null = null
     await page
-      .waitForSelector('#peers table.data-table', { timeout: 20_000 })
+      .waitForSelector('#peers table.data-table', { timeout: 30_000 })
       .catch(() => undefined)
     const rawPeers = await extractPeersTable(page)
     if (!rawPeers) {
