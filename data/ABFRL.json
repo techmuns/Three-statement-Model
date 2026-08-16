@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABFRL/consolidated/",
-    "fetchedAt": "2026-08-04T10:52:10.898Z",
+    "fetchedAt": "2026-08-16T19:14:59.369Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 1719,
-          "expenses": 1520,
-          "operatingProfit": 199,
-          "opmPercent": 11.58,
-          "otherIncome": 243,
-          "interest": 143,
-          "depreciation": 315,
-          "profitBeforeTax": -15,
-          "taxPercent": -60,
-          "netProfit": -24,
-          "eps": -0.14
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 15.9,
           "netProfit": -164,
           "eps": -1.22
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 2026,
+          "expenses": 1915,
+          "operatingProfit": 111,
+          "opmPercent": 5.48,
+          "otherIncome": 56,
+          "interest": 137,
+          "depreciation": 350,
+          "profitBeforeTax": -320,
+          "taxPercent": 22.19,
+          "netProfit": -249,
+          "eps": -1.76
         }
       ]
     },
@@ -247,12 +247,12 @@
             "quarter": null,
             "endDate": "2026-03-31"
           },
-          "sales": 8177,
-          "expenses": 7520,
-          "operatingProfit": 657,
-          "opmPercent": 8.03,
+          "sales": 8176,
+          "expenses": 7474,
+          "operatingProfit": 702,
+          "opmPercent": 8.59,
           "otherIncome": 270,
-          "interest": 516,
+          "interest": 561,
           "depreciation": 1339,
           "profitBeforeTax": -928,
           "taxPercent": 10.56,
@@ -361,13 +361,13 @@
           "equityCapital": 1221,
           "reserves": 4619,
           "borrowings": 6189,
-          "otherLiabilities": 5729,
-          "totalLiabilities": 17757,
-          "fixedAssets": 10387,
-          "cwip": 88,
+          "otherLiabilities": 5367,
+          "totalLiabilities": 17395,
+          "fixedAssets": 10377,
+          "cwip": 98,
           "investments": 1240,
-          "otherAssets": 6042,
-          "totalAssets": 17757
+          "otherAssets": 5680,
+          "totalAssets": 17395
         }
       ]
     },
@@ -441,9 +441,9 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 1644,
+          "cashFromOperating": 1681,
           "cashFromInvesting": -1665,
-          "cashFromFinancing": 334,
+          "cashFromFinancing": 296,
           "netCashFlow": 313
         },
         {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "TRENT",
+      "name": "Trent",
+      "marketCapCrore": 158796.58
+    },
+    {
+      "symbol": "LENSKART",
+      "name": "Lenskart Solut.",
+      "marketCapCrore": 106419.45
+    },
+    {
+      "symbol": "MANYAVAR",
+      "name": "Vedant Fashions",
+      "marketCapCrore": 12847.47
+    },
+    {
+      "symbol": "ABLBL",
+      "name": "A B Lifestyle",
+      "marketCapCrore": 10834.57
+    },
+    {
+      "symbol": "AVL",
+      "name": "Aditya Vision",
+      "marketCapCrore": 8066.61
+    },
+    {
+      "symbol": "V2RETAIL",
+      "name": "V2 Retail",
+      "marketCapCrore": 7890.76
+    },
+    {
+      "symbol": "ABFRL",
+      "name": "Aditya Bir. Fas.",
+      "marketCapCrore": 6832.42
+    }
+  ]
 }

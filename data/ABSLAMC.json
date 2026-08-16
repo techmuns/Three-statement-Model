@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABSLAMC/consolidated/",
-    "fetchedAt": "2026-08-04T10:52:21.182Z",
+    "fetchedAt": "2026-08-16T19:15:35.827Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ICICIAMC",
+      "name": "ICICI AMC",
+      "marketCapCrore": 153116.35
+    },
+    {
+      "symbol": "SBIFUNDS",
+      "name": "SBI Funds Mgt.",
+      "marketCapCrore": 113879.03
+    },
+    {
+      "symbol": "HDFCAMC",
+      "name": "HDFC AMC",
+      "marketCapCrore": 106553.52
+    },
+    {
+      "symbol": "NAM-INDIA",
+      "name": "Nippon Life Ind.",
+      "marketCapCrore": 74712.67
+    },
+    {
+      "symbol": "ABSLAMC",
+      "name": "Aditya AMC",
+      "marketCapCrore": 29250.35
+    },
+    {
+      "symbol": "UTIAMC",
+      "name": "UTI AMC",
+      "marketCapCrore": 11671.97
+    },
+    {
+      "symbol": "CRAMC",
+      "name": "Canara Robeco",
+      "marketCapCrore": 5109.07
+    }
+  ]
 }

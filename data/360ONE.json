@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/360ONE/consolidated/",
-    "fetchedAt": "2026-08-04T10:50:49.571Z",
+    "fetchedAt": "2026-08-16T19:14:45.003Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "GROWW",
+      "name": "Billionbrains",
+      "marketCapCrore": 123069.15
+    },
+    {
+      "symbol": "MOTILALOFS",
+      "name": "Motil.Oswal.Fin.",
+      "marketCapCrore": 54431.95
+    },
+    {
+      "symbol": "360ONE",
+      "name": "360 ONE",
+      "marketCapCrore": 48012.92
+    },
+    {
+      "symbol": "NUVAMA",
+      "name": "Nuvama Wealth",
+      "marketCapCrore": 30665.63
+    },
+    {
+      "symbol": "ANGELONE",
+      "name": "Angel One",
+      "marketCapCrore": 26250.24
+    },
+    {
+      "symbol": "IIFLCAPS",
+      "name": "IIFL Capital",
+      "marketCapCrore": 10552.32
+    },
+    {
+      "symbol": "SHAREINDIA",
+      "name": "Share India Sec.",
+      "marketCapCrore": 3817.85
+    }
+  ]
 }

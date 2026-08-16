@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AAVAS/consolidated/",
-    "fetchedAt": "2026-08-04T10:51:03.317Z",
+    "fetchedAt": "2026-08-16T19:14:52.399Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,47 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "BAJAJHFL",
+      "name": "Bajaj Housing",
+      "marketCapCrore": 70266.58
+    },
+    {
+      "symbol": "PIRAMALFIN",
+      "name": "Piramal Finance.",
+      "marketCapCrore": 46643.47
+    },
+    {
+      "symbol": "PNBHOUSING",
+      "name": "PNB Housing",
+      "marketCapCrore": 29980.87
+    },
+    {
+      "symbol": "LICHSGFIN",
+      "name": "LIC Housing Fin.",
+      "marketCapCrore": 27503.15
+    },
+    {
+      "symbol": "AADHARHFC",
+      "name": "Aadhar Hsg. Fin.",
+      "marketCapCrore": 21788.14
+    },
+    {
+      "symbol": "SAMMAANCAP",
+      "name": "Sammaan Capital",
+      "marketCapCrore": 17700.76
+    },
+    {
+      "symbol": "APTUS",
+      "name": "Aptus Value Hou.",
+      "marketCapCrore": 12545.48
+    },
+    {
+      "symbol": "AAVAS",
+      "name": "AAVAS Financiers",
+      "marketCapCrore": 11079.99
+    }
+  ]
 }

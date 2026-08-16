@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AARTIIND/consolidated/",
-    "fetchedAt": "2026-08-04T10:50:59.886Z",
+    "fetchedAt": "2026-08-16T19:14:49.459Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "PIDILITIND",
+      "name": "Pidilite Inds.",
+      "marketCapCrore": 172311.91
+    },
+    {
+      "symbol": "FLUOROCHEM",
+      "name": "Gujarat Fluoroch",
+      "marketCapCrore": 52044.73
+    },
+    {
+      "symbol": "NAVINFLUOR",
+      "name": "Navin Fluo.Intl.",
+      "marketCapCrore": 42250.92
+    },
+    {
+      "symbol": "DEEPAKNTR",
+      "name": "Deepak Nitrite",
+      "marketCapCrore": 23503.25
+    },
+    {
+      "symbol": "AETHER",
+      "name": "Aether Industri.",
+      "marketCapCrore": 21569.68
+    },
+    {
+      "symbol": "ATUL",
+      "name": "Atul",
+      "marketCapCrore": 19811.36
+    },
+    {
+      "symbol": "AARTIIND",
+      "name": "Aarti Industries",
+      "marketCapCrore": 19373.23
+    }
+  ]
 }

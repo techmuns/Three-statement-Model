@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABB/consolidated/",
-    "fetchedAt": "2026-08-04T10:51:06.754Z",
+    "fetchedAt": "2026-08-16T19:14:54.678Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -431,5 +431,47 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ABB",
+      "name": "A B B",
+      "marketCapCrore": 162088.72
+    },
+    {
+      "symbol": "POWERINDIA",
+      "name": "Hitachi Energy",
+      "marketCapCrore": 159123.34
+    },
+    {
+      "symbol": "BHEL",
+      "name": "B H E L",
+      "marketCapCrore": 146838.61
+    },
+    {
+      "symbol": "SIEMENS",
+      "name": "Siemens",
+      "marketCapCrore": 140311.48
+    },
+    {
+      "symbol": "CGPOWER",
+      "name": "CG Power & Ind",
+      "marketCapCrore": 140238.69
+    },
+    {
+      "symbol": "ENRIN",
+      "name": "Siemens Ener.Ind",
+      "marketCapCrore": 125934.89
+    },
+    {
+      "symbol": "GVT&D",
+      "name": "GE Vernova T&D",
+      "marketCapCrore": 111381.75
+    },
+    {
+      "symbol": "SUZLON",
+      "name": "Suzlon Energy",
+      "marketCapCrore": 64222.67
+    }
+  ]
 }

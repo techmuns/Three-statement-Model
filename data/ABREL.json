@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABREL/consolidated/",
-    "fetchedAt": "2026-08-04T10:52:17.749Z",
+    "fetchedAt": "2026-08-16T19:15:33.510Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 394.76,
-          "expenses": 425.39,
-          "operatingProfit": -30.63,
-          "opmPercent": -7.76,
-          "otherIncome": -119.16,
-          "interest": 11.5,
-          "depreciation": 15.83,
-          "profitBeforeTax": -177.12,
-          "taxPercent": 23.67,
-          "netProfit": -135.2,
-          "eps": -11.73
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -48,16 +26,16 @@
             "quarter": 1,
             "endDate": "2025-06-30"
           },
-          "sales": 145.56,
-          "expenses": 187.95,
-          "operatingProfit": -42.39,
-          "opmPercent": -29.12,
-          "otherIncome": 32.07,
-          "interest": 7.06,
-          "depreciation": 15.5,
-          "profitBeforeTax": -32.88,
-          "taxPercent": 17.64,
-          "netProfit": -27.08,
+          "sales": 146,
+          "expenses": 188,
+          "operatingProfit": -42,
+          "opmPercent": -28.77,
+          "otherIncome": 32,
+          "interest": 7,
+          "depreciation": 16,
+          "profitBeforeTax": -33,
+          "taxPercent": 18.18,
+          "netProfit": -27,
           "eps": -2.28
         },
         {
@@ -70,16 +48,16 @@
             "quarter": 2,
             "endDate": "2025-09-30"
           },
-          "sales": 97.84,
-          "expenses": 171.6,
-          "operatingProfit": -73.76,
-          "opmPercent": -75.39,
-          "otherIncome": 70.67,
-          "interest": 17.73,
-          "depreciation": 15.73,
-          "profitBeforeTax": -36.55,
-          "taxPercent": 51.24,
-          "netProfit": -17.82,
+          "sales": 98,
+          "expenses": 172,
+          "operatingProfit": -74,
+          "opmPercent": -75.51,
+          "otherIncome": 71,
+          "interest": 18,
+          "depreciation": 16,
+          "profitBeforeTax": -37,
+          "taxPercent": 51.35,
+          "netProfit": -18,
           "eps": -1.41
         },
         {
@@ -92,16 +70,16 @@
             "quarter": 3,
             "endDate": "2025-12-31"
           },
-          "sales": 81.17,
-          "expenses": 171.81,
-          "operatingProfit": -90.64,
-          "opmPercent": -111.67,
-          "otherIncome": 18.92,
-          "interest": 19.01,
-          "depreciation": 17.77,
-          "profitBeforeTax": -108.5,
-          "taxPercent": 30.59,
-          "netProfit": -75.31,
+          "sales": 81,
+          "expenses": 172,
+          "operatingProfit": -91,
+          "opmPercent": -112.35,
+          "otherIncome": 19,
+          "interest": 19,
+          "depreciation": 18,
+          "profitBeforeTax": -108,
+          "taxPercent": 30.56,
+          "netProfit": -75,
           "eps": -6.52
         },
         {
@@ -114,17 +92,39 @@
             "quarter": 4,
             "endDate": "2026-03-31"
           },
-          "sales": 82.61,
-          "expenses": 248.17,
-          "operatingProfit": -165.56,
-          "opmPercent": -200.41,
-          "otherIncome": 128.78,
-          "interest": 20.6,
-          "depreciation": 18.5,
-          "profitBeforeTax": -75.88,
-          "taxPercent": 107.1,
-          "netProfit": 5.39,
+          "sales": 83,
+          "expenses": 248,
+          "operatingProfit": -166,
+          "opmPercent": -200,
+          "otherIncome": 129,
+          "interest": 21,
+          "depreciation": 18,
+          "profitBeforeTax": -76,
+          "taxPercent": 106.58,
+          "netProfit": 5,
           "eps": 0.97
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 189,
+          "expenses": 246,
+          "operatingProfit": -57,
+          "opmPercent": -30.16,
+          "otherIncome": 49,
+          "interest": 26,
+          "depreciation": 17,
+          "profitBeforeTax": -51,
+          "taxPercent": 31.37,
+          "netProfit": -35,
+          "eps": -3.45
         }
       ]
     },
@@ -471,5 +471,47 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "DLF",
+      "name": "DLF",
+      "marketCapCrore": 164608.23
+    },
+    {
+      "symbol": "LODHA",
+      "name": "Lodha Developers",
+      "marketCapCrore": 124287.82
+    },
+    {
+      "symbol": "PRESTIGE",
+      "name": "Prestige Estates",
+      "marketCapCrore": 68593.79
+    },
+    {
+      "symbol": "PHOENIXLTD",
+      "name": "Phoenix Mills",
+      "marketCapCrore": 67598.44
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "name": "Oberoi Realty",
+      "marketCapCrore": 67120.97
+    },
+    {
+      "symbol": "GODREJPROP",
+      "name": "Godrej Propert.",
+      "marketCapCrore": 59944.07
+    },
+    {
+      "symbol": "ANANTRAJ",
+      "name": "Anant Raj",
+      "marketCapCrore": 22670.45
+    },
+    {
+      "symbol": "ABREL",
+      "name": "A B Real Estate",
+      "marketCapCrore": 15669.79
+    }
+  ]
 }
