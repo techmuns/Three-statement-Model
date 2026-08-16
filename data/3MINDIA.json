@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/3MINDIA/consolidated/",
-    "fetchedAt": "2026-08-04T10:50:53.010Z",
+    "fetchedAt": "2026-08-16T19:07:30.823Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,47 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "GODREJIND",
+      "name": "Godrej Industrie",
+      "marketCapCrore": 42190.59
+    },
+    {
+      "symbol": "3MINDIA",
+      "name": "3M India",
+      "marketCapCrore": 39828.18
+    },
+    {
+      "symbol": "DCMSHRIRAM",
+      "name": "DCM Shriram",
+      "marketCapCrore": 15979.41
+    },
+    {
+      "symbol": "BALMLAWRIE",
+      "name": "Balmer Lawrie",
+      "marketCapCrore": 2965.72
+    },
+    {
+      "symbol": "TTKHLTCARE",
+      "name": "TTK Healthcare",
+      "marketCapCrore": 1635.87
+    },
+    {
+      "symbol": "509525",
+      "name": "Empire Inds.",
+      "marketCapCrore": 650.37
+    },
+    {
+      "symbol": "MAHESHWARI",
+      "name": "Maheshwari Logi.",
+      "marketCapCrore": 214.58
+    },
+    {
+      "symbol": "539143",
+      "name": "Panth Infinity",
+      "marketCapCrore": 55.21
+    }
+  ]
 }

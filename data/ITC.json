@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ITC/consolidated/",
-    "fetchedAt": "2026-08-07T21:44:14.396Z",
+    "fetchedAt": "2026-08-16T19:07:32.932Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,32 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "HINDUNILVR",
+      "name": "Hind. Unilever",
+      "marketCapCrore": 488010.11
+    },
+    {
+      "symbol": "ITC",
+      "name": "ITC",
+      "marketCapCrore": 348569.81
+    },
+    {
+      "symbol": "HNDFDS",
+      "name": "Hindustan Foods",
+      "marketCapCrore": 7165.56
+    },
+    {
+      "symbol": "GODAVARIB",
+      "name": "Godavari Bioref.",
+      "marketCapCrore": 1265.33
+    },
+    {
+      "symbol": "DAVANGERE",
+      "name": "Davangere Sugar",
+      "marketCapCrore": 430.43
+    }
+  ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ASIANPAINT/consolidated/",
-    "fetchedAt": "2026-08-07T21:43:11.442Z",
+    "fetchedAt": "2026-08-16T19:07:34.992Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ASIANPAINT",
+      "name": "Asian Paints",
+      "marketCapCrore": 258628.5
+    },
+    {
+      "symbol": "BERGEPAINT",
+      "name": "Berger Paints",
+      "marketCapCrore": 63558.81
+    },
+    {
+      "symbol": "KANSAINER",
+      "name": "Kansai Nerolac",
+      "marketCapCrore": 16559.75
+    },
+    {
+      "symbol": "JSWDULUX",
+      "name": "JSW Dulux",
+      "marketCapCrore": 14424.44
+    },
+    {
+      "symbol": "INDIGOPNTS",
+      "name": "Indigo Paints",
+      "marketCapCrore": 5483.05
+    },
+    {
+      "symbol": "SIRCA",
+      "name": "Sirca Paints",
+      "marketCapCrore": 2424.48
+    },
+    {
+      "symbol": "SHALPAINTS",
+      "name": "Shalimar Paints",
+      "marketCapCrore": 765.04
+    }
+  ]
 }
