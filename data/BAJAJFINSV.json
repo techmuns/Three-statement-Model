@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BAJAJFINSV/consolidated/",
-    "fetchedAt": "2026-08-07T21:43:25.531Z",
+    "fetchedAt": "2026-08-16T19:30:48.653Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "BAJAJFINSV",
+      "name": "Bajaj Finserv",
+      "marketCapCrore": 321741.98
+    },
+    {
+      "symbol": "BAJAJHLDNG",
+      "name": "Bajaj Holdings",
+      "marketCapCrore": 127705.28
+    },
+    {
+      "symbol": "CHOICEIN",
+      "name": "Choice Intl.",
+      "marketCapCrore": 17919.03
+    },
+    {
+      "symbol": "JMFINANCIL",
+      "name": "JM Financial",
+      "marketCapCrore": 12098.84
+    },
+    {
+      "symbol": "EDELWEISS",
+      "name": "Edelweiss.Fin.",
+      "marketCapCrore": 11545.79
+    },
+    {
+      "symbol": "KAMAHOLD",
+      "name": "Kama Holdings",
+      "marketCapCrore": 7860.59
+    },
+    {
+      "symbol": "RANEHOLDIN",
+      "name": "Rane Holdings",
+      "marketCapCrore": 2391.04
+    }
+  ]
 }

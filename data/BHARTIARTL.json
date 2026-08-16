@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BHARTIARTL/consolidated/",
-    "fetchedAt": "2026-08-07T21:43:32.564Z",
+    "fetchedAt": "2026-08-16T19:31:26.801Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "BHARTIARTL",
+      "name": "Bharti Airtel",
+      "marketCapCrore": 1243078.51
+    },
+    {
+      "symbol": "IDEA",
+      "name": "Vodafone Idea",
+      "marketCapCrore": 152872.02
+    },
+    {
+      "symbol": "BHARTIHEXA",
+      "name": "Bharti Hexacom",
+      "marketCapCrore": 81055
+    },
+    {
+      "symbol": "TATACOMM",
+      "name": "Tata Comm",
+      "marketCapCrore": 48968.73
+    },
+    {
+      "symbol": "TTML",
+      "name": "Tata Tele. Mah.",
+      "marketCapCrore": 7544.07
+    },
+    {
+      "symbol": "MTNL",
+      "name": "M T N L",
+      "marketCapCrore": 1660.05
+    },
+    {
+      "symbol": "RCOM",
+      "name": "Reliance Communi",
+      "marketCapCrore": 224.01
+    }
+  ]
 }

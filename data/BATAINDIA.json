@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BATAINDIA/consolidated/",
-    "fetchedAt": "2026-08-14T21:29:35.939Z",
+    "fetchedAt": "2026-08-16T19:31:22.594Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "METROBRAND",
+      "name": "Metro Brands",
+      "marketCapCrore": 25732.89
+    },
+    {
+      "symbol": "RELAXO",
+      "name": "Relaxo Footwear",
+      "marketCapCrore": 9864.19
+    },
+    {
+      "symbol": "BATAINDIA",
+      "name": "Bata India",
+      "marketCapCrore": 9712.83
+    },
+    {
+      "symbol": "REDTAPE",
+      "name": "Redtape",
+      "marketCapCrore": 6754.76
+    },
+    {
+      "symbol": "CAMPUS",
+      "name": "Campus Activewe.",
+      "marketCapCrore": 6676.05
+    },
+    {
+      "symbol": "SREEL",
+      "name": "Sreeleathers",
+      "marketCapCrore": 557.62
+    },
+    {
+      "symbol": "LIBERTSHOE",
+      "name": "Liberty Shoes",
+      "marketCapCrore": 406.74
+    }
+  ]
 }

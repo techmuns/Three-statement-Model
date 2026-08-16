@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/CPPLUS/consolidated/",
-    "fetchedAt": "2026-08-04T10:52:24.607Z",
+    "fetchedAt": "2026-08-16T19:31:32.955Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 977,
-          "expenses": 879,
-          "operatingProfit": 98,
-          "opmPercent": 10.03,
-          "otherIncome": 0,
-          "interest": 12,
-          "depreciation": 12,
-          "profitBeforeTax": 74,
-          "taxPercent": 25.68,
-          "netProfit": 55,
-          "eps": 5.01
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 25.88,
           "netProfit": 169,
           "eps": 14.36
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 1402,
+          "expenses": 1199,
+          "operatingProfit": 204,
+          "opmPercent": 14.55,
+          "otherIncome": 4,
+          "interest": 4,
+          "depreciation": 13,
+          "profitBeforeTax": 191,
+          "taxPercent": 25.65,
+          "netProfit": 142,
+          "eps": 12.07
         }
       ]
     },
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "INDOMIM",
+      "name": "Indo-MIM",
+      "marketCapCrore": 41998.74
+    },
+    {
+      "symbol": "CPPLUS",
+      "name": "Aditya Infotech",
+      "marketCapCrore": 41629.92
+    },
+    {
+      "symbol": "HONAUT",
+      "name": "Honeywell Auto",
+      "marketCapCrore": 32889.22
+    },
+    {
+      "symbol": "SYRMA",
+      "name": "Syrma SGS Tech.",
+      "marketCapCrore": 28253.52
+    },
+    {
+      "symbol": "KAYNES",
+      "name": "Kaynes Tech",
+      "marketCapCrore": 24604.78
+    },
+    {
+      "symbol": "LMW",
+      "name": "LMW",
+      "marketCapCrore": 20213.3
+    },
+    {
+      "symbol": "JYOTICNC",
+      "name": "Jyoti CNC Auto.",
+      "marketCapCrore": 18805.62
+    }
+  ]
 }

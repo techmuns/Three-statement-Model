@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AEGISVOPAK/consolidated/",
-    "fetchedAt": "2026-08-04T10:52:31.475Z",
+    "fetchedAt": "2026-08-16T19:30:00.113Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 199,
-          "expenses": 55,
-          "operatingProfit": 144,
-          "opmPercent": 72.36,
-          "otherIncome": 16,
-          "interest": 48,
-          "depreciation": 37,
-          "profitBeforeTax": 75,
-          "taxPercent": 14.67,
-          "netProfit": 64,
-          "eps": 0.59
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -48,17 +26,17 @@
             "quarter": 1,
             "endDate": "2025-06-30"
           },
-          "sales": 164,
-          "expenses": 44,
-          "operatingProfit": 120,
-          "opmPercent": 73.17,
-          "otherIncome": 9,
+          "sales": 208,
+          "expenses": 53,
+          "operatingProfit": 155,
+          "opmPercent": 74.52,
+          "otherIncome": 11,
           "interest": 30,
-          "depreciation": 36,
-          "profitBeforeTax": 63,
-          "taxPercent": 23.81,
-          "netProfit": 48,
-          "eps": 0.43
+          "depreciation": 42,
+          "profitBeforeTax": 95,
+          "taxPercent": 16.84,
+          "netProfit": 79,
+          "eps": 0.64
         },
         {
           "period": {
@@ -125,6 +103,28 @@
           "taxPercent": 14.94,
           "netProfit": 74,
           "eps": 0.62
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 234,
+          "expenses": 54,
+          "operatingProfit": 179,
+          "opmPercent": 76.5,
+          "otherIncome": 4,
+          "interest": 39,
+          "depreciation": 55,
+          "profitBeforeTax": 89,
+          "taxPercent": 22.47,
+          "netProfit": 69,
+          "eps": 0.6
         }
       ]
     },
@@ -471,5 +471,22 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "AEGISVOPAK",
+      "name": "Aegis Vopak Term",
+      "marketCapCrore": 29816.05
+    },
+    {
+      "symbol": "GANESHBE",
+      "name": "Ganesh Benzopl.",
+      "marketCapCrore": 846.96
+    },
+    {
+      "symbol": "544463",
+      "name": "Repono",
+      "marketCapCrore": 85.32
+    }
+  ]
 }

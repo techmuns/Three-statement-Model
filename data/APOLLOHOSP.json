@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/APOLLOHOSP/consolidated/",
-    "fetchedAt": "2026-08-07T21:43:07.930Z",
+    "fetchedAt": "2026-08-16T19:30:04.292Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 5592,
-          "expenses": 4822,
-          "operatingProfit": 770,
-          "opmPercent": 13.77,
-          "otherIncome": 72,
-          "interest": 115,
-          "depreciation": 211,
-          "profitBeforeTax": 516,
-          "taxPercent": 19.77,
-          "netProfit": 414,
-          "eps": 27.1
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 23.68,
           "netProfit": 551,
           "eps": 36.81
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 7044,
+          "expenses": 5951,
+          "operatingProfit": 1092,
+          "opmPercent": 15.5,
+          "otherIncome": 62,
+          "interest": 120,
+          "depreciation": 235,
+          "profitBeforeTax": 799,
+          "taxPercent": 23.65,
+          "netProfit": 610,
+          "eps": 40.39
         }
       ]
     },
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "APOLLOHOSP",
+      "name": "Apollo Hospitals",
+      "marketCapCrore": 128263.1
+    },
+    {
+      "symbol": "MAXHEALTH",
+      "name": "Max Healthcare",
+      "marketCapCrore": 98161.37
+    },
+    {
+      "symbol": "MANIPALHOS",
+      "name": "Manipal Health",
+      "marketCapCrore": 92990.59
+    },
+    {
+      "symbol": "ASTERDM",
+      "name": "Aster DM Quality",
+      "marketCapCrore": 71681.98
+    },
+    {
+      "symbol": "FORTIS",
+      "name": "Fortis Health.",
+      "marketCapCrore": 70135.61
+    },
+    {
+      "symbol": "MEDANTA",
+      "name": "Global Health",
+      "marketCapCrore": 38249.7
+    },
+    {
+      "symbol": "NH",
+      "name": "Narayana Hrudaya",
+      "marketCapCrore": 37451.16
+    }
+  ]
 }

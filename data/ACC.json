@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ACC/consolidated/",
-    "fetchedAt": "2026-08-04T10:51:13.354Z",
+    "fetchedAt": "2026-08-16T19:29:09.854Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ULTRACEMCO",
+      "name": "UltraTech Cem.",
+      "marketCapCrore": 342387.73
+    },
+    {
+      "symbol": "GRASIM",
+      "name": "Grasim Inds",
+      "marketCapCrore": 221085.66
+    },
+    {
+      "symbol": "AMBUJACEM",
+      "name": "Ambuja Cements",
+      "marketCapCrore": 103741.12
+    },
+    {
+      "symbol": "SHREECEM",
+      "name": "Shree Cement",
+      "marketCapCrore": 89462.21
+    },
+    {
+      "symbol": "JKCEMENT",
+      "name": "J K Cements",
+      "marketCapCrore": 41002.4
+    },
+    {
+      "symbol": "DALBHARAT",
+      "name": "Dalmia BharatLtd",
+      "marketCapCrore": 34549.65
+    },
+    {
+      "symbol": "ACC",
+      "name": "ACC",
+      "marketCapCrore": 24814.21
+    }
+  ]
 }

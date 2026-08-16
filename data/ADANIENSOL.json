@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ADANIENSOL/consolidated/",
-    "fetchedAt": "2026-08-04T10:51:27.116Z",
+    "fetchedAt": "2026-08-16T19:29:18.170Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,17 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ADANIENSOL",
+      "name": "Adani Energy Sol",
+      "marketCapCrore": 197629.44
+    },
+    {
+      "symbol": "535719",
+      "name": "Ampvolts",
+      "marketCapCrore": 74.64
+    }
+  ]
 }

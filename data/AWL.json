@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AWL/consolidated/",
-    "fetchedAt": "2026-08-14T21:28:59.116Z",
+    "fetchedAt": "2026-08-16T19:30:42.428Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "MARICO",
+      "name": "Marico",
+      "marketCapCrore": 112336.52
+    },
+    {
+      "symbol": "PATANJALI",
+      "name": "Patanjali Foods",
+      "marketCapCrore": 38301.42
+    },
+    {
+      "symbol": "AWL",
+      "name": "AWL Agri Busine.",
+      "marketCapCrore": 24974.62
+    },
+    {
+      "symbol": "GOKULAGRO",
+      "name": "Gokul Agro",
+      "marketCapCrore": 6835.68
+    },
+    {
+      "symbol": "519477",
+      "name": "CIAN Agro",
+      "marketCapCrore": 4092.24
+    },
+    {
+      "symbol": "SUNDROP",
+      "name": "Sundrop Brands",
+      "marketCapCrore": 2488.37
+    },
+    {
+      "symbol": "543373",
+      "name": "Shri Venkatesh",
+      "marketCapCrore": 1218.55
+    }
+  ]
 }

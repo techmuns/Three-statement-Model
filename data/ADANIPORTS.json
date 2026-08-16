@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ADANIPORTS/consolidated/",
-    "fetchedAt": "2026-08-05T22:16:48.732Z",
+    "fetchedAt": "2026-08-16T19:29:53.964Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,37 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ADANIPORTS",
+      "name": "Adani Ports",
+      "marketCapCrore": 391673.05
+    },
+    {
+      "symbol": "JSWINFRA",
+      "name": "JSW Infrast",
+      "marketCapCrore": 79022
+    },
+    {
+      "symbol": "GPPL",
+      "name": "Guj Pipavav Port",
+      "marketCapCrore": 7671.22
+    },
+    {
+      "symbol": "ATL",
+      "name": "Allcargo Termi",
+      "marketCapCrore": 631.65
+    },
+    {
+      "symbol": "520155",
+      "name": "Starlog Enterp.",
+      "marketCapCrore": 58.43
+    },
+    {
+      "symbol": "533427",
+      "name": "VMS Industries",
+      "marketCapCrore": 50.51
+    }
+  ]
 }

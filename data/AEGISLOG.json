@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AEGISLOG/consolidated/",
-    "fetchedAt": "2026-08-04T10:52:28.060Z",
+    "fetchedAt": "2026-08-16T19:29:58.113Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 1705,
-          "expenses": 1296,
-          "operatingProfit": 409,
-          "opmPercent": 23.99,
-          "otherIncome": 65,
-          "interest": 52,
-          "depreciation": 41,
-          "profitBeforeTax": 381,
-          "taxPercent": 16.54,
-          "netProfit": 318,
-          "eps": 8.02
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 23.66,
           "netProfit": 455,
           "eps": 11.69
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 2357,
+          "expenses": 1643,
+          "operatingProfit": 714,
+          "opmPercent": 30.29,
+          "otherIncome": 106,
+          "interest": 48,
+          "depreciation": 53,
+          "profitBeforeTax": 719,
+          "taxPercent": 24.2,
+          "netProfit": 545,
+          "eps": 13.8
         }
       ]
     },
@@ -471,5 +471,12 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "AEGISLOG",
+      "name": "Aegis Logistics",
+      "marketCapCrore": 44415.54
+    }
+  ]
 }

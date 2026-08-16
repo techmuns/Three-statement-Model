@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/COALINDIA/consolidated/",
-    "fetchedAt": "2026-08-07T21:43:39.711Z",
+    "fetchedAt": "2026-08-16T19:31:30.943Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -225,17 +225,17 @@
             "quarter": null,
             "endDate": "2025-03-31"
           },
-          "sales": 143369,
-          "expenses": 96305,
-          "operatingProfit": 47064,
-          "opmPercent": 32.83,
-          "otherIncome": 9932,
+          "sales": 169177,
+          "expenses": 126075,
+          "operatingProfit": 43102,
+          "opmPercent": 25.48,
+          "otherIncome": 14037,
           "interest": 884,
-          "depreciation": 9145,
-          "profitBeforeTax": 46966,
-          "taxPercent": 24.83,
-          "netProfit": 35302,
-          "eps": 57.37
+          "depreciation": 9092,
+          "profitBeforeTax": 47163,
+          "taxPercent": 24.84,
+          "netProfit": 35450,
+          "eps": 57.61
         },
         {
           "period": {
@@ -248,10 +248,10 @@
             "endDate": "2026-03-31"
           },
           "sales": 168400,
-          "expenses": 127158,
-          "operatingProfit": 41242,
-          "opmPercent": 24.49,
-          "otherIncome": 12034,
+          "expenses": 131228,
+          "operatingProfit": 37172,
+          "opmPercent": 22.07,
+          "otherIncome": 16104,
           "interest": 1216,
           "depreciation": 10137,
           "profitBeforeTax": 41923,
@@ -338,15 +338,15 @@
             "endDate": "2025-03-31"
           },
           "equityCapital": 6163,
-          "reserves": 92942,
+          "reserves": 95558,
           "borrowings": 9146,
-          "otherLiabilities": 150735,
-          "totalLiabilities": 258985,
-          "fixedAssets": 82865,
+          "otherLiabilities": 147311,
+          "totalLiabilities": 258177,
+          "fixedAssets": 82148,
           "cwip": 22385,
           "investments": 7591,
-          "otherAssets": 146144,
-          "totalAssets": 258985
+          "otherAssets": 146054,
+          "totalAssets": 258177
         },
         {
           "period": {
@@ -361,13 +361,13 @@
           "equityCapital": 6163,
           "reserves": 112939,
           "borrowings": 14072,
-          "otherLiabilities": 152487,
-          "totalLiabilities": 285660,
-          "fixedAssets": 91846,
-          "cwip": 15834,
+          "otherLiabilities": 150782,
+          "totalLiabilities": 283956,
+          "fixedAssets": 87252,
+          "cwip": 23413,
           "investments": 10226,
-          "otherAssets": 167754,
-          "totalAssets": 285660
+          "otherAssets": 163066,
+          "totalAssets": 283956
         }
       ]
     },
@@ -441,8 +441,8 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 29200,
-          "cashFromInvesting": -10076,
+          "cashFromOperating": 30237,
+          "cashFromInvesting": -11114,
           "cashFromFinancing": -13308,
           "netCashFlow": 5815
         },
@@ -471,5 +471,32 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "COALINDIA",
+      "name": "Coal India",
+      "marketCapCrore": 250884.67
+    },
+    {
+      "symbol": "BHARATCOAL",
+      "name": "Bharat Coking",
+      "marketCapCrore": 15689.43
+    },
+    {
+      "symbol": "SINDHUTRAD",
+      "name": "Sindhu Trade",
+      "marketCapCrore": 3645.12
+    },
+    {
+      "symbol": "CMLL",
+      "name": "Caliber Mining",
+      "marketCapCrore": 3444.32
+    },
+    {
+      "symbol": "513579",
+      "name": "Foundry Fuel",
+      "marketCapCrore": 4.11
+    }
+  ]
 }

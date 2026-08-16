@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ETERNAL/consolidated/",
-    "fetchedAt": "2026-08-07T21:43:50.171Z",
+    "fetchedAt": "2026-08-16T19:32:08.850Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ETERNAL",
+      "name": "Eternal",
+      "marketCapCrore": 307363.67
+    },
+    {
+      "symbol": "NYKAA",
+      "name": "FSN E-Commerce",
+      "marketCapCrore": 94802.17
+    },
+    {
+      "symbol": "MEESHO",
+      "name": "Meesho",
+      "marketCapCrore": 88384.16
+    },
+    {
+      "symbol": "SWIGGY",
+      "name": "Swiggy",
+      "marketCapCrore": 76267.46
+    },
+    {
+      "symbol": "URBANCO",
+      "name": "Urban Company",
+      "marketCapCrore": 22267.55
+    },
+    {
+      "symbol": "CARTRADE",
+      "name": "Cartrade Tech",
+      "marketCapCrore": 13572.7
+    },
+    {
+      "symbol": "FIRSTCRY",
+      "name": "Brainbees Solut.",
+      "marketCapCrore": 10759.72
+    }
+  ]
 }

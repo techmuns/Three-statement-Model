@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ACUTAAS/consolidated/",
-    "fetchedAt": "2026-08-04T10:51:23.659Z",
+    "fetchedAt": "2026-08-16T19:29:16.067Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,47 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "SUNPHARMA",
+      "name": "Sun Pharma.Inds.",
+      "marketCapCrore": 463071.65
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "Divi's Lab.",
+      "marketCapCrore": 225037.72
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "name": "Torrent Pharma.",
+      "marketCapCrore": 183831.78
+    },
+    {
+      "symbol": "CIPLA",
+      "name": "Cipla",
+      "marketCapCrore": 117138.71
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "name": "Zydus Lifesci.",
+      "marketCapCrore": 113236.64
+    },
+    {
+      "symbol": "LUPIN",
+      "name": "Lupin",
+      "marketCapCrore": 102191.47
+    },
+    {
+      "symbol": "DRREDDY",
+      "name": "Dr Reddy's Labs",
+      "marketCapCrore": 100161.1
+    },
+    {
+      "symbol": "ACUTAAS",
+      "name": "Acutaas Chemical",
+      "marketCapCrore": 26490.22
+    }
+  ]
 }

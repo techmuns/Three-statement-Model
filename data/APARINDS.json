@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/APARINDS/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:34.456Z",
+    "fetchedAt": "2026-08-16T19:30:02.156Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "WAAREEENER",
+      "name": "Waaree Energies",
+      "marketCapCrore": 77148.09
+    },
+    {
+      "symbol": "APARINDS",
+      "name": "Apar Inds.",
+      "marketCapCrore": 67070.65
+    },
+    {
+      "symbol": "PREMIERENE",
+      "name": "Premier Energies",
+      "marketCapCrore": 46180.49
+    },
+    {
+      "symbol": "EMMVEE",
+      "name": "Emmvee Photovol.",
+      "marketCapCrore": 22258.89
+    },
+    {
+      "symbol": "DIACABS",
+      "name": "Diamond Power",
+      "marketCapCrore": 22038.92
+    },
+    {
+      "symbol": "MTARTECH",
+      "name": "MTAR Technologie",
+      "marketCapCrore": 21703.97
+    },
+    {
+      "symbol": "UTLSOLAR",
+      "name": "Fujiyama Power",
+      "marketCapCrore": 13008.03
+    }
+  ]
 }

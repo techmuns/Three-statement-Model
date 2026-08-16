@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ADANIENT/consolidated/",
-    "fetchedAt": "2026-08-05T22:16:45.198Z",
+    "fetchedAt": "2026-08-16T19:29:20.203Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,22 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ADANIENT",
+      "name": "Adani Enterp.",
+      "marketCapCrore": 410779.42
+    },
+    {
+      "symbol": "540492",
+      "name": "Starlineps Enter",
+      "marketCapCrore": 369.34
+    },
+    {
+      "symbol": "ARENTERP",
+      "name": "Rajdarshan Inds",
+      "marketCapCrore": 12.13
+    }
+  ]
 }

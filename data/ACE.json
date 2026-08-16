@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ACE/consolidated/",
-    "fetchedAt": "2026-08-04T10:51:20.224Z",
+    "fetchedAt": "2026-08-16T19:29:12.004Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,37 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "BEML",
+      "name": "BEML Ltd",
+      "marketCapCrore": 15611.69
+    },
+    {
+      "symbol": "ACE",
+      "name": "Action Const.Eq.",
+      "marketCapCrore": 12927.67
+    },
+    {
+      "symbol": "AJAXENGG",
+      "name": "Ajax Engineering",
+      "marketCapCrore": 6660.76
+    },
+    {
+      "symbol": "TIL",
+      "name": "TIL",
+      "marketCapCrore": 1913.78
+    },
+    {
+      "symbol": "INDOFARM",
+      "name": "Indo Farm Equip.",
+      "marketCapCrore": 700.5
+    },
+    {
+      "symbol": "505690",
+      "name": "Brady & Morris",
+      "marketCapCrore": 164.25
+    }
+  ]
 }

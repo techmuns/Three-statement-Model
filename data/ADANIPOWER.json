@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ADANIPOWER/consolidated/",
-    "fetchedAt": "2026-08-04T10:51:40.846Z",
+    "fetchedAt": "2026-08-16T19:29:56.037Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,37 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ADANIPOWER",
+      "name": "Adani Power",
+      "marketCapCrore": 395818.36
+    },
+    {
+      "symbol": "TATAPOWER",
+      "name": "Tata Power Co.",
+      "marketCapCrore": 122077.95
+    },
+    {
+      "symbol": "TORNTPOWER",
+      "name": "Torrent Power",
+      "marketCapCrore": 65966.01
+    },
+    {
+      "symbol": "CESC",
+      "name": "CESC",
+      "marketCapCrore": 22247.05
+    },
+    {
+      "symbol": "RELINFRA",
+      "name": "Reliance Infra.",
+      "marketCapCrore": 2742.73
+    },
+    {
+      "symbol": "DPSCLTD",
+      "name": "India Power Corp",
+      "marketCapCrore": 712.81
+    }
+  ]
 }

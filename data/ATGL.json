@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ATGL/consolidated/",
-    "fetchedAt": "2026-08-04T10:51:44.286Z",
+    "fetchedAt": "2026-08-16T19:30:38.223Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ATGL",
+      "name": "Adani Total Gas",
+      "marketCapCrore": 71933.08
+    },
+    {
+      "symbol": "PETRONET",
+      "name": "Petronet LNG",
+      "marketCapCrore": 42390
+    },
+    {
+      "symbol": "GUJENERGY",
+      "name": "Gujarat Energy",
+      "marketCapCrore": 26547.24
+    },
+    {
+      "symbol": "IGL",
+      "name": "Indraprastha Gas",
+      "marketCapCrore": 21238.02
+    },
+    {
+      "symbol": "MGL",
+      "name": "Mahanagar Gas",
+      "marketCapCrore": 11247.83
+    },
+    {
+      "symbol": "CONFIPET",
+      "name": "Confidence Petro",
+      "marketCapCrore": 2391.8
+    },
+    {
+      "symbol": "IRMENERGY",
+      "name": "IRM Energy",
+      "marketCapCrore": 1207.77
+    }
+  ]
 }
