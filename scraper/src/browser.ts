@@ -35,26 +35,42 @@ export async function createLoggedInContext(
   credentials: ScreenerCredentials,
 ): Promise<BrowserContext> {
   const context = await browser.newContext({ userAgent: USER_AGENT })
-  const page = await context.newPage()
-  try {
-    await page.goto(LOGIN_URL, { waitUntil: 'domcontentloaded', timeout: 60_000 })
-    await page.fill('input[name="username"], #id_username', credentials.email)
-    await page.fill('input[name="password"], #id_password', credentials.password)
-    await page.click('button[type="submit"], input[type="submit"]')
 
-    // Screener redirects off /login/ on success. Give it a moment, then check.
-    await page
-      .waitForURL((url) => !url.pathname.startsWith('/login'), { timeout: 30_000 })
-      .catch(() => undefined)
+  // Retry the login a few times: Screener's /login/ page occasionally times out
+  // or hiccups, and a single failure otherwise sinks the whole run (and a user's
+  // on-demand Analyze). A genuine bad-credential failure simply exhausts the
+  // retries and throws — credentials are never printed either way.
+  const attempts = 3
+  let lastError: Error | null = null
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    const page = await context.newPage()
+    try {
+      await page.goto(LOGIN_URL, { waitUntil: 'domcontentloaded', timeout: 45_000 })
+      await page.fill('input[name="username"], #id_username', credentials.email)
+      await page.fill('input[name="password"], #id_password', credentials.password)
+      await page.click('button[type="submit"], input[type="submit"]')
 
-    if (page.url().includes('/login')) {
-      throw new Error(
-        'Screener login failed — check SCREENER_EMAIL / SCREENER_PASSWORD ' +
-          '(their values are never printed).',
-      )
+      // Screener redirects off /login/ on success. Give it a moment, then check.
+      await page
+        .waitForURL((url) => !url.pathname.startsWith('/login'), { timeout: 30_000 })
+        .catch(() => undefined)
+
+      if (page.url().includes('/login')) {
+        throw new Error(
+          'Screener login failed — check SCREENER_EMAIL / SCREENER_PASSWORD ' +
+            '(their values are never printed).',
+        )
+      }
+      await page.close()
+      return context
+    } catch (error) {
+      lastError = error as Error
+      await page.close().catch(() => undefined)
+      console.error(`Login attempt ${attempt}/${attempts} failed: ${(error as Error).message}`)
+      if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, attempt * 3_000))
     }
-    return context
-  } finally {
-    await page.close()
   }
+
+  await context.close().catch(() => undefined)
+  throw lastError ?? new Error('Screener login failed after retries')
 }
