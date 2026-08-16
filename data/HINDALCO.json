@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/HINDALCO/consolidated/",
-    "fetchedAt": "2026-08-07T21:44:03.999Z",
+    "fetchedAt": "2026-08-16T19:16:33.195Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "HINDALCO",
+      "name": "Hindalco Inds.",
+      "marketCapCrore": 231351.97
+    },
+    {
+      "symbol": "VAML",
+      "name": "Vedanta Aluminium Metal",
+      "marketCapCrore": 173543.02
+    },
+    {
+      "symbol": "NATIONALUM",
+      "name": "Natl. Aluminium",
+      "marketCapCrore": 69057.36
+    },
+    {
+      "symbol": "ARFIN",
+      "name": "Arfin India",
+      "marketCapCrore": 1418.11
+    },
+    {
+      "symbol": "MMP",
+      "name": "MMP Industries",
+      "marketCapCrore": 857.34
+    },
+    {
+      "symbol": "MAANALU",
+      "name": "Maan Aluminium",
+      "marketCapCrore": 720.72
+    },
+    {
+      "symbol": "544695",
+      "name": "Msafe Equipments",
+      "marketCapCrore": 432.48
+    }
+  ]
 }

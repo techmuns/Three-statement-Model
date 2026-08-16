@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/M&M/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:02.314Z",
+    "fetchedAt": "2026-08-16T19:17:15.051Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -476,37 +476,37 @@
     {
       "symbol": "MARUTI",
       "name": "Maruti Suzuki",
-      "marketCapCrore": 443213.31
+      "marketCapCrore": 434944.52
     },
     {
       "symbol": "M&M",
       "name": "M & M",
-      "marketCapCrore": 437349.09
+      "marketCapCrore": 426318.99
     },
     {
       "symbol": "HYUNDAI",
       "name": "Hyundai Motor I",
-      "marketCapCrore": 180627.89
+      "marketCapCrore": 178677.79
     },
     {
       "symbol": "TMPV",
       "name": "Tata Motors PVeh",
-      "marketCapCrore": 127833.17
+      "marketCapCrore": 123192.72
     },
     {
       "symbol": "FORCEMOT",
       "name": "Force Motors",
-      "marketCapCrore": 24112.56
+      "marketCapCrore": 24192.93
     },
     {
       "symbol": "OLECTRA",
       "name": "Olectra Greentec",
-      "marketCapCrore": 11231.11
+      "marketCapCrore": 10809.21
     },
     {
       "symbol": "MERCURYEV",
       "name": "Mercury EV-Tech",
-      "marketCapCrore": 657.31
+      "marketCapCrore": 685.42
     }
   ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/GRASIM/consolidated/",
-    "fetchedAt": "2026-08-07T21:43:53.563Z",
+    "fetchedAt": "2026-08-16T19:16:26.940Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 44267,
-          "expenses": 35517,
-          "operatingProfit": 8750,
-          "opmPercent": 19.77,
-          "otherIncome": 485,
-          "interest": 3407,
-          "depreciation": 1831,
-          "profitBeforeTax": 3996,
-          "taxPercent": 25.6,
-          "netProfit": 2973,
-          "eps": 21.98
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -52,13 +30,13 @@
           "expenses": 31296,
           "operatingProfit": 8822,
           "opmPercent": 21.99,
-          "otherIncome": 372,
+          "otherIncome": 376,
           "interest": 3551,
           "depreciation": 1810,
-          "profitBeforeTax": 3834,
-          "taxPercent": 27.83,
-          "netProfit": 2767,
-          "eps": 20.85
+          "profitBeforeTax": 3837,
+          "taxPercent": 27.78,
+          "netProfit": 2771,
+          "eps": 20.87
         },
         {
           "period": {
@@ -115,16 +93,38 @@
             "endDate": "2026-03-31"
           },
           "sales": 51101,
-          "expenses": 40225,
-          "operatingProfit": 10876,
+          "expenses": 40227,
+          "operatingProfit": 10874,
           "opmPercent": 21.28,
-          "otherIncome": 259,
+          "otherIncome": 143,
           "interest": 4015,
           "depreciation": 2042,
-          "profitBeforeTax": 5078,
-          "taxPercent": 25.13,
-          "netProfit": 3802,
-          "eps": 28.77
+          "profitBeforeTax": 4960,
+          "taxPercent": 25.73,
+          "netProfit": 3684,
+          "eps": 27.86
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 48716,
+          "expenses": 37565,
+          "operatingProfit": 11152,
+          "opmPercent": 22.89,
+          "otherIncome": 318,
+          "interest": 4298,
+          "depreciation": 1988,
+          "profitBeforeTax": 5183,
+          "taxPercent": 25.8,
+          "netProfit": 3846,
+          "eps": 31.53
         }
       ]
     },
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "ULTRACEMCO",
+      "name": "UltraTech Cem.",
+      "marketCapCrore": 342387.73
+    },
+    {
+      "symbol": "GRASIM",
+      "name": "Grasim Inds",
+      "marketCapCrore": 221085.66
+    },
+    {
+      "symbol": "AMBUJACEM",
+      "name": "Ambuja Cements",
+      "marketCapCrore": 103741.12
+    },
+    {
+      "symbol": "SHREECEM",
+      "name": "Shree Cement",
+      "marketCapCrore": 89462.21
+    },
+    {
+      "symbol": "JKCEMENT",
+      "name": "J K Cements",
+      "marketCapCrore": 41002.4
+    },
+    {
+      "symbol": "DALBHARAT",
+      "name": "Dalmia BharatLtd",
+      "marketCapCrore": 34549.65
+    },
+    {
+      "symbol": "ACC",
+      "name": "ACC",
+      "marketCapCrore": 24814.21
+    }
+  ]
 }

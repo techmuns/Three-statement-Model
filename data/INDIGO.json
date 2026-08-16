@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/INDIGO/consolidated/",
-    "fetchedAt": "2026-08-07T21:44:10.916Z",
+    "fetchedAt": "2026-08-16T19:16:37.290Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,32 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "INDIGO",
+      "name": "Interglobe Aviat",
+      "marketCapCrore": 205319.96
+    },
+    {
+      "symbol": "SPICEJET",
+      "name": "SpiceJet",
+      "marketCapCrore": 1770.28
+    },
+    {
+      "symbol": "TAALTECH",
+      "name": "TAAL Tech",
+      "marketCapCrore": 1333.79
+    },
+    {
+      "symbol": "FLYSBS",
+      "name": "FlySBS Aviation",
+      "marketCapCrore": 763.87
+    },
+    {
+      "symbol": "GLOBALVECT",
+      "name": "Global Vectra",
+      "marketCapCrore": 210.74
+    }
+  ]
 }

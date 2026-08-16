@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ICICIBANK/consolidated/",
-    "fetchedAt": "2026-08-07T21:44:07.418Z",
+    "fetchedAt": "2026-08-16T19:16:35.273Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,42 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "HDFCBANK",
+      "name": "HDFC Bank",
+      "marketCapCrore": 1120262.78
+    },
+    {
+      "symbol": "ICICIBANK",
+      "name": "ICICI Bank",
+      "marketCapCrore": 1016860.37
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "name": "Kotak Mah. Bank",
+      "marketCapCrore": 389091.41
+    },
+    {
+      "symbol": "AXISBANK",
+      "name": "Axis Bank",
+      "marketCapCrore": 378950.11
+    },
+    {
+      "symbol": "IDBI",
+      "name": "IDBI Bank",
+      "marketCapCrore": 88653.56
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "name": "Federal Bank",
+      "marketCapCrore": 86829.71
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "name": "IndusInd Bank",
+      "marketCapCrore": 79534.67
+    }
+  ]
 }

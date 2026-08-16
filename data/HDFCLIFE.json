@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/HDFCLIFE/consolidated/",
-    "fetchedAt": "2026-08-07T21:44:00.563Z",
+    "fetchedAt": "2026-08-16T19:16:31.150Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -471,5 +471,37 @@
       "reason": "not-scraped",
       "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "LICI",
+      "name": "Life Insurance",
+      "marketCapCrore": 523077.31
+    },
+    {
+      "symbol": "SBILIFE",
+      "name": "SBI Life Insuran",
+      "marketCapCrore": 180085.36
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "name": "HDFC Life Insur.",
+      "marketCapCrore": 116412.07
+    },
+    {
+      "symbol": "ICICIPRULI",
+      "name": "ICICI Pru Life",
+      "marketCapCrore": 73868.01
+    },
+    {
+      "symbol": "MFSL",
+      "name": "Max Financial",
+      "marketCapCrore": 53082.1
+    },
+    {
+      "symbol": "CANHLIFE",
+      "name": "Canara HSBC",
+      "marketCapCrore": 14127.45
+    }
+  ]
 }
