@@ -37,11 +37,21 @@ function FullState({ children }: { children: ReactNode }) {
   )
 }
 
-/** Seed the company from `?ticker=` so the view is shareable and deep-linkable. */
+const LAST_TICKER_KEY = 'dhamma:lastTicker'
+
+/** Seed the company from `?ticker=` (shareable) — else the last one viewed, so
+ * reopening the dashboard lands back on your company rather than a blank state. */
 function initialTicker(): string | null {
   if (typeof window === 'undefined') return null
-  const t = new URLSearchParams(window.location.search).get('ticker')
-  return t ? t.trim().toUpperCase() : null
+  const fromUrl = new URLSearchParams(window.location.search).get('ticker')
+  if (fromUrl) return fromUrl.trim().toUpperCase()
+  try {
+    const saved = window.localStorage.getItem(LAST_TICKER_KEY)
+    if (saved) return saved.trim().toUpperCase()
+  } catch {
+    /* localStorage unavailable — fall through to the empty state */
+  }
+  return null
 }
 
 export default function EarningsDashboard() {
@@ -57,6 +67,11 @@ export default function EarningsDashboard() {
     const sym = symbol.trim().toUpperCase()
     setTicker(sym)
     if (typeof window !== 'undefined') {
+      try {
+        window.localStorage.setItem(LAST_TICKER_KEY, sym)
+      } catch {
+        /* ignore a storage failure — the company still loads this session */
+      }
       const url = new URL(window.location.href)
       url.searchParams.set('ticker', sym)
       window.history.replaceState(null, '', url.toString())
@@ -152,6 +167,7 @@ export default function EarningsDashboard() {
           onExportPdf={onExportPdf}
           onExportPng={onExportPng}
           onFindPeers={phase === 'ready' && data ? () => setTab('kpis') : undefined}
+          showControls={phase === 'ready' && !!data}
         />
       }
       footer={footer}

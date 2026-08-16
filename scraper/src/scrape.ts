@@ -82,6 +82,14 @@ export async function scrapeCompany(
     let peers: readonly ScrapedPeer[] = []
     let peerError: string | null = null
     let peerColumns: string | null = null
+    // Screener lazy-loads the peer comparison when its section is reached, so a
+    // headless run that never scrolls can miss it for some companies (ITC, 3M,
+    // Asian Paints all came back empty). Scroll the page — and the peers section
+    // — into view to trigger the load, then wait for the table.
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)).catch(() => undefined)
+    await page
+      .evaluate(() => document.getElementById('peers')?.scrollIntoView({ block: 'center' }))
+      .catch(() => undefined)
     await page
       .waitForSelector('#peers table.data-table', { timeout: 30_000 })
       .catch(() => undefined)

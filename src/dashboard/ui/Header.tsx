@@ -157,6 +157,7 @@ export function Header({
   onExportPdf,
   onExportPng,
   onFindPeers,
+  showControls = true,
 }: {
   currentSymbol: string | null
   currentName: string | null
@@ -172,6 +173,9 @@ export function Header({
   onExportPng: ExportFn
   /** Jump to the peer comparison; shown only once a company is loaded. */
   onFindPeers?: () => void
+  /** Show the tab / period / export controls — only once a company is loaded,
+   * so the empty state isn't a header full of controls that do nothing. */
+  showControls?: boolean
 }) {
   return (
     <header
@@ -213,23 +217,25 @@ export function Header({
         )}
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-        <Segmented
-          name="dashboard-tab"
-          ariaLabel="Dashboard section"
-          options={TAB_OPTIONS}
-          value={tab}
-          onChange={onTabChange}
-        />
-        <Segmented
-          name="period-view"
-          ariaLabel="Reporting period"
-          options={PERIOD_OPTIONS}
-          value={period}
-          onChange={onPeriodChange}
-        />
-        <ExportMenu onExcel={onExportExcel} onPdf={onExportPdf} onPng={onExportPng} />
-      </div>
+      {showControls && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <Segmented
+            name="dashboard-tab"
+            ariaLabel="Dashboard section"
+            options={TAB_OPTIONS}
+            value={tab}
+            onChange={onTabChange}
+          />
+          <Segmented
+            name="period-view"
+            ariaLabel="Reporting period"
+            options={PERIOD_OPTIONS}
+            value={period}
+            onChange={onPeriodChange}
+          />
+          <ExportMenu onExcel={onExportExcel} onPdf={onExportPdf} onPng={onExportPng} />
+        </div>
+      )}
     </header>
   )
 }
