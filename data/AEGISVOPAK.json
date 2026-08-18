@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AEGISVOPAK/consolidated/",
-    "fetchedAt": "2026-08-16T19:30:00.113Z",
+    "fetchedAt": "2026-08-18T08:28:35.884Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,111 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "liquid-terminal-division",
+          "name": "Liquid Terminal Division",
+          "values": [
+            {
+              "periodId": "FY25Q1",
+              "revenue": 85,
+              "sharePercent": 55.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 83,
+              "sharePercent": 55.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 85,
+              "sharePercent": 52.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 92,
+              "sharePercent": 58.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 97,
+              "sharePercent": 46.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 106,
+              "sharePercent": 56.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 117,
+              "sharePercent": 59.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 121,
+              "sharePercent": 49.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 127,
+              "sharePercent": 54.3
+            }
+          ]
+        },
+        {
+          "id": "gas-terminal-division",
+          "name": "Gas Terminal Division",
+          "values": [
+            {
+              "periodId": "FY25Q1",
+              "revenue": 69,
+              "sharePercent": 44.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 66,
+              "sharePercent": 44.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 76,
+              "sharePercent": 47.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 65,
+              "sharePercent": 41.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 111,
+              "sharePercent": 53.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 82,
+              "sharePercent": 43.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 81,
+              "sharePercent": 40.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 122,
+              "sharePercent": 50.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 107,
+              "sharePercent": 45.7
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,26 +569,58 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "gas-terminal-division",
+          "name": "Gas Terminal Division",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 276,
+              "sharePercent": 44.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 483,
+              "sharePercent": 52.3
+            }
+          ]
+        },
+        {
+          "id": "liquid-terminal-division",
+          "name": "Liquid Terminal Division",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 345,
+              "sharePercent": 55.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 440,
+              "sharePercent": 47.7
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "AEGISVOPAK",
       "name": "Aegis Vopak Term",
-      "marketCapCrore": 29816.05
+      "marketCapCrore": 30192.77
     },
     {
       "symbol": "GANESHBE",
       "name": "Ganesh Benzopl.",
-      "marketCapCrore": 846.96
+      "marketCapCrore": 827.87
     },
     {
       "symbol": "544463",
       "name": "Repono",
-      "marketCapCrore": 85.32
+      "marketCapCrore": 85.7
     }
   ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ALKEM/consolidated/",
-    "fetchedAt": "2026-08-12T21:51:53.915Z",
+    "fetchedAt": "2026-08-18T08:29:28.463Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 3144,
-          "expenses": 2752,
-          "operatingProfit": 391,
-          "opmPercent": 12.44,
-          "otherIncome": 146,
-          "interest": 28,
-          "depreciation": 112,
-          "profitBeforeTax": 396,
-          "taxPercent": 18.69,
-          "netProfit": 322,
-          "eps": 25.58
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 40.66,
           "netProfit": 251,
           "eps": 19.78
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 3740,
+          "expenses": 2974,
+          "operatingProfit": 766,
+          "opmPercent": 20.48,
+          "otherIncome": 153,
+          "interest": 47,
+          "depreciation": 100,
+          "profitBeforeTax": 772,
+          "taxPercent": 32.51,
+          "netProfit": 521,
+          "eps": 43.49
         }
       ]
     },
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,50 +468,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
-  },
-  "peers": [
-    {
-      "symbol": "SUNPHARMA",
-      "name": "Sun Pharma.Inds.",
-      "marketCapCrore": 466430.72
-    },
-    {
-      "symbol": "DIVISLAB",
-      "name": "Divi's Lab.",
-      "marketCapCrore": 228302.98
-    },
-    {
-      "symbol": "TORNTPHARM",
-      "name": "Torrent Pharma.",
-      "marketCapCrore": 186113.99
-    },
-    {
-      "symbol": "ZYDUSLIFE",
-      "name": "Zydus Lifesci.",
-      "marketCapCrore": 120199.21
-    },
-    {
-      "symbol": "CIPLA",
-      "name": "Cipla",
-      "marketCapCrore": 118187.77
-    },
-    {
-      "symbol": "LUPIN",
-      "name": "Lupin",
-      "marketCapCrore": 104294.74
-    },
-    {
-      "symbol": "MANKIND",
-      "name": "Mankind Pharma",
-      "marketCapCrore": 100486.05
-    },
-    {
-      "symbol": "ALKEM",
-      "name": "Alkem Lab",
-      "marketCapCrore": 65521.62
-    }
-  ]
+  }
 }

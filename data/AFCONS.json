@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AFCONS/consolidated/",
-    "fetchedAt": "2026-08-12T21:51:45.571Z",
+    "fetchedAt": "2026-08-18T08:28:39.004Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,50 +468,50 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "LT",
       "name": "Larsen & Toubro",
-      "marketCapCrore": 553098.17
+      "marketCapCrore": 560493.46
     },
     {
       "symbol": "RVNL",
       "name": "Rail Vikas",
-      "marketCapCrore": 47955.46
-    },
-    {
-      "symbol": "NBCC",
-      "name": "NBCC",
-      "marketCapCrore": 24885.9
+      "marketCapCrore": 47100.55
     },
     {
       "symbol": "KPIL",
       "name": "Kalpataru Proj.",
-      "marketCapCrore": 23853.51
+      "marketCapCrore": 23893.61
+    },
+    {
+      "symbol": "NBCC",
+      "name": "NBCC",
+      "marketCapCrore": 23835.6
     },
     {
       "symbol": "IRB",
       "name": "IRB Infra.Devl.",
-      "marketCapCrore": 23346.77
+      "marketCapCrore": 23032.76
     },
     {
       "symbol": "CEMPRO",
       "name": "Cemindia Project",
-      "marketCapCrore": 21674.44
+      "marketCapCrore": 22887.24
     },
     {
       "symbol": "CMPDI",
       "name": "Central Mine Pla",
-      "marketCapCrore": 17564.4
+      "marketCapCrore": 16621.92
     },
     {
       "symbol": "AFCONS",
       "name": "Afcons Infrastr.",
-      "marketCapCrore": 9854.79
+      "marketCapCrore": 10259.34
     }
   ]
 }

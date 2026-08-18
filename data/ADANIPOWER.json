@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ADANIPOWER/consolidated/",
-    "fetchedAt": "2026-08-16T19:29:56.037Z",
+    "fetchedAt": "2026-08-18T08:28:29.309Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,141 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "powerpower-generation-and-related-activities",
+          "name": "PowerPower Generation and related activities",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 12970,
+              "sharePercent": 99.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 12990,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 13071,
+              "sharePercent": 97.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 14956,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 13339,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 13671,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 14141,
+              "sharePercent": 99.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 14109,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 13457,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 12451,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 14223,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 18902,
+              "sharePercent": 100
+            }
+          ]
+        },
+        {
+          "id": "trading-investment-and-other-activities",
+          "name": "Trading, investment and other activities",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 20,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 293,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 96,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,41 +599,201 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "powerpower-generation-and-related-activities",
+          "name": "PowerPower Generation and related activities",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 27222,
+              "sharePercent": 98.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 37896,
+              "sharePercent": 97.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 50014,
+              "sharePercent": 99.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 56107,
+              "sharePercent": 99.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 54241,
+              "sharePercent": 100
+            }
+          ]
+        },
+        {
+          "id": "power",
+          "name": "Power",
+          "values": [
+            {
+              "periodId": "FY13",
+              "revenue": 6671,
+              "sharePercent": 98.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 23391,
+              "sharePercent": 97.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 26006,
+              "sharePercent": 98.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 25871,
+              "sharePercent": 98.7
+            }
+          ]
+        },
+        {
+          "id": "shipping",
+          "name": "Shipping",
+          "values": [
+            {
+              "periodId": "FY13",
+              "revenue": 108,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "trading-activities",
+          "name": "Trading activities",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 493,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 462,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 351,
+              "sharePercent": 1.3
+            }
+          ]
+        },
+        {
+          "id": "trading-investment-and-other-activities",
+          "name": "Trading, investment and other activities",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 489,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 877,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 337,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 96,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ADANIPOWER",
       "name": "Adani Power",
-      "marketCapCrore": 395818.36
+      "marketCapCrore": 400446.72
     },
     {
       "symbol": "TATAPOWER",
       "name": "Tata Power Co.",
-      "marketCapCrore": 122077.95
+      "marketCapCrore": 121550.69
     },
     {
       "symbol": "TORNTPOWER",
       "name": "Torrent Power",
-      "marketCapCrore": 65966.01
+      "marketCapCrore": 64257.81
     },
     {
       "symbol": "CESC",
       "name": "CESC",
-      "marketCapCrore": 22247.05
+      "marketCapCrore": 22276.24
     },
     {
       "symbol": "RELINFRA",
       "name": "Reliance Infra.",
-      "marketCapCrore": 2742.73
+      "marketCapCrore": 2623.82
     },
     {
       "symbol": "DPSCLTD",
       "name": "India Power Corp",
-      "marketCapCrore": 712.81
+      "marketCapCrore": 692.38
     }
   ]
 }

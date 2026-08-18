@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AMBUJACEM/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:21.966Z",
+    "fetchedAt": "2026-08-18T08:30:05.031Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,141 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "cement",
+          "name": "Cement",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 7141,
+              "sharePercent": 95.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 7860,
+              "sharePercent": 96.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 8601,
+              "sharePercent": 96.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 8089,
+              "sharePercent": 96.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 7249,
+              "sharePercent": 96.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 9092,
+              "sharePercent": 96.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 9593,
+              "sharePercent": 95.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 9912,
+              "sharePercent": 95.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 8754,
+              "sharePercent": 95
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 9815,
+              "sharePercent": 95.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 10418,
+              "sharePercent": 94.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 9062,
+              "sharePercent": 94.7
+            }
+          ]
+        },
+        {
+          "id": "ready-mix-concrete",
+          "name": "Ready Mix Concrete",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 309,
+              "sharePercent": 4.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 300,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 318,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 329,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 295,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 350,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 426,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 421,
+              "sharePercent": 4.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 462,
+              "sharePercent": 5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 500,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 582,
+              "sharePercent": 5.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 507,
+              "sharePercent": 5.3
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +599,88 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "cement",
+          "name": "Cement",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 31991,
+              "sharePercent": 96.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 34060,
+              "sharePercent": 96
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 38898,
+              "sharePercent": 95.2
+            }
+          ]
+        },
+        {
+          "id": "ready-mix-concrete",
+          "name": "Ready Mix Concrete",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 1289,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1401,
+              "sharePercent": 4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1965,
+              "sharePercent": 4.8
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ULTRACEMCO",
       "name": "UltraTech Cem.",
-      "marketCapCrore": 350403
+      "marketCapCrore": 341144.21
     },
     {
       "symbol": "GRASIM",
       "name": "Grasim Inds",
-      "marketCapCrore": 225107.62
+      "marketCapCrore": 223416.51
     },
     {
       "symbol": "AMBUJACEM",
       "name": "Ambuja Cements",
-      "marketCapCrore": 104610.8
+      "marketCapCrore": 102486.29
     },
     {
       "symbol": "SHREECEM",
       "name": "Shree Cement",
-      "marketCapCrore": 92258.47
+      "marketCapCrore": 89119.47
     },
     {
       "symbol": "JKCEMENT",
       "name": "J K Cements",
-      "marketCapCrore": 41674.63
+      "marketCapCrore": 41482.26
     },
     {
       "symbol": "DALBHARAT",
       "name": "Dalmia BharatLtd",
-      "marketCapCrore": 34538.39
+      "marketCapCrore": 34568.42
     },
     {
       "symbol": "ACC",
       "name": "ACC",
-      "marketCapCrore": 25028.29
+      "marketCapCrore": 24581.37
     }
   ]
 }

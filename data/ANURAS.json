@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ANURAS/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:32.522Z",
+    "fetchedAt": "2026-08-18T08:30:55.006Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 500,
-          "expenses": 356,
-          "operatingProfit": 144,
-          "opmPercent": 28.8,
-          "otherIncome": 6,
-          "interest": 31,
-          "depreciation": 31,
-          "profitBeforeTax": 88,
-          "taxPercent": 28.41,
-          "netProfit": 63,
-          "eps": 4.05
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 0,
           "netProfit": 56,
           "eps": 3.75
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 655,
+          "expenses": 493,
+          "operatingProfit": 162,
+          "opmPercent": 24.73,
+          "otherIncome": 13,
+          "interest": 49,
+          "depreciation": 56,
+          "profitBeforeTax": 70,
+          "taxPercent": 27.14,
+          "netProfit": 51,
+          "eps": 3.39
         }
       ]
     },
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,50 +468,50 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "PIDILITIND",
       "name": "Pidilite Inds.",
-      "marketCapCrore": 173177.03
+      "marketCapCrore": 169920.12
     },
     {
       "symbol": "FLUOROCHEM",
       "name": "Gujarat Fluoroch",
-      "marketCapCrore": 50155.31
+      "marketCapCrore": 51260.39
     },
     {
       "symbol": "NAVINFLUOR",
       "name": "Navin Fluo.Intl.",
-      "marketCapCrore": 42874.29
+      "marketCapCrore": 42217.56
     },
     {
       "symbol": "DEEPAKNTR",
       "name": "Deepak Nitrite",
-      "marketCapCrore": 23437.78
+      "marketCapCrore": 24294.31
     },
     {
       "symbol": "AETHER",
       "name": "Aether Industri.",
-      "marketCapCrore": 21405.09
+      "marketCapCrore": 21610.81
     },
     {
       "symbol": "ATUL",
       "name": "Atul",
-      "marketCapCrore": 20304.51
+      "marketCapCrore": 19449.23
     },
     {
       "symbol": "AARTIIND",
       "name": "Aarti Industries",
-      "marketCapCrore": 19257.16
+      "marketCapCrore": 18970.67
     },
     {
       "symbol": "ANURAS",
       "name": "Anupam Rasayan",
-      "marketCapCrore": 13711.89
+      "marketCapCrore": 13692.73
     }
   ]
 }

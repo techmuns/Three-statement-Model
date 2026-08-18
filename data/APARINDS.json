@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/APARINDS/consolidated/",
-    "fetchedAt": "2026-08-16T19:30:02.156Z",
+    "fetchedAt": "2026-08-18T08:30:58.603Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,273 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "conductors",
+          "name": "Conductors",
+          "values": [
+            {
+              "periodId": "FY24Q1",
+              "revenue": 1774,
+              "sharePercent": 44.7
+            },
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1943,
+              "sharePercent": 47.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1985,
+              "sharePercent": 47.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2328,
+              "sharePercent": 50
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1936,
+              "sharePercent": 45.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2299,
+              "sharePercent": 46.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2449,
+              "sharePercent": 49.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2898,
+              "sharePercent": 51.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2785,
+              "sharePercent": 50.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 3100,
+              "sharePercent": 51.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 3063,
+              "sharePercent": 51.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3764,
+              "sharePercent": 53.5
+            }
+          ]
+        },
+        {
+          "id": "power-and-telecom-cable",
+          "name": "Power and Telecom Cable",
+          "values": [
+            {
+              "periodId": "FY24Q1",
+              "revenue": 967,
+              "sharePercent": 24.4
+            },
+            {
+              "periodId": "FY24Q2",
+              "revenue": 882,
+              "sharePercent": 21.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 924,
+              "sharePercent": 22.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1086,
+              "sharePercent": 23.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1042,
+              "sharePercent": 24.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1227,
+              "sharePercent": 25.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1266,
+              "sharePercent": 25.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1410,
+              "sharePercent": 25.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1419,
+              "sharePercent": 25.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1535,
+              "sharePercent": 25.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1362,
+              "sharePercent": 22.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1903,
+              "sharePercent": 27.1
+            }
+          ]
+        },
+        {
+          "id": "transformer-speciality-oils",
+          "name": "Transformer & Speciality Oils",
+          "values": [
+            {
+              "periodId": "FY24Q1",
+              "revenue": 1198,
+              "sharePercent": 30.2
+            },
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1199,
+              "sharePercent": 29.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1240,
+              "sharePercent": 29.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1210,
+              "sharePercent": 26
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1265,
+              "sharePercent": 29.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1339,
+              "sharePercent": 27.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1232,
+              "sharePercent": 24.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1250,
+              "sharePercent": 22.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1262,
+              "sharePercent": 22.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1342,
+              "sharePercent": 22.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1458,
+              "sharePercent": 24.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1311,
+              "sharePercent": 18.6
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q1",
+              "revenue": 29,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY24Q2",
+              "revenue": 29,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 31,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 34,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 35,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 33,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 39,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 39,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 39,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 58,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 70,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 53,
+              "sharePercent": 0.8
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +731,382 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "conductors",
+          "name": "Conductors",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2320,
+              "sharePercent": 45
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2784,
+              "sharePercent": 50
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2461,
+              "sharePercent": 46.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2615,
+              "sharePercent": 43.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3915,
+              "sharePercent": 47.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3600,
+              "sharePercent": 47.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2908,
+              "sharePercent": 44.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 4200,
+              "sharePercent": 42.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 7013,
+              "sharePercent": 46.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 8031,
+              "sharePercent": 47.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 9582,
+              "sharePercent": 48.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 12712,
+              "sharePercent": 51.9
+            }
+          ]
+        },
+        {
+          "id": "power-and-telecom-cable",
+          "name": "Power and Telecom Cable",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 927,
+              "sharePercent": 17.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1135,
+              "sharePercent": 19
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1684,
+              "sharePercent": 20.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1600,
+              "sharePercent": 21.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1270,
+              "sharePercent": 19.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1994,
+              "sharePercent": 20.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3263,
+              "sharePercent": 21.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 3859,
+              "sharePercent": 22.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4945,
+              "sharePercent": 25
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 6220,
+              "sharePercent": 25.4
+            }
+          ]
+        },
+        {
+          "id": "transformer-speciality-oils",
+          "name": "Transformer & Speciality Oils",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2251,
+              "sharePercent": 43.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2008,
+              "sharePercent": 36.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1881,
+              "sharePercent": 35.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2162,
+              "sharePercent": 36.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2630,
+              "sharePercent": 31.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2311,
+              "sharePercent": 30.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2364,
+              "sharePercent": 35.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3544,
+              "sharePercent": 36.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4641,
+              "sharePercent": 30.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4837,
+              "sharePercent": 28.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5086,
+              "sharePercent": 25.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5373,
+              "sharePercent": 21.9
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 47,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 45,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 35,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 43,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 73,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 107,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 123,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 144,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 196,
+              "sharePercent": 0.8
+            }
+          ]
+        },
+        {
+          "id": "power-and-tele",
+          "name": "Power and Tele",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 560,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 744,
+              "sharePercent": 13.4
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 23,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 29,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 41,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "WAAREEENER",
       "name": "Waaree Energies",
-      "marketCapCrore": 77148.09
+      "marketCapCrore": 77982.26
     },
     {
       "symbol": "APARINDS",
       "name": "Apar Inds.",
-      "marketCapCrore": 67070.65
+      "marketCapCrore": 71235.12
     },
     {
       "symbol": "PREMIERENE",
       "name": "Premier Energies",
-      "marketCapCrore": 46180.49
-    },
-    {
-      "symbol": "EMMVEE",
-      "name": "Emmvee Photovol.",
-      "marketCapCrore": 22258.89
-    },
-    {
-      "symbol": "DIACABS",
-      "name": "Diamond Power",
-      "marketCapCrore": 22038.92
+      "marketCapCrore": 46101.11
     },
     {
       "symbol": "MTARTECH",
       "name": "MTAR Technologie",
-      "marketCapCrore": 21703.97
+      "marketCapCrore": 22080.77
     },
     {
-      "symbol": "UTLSOLAR",
-      "name": "Fujiyama Power",
-      "marketCapCrore": 13008.03
+      "symbol": "EMMVEE",
+      "name": "Emmvee Photovol.",
+      "marketCapCrore": 22006.19
+    },
+    {
+      "symbol": "DIACABS",
+      "name": "Diamond Power",
+      "marketCapCrore": 21829.61
+    },
+    {
+      "symbol": "AVALON",
+      "name": "Avalon Tech",
+      "marketCapCrore": 14384.48
     }
   ]
 }

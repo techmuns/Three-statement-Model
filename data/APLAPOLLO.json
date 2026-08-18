@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/APLAPOLLO/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:56.211Z",
+    "fetchedAt": "2026-08-18T08:31:01.922Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,45 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "APLAPOLLO",
       "name": "APL Apollo Tubes",
-      "marketCapCrore": 55451.16
+      "marketCapCrore": 58631.69
     },
     {
       "symbol": "WELCORP",
       "name": "Welspun Corp",
-      "marketCapCrore": 49265.54
+      "marketCapCrore": 50146.54
     },
     {
       "symbol": "SHYAMMETL",
       "name": "Shyam Metalics",
-      "marketCapCrore": 27539.15
-    },
-    {
-      "symbol": "JINDALSAW",
-      "name": "Jindal Saw",
-      "marketCapCrore": 17237.94
-    },
-    {
-      "symbol": "RATNAMANI",
-      "name": "Ratnamani Metals",
-      "marketCapCrore": 15703.41
+      "marketCapCrore": 27717.81
     },
     {
       "symbol": "GPIL",
       "name": "Godawari Power",
-      "marketCapCrore": 15413.26
+      "marketCapCrore": 17163.97
+    },
+    {
+      "symbol": "JINDALSAW",
+      "name": "Jindal Saw",
+      "marketCapCrore": 17106.87
+    },
+    {
+      "symbol": "RATNAMANI",
+      "name": "Ratnamani Metals",
+      "marketCapCrore": 16842.77
     },
     {
       "symbol": "USHAMART",
       "name": "Usha Martin",
-      "marketCapCrore": 15325.46
+      "marketCapCrore": 15180.68
     }
   ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AMBER/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:19.832Z",
+    "fetchedAt": "2026-08-18T08:30:01.840Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 3754,
-          "expenses": 3472,
-          "operatingProfit": 282,
-          "opmPercent": 7.51,
-          "otherIncome": 19,
-          "interest": 55,
-          "depreciation": 58,
-          "profitBeforeTax": 189,
-          "taxPercent": 37.57,
-          "netProfit": 118,
-          "eps": 34.32
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -48,16 +26,16 @@
             "quarter": 1,
             "endDate": "2025-06-30"
           },
-          "sales": 3449,
-          "expenses": 3199,
-          "operatingProfit": 250,
-          "opmPercent": 7.25,
-          "otherIncome": 30,
-          "interest": 63,
-          "depreciation": 62,
-          "profitBeforeTax": 154,
-          "taxPercent": 31.17,
-          "netProfit": 106,
+          "sales": 3449.13,
+          "expenses": 3199.32,
+          "operatingProfit": 249.81,
+          "opmPercent": 7.24,
+          "otherIncome": 29.67,
+          "interest": 63.36,
+          "depreciation": 61.79,
+          "profitBeforeTax": 154.33,
+          "taxPercent": 31.33,
+          "netProfit": 105.98,
           "eps": 30.66
         },
         {
@@ -70,16 +48,16 @@
             "quarter": 2,
             "endDate": "2025-09-30"
           },
-          "sales": 1647,
-          "expenses": 1563,
-          "operatingProfit": 84,
-          "opmPercent": 5.1,
-          "otherIncome": 16,
-          "interest": 77,
-          "depreciation": 70,
-          "profitBeforeTax": -48,
-          "taxPercent": 33.33,
-          "netProfit": -32,
+          "sales": 1647.01,
+          "expenses": 1563.24,
+          "operatingProfit": 83.77,
+          "opmPercent": 5.09,
+          "otherIncome": 15.63,
+          "interest": 76.93,
+          "depreciation": 70.24,
+          "profitBeforeTax": -47.77,
+          "taxPercent": 32.7,
+          "netProfit": -32.15,
           "eps": -9.35
         },
         {
@@ -92,16 +70,16 @@
             "quarter": 3,
             "endDate": "2025-12-31"
           },
-          "sales": 2943,
-          "expenses": 2705,
-          "operatingProfit": 237,
-          "opmPercent": 8.05,
-          "otherIncome": -48,
-          "interest": 79,
-          "depreciation": 91,
-          "profitBeforeTax": 19,
-          "taxPercent": 147.37,
-          "netProfit": -9,
+          "sales": 2942.82,
+          "expenses": 2705.35,
+          "operatingProfit": 237.47,
+          "opmPercent": 8.07,
+          "otherIncome": -48.34,
+          "interest": 79.35,
+          "depreciation": 91.23,
+          "profitBeforeTax": 18.55,
+          "taxPercent": 150.35,
+          "netProfit": -9.34,
           "eps": -7.74
         },
         {
@@ -114,17 +92,39 @@
             "quarter": 4,
             "endDate": "2026-03-31"
           },
-          "sales": 4148,
-          "expenses": 3856,
-          "operatingProfit": 291,
+          "sales": 4147.52,
+          "expenses": 3856.29,
+          "operatingProfit": 291.23,
           "opmPercent": 7.02,
-          "otherIncome": 84,
-          "interest": 65,
-          "depreciation": 99,
-          "profitBeforeTax": 211,
-          "taxPercent": 23.22,
-          "netProfit": 162,
+          "otherIncome": 84.12,
+          "interest": 64.75,
+          "depreciation": 99.3,
+          "profitBeforeTax": 211.3,
+          "taxPercent": 23.35,
+          "netProfit": 161.96,
           "eps": 38.04
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 3887.72,
+          "expenses": 3576.21,
+          "operatingProfit": 311.51,
+          "opmPercent": 8.01,
+          "otherIncome": -75.11,
+          "interest": 84.74,
+          "depreciation": 108.21,
+          "profitBeforeTax": 43.45,
+          "taxPercent": 92.89,
+          "netProfit": 3.09,
+          "eps": 6.31
         }
       ]
     },
@@ -139,9 +139,192 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "consumer-durables",
+          "name": "Consumer durables",
+          "values": [
+            {
+              "periodId": "FY24Q3",
+              "revenue": 946,
+              "sharePercent": 72.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2232,
+              "sharePercent": 78.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1944,
+              "sharePercent": 80.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1085,
+              "sharePercent": 63.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1586,
+              "sharePercent": 73.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2857,
+              "sharePercent": 74.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2630,
+              "sharePercent": 74.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 886,
+              "sharePercent": 53.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2014,
+              "sharePercent": 67.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3032,
+              "sharePercent": 72.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2803,
+              "sharePercent": 71.3
+            }
+          ]
+        },
+        {
+          "id": "electronics-manufacturing-services-ems",
+          "name": "Electronics manufacturing services (EMS)",
+          "values": [
+            {
+              "periodId": "FY24Q3",
+              "revenue": 241,
+              "sharePercent": 18.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 484,
+              "sharePercent": 17
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 388,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 492,
+              "sharePercent": 28.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 472,
+              "sharePercent": 21.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 842,
+              "sharePercent": 22
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 766,
+              "sharePercent": 21.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 642,
+              "sharePercent": 38.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 845,
+              "sharePercent": 28.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1015,
+              "sharePercent": 24.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 985,
+              "sharePercent": 25.1
+            }
+          ]
+        },
+        {
+          "id": "railway-subsystem-mobility",
+          "name": "Railway subsystem & Mobility",
+          "values": [
+            {
+              "periodId": "FY24Q3",
+              "revenue": 122,
+              "sharePercent": 9.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 123,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 95,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 124,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 106,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 125,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 123,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 132,
+              "sharePercent": 8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 127,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 153,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 144,
+              "sharePercent": 3.7
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +650,166 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "consumer-durables",
+          "name": "Consumer durables",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 5466,
+              "sharePercent": 78.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 5064,
+              "sharePercent": 74.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 7472,
+              "sharePercent": 73.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 8563,
+              "sharePercent": 69.2
+            }
+          ]
+        },
+        {
+          "id": "electronics-manufacturing-services-ems",
+          "name": "Electronics manufacturing services (EMS)",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 1087,
+              "sharePercent": 15.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1240,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 2194,
+              "sharePercent": 21.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3268,
+              "sharePercent": 26.4
+            }
+          ]
+        },
+        {
+          "id": "railway-subsystem-mobility",
+          "name": "Railway subsystem & Mobility",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 427,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 480,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 450,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 535,
+              "sharePercent": 4.3
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 5,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 8,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 3,
+              "sharePercent": 0.2
+            }
+          ]
+        },
+        {
+          "id": "manufacturing-of-consumer-durable-products",
+          "name": "Manufacturing of Consumer Durable Products",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1492,
+              "sharePercent": 99.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1303,
+              "sharePercent": 99.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1975,
+              "sharePercent": 99.8
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "LGEINDIA",
       "name": "LG Electronics",
-      "marketCapCrore": 107164.59
+      "marketCapCrore": 112438.61
     },
     {
       "symbol": "VOLTAS",
       "name": "Voltas",
-      "marketCapCrore": 42684.13
+      "marketCapCrore": 41421.82
     },
     {
       "symbol": "BLUESTARCO",
       "name": "Blue Star",
-      "marketCapCrore": 30636.6
+      "marketCapCrore": 30742.5
     },
     {
       "symbol": "AMBER",
       "name": "Amber Enterp.",
-      "marketCapCrore": 24634.54
+      "marketCapCrore": 25748.29
     },
     {
       "symbol": "CROMPTON",
       "name": "Crompton Gr. Con",
-      "marketCapCrore": 15959.43
+      "marketCapCrore": 15701.84
     },
     {
       "symbol": "VGUARD",
       "name": "V-Guard Industri",
-      "marketCapCrore": 14494.65
+      "marketCapCrore": 14579.87
     },
     {
       "symbol": "WHIRLPOOL",
       "name": "Whirlpool India",
-      "marketCapCrore": 10024.78
+      "marketCapCrore": 9738.08
     }
   ]
 }

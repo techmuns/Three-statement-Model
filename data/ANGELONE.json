@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ANGELONE/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:28.267Z",
+    "fetchedAt": "2026-08-18T08:30:18.615Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,119 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "broking-and-related-services",
+          "name": "Broking and related services",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 746,
+              "sharePercent": 98
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1291,
+              "sharePercent": 99.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2284,
+              "sharePercent": 99.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3015,
+              "sharePercent": 99.8
+            }
+          ]
+        },
+        {
+          "id": "finance-and-investing-activites",
+          "name": "Finance and Investing activites",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 10,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 8,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 14,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 7,
+              "sharePercent": 0.2
+            }
+          ]
+        },
+        {
+          "id": "helth-and-allied-fitness-activities",
+          "name": "Helth and allied fitness activities",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 5,
+              "sharePercent": 0.7
+            }
+          ]
+        },
+        {
+          "id": "health-and-allied-fitness-activities",
+          "name": "Health and allied fitness activities",
+          "values": [
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "GROWW",
-      "name": "Billionbrains",
-      "marketCapCrore": 123765.51
-    },
-    {
-      "symbol": "MOTILALOFS",
-      "name": "Motil.Oswal.Fin.",
-      "marketCapCrore": 54253.42
-    },
-    {
-      "symbol": "360ONE",
-      "name": "360 ONE",
-      "marketCapCrore": 47239.83
-    },
-    {
-      "symbol": "NUVAMA",
-      "name": "Nuvama Wealth",
-      "marketCapCrore": 31154.05
-    },
-    {
-      "symbol": "ANGELONE",
-      "name": "Angel One",
-      "marketCapCrore": 26588.3
-    },
-    {
-      "symbol": "IIFLCAPS",
-      "name": "IIFL Capital",
-      "marketCapCrore": 10546.02
-    },
-    {
-      "symbol": "SHAREINDIA",
-      "name": "Share India Sec.",
-      "marketCapCrore": 3626.38
-    }
-  ]
+  }
 }

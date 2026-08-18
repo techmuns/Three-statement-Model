@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AJANTPHARM/consolidated/",
-    "fetchedAt": "2026-08-12T21:51:51.878Z",
+    "fetchedAt": "2026-08-18T08:29:24.614Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,50 +468,50 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "SUNPHARMA",
       "name": "Sun Pharma.Inds.",
-      "marketCapCrore": 466430.72
+      "marketCapCrore": 450930.98
     },
     {
       "symbol": "DIVISLAB",
       "name": "Divi's Lab.",
-      "marketCapCrore": 228302.98
+      "marketCapCrore": 227639.27
     },
     {
       "symbol": "TORNTPHARM",
       "name": "Torrent Pharma.",
-      "marketCapCrore": 186113.99
-    },
-    {
-      "symbol": "ZYDUSLIFE",
-      "name": "Zydus Lifesci.",
-      "marketCapCrore": 120199.21
+      "marketCapCrore": 189548.76
     },
     {
       "symbol": "CIPLA",
       "name": "Cipla",
-      "marketCapCrore": 118187.77
+      "marketCapCrore": 115882.5
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "name": "Zydus Lifesci.",
+      "marketCapCrore": 111850.11
     },
     {
       "symbol": "LUPIN",
       "name": "Lupin",
-      "marketCapCrore": 104294.74
+      "marketCapCrore": 101814.28
     },
     {
-      "symbol": "MANKIND",
-      "name": "Mankind Pharma",
-      "marketCapCrore": 100486.05
+      "symbol": "DRREDDY",
+      "name": "Dr Reddy's Labs",
+      "marketCapCrore": 98992.55
     },
     {
       "symbol": "AJANTPHARM",
       "name": "Ajanta Pharma",
-      "marketCapCrore": 44247.99
+      "marketCapCrore": 46534.74
     }
   ]
 }

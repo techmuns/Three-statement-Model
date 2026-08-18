@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/APOLLOTYRE/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:58.447Z",
+    "fetchedAt": "2026-08-18T08:31:41.802Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,106 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "europe",
+          "name": "Europe",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 3689,
+              "sharePercent": 27.1
+            }
+          ]
+        },
+        {
+          "id": "india",
+          "name": "India",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 8975,
+              "sharePercent": 66
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 934,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 652,
+              "sharePercent": 4.7
+            }
+          ]
+        },
+        {
+          "id": "apmea",
+          "name": "Apmea",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 9920,
+              "sharePercent": 72.2
+            }
+          ]
+        },
+        {
+          "id": "ea",
+          "name": "Ea",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 3174,
+              "sharePercent": 23.1
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "MRF",
       "name": "MRF",
-      "marketCapCrore": 55467.79
+      "marketCapCrore": 56573.45
     },
     {
       "symbol": "BALKRISIND",
       "name": "Balkrishna Inds",
-      "marketCapCrore": 48269.37
+      "marketCapCrore": 46104.25
     },
     {
       "symbol": "APOLLOTYRE",
       "name": "Apollo Tyres",
-      "marketCapCrore": 28271.52
+      "marketCapCrore": 27820.59
     },
     {
       "symbol": "CEATLTD",
       "name": "CEAT",
-      "marketCapCrore": 15059.97
+      "marketCapCrore": 14582.26
     },
     {
       "symbol": "JKTYRE",
       "name": "JK Tyre & Indust",
-      "marketCapCrore": 11142.39
+      "marketCapCrore": 11054.44
     },
     {
       "symbol": "TVSSRICHAK",
       "name": "TVS Srichakra",
-      "marketCapCrore": 2963.04
+      "marketCapCrore": 3657.22
     },
     {
       "symbol": "GOODYEAR",
       "name": "Goodyear India",
-      "marketCapCrore": 1870.63
+      "marketCapCrore": 1756.77
     }
   ]
 }

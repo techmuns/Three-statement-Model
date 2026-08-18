@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AIIL/consolidated/",
-    "fetchedAt": "2026-08-14T21:28:55.078Z",
+    "fetchedAt": "2026-08-18T08:29:21.384Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,213 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "investing-activity",
+          "name": "Investing Activity",
+          "values": [
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1291,
+              "sharePercent": 91
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 553,
+              "sharePercent": 49.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 365,
+              "sharePercent": 59
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": -354,
+              "sharePercent": -19.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 502,
+              "sharePercent": 41
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 342,
+              "sharePercent": 56.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 262,
+              "sharePercent": 54.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 169,
+              "sharePercent": 49.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1249,
+              "sharePercent": 84.1
+            }
+          ]
+        },
+        {
+          "id": "lending-activity",
+          "name": "Lending Activity",
+          "values": [
+            {
+              "periodId": "FY25Q1",
+              "revenue": 122,
+              "sharePercent": 8.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 562,
+              "sharePercent": 50.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 250,
+              "sharePercent": 40.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1807,
+              "sharePercent": 99.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 717,
+              "sharePercent": 58.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 257,
+              "sharePercent": 42.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 207,
+              "sharePercent": 43.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 168,
+              "sharePercent": 49.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 228,
+              "sharePercent": 15.3
+            }
+          ]
+        },
+        {
+          "id": "rental-business",
+          "name": "Rental Business",
+          "values": [
+            {
+              "periodId": "FY25Q1",
+              "revenue": 5,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 3,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 4,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 4,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 5,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 4,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 4,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 5,
+              "sharePercent": 0.3
+            }
+          ]
+        },
+        {
+          "id": "arc",
+          "name": "ARC",
+          "values": [
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 6,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 4,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 4,
+              "sharePercent": 0.3
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -406,51 +610,135 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "lending-activity",
+          "name": "Lending Activity",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 1329,
+              "sharePercent": 30.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 2328,
+              "sharePercent": 50.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1350,
+              "sharePercent": 50.9
+            }
+          ]
+        },
+        {
+          "id": "investing-activity",
+          "name": "Investing Activity",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 1756,
+              "sharePercent": 39.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 2272,
+              "sharePercent": 49.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1276,
+              "sharePercent": 48.1
+            }
+          ]
+        },
+        {
+          "id": "rental-business",
+          "name": "Rental Business",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 1316,
+              "sharePercent": 29.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 13,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 16,
+              "sharePercent": 0.6
+            }
+          ]
+        },
+        {
+          "id": "arc",
+          "name": "ARC",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 12,
+              "sharePercent": 0.5
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "BAJFINANCE",
       "name": "Bajaj Finance",
-      "marketCapCrore": 676761.23
+      "marketCapCrore": 683516.47
     },
     {
       "symbol": "SHRIRAMFIN",
       "name": "Shriram Finance",
-      "marketCapCrore": 264004.75
+      "marketCapCrore": 262110.54
     },
     {
       "symbol": "CHOLAFIN",
       "name": "Cholaman.Inv.&Fn",
-      "marketCapCrore": 161527.55
+      "marketCapCrore": 160995.7
     },
     {
       "symbol": "TATACAP",
       "name": "Tata Capital",
-      "marketCapCrore": 154576.88
+      "marketCapCrore": 153706.73
     },
     {
       "symbol": "MUTHOOTFIN",
       "name": "Muthoot Finance",
-      "marketCapCrore": 114097.34
+      "marketCapCrore": 117222.72
     },
     {
       "symbol": "LTF",
       "name": "L&T Finance Ltd",
-      "marketCapCrore": 76760.18
+      "marketCapCrore": 81346.22
     },
     {
       "symbol": "SBICARD",
       "name": "SBI Cards",
-      "marketCapCrore": 60037.59
+      "marketCapCrore": 59054.18
     },
     {
       "symbol": "AIIL",
       "name": "Authum Invest",
-      "marketCapCrore": 47972.75
+      "marketCapCrore": 47132
     }
   ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AEGISLOG/consolidated/",
-    "fetchedAt": "2026-08-16T19:29:58.113Z",
+    "fetchedAt": "2026-08-18T08:28:32.722Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,141 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "gas-terminal-division",
+          "name": "Gas Terminal Division",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1118,
+              "sharePercent": 90.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1750,
+              "sharePercent": 93.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1644,
+              "sharePercent": 89.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1459,
+              "sharePercent": 91.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1620,
+              "sharePercent": 92.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1572,
+              "sharePercent": 92.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1463,
+              "sharePercent": 85.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1575,
+              "sharePercent": 91.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2139,
+              "sharePercent": 93.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1564,
+              "sharePercent": 90.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2410,
+              "sharePercent": 92.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2179,
+              "sharePercent": 92.4
+            }
+          ]
+        },
+        {
+          "id": "liquid-terminal-division",
+          "name": "Liquid Terminal Division",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 117,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 124,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 193,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 143,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 130,
+              "sharePercent": 7.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 135,
+              "sharePercent": 7.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 242,
+              "sharePercent": 14.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 144,
+              "sharePercent": 8.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 155,
+              "sharePercent": 6.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 161,
+              "sharePercent": 9.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 184,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 178,
+              "sharePercent": 7.6
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,16 +599,148 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "gas-terminal-division",
+          "name": "Gas Terminal Division",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 3763,
+              "sharePercent": 96.1
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2043,
+              "sharePercent": 92.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 3776,
+              "sharePercent": 96.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 4623,
+              "sharePercent": 96.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 5433,
+              "sharePercent": 96.7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 6976,
+              "sharePercent": 97.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3609,
+              "sharePercent": 93.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 4361,
+              "sharePercent": 94.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 8209,
+              "sharePercent": 95.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 6497,
+              "sharePercent": 92.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 6114,
+              "sharePercent": 90.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 7689,
+              "sharePercent": 92.3
+            }
+          ]
+        },
+        {
+          "id": "liquid-terminal-division",
+          "name": "Liquid Terminal Division",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 153,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 171,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 154,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 168,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 183,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 208,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 234,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 270,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 418,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 549,
+              "sharePercent": 7.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 650,
+              "sharePercent": 9.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 644,
+              "sharePercent": 7.7
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "AEGISLOG",
       "name": "Aegis Logistics",
-      "marketCapCrore": 44415.54
+      "marketCapCrore": 47393.81
     }
   ]
 }

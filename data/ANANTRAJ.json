@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ANANTRAJ/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:26.259Z",
+    "fetchedAt": "2026-08-18T08:30:11.884Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,68 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "ceramic-tiles",
+          "name": "Ceramic Tiles",
+          "values": [
+            {
+              "periodId": "FY11",
+              "revenue": 3,
+              "sharePercent": 0.7
+            }
+          ]
+        },
+        {
+          "id": "real-estate-investment",
+          "name": "Real Estate/Investment",
+          "values": [
+            {
+              "periodId": "FY11",
+              "revenue": 450,
+              "sharePercent": 99.3
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "DLF",
       "name": "DLF",
-      "marketCapCrore": 163803.75
+      "marketCapCrore": 166972.16
     },
     {
       "symbol": "LODHA",
       "name": "Lodha Developers",
-      "marketCapCrore": 120794.71
-    },
-    {
-      "symbol": "PRESTIGE",
-      "name": "Prestige Estates",
-      "marketCapCrore": 68516.26
+      "marketCapCrore": 123118.83
     },
     {
       "symbol": "PHOENIXLTD",
       "name": "Phoenix Mills",
-      "marketCapCrore": 68134.94
+      "marketCapCrore": 68818.1
     },
     {
       "symbol": "OBEROIRLTY",
       "name": "Oberoi Realty",
-      "marketCapCrore": 65444.77
+      "marketCapCrore": 68795.36
+    },
+    {
+      "symbol": "PRESTIGE",
+      "name": "Prestige Estates",
+      "marketCapCrore": 68615.35
     },
     {
       "symbol": "GODREJPROP",
       "name": "Godrej Propert.",
-      "marketCapCrore": 60697.14
+      "marketCapCrore": 60755.89
     },
     {
       "symbol": "ANANTRAJ",
       "name": "Anant Raj",
-      "marketCapCrore": 22119.84
+      "marketCapCrore": 22661.44
     }
   ]
 }

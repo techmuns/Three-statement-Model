@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AFFLE/consolidated/",
-    "fetchedAt": "2026-08-12T21:51:47.642Z",
+    "fetchedAt": "2026-08-18T08:28:44.394Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,41 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "consumer-platform",
+          "name": "Consumer Platform",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 131,
+              "sharePercent": 98.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 137,
+              "sharePercent": 98.6
+            }
+          ]
+        },
+        {
+          "id": "enterprise-platform",
+          "name": "Enterprise Platform",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2,
+              "sharePercent": 1.4
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +499,71 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "consumer-platform",
+          "name": "Consumer Platform",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 108,
+              "sharePercent": 91.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 169,
+              "sharePercent": 92.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 251,
+              "sharePercent": 94
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 386,
+              "sharePercent": 97
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 481,
+              "sharePercent": 97.2
+            }
+          ]
+        },
+        {
+          "id": "enterprise-platform",
+          "name": "Enterprise Platform",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 10,
+              "sharePercent": 8.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 13,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 16,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 12,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 14,
+              "sharePercent": 2.8
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "LTTS",
-      "name": "L&T Technology",
-      "marketCapCrore": 37964.09
-    },
-    {
-      "symbol": "TATATECH",
-      "name": "Tata Technolog.",
-      "marketCapCrore": 34193.62
-    },
-    {
-      "symbol": "IKS",
-      "name": "Inventurus Knowl",
-      "marketCapCrore": 30652.17
-    },
-    {
-      "symbol": "NETWEB",
-      "name": "Netweb Technol.",
-      "marketCapCrore": 27544.49
-    },
-    {
-      "symbol": "AFFLE",
-      "name": "Affle 3i",
-      "marketCapCrore": 23567.71
-    },
-    {
-      "symbol": "SAGILITY",
-      "name": "Sagility",
-      "marketCapCrore": 20274.83
-    },
-    {
-      "symbol": "AMAGI",
-      "name": "Amagi Media Labs",
-      "marketCapCrore": 13818.65
-    }
-  ]
+  }
 }

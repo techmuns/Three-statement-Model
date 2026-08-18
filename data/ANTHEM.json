@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ANTHEM/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:30.368Z",
+    "fetchedAt": "2026-08-18T08:30:51.734Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,101 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "crdmo",
+          "name": "CRDMO",
+          "values": [
+            {
+              "periodId": "FY25Q2",
+              "revenue": 435,
+              "sharePercent": 82.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 414,
+              "sharePercent": 83.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 392,
+              "sharePercent": 81.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 453,
+              "sharePercent": 83.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 466,
+              "sharePercent": 84.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 333,
+              "sharePercent": 78.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 513,
+              "sharePercent": 84
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 341,
+              "sharePercent": 81.6
+            }
+          ]
+        },
+        {
+          "id": "speciality-ingredients",
+          "name": "Speciality Ingredients",
+          "values": [
+            {
+              "periodId": "FY25Q2",
+              "revenue": 90,
+              "sharePercent": 17.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 84,
+              "sharePercent": 16.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 91,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 88,
+              "sharePercent": 16.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 84,
+              "sharePercent": 15.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 90,
+              "sharePercent": 21.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 98,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 77,
+              "sharePercent": 18.4
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,31 +559,63 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "crdmo",
+          "name": "CRDMO",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 1506,
+              "sharePercent": 81.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1773,
+              "sharePercent": 83.4
+            }
+          ]
+        },
+        {
+          "id": "speciality-ingredients",
+          "name": "Speciality Ingredients",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 338,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 352,
+              "sharePercent": 16.6
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ANTHEM",
       "name": "Anthem Bioscienc",
-      "marketCapCrore": 49473.1
+      "marketCapCrore": 50320.7
     },
     {
       "symbol": "ADVENZYMES",
       "name": "Advanced Enzyme",
-      "marketCapCrore": 3377.76
+      "marketCapCrore": 3393.44
     },
     {
       "symbol": "514336",
       "name": "CCME Global",
-      "marketCapCrore": 330.78
+      "marketCapCrore": 269.69
     },
     {
       "symbol": "511509",
       "name": "Vivo Bio Tech",
-      "marketCapCrore": 46.49
+      "marketCapCrore": 42.27
     },
     {
       "symbol": "539470",
@@ -501,7 +625,7 @@
     {
       "symbol": "539206",
       "name": "Genomic Valley",
-      "marketCapCrore": 9.32
+      "marketCapCrore": 8.59
     }
   ]
 }

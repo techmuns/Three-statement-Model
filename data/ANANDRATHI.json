@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ANANDRATHI/consolidated/",
-    "fetchedAt": "2026-08-12T21:52:24.120Z",
+    "fetchedAt": "2026-08-18T08:30:08.279Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,20 +468,20 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "ANANDRATHI",
       "name": "Anand Rathi Wea.",
-      "marketCapCrore": 36346.43
+      "marketCapCrore": 36285
     },
     {
       "symbol": "PRUDENT",
       "name": "Prudent Corp.",
-      "marketCapCrore": 13930.04
+      "marketCapCrore": 13866.06
     },
     {
       "symbol": "543753",
@@ -491,12 +491,12 @@
     {
       "symbol": "544560",
       "name": "Sodhani Capital",
-      "marketCapCrore": 53.14
+      "marketCapCrore": 53.23
     },
     {
       "symbol": "543623",
       "name": "Vedant Asset",
-      "marketCapCrore": 19.46
+      "marketCapCrore": 15.86
     }
   ]
 }
