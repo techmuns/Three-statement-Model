@@ -20,9 +20,11 @@ import { periodsOf } from '@/types/financials'
 import type { PeriodRef } from '@/types/period'
 import { statementSetFor } from '@/lib/statements'
 import { WidgetCard } from '../ui/WidgetCard'
-import { UnavailableState } from '../ui/states'
+import { LoadingState, UnavailableState } from '../ui/states'
 import { StatementTable, type StatementRow } from '../components/StatementTable'
 import { SegmentMix } from '../components/SegmentMix'
+import { ConcallSegmentMix } from '../components/ConcallSegmentMix'
+import { useConcallSegments } from '../data/useConcallSegments'
 import { T } from '../ui/tokens'
 
 function shortDate(iso: string): string {
@@ -59,6 +61,7 @@ export function FinancialsTab({
   period: PeriodViewId
 }) {
   const set = statementSetFor(financials, period)
+  const concall = useConcallSegments(financials.companyId)
   const banking = financials.statementLayout === 'banking'
   const source = financials.source
   const provenance = `Screener · ${source.basis} · updated ${shortDate(source.fetchedAt)}`
@@ -110,13 +113,22 @@ export function FinancialsTab({
         <SeriesBody series={set.profitLoss} rows={plRows} emptyHint="P&L is not available for this company yet." />
       </WidgetCard>
 
-      <WidgetCard title="Revenue Mix by Segment" subtitle="Share of sales, latest period">
+      <WidgetCard
+        title="Revenue Mix by Segment"
+        subtitle={
+          concall.data ? `From the earnings call · ${concall.data.quarter ?? 'latest'}` : 'Share of sales, latest period'
+        }
+      >
         {set.segmentMix.status === 'available' && latestPeriodId ? (
           <SegmentMix segments={set.segmentMix.segments} periodId={latestPeriodId} />
+        ) : concall.data ? (
+          <ConcallSegmentMix segments={concall.data.segments} quarter={concall.data.quarter} />
+        ) : concall.loading ? (
+          <LoadingState rows={4} />
         ) : (
           <UnavailableState
             note={set.segmentMix.status === 'available' ? 'No segment split for this period.' : set.segmentMix.note ?? 'Segment mix not reported.'}
-            hint="Segment revenue is a separate disclosure (investor filing / BSE) and is added per company."
+            hint="Sourced from the company's earnings call when available (via the Concall Deep Dive)."
           />
         )}
       </WidgetCard>
