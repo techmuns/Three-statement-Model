@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/JINDALSTEL/consolidated/",
-    "fetchedAt": "2026-08-11T16:14:34.118Z",
+    "fetchedAt": "2026-08-18T08:42:24.496Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,184 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "iron-steel",
+          "name": "Iron & Steel",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 15681,
+              "sharePercent": 71.8
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 16611,
+              "sharePercent": 72.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 17926,
+              "sharePercent": 71.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 22786,
+              "sharePercent": 75.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 34133,
+              "sharePercent": 80.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 25496,
+              "sharePercent": 76
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 33192,
+              "sharePercent": 87.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 49383,
+              "sharePercent": 90
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 426,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 439,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 891,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 704,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1045,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1194,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 952,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1286,
+              "sharePercent": 2.3
+            }
+          ]
+        },
+        {
+          "id": "power",
+          "name": "Power",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 5741,
+              "sharePercent": 26.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 5721,
+              "sharePercent": 25.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 6378,
+              "sharePercent": 25.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 6815,
+              "sharePercent": 22.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 7060,
+              "sharePercent": 16.7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 6855,
+              "sharePercent": 20.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3679,
+              "sharePercent": 9.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 4185,
+              "sharePercent": 7.6
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "JSWSTEEL",
       "name": "JSW Steel",
-      "marketCapCrore": 315302.57
+      "marketCapCrore": 311306.29
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Steel",
-      "marketCapCrore": 235237.34
+      "marketCapCrore": 230321.16
     },
     {
       "symbol": "JINDALSTEL",
       "name": "Jindal Steel",
-      "marketCapCrore": 111808.97
+      "marketCapCrore": 113020.62
     },
     {
       "symbol": "SAIL",
       "name": "S A I L",
-      "marketCapCrore": 71230.91
+      "marketCapCrore": 70797.14
     },
     {
       "symbol": "JSL",
       "name": "Jindal Stain.",
-      "marketCapCrore": 59729.76
+      "marketCapCrore": 60776.24
     },
     {
       "symbol": "SARDAEN",
       "name": "Sarda Energy",
-      "marketCapCrore": 17458.87
+      "marketCapCrore": 18329.1
     },
     {
       "symbol": "VISL",
       "name": "Vedanta Iron & Steel",
-      "marketCapCrore": 15168.01
+      "marketCapCrore": 14605.31
     }
   ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/INDIGO/consolidated/",
-    "fetchedAt": "2026-08-16T19:16:37.290Z",
+    "fetchedAt": "2026-08-18T08:41:41.285Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,35 +468,35 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "INDIGO",
       "name": "Interglobe Aviat",
-      "marketCapCrore": 205319.96
+      "marketCapCrore": 201536.48
     },
     {
       "symbol": "SPICEJET",
       "name": "SpiceJet",
-      "marketCapCrore": 1770.28
+      "marketCapCrore": 1709.22
     },
     {
       "symbol": "TAALTECH",
       "name": "TAAL Tech",
-      "marketCapCrore": 1333.79
+      "marketCapCrore": 1324.81
     },
     {
       "symbol": "FLYSBS",
       "name": "FlySBS Aviation",
-      "marketCapCrore": 763.87
+      "marketCapCrore": 896.32
     },
     {
       "symbol": "GLOBALVECT",
       "name": "Global Vectra",
-      "marketCapCrore": 210.74
+      "marketCapCrore": 210
     }
   ]
 }

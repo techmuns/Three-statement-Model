@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/IOC/consolidated/",
-    "fetchedAt": "2026-08-11T12:08:45.555Z",
+    "fetchedAt": "2026-08-18T08:42:18.038Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,263 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "sale-of-petroleum-products",
+          "name": "Sale of Petroleum Products",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 193321,
+              "sharePercent": 92.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 214370,
+              "sharePercent": 92.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 211315,
+              "sharePercent": 92.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 206443,
+              "sharePercent": 91.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 185821,
+              "sharePercent": 91.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 205421,
+              "sharePercent": 91.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 206132,
+              "sharePercent": 91.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 208357,
+              "sharePercent": 91.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 192311,
+              "sharePercent": 91.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 221310,
+              "sharePercent": 91.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 220218,
+              "sharePercent": 91.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 264201,
+              "sharePercent": 91
+            }
+          ]
+        },
+        {
+          "id": "gas",
+          "name": "Gas",
+          "values": [
+            {
+              "periodId": "FY24Q4",
+              "revenue": 9491,
+              "sharePercent": 4.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 10238,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 11028,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 11190,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 10309,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 11135,
+              "sharePercent": 5.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 11691,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 11377,
+              "sharePercent": 4.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 14481,
+              "sharePercent": 5
+            }
+          ]
+        },
+        {
+          "id": "sale-of-petrochemicals",
+          "name": "Sale of Petrochemicals",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 6613,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 5984,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 6909,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 6789,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 6813,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 7202,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 7226,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 6764,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 6391,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 6936,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 8011,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 9517,
+              "sharePercent": 3.3
+            }
+          ]
+        },
+        {
+          "id": "other-business-activities",
+          "name": "Other Business Activities",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 9525,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 11314,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1149,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1225,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 11130,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 999,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1682,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1194,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 924,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1500,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1670,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2048,
+              "sharePercent": 0.7
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +721,265 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "sale-of-petroleum-products",
+          "name": "Sale of Petroleum Products",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 426783,
+              "sharePercent": 91.1
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 394219,
+              "sharePercent": 92.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 434844,
+              "sharePercent": 93.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 498430,
+              "sharePercent": 95.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 594585,
+              "sharePercent": 94.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 554665,
+              "sharePercent": 94.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 496830,
+              "sharePercent": 93.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 702195,
+              "sharePercent": 93.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 908356,
+              "sharePercent": 93.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 833470,
+              "sharePercent": 92.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 803817,
+              "sharePercent": 91.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 842195,
+              "sharePercent": 91.5
+            }
+          ]
+        },
+        {
+          "id": "gas",
+          "name": "Gas",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 35223,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 42341,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 44512,
+              "sharePercent": 4.8
+            }
+          ]
+        },
+        {
+          "id": "sale-of-petrochemicals",
+          "name": "Sale of Petrochemicals",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 20265,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 13990,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 11379,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 18059,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 21183,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 15727,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 19169,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 28129,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 22297,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 26234,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 28031,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 28102,
+              "sharePercent": 3.1
+            }
+          ]
+        },
+        {
+          "id": "other-business-activities",
+          "name": "Other Business Activities",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 21640,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 18934,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 19827,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 7545,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 13266,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 15757,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 12842,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 24083,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 36729,
+              "sharePercent": 3.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4940,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5151,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5288,
+              "sharePercent": 0.6
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "marketCapCrore": 1789671.38
+      "marketCapCrore": 1791775.31
     },
     {
       "symbol": "IOC",
       "name": "I O C L",
-      "marketCapCrore": 198471.12
+      "marketCapCrore": 195508.51
     },
     {
       "symbol": "BPCL",
       "name": "B P C L",
-      "marketCapCrore": 136758.62
+      "marketCapCrore": 135968.77
     },
     {
       "symbol": "HINDPETRO",
       "name": "H P C L",
-      "marketCapCrore": 83431.47
+      "marketCapCrore": 78165.59
     },
     {
       "symbol": "MRPL",
       "name": "M R P L",
-      "marketCapCrore": 31682.23
+      "marketCapCrore": 31686.93
     },
     {
       "symbol": "CHENNPETRO",
       "name": "C P C L",
-      "marketCapCrore": 21222.26
+      "marketCapCrore": 21250.34
     },
     {
-      "symbol": "KOTYARK",
-      "name": "Kotyark Indust.",
-      "marketCapCrore": 478.16
+      "symbol": "526873",
+      "name": "Rajasthan Securities",
+      "marketCapCrore": 430.5
     }
   ]
 }

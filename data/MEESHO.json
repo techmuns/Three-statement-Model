@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/MEESHO/consolidated/",
-    "fetchedAt": "2026-08-11T11:41:41.852Z",
+    "fetchedAt": "2026-08-18T08:44:38.421Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,91 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "marketplace",
+          "name": "Marketplace",
+          "values": [
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2678,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2399,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2502,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 3071,
+              "sharePercent": 99.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 3515,
+              "sharePercent": 99.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3525,
+              "sharePercent": 99.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3707,
+              "sharePercent": 99.8
+            }
+          ]
+        },
+        {
+          "id": "new-initiatives",
+          "name": "New Initiatives",
+          "values": [
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 6,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 6,
+              "sharePercent": 0.2
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -406,46 +488,78 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "marketplace",
+          "name": "Marketplace",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 9386,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 12614,
+              "sharePercent": 99.9
+            }
+          ]
+        },
+        {
+          "id": "new-initiatives",
+          "name": "New Initiatives",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 4,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 12,
+              "sharePercent": 0.1
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ETERNAL",
       "name": "Eternal",
-      "marketCapCrore": 306634.07
+      "marketCapCrore": 305530.13
     },
     {
       "symbol": "NYKAA",
       "name": "FSN E-Commerce",
-      "marketCapCrore": 91396.38
+      "marketCapCrore": 92754.3
     },
     {
       "symbol": "MEESHO",
       "name": "Meesho",
-      "marketCapCrore": 88056.43
+      "marketCapCrore": 89258.05
     },
     {
       "symbol": "SWIGGY",
       "name": "Swiggy",
-      "marketCapCrore": 77482.12
+      "marketCapCrore": 75273.71
     },
     {
       "symbol": "URBANCO",
       "name": "Urban Company",
-      "marketCapCrore": 21528.8
+      "marketCapCrore": 22253.65
     },
     {
       "symbol": "CARTRADE",
       "name": "Cartrade Tech",
-      "marketCapCrore": 13413.1
+      "marketCapCrore": 13689.12
     },
     {
       "symbol": "FIRSTCRY",
       "name": "Brainbees Solut.",
-      "marketCapCrore": 11183.14
+      "marketCapCrore": 10708.04
     }
   ]
 }

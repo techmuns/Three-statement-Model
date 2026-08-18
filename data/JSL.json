@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/JSL/consolidated/",
-    "fetchedAt": "2026-08-11T16:14:38.383Z",
+    "fetchedAt": "2026-08-18T08:42:31.013Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -248,10 +248,10 @@
             "endDate": "2026-03-31"
           },
           "sales": 42955,
-          "expenses": 37394,
-          "operatingProfit": 5560,
-          "opmPercent": 12.94,
-          "otherIncome": 310,
+          "expenses": 37473,
+          "operatingProfit": 5482,
+          "opmPercent": 12.76,
+          "otherIncome": 388,
           "interest": 568,
           "depreciation": 1060,
           "profitBeforeTax": 4242,
@@ -361,13 +361,13 @@
           "equityCapital": 165,
           "reserves": 19626,
           "borrowings": 7460,
-          "otherLiabilities": 13452,
-          "totalLiabilities": 40704,
-          "fixedAssets": 18233,
-          "cwip": 1790,
+          "otherLiabilities": 13189,
+          "totalLiabilities": 40441,
+          "fixedAssets": 18217,
+          "cwip": 1806,
           "investments": 1547,
-          "otherAssets": 19133,
-          "totalAssets": 40704
+          "otherAssets": 18871,
+          "totalAssets": 40441
         }
       ]
     },
@@ -460,53 +460,16 @@
           "workingCapitalChange": null,
           "taxPaid": null,
           "cashFromOperating": 3395,
-          "cashFromInvesting": -3506,
+          "cashFromInvesting": -3500,
           "cashFromFinancing": -112,
-          "netCashFlow": -223
+          "netCashFlow": -217
         }
       ]
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
-  },
-  "peers": [
-    {
-      "symbol": "JSWSTEEL",
-      "name": "JSW Steel",
-      "marketCapCrore": 315302.57
-    },
-    {
-      "symbol": "TATASTEEL",
-      "name": "Tata Steel",
-      "marketCapCrore": 235237.34
-    },
-    {
-      "symbol": "JINDALSTEL",
-      "name": "Jindal Steel",
-      "marketCapCrore": 111808.97
-    },
-    {
-      "symbol": "SAIL",
-      "name": "S A I L",
-      "marketCapCrore": 71230.91
-    },
-    {
-      "symbol": "JSL",
-      "name": "Jindal Stain.",
-      "marketCapCrore": 59729.76
-    },
-    {
-      "symbol": "SARDAEN",
-      "name": "Sarda Energy",
-      "marketCapCrore": 17458.87
-    },
-    {
-      "symbol": "VISL",
-      "name": "Vedanta Iron & Steel",
-      "marketCapCrore": 15168.01
-    }
-  ]
+  }
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/MARUTI/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:05.902Z",
+    "fetchedAt": "2026-08-18T08:43:57.965Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -248,10 +248,10 @@
             "endDate": "2026-03-31"
           },
           "sales": 183316,
-          "expenses": 161860,
-          "operatingProfit": 21456,
-          "opmPercent": 11.7,
-          "otherIncome": 4643,
+          "expenses": 161786,
+          "operatingProfit": 21530,
+          "opmPercent": 11.74,
+          "otherIncome": 4569,
           "interest": 239,
           "depreciation": 6742,
           "profitBeforeTax": 19118,
@@ -340,13 +340,13 @@
           "equityCapital": 157,
           "reserves": 96083,
           "borrowings": 87,
-          "otherLiabilities": 35644,
-          "totalLiabilities": 131971,
+          "otherLiabilities": 34689,
+          "totalLiabilities": 131016,
           "fixedAssets": 32983,
           "cwip": 7929,
           "investments": 66265,
-          "otherAssets": 24794,
-          "totalAssets": 131971
+          "otherAssets": 23839,
+          "totalAssets": 131016
         },
         {
           "period": {
@@ -362,12 +362,12 @@
           "reserves": 106999,
           "borrowings": 102,
           "otherLiabilities": 41622,
-          "totalLiabilities": 148881,
-          "fixedAssets": 34955,
-          "cwip": 9406,
+          "totalLiabilities": 148880,
+          "fixedAssets": 34523,
+          "cwip": 9838,
           "investments": 76838,
-          "otherAssets": 27681,
-          "totalAssets": 148881
+          "otherAssets": 27680,
+          "totalAssets": 148880
         }
       ]
     },
@@ -441,8 +441,8 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 16136,
-          "cashFromInvesting": -14456,
+          "cashFromOperating": 16180,
+          "cashFromInvesting": -14500,
           "cashFromFinancing": -4155,
           "netCashFlow": -2475
         },
@@ -468,45 +468,45 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "MARUTI",
       "name": "Maruti Suzuki",
-      "marketCapCrore": 443213.31
+      "marketCapCrore": 433152.44
     },
     {
       "symbol": "M&M",
       "name": "M & M",
-      "marketCapCrore": 437349.09
+      "marketCapCrore": 426779.1
     },
     {
       "symbol": "HYUNDAI",
       "name": "Hyundai Motor I",
-      "marketCapCrore": 180627.89
+      "marketCapCrore": 179165.29
     },
     {
       "symbol": "TMPV",
       "name": "Tata Motors PVeh",
-      "marketCapCrore": 127833.17
+      "marketCapCrore": 119104.78
     },
     {
       "symbol": "FORCEMOT",
       "name": "Force Motors",
-      "marketCapCrore": 24112.56
+      "marketCapCrore": 23996.78
     },
     {
       "symbol": "OLECTRA",
       "name": "Olectra Greentec",
-      "marketCapCrore": 11231.11
+      "marketCapCrore": 10933.97
     },
     {
       "symbol": "MERCURYEV",
       "name": "Mercury EV-Tech",
-      "marketCapCrore": 657.31
+      "marketCapCrore": 669.84
     }
   ]
 }

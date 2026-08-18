@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/JIOFIN/consolidated/",
-    "fetchedAt": "2026-08-16T19:53:29.021Z",
+    "fetchedAt": "2026-08-18T08:42:27.864Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,72 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "investing",
+          "name": "Investing",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 338,
+              "sharePercent": 51.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 321,
+              "sharePercent": 29.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 982,
+              "sharePercent": 48.2
+            }
+          ]
+        },
+        {
+          "id": "lending",
+          "name": "Lending",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 251,
+              "sharePercent": 38.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 537,
+              "sharePercent": 49.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 698,
+              "sharePercent": 34.2
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 65,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 232,
+              "sharePercent": 21.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 358,
+              "sharePercent": 17.6
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -406,46 +469,79 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "investing",
+          "name": "Investing",
+          "values": [
+            {
+              "periodId": "FY26",
+              "revenue": 1524,
+              "sharePercent": 41.4
+            }
+          ]
+        },
+        {
+          "id": "lending",
+          "name": "Lending",
+          "values": [
+            {
+              "periodId": "FY26",
+              "revenue": 1496,
+              "sharePercent": 40.7
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY26",
+              "revenue": 657,
+              "sharePercent": 17.9
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "JIOFIN",
       "name": "Jio Financial",
-      "marketCapCrore": 164451.24
+      "marketCapCrore": 162602.32
     },
     {
       "symbol": "ABCAPITAL",
       "name": "Aditya Birla Cap",
-      "marketCapCrore": 109732.24
+      "marketCapCrore": 109704.83
     },
     {
       "symbol": "TATAINVEST",
       "name": "Tata Inv.Corpn.",
-      "marketCapCrore": 33762.24
+      "marketCapCrore": 32922.34
     },
     {
       "symbol": "CHOLAHLDNG",
       "name": "Chola Financial",
-      "marketCapCrore": 29991.82
+      "marketCapCrore": 29405.95
     },
     {
       "symbol": "TVSHLTD",
       "name": "TVS Holdings",
-      "marketCapCrore": 28312.81
+      "marketCapCrore": 28426.1
     },
     {
       "symbol": "MAHSCOOTER",
       "name": "Mah. Scooters",
-      "marketCapCrore": 15234.28
+      "marketCapCrore": 15165.74
     },
     {
       "symbol": "JSWHL",
       "name": "JSW Holdings",
-      "marketCapCrore": 13180.14
+      "marketCapCrore": 12809.38
     }
   ]
 }

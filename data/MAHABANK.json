@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/MAHABANK/consolidated/",
-    "fetchedAt": "2026-08-14T21:29:34.031Z",
+    "fetchedAt": "2026-08-18T08:43:51.009Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,273 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "retail-banking",
+          "name": "Retail Banking",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2282,
+              "sharePercent": 39.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2711,
+              "sharePercent": 46.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2657,
+              "sharePercent": 40.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2676,
+              "sharePercent": 39.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 3120,
+              "sharePercent": 45.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3284,
+              "sharePercent": 46.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 3392,
+              "sharePercent": 43.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 3393,
+              "sharePercent": 43.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 3471,
+              "sharePercent": 43.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 3783,
+              "sharePercent": 45.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3906,
+              "sharePercent": 44.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3950,
+              "sharePercent": 43.6
+            }
+          ]
+        },
+        {
+          "id": "corporate-wholesale-banking",
+          "name": "Corporate/Wholesale Banking",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2142,
+              "sharePercent": 37.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1874,
+              "sharePercent": 32
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2387,
+              "sharePercent": 36.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2591,
+              "sharePercent": 38.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2236,
+              "sharePercent": 32.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2318,
+              "sharePercent": 32.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2658,
+              "sharePercent": 34.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2605,
+              "sharePercent": 33.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2658,
+              "sharePercent": 33.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2877,
+              "sharePercent": 34.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2946,
+              "sharePercent": 33.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3009,
+              "sharePercent": 33.2
+            }
+          ]
+        },
+        {
+          "id": "treasury",
+          "name": "Treasury",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1259,
+              "sharePercent": 21.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1209,
+              "sharePercent": 20.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1365,
+              "sharePercent": 21
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1443,
+              "sharePercent": 21.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1407,
+              "sharePercent": 20.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1486,
+              "sharePercent": 20.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1542,
+              "sharePercent": 20
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1833,
+              "sharePercent": 23.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1809,
+              "sharePercent": 22.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1558,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1779,
+              "sharePercent": 20.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2037,
+              "sharePercent": 22.5
+            }
+          ]
+        },
+        {
+          "id": "other-banking-operations",
+          "name": "Other Banking Operations",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 53,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 60,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 80,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 58,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 52,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 30,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 128,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": -40,
+              "sharePercent": -0.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 71,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 79,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 92,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 70,
+              "sharePercent": 0.8
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,51 +731,327 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "retail-banking",
+          "name": "Retail Banking",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 3825,
+              "sharePercent": 29.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 5170,
+              "sharePercent": 35.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 5438,
+              "sharePercent": 34.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 7530,
+              "sharePercent": 41.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 9825,
+              "sharePercent": 41.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 12472,
+              "sharePercent": 43.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 14553,
+              "sharePercent": 44.3
+            }
+          ]
+        },
+        {
+          "id": "corporate-wholesale-banking",
+          "name": "Corporate/Wholesale Banking",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 6556,
+              "sharePercent": 47.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 6677,
+              "sharePercent": 47.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 5148,
+              "sharePercent": 37.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 3664,
+              "sharePercent": 29
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3764,
+              "sharePercent": 30.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3703,
+              "sharePercent": 28.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3744,
+              "sharePercent": 25.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 4537,
+              "sharePercent": 28.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 6065,
+              "sharePercent": 33.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 8432,
+              "sharePercent": 35.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 9803,
+              "sharePercent": 34.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 11086,
+              "sharePercent": 33.8
+            }
+          ]
+        },
+        {
+          "id": "treasury",
+          "name": "Treasury",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 4984,
+              "sharePercent": 37.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 5223,
+              "sharePercent": 36
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 5094,
+              "sharePercent": 32.5
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4322,
+              "sharePercent": 23.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 5003,
+              "sharePercent": 21.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5878,
+              "sharePercent": 20.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 6979,
+              "sharePercent": 21.3
+            }
+          ]
+        },
+        {
+          "id": "other-banking-operations",
+          "name": "Other Banking Operations",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 323,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 408,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 368,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 537,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 428,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 643,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 380,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 604,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 264,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 234,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 270,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 202,
+              "sharePercent": 0.6
+            }
+          ]
+        },
+        {
+          "id": "retail-banking-operation",
+          "name": "Retail banking operation",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 3864,
+              "sharePercent": 28.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 3899,
+              "sharePercent": 27.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 3992,
+              "sharePercent": 29.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 4229,
+              "sharePercent": 33.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3753,
+              "sharePercent": 30.2
+            }
+          ]
+        },
+        {
+          "id": "treasury-operation",
+          "name": "Treasury Operation",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2942,
+              "sharePercent": 21.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 3107,
+              "sharePercent": 22
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 4079,
+              "sharePercent": 30
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 4205,
+              "sharePercent": 33.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 4473,
+              "sharePercent": 36
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "SBIN",
       "name": "SBI",
-      "marketCapCrore": 985553.04
+      "marketCapCrore": 974245.62
     },
     {
       "symbol": "UNIONBANK",
       "name": "Union Bank (I)",
-      "marketCapCrore": 143038.5
+      "marketCapCrore": 142290.41
     },
     {
       "symbol": "PNB",
       "name": "Punjab Natl.Bank",
-      "marketCapCrore": 135616.73
+      "marketCapCrore": 134582.44
     },
     {
       "symbol": "BANKBARODA",
       "name": "Bank of Baroda",
-      "marketCapCrore": 128363.55
+      "marketCapCrore": 126672.54
     },
     {
       "symbol": "INDIANB",
       "name": "Indian Bank",
-      "marketCapCrore": 120546.54
+      "marketCapCrore": 118667.56
     },
     {
       "symbol": "CANBK",
       "name": "Canara Bank",
-      "marketCapCrore": 119052.3
+      "marketCapCrore": 117374.24
     },
     {
       "symbol": "BANKINDIA",
       "name": "Bank of India",
-      "marketCapCrore": 65603.94
+      "marketCapCrore": 64989.32
     },
     {
       "symbol": "MAHABANK",
       "name": "Bank of Maha",
-      "marketCapCrore": 61624.74
+      "marketCapCrore": 62186.25
     }
   ]
 }

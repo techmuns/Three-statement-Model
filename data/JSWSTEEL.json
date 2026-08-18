@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/JSWSTEEL/consolidated/",
-    "fetchedAt": "2026-08-16T19:17:10.896Z",
+    "fetchedAt": "2026-08-18T08:43:04.497Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,109 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY14",
+              "revenue": 764,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY15",
+              "revenue": 901,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 277,
+              "sharePercent": 0.6
+            }
+          ]
+        },
+        {
+          "id": "power-business",
+          "name": "Power Business",
+          "values": [
+            {
+              "periodId": "FY14",
+              "revenue": 4078,
+              "sharePercent": 7.2
+            },
+            {
+              "periodId": "FY15",
+              "revenue": 4066,
+              "sharePercent": 7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 4452,
+              "sharePercent": 9.3
+            }
+          ]
+        },
+        {
+          "id": "steel-business",
+          "name": "Steel Business",
+          "values": [
+            {
+              "periodId": "FY14",
+              "revenue": 51532,
+              "sharePercent": 91.4
+            },
+            {
+              "periodId": "FY15",
+              "revenue": 53206,
+              "sharePercent": 91.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 42972,
+              "sharePercent": 90.1
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "JSWSTEEL",
       "name": "JSW Steel",
-      "marketCapCrore": 310572.65
+      "marketCapCrore": 311281.84
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Steel",
-      "marketCapCrore": 229072.72
+      "marketCapCrore": 230321.16
     },
     {
       "symbol": "JINDALSTEL",
       "name": "Jindal Steel",
-      "marketCapCrore": 111342.62
+      "marketCapCrore": 113020.62
     },
     {
       "symbol": "SAIL",
       "name": "S A I L",
-      "marketCapCrore": 70016.53
+      "marketCapCrore": 70797.14
     },
     {
       "symbol": "JSL",
       "name": "Jindal Stain.",
-      "marketCapCrore": 60829.8
+      "marketCapCrore": 60908.15
     },
     {
       "symbol": "SARDAEN",
       "name": "Sarda Energy",
-      "marketCapCrore": 18716.73
+      "marketCapCrore": 18265.67
     },
     {
       "symbol": "VISL",
       "name": "Vedanta Iron & Steel",
-      "marketCapCrore": 14417.6
+      "marketCapCrore": 14605.31
     }
   ]
 }

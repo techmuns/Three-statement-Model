@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/MAXHEALTH/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:09.468Z",
+    "fetchedAt": "2026-08-18T08:44:05.107Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 1910,
-          "expenses": 1398,
-          "operatingProfit": 512,
-          "opmPercent": 26.81,
-          "otherIncome": 47,
-          "interest": 55,
-          "depreciation": 101,
-          "profitBeforeTax": 402,
-          "taxPercent": 20.65,
-          "netProfit": 319,
-          "eps": 3.28
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 26.45,
           "netProfit": 342,
           "eps": 3.52
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 2366,
+          "expenses": 1768,
+          "operatingProfit": 598,
+          "opmPercent": 25.27,
+          "otherIncome": 41,
+          "interest": 71,
+          "depreciation": 132,
+          "profitBeforeTax": 436,
+          "taxPercent": 25.92,
+          "netProfit": 323,
+          "eps": 3.32
         }
       ]
     },
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
-  },
-  "peers": [
-    {
-      "symbol": "APOLLOHOSP",
-      "name": "Apollo Hospitals",
-      "marketCapCrore": 128140.89
-    },
-    {
-      "symbol": "MAXHEALTH",
-      "name": "Max Healthcare",
-      "marketCapCrore": 104039.76
-    },
-    {
-      "symbol": "MANIPALHOS",
-      "name": "Manipal Health",
-      "marketCapCrore": 90280.91
-    },
-    {
-      "symbol": "ASTERDM",
-      "name": "Aster DM Quality",
-      "marketCapCrore": 75587.08
-    },
-    {
-      "symbol": "FORTIS",
-      "name": "Fortis Health.",
-      "marketCapCrore": 71354.87
-    },
-    {
-      "symbol": "MEDANTA",
-      "name": "Global Health",
-      "marketCapCrore": 39690.85
-    },
-    {
-      "symbol": "NH",
-      "name": "Narayana Hrudaya",
-      "marketCapCrore": 37492.03
-    }
-  ]
+  }
 }
