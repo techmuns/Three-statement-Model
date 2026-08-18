@@ -47,6 +47,18 @@ function isContraSegment(name: string): boolean {
   return /less\s*:|inter[-\s]?segment|elimination|adjustment/i.test(name)
 }
 
+/** Some Screener segment cells render the label twice (a responsive duplicate),
+ * so `textContent` yields it doubled ("Switch GearSwitch Gear"). Collapse an
+ * exact self-repeat back to one copy. */
+function cleanSegmentName(raw: string): string {
+  const s = raw.replace(/\s+/g, ' ').trim()
+  if (s.length % 2 === 0) {
+    const half = s.length / 2
+    if (s.slice(0, half) === s.slice(half)) return s.slice(0, half).trim()
+  }
+  return s
+}
+
 /**
  * Fetch + parse one section's product-segment table inside the page. Runs in the
  * browser so it reuses the logged-in session and DOM parsing (entities decoded).
@@ -165,7 +177,7 @@ export function buildSegmentMix(raw: RawSegmentTable, cadence: PeriodCadence): {
   const periodIds = raw.periods.map((h) => parsePeriodHeader(h, cadence)?.id ?? null)
 
   const parsed = raw.segments
-    .map((s) => ({ name: s.name, values: s.cells.map((c) => parseCell(c)) }))
+    .map((s) => ({ name: cleanSegmentName(s.name), values: s.cells.map((c) => parseCell(c)) }))
     .filter((s) => s.name)
 
   const operating = parsed.filter((s) => !isContraSegment(s.name))

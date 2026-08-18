@@ -48,19 +48,20 @@ export const T = {
 } as const
 
 /**
- * Chart series for company data — a monochromatic purple family (dark → light),
- * assigned largest-share-first so a stacked segment bar reads like the
- * reference. Green/amber/red are never series colours; they carry meaning.
+ * Categorical palette for the revenue-mix-by-segment chart. Distinct hues (led
+ * by the brand purple) so adjacent segments are easy to tell apart — a
+ * deliberate exception to the purple-only chart rule, since a segment split
+ * needs separable colours, not a single-hue ramp. Assigned largest-share-first.
  */
 export const SEGMENT_PALETTE: readonly string[] = [
-  '#4323C7',
-  '#5B35F5',
-  '#7551F6',
-  '#8B6FF7',
-  '#A189F9',
-  '#B7A6FA',
-  '#CBBEFB',
-  '#D8D0FC',
+  '#5B35F5', // brand purple
+  '#0D9488', // teal
+  '#F59E0B', // amber
+  '#2563EB', // blue
+  '#DB2777', // magenta
+  '#16A34A', // green
+  '#EA580C', // orange
+  '#0891B2', // cyan
 ]
 
 /** One transition, used everywhere. */

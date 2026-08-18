@@ -17,12 +17,24 @@ interface Slice {
   color: string
 }
 
+/** Some Screener segment cells carry the label twice (a responsive duplicate),
+ * so a scraped name can arrive doubled ("Switch GearSwitch Gear"). Collapse an
+ * exact self-repeat back to a single copy. */
+function cleanName(raw: string): string {
+  const s = raw.trim()
+  if (s.length % 2 === 0) {
+    const half = s.length / 2
+    if (s.slice(0, half) === s.slice(half)) return s.slice(0, half).trim()
+  }
+  return s
+}
+
 export function SegmentMix({ segments, periodId }: { segments: readonly RevenueSegment[]; periodId: string }) {
   const slices: Slice[] = segments
     .map((seg, i) => {
       const point = seg.values.find((v) => v.periodId === periodId)
       return point
-        ? { name: seg.name, revenue: point.revenue, share: point.sharePercent, color: PALETTE[i % PALETTE.length] }
+        ? { name: cleanName(seg.name), revenue: point.revenue, share: point.sharePercent, color: PALETTE[i % PALETTE.length] }
         : null
     })
     .filter((s): s is Slice => s !== null && s.share >= 0.05)
