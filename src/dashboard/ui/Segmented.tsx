@@ -50,6 +50,7 @@ export function Segmented<Id extends string>({
           transition: TRANSITION,
           color: active ? T.primaryText : T.inkMuted,
           background: active ? T.primaryLight : 'transparent',
+          border: `1px solid ${active ? T.primaryBorder : 'transparent'}`,
         }
         return (
           <label key={option.id} style={style}>

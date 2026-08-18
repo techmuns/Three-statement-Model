@@ -12,7 +12,7 @@ export async function exportDashboardPdf(fileStem: string): Promise<void> {
   // Loaded on demand so jsPDF stays out of the dashboard's initial bundle.
   const [{ toJpeg }, { jsPDF }] = await Promise.all([import('html-to-image'), import('jspdf')])
   // JPEG (not PNG) keeps a multi-page dashboard export to a sensible file size.
-  const dataUrl = await toJpeg(captureRoot(), { pixelRatio: 2, quality: 0.9, backgroundColor: '#ffffff' })
+  const dataUrl = await toJpeg(captureRoot(), { pixelRatio: 2, quality: 0.9, backgroundColor: '#F7F8FC' })
 
   const img = new Image()
   await new Promise<void>((resolve, reject) => {

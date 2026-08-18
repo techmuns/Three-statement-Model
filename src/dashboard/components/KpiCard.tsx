@@ -62,10 +62,12 @@ export function KpiCard({ kpi }: { kpi: DerivedKpi }) {
   return (
     <div
       style={{
-        background: '#fff',
+        background: T.cardBg,
         border: `1px solid ${T.borderDefault}`,
+        borderTop: `2px solid ${T.primary}`,
         borderRadius: 12,
         padding: 14,
+        boxShadow: T.cardShadow,
         display: 'flex',
         flexDirection: 'column',
         gap: 8,

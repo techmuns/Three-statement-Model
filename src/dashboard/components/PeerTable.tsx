@@ -21,9 +21,9 @@ function fmt(value: Reported<number>, def: KpiDefinition): string {
 }
 
 const ORIGIN_CHIP: Record<PeerRow['origin'], { label: string; bg: string; color: string }> = {
-  derived: { label: 'peer', bg: '#f0fdf4', color: '#16a34a' },
-  carried: { label: 'carried', bg: '#f3f4f6', color: '#6b7280' },
-  absent: { label: 'not analyzed', bg: '#fffbeb', color: '#d97706' },
+  derived: { label: 'peer', bg: T.goodBg, color: T.good },
+  carried: { label: 'carried', bg: T.cardBodyBg, color: T.inkMuted },
+  absent: { label: 'not analyzed', bg: T.warnBg, color: T.warn },
 }
 
 export function PeerTable({
@@ -89,7 +89,7 @@ export function PeerTable({
             fontVariantNumeric: 'tabular-nums',
             borderBottom: `1px solid ${T.borderDefault}`,
             color: row.origin === 'absent' ? T.inkHint : T.inkSecondary,
-            background: row.isSubject ? 'rgba(238,242,255,0.4)' : undefined,
+            background: row.isSubject ? T.selectedRow : undefined,
           }
           const chip = row.isSubject
             ? { label: 'This co.', bg: T.primaryLight, color: T.primaryText }
@@ -107,7 +107,9 @@ export function PeerTable({
                   left: 0,
                   color: T.ink,
                   fontWeight: row.isSubject ? 700 : 500,
-                  background: row.isSubject ? '#eef2ff' : T.cardBodyBg,
+                  background: row.isSubject ? T.selectedRow : T.cardBodyBg,
+                  borderLeft: row.isSubject ? `3px solid ${T.primary}` : undefined,
+                  paddingLeft: row.isSubject ? 9 : 12,
                 }}
               >
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 3, minWidth: 0 }}>
@@ -132,7 +134,7 @@ export function PeerTable({
                   {isAnalyzing ? (
                     <span
                       role="status"
-                      style={{ fontSize: 10, fontWeight: 700, color: '#d97706', letterSpacing: '0.02em' }}
+                      style={{ fontSize: 10, fontWeight: 700, color: T.warn, letterSpacing: '0.02em' }}
                     >
                       <span className="dash-spin" style={{ display: 'inline-block' }}>
                         ⟳

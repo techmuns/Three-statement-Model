@@ -1,5 +1,7 @@
-/* Self-contained base for the Munshot embedded dashboard. No Tailwind, no
-   custom fonts — the host embeds this as an iframe and it must stand alone. */
+/* Self-contained base for the standalone earnings dashboard. No Tailwind.
+   Inter is loaded for the crisp navy typography; everything falls back to the
+   system sans if the webfont is unavailable. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -26,7 +28,7 @@ body {
 }
 
 .dash-shimmer {
-  background-image: linear-gradient(90deg, #e5e7eb 0%, #f3f4f6 50%, #e5e7eb 100%);
+  background-image: linear-gradient(90deg, #ecebf6 0%, #f5f3ff 50%, #ecebf6 100%);
   background-size: 200% 100%;
   animation: dash-shimmer 1.5s infinite;
   border-radius: 6px;
@@ -43,8 +45,8 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 3px solid #e5e7eb;
-  border-top-color: #4f46e5;
+  border: 3px solid #e3e6ef;
+  border-top-color: #5b35f5;
   animation: dash-spin 0.9s linear infinite;
 }
 
@@ -55,7 +57,7 @@ body {
 
 /* One focus treatment for every interactive element. */
 :focus-visible {
-  outline: 2px solid #4f46e5;
+  outline: 2px solid #5b35f5;
   outline-offset: 2px;
   border-radius: 4px;
 }

@@ -65,7 +65,7 @@ export function AnalyzePrompt({
           borderRadius: 10,
           padding: '10px 22px',
           cursor: 'pointer',
-          boxShadow: '0 6px 16px rgba(79,70,229,0.25)',
+          boxShadow: '0 2px 6px rgba(67,35,199,0.18)',
         }}
       >
         Analyze {ticker}

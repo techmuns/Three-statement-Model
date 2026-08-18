@@ -90,9 +90,9 @@ export function StatementTable<P extends { period: PeriodRef }>({
             whiteSpace: 'nowrap',
             fontVariantNumeric: 'tabular-nums',
             borderBottom: `1px solid ${T.borderDefault}`,
-            color: row.sub ? T.inkMuted : T.inkSecondary,
+            color: row.emphasis ? T.ink : row.sub ? T.inkMuted : T.inkSecondary,
             fontWeight: row.emphasis ? 700 : 400,
-            background: row.emphasis ? 'rgba(238,242,255,0.35)' : undefined,
+            background: row.emphasis ? T.selectedRow : undefined,
           }
           return (
             <tr key={row.label}>
@@ -106,7 +106,7 @@ export function StatementTable<P extends { period: PeriodRef }>({
                   paddingLeft: row.sub ? 26 : 14,
                   color: row.sub ? T.inkMuted : T.ink,
                   fontWeight: row.emphasis ? 700 : row.sub ? 400 : 500,
-                  background: row.emphasis ? '#eef2ff' : T.cardBodyBg,
+                  background: row.emphasis ? T.selectedRow : T.cardBodyBg,
                   fontSize: row.sub ? 12 : 13,
                 }}
               >

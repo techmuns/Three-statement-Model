@@ -24,14 +24,15 @@ export function WidgetCard({ title, subtitle, right, wide, padded, children }: W
   const card: CSSProperties = {
     background: T.cardBg,
     border: `1px solid ${hover ? T.borderHover : T.borderDefault}`,
+    // Thin purple top accent — the controlled identity colour on a major card.
+    borderTop: `3px solid ${T.primary}`,
     borderRadius: 16,
     overflow: 'hidden',
     display: 'flex',
     flexDirection: 'column',
-    backdropFilter: 'blur(8px)',
     // Calm, static cards — no lift/translate on hover (that read as the widgets
     // "dancing" as the cursor moved across them). Just a gentle border on hover.
-    boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
+    boxShadow: T.cardShadow,
     transition: 'border-color 120ms ease',
     gridColumn: wide ? 'span 2' : undefined,
     minWidth: 0,
@@ -92,9 +93,9 @@ export function CategoryBadge({ label }: { label: string }) {
         letterSpacing: '0.05em',
         padding: '2px 8px',
         borderRadius: 6,
-        border: '1px solid #fde68a',
-        background: '#fffbeb',
-        color: '#d97706',
+        border: `1px solid ${T.primaryBorder}`,
+        background: T.primaryLight,
+        color: T.primaryText,
         whiteSpace: 'nowrap',
       }}
     >

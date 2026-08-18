@@ -15,7 +15,7 @@ export function captureRoot(): HTMLElement {
 }
 
 async function captureBlob(): Promise<Blob> {
-  const blob = await toBlob(captureRoot(), { pixelRatio: 2, backgroundColor: '#ffffff' })
+  const blob = await toBlob(captureRoot(), { pixelRatio: 2, backgroundColor: '#F7F8FC' })
   if (!blob) throw new Error('Visual snapshot capture returned an empty Blob')
   return blob
 }

@@ -32,7 +32,7 @@ const runAllBtn: CSSProperties = {
   padding: '5px 13px',
   cursor: 'pointer',
   whiteSpace: 'nowrap',
-  boxShadow: '0 4px 10px rgba(79,70,229,0.22)',
+  boxShadow: '0 2px 6px rgba(67,35,199,0.18)',
 }
 
 function pill(bg: string, color: string): CSSProperties {
@@ -73,7 +73,7 @@ export function KpisTab({
 
   const peerAction =
     !canAnalyze || !hasPeers ? undefined : analyzingCount > 0 ? (
-      <span style={pill('#fffbeb', '#d97706')}>
+      <span style={pill(T.warnBg, T.warn)}>
         <span className="dash-spin" style={{ display: 'inline-block' }}>
           ⟳
         </span>
@@ -84,7 +84,7 @@ export function KpisTab({
         Run all peers ({runnableCount})
       </button>
     ) : (
-      <span style={pill('#f0fdf4', '#16a34a')}>All peers analyzed ✓</span>
+      <span style={pill(T.goodBg, T.good)}>All peers analyzed ✓</span>
     )
 
   return (
@@ -115,8 +115,8 @@ export function KpisTab({
                 style={{
                   padding: '8px 16px',
                   fontSize: 12,
-                  color: '#b45309',
-                  background: '#fffbeb',
+                  color: T.warn,
+                  background: T.warnBg,
                   borderBottom: `1px solid ${T.borderDefault}`,
                 }}
               >

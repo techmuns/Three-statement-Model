@@ -8,9 +8,7 @@
 
 import type { RevenueSegment } from '@/types/financials'
 import { formatCrore, formatPercent } from '@/lib/format'
-import { T } from '../ui/tokens'
-
-const PALETTE = ['#4f46e5', '#0d9488', '#d97706', '#7c3aed', '#2563eb', '#db2777', '#65a30d', '#0891b2']
+import { SEGMENT_PALETTE as PALETTE, T } from '../ui/tokens'
 
 interface Slice {
   name: string

@@ -68,7 +68,7 @@ export function EmptyState({ message: msg, hint }: { message: string; hint?: str
 export function UnavailableState({ note, hint }: { note: string; hint?: string }) {
   return (
     <div style={centre}>
-      <Marker glyph="–" bg="#f3f4f6" color={T.inkMuted} />
+      <Marker glyph="–" bg={T.primaryLight} color={T.primary} />
       <div style={message}>{note}</div>
       {hint && <div style={hintStyle}>{hint}</div>}
     </div>

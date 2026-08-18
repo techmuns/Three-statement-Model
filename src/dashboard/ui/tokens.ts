@@ -1,48 +1,70 @@
 /**
- * Munshot embedded-dashboard design tokens.
+ * Dhamma Capital earnings-dashboard design tokens.
  *
- * These mirror the mandatory UI chrome from the Munshot dashboard builder guide
- * (indigo primary + grayscale). They live as plain constants because Munshot
- * dashboards are styled with inline styles, not Tailwind — the host embeds the
- * built dashboard as an iframe and must not depend on our class layer.
+ * A restrained purple identity on a cool grey-lavender page with crisp navy
+ * type — purple is the selection/identity colour, not a wash. These live as
+ * plain constants because the dashboard is styled with inline styles (it ships
+ * as a standalone SPA), so every colour flows from here.
  */
 
 export const T = {
-  // Chrome
-  primary: '#4f46e5',
-  primaryLight: '#eef2ff',
-  primaryBorder: '#e0e7ff',
-  primaryText: '#4338ca',
-  primaryDot: '#6366f1',
+  // Purple identity — controlled selection/accent colour, never a full wash.
+  primary: '#5B35F5',
+  primaryDark: '#4323C7',
+  primaryLight: '#F0EDFF',
+  primaryBorder: '#D9D2FF',
+  primaryText: '#4B2BE3',
+  primaryDot: '#5B35F5',
+  /** Soft lavender fill for a selected row / active column. */
+  selectedRow: '#F2F0FF',
 
   // Surfaces
-  pageBg: 'linear-gradient(to bottom, rgba(249,250,251,0.8), #ffffff)',
-  cardBg: 'rgba(255,255,255,0.9)',
-  cardHeaderBg: 'rgba(255,255,255,0.95)',
-  cardBodyBg: 'rgba(249,250,251,0.5)',
-  headerBar: 'rgba(255,255,255,0.95)',
-  borderDefault: 'rgba(229,231,235,0.8)',
-  borderHover: 'rgba(79,70,229,0.2)',
-  hairline: '#e5e7eb',
+  pageBg: '#F7F8FC',
+  cardBg: '#FFFFFF',
+  cardHeaderBg: '#FFFFFF',
+  cardBodyBg: '#FAFAFE',
+  headerBar: '#FFFFFF',
+  borderDefault: '#E3E6EF',
+  borderHover: '#D9D2FF',
+  hairline: '#E3E6EF',
+  /** The one card shadow — extremely subtle. */
+  cardShadow: '0 2px 8px rgba(31, 38, 62, 0.05)',
 
   // Text
-  ink: '#111827',
-  inkSecondary: '#374151',
-  inkMuted: '#6b7280',
-  inkHint: '#9ca3af',
+  ink: '#171B2B',
+  inkSecondary: '#344054',
+  inkMuted: '#667085',
+  inkHint: '#98A2B3',
 
-  // Status
-  errorText: '#ef4444',
-  errorBg: '#fef2f2',
-  good: '#059669',
-  goodBg: '#ecfdf5',
-  bad: '#dc2626',
-  badBg: '#fef2f2',
-  warn: '#d97706',
-  warnBg: '#fffbeb',
+  // Status — each pairs with its own soft background. Semantic only.
+  errorText: '#D92D20',
+  errorBg: '#FFF0EF',
+  good: '#159455',
+  goodBg: '#ECF8F1',
+  bad: '#D92D20',
+  badBg: '#FFF0EF',
+  warn: '#D98A12',
+  warnBg: '#FFF7E6',
 } as const
 
-/** One transition, used everywhere per the guide. */
+/**
+ * Chart series for company data — a monochromatic purple family (dark → light),
+ * assigned largest-share-first so a stacked segment bar reads like the
+ * reference. Green/amber/red are never series colours; they carry meaning.
+ */
+export const SEGMENT_PALETTE: readonly string[] = [
+  '#4323C7',
+  '#5B35F5',
+  '#7551F6',
+  '#8B6FF7',
+  '#A189F9',
+  '#B7A6FA',
+  '#CBBEFB',
+  '#D8D0FC',
+]
+
+/** One transition, used everywhere. */
 export const TRANSITION = 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)'
 
-export const FONT_STACK = 'system-ui, -apple-system, sans-serif'
+export const FONT_STACK =
+  "'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
