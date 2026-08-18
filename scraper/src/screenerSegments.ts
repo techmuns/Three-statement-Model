@@ -61,13 +61,21 @@ function fetchSegmentSection(
     async ({ companyId, section, consolidated, segtype }) => {
       const qs = consolidated ? '?consolidated=true' : ''
       const url = `/api/segments/${companyId}/${section}/${segtype}/${qs}`
-      let res: Response
-      try {
-        res = await fetch(url, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
-      } catch {
-        return { ok: false, httpStatus: 0, paywalled: false, periods: [], segments: [] }
+      const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
+
+      // Screener rate-limits the segment API (HTTP 429) under rapid calls, so
+      // retry a 429/503 a few times with growing backoff before giving up.
+      let res: Response | null = null
+      for (let attempt = 0; attempt < 4; attempt++) {
+        try {
+          res = await fetch(url, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+        } catch {
+          return { ok: false, httpStatus: 0, paywalled: false, periods: [], segments: [] }
+        }
+        if (res.status !== 429 && res.status !== 503) break
+        await sleep(1500 * (attempt + 1)) // 1.5s, 3s, 4.5s
       }
-      if (!res.ok) return { ok: false, httpStatus: res.status, paywalled: false, periods: [], segments: [] }
+      if (!res || !res.ok) return { ok: false, httpStatus: res ? res.status : 0, paywalled: false, periods: [], segments: [] }
 
       const html = await res.text()
       const paywalled = /upgrade to premium/i.test(html)
@@ -233,6 +241,7 @@ export async function fetchScreenerSegments(
   }
 
   const annual = await forSection('profit-loss', 'annual')
+  await page.waitForTimeout(800) // space the two segment calls to stay under Screener's rate limit
   const quarterly = await forSection('quarters', 'quarterly')
   return { annual, quarterly, logLines }
 }

@@ -105,7 +105,17 @@ export function FinancialsTab({
   ]
 
   const plPeriods = periodsOf(set.profitLoss)
-  const latestPeriodId = plPeriods.length ? plPeriods[plPeriods.length - 1].period.id : null
+
+  // The segment mix aligns to the latest in-view period that actually carries a
+  // split. Screener's segment disclosure sometimes lags the P&L by a period, so
+  // pinning to the newest P&L column would blank the card; instead we show the
+  // most recent period for which a split exists.
+  const segmentPeriod =
+    set.segmentMix.status === 'available'
+      ? ([...plPeriods]
+          .reverse()
+          .find((p) => set.segmentMix.status === 'available' && set.segmentMix.segments.some((s) => s.values.some((v) => v.periodId === p.period.id))) ?? null)
+      : null
 
   return (
     <div style={{ display: 'grid', gap: 20, gridTemplateColumns: 'repeat(auto-fill, minmax(480px, 1fr))' }}>
@@ -116,23 +126,27 @@ export function FinancialsTab({
       <WidgetCard
         title="Revenue Mix by Segment"
         subtitle={
-          set.segmentMix.status === 'available'
-            ? 'Product segments · share of sales, latest period'
+          segmentPeriod
+            ? `Product segments · ${segmentPeriod.period.label}`
             : concall.data
               ? `From the earnings call · ${concall.data.quarter ?? 'latest'}`
               : 'Share of sales, latest period'
         }
       >
-        {set.segmentMix.status === 'available' && latestPeriodId ? (
-          <SegmentMix segments={set.segmentMix.segments} periodId={latestPeriodId} />
+        {set.segmentMix.status === 'available' && segmentPeriod ? (
+          <SegmentMix segments={set.segmentMix.segments} periodId={segmentPeriod.period.id} />
         ) : concall.data ? (
           <ConcallSegmentMix segments={concall.data.segments} quarter={concall.data.quarter} />
         ) : concall.loading ? (
           <LoadingState rows={4} />
         ) : (
           <UnavailableState
-            note={set.segmentMix.status === 'available' ? 'No segment split for this period.' : set.segmentMix.note ?? 'Segment mix not reported.'}
-            hint="Sourced from the company's earnings call when available (via the Concall Deep Dive)."
+            note={
+              set.segmentMix.status === 'available'
+                ? 'No segment split for the periods shown.'
+                : set.segmentMix.note ?? 'Segment mix not reported.'
+            }
+            hint="Companies that report product segments show them here; a single-segment business reports none."
           />
         )}
       </WidgetCard>
