@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABFRL/consolidated/",
-    "fetchedAt": "2026-08-16T19:14:59.369Z",
+    "fetchedAt": "2026-08-18T08:26:11.399Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,207 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "pantaloons",
+          "name": "Pantaloons",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1022,
+              "sharePercent": 31
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1334,
+              "sharePercent": 31.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 895,
+              "sharePercent": 25.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1101,
+              "sharePercent": 31.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1082,
+              "sharePercent": 28.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1305,
+              "sharePercent": 30
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 885,
+              "sharePercent": 51.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1094,
+              "sharePercent": 59.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1142,
+              "sharePercent": 56.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1276,
+              "sharePercent": 53.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1048,
+              "sharePercent": 52.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1204,
+              "sharePercent": 59.2
+            }
+          ]
+        },
+        {
+          "id": "ethnic-and-others",
+          "name": "Ethnic and Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1087,
+              "sharePercent": 25.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 712,
+              "sharePercent": 20.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 607,
+              "sharePercent": 17.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 755,
+              "sharePercent": 19.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 914,
+              "sharePercent": 21
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 847,
+              "sharePercent": 48.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 755,
+              "sharePercent": 40.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 870,
+              "sharePercent": 43.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1120,
+              "sharePercent": 46.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 950,
+              "sharePercent": 47.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 831,
+              "sharePercent": 40.8
+            }
+          ]
+        },
+        {
+          "id": "madura-fashion-lifestyle",
+          "name": "Madura Fashion & Lifestyle",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2276,
+              "sharePercent": 69
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1865,
+              "sharePercent": 43.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1862,
+              "sharePercent": 53.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1799,
+              "sharePercent": 51.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1975,
+              "sharePercent": 51.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2138,
+              "sharePercent": 49.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +665,164 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "pantaloons",
+          "name": "Pantaloons",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 3194,
+              "sharePercent": 38.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3514,
+              "sharePercent": 39.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1859,
+              "sharePercent": 34.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2626,
+              "sharePercent": 31.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4111,
+              "sharePercent": 32.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4328,
+              "sharePercent": 30.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4373,
+              "sharePercent": 58.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 4560,
+              "sharePercent": 55.2
+            }
+          ]
+        },
+        {
+          "id": "ethnic-and-others",
+          "name": "Ethnic and Others",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 1001,
+              "sharePercent": 7.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2190,
+              "sharePercent": 15.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3124,
+              "sharePercent": 41.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3695,
+              "sharePercent": 44.8
+            }
+          ]
+        },
+        {
+          "id": "madura-fashion-lifestyle",
+          "name": "Madura Fashion & Lifestyle",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 5032,
+              "sharePercent": 61.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 5480,
+              "sharePercent": 60.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3473,
+              "sharePercent": 65.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 5693,
+              "sharePercent": 68.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 7607,
+              "sharePercent": 59.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 7794,
+              "sharePercent": 54.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "TRENT",
       "name": "Trent",
-      "marketCapCrore": 158796.58
+      "marketCapCrore": 157268.96
     },
     {
       "symbol": "LENSKART",
       "name": "Lenskart Solut.",
-      "marketCapCrore": 106419.45
+      "marketCapCrore": 109541.51
     },
     {
       "symbol": "MANYAVAR",
       "name": "Vedant Fashions",
-      "marketCapCrore": 12847.47
+      "marketCapCrore": 12937.34
     },
     {
       "symbol": "ABLBL",
       "name": "A B Lifestyle",
-      "marketCapCrore": 10834.57
-    },
-    {
-      "symbol": "AVL",
-      "name": "Aditya Vision",
-      "marketCapCrore": 8066.61
+      "marketCapCrore": 10844.37
     },
     {
       "symbol": "V2RETAIL",
       "name": "V2 Retail",
-      "marketCapCrore": 7890.76
+      "marketCapCrore": 8023.87
+    },
+    {
+      "symbol": "AVL",
+      "name": "Aditya Vision",
+      "marketCapCrore": 7922.62
     },
     {
       "symbol": "ABFRL",
       "name": "Aditya Bir. Fas.",
-      "marketCapCrore": 6832.42
+      "marketCapCrore": 6699.38
     }
   ]
 }

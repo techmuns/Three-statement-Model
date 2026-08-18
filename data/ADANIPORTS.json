@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ADANIPORTS/consolidated/",
-    "fetchedAt": "2026-08-16T19:29:53.964Z",
+    "fetchedAt": "2026-08-18T08:27:52.971Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,141 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "port-and-sez-activities",
+          "name": "Port and sez activities",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 5873,
+              "sharePercent": 87.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 6358,
+              "sharePercent": 91.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 6284,
+              "sharePercent": 90.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 6939,
+              "sharePercent": 91.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 6421,
+              "sharePercent": 90.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 7413,
+              "sharePercent": 89.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 7278,
+              "sharePercent": 85.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 7653,
+              "sharePercent": 83.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 8054,
+              "sharePercent": 87.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 8331,
+              "sharePercent": 85.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 9494,
+              "sharePercent": 88
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 9511,
+              "sharePercent": 87.6
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 815,
+              "sharePercent": 12.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 623,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 665,
+              "sharePercent": 9.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 656,
+              "sharePercent": 8.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 679,
+              "sharePercent": 9.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 893,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1265,
+              "sharePercent": 14.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1516,
+              "sharePercent": 16.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1196,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1437,
+              "sharePercent": 14.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1290,
+              "sharePercent": 12
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1347,
+              "sharePercent": 12.4
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,41 +599,147 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "port-and-sez-activities",
+          "name": "Port and sez activities",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 19017,
+              "sharePercent": 90.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 24276,
+              "sharePercent": 90.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 28051,
+              "sharePercent": 88.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 33532,
+              "sharePercent": 86
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 807,
+              "sharePercent": 12.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 847,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 943,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1047,
+              "sharePercent": 9.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 816,
+              "sharePercent": 7.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1270,
+              "sharePercent": 10.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1214,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1892,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 2015,
+              "sharePercent": 9.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2641,
+              "sharePercent": 9.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3492,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5439,
+              "sharePercent": 14
+            }
+          ]
+        },
+        {
+          "id": "portsez",
+          "name": "Portsez",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 5664,
+              "sharePercent": 87.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 6608,
+              "sharePercent": 88.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 7781,
+              "sharePercent": 89.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 10493,
+              "sharePercent": 90.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 10256,
+              "sharePercent": 92.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 10741,
+              "sharePercent": 89.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 11505,
+              "sharePercent": 90.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 15399,
+              "sharePercent": 89.1
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "ADANIPORTS",
-      "name": "Adani Ports",
-      "marketCapCrore": 391673.05
-    },
-    {
-      "symbol": "JSWINFRA",
-      "name": "JSW Infrast",
-      "marketCapCrore": 79022
-    },
-    {
-      "symbol": "GPPL",
-      "name": "Guj Pipavav Port",
-      "marketCapCrore": 7671.22
-    },
-    {
-      "symbol": "ATL",
-      "name": "Allcargo Termi",
-      "marketCapCrore": 631.65
-    },
-    {
-      "symbol": "520155",
-      "name": "Starlog Enterp.",
-      "marketCapCrore": 58.43
-    },
-    {
-      "symbol": "533427",
-      "name": "VMS Industries",
-      "marketCapCrore": 50.51
-    }
-  ]
+  }
 }

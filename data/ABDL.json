@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABDL/consolidated/",
-    "fetchedAt": "2026-08-12T21:51:55.986Z",
+    "fetchedAt": "2026-08-18T08:26:07.839Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,45 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "UNITDSPR",
       "name": "United Spirits",
-      "marketCapCrore": 111648.36
+      "marketCapCrore": 111510.15
     },
     {
       "symbol": "RADICO",
       "name": "Radico Khaitan",
-      "marketCapCrore": 60734.22
+      "marketCapCrore": 62971.75
     },
     {
       "symbol": "UBL",
       "name": "United Breweries",
-      "marketCapCrore": 36707.37
+      "marketCapCrore": 36011.99
     },
     {
       "symbol": "ABDL",
       "name": "Allied Blenders",
-      "marketCapCrore": 17178.4
+      "marketCapCrore": 17070.7
     },
     {
       "symbol": "TI",
       "name": "Tilaknagar Inds.",
-      "marketCapCrore": 13138.39
+      "marketCapCrore": 14414.14
     },
     {
       "symbol": "INDIAGLYCO",
       "name": "India Glycols",
-      "marketCapCrore": 7033.79
+      "marketCapCrore": 7696.7
     },
     {
       "symbol": "PICCADIL",
       "name": "Piccadily Agro",
-      "marketCapCrore": 6825.14
+      "marketCapCrore": 6904.49
     }
   ]
 }

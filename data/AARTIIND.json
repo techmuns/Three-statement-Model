@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AARTIIND/consolidated/",
-    "fetchedAt": "2026-08-16T19:14:49.459Z",
+    "fetchedAt": "2026-08-18T08:25:22.937Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,184 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "pharmaceuticals",
+          "name": "Pharmaceuticals",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 303,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 426,
+              "sharePercent": 14.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 426,
+              "sharePercent": 13.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 556,
+              "sharePercent": 14.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 726,
+              "sharePercent": 14.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 756,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 952,
+              "sharePercent": 19
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1300,
+              "sharePercent": 16.4
+            }
+          ]
+        },
+        {
+          "id": "speciality-chemicals",
+          "name": "Speciality Chemicals",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2398,
+              "sharePercent": 82.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2430,
+              "sharePercent": 80.8
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2569,
+              "sharePercent": 81.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2985,
+              "sharePercent": 78.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3979,
+              "sharePercent": 79.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3865,
+              "sharePercent": 83.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 4071,
+              "sharePercent": 81
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 6619,
+              "sharePercent": 83.6
+            }
+          ]
+        },
+        {
+          "id": "home-personal-care-chemicals",
+          "name": "Home & Personal Care Chemicals",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 207,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 150,
+              "sharePercent": 5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 168,
+              "sharePercent": 5.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 264,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 310,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "PIDILITIND",
       "name": "Pidilite Inds.",
-      "marketCapCrore": 172311.91
+      "marketCapCrore": 169925.2
     },
     {
       "symbol": "FLUOROCHEM",
       "name": "Gujarat Fluoroch",
-      "marketCapCrore": 52044.73
+      "marketCapCrore": 51260.39
     },
     {
       "symbol": "NAVINFLUOR",
       "name": "Navin Fluo.Intl.",
-      "marketCapCrore": 42250.92
+      "marketCapCrore": 42173.95
     },
     {
       "symbol": "DEEPAKNTR",
       "name": "Deepak Nitrite",
-      "marketCapCrore": 23503.25
+      "marketCapCrore": 24271.12
     },
     {
       "symbol": "AETHER",
       "name": "Aether Industri.",
-      "marketCapCrore": 21569.68
+      "marketCapCrore": 21628.07
     },
     {
       "symbol": "ATUL",
       "name": "Atul",
-      "marketCapCrore": 19811.36
+      "marketCapCrore": 19499.72
     },
     {
       "symbol": "AARTIIND",
       "name": "Aarti Industries",
-      "marketCapCrore": 19373.23
+      "marketCapCrore": 18990.62
     }
   ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABLBL/consolidated/",
-    "fetchedAt": "2026-08-16T19:53:18.589Z",
+    "fetchedAt": "2026-08-18T08:26:16.189Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -285,45 +285,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
-  },
-  "peers": [
-    {
-      "symbol": "TRENT",
-      "name": "Trent",
-      "marketCapCrore": 158796.58
-    },
-    {
-      "symbol": "LENSKART",
-      "name": "Lenskart Solut.",
-      "marketCapCrore": 106419.45
-    },
-    {
-      "symbol": "MANYAVAR",
-      "name": "Vedant Fashions",
-      "marketCapCrore": 12847.47
-    },
-    {
-      "symbol": "ABLBL",
-      "name": "A B Lifestyle",
-      "marketCapCrore": 10834.57
-    },
-    {
-      "symbol": "AVL",
-      "name": "Aditya Vision",
-      "marketCapCrore": 8066.61
-    },
-    {
-      "symbol": "V2RETAIL",
-      "name": "V2 Retail",
-      "marketCapCrore": 7890.76
-    },
-    {
-      "symbol": "ABFRL",
-      "name": "Aditya Bir. Fas.",
-      "marketCapCrore": 6832.42
-    }
-  ]
+  }
 }

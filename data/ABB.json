@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABB/consolidated/",
-    "fetchedAt": "2026-08-16T19:14:54.678Z",
+    "fetchedAt": "2026-08-18T08:26:01.344Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,405 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "electrification",
+          "name": "Electrification",
+          "values": [
+            {
+              "periodId": "FY20Q1",
+              "revenue": 734,
+              "sharePercent": 25.3
+            },
+            {
+              "periodId": "FY20Q2",
+              "revenue": 709,
+              "sharePercent": 24.5
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 861,
+              "sharePercent": 43
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 838,
+              "sharePercent": 39
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1154,
+              "sharePercent": 39.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1503,
+              "sharePercent": 44.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1358,
+              "sharePercent": 44.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1379,
+              "sharePercent": 46.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1378,
+              "sharePercent": 41.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1598,
+              "sharePercent": 44.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1564,
+              "sharePercent": 48.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1804,
+              "sharePercent": 50.1
+            }
+          ]
+        },
+        {
+          "id": "motion",
+          "name": "Motion",
+          "values": [
+            {
+              "periodId": "FY20Q1",
+              "revenue": 602,
+              "sharePercent": 20.8
+            },
+            {
+              "periodId": "FY20Q2",
+              "revenue": 607,
+              "sharePercent": 21
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 716,
+              "sharePercent": 35.8
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 834,
+              "sharePercent": 38.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1079,
+              "sharePercent": 36.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1119,
+              "sharePercent": 33
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1096,
+              "sharePercent": 36
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1088,
+              "sharePercent": 36.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1175,
+              "sharePercent": 35.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1202,
+              "sharePercent": 33.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1161,
+              "sharePercent": 36
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1269,
+              "sharePercent": 35.3
+            }
+          ]
+        },
+        {
+          "id": "industrial-automation",
+          "name": "Industrial Automation",
+          "values": [
+            {
+              "periodId": "FY20Q1",
+              "revenue": 378,
+              "sharePercent": 13
+            },
+            {
+              "periodId": "FY20Q2",
+              "revenue": 405,
+              "sharePercent": 14
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 349,
+              "sharePercent": 17.4
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 416,
+              "sharePercent": 19.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 596,
+              "sharePercent": 20.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 628,
+              "sharePercent": 18.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 586,
+              "sharePercent": 19.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 492,
+              "sharePercent": 16.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 601,
+              "sharePercent": 18
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 652,
+              "sharePercent": 18.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 500,
+              "sharePercent": 15.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 524,
+              "sharePercent": 14.6
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY20Q1",
+              "revenue": 30,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY20Q2",
+              "revenue": 84,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 11,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 11,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 5,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 6,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 5,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 4,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3,
+              "sharePercent": 0.1
+            }
+          ]
+        },
+        {
+          "id": "power-grids-discontinued-operation",
+          "name": "Power Grids (Discontinued Operation",
+          "values": [
+            {
+              "periodId": "FY20Q1",
+              "revenue": 1086,
+              "sharePercent": 37.5
+            },
+            {
+              "periodId": "FY20Q2",
+              "revenue": 1029,
+              "sharePercent": 35.6
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "robotics-discrete-automation",
+          "name": "Robotics & Discrete Automation",
+          "values": [
+            {
+              "periodId": "FY20Q1",
+              "revenue": 68,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY20Q2",
+              "revenue": 60,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 65,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 48,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 111,
+              "sharePercent": 3.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 140,
+              "sharePercent": 4.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 181,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 135,
+              "sharePercent": 3.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -427,51 +823,267 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "electrification",
+          "name": "Electrification",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 861,
+              "sharePercent": 43
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 5074,
+              "sharePercent": 40.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5713,
+              "sharePercent": 45.3
+            }
+          ]
+        },
+        {
+          "id": "motion",
+          "name": "Motion",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 716,
+              "sharePercent": 35.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4287,
+              "sharePercent": 34.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4561,
+              "sharePercent": 36.1
+            }
+          ]
+        },
+        {
+          "id": "industrial-automation",
+          "name": "Industrial Automation",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 349,
+              "sharePercent": 17.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2583,
+              "sharePercent": 20.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 2332,
+              "sharePercent": 18.5
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 11,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 18,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 12,
+              "sharePercent": 0.1
+            }
+          ]
+        },
+        {
+          "id": "discrete-automation-motion",
+          "name": "Discrete Automation & Motion",
+          "values": [
+            {
+              "periodId": "FY11",
+              "revenue": 1802,
+              "sharePercent": 22.4
+            },
+            {
+              "periodId": "FY12",
+              "revenue": 1821,
+              "sharePercent": 22.3
+            }
+          ]
+        },
+        {
+          "id": "low-voltage-products",
+          "name": "Low Voltage Products",
+          "values": [
+            {
+              "periodId": "FY11",
+              "revenue": 540,
+              "sharePercent": 6.7
+            },
+            {
+              "periodId": "FY12",
+              "revenue": 617,
+              "sharePercent": 7.6
+            }
+          ]
+        },
+        {
+          "id": "power-products",
+          "name": "Power Products",
+          "values": [
+            {
+              "periodId": "FY11",
+              "revenue": 2001,
+              "sharePercent": 24.8
+            },
+            {
+              "periodId": "FY12",
+              "revenue": 2085,
+              "sharePercent": 25.6
+            }
+          ]
+        },
+        {
+          "id": "power-systems",
+          "name": "Power Systems",
+          "values": [
+            {
+              "periodId": "FY11",
+              "revenue": 2362,
+              "sharePercent": 29.3
+            },
+            {
+              "periodId": "FY12",
+              "revenue": 2242,
+              "sharePercent": 27.5
+            }
+          ]
+        },
+        {
+          "id": "process-automation",
+          "name": "Process Automation",
+          "values": [
+            {
+              "periodId": "FY11",
+              "revenue": 1322,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY12",
+              "revenue": 1357,
+              "sharePercent": 16.6
+            }
+          ]
+        },
+        {
+          "id": "robotics-discrete-automation",
+          "name": "Robotics & Discrete Automation",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 65,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 444,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY11",
+              "revenue": 30,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY12",
+              "revenue": 36,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ABB",
       "name": "A B B",
-      "marketCapCrore": 162088.72
+      "marketCapCrore": 160466.54
     },
     {
       "symbol": "POWERINDIA",
       "name": "Hitachi Energy",
-      "marketCapCrore": 159123.34
+      "marketCapCrore": 157474.15
     },
     {
       "symbol": "BHEL",
       "name": "B H E L",
-      "marketCapCrore": 146838.61
+      "marketCapCrore": 148910.43
     },
     {
       "symbol": "SIEMENS",
       "name": "Siemens",
-      "marketCapCrore": 140311.48
+      "marketCapCrore": 141256.94
     },
     {
       "symbol": "CGPOWER",
       "name": "CG Power & Ind",
-      "marketCapCrore": 140238.69
+      "marketCapCrore": 140711.24
     },
     {
       "symbol": "ENRIN",
       "name": "Siemens Ener.Ind",
-      "marketCapCrore": 125934.89
+      "marketCapCrore": 128178.46
     },
     {
       "symbol": "GVT&D",
       "name": "GE Vernova T&D",
-      "marketCapCrore": 111381.75
+      "marketCapCrore": 107569.16
     },
     {
       "symbol": "SUZLON",
       "name": "Suzlon Energy",
-      "marketCapCrore": 64222.67
+      "marketCapCrore": 65136.29
     }
   ]
 }

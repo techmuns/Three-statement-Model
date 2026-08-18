@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/3MINDIA/consolidated/",
-    "fetchedAt": "2026-08-18T08:16:11.149Z",
+    "fetchedAt": "2026-08-18T08:25:16.295Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -829,11 +829,6 @@
               "sharePercent": 39.6
             },
             {
-              "periodId": "FY23",
-              "revenue": 1569,
-              "sharePercent": 39.6
-            },
-            {
               "periodId": "FY24",
               "revenue": 1649,
               "sharePercent": 39.4
@@ -863,11 +858,6 @@
               "periodId": "FY22",
               "revenue": 1194,
               "sharePercent": 35.8
-            },
-            {
-              "periodId": "FY23",
-              "revenue": 1301,
-              "sharePercent": 32.9
             },
             {
               "periodId": "FY23",
@@ -916,11 +906,6 @@
               "sharePercent": 16.5
             },
             {
-              "periodId": "FY23",
-              "revenue": 655,
-              "sharePercent": 16.5
-            },
-            {
               "periodId": "FY24",
               "revenue": 761,
               "sharePercent": 18.2
@@ -962,11 +947,6 @@
               "sharePercent": 10.4
             },
             {
-              "periodId": "FY23",
-              "revenue": 410,
-              "sharePercent": 10.4
-            },
-            {
               "periodId": "FY24",
               "revenue": 428,
               "sharePercent": 10.2
@@ -1001,11 +981,6 @@
               "periodId": "FY22",
               "revenue": 28,
               "sharePercent": 0.8
-            },
-            {
-              "periodId": "FY23",
-              "revenue": 25,
-              "sharePercent": 0.6
             },
             {
               "periodId": "FY23",
@@ -1087,11 +1062,6 @@
               "sharePercent": 0
             },
             {
-              "periodId": "FY23",
-              "revenue": 0,
-              "sharePercent": 0
-            },
-            {
               "periodId": "FY24",
               "revenue": 0,
               "sharePercent": 0
@@ -1140,7 +1110,7 @@
     {
       "symbol": "539143",
       "name": "Panth Infinity",
-      "marketCapCrore": 54.13
+      "marketCapCrore": 55.07
     }
   ]
 }

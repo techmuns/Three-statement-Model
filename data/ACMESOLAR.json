@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ACMESOLAR/consolidated/",
-    "fetchedAt": "2026-08-16T19:29:13.950Z",
+    "fetchedAt": "2026-08-18T08:27:04.552Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
-  },
-  "peers": [
-    {
-      "symbol": "NTPC",
-      "name": "NTPC",
-      "marketCapCrore": 329686.65
-    },
-    {
-      "symbol": "ADANIGREEN",
-      "name": "Adani Green",
-      "marketCapCrore": 222039.35
-    },
-    {
-      "symbol": "JSWENERGY",
-      "name": "JSW Energy",
-      "marketCapCrore": 102675.03
-    },
-    {
-      "symbol": "NTPCGREEN",
-      "name": "NTPC Green Ene.",
-      "marketCapCrore": 77463.25
-    },
-    {
-      "symbol": "NHPC",
-      "name": "NHPC Ltd",
-      "marketCapCrore": 77246.32
-    },
-    {
-      "symbol": "NLCINDIA",
-      "name": "NLC India",
-      "marketCapCrore": 38187.97
-    },
-    {
-      "symbol": "ACMESOLAR",
-      "name": "ACME Solar Hold.",
-      "marketCapCrore": 26444.17
-    }
-  ]
+  }
 }

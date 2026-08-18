@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABREL/consolidated/",
-    "fetchedAt": "2026-08-16T19:15:33.510Z",
+    "fetchedAt": "2026-08-18T08:26:49.617Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,273 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "pulp-and-paper",
+          "name": "Pulp and Paper",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 799,
+              "sharePercent": 93.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 881,
+              "sharePercent": 89.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 859,
+              "sharePercent": 55.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 786,
+              "sharePercent": 69
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 854,
+              "sharePercent": 76.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 742,
+              "sharePercent": 78.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 765,
+              "sharePercent": 66.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 679,
+              "sharePercent": 82.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 821,
+              "sharePercent": 89.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 757,
+              "sharePercent": 90.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 805,
+              "sharePercent": 90.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 768,
+              "sharePercent": 80.3
+            }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "name": "Real Estate",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 41,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 86,
+              "sharePercent": 8.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 668,
+              "sharePercent": 43.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 338,
+              "sharePercent": 29.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 254,
+              "sharePercent": 22.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 186,
+              "sharePercent": 19.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 378,
+              "sharePercent": 32.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 130,
+              "sharePercent": 15.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 83,
+              "sharePercent": 9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 64,
+              "sharePercent": 7.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 67,
+              "sharePercent": 7.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 172,
+              "sharePercent": 18
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 3,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 3,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 19,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 14,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 14,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 14,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 17,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 15,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 16,
+              "sharePercent": 1.7
+            }
+          ]
+        },
+        {
+          "id": "textiles",
+          "name": "Textiles",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 12,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 12,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 12,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 12,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 12,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,51 +731,387 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "pulp-and-paper",
+          "name": "Pulp and Paper",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 2171,
+              "sharePercent": 25.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2229,
+              "sharePercent": 27
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2643,
+              "sharePercent": 63
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2383,
+              "sharePercent": 71.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1774,
+              "sharePercent": 69.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2818,
+              "sharePercent": 69.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3572,
+              "sharePercent": 94.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 3375,
+              "sharePercent": 79.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3148,
+              "sharePercent": 71.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3063,
+              "sharePercent": 88.3
+            }
+          ]
+        },
+        {
+          "id": "real-estate",
+          "name": "Real Estate",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 97,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 135,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 159,
+              "sharePercent": 3.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 146,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 143,
+              "sharePercent": 5.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 139,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 138,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 832,
+              "sharePercent": 19.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1143,
+              "sharePercent": 26
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 345,
+              "sharePercent": 10
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 119,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 97,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 17,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 17,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 19,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 25,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 9,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 7,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 61,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 59,
+              "sharePercent": 1.7
+            }
+          ]
+        },
+        {
+          "id": "cement",
+          "name": "Cement",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 4324,
+              "sharePercent": 50.8
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 4306,
+              "sharePercent": 52.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "textiles",
+          "name": "Textiles",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 1541,
+              "sharePercent": 18.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1396,
+              "sharePercent": 16.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 815,
+              "sharePercent": 19.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 786,
+              "sharePercent": 23.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 632,
+              "sharePercent": 24.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1087,
+              "sharePercent": 26.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 50,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 50,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 41,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 253,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 87,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 563,
+              "sharePercent": 13.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "DLF",
       "name": "DLF",
-      "marketCapCrore": 164608.23
+      "marketCapCrore": 166823.65
     },
     {
       "symbol": "LODHA",
       "name": "Lodha Developers",
-      "marketCapCrore": 124287.82
-    },
-    {
-      "symbol": "PRESTIGE",
-      "name": "Prestige Estates",
-      "marketCapCrore": 68593.79
+      "marketCapCrore": 123028.91
     },
     {
       "symbol": "PHOENIXLTD",
       "name": "Phoenix Mills",
-      "marketCapCrore": 67598.44
+      "marketCapCrore": 68925.4
     },
     {
       "symbol": "OBEROIRLTY",
       "name": "Oberoi Realty",
-      "marketCapCrore": 67120.97
+      "marketCapCrore": 68866.26
+    },
+    {
+      "symbol": "PRESTIGE",
+      "name": "Prestige Estates",
+      "marketCapCrore": 68567.97
     },
     {
       "symbol": "GODREJPROP",
       "name": "Godrej Propert.",
-      "marketCapCrore": 59944.07
+      "marketCapCrore": 60755.89
     },
     {
       "symbol": "ANANTRAJ",
       "name": "Anant Raj",
-      "marketCapCrore": 22670.45
+      "marketCapCrore": 22648.84
     },
     {
       "symbol": "ABREL",
       "name": "A B Real Estate",
-      "marketCapCrore": 15669.79
+      "marketCapCrore": 15572.6
     }
   ]
 }

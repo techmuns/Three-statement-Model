@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ACE/consolidated/",
-    "fetchedAt": "2026-08-16T19:29:12.004Z",
+    "fetchedAt": "2026-08-18T08:26:59.705Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,238 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "cranes-material-handling-and-construction-equipment",
+          "name": "Cranes, Material handling and Construction equipment",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 461,
+              "sharePercent": 91.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 552,
+              "sharePercent": 92
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 651,
+              "sharePercent": 93
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 691,
+              "sharePercent": 93.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 695,
+              "sharePercent": 91.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 798,
+              "sharePercent": 91.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 913,
+              "sharePercent": 94.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 606,
+              "sharePercent": 92.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 697,
+              "sharePercent": 93.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 765,
+              "sharePercent": 89.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 885,
+              "sharePercent": 85.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 742,
+              "sharePercent": 94
+            }
+          ]
+        },
+        {
+          "id": "agriculture-equipment",
+          "name": "Agriculture Equipment",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 45,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 48,
+              "sharePercent": 8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 49,
+              "sharePercent": 7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 43,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 61,
+              "sharePercent": 8.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 77,
+              "sharePercent": 8.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 53,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 49,
+              "sharePercent": 7.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 49,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 93,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 71,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 46,
+              "sharePercent": 5.8
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 77,
+              "sharePercent": 7.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1,
+              "sharePercent": 0.1
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 7,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,41 +696,390 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "cranes-material-handling-and-construction-equipment",
+          "name": "Cranes, Material handling and Construction equipment",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 1530,
+              "sharePercent": 90.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2107,
+              "sharePercent": 92
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3097,
+              "sharePercent": 92.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2953,
+              "sharePercent": 89.7
+            }
+          ]
+        },
+        {
+          "id": "agriculture-equipment",
+          "name": "Agriculture Equipment",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 169,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 184,
+              "sharePercent": 8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 247,
+              "sharePercent": 7.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 262,
+              "sharePercent": 8
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 77,
+              "sharePercent": 2.3
+            }
+          ]
+        },
+        {
+          "id": "cranes",
+          "name": "Cranes",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 361,
+              "sharePercent": 61.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 398,
+              "sharePercent": 61.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 476,
+              "sharePercent": 61.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 749,
+              "sharePercent": 68.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 964,
+              "sharePercent": 71.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 829,
+              "sharePercent": 71.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 790,
+              "sharePercent": 64.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1103,
+              "sharePercent": 67.7
+            }
+          ]
+        },
+        {
+          "id": "material",
+          "name": "Material",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 66,
+              "sharePercent": 11.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 63,
+              "sharePercent": 9.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 102,
+              "sharePercent": 13.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 81,
+              "sharePercent": 7.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 94,
+              "sharePercent": 7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 84,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 103,
+              "sharePercent": 8.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 152,
+              "sharePercent": 9.3
+            }
+          ]
+        },
+        {
+          "id": "subsidiaries-business",
+          "name": "Subsidiaries Business",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "agir",
+          "name": "Agir",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 161,
+              "sharePercent": 27.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 153,
+              "sharePercent": 23.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 152,
+              "sharePercent": 19.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 185,
+              "sharePercent": 16.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 204,
+              "sharePercent": 15.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 143,
+              "sharePercent": 12.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 200,
+              "sharePercent": 16.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 198,
+              "sharePercent": 12.2
+            }
+          ]
+        },
+        {
+          "id": "construction-equipment",
+          "name": "Construction Equipment",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 72,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 80,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 101,
+              "sharePercent": 8.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 134,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 176,
+              "sharePercent": 10.8
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 36,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 46,
+              "sharePercent": 5.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 12,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "BEML",
       "name": "BEML Ltd",
-      "marketCapCrore": 15611.69
+      "marketCapCrore": 16246.38
     },
     {
       "symbol": "ACE",
       "name": "Action Const.Eq.",
-      "marketCapCrore": 12927.67
+      "marketCapCrore": 14064.29
     },
     {
       "symbol": "AJAXENGG",
       "name": "Ajax Engineering",
-      "marketCapCrore": 6660.76
+      "marketCapCrore": 6349.59
     },
     {
       "symbol": "TIL",
       "name": "TIL",
-      "marketCapCrore": 1913.78
+      "marketCapCrore": 1878.54
     },
     {
       "symbol": "INDOFARM",
       "name": "Indo Farm Equip.",
-      "marketCapCrore": 700.5
+      "marketCapCrore": 691
     },
     {
       "symbol": "505690",
       "name": "Brady & Morris",
-      "marketCapCrore": 164.25
+      "marketCapCrore": 157.5
     }
   ]
 }

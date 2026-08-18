@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/360ONE/consolidated/",
-    "fetchedAt": "2026-08-16T19:14:45.003Z",
+    "fetchedAt": "2026-08-18T08:25:12.830Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,207 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "wealth-management",
+          "name": "Wealth Management",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 488,
+              "sharePercent": 78.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 527,
+              "sharePercent": 78.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 891,
+              "sharePercent": 84.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 765,
+              "sharePercent": 81.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 723,
+              "sharePercent": 81.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 758,
+              "sharePercent": 81.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 669,
+              "sharePercent": 72.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 771,
+              "sharePercent": 78.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 939,
+              "sharePercent": 84.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 857,
+              "sharePercent": 70.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 891,
+              "sharePercent": 76.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 967,
+              "sharePercent": 76
+            }
+          ]
+        },
+        {
+          "id": "asset-management",
+          "name": "Asset Management",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 135,
+              "sharePercent": 21.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 144,
+              "sharePercent": 21.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 157,
+              "sharePercent": 14.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 171,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 169,
+              "sharePercent": 18.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 176,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 252,
+              "sharePercent": 27.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 208,
+              "sharePercent": 21.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 168,
+              "sharePercent": 15.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 362,
+              "sharePercent": 29.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 278,
+              "sharePercent": 23.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 305,
+              "sharePercent": 24
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 3,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -247,11 +445,11 @@
             "quarter": null,
             "endDate": "2026-03-31"
           },
-          "sales": 4362,
+          "sales": 4470,
           "expenses": 1655,
-          "operatingProfit": 2707,
-          "opmPercent": 62.06,
-          "otherIncome": 116,
+          "operatingProfit": 2815,
+          "opmPercent": 62.98,
+          "otherIncome": 7,
           "interest": 1090,
           "depreciation": 155,
           "profitBeforeTax": 1577,
@@ -361,13 +559,13 @@
           "equityCapital": 41,
           "reserves": 9795,
           "borrowings": 15931,
-          "otherLiabilities": 1434,
-          "totalLiabilities": 27201,
+          "otherLiabilities": 1433,
+          "totalLiabilities": 27199,
           "fixedAssets": 3969,
           "cwip": 0,
           "investments": 8842,
-          "otherAssets": 14389,
-          "totalAssets": 27201
+          "otherAssets": 14387,
+          "totalAssets": 27199
         }
       ]
     },
@@ -441,9 +639,9 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": -2411,
-          "cashFromInvesting": -1065,
-          "cashFromFinancing": 3773,
+          "cashFromOperating": -2462,
+          "cashFromInvesting": -990,
+          "cashFromFinancing": 3749,
           "netCashFlow": 297
         },
         {
@@ -460,53 +658,191 @@
           "workingCapitalChange": null,
           "taxPaid": null,
           "cashFromOperating": -2921,
-          "cashFromInvesting": -1613,
+          "cashFromInvesting": -1607,
           "cashFromFinancing": 4357,
-          "netCashFlow": -177
+          "netCashFlow": -171
         }
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "wealth-management",
+          "name": "Wealth Management",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 1401,
+              "sharePercent": 88.7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1326,
+              "sharePercent": 86.8
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1378,
+              "sharePercent": 83.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1614,
+              "sharePercent": 77.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1498,
+              "sharePercent": 72.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2342,
+              "sharePercent": 80.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 2914,
+              "sharePercent": 79.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3458,
+              "sharePercent": 77.2
+            }
+          ]
+        },
+        {
+          "id": "asset-management",
+          "name": "Asset Management",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 178,
+              "sharePercent": 11.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 202,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 279,
+              "sharePercent": 16.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 464,
+              "sharePercent": 22.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 563,
+              "sharePercent": 27.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 580,
+              "sharePercent": 19.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 769,
+              "sharePercent": 20.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1016,
+              "sharePercent": 22.7
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 3,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3,
+              "sharePercent": 0.1
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "GROWW",
       "name": "Billionbrains",
-      "marketCapCrore": 123069.15
+      "marketCapCrore": 122146.86
     },
     {
       "symbol": "MOTILALOFS",
       "name": "Motil.Oswal.Fin.",
-      "marketCapCrore": 54431.95
+      "marketCapCrore": 56750.95
     },
     {
       "symbol": "360ONE",
       "name": "360 ONE",
-      "marketCapCrore": 48012.92
+      "marketCapCrore": 47660.97
     },
     {
       "symbol": "NUVAMA",
       "name": "Nuvama Wealth",
-      "marketCapCrore": 30665.63
+      "marketCapCrore": 31860.04
     },
     {
       "symbol": "ANGELONE",
       "name": "Angel One",
-      "marketCapCrore": 26250.24
+      "marketCapCrore": 26446.72
     },
     {
       "symbol": "IIFLCAPS",
       "name": "IIFL Capital",
-      "marketCapCrore": 10552.32
+      "marketCapCrore": 10535.01
     },
     {
       "symbol": "SHAREINDIA",
       "name": "Share India Sec.",
-      "marketCapCrore": 3817.85
+      "marketCapCrore": 3884.16
     }
   ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ABSLAMC/consolidated/",
-    "fetchedAt": "2026-08-16T19:15:35.827Z",
+    "fetchedAt": "2026-08-18T08:26:52.854Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,45 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "ICICIAMC",
       "name": "ICICI AMC",
-      "marketCapCrore": 153116.35
+      "marketCapCrore": 153622.98
     },
     {
       "symbol": "SBIFUNDS",
       "name": "SBI Funds Mgt.",
-      "marketCapCrore": 113879.03
+      "marketCapCrore": 112850.43
     },
     {
       "symbol": "HDFCAMC",
       "name": "HDFC AMC",
-      "marketCapCrore": 106553.52
+      "marketCapCrore": 107325.33
     },
     {
       "symbol": "NAM-INDIA",
       "name": "Nippon Life Ind.",
-      "marketCapCrore": 74712.67
+      "marketCapCrore": 75288.46
     },
     {
       "symbol": "ABSLAMC",
       "name": "Aditya AMC",
-      "marketCapCrore": 29250.35
+      "marketCapCrore": 29172.28
     },
     {
       "symbol": "UTIAMC",
       "name": "UTI AMC",
-      "marketCapCrore": 11671.97
+      "marketCapCrore": 11531.88
     },
     {
       "symbol": "CRAMC",
       "name": "Canara Robeco",
-      "marketCapCrore": 5109.07
+      "marketCapCrore": 5046.3
     }
   ]
 }
