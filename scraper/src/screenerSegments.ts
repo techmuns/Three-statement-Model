@@ -181,15 +181,17 @@ export function buildSegmentMix(raw: RawSegmentTable, cadence: PeriodCadence): {
 
   const segments: RevenueSegment[] = operating
     .map((s, si) => {
-      const values: SegmentRevenue[] = []
+      // A fiscal-year switch can put two columns under one period id (e.g. 3M
+      // India's Dec→Mar move → two "FY23"s); keep the later column for that id.
+      const byPeriod = new Map<string, SegmentRevenue>()
       for (let i = 0; i < raw.periods.length; i++) {
         const pid = periodIds[i]
         const v = s.values[i]
         const total = totals[i]
         if (!pid || typeof v !== 'number' || total <= 0) continue
-        values.push({ periodId: pid, revenue: round(v, 2), sharePercent: round((v / total) * 100, 1) })
+        byPeriod.set(pid, { periodId: pid, revenue: round(v, 2), sharePercent: round((v / total) * 100, 1) })
       }
-      return { id: segmentId(s.name, si), name: s.name, values }
+      return { id: segmentId(s.name, si), name: s.name, values: Array.from(byPeriod.values()) }
     })
     .filter((s) => s.values.length > 0)
 

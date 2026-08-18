@@ -27,7 +27,7 @@ export function SegmentMix({ segments, periodId }: { segments: readonly RevenueS
         ? { name: seg.name, revenue: point.revenue, share: point.sharePercent, color: PALETTE[i % PALETTE.length] }
         : null
     })
-    .filter((s): s is Slice => s !== null)
+    .filter((s): s is Slice => s !== null && s.share >= 0.05)
     .sort((a, b) => b.share - a.share)
 
   if (slices.length === 0) {

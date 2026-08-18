@@ -110,8 +110,20 @@ jobs:
           rc=0
           if [ -n "${INPUT_TICKER}" ]; then
             echo "On-demand scrape: ${INPUT_TICKER}"
-            npm run scrape -- --company="${INPUT_TICKER}" || rc=$?
-            commit_data || true
+            # Scrape in chunks of 20, committing after each, so a long
+            # multi-company run saves progress incrementally instead of
+            # committing all-or-nothing only at the very end.
+            IFS=',' read -ra TICKERS <<< "${INPUT_TICKER}" || true
+            total=${#TICKERS[@]}
+            chunk=20
+            i=0
+            while [ "${i}" -lt "${total}" ]; do
+              part=$(IFS=,; echo "${TICKERS[*]:i:chunk}")
+              echo "── Chunk $((i / chunk + 1)): ${part} ──"
+              npm run scrape -- --company="${part}" || rc=$?
+              commit_data || true
+              i=$((i + chunk))
+            done
           elif [ -n "${INPUT_BATCH}" ]; then
             echo "Bulk pre-load: up to ${INPUT_BATCH} companies, in chunks of 25 (commit after each)."
             remaining="${INPUT_BATCH}"
