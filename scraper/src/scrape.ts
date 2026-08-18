@@ -16,18 +16,16 @@
 import type { BrowserContext } from 'playwright'
 import type { CompanyFinancials } from '../../src/types/financials'
 import type { ScraperCompany } from './companies'
-import { bseScripCodeFor } from './companies'
-import { fetchCompanySegmentMix } from './bse/companySegments'
-import { fetchBseResultFilings } from './bse/bseAnnouncements'
 import {
   detectBasis,
-  extractBseScripCode,
+  extractCompanyId,
   extractPeersTable,
   extractSection,
   preparePage,
   SECTION_IDS,
 } from './extract'
 import { normalizeCompany } from './normalize'
+import { fetchScreenerSegments } from './screenerSegments'
 import { mapPeersTable, type ScrapedPeer } from './peers'
 
 export interface CompanyScrape {
@@ -107,43 +105,29 @@ export async function scrapeCompany(
         `KPIs mapped [${mapped.mappedKpis.join(', ') || 'none'}]`
     }
 
-    // Best-effort quarterly segment mix from the company's BSE filings. Never
-    // allowed to break the statements scrape — any failure keeps the honest
-    // "not reported" state that normalize already set.
+    // Revenue mix by segment from Screener's own product-segment table
+    // (GET /api/segments/…), fetched inside the logged-in page. The figures are
+    // Premium-gated, so this fills real numbers only because the scraper signs in
+    // with a Premium account; a company that discloses no segments stays the
+    // honest "not reported" that normalize already set. Never breaks the scrape.
     let withSegments = financials
     try {
       const sym = company.screenerSymbol
-      const quarterlyIds =
-        financials.quarterly.profitLoss.status === 'available'
-          ? financials.quarterly.profitLoss.periods.map((p) => p.period.id)
-          : []
-      // Segment revenue is disclosed only in BSE results filings, and BSE blocks
-      // our GitHub-Actions egress IP (HTTP 403 at the edge — confirmed in run
-      // logs). So this is OFF by default: scrapes stay fast and segment stays an
-      // honest "not reported". Set ENABLE_BSE_SEGMENTS=1 when the scraper runs
-      // from an India/residential IP that BSE actually serves.
-      let filingUrls: string[] = []
-      if (process.env.ENABLE_BSE_SEGMENTS) {
-        const scrip = (await extractBseScripCode(page)) ?? bseScripCodeFor(company.companyId) ?? null
-        if (!scrip) {
-          console.log(`  · ${sym} segment mix: no BSE scrip code found`)
-        } else {
-          const filings = await fetchBseResultFilings(context, scrip, 3)
-          for (const f of filings) console.log(`      results filing: "${f.subject.slice(0, 55)}" → ${f.url}`)
-          filingUrls = filings.map((f) => f.url)
+      const companyId = await extractCompanyId(page)
+      if (!companyId) {
+        console.log(`  · ${sym} segment mix: no Screener company-id on page`)
+      } else {
+        const { annual, quarterly, logLines } = await fetchScreenerSegments(
+          page,
+          companyId,
+          financials.source.basis === 'consolidated',
+        )
+        for (const line of logLines) console.log(`  · ${sym} ${line}`)
+        withSegments = {
+          ...financials,
+          annual: { ...financials.annual, segmentMix: annual },
+          quarterly: { ...financials.quarterly, segmentMix: quarterly },
         }
-      } else {
-        console.log(`  · ${sym} segment mix: BSE fetch disabled (runner IP is 403'd by BSE)`)
-      }
-      const segmentMix = await fetchCompanySegmentMix(filingUrls, quarterlyIds)
-      if (segmentMix?.status === 'available') {
-        console.log(`  · ${sym} segment mix: ✓ filled ${segmentMix.segments.length} segments`)
-        withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
-      } else if (segmentMix?.status === 'unavailable') {
-        console.log(`  · ${sym} segment mix: single-segment / not reported`)
-        withSegments = { ...financials, quarterly: { ...financials.quarterly, segmentMix } }
-      } else {
-        console.log(`  · ${sym} segment mix: no usable results filing found`)
       }
     } catch (error) {
       console.error(`  ! ${company.screenerSymbol} segment mix error: ${(error as Error).message}`)

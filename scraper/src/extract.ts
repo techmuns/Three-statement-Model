@@ -75,6 +75,20 @@ export function extractBseScripCode(page: Page): Promise<string | null> {
 }
 
 /**
+ * Read Screener's internal company id (the "warehouse" id, e.g. `2726` for
+ * RELIANCE) from the `#company-info` element. It keys the segment-results API
+ * (`/api/segments/{id}/…`), so the segment fetcher needs it. Returns `null` when
+ * the element or attribute is absent.
+ */
+export function extractCompanyId(page: Page): Promise<string | null> {
+  return page.evaluate(() => {
+    const el = document.getElementById('company-info')
+    const id = el?.getAttribute('data-company-id')?.trim()
+    return id && /^\d+$/.test(id) ? id : null
+  })
+}
+
+/**
  * Extract one statement section's first data-table as raw header/row strings,
  * or `null` if the section or table is absent from the page.
  */

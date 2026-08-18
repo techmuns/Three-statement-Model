@@ -116,7 +116,11 @@ export function FinancialsTab({
       <WidgetCard
         title="Revenue Mix by Segment"
         subtitle={
-          concall.data ? `From the earnings call · ${concall.data.quarter ?? 'latest'}` : 'Share of sales, latest period'
+          set.segmentMix.status === 'available'
+            ? 'Product segments · share of sales, latest period'
+            : concall.data
+              ? `From the earnings call · ${concall.data.quarter ?? 'latest'}`
+              : 'Share of sales, latest period'
         }
       >
         {set.segmentMix.status === 'available' && latestPeriodId ? (
