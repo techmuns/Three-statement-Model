@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/RELIANCE/consolidated/",
-    "fetchedAt": "2026-08-12T12:02:31.933Z",
+    "fetchedAt": "2026-08-18T08:16:13.914Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,405 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "oil-to-chemicals-02c",
+          "name": "Oil to Chemicals (02C)",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 147988,
+              "sharePercent": 52.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 141096,
+              "sharePercent": 51
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 142634,
+              "sharePercent": 48.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 157133,
+              "sharePercent": 54.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 155580,
+              "sharePercent": 54.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 149595,
+              "sharePercent": 50.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 164613,
+              "sharePercent": 51.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 154804,
+              "sharePercent": 50.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 160558,
+              "sharePercent": 50.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 162095,
+              "sharePercent": 46
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 184944,
+              "sharePercent": 50.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 201803,
+              "sharePercent": 53.6
+            }
+          ]
+        },
+        {
+          "id": "retail",
+          "name": "Retail",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 77163,
+              "sharePercent": 27.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 83040,
+              "sharePercent": 30
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 76683,
+              "sharePercent": 26.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 75630,
+              "sharePercent": 26.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 76325,
+              "sharePercent": 26.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 90351,
+              "sharePercent": 30.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 88637,
+              "sharePercent": 27.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 84172,
+              "sharePercent": 27.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 90544,
+              "sharePercent": 28.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 97912,
+              "sharePercent": 27.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 98457,
+              "sharePercent": 27.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 90409,
+              "sharePercent": 24
+            }
+          ]
+        },
+        {
+          "id": "digital-services",
+          "name": "Digital Services",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 32657,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 33463,
+              "sharePercent": 12.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 34741,
+              "sharePercent": 11.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 35470,
+              "sharePercent": 12.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 38055,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 39733,
+              "sharePercent": 13.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 40861,
+              "sharePercent": 12.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 41949,
+              "sharePercent": 13.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 43617,
+              "sharePercent": 13.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 44653,
+              "sharePercent": 12.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 45945,
+              "sharePercent": 12.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 46900,
+              "sharePercent": 12.5
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 19114,
+              "sharePercent": 6.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 12476,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 31099,
+              "sharePercent": 10.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 12080,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 11623,
+              "sharePercent": 4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 12236,
+              "sharePercent": 4.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 19920,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 18470,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 16208,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 17868,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 27976,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 31204,
+              "sharePercent": 8.3
+            }
+          ]
+        },
+        {
+          "id": "oil-and-gas",
+          "name": "Oil and Gas",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 6620,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 6719,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 6468,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 6179,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 6222,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 6370,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 6440,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 6103,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 6058,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 5833,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 5867,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 6298,
+              "sharePercent": 1.7
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": -21040,
+              "sharePercent": -7.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": -20190,
+              "sharePercent": -7.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": -24119,
+              "sharePercent": -8.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": -21606,
+              "sharePercent": -7.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": -22546,
+              "sharePercent": -7.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": -23321,
+              "sharePercent": -7.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": -23565,
+              "sharePercent": -7.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": -24592,
+              "sharePercent": -8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": -24650,
+              "sharePercent": -7.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 24333,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": -26669,
+              "sharePercent": -7.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": -28407,
+              "sharePercent": -7.5
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +863,621 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "oil-to-chemicals-02c",
+          "name": "Oil to Chemicals (02C)",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 451355,
+              "sharePercent": 61.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 320008,
+              "sharePercent": 51.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 500900,
+              "sharePercent": 56.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 594650,
+              "sharePercent": 55.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 564749,
+              "sharePercent": 50.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 626921,
+              "sharePercent": 52.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 662401,
+              "sharePercent": 50.4
+            }
+          ]
+        },
+        {
+          "id": "retail",
+          "name": "Retail",
+          "values": [
+            {
+              "periodId": "FY21",
+              "revenue": 157702,
+              "sharePercent": 25.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 199749,
+              "sharePercent": 22.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 260394,
+              "sharePercent": 24.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 306848,
+              "sharePercent": 27.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 330943,
+              "sharePercent": 27.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 371085,
+              "sharePercent": 28.2
+            }
+          ]
+        },
+        {
+          "id": "digital-services",
+          "name": "Digital Services",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 599,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 23916,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 48660,
+              "sharePercent": 6.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 69605,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 90287,
+              "sharePercent": 14.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 100161,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 119791,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 132938,
+              "sharePercent": 12
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 154119,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 176164,
+              "sharePercent": 13.4
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 10507,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 9196,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 10619,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 12617,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 22151,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 44917,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 48220,
+              "sharePercent": 7.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 71360,
+              "sharePercent": 8.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 88455,
+              "sharePercent": 8.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 80516,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 55859,
+              "sharePercent": 4.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 80522,
+              "sharePercent": 6.1
+            }
+          ]
+        },
+        {
+          "id": "oil-and-gas",
+          "name": "Oil and Gas",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 11534,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 7514,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 5191,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 5204,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 5005,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3211,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2140,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 7492,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 16508,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 24439,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 25211,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 23861,
+              "sharePercent": 1.8
+            }
+          ]
+        },
+        {
+          "id": "petrochemicals",
+          "name": "Petrochemicals",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 96804,
+              "sharePercent": 20.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 82410,
+              "sharePercent": 23.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 92472,
+              "sharePercent": 23.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 125299,
+              "sharePercent": 23.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 172065,
+              "sharePercent": 22.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "refining",
+          "name": "Refining",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 339890,
+              "sharePercent": 71.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 234945,
+              "sharePercent": 66.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 250833,
+              "sharePercent": 63.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 306095,
+              "sharePercent": 56.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 393988,
+              "sharePercent": 51
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "organized-retail",
+          "name": "Organized Retail",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 17640,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 21075,
+              "sharePercent": 5.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 33765,
+              "sharePercent": 8.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 69198,
+              "sharePercent": 12.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 130566,
+              "sharePercent": 16.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 163029,
+              "sharePercent": 22.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "financial-services",
+          "name": "Financial services",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 250,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2194,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2438,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2127,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": -13059,
+              "sharePercent": -2.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": -22466,
+              "sharePercent": -4.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": -42118,
+              "sharePercent": -5.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": -47560,
+              "sharePercent": -6.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": -52912,
+              "sharePercent": -8.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": -71122,
+              "sharePercent": -8.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": -83553,
+              "sharePercent": -7.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": -85650,
+              "sharePercent": -7.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": -91038,
+              "sharePercent": -7.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": -100244,
+              "sharePercent": -7.6
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "RELIANCE",
       "name": "Reliance Industries",
-      "marketCapCrore": 1799572.82
+      "marketCapCrore": 1790895.7
     },
     {
       "symbol": "IOC",
       "name": "I O C L",
-      "marketCapCrore": 198190.35
+      "marketCapCrore": 195226.07
     },
     {
       "symbol": "BPCL",
       "name": "B P C L",
-      "marketCapCrore": 136921.43
+      "marketCapCrore": 135903.69
     },
     {
       "symbol": "HINDPETRO",
       "name": "H P C L",
-      "marketCapCrore": 82964.03
+      "marketCapCrore": 78186.87
     },
     {
       "symbol": "MRPL",
       "name": "M R P L",
-      "marketCapCrore": 30721.36
+      "marketCapCrore": 31879.7
     },
     {
       "symbol": "CHENNPETRO",
       "name": "C P C L",
-      "marketCapCrore": 20522.83
+      "marketCapCrore": 21158.74
     },
     {
-      "symbol": "KOTYARK",
-      "name": "Kotyark Indust.",
-      "marketCapCrore": 483.94
+      "symbol": "526873",
+      "name": "Rajasthan Securities",
+      "marketCapCrore": 430.5
     }
   ]
 }

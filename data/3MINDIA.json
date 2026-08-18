@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/3MINDIA/consolidated/",
-    "fetchedAt": "2026-08-16T19:07:30.823Z",
+    "fetchedAt": "2026-08-18T08:16:11.149Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,339 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "transportation-electronics",
+          "name": "Transportation & Electronics",
+          "values": [
+            {
+              "periodId": "FY22Q3",
+              "revenue": 301,
+              "sharePercent": 36.4
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 344,
+              "sharePercent": 37.1
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 366,
+              "sharePercent": 38.9
+            },
+            {
+              "periodId": "FY23Q2",
+              "revenue": 373,
+              "sharePercent": 38.2
+            },
+            {
+              "periodId": "FY23Q3",
+              "revenue": 394,
+              "sharePercent": 39.6
+            },
+            {
+              "periodId": "FY23Q4",
+              "revenue": 435,
+              "sharePercent": 41.6
+            },
+            {
+              "periodId": "FY24Q1",
+              "revenue": 413,
+              "sharePercent": 39.4
+            },
+            {
+              "periodId": "FY24Q2",
+              "revenue": 391,
+              "sharePercent": 37.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 395,
+              "sharePercent": 39.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 451,
+              "sharePercent": 41.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 396,
+              "sharePercent": 37.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 385,
+              "sharePercent": 34.7
+            }
+          ]
+        },
+        {
+          "id": "safety-industrial",
+          "name": "Safety & Industrial",
+          "values": [
+            {
+              "periodId": "FY22Q3",
+              "revenue": 284,
+              "sharePercent": 34.3
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 330,
+              "sharePercent": 35.6
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 311,
+              "sharePercent": 33
+            },
+            {
+              "periodId": "FY23Q2",
+              "revenue": 322,
+              "sharePercent": 33
+            },
+            {
+              "periodId": "FY23Q3",
+              "revenue": 330,
+              "sharePercent": 33.2
+            },
+            {
+              "periodId": "FY23Q4",
+              "revenue": 339,
+              "sharePercent": 32.4
+            },
+            {
+              "periodId": "FY24Q1",
+              "revenue": 329,
+              "sharePercent": 31.4
+            },
+            {
+              "periodId": "FY24Q2",
+              "revenue": 332,
+              "sharePercent": 31.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 339,
+              "sharePercent": 33.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 333,
+              "sharePercent": 30.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 338,
+              "sharePercent": 32.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 360,
+              "sharePercent": 32.4
+            }
+          ]
+        },
+        {
+          "id": "health-care",
+          "name": "Health Care",
+          "values": [
+            {
+              "periodId": "FY22Q3",
+              "revenue": 135,
+              "sharePercent": 16.3
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 148,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 156,
+              "sharePercent": 16.6
+            },
+            {
+              "periodId": "FY23Q2",
+              "revenue": 162,
+              "sharePercent": 16.6
+            },
+            {
+              "periodId": "FY23Q3",
+              "revenue": 163,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY23Q4",
+              "revenue": 173,
+              "sharePercent": 16.5
+            },
+            {
+              "periodId": "FY24Q1",
+              "revenue": 199,
+              "sharePercent": 19
+            },
+            {
+              "periodId": "FY24Q2",
+              "revenue": 195,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 161,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 206,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 200,
+              "sharePercent": 19.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 232,
+              "sharePercent": 20.9
+            }
+          ]
+        },
+        {
+          "id": "consumer",
+          "name": "Consumer",
+          "values": [
+            {
+              "periodId": "FY22Q3",
+              "revenue": 101,
+              "sharePercent": 12.2
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 99,
+              "sharePercent": 10.7
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 101,
+              "sharePercent": 10.7
+            },
+            {
+              "periodId": "FY23Q2",
+              "revenue": 112,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY23Q3",
+              "revenue": 101,
+              "sharePercent": 10.2
+            },
+            {
+              "periodId": "FY23Q4",
+              "revenue": 96,
+              "sharePercent": 9.2
+            },
+            {
+              "periodId": "FY24Q1",
+              "revenue": 105,
+              "sharePercent": 10
+            },
+            {
+              "periodId": "FY24Q2",
+              "revenue": 115,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 106,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 102,
+              "sharePercent": 9.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 109,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 125,
+              "sharePercent": 11.3
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY22Q3",
+              "revenue": 6,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY22Q4",
+              "revenue": 5,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY23Q1",
+              "revenue": 8,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY23Q2",
+              "revenue": 7,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY23Q3",
+              "revenue": 6,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY23Q4",
+              "revenue": 3,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY24Q1",
+              "revenue": 3,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY24Q2",
+              "revenue": 7,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 5,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 4,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 8,
+              "sharePercent": 0.7
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,51 +797,350 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "transportation-electronics",
+          "name": "Transportation & Electronics",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 1031,
+              "sharePercent": 34.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1031,
+              "sharePercent": 34.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 890,
+              "sharePercent": 34.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1174,
+              "sharePercent": 35.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1569,
+              "sharePercent": 39.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1569,
+              "sharePercent": 39.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1649,
+              "sharePercent": 39.4
+            }
+          ]
+        },
+        {
+          "id": "safety-industrial",
+          "name": "Safety & Industrial",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 1177,
+              "sharePercent": 38.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1126,
+              "sharePercent": 37.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1013,
+              "sharePercent": 38.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1194,
+              "sharePercent": 35.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1301,
+              "sharePercent": 32.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1301,
+              "sharePercent": 32.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1333,
+              "sharePercent": 31.8
+            }
+          ]
+        },
+        {
+          "id": "health-care",
+          "name": "Health Care",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 401,
+              "sharePercent": 14.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 475,
+              "sharePercent": 15.7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 486,
+              "sharePercent": 16.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 362,
+              "sharePercent": 13.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 552,
+              "sharePercent": 16.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 655,
+              "sharePercent": 16.5
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 655,
+              "sharePercent": 16.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 761,
+              "sharePercent": 18.2
+            }
+          ]
+        },
+        {
+          "id": "consumer",
+          "name": "Consumer",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 273,
+              "sharePercent": 9.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 303,
+              "sharePercent": 10
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 320,
+              "sharePercent": 10.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 313,
+              "sharePercent": 12
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 387,
+              "sharePercent": 11.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 410,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 410,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 428,
+              "sharePercent": 10.2
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 16,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 31,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 24,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 27,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 28,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 25,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 25,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 18,
+              "sharePercent": 0.4
+            }
+          ]
+        },
+        {
+          "id": "electronics-energy",
+          "name": "Electronics & Energy",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 278,
+              "sharePercent": 10
+            }
+          ]
+        },
+        {
+          "id": "industrial",
+          "name": "Industrial",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 1106,
+              "sharePercent": 39.7
+            }
+          ]
+        },
+        {
+          "id": "safety-and-graphics",
+          "name": "Safety and Graphics",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 661,
+              "sharePercent": 23.7
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 49,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 8,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "GODREJIND",
       "name": "Godrej Industrie",
-      "marketCapCrore": 42190.59
+      "marketCapCrore": 41176.67
     },
     {
       "symbol": "3MINDIA",
       "name": "3M India",
-      "marketCapCrore": 39828.18
+      "marketCapCrore": 39578.1
     },
     {
       "symbol": "DCMSHRIRAM",
       "name": "DCM Shriram",
-      "marketCapCrore": 15979.41
+      "marketCapCrore": 16003.54
     },
     {
       "symbol": "BALMLAWRIE",
       "name": "Balmer Lawrie",
-      "marketCapCrore": 2965.72
+      "marketCapCrore": 2987.44
     },
     {
       "symbol": "TTKHLTCARE",
       "name": "TTK Healthcare",
-      "marketCapCrore": 1635.87
+      "marketCapCrore": 1569.6
     },
     {
       "symbol": "509525",
       "name": "Empire Inds.",
-      "marketCapCrore": 650.37
+      "marketCapCrore": 669
     },
     {
       "symbol": "MAHESHWARI",
       "name": "Maheshwari Logi.",
-      "marketCapCrore": 214.58
+      "marketCapCrore": 213.1
     },
     {
       "symbol": "539143",
       "name": "Panth Infinity",
-      "marketCapCrore": 55.21
+      "marketCapCrore": 54.13
     }
   ]
 }

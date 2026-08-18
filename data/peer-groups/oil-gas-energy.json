@@ -10,7 +10,7 @@
       "id": "ioc",
       "name": "I O C L",
       "ticker": "IOC",
-      "marketCapCrore": 198190.35,
+      "marketCapCrore": 195226.07,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -42,7 +42,7 @@
       "id": "bpcl",
       "name": "B P C L",
       "ticker": "BPCL",
-      "marketCapCrore": 136921.43,
+      "marketCapCrore": 135903.69,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -74,7 +74,7 @@
       "id": "hindpetro",
       "name": "H P C L",
       "ticker": "HINDPETRO",
-      "marketCapCrore": 82964.03,
+      "marketCapCrore": 78186.87,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -106,7 +106,7 @@
       "id": "mrpl",
       "name": "M R P L",
       "ticker": "MRPL",
-      "marketCapCrore": 30721.36,
+      "marketCapCrore": 31879.7,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -138,7 +138,7 @@
       "id": "chennpetro",
       "name": "C P C L",
       "ticker": "CHENNPETRO",
-      "marketCapCrore": 20522.83,
+      "marketCapCrore": 21158.74,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -167,10 +167,10 @@
       ]
     },
     {
-      "id": "kotyark",
-      "name": "Kotyark Indust.",
-      "ticker": "KOTYARK",
-      "marketCapCrore": 483.94,
+      "id": "526873",
+      "name": "Rajasthan Securities",
+      "ticker": "526873",
+      "marketCapCrore": 430.5,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -190,7 +190,7 @@
         },
         {
           "kpiId": "return-on-capital-employed",
-          "value": 15.3
+          "value": 137.57
         },
         {
           "kpiId": "debt-to-equity",
