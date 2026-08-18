@@ -132,15 +132,6 @@ export function KpisTab({
           />
         )}
       </WidgetCard>
-
-      <div style={{ fontSize: 12, color: T.inkHint }}>
-        KPIs are computed from the scraped statements, so they match the P&L and balance sheet exactly.
-        Balance-sheet KPIs (ROE, ROCE, D/E) need the annual balance sheet — in the 5-quarter view the cards show “—”.
-        In the peer table, a <strong>peer</strong> row is derived from that company’s own statements; a
-        <strong> carried</strong> row is Screener’s snapshot; <strong>not analyzed</strong> means we haven’t scraped it
-        yet — use <strong>Run all peers</strong> (or a row’s Analyze) to fill those in; each fills in automatically when
-        its scrape lands.
-      </div>
     </div>
   )
 }

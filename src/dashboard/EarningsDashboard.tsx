@@ -143,11 +143,10 @@ export default function EarningsDashboard() {
         <span>
           Source: Screener.in · {data.source.basis} · updated {shortDate(data.source.fetchedAt)}
         </span>
-        <span style={{ marginLeft: 'auto' }}>Figures in ₹ crore · “—” = not reported</span>
       </Footer>
     ) : (
       <Footer>
-        <span>Source: Screener.in — real scraped statements, on demand. Honest empty states where a company isn’t analyzed yet.</span>
+        <span>Source: Screener.in</span>
       </Footer>
     )
 

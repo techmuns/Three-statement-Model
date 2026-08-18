@@ -25,7 +25,6 @@ import { StatementTable, type StatementRow } from '../components/StatementTable'
 import { SegmentMix } from '../components/SegmentMix'
 import { ConcallSegmentMix } from '../components/ConcallSegmentMix'
 import { useConcallSegments } from '../data/useConcallSegments'
-import { T } from '../ui/tokens'
 
 function shortDate(iso: string): string {
   const d = new Date(iso)
@@ -140,28 +139,21 @@ export function FinancialsTab({
         ) : concall.loading ? (
           <LoadingState rows={4} />
         ) : (
-          <UnavailableState
-            note={
-              set.segmentMix.status === 'available'
-                ? 'No segment split for the periods shown.'
-                : set.segmentMix.note ?? 'Segment mix not reported.'
-            }
-            hint="Companies that report product segments show them here; a single-segment business reports none."
-          />
+          <UnavailableState note="No product segments reported." />
         )}
       </WidgetCard>
 
-      <WidgetCard title="Balance Sheet" subtitle={provenance} wide>
-        <SeriesBody series={set.balanceSheet} rows={bsRows} emptyHint={annualOnlyHint} />
-      </WidgetCard>
+      {set.balanceSheet.status === 'available' && (
+        <WidgetCard title="Balance Sheet" subtitle={provenance} wide>
+          <SeriesBody series={set.balanceSheet} rows={bsRows} emptyHint={annualOnlyHint} />
+        </WidgetCard>
+      )}
 
-      <WidgetCard title="Cash Flow (condensed)" subtitle="CFO · working-capital · CFI · CFF" wide>
-        <SeriesBody series={set.cashFlow} rows={cfRows} emptyHint={annualOnlyHint} />
-      </WidgetCard>
-
-      <div style={{ gridColumn: '1 / -1', fontSize: 12, color: T.inkHint, paddingTop: 4 }}>
-        Figures in ₹ crore. “—” means the company did not report that line — never a zero. {provenance}.
-      </div>
+      {set.cashFlow.status === 'available' && (
+        <WidgetCard title="Cash Flow (condensed)" subtitle="CFO · working-capital · CFI · CFF" wide>
+          <SeriesBody series={set.cashFlow} rows={cfRows} emptyHint={annualOnlyHint} />
+        </WidgetCard>
+      )}
     </div>
   )
 }
