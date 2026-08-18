@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ASHOKLEY/consolidated/",
-    "fetchedAt": "2026-08-12T21:53:04.867Z",
+    "fetchedAt": "2026-08-18T08:32:00.481Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 14696,
-          "expenses": 11705,
-          "operatingProfit": 2991,
-          "opmPercent": 20.35,
-          "otherIncome": 22,
-          "interest": 1053,
-          "depreciation": 340,
-          "profitBeforeTax": 1621,
-          "taxPercent": 23.13,
-          "netProfit": 1246,
-          "eps": 1.92
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 28.81,
           "netProfit": 1381,
           "eps": 2.2
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 13070,
+          "expenses": 10660,
+          "operatingProfit": 2410,
+          "opmPercent": 18.44,
+          "otherIncome": 195,
+          "interest": 1341,
+          "depreciation": 315,
+          "profitBeforeTax": 950,
+          "taxPercent": 29.68,
+          "netProfit": 668,
+          "eps": 1.05
         }
       ]
     },
@@ -139,9 +139,141 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "commercial-vehicle",
+          "name": "Commercial Vehicle",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 10299,
+              "sharePercent": 90.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 9854,
+              "sharePercent": 88.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 12147,
+              "sharePercent": 89.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 9302,
+              "sharePercent": 87
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 9681,
+              "sharePercent": 86.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 10424,
+              "sharePercent": 86.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 12927,
+              "sharePercent": 88
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 9854,
+              "sharePercent": 84.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 10602,
+              "sharePercent": 84.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 12770,
+              "sharePercent": 86.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 15087,
+              "sharePercent": 87.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 10799,
+              "sharePercent": 82.6
+            }
+          ]
+        },
+        {
+          "id": "financial-service",
+          "name": "Financial Service",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1131,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1239,
+              "sharePercent": 11.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1432,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1395,
+              "sharePercent": 13
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1467,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1571,
+              "sharePercent": 13.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1769,
+              "sharePercent": 12
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1855,
+              "sharePercent": 15.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1975,
+              "sharePercent": 15.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2060,
+              "sharePercent": 13.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2159,
+              "sharePercent": 12.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2271,
+              "sharePercent": 17.4
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,31 +599,131 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "commercial-vehicle",
+          "name": "Commercial Vehicle",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 21165,
+              "sharePercent": 94.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 22690,
+              "sharePercent": 93.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 27883,
+              "sharePercent": 93
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 30494,
+              "sharePercent": 91.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 18815,
+              "sharePercent": 85.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 16308,
+              "sharePercent": 83.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 23021,
+              "sharePercent": 87.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 38025,
+              "sharePercent": 91.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 40956,
+              "sharePercent": 89.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 42333,
+              "sharePercent": 87.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 48314,
+              "sharePercent": 85.7
+            }
+          ]
+        },
+        {
+          "id": "financial-service",
+          "name": "Financial Service",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 1175,
+              "sharePercent": 5.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1532,
+              "sharePercent": 6.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2092,
+              "sharePercent": 7
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2713,
+              "sharePercent": 8.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3136,
+              "sharePercent": 14.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3147,
+              "sharePercent": 16.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3217,
+              "sharePercent": 12.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3650,
+              "sharePercent": 8.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4837,
+              "sharePercent": 10.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 6203,
+              "sharePercent": 12.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 8049,
+              "sharePercent": 14.3
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "TMCV",
-      "name": "Tata Motors",
-      "marketCapCrore": 168317.82
-    },
-    {
-      "symbol": "ASHOKLEY",
-      "name": "Ashok Leyland",
-      "marketCapCrore": 103791.01
-    },
-    {
-      "symbol": "SMLMAH",
-      "name": "SML Mahindra",
-      "marketCapCrore": 7483.88
-    },
-    {
-      "symbol": "ATULAUTO",
-      "name": "Atul Auto",
-      "marketCapCrore": 1398.66
-    }
-  ]
+  }
 }

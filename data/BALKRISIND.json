@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BALKRISIND/consolidated/",
-    "fetchedAt": "2026-08-14T21:29:24.491Z",
+    "fetchedAt": "2026-08-18T08:34:17.216Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,90 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "paper-paper-boards",
+          "name": "Paper & Paper Boards",
+          "values": [
+            {
+              "periodId": "FY07",
+              "revenue": 106,
+              "sharePercent": 12
+            }
+          ]
+        },
+        {
+          "id": "processing-of-woven-fabrics",
+          "name": "Processing of Woven Fabrics",
+          "values": [
+            {
+              "periodId": "FY07",
+              "revenue": 29,
+              "sharePercent": 3.3
+            }
+          ]
+        },
+        {
+          "id": "wind-power",
+          "name": "Wind Power",
+          "values": [
+            {
+              "periodId": "FY07",
+              "revenue": 5,
+              "sharePercent": 0.6
+            }
+          ]
+        },
+        {
+          "id": "tyres",
+          "name": "Tyres",
+          "values": [
+            {
+              "periodId": "FY07",
+              "revenue": 743,
+              "sharePercent": 84.1
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "MRF",
       "name": "MRF",
-      "marketCapCrore": 56615.02
+      "marketCapCrore": 56571.86
     },
     {
       "symbol": "BALKRISIND",
       "name": "Balkrishna Inds",
-      "marketCapCrore": 45692.45
+      "marketCapCrore": 46099.42
     },
     {
       "symbol": "APOLLOTYRE",
       "name": "Apollo Tyres",
-      "marketCapCrore": 28204.83
+      "marketCapCrore": 27820.59
     },
     {
       "symbol": "CEATLTD",
       "name": "CEAT",
-      "marketCapCrore": 14921.23
+      "marketCapCrore": 14582.26
     },
     {
       "symbol": "JKTYRE",
       "name": "JK Tyre & Indust",
-      "marketCapCrore": 11073.2
+      "marketCapCrore": 11053
     },
     {
       "symbol": "TVSSRICHAK",
       "name": "TVS Srichakra",
-      "marketCapCrore": 3430.22
+      "marketCapCrore": 3657.22
     },
     {
       "symbol": "GOODYEAR",
       "name": "Goodyear India",
-      "marketCapCrore": 1793.46
+      "marketCapCrore": 1756.77
     }
   ]
 }

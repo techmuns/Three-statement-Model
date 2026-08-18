@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ASIANPAINT/consolidated/",
-    "fetchedAt": "2026-08-18T08:16:19.423Z",
+    "fetchedAt": "2026-08-18T08:32:33.454Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment API returned HTTP 429."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,26 +467,118 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment API returned HTTP 429."
+      "status": "available",
+      "segments": [
+        {
+          "id": "paints",
+          "name": "Paints",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 14020,
+              "sharePercent": 98.6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 15588,
+              "sharePercent": 98.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 16549,
+              "sharePercent": 98.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 16927,
+              "sharePercent": 98.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 18832,
+              "sharePercent": 97.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 19754,
+              "sharePercent": 97.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 21206,
+              "sharePercent": 97.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 28350,
+              "sharePercent": 97.4
+            }
+          ]
+        },
+        {
+          "id": "home-improvement",
+          "name": "Home Improvement",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 202,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 254,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 308,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 335,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 416,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 458,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 509,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 758,
+              "sharePercent": 2.6
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ASIANPAINT",
       "name": "Asian Paints",
-      "marketCapCrore": 251885.35
+      "marketCapCrore": 252005.25
     },
     {
       "symbol": "BERGEPAINT",
       "name": "Berger Paints",
-      "marketCapCrore": 63313.95
+      "marketCapCrore": 63273.14
     },
     {
       "symbol": "KANSAINER",
       "name": "Kansai Nerolac",
-      "marketCapCrore": 16329.27
+      "marketCapCrore": 16321.19
     },
     {
       "symbol": "JSWDULUX",
@@ -496,17 +588,17 @@
     {
       "symbol": "INDIGOPNTS",
       "name": "Indigo Paints",
-      "marketCapCrore": 5514.55
+      "marketCapCrore": 5510.97
     },
     {
       "symbol": "SIRCA",
       "name": "Sirca Paints",
-      "marketCapCrore": 2532.98
+      "marketCapCrore": 2541.5
     },
     {
       "symbol": "SHALPAINTS",
       "name": "Shalimar Paints",
-      "marketCapCrore": 727.27
+      "marketCapCrore": 727.02
     }
   ]
 }

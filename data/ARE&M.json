@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ARE&M/consolidated/",
-    "fetchedAt": "2026-08-16T19:53:22.714Z",
+    "fetchedAt": "2026-08-18T08:31:52.192Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,192 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "lead-acid",
+          "name": "Lead acid",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2809,
+              "sharePercent": 94.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2897,
+              "sharePercent": 95.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2792,
+              "sharePercent": 96
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 3137,
+              "sharePercent": 96.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 3150,
+              "sharePercent": 96.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3155,
+              "sharePercent": 96.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2903,
+              "sharePercent": 94.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 3280,
+              "sharePercent": 96.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 3297,
+              "sharePercent": 95.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 3174,
+              "sharePercent": 93.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3255,
+              "sharePercent": 92.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 4005,
+              "sharePercent": 95
+            }
+          ]
+        },
+        {
+          "id": "new-energy-business",
+          "name": "New energy business",
+          "values": [
+            {
+              "periodId": "FY25Q1",
+              "revenue": 126,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 118,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 157,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 121,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 170,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 236,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 281,
+              "sharePercent": 7.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 209,
+              "sharePercent": 5
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 150,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 148,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 116,
+              "sharePercent": 4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 101,
+              "sharePercent": 3.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,51 +650,124 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "lead-acid",
+          "name": "Lead acid",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 10143,
+              "sharePercent": 97.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 11186,
+              "sharePercent": 95.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 12345,
+              "sharePercent": 96.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 13005,
+              "sharePercent": 94.1
+            }
+          ]
+        },
+        {
+          "id": "new-energy-business",
+          "name": "New energy business",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 501,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 809,
+              "sharePercent": 5.9
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 249,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 522,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "MOTHERSON",
       "name": "Samvardh. Mothe.",
-      "marketCapCrore": 177631.27
+      "marketCapCrore": 179425.48
     },
     {
       "symbol": "BOSCHLTD",
       "name": "Bosch",
-      "marketCapCrore": 138926.63
+      "marketCapCrore": 143771.05
     },
     {
       "symbol": "BHARATFORG",
       "name": "Bharat Forge",
-      "marketCapCrore": 98725.3
+      "marketCapCrore": 99894.25
     },
     {
       "symbol": "UNOMINDA",
       "name": "Uno Minda",
-      "marketCapCrore": 71605.93
+      "marketCapCrore": 73401.85
     },
     {
       "symbol": "SCHAEFFLER",
       "name": "Schaeffler India",
-      "marketCapCrore": 63196.7
+      "marketCapCrore": 63302.99
     },
     {
       "symbol": "TIINDIA",
       "name": "Tube Investments",
-      "marketCapCrore": 52912.99
+      "marketCapCrore": 57377.74
     },
     {
       "symbol": "SONACOMS",
       "name": "Sona BLW Precis.",
-      "marketCapCrore": 49385.39
+      "marketCapCrore": 51339.93
     },
     {
       "symbol": "ARE&M",
       "name": "Amara Raja Ener.",
-      "marketCapCrore": 17313.28
+      "marketCapCrore": 17045.15
     }
   ]
 }

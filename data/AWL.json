@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/AWL/consolidated/",
-    "fetchedAt": "2026-08-16T19:30:42.428Z",
+    "fetchedAt": "2026-08-18T08:33:25.675Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,207 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "edible-oil",
+          "name": "Edible oil",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 9038,
+              "sharePercent": 73.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 9711,
+              "sharePercent": 75.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 10195,
+              "sharePercent": 77
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 10649,
+              "sharePercent": 75.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 10977,
+              "sharePercent": 75.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 13366,
+              "sharePercent": 79.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 14769,
+              "sharePercent": 81
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 13415,
+              "sharePercent": 78.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 13828,
+              "sharePercent": 78.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 15025,
+              "sharePercent": 80.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 17520,
+              "sharePercent": 81.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 15465,
+              "sharePercent": 77.1
+            }
+          ]
+        },
+        {
+          "id": "industry-essentials",
+          "name": "Industry Essentials",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1947,
+              "sharePercent": 15.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1844,
+              "sharePercent": 14.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1702,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1986,
+              "sharePercent": 14
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1766,
+              "sharePercent": 12.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1915,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1997,
+              "sharePercent": 11
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2230,
+              "sharePercent": 13.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2096,
+              "sharePercent": 11.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1930,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2214,
+              "sharePercent": 10.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2857,
+              "sharePercent": 14.3
+            }
+          ]
+        },
+        {
+          "id": "food-fmcg",
+          "name": "Food &FMCG",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1283,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1273,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1341,
+              "sharePercent": 10.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1533,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1718,
+              "sharePercent": 11.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1558,
+              "sharePercent": 9.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1464,
+              "sharePercent": 8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1414,
+              "sharePercent": 8.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1681,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1648,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1731,
+              "sharePercent": 8.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1726,
+              "sharePercent": 8.6
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +665,154 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "edible-oil",
+          "name": "Edible oil",
+          "values": [
+            {
+              "periodId": "FY21",
+              "revenue": 30819,
+              "sharePercent": 83.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 45342,
+              "sharePercent": 83.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 46104,
+              "sharePercent": 79.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 38788,
+              "sharePercent": 75.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 49736,
+              "sharePercent": 78.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 59787,
+              "sharePercent": 80
+            }
+          ]
+        },
+        {
+          "id": "industry-essentials",
+          "name": "Industry Essentials",
+          "values": [
+            {
+              "periodId": "FY21",
+              "revenue": 4366,
+              "sharePercent": 11.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 6192,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 8028,
+              "sharePercent": 13.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 7479,
+              "sharePercent": 14.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 7663,
+              "sharePercent": 12
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 8470,
+              "sharePercent": 11.3
+            }
+          ]
+        },
+        {
+          "id": "food-fmcg",
+          "name": "Food &FMCG",
+          "values": [
+            {
+              "periodId": "FY21",
+              "revenue": 1906,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2621,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4053,
+              "sharePercent": 7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4994,
+              "sharePercent": 9.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 6273,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 6473,
+              "sharePercent": 8.7
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "MARICO",
       "name": "Marico",
-      "marketCapCrore": 112336.52
+      "marketCapCrore": 109791.66
     },
     {
       "symbol": "PATANJALI",
       "name": "Patanjali Foods",
-      "marketCapCrore": 38301.42
+      "marketCapCrore": 38236.07
     },
     {
       "symbol": "AWL",
       "name": "AWL Agri Busine.",
-      "marketCapCrore": 24974.62
+      "marketCapCrore": 24908.27
     },
     {
       "symbol": "GOKULAGRO",
       "name": "Gokul Agro",
-      "marketCapCrore": 6835.68
+      "marketCapCrore": 7026.03
     },
     {
       "symbol": "519477",
       "name": "CIAN Agro",
-      "marketCapCrore": 4092.24
+      "marketCapCrore": 4222.37
     },
     {
       "symbol": "SUNDROP",
       "name": "Sundrop Brands",
-      "marketCapCrore": 2488.37
+      "marketCapCrore": 2462.36
     },
     {
       "symbol": "543373",
       "name": "Shri Venkatesh",
-      "marketCapCrore": 1218.55
+      "marketCapCrore": 1171.22
     }
   ]
 }

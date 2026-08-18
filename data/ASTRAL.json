@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ASTRAL/consolidated/",
-    "fetchedAt": "2026-08-12T21:53:09.108Z",
+    "fetchedAt": "2026-08-18T08:32:40.218Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,141 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "plumbing",
+          "name": "Plumbing",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 980,
+              "sharePercent": 71.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 998,
+              "sharePercent": 72.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1225,
+              "sharePercent": 75.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1013,
+              "sharePercent": 73.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 966,
+              "sharePercent": 70.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 990,
+              "sharePercent": 70.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1227,
+              "sharePercent": 72.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 954,
+              "sharePercent": 70.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1119,
+              "sharePercent": 70.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1072,
+              "sharePercent": 69.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1534,
+              "sharePercent": 73.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1051,
+              "sharePercent": 66.6
+            }
+          ]
+        },
+        {
+          "id": "paints-and-adhesives",
+          "name": "Paints and Adhesives",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 383,
+              "sharePercent": 28.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 372,
+              "sharePercent": 27.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 400,
+              "sharePercent": 24.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 370,
+              "sharePercent": 26.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 404,
+              "sharePercent": 29.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 407,
+              "sharePercent": 29.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 455,
+              "sharePercent": 27.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 407,
+              "sharePercent": 29.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 459,
+              "sharePercent": 29.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 470,
+              "sharePercent": 30.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 554,
+              "sharePercent": 26.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 528,
+              "sharePercent": 33.4
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +599,291 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "plumbing",
+          "name": "Plumbing",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 3366,
+              "sharePercent": 76.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3768,
+              "sharePercent": 73
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4142,
+              "sharePercent": 73.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4196,
+              "sharePercent": 71.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 4679,
+              "sharePercent": 71.2
+            }
+          ]
+        },
+        {
+          "id": "paints-and-adhesives",
+          "name": "Paints and Adhesives",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 1028,
+              "sharePercent": 23.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1391,
+              "sharePercent": 27
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1499,
+              "sharePercent": 26.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1636,
+              "sharePercent": 28.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1890,
+              "sharePercent": 28.8
+            }
+          ]
+        },
+        {
+          "id": "adhesives",
+          "name": "Adhesives",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 463,
+              "sharePercent": 24.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 542,
+              "sharePercent": 25.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 561,
+              "sharePercent": 26.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 658,
+              "sharePercent": 26.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 594,
+              "sharePercent": 23
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 758,
+              "sharePercent": 23.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "plastic",
+          "name": "Plastic",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 1411,
+              "sharePercent": 75.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1586,
+              "sharePercent": 74.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1545,
+              "sharePercent": 73.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1849,
+              "sharePercent": 73.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1984,
+              "sharePercent": 77
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2419,
+              "sharePercent": 76.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": -33,
+              "sharePercent": -1.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "SUPREMEIND",
       "name": "Supreme Inds.",
-      "marketCapCrore": 43950.03
+      "marketCapCrore": 45762.72
     },
     {
       "symbol": "ASTRAL",
       "name": "Astral",
-      "marketCapCrore": 39330.38
+      "marketCapCrore": 40948.97
     },
     {
       "symbol": "GRWRHITECH",
       "name": "Garware Hi Tech",
-      "marketCapCrore": 16570.51
-    },
-    {
-      "symbol": "TIMETECHNO",
-      "name": "Time Technoplast",
-      "marketCapCrore": 10295.26
+      "marketCapCrore": 16436.9
     },
     {
       "symbol": "FINPIPE",
       "name": "Finolex Inds.",
-      "marketCapCrore": 10011.39
+      "marketCapCrore": 9803.56
+    },
+    {
+      "symbol": "TIMETECHNO",
+      "name": "Time Technoplast",
+      "marketCapCrore": 9193.91
     },
     {
       "symbol": "KINGFA",
       "name": "Kingfa Science",
-      "marketCapCrore": 8062.39
+      "marketCapCrore": 8097.75
     },
     {
       "symbol": "PRINCEPIPE",
       "name": "Prince Pipes",
-      "marketCapCrore": 2980.73
+      "marketCapCrore": 3206.23
     }
   ]
 }

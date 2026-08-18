@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BAJFINANCE/consolidated/",
-    "fetchedAt": "2026-08-16T19:53:24.823Z",
+    "fetchedAt": "2026-08-18T08:34:13.437Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,45 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "BAJFINANCE",
       "name": "Bajaj Finance",
-      "marketCapCrore": 676761.23
+      "marketCapCrore": 681586.42
     },
     {
       "symbol": "SHRIRAMFIN",
       "name": "Shriram Finance",
-      "marketCapCrore": 264004.75
+      "marketCapCrore": 261887.01
     },
     {
       "symbol": "CHOLAFIN",
       "name": "Cholaman.Inv.&Fn",
-      "marketCapCrore": 161527.55
+      "marketCapCrore": 160974.35
     },
     {
       "symbol": "TATACAP",
       "name": "Tata Capital",
-      "marketCapCrore": 154598.13
+      "marketCapCrore": 153749.17
     },
     {
       "symbol": "MUTHOOTFIN",
       "name": "Muthoot Finance",
-      "marketCapCrore": 114097.34
+      "marketCapCrore": 117268.89
     },
     {
       "symbol": "LTF",
       "name": "L&T Finance Ltd",
-      "marketCapCrore": 76760.18
+      "marketCapCrore": 80819.95
     },
     {
       "symbol": "SBICARD",
       "name": "SBI Cards",
-      "marketCapCrore": 60238.97
+      "marketCapCrore": 59106.52
     }
   ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BALRAMCHIN/consolidated/",
-    "fetchedAt": "2026-08-14T21:29:26.401Z",
+    "fetchedAt": "2026-08-18T08:34:20.738Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,273 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "sugar",
+          "name": "Sugar",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1109,
+              "sharePercent": 66.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1161,
+              "sharePercent": 82
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1311,
+              "sharePercent": 75.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1132,
+              "sharePercent": 72.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1049,
+              "sharePercent": 79.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1270,
+              "sharePercent": 85.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1447,
+              "sharePercent": 72.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1168,
+              "sharePercent": 71.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1317,
+              "sharePercent": 76
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1407,
+              "sharePercent": 79.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1616,
+              "sharePercent": 75.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1225,
+              "sharePercent": 68.7
+            }
+          ]
+        },
+        {
+          "id": "distillery",
+          "name": "Distillery",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 560,
+              "sharePercent": 33.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 250,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 413,
+              "sharePercent": 23.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 424,
+              "sharePercent": 27.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 264,
+              "sharePercent": 20
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 211,
+              "sharePercent": 14.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 530,
+              "sharePercent": 26.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 461,
+              "sharePercent": 28.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 405,
+              "sharePercent": 23.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 353,
+              "sharePercent": 19.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 501,
+              "sharePercent": 23.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 540,
+              "sharePercent": 30.3
+            }
+          ]
+        },
+        {
+          "id": "polylactic-acid-pla",
+          "name": "Polylactic Acid(PLA",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 6,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 8,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 9,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 17,
+              "sharePercent": 1
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 5,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 5,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 9,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 4,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 7,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 7,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 5,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 4,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1,
+              "sharePercent": 0.1
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +731,336 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "sugar",
+          "name": "Sugar",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2615,
+              "sharePercent": 79.6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2551,
+              "sharePercent": 78.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 3370,
+              "sharePercent": 81.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 4164,
+              "sharePercent": 82.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3822,
+              "sharePercent": 77.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 4513,
+              "sharePercent": 81.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 4352,
+              "sharePercent": 83.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 4263,
+              "sharePercent": 80.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4339,
+              "sharePercent": 78.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4697,
+              "sharePercent": 73.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4897,
+              "sharePercent": 77.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5507,
+              "sharePercent": 75.8
+            }
+          ]
+        },
+        {
+          "id": "distillery",
+          "name": "Distillery",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 285,
+              "sharePercent": 8.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 295,
+              "sharePercent": 9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 327,
+              "sharePercent": 7.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 332,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 468,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 549,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 842,
+              "sharePercent": 16.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1001,
+              "sharePercent": 18.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1164,
+              "sharePercent": 21.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1689,
+              "sharePercent": 26.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1430,
+              "sharePercent": 22.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1721,
+              "sharePercent": 23.7
+            }
+          ]
+        },
+        {
+          "id": "polylactic-acid-pla",
+          "name": "Polylactic Acid(PLA",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 24,
+              "sharePercent": 0.3
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 7,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 9,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 8,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 12,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 22,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 20,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 24,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 24,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 20,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 14,
+              "sharePercent": 0.2
+            }
+          ]
+        },
+        {
+          "id": "cogeneration",
+          "name": "Cogeneration",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 379,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 412,
+              "sharePercent": 12.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 444,
+              "sharePercent": 10.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 531,
+              "sharePercent": 10.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 616,
+              "sharePercent": 12.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 451,
+              "sharePercent": 8.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "BALRAMCHIN",
       "name": "Balrampur Chini",
-      "marketCapCrore": 13213.52
+      "marketCapCrore": 13888.16
     },
     {
       "symbol": "TRIVENI",
       "name": "Triven.Engg.Ind.",
-      "marketCapCrore": 5870.91
+      "marketCapCrore": 6100.79
     },
     {
       "symbol": "RENUKA",
       "name": "Sh.Renuka Sugar",
-      "marketCapCrore": 4672.04
-    },
-    {
-      "symbol": "BANARISUG",
-      "name": "Bannari Amm.Sug.",
-      "marketCapCrore": 4326.2
+      "marketCapCrore": 4982.77
     },
     {
       "symbol": "BAJAJHIND",
       "name": "Bajaj Hindusthan",
-      "marketCapCrore": 4135.85
+      "marketCapCrore": 4506.39
+    },
+    {
+      "symbol": "BANARISUG",
+      "name": "Bannari Amm.Sug.",
+      "marketCapCrore": 4392.66
     },
     {
       "symbol": "DALMIASUG",
       "name": "Dalmia Bharat",
-      "marketCapCrore": 3418.88
+      "marketCapCrore": 3723.62
     },
     {
       "symbol": "AVADHSUGAR",
       "name": "Avadh Sugar",
-      "marketCapCrore": 1307.5
+      "marketCapCrore": 1436.4
     }
   ]
 }

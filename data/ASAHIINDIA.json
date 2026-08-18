@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ASAHIINDIA/consolidated/",
-    "fetchedAt": "2026-08-12T21:53:02.813Z",
+    "fetchedAt": "2026-08-18T08:31:55.565Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,207 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "automotive-glass",
+          "name": "Automotive Glass",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 697,
+              "sharePercent": 60.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 639,
+              "sharePercent": 59.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 710,
+              "sharePercent": 58.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 703,
+              "sharePercent": 56.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 753,
+              "sharePercent": 58.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 739,
+              "sharePercent": 58.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 816,
+              "sharePercent": 62.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 777,
+              "sharePercent": 56.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 815,
+              "sharePercent": 58.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 857,
+              "sharePercent": 56.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 933,
+              "sharePercent": 56.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 949,
+              "sharePercent": 55.2
+            }
+          ]
+        },
+        {
+          "id": "float-glass",
+          "name": "Float Glass",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 384,
+              "sharePercent": 33.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 358,
+              "sharePercent": 33.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 356,
+              "sharePercent": 29.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 367,
+              "sharePercent": 29.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 345,
+              "sharePercent": 26.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 321,
+              "sharePercent": 25.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 300,
+              "sharePercent": 22.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 387,
+              "sharePercent": 28.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 384,
+              "sharePercent": 27.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 473,
+              "sharePercent": 31
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 510,
+              "sharePercent": 31
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 545,
+              "sharePercent": 31.7
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 66,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 73,
+              "sharePercent": 6.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 149,
+              "sharePercent": 12.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 181,
+              "sharePercent": 14.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 190,
+              "sharePercent": 14.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 202,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 194,
+              "sharePercent": 14.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 215,
+              "sharePercent": 15.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 188,
+              "sharePercent": 13.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 197,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 202,
+              "sharePercent": 12.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 224,
+              "sharePercent": 13
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,51 +665,249 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "automotive-glass",
+          "name": "Automotive Glass",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1208,
+              "sharePercent": 55.8
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1508,
+              "sharePercent": 61.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1711,
+              "sharePercent": 63.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1730,
+              "sharePercent": 62.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1752,
+              "sharePercent": 57.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1519,
+              "sharePercent": 55.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1346,
+              "sharePercent": 53.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1614,
+              "sharePercent": 49.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 2197,
+              "sharePercent": 52.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2666,
+              "sharePercent": 58.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3011,
+              "sharePercent": 58.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3383,
+              "sharePercent": 57
+            }
+          ]
+        },
+        {
+          "id": "float-glass",
+          "name": "Float Glass",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 828,
+              "sharePercent": 38.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 804,
+              "sharePercent": 33
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 801,
+              "sharePercent": 29.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 893,
+              "sharePercent": 32.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1124,
+              "sharePercent": 36.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1077,
+              "sharePercent": 39.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1078,
+              "sharePercent": 42.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1503,
+              "sharePercent": 45.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1749,
+              "sharePercent": 41.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1527,
+              "sharePercent": 33.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1332,
+              "sharePercent": 26.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1754,
+              "sharePercent": 29.5
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 130,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 123,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 167,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 162,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 176,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 139,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 109,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 173,
+              "sharePercent": 5.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 232,
+              "sharePercent": 5.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 350,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 766,
+              "sharePercent": 15
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 803,
+              "sharePercent": 13.5
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "MOTHERSON",
       "name": "Samvardh. Mothe.",
-      "marketCapCrore": 178897.8
+      "marketCapCrore": 179425.48
     },
     {
       "symbol": "BOSCHLTD",
       "name": "Bosch",
-      "marketCapCrore": 137097.87
+      "marketCapCrore": 143771.05
     },
     {
       "symbol": "BHARATFORG",
       "name": "Bharat Forge",
-      "marketCapCrore": 99514.15
+      "marketCapCrore": 99894.25
     },
     {
       "symbol": "UNOMINDA",
       "name": "Uno Minda",
-      "marketCapCrore": 71167.06
+      "marketCapCrore": 73401.85
     },
     {
       "symbol": "SCHAEFFLER",
       "name": "Schaeffler India",
-      "marketCapCrore": 64487.77
+      "marketCapCrore": 63302.99
     },
     {
       "symbol": "TIINDIA",
       "name": "Tube Investments",
-      "marketCapCrore": 54955.18
+      "marketCapCrore": 57377.74
     },
     {
       "symbol": "SONACOMS",
       "name": "Sona BLW Precis.",
-      "marketCapCrore": 50164.83
+      "marketCapCrore": 51339.93
     },
     {
       "symbol": "ASAHIINDIA",
       "name": "Asahi India Glas",
-      "marketCapCrore": 22726.76
+      "marketCapCrore": 24221.86
     }
   ]
 }
