@@ -29,23 +29,6 @@ const DEFAULT_WORKFLOW = 'refresh-scraped-data.yml'
 const TICKER_RE = /^[A-Z0-9&.\-]{1,20}$/
 // Upper bound on a single batch (peer "Run all"), to cap run time and abuse.
 const MAX_ANALYZE_TICKERS = 12
-// The Concall Deep Dive app (Sattva): its per-company report carries a
-// fact-checked revenue-mix-by-segment we surface as our "Revenue Mix by Segment"
-// card. Override with the CONCALL_API_BASE var; also declared in wrangler.jsonc.
-const DEFAULT_CONCALL_BASE = 'https://concall-sattva.tech-441.workers.dev'
-
-/** URL-safe slug — byte-identical to the concall app's slugify, so a ticker maps
- * to the same KV key its report is stored under. */
-function slugify(s) {
-  return (
-    String(s || '')
-      .toLowerCase()
-      .replace(/&/g, ' and ')
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, '')
-      .slice(0, 64) || 'company'
-  )
-}
 
 const GH_HEADERS = (token) => ({
   Authorization: `Bearer ${token}`,
@@ -62,7 +45,6 @@ export default {
     if (pathname === '/api/financials') return cors(await handleFinancials(url, env))
     if (pathname === '/api/analyze') return cors(await handleAnalyze(request, env))
     if (pathname === '/api/companies') return cors(await handleCompanies(env))
-    if (pathname === '/api/segments') return cors(await handleSegments(url, env))
 
     // Static single-page app for everything else.
     return env.ASSETS.fetch(request)
@@ -100,52 +82,6 @@ async function handleFinancials(url, env) {
     return json({ error: 'parse' }, 502)
   }
   return json({ status: 'ok', ticker, data })
-}
-
-/**
- * Revenue mix by segment for a company, sourced from the Concall Deep Dive app's
- * fact-checked `about.revenue_mix` (a `[{segment, pct}]` split management stated
- * on the latest earnings call). This is the segment source that sidesteps BSE's
- * IP block. Best-effort: any miss (no report yet, app down, empty mix) returns
- * `absent` and the dashboard keeps the honest "not reported" state — never faked.
- */
-async function handleSegments(url, env) {
-  const ticker = (url.searchParams.get('ticker') || '').trim().toUpperCase()
-  if (!TICKER_RE.test(ticker)) return json({ error: 'bad-ticker' }, 400)
-
-  const base = (env.CONCALL_API_BASE || DEFAULT_CONCALL_BASE).replace(/\/+$/, '')
-  const slug = slugify(ticker)
-
-  let res
-  try {
-    res = await fetch(`${base}/api/report?slug=${encodeURIComponent(slug)}`, {
-      headers: { Accept: 'application/json' },
-    })
-  } catch {
-    return json({ status: 'absent' })
-  }
-  if (!res.ok) return json({ status: 'absent' })
-
-  let data
-  try {
-    data = await res.json()
-  } catch {
-    return json({ status: 'absent' })
-  }
-
-  const report = data.report || {}
-  const about = report.about || {}
-  const mix = Array.isArray(about.revenue_mix)
-    ? about.revenue_mix.filter((m) => m && typeof m.pct === 'number' && m.segment)
-    : []
-  if (data.status !== 'done' || mix.length === 0) return json({ status: 'absent' })
-
-  return json({
-    status: 'available',
-    source: 'concall',
-    quarter: (report.meta && report.meta.quarter) || null,
-    segments: mix.map((m) => ({ name: String(m.segment), pct: m.pct })),
-  })
 }
 
 /**

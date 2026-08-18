@@ -4,13 +4,16 @@
  * That app's per-company report carries a fact-checked `about.revenue_mix`
  * (`[{segment, pct}]` — the split management stated on the latest earnings call,
  * verified against the transcript). It's the segment source that sidesteps BSE's
- * IP block. In production we go through our own Worker (`/api/segments`, which
- * proxies + extracts); in local dev we hit the concall app directly (its API
- * sends `Access-Control-Allow-Origin: *`). A miss returns `null` and the card
- * stays an honest "not reported" — never faked.
+ * IP block.
+ *
+ * We fetch the concall app straight from the browser in both dev and prod: its
+ * API sends `Access-Control-Allow-Origin: *`, so cross-origin reads are allowed,
+ * and going direct avoids a Worker→Worker subrequest (our Worker and the concall
+ * app are both `*.workers.dev` on one Cloudflare account, and that same-account
+ * hop fails). A miss returns `null` and the card stays an honest "not reported" —
+ * never faked.
  */
 
-const DEV = import.meta.env.DEV
 const CONCALL_BASE = 'https://concall-sattva.tech-441.workers.dev'
 
 export interface ConcallSegments {
@@ -19,7 +22,8 @@ export interface ConcallSegments {
   readonly segments: readonly { readonly name: string; readonly pct: number }[]
 }
 
-/** Byte-identical to the concall app's slugify (dev direct-fetch path only). */
+/** Byte-identical to the concall app's slugify, so a ticker maps to the same KV
+ * key its report is stored under. */
 function slugify(s: string): string {
   return (
     s
@@ -48,25 +52,17 @@ export async function fetchConcallSegments(ticker: string): Promise<ConcallSegme
   if (!sym) return null
 
   try {
-    if (DEV) {
-      const res = await fetch(`${CONCALL_BASE}/api/report?slug=${encodeURIComponent(slugify(sym))}`, {
-        headers: { Accept: 'application/json' },
-      })
-      if (!res.ok) return null
-      const d = (await res.json()) as { status?: string; report?: { about?: { revenue_mix?: unknown }; meta?: { quarter?: string } } }
-      const segments = cleanMix(d.report?.about?.revenue_mix)
-      if (d.status !== 'done' || segments.length === 0) return null
-      return { quarter: d.report?.meta?.quarter ?? null, segments }
-    }
-
-    const res = await fetch(`/api/segments?ticker=${encodeURIComponent(sym)}`, {
+    const res = await fetch(`${CONCALL_BASE}/api/report?slug=${encodeURIComponent(slugify(sym))}`, {
       headers: { Accept: 'application/json' },
     })
     if (!res.ok) return null
-    const p = (await res.json()) as { status?: string; quarter?: string | null; segments?: unknown }
-    const segments = cleanMix(p.segments)
-    if (p.status !== 'available' || segments.length === 0) return null
-    return { quarter: p.quarter ?? null, segments }
+    const d = (await res.json()) as {
+      status?: string
+      report?: { about?: { revenue_mix?: unknown }; meta?: { quarter?: string } }
+    }
+    const segments = cleanMix(d.report?.about?.revenue_mix)
+    if (d.status !== 'done' || segments.length === 0) return null
+    return { quarter: d.report?.meta?.quarter ?? null, segments }
   } catch {
     return null
   }

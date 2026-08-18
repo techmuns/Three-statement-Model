@@ -8,9 +8,7 @@
   // GitHub token stays a Worker *secret* (set in the dashboard); never commit it.
   "vars": {
     "GITHUB_REPO": "techmuns/three-statement-model",
-    "GITHUB_BRANCH": "main",
-    // Concall Deep Dive app — source of the revenue-mix-by-segment card.
-    "CONCALL_API_BASE": "https://concall-sattva.tech-441.workers.dev"
+    "GITHUB_BRANCH": "main"
   },
 
   // Build the app before deploying. Wrangler runs this command ahead of every
