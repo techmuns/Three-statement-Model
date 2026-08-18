@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/CHENNPETRO/consolidated/",
-    "fetchedAt": "2026-08-11T12:08:51.973Z",
+    "fetchedAt": "2026-08-18T08:38:29.617Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
-  },
-  "peers": [
-    {
-      "symbol": "RELIANCE",
-      "name": "Reliance Industries",
-      "marketCapCrore": 1789671.38
-    },
-    {
-      "symbol": "IOC",
-      "name": "I O C L",
-      "marketCapCrore": 198471.12
-    },
-    {
-      "symbol": "BPCL",
-      "name": "B P C L",
-      "marketCapCrore": 136758.62
-    },
-    {
-      "symbol": "HINDPETRO",
-      "name": "H P C L",
-      "marketCapCrore": 83431.47
-    },
-    {
-      "symbol": "MRPL",
-      "name": "M R P L",
-      "marketCapCrore": 31682.23
-    },
-    {
-      "symbol": "CHENNPETRO",
-      "name": "C P C L",
-      "marketCapCrore": 21222.26
-    },
-    {
-      "symbol": "KOTYARK",
-      "name": "Kotyark Indust.",
-      "marketCapCrore": 478.16
-    }
-  ]
+  }
 }

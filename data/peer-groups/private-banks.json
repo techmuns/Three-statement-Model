@@ -10,7 +10,7 @@
       "id": "icicibank",
       "name": "ICICI Bank",
       "ticker": "ICICIBANK",
-      "marketCapCrore": 1027438.02,
+      "marketCapCrore": 1013147.27,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -42,7 +42,7 @@
       "id": "kotakbank",
       "name": "Kotak Mah. Bank",
       "ticker": "KOTAKBANK",
-      "marketCapCrore": 391429.04,
+      "marketCapCrore": 387698.78,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -74,7 +74,7 @@
       "id": "axisbank",
       "name": "Axis Bank",
       "ticker": "AXISBANK",
-      "marketCapCrore": 388116.05,
+      "marketCapCrore": 386794.33,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -103,42 +103,10 @@
       ]
     },
     {
-      "id": "idbi",
-      "name": "IDBI Bank",
-      "ticker": "IDBI",
-      "marketCapCrore": 89244.94,
-      "kpis": [
-        {
-          "kpiId": "revenue-growth",
-          "value": null
-        },
-        {
-          "kpiId": "operating-margin",
-          "value": null
-        },
-        {
-          "kpiId": "net-profit-margin",
-          "value": null
-        },
-        {
-          "kpiId": "return-on-equity",
-          "value": null
-        },
-        {
-          "kpiId": "return-on-capital-employed",
-          "value": 5.92
-        },
-        {
-          "kpiId": "debt-to-equity",
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "federalbnk",
       "name": "Federal Bank",
       "ticker": "FEDERALBNK",
-      "marketCapCrore": 88518.38,
+      "marketCapCrore": 87781.29,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -167,10 +135,42 @@
       ]
     },
     {
+      "id": "idbi",
+      "name": "IDBI Bank",
+      "ticker": "IDBI",
+      "marketCapCrore": 87696.63,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 5.92
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "indusindbk",
       "name": "IndusInd Bank",
       "ticker": "INDUSINDBK",
-      "marketCapCrore": 80040.31,
+      "marketCapCrore": 78810.07,
       "kpis": [
         {
           "kpiId": "revenue-growth",

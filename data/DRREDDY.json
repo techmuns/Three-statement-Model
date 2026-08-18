@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/DRREDDY/consolidated/",
-    "fetchedAt": "2026-08-16T19:53:26.952Z",
+    "fetchedAt": "2026-08-18T08:39:20.089Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,207 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "global-generics",
+          "name": "Global Generics",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 6113,
+              "sharePercent": 85.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 6312,
+              "sharePercent": 84.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 6119,
+              "sharePercent": 82.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 6893,
+              "sharePercent": 86.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 7164,
+              "sharePercent": 86.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 7381,
+              "sharePercent": 86
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 7537,
+              "sharePercent": 86.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 7562,
+              "sharePercent": 86.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 7824,
+              "sharePercent": 86.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 7957,
+              "sharePercent": 89.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 6593,
+              "sharePercent": 85.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 7199,
+              "sharePercent": 87
+            }
+          ]
+        },
+        {
+          "id": "pharmaceutical-services",
+          "name": "Pharmaceutical Services",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 963,
+              "sharePercent": 13.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1058,
+              "sharePercent": 14.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1153,
+              "sharePercent": 15.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1047,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1119,
+              "sharePercent": 13.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1039,
+              "sharePercent": 12.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1168,
+              "sharePercent": 13.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 971,
+              "sharePercent": 11.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1208,
+              "sharePercent": 13.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 947,
+              "sharePercent": 10.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1125,
+              "sharePercent": 14.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1053,
+              "sharePercent": 12.7
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 68,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 122,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 142,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 21,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 18,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 161,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 13,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 165,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 10,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 15,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 24,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 19,
+              "sharePercent": 0.2
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +665,273 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "global-generics",
+          "name": "Global Generics",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 11940,
+              "sharePercent": 77
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 12833,
+              "sharePercent": 79.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 11574,
+              "sharePercent": 78.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 11428,
+              "sharePercent": 77.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 12306,
+              "sharePercent": 76.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 13826,
+              "sharePercent": 76.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 15476,
+              "sharePercent": 78.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 17965,
+              "sharePercent": 81
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 21395,
+              "sharePercent": 84.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 24545,
+              "sharePercent": 84.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 28981,
+              "sharePercent": 86.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 29946,
+              "sharePercent": 87
+            }
+          ]
+        },
+        {
+          "id": "pharmaceutical-services",
+          "name": "Pharmaceutical Services",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 3236,
+              "sharePercent": 20.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2844,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2783,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2793,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3040,
+              "sharePercent": 19
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3209,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3928,
+              "sharePercent": 19.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3750,
+              "sharePercent": 16.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3720,
+              "sharePercent": 14.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4058,
+              "sharePercent": 14
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4387,
+              "sharePercent": 13.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 4267,
+              "sharePercent": 12.4
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 116,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 170,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 179,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 184,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 206,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 278,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 281,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 456,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 313,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 391,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 215,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 214,
+              "sharePercent": 0.6
+            }
+          ]
+        },
+        {
+          "id": "proprietary-products",
+          "name": "Proprietary Products",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 217,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 266,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 278,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 425,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 475,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 795,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 52,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "SUNPHARMA",
-      "name": "Sun Pharma.Inds.",
-      "marketCapCrore": 463071.65
-    },
-    {
-      "symbol": "DIVISLAB",
-      "name": "Divi's Lab.",
-      "marketCapCrore": 225037.72
-    },
-    {
-      "symbol": "TORNTPHARM",
-      "name": "Torrent Pharma.",
-      "marketCapCrore": 183831.78
-    },
-    {
-      "symbol": "CIPLA",
-      "name": "Cipla",
-      "marketCapCrore": 117138.71
-    },
-    {
-      "symbol": "ZYDUSLIFE",
-      "name": "Zydus Lifesci.",
-      "marketCapCrore": 113236.64
-    },
-    {
-      "symbol": "LUPIN",
-      "name": "Lupin",
-      "marketCapCrore": 102191.47
-    },
-    {
-      "symbol": "DRREDDY",
-      "name": "Dr Reddy's Labs",
-      "marketCapCrore": 100161.1
-    }
-  ]
+  }
 }

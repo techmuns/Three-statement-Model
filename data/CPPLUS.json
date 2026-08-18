@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/CPPLUS/consolidated/",
-    "fetchedAt": "2026-08-16T19:31:32.955Z",
+    "fetchedAt": "2026-08-18T08:39:09.417Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,45 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "INDOMIM",
       "name": "Indo-MIM",
-      "marketCapCrore": 41998.74
+      "marketCapCrore": 47039.94
     },
     {
       "symbol": "CPPLUS",
       "name": "Aditya Infotech",
-      "marketCapCrore": 41629.92
+      "marketCapCrore": 39223.64
     },
     {
       "symbol": "HONAUT",
       "name": "Honeywell Auto",
-      "marketCapCrore": 32889.22
+      "marketCapCrore": 31927.77
     },
     {
       "symbol": "SYRMA",
       "name": "Syrma SGS Tech.",
-      "marketCapCrore": 28253.52
+      "marketCapCrore": 28886.06
     },
     {
       "symbol": "KAYNES",
       "name": "Kaynes Tech",
-      "marketCapCrore": 24604.78
+      "marketCapCrore": 24580.97
     },
     {
       "symbol": "LMW",
       "name": "LMW",
-      "marketCapCrore": 20213.3
+      "marketCapCrore": 21109.62
     },
     {
       "symbol": "JYOTICNC",
       "name": "Jyoti CNC Auto.",
-      "marketCapCrore": 18805.62
+      "marketCapCrore": 20524.93
     }
   ]
 }

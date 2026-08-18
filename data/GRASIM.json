@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/GRASIM/consolidated/",
-    "fetchedAt": "2026-08-16T19:16:26.940Z",
+    "fetchedAt": "2026-08-18T08:40:03.019Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,471 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "building-material",
+          "name": "Building Material",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 20919,
+              "sharePercent": 55
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 18701,
+              "sharePercent": 54.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 16683,
+              "sharePercent": 49.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 18784,
+              "sharePercent": 53.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 25232,
+              "sharePercent": 56.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 23733,
+              "sharePercent": 58.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 22253,
+              "sharePercent": 55.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 25173,
+              "sharePercent": 56.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 30042,
+              "sharePercent": 58.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 28835,
+              "sharePercent": 58.5
+            }
+          ]
+        },
+        {
+          "id": "financial-services",
+          "name": "Financial Services",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 7708,
+              "sharePercent": 25.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 8786,
+              "sharePercent": 27.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 10484,
+              "sharePercent": 27.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 8807,
+              "sharePercent": 25.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 10252,
+              "sharePercent": 30.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 9396,
+              "sharePercent": 26.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 12197,
+              "sharePercent": 27.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 9488,
+              "sharePercent": 23.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 10569,
+              "sharePercent": 26.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 11948,
+              "sharePercent": 26.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 13422,
+              "sharePercent": 26
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 12155,
+              "sharePercent": 24.7
+            }
+          ]
+        },
+        {
+          "id": "cellulosic-fibre",
+          "name": "Cellulosic Fibre",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 3762,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 3787,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 4125,
+              "sharePercent": 12.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3934,
+              "sharePercent": 11.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 4051,
+              "sharePercent": 9.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 4043,
+              "sharePercent": 10
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 4149,
+              "sharePercent": 10.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 4298,
+              "sharePercent": 9.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 4614,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 4530,
+              "sharePercent": 9.2
+            }
+          ]
+        },
+        {
+          "id": "chemicals",
+          "name": "Chemicals",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1988,
+              "sharePercent": 6.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1996,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2083,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2066,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2054,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2226,
+              "sharePercent": 6.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2302,
+              "sharePercent": 5.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2391,
+              "sharePercent": 5.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2399,
+              "sharePercent": 5.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2345,
+              "sharePercent": 5.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2458,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2640,
+              "sharePercent": 5.4
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 905,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1055,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 790,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 798,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 778,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 815,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 898,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 865,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 996,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1010,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1021,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1126,
+              "sharePercent": 2.3
+            }
+          ]
+        },
+        {
+          "id": "cement",
+          "name": "Cement",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 16012,
+              "sharePercent": 52.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 16740,
+              "sharePercent": 51.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "viscose-pulp-viscose-staple-fibre-and-filament-yarn",
+          "name": "Viscose - Pulp,Viscose Staple Fibre and Filament Yarn",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 3889,
+              "sharePercent": 12.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 3715,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +929,455 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "building-material",
+          "name": "Building Material",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 71953,
+              "sharePercent": 54.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 81394,
+              "sharePercent": 54.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 101202,
+              "sharePercent": 57.1
+            }
+          ]
+        },
+        {
+          "id": "financial-services",
+          "name": "Financial Services",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 9083,
+              "sharePercent": 15.7
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 15032,
+              "sharePercent": 19.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 16605,
+              "sharePercent": 21.8
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 19184,
+              "sharePercent": 24.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 22094,
+              "sharePercent": 22.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 27365,
+              "sharePercent": 22.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 34008,
+              "sharePercent": 25.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 40651,
+              "sharePercent": 27.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 45427,
+              "sharePercent": 25.6
+            }
+          ]
+        },
+        {
+          "id": "cellulosic-fibre",
+          "name": "Cellulosic Fibre",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 14949,
+              "sharePercent": 11.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 15897,
+              "sharePercent": 10.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 17104,
+              "sharePercent": 9.7
+            }
+          ]
+        },
+        {
+          "id": "chemicals",
+          "name": "Chemicals",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1701,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 3768,
+              "sharePercent": 9.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 4180,
+              "sharePercent": 10.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 5105,
+              "sharePercent": 8.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 6437,
+              "sharePercent": 8.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 5502,
+              "sharePercent": 7.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 4581,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 7888,
+              "sharePercent": 8.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 10422,
+              "sharePercent": 8.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 8213,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 8648,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 9592,
+              "sharePercent": 5.4
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 636,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 508,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 465,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 3372,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 4831,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2287,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1454,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2321,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3232,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 3087,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3288,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3892,
+              "sharePercent": 2.2
+            }
+          ]
+        },
+        {
+          "id": "cement",
+          "name": "Cement",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 24340,
+              "sharePercent": 73
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 28392,
+              "sharePercent": 72.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 28646,
+              "sharePercent": 69.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 31872,
+              "sharePercent": 55
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 41609,
+              "sharePercent": 53.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 42430,
+              "sharePercent": 55.8
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 44726,
+              "sharePercent": 58.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 52599,
+              "sharePercent": 54.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 63240,
+              "sharePercent": 53
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "fibre-pulp",
+          "name": "Fibre & Pulp",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 6643,
+              "sharePercent": 19.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 6536,
+              "sharePercent": 16.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 7715,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "viscose-pulp-viscose-staple-and-filament-yarn",
+          "name": "Viscose - Pulp,Viscose Staple and Filament Yarn",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 8535,
+              "sharePercent": 14.7
+            }
+          ]
+        },
+        {
+          "id": "viscose-pulp-viscose-staple-fibre-and-filament-yarn",
+          "name": "Viscose - Pulp,Viscose Staple Fibre and Filament Yarn",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 10325,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 9235,
+              "sharePercent": 12.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 6965,
+              "sharePercent": 9.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 12210,
+              "sharePercent": 12.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 15149,
+              "sharePercent": 12.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ULTRACEMCO",
       "name": "UltraTech Cem.",
-      "marketCapCrore": 342387.73
+      "marketCapCrore": 341175.16
     },
     {
       "symbol": "GRASIM",
       "name": "Grasim Inds",
-      "marketCapCrore": 221085.66
+      "marketCapCrore": 222395.7
     },
     {
       "symbol": "AMBUJACEM",
       "name": "Ambuja Cements",
-      "marketCapCrore": 103741.12
+      "marketCapCrore": 102324.77
     },
     {
       "symbol": "SHREECEM",
       "name": "Shree Cement",
-      "marketCapCrore": 89462.21
+      "marketCapCrore": 89151.94
     },
     {
       "symbol": "JKCEMENT",
       "name": "J K Cements",
-      "marketCapCrore": 41002.4
+      "marketCapCrore": 41482.26
     },
     {
       "symbol": "DALBHARAT",
       "name": "Dalmia BharatLtd",
-      "marketCapCrore": 34549.65
+      "marketCapCrore": 34570.29
     },
     {
       "symbol": "ACC",
       "name": "ACC",
-      "marketCapCrore": 24814.21
+      "marketCapCrore": 24553.2
     }
   ]
 }

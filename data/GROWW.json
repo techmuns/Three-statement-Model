@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/GROWW/consolidated/",
-    "fetchedAt": "2026-08-17T21:30:10.084Z",
+    "fetchedAt": "2026-08-18T08:40:06.175Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
-  },
-  "peers": [
-    {
-      "symbol": "GROWW",
-      "name": "Billionbrains",
-      "marketCapCrore": 124662.81
-    },
-    {
-      "symbol": "MOTILALOFS",
-      "name": "Motil.Oswal.Fin.",
-      "marketCapCrore": 57521.87
-    },
-    {
-      "symbol": "360ONE",
-      "name": "360 ONE",
-      "marketCapCrore": 48301.16
-    },
-    {
-      "symbol": "NUVAMA",
-      "name": "Nuvama Wealth",
-      "marketCapCrore": 31857.14
-    },
-    {
-      "symbol": "ANGELONE",
-      "name": "Angel One",
-      "marketCapCrore": 26844.76
-    },
-    {
-      "symbol": "IIFLCAPS",
-      "name": "IIFL Capital",
-      "marketCapCrore": 10544.44
-    },
-    {
-      "symbol": "SHAREINDIA",
-      "name": "Share India Sec.",
-      "marketCapCrore": 3828.57
-    }
-  ]
+  }
 }

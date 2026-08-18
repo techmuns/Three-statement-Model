@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/DMART/consolidated/",
-    "fetchedAt": "2026-08-14T21:28:57.188Z",
+    "fetchedAt": "2026-08-18T08:39:13.157Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,45 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "DMART",
       "name": "Avenue Super.",
-      "marketCapCrore": 264811.87
+      "marketCapCrore": 260947.27
     },
     {
       "symbol": "VMM",
       "name": "Vishal Mega Mart",
-      "marketCapCrore": 49284.18
+      "marketCapCrore": 48909.44
     },
     {
       "symbol": "EMIL",
       "name": "Electronics Mart",
-      "marketCapCrore": 7293.62
+      "marketCapCrore": 7377.56
     },
     {
       "symbol": "VMART",
       "name": "V-Mart Retail",
-      "marketCapCrore": 6425.71
+      "marketCapCrore": 6437.63
     },
     {
       "symbol": "SHOPERSTOP",
       "name": "Shoppers Stop",
-      "marketCapCrore": 4676.58
+      "marketCapCrore": 4739.4
     },
     {
       "symbol": "537392",
       "name": "Keto Motors",
-      "marketCapCrore": 1671.41
+      "marketCapCrore": 1842.56
     },
     {
       "symbol": "PATELRMART",
       "name": "Patel Retail",
-      "marketCapCrore": 734.42
+      "marketCapCrore": 776.39
     }
   ]
 }

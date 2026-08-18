@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/HCLTECH/consolidated/",
-    "fetchedAt": "2026-08-16T19:16:29.046Z",
+    "fetchedAt": "2026-08-18T08:40:43.216Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,207 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "it-business-services",
+          "name": "IT & Business Services",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 19898,
+              "sharePercent": 74.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 20409,
+              "sharePercent": 71.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 21240,
+              "sharePercent": 74.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 20905,
+              "sharePercent": 74.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 21544,
+              "sharePercent": 74.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 21803,
+              "sharePercent": 72.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 22186,
+              "sharePercent": 73.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 22454,
+              "sharePercent": 73.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 23693,
+              "sharePercent": 74
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 24505,
+              "sharePercent": 72.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 25443,
+              "sharePercent": 74.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 26049,
+              "sharePercent": 75.1
+            }
+          ]
+        },
+        {
+          "id": "engineering-and-r-d-services",
+          "name": "Engineering and R&D Services",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 4271,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 4673,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 4695,
+              "sharePercent": 16.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 4455,
+              "sharePercent": 15.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 4545,
+              "sharePercent": 15.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 4798,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 5162,
+              "sharePercent": 17
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 5174,
+              "sharePercent": 17
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 5423,
+              "sharePercent": 16.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 5679,
+              "sharePercent": 16.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 5787,
+              "sharePercent": 17
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 5699,
+              "sharePercent": 16.4
+            }
+          ]
+        },
+        {
+          "id": "hcl-software",
+          "name": "HCL Software",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2503,
+              "sharePercent": 9.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 3364,
+              "sharePercent": 11.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2546,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2789,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2865,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3387,
+              "sharePercent": 11.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 3008,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2826,
+              "sharePercent": 9.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2923,
+              "sharePercent": 9.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 3791,
+              "sharePercent": 11.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2857,
+              "sharePercent": 8.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2960,
+              "sharePercent": 8.5
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +665,394 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "it-business-services",
+          "name": "IT & Business Services",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 50742,
+              "sharePercent": 71.8
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 53401,
+              "sharePercent": 70.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 61711,
+              "sharePercent": 72
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 74015,
+              "sharePercent": 73
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 81179,
+              "sharePercent": 73.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 86438,
+              "sharePercent": 73.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 96095,
+              "sharePercent": 73.6
+            }
+          ]
+        },
+        {
+          "id": "engineering-and-r-d-services",
+          "name": "Engineering and R&D Services",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 10342,
+              "sharePercent": 17.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 11819,
+              "sharePercent": 16.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 11546,
+              "sharePercent": 15.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 13564,
+              "sharePercent": 15.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 16802,
+              "sharePercent": 16.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 17667,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 18960,
+              "sharePercent": 16.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 22063,
+              "sharePercent": 16.9
+            }
+          ]
+        },
+        {
+          "id": "hcl-software",
+          "name": "HCL Software",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 10376,
+              "sharePercent": 12.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 10639,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 11454,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 12049,
+              "sharePercent": 10.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 12397,
+              "sharePercent": 9.5
+            }
+          ]
+        },
+        {
+          "id": "business-processing-outsourcing",
+          "name": "Business Processing Outsourcing",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1697,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1661,
+              "sharePercent": 5.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1886,
+              "sharePercent": 4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1863,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "software-services",
+          "name": "Software Services",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 22179,
+              "sharePercent": 60.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 18390,
+              "sharePercent": 59.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 27139,
+              "sharePercent": 57.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 29611,
+              "sharePercent": 58.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 45100,
+              "sharePercent": 74.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "infrastructure-services",
+          "name": "Infrastructure Services",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 12825,
+              "sharePercent": 34.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 11085,
+              "sharePercent": 35.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 18543,
+              "sharePercent": 39
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 19095,
+              "sharePercent": 37.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "products-plat-forms",
+          "name": "Products & Plat forms",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 4985,
+              "sharePercent": 8.2
+            }
+          ]
+        },
+        {
+          "id": "products-platforms",
+          "name": "Products & Platforms",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 8115,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 10442,
+              "sharePercent": 13.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "TCS",
       "name": "TCS",
-      "marketCapCrore": 854230.46
+      "marketCapCrore": 826371.24
     },
     {
       "symbol": "INFY",
       "name": "Infosys",
-      "marketCapCrore": 474467.98
+      "marketCapCrore": 453305.2
     },
     {
       "symbol": "HCLTECH",
       "name": "HCL Technologies",
-      "marketCapCrore": 369058.45
+      "marketCapCrore": 351690.95
     },
     {
       "symbol": "WIPRO",
       "name": "Wipro",
-      "marketCapCrore": 182240.88
+      "marketCapCrore": 177390.23
     },
     {
       "symbol": "TECHM",
       "name": "Tech Mahindra",
-      "marketCapCrore": 160028.25
+      "marketCapCrore": 155206.21
     },
     {
       "symbol": "LTM",
       "name": "LTM",
-      "marketCapCrore": 139856.95
+      "marketCapCrore": 136683.06
     },
     {
       "symbol": "PERSISTENT",
       "name": "Persistent Systems",
-      "marketCapCrore": 88024.5
+      "marketCapCrore": 86543.19
     }
   ]
 }

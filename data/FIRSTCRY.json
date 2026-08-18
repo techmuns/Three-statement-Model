@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/FIRSTCRY/consolidated/",
-    "fetchedAt": "2026-08-17T21:31:27.788Z",
+    "fetchedAt": "2026-08-18T08:39:59.745Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,273 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "india-multichanel",
+          "name": "India-Multichanel",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1078,
+              "sharePercent": 70.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1313,
+              "sharePercent": 68.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1199,
+              "sharePercent": 70.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1150,
+              "sharePercent": 68.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1280,
+              "sharePercent": 66.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1511,
+              "sharePercent": 68.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1337,
+              "sharePercent": 68.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1237,
+              "sharePercent": 65.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1381,
+              "sharePercent": 65.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1646,
+              "sharePercent": 67.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1490,
+              "sharePercent": 68.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1456,
+              "sharePercent": 68.3
+            }
+          ]
+        },
+        {
+          "id": "globalbees",
+          "name": "Globalbees",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 280,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 374,
+              "sharePercent": 19.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 299,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 324,
+              "sharePercent": 19.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 433,
+              "sharePercent": 22.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 422,
+              "sharePercent": 19.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 398,
+              "sharePercent": 20.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 426,
+              "sharePercent": 22.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 493,
+              "sharePercent": 23.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 515,
+              "sharePercent": 21
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 460,
+              "sharePercent": 21
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 424,
+              "sharePercent": 19.9
+            }
+          ]
+        },
+        {
+          "id": "international",
+          "name": "International",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 166,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 231,
+              "sharePercent": 12
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 185,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 184,
+              "sharePercent": 11
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 208,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 261,
+              "sharePercent": 11.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 205,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 207,
+              "sharePercent": 11
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 236,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 280,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 225,
+              "sharePercent": 10.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 232,
+              "sharePercent": 10.9
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 6,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 8,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 10,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 12,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 9,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 11,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 11,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 13,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 11,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 11,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 12,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 19,
+              "sharePercent": 0.9
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +731,130 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "india-multichanel",
+          "name": "India-Multichanel",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 4579,
+              "sharePercent": 69.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5278,
+              "sharePercent": 68
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5753,
+              "sharePercent": 66.6
+            }
+          ]
+        },
+        {
+          "id": "globalbees",
+          "name": "Globalbees",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 1209,
+              "sharePercent": 18.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1578,
+              "sharePercent": 20.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1894,
+              "sharePercent": 21.9
+            }
+          ]
+        },
+        {
+          "id": "international",
+          "name": "International",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 754,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 859,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 947,
+              "sharePercent": 11
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 33,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 43,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 47,
+              "sharePercent": 0.5
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ETERNAL",
       "name": "Eternal",
-      "marketCapCrore": 306881.15
+      "marketCapCrore": 305192.36
     },
     {
       "symbol": "NYKAA",
       "name": "FSN E-Commerce",
-      "marketCapCrore": 93670.85
+      "marketCapCrore": 92739.98
     },
     {
       "symbol": "MEESHO",
       "name": "Meesho",
-      "marketCapCrore": 89571.86
+      "marketCapCrore": 89211.81
     },
     {
       "symbol": "SWIGGY",
       "name": "Swiggy",
-      "marketCapCrore": 76818.53
+      "marketCapCrore": 75328.92
     },
     {
       "symbol": "URBANCO",
       "name": "Urban Company",
-      "marketCapCrore": 22306.12
+      "marketCapCrore": 22207.38
     },
     {
       "symbol": "CARTRADE",
       "name": "Cartrade Tech",
-      "marketCapCrore": 13579.01
+      "marketCapCrore": 13694.21
     },
     {
       "symbol": "FIRSTCRY",
       "name": "Brainbees Solut.",
-      "marketCapCrore": 10880.32
+      "marketCapCrore": 10697.6
     }
   ]
 }

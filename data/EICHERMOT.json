@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/EICHERMOT/consolidated/",
-    "fetchedAt": "2026-08-16T19:32:06.808Z",
+    "fetchedAt": "2026-08-18T08:39:53.153Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,90 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "commercial-vehicles",
+          "name": "Commercial Vehicles",
+          "values": [
+            {
+              "periodId": "FY08",
+              "revenue": 1885,
+              "sharePercent": 81.7
+            }
+          ]
+        },
+        {
+          "id": "components-including-gears",
+          "name": "Components (Including Gears)",
+          "values": [
+            {
+              "periodId": "FY08",
+              "revenue": 108,
+              "sharePercent": 4.7
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY08",
+              "revenue": 73,
+              "sharePercent": 3.2
+            }
+          ]
+        },
+        {
+          "id": "two-wheelers",
+          "name": "Two Wheelers",
+          "values": [
+            {
+              "periodId": "FY08",
+              "revenue": 240,
+              "sharePercent": 10.4
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "BAJAJ-AUTO",
       "name": "Bajaj Auto",
-      "marketCapCrore": 321520.49
+      "marketCapCrore": 320642.5
     },
     {
       "symbol": "EICHERMOT",
       "name": "Eicher Motors",
-      "marketCapCrore": 221442.94
+      "marketCapCrore": 222420.24
     },
     {
       "symbol": "TVSMOTOR",
       "name": "TVS Motor Co.",
-      "marketCapCrore": 204620.02
+      "marketCapCrore": 207209.28
     },
     {
       "symbol": "HEROMOTOCO",
       "name": "Hero Motocorp",
-      "marketCapCrore": 115881.76
+      "marketCapCrore": 114981.19
     },
     {
       "symbol": "ATHERENERG",
       "name": "Ather Energy",
-      "marketCapCrore": 59627.64
+      "marketCapCrore": 57840.55
     },
     {
       "symbol": "OLAELEC",
       "name": "Ola Electric",
-      "marketCapCrore": 17925.83
+      "marketCapCrore": 17930.54
     },
     {
       "symbol": "544563",
       "name": "Zelio E-Mobility",
-      "marketCapCrore": 1658.58
+      "marketCapCrore": 1725.41
     }
   ]
 }

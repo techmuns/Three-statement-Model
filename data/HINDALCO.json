@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/HINDALCO/consolidated/",
-    "fetchedAt": "2026-08-16T19:16:33.195Z",
+    "fetchedAt": "2026-08-18T08:40:54.662Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,339 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "novelis",
+          "name": "Novelis",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 32749,
+              "sharePercent": 58.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 33859,
+              "sharePercent": 57.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 34929,
+              "sharePercent": 58.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 35975,
+              "sharePercent": 58.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 34461,
+              "sharePercent": 56.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 39703,
+              "sharePercent": 57.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 40362,
+              "sharePercent": 58.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 41418,
+              "sharePercent": 58.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 37292,
+              "sharePercent": 53.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 43810,
+              "sharePercent": 53.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 54763,
+              "sharePercent": 60.7
+            }
+          ]
+        },
+        {
+          "id": "copper",
+          "name": "Copper",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 11954,
+              "sharePercent": 21.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 13424,
+              "sharePercent": 22.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 13292,
+              "sharePercent": 22.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 13114,
+              "sharePercent": 21.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 13732,
+              "sharePercent": 22.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 14565,
+              "sharePercent": 21.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 14886,
+              "sharePercent": 21.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 14563,
+              "sharePercent": 20.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 18233,
+              "sharePercent": 26
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 22156,
+              "sharePercent": 26.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 17232,
+              "sharePercent": 19.1
+            }
+          ]
+        },
+        {
+          "id": "aluminium-upstream",
+          "name": "Aluminium Upstream",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 12441,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 7971,
+              "sharePercent": 14.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 8469,
+              "sharePercent": 14.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 8839,
+              "sharePercent": 14.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 9125,
+              "sharePercent": 14.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 9993,
+              "sharePercent": 16.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 10311,
+              "sharePercent": 14.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 9331,
+              "sharePercent": 13.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 10078,
+              "sharePercent": 14.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 10620,
+              "sharePercent": 15.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 11418,
+              "sharePercent": 13.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 13403,
+              "sharePercent": 14.8
+            }
+          ]
+        },
+        {
+          "id": "aluminium-downstream",
+          "name": "Aluminium Downstream",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2547,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2920,
+              "sharePercent": 5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2868,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 3161,
+              "sharePercent": 5.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3195,
+              "sharePercent": 5.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 3595,
+              "sharePercent": 5.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 3353,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 3809,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 3909,
+              "sharePercent": 5.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 4867,
+              "sharePercent": 5.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 4889,
+              "sharePercent": 5.4
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": -896,
+              "sharePercent": -7.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 707,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": -794,
+              "sharePercent": -1.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": -666,
+              "sharePercent": -1.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": -907,
+              "sharePercent": -1.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": -689,
+              "sharePercent": -1.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 880,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1035,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 854,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": -629,
+              "sharePercent": -0.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": -693,
+              "sharePercent": -0.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": -923,
+              "sharePercent": -1
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +797,352 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "novelis",
+          "name": "Novelis",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 63983,
+              "sharePercent": 63.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 62612,
+              "sharePercent": 61
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 72006,
+              "sharePercent": 62.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 86144,
+              "sharePercent": 65
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 79527,
+              "sharePercent": 66.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 91130,
+              "sharePercent": 67.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 134175,
+              "sharePercent": 59.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 145068,
+              "sharePercent": 57.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 162882,
+              "sharePercent": 56.1
+            }
+          ]
+        },
+        {
+          "id": "copper",
+          "name": "Copper",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 49321,
+              "sharePercent": 21.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 54703,
+              "sharePercent": 21.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 69838,
+              "sharePercent": 24.1
+            }
+          ]
+        },
+        {
+          "id": "aluminium-upstream",
+          "name": "Aluminium Upstream",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 36723,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 41702,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 32382,
+              "sharePercent": 14.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 38268,
+              "sharePercent": 15.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 41447,
+              "sharePercent": 14.3
+            }
+          ]
+        },
+        {
+          "id": "aluminium-downstream",
+          "name": "Aluminium Downstream",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 10531,
+              "sharePercent": 4.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 12819,
+              "sharePercent": 5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 15938,
+              "sharePercent": 5.5
+            }
+          ]
+        },
+        {
+          "id": "aluminium-business",
+          "name": "Aluminium Business",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 83139,
+              "sharePercent": 79.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 18835,
+              "sharePercent": 18.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 20602,
+              "sharePercent": 20.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 21396,
+              "sharePercent": 18.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 23775,
+              "sharePercent": 17.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 21804,
+              "sharePercent": 18.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 20495,
+              "sharePercent": 15.3
+            }
+          ]
+        },
+        {
+          "id": "copper-business",
+          "name": "Copper Business",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 20492,
+              "sharePercent": 19.6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 18429,
+              "sharePercent": 18.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 19448,
+              "sharePercent": 18.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 22427,
+              "sharePercent": 19.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 22198,
+              "sharePercent": 16.7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 18533,
+              "sharePercent": 15.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 22446,
+              "sharePercent": 16.7
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1126,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 463,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 288,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 230,
+              "sharePercent": 0.2
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": -1804,
+              "sharePercent": -4.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": -3839,
+              "sharePercent": -9.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": -3241,
+              "sharePercent": -1.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3142,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": -3211,
+              "sharePercent": -1.1
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "HINDALCO",
-      "name": "Hindalco Inds.",
-      "marketCapCrore": 231351.97
-    },
-    {
-      "symbol": "VAML",
-      "name": "Vedanta Aluminium Metal",
-      "marketCapCrore": 173543.02
-    },
-    {
-      "symbol": "NATIONALUM",
-      "name": "Natl. Aluminium",
-      "marketCapCrore": 69057.36
-    },
-    {
-      "symbol": "ARFIN",
-      "name": "Arfin India",
-      "marketCapCrore": 1418.11
-    },
-    {
-      "symbol": "MMP",
-      "name": "MMP Industries",
-      "marketCapCrore": 857.34
-    },
-    {
-      "symbol": "MAANALU",
-      "name": "Maan Aluminium",
-      "marketCapCrore": 720.72
-    },
-    {
-      "symbol": "544695",
-      "name": "Msafe Equipments",
-      "marketCapCrore": 432.48
-    }
-  ]
+  }
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/COALINDIA/consolidated/",
-    "fetchedAt": "2026-08-16T19:31:30.943Z",
+    "fetchedAt": "2026-08-18T08:39:06.320Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,51 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "coal",
+          "name": "Coal",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 42919,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 46490,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 46249,
+              "sharePercent": 100
+            }
+          ]
+        },
+        {
+          "id": "solar-energy",
+          "name": "Solar Energy",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 6,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,36 +509,47 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "coal",
+          "name": "Coal",
+          "values": [
+            {
+              "periodId": "FY26",
+              "revenue": 168400,
+              "sharePercent": 100
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "COALINDIA",
       "name": "Coal India",
-      "marketCapCrore": 250884.67
+      "marketCapCrore": 251500.95
     },
     {
       "symbol": "BHARATCOAL",
       "name": "Bharat Coking",
-      "marketCapCrore": 15689.43
+      "marketCapCrore": 15507.78
     },
     {
       "symbol": "SINDHUTRAD",
       "name": "Sindhu Trade",
-      "marketCapCrore": 3645.12
+      "marketCapCrore": 3777.71
     },
     {
       "symbol": "CMLL",
       "name": "Caliber Mining",
-      "marketCapCrore": 3444.32
+      "marketCapCrore": 3318.12
     },
     {
       "symbol": "513579",
       "name": "Foundry Fuel",
-      "marketCapCrore": 4.11
+      "marketCapCrore": 4.51
     }
   ]
 }

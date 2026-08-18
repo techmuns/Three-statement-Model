@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ETERNAL/consolidated/",
-    "fetchedAt": "2026-08-16T19:32:08.850Z",
+    "fetchedAt": "2026-08-18T08:39:56.553Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,339 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "quick-commerce-business",
+          "name": "Quick commerce business",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 505,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 644,
+              "sharePercent": 19.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 769,
+              "sharePercent": 21.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 942,
+              "sharePercent": 22.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1156,
+              "sharePercent": 24.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1399,
+              "sharePercent": 25.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1709,
+              "sharePercent": 29.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2400,
+              "sharePercent": 33.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 9891,
+              "sharePercent": 72.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 12256,
+              "sharePercent": 75.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 13232,
+              "sharePercent": 76.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 15664,
+              "sharePercent": 77.5
+            }
+          ]
+        },
+        {
+          "id": "india-food-ordering-and-delivery",
+          "name": "india Food ordering and Delivery",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1546,
+              "sharePercent": 54.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1704,
+              "sharePercent": 51.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1739,
+              "sharePercent": 48.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1942,
+              "sharePercent": 46.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2012,
+              "sharePercent": 41.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2072,
+              "sharePercent": 38.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2054,
+              "sharePercent": 35.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2261,
+              "sharePercent": 31.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2485,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2676,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2737,
+              "sharePercent": 15.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3100,
+              "sharePercent": 15.3
+            }
+          ]
+        },
+        {
+          "id": "hyperpure-supplies",
+          "name": "Hyperpure supplies",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 745,
+              "sharePercent": 26.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 859,
+              "sharePercent": 26.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 951,
+              "sharePercent": 26.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1212,
+              "sharePercent": 28.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1473,
+              "sharePercent": 30.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1671,
+              "sharePercent": 30.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1840,
+              "sharePercent": 31.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2295,
+              "sharePercent": 32
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1023,
+              "sharePercent": 7.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1070,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 978,
+              "sharePercent": 5.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1034,
+              "sharePercent": 5.1
+            }
+          ]
+        },
+        {
+          "id": "going-out",
+          "name": "Going Out",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 73,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 93,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 95,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 154,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 259,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 229,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 207,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 189,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 300,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 277,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 318,
+              "sharePercent": 1.6
+            }
+          ]
+        },
+        {
+          "id": "all-other-segment-residual",
+          "name": "All other Segment(residual)",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 52,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 8,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 10,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 15,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 4,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 4,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 4,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 13,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 68,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 95,
+              "sharePercent": 0.5
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +797,203 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "quick-commerce-business",
+          "name": "Quick commerce business",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 806,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2301,
+              "sharePercent": 19
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5206,
+              "sharePercent": 25.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 37779,
+              "sharePercent": 69.5
+            }
+          ]
+        },
+        {
+          "id": "india-food-ordering-and-delivery",
+          "name": "india Food ordering and Delivery",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 3415,
+              "sharePercent": 81.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4533,
+              "sharePercent": 64
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 6361,
+              "sharePercent": 52.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 8080,
+              "sharePercent": 39.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 10159,
+              "sharePercent": 18.7
+            }
+          ]
+        },
+        {
+          "id": "hyperpure-supplies",
+          "name": "Hyperpure supplies",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 3172,
+              "sharePercent": 26.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 6196,
+              "sharePercent": 30.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5366,
+              "sharePercent": 9.9
+            }
+          ]
+        },
+        {
+          "id": "going-out",
+          "name": "Going Out",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 258,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 737,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 973,
+              "sharePercent": 1.8
+            }
+          ]
+        },
+        {
+          "id": "all-other-segment-residual",
+          "name": "All other Segment(residual)",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 22,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 24,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 87,
+              "sharePercent": 0.2
+            }
+          ]
+        },
+        {
+          "id": "all-other-segment",
+          "name": "All other Segment",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 240,
+              "sharePercent": 5.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 234,
+              "sharePercent": 3.3
+            }
+          ]
+        },
+        {
+          "id": "hyperpure",
+          "name": "Hyperpure",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 538,
+              "sharePercent": 12.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1506,
+              "sharePercent": 21.3
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ETERNAL",
       "name": "Eternal",
-      "marketCapCrore": 307363.67
+      "marketCapCrore": 305192.36
     },
     {
       "symbol": "NYKAA",
       "name": "FSN E-Commerce",
-      "marketCapCrore": 94802.17
+      "marketCapCrore": 92739.98
     },
     {
       "symbol": "MEESHO",
       "name": "Meesho",
-      "marketCapCrore": 88384.16
+      "marketCapCrore": 89211.81
     },
     {
       "symbol": "SWIGGY",
       "name": "Swiggy",
-      "marketCapCrore": 76267.46
+      "marketCapCrore": 75328.92
     },
     {
       "symbol": "URBANCO",
       "name": "Urban Company",
-      "marketCapCrore": 22267.55
+      "marketCapCrore": 22207.38
     },
     {
       "symbol": "CARTRADE",
       "name": "Cartrade Tech",
-      "marketCapCrore": 13572.7
+      "marketCapCrore": 13694.21
     },
     {
       "symbol": "FIRSTCRY",
       "name": "Brainbees Solut.",
-      "marketCapCrore": 10759.72
+      "marketCapCrore": 10697.6
     }
   ]
 }

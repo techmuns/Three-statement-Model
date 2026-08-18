@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/HDFCLIFE/consolidated/",
-    "fetchedAt": "2026-08-16T19:16:31.150Z",
+    "fetchedAt": "2026-08-18T08:40:49.641Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,867 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "individual-life",
+          "name": "Individual Life",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 7124,
+              "sharePercent": 23.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 10138,
+              "sharePercent": 27.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 7458,
+              "sharePercent": 26.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 11821,
+              "sharePercent": 43.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 9708,
+              "sharePercent": 33.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": -62,
+              "sharePercent": -0.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 905,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 12321,
+              "sharePercent": 41.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 975,
+              "sharePercent": 4.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 9305,
+              "sharePercent": 31.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": -3288,
+              "sharePercent": -13.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 13739,
+              "sharePercent": 40.4
+            }
+          ]
+        },
+        {
+          "id": "individual-group-life",
+          "name": "Individual & Group Life",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 8087,
+              "sharePercent": 27
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 8295,
+              "sharePercent": 22.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 10806,
+              "sharePercent": 38.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 9488,
+              "sharePercent": 33
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 8729,
+              "sharePercent": 50.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 11735,
+              "sharePercent": 48.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 8171,
+              "sharePercent": 27.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 9787,
+              "sharePercent": 46.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 9823,
+              "sharePercent": 33.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 12659,
+              "sharePercent": 53.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 9822,
+              "sharePercent": 28.9
+            }
+          ]
+        },
+        {
+          "id": "individial-group-life",
+          "name": "Individial & Group Life",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 4550,
+              "sharePercent": 15.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 4588,
+              "sharePercent": 12.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 5410,
+              "sharePercent": 19.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 11140,
+              "sharePercent": 41.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 4695,
+              "sharePercent": 16.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 4864,
+              "sharePercent": 27.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 5640,
+              "sharePercent": 23.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 3598,
+              "sharePercent": 12.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 5205,
+              "sharePercent": 25
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 5430,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 5765,
+              "sharePercent": 24.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 4103,
+              "sharePercent": 12.1
+            }
+          ]
+        },
+        {
+          "id": "annuity",
+          "name": "Annuity",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1792,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1656,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1966,
+              "sharePercent": 7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1625,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1916,
+              "sharePercent": 6.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1942,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2133,
+              "sharePercent": 8.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2003,
+              "sharePercent": 6.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2153,
+              "sharePercent": 10.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1955,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2633,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2199,
+              "sharePercent": 6.5
+            }
+          ]
+        },
+        {
+          "id": "group-life",
+          "name": "Group Life",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 438,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 834,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 903,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 624,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1035,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 681,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1709,
+              "sharePercent": 7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 991,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1072,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1156,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1065,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1639,
+              "sharePercent": 4.8
+            }
+          ]
+        },
+        {
+          "id": "individual-pension",
+          "name": "Individual Pension",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 7124,
+              "sharePercent": 23.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 10138,
+              "sharePercent": 27.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 390,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 549,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 547,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": -150,
+              "sharePercent": -0.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 311,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 674,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 241,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 563,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": -257,
+              "sharePercent": -1.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 613,
+              "sharePercent": 1.8
+            }
+          ]
+        },
+        {
+          "id": "individual-group-pension",
+          "name": "Individual & Group Pension",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 115,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 100,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 438,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 541,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 297,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 367,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 647,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 581,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 332,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 177,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 282,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 405,
+              "sharePercent": 1.2
+            }
+          ]
+        },
+        {
+          "id": "pension-group-variable",
+          "name": "Pension Group Variable",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 149,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 234,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 193,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 181,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 98,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 132,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 201,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 427,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 333,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 292,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 467,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 405,
+              "sharePercent": 1.2
+            }
+          ]
+        },
+        {
+          "id": "shareholders",
+          "name": "Shareholders",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 245,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 296,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 270,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 273,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 287,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 291,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 336,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 345,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 387,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 442,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 396,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 394,
+              "sharePercent": 1.2
+            }
+          ]
+        },
+        {
+          "id": "life-group-variable",
+          "name": "Life Group Variable",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 236,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 81,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 246,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 137,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 232,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 220,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 464,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 252,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 227,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 254,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 396,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 380,
+              "sharePercent": 1.1
+            }
+          ]
+        },
+        {
+          "id": "linked-group-pension",
+          "name": "Linked Group Pension",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 74,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 96,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 74,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 87,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 426,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 144,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 113,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 202,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 65,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 102,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": -26,
+              "sharePercent": -0.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 151,
+              "sharePercent": 0.4
+            }
+          ]
+        },
+        {
+          "id": "reinsurance",
+          "name": "Reinsurance",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 44,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 39,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 45,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 33,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 40,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 56,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 69,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 64,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 69,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 86,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 131,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 116,
+              "sharePercent": 0.3
+            }
+          ]
+        },
+        {
+          "id": "individual-group-health",
+          "name": "Individual & Group Health",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 11,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 4,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 13,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 9,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 9,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 8,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 6,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 5,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 9,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 10,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 20,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 7,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,41 +1325,706 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "individual-group-life",
+          "name": "Individual & Group Life",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 2911,
+              "sharePercent": 20.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 18541,
+              "sharePercent": 74.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 14755,
+              "sharePercent": 61.7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3047,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 19574,
+              "sharePercent": 29.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 29785,
+              "sharePercent": 42.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 34042,
+              "sharePercent": 33.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 37596,
+              "sharePercent": 38.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 40440,
+              "sharePercent": 40.3
+            }
+          ]
+        },
+        {
+          "id": "individial-group-life",
+          "name": "Individial & Group Life",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 17814,
+              "sharePercent": 61.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 24153,
+              "sharePercent": 33.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 12964,
+              "sharePercent": 19.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 16457,
+              "sharePercent": 23.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 17773,
+              "sharePercent": 17.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 18696,
+              "sharePercent": 19.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 19998,
+              "sharePercent": 19.9
+            }
+          ]
+        },
+        {
+          "id": "shareholders",
+          "name": "Shareholders",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 298,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 426,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 268,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 697,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 865,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1003,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1060,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1188,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 19312,
+              "sharePercent": 19.2
+            }
+          ]
+        },
+        {
+          "id": "annuity",
+          "name": "Annuity",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 346,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1246,
+              "sharePercent": 5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2924,
+              "sharePercent": 12.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3295,
+              "sharePercent": 11.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 4705,
+              "sharePercent": 6.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 5949,
+              "sharePercent": 9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 7238,
+              "sharePercent": 10.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 7002,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 7616,
+              "sharePercent": 7.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 8744,
+              "sharePercent": 8.7
+            }
+          ]
+        },
+        {
+          "id": "group-life",
+          "name": "Group Life",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 32665,
+              "sharePercent": 45.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1459,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1398,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2750,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4049,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 4285,
+              "sharePercent": 4.3
+            }
+          ]
+        },
+        {
+          "id": "pension-group-variable",
+          "name": "Pension Group Variable",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 788,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1174,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1925,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1859,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1836,
+              "sharePercent": 2.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 786,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 753,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 613,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1710,
+              "sharePercent": 1.7
+            }
+          ]
+        },
+        {
+          "id": "individual-life",
+          "name": "Individual Life",
+          "values": [
+            {
+              "periodId": "FY21",
+              "revenue": 1735,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 20198,
+              "sharePercent": 30.5
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 12249,
+              "sharePercent": 17.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 34419,
+              "sharePercent": 33.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 22372,
+              "sharePercent": 23
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1570,
+              "sharePercent": 1.6
+            }
+          ]
+        },
+        {
+          "id": "individual-pension",
+          "name": "Individual Pension",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 1928,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1871,
+              "sharePercent": 7.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": -59,
+              "sharePercent": -0.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2781,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1321,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 523,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1635,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1257,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1222,
+              "sharePercent": 1.2
+            }
+          ]
+        },
+        {
+          "id": "individual-group-pension",
+          "name": "Individual & Group Pension",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 739,
+              "sharePercent": 5.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1224,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1321,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1448,
+              "sharePercent": 5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2548,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 519,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 336,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1401,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1852,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1182,
+              "sharePercent": 1.2
+            }
+          ]
+        },
+        {
+          "id": "life-group-variable",
+          "name": "Life Group Variable",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 508,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 615,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1148,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1071,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 704,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1039,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 700,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 750,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1054,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1130,
+              "sharePercent": 1.1
+            }
+          ]
+        },
+        {
+          "id": "reinsurance",
+          "name": "Reinsurance",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 99,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 117,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 157,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 198,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 350,
+              "sharePercent": 0.3
+            }
+          ]
+        },
+        {
+          "id": "linked-group-pension",
+          "name": "Linked Group Pension",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 178,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 155,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 111,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 250,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 264,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 176,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 309,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 770,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 343,
+              "sharePercent": 0.3
+            }
+          ]
+        },
+        {
+          "id": "individual-group-health",
+          "name": "Individual & Group Health",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 58,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 107,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 146,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 101,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 59,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 34,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 40,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 36,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 33,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 44,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "ind-life-ind-pen-grop-lif-gro-pen",
+          "name": "Ind Life&Ind Pen&Grop Lif&Gro Pen",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 9069,
+              "sharePercent": 63.7
+            }
+          ]
+        },
+        {
+          "id": "pension-group-variale",
+          "name": "Pension Group Variale",
+          "values": [
+            {
+              "periodId": "FY17",
+              "revenue": 615,
+              "sharePercent": 4.3
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "LICI",
       "name": "Life Insurance",
-      "marketCapCrore": 523077.31
+      "marketCapCrore": 517764.31
     },
     {
       "symbol": "SBILIFE",
       "name": "SBI Life Insuran",
-      "marketCapCrore": 180085.36
+      "marketCapCrore": 178791.12
     },
     {
       "symbol": "HDFCLIFE",
       "name": "HDFC Life Insur.",
-      "marketCapCrore": 116412.07
+      "marketCapCrore": 117378.88
     },
     {
       "symbol": "ICICIPRULI",
       "name": "ICICI Pru Life",
-      "marketCapCrore": 73868.01
+      "marketCapCrore": 72750.89
     },
     {
       "symbol": "MFSL",
       "name": "Max Financial",
-      "marketCapCrore": 53082.1
+      "marketCapCrore": 54543.62
     },
     {
       "symbol": "CANHLIFE",
       "name": "Canara HSBC",
-      "marketCapCrore": 14127.45
+      "marketCapCrore": 14174
     }
   ]
 }

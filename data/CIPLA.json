@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/CIPLA/consolidated/",
-    "fetchedAt": "2026-08-16T19:31:28.881Z",
+    "fetchedAt": "2026-08-18T08:39:02.985Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,121 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "new-ventures",
+          "name": "New Ventures",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 264,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 281,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 213,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 354,
+              "sharePercent": 5.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 320,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 341,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 288,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 444,
+              "sharePercent": 6.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 351,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 381,
+              "sharePercent": 5.3
+            }
+          ]
+        },
+        {
+          "id": "phamaceuticals",
+          "name": "Phamaceuticals",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 6453,
+              "sharePercent": 96.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 6365,
+              "sharePercent": 95.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 5996,
+              "sharePercent": 96.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 6389,
+              "sharePercent": 94.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 6776,
+              "sharePercent": 95.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 6778,
+              "sharePercent": 95.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 6504,
+              "sharePercent": 95.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 6579,
+              "sharePercent": 93.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 7291,
+              "sharePercent": 95.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 6746,
+              "sharePercent": 94.7
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +579,158 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "new-ventures",
+          "name": "New Ventures",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 50,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 95,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 135,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 160,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 219,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 401,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 532,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1055,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1112,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1303,
+              "sharePercent": 4.7
+            }
+          ]
+        },
+        {
+          "id": "phamaceuticals",
+          "name": "Phamaceuticals",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 13740,
+              "sharePercent": 99.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 14537,
+              "sharePercent": 99.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 15110,
+              "sharePercent": 99.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 16231,
+              "sharePercent": 99
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 16959,
+              "sharePercent": 98.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 18878,
+              "sharePercent": 97.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 21351,
+              "sharePercent": 97.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 21999,
+              "sharePercent": 95.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 24842,
+              "sharePercent": 95.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 26446,
+              "sharePercent": 95.3
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "SUNPHARMA",
       "name": "Sun Pharma.Inds.",
-      "marketCapCrore": 463071.65
+      "marketCapCrore": 451098.94
     },
     {
       "symbol": "DIVISLAB",
       "name": "Divi's Lab.",
-      "marketCapCrore": 225037.72
+      "marketCapCrore": 227825.1
     },
     {
       "symbol": "TORNTPHARM",
       "name": "Torrent Pharma.",
-      "marketCapCrore": 183831.78
+      "marketCapCrore": 189651.46
     },
     {
       "symbol": "CIPLA",
       "name": "Cipla",
-      "marketCapCrore": 117138.71
+      "marketCapCrore": 115878.46
     },
     {
       "symbol": "ZYDUSLIFE",
       "name": "Zydus Lifesci.",
-      "marketCapCrore": 113236.64
+      "marketCapCrore": 111820.19
     },
     {
       "symbol": "LUPIN",
       "name": "Lupin",
-      "marketCapCrore": 102191.47
+      "marketCapCrore": 101830.28
     },
     {
       "symbol": "DRREDDY",
       "name": "Dr Reddy's Labs",
-      "marketCapCrore": 100161.1
+      "marketCapCrore": 99055.15
     }
   ]
 }

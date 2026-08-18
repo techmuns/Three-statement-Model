@@ -10,7 +10,7 @@
       "id": "itc",
       "name": "ITC",
       "ticker": "ITC",
-      "marketCapCrore": 354145.42,
+      "marketCapCrore": 338116.15,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -42,7 +42,7 @@
       "id": "hndfds",
       "name": "Hindustan Foods",
       "ticker": "HNDFDS",
-      "marketCapCrore": 7095.29,
+      "marketCapCrore": 7667.21,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -74,7 +74,7 @@
       "id": "godavarib",
       "name": "Godavari Bioref.",
       "ticker": "GODAVARIB",
-      "marketCapCrore": 1228.74,
+      "marketCapCrore": 1272.8,
       "kpis": [
         {
           "kpiId": "revenue-growth",
@@ -106,7 +106,7 @@
       "id": "davangere",
       "name": "Davangere Sugar",
       "ticker": "DAVANGERE",
-      "marketCapCrore": 440.44,
+      "marketCapCrore": 454.74,
       "kpis": [
         {
           "kpiId": "revenue-growth",
