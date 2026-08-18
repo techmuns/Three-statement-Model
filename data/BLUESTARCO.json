@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BLUESTARCO/consolidated/",
-    "fetchedAt": "2026-08-17T21:30:51.826Z",
+    "fetchedAt": "2026-08-18T08:37:29.861Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,207 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "unitary-products",
+          "name": "Unitary Products",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 729,
+              "sharePercent": 38.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 955,
+              "sharePercent": 42.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1709,
+              "sharePercent": 51.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1730,
+              "sharePercent": 60.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 767,
+              "sharePercent": 33.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1164,
+              "sharePercent": 41.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1960,
+              "sharePercent": 48.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1499,
+              "sharePercent": 50.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 694,
+              "sharePercent": 28.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1154,
+              "sharePercent": 39.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1985,
+              "sharePercent": 48.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1689,
+              "sharePercent": 50
+            }
+          ]
+        },
+        {
+          "id": "elec-machal-prjts-pkged-air-condi",
+          "name": "Elec.Machal Prjts & Pkged Air-condi",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1077,
+              "sharePercent": 57
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1182,
+              "sharePercent": 52.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1507,
+              "sharePercent": 45.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1039,
+              "sharePercent": 36.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1428,
+              "sharePercent": 62.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1562,
+              "sharePercent": 55.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1968,
+              "sharePercent": 49
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1412,
+              "sharePercent": 47.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1664,
+              "sharePercent": 68.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1696,
+              "sharePercent": 58
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1990,
+              "sharePercent": 48.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1625,
+              "sharePercent": 48.1
+            }
+          ]
+        },
+        {
+          "id": "pro-electrics-industrial-systm",
+          "name": "Pro. electrics & Industrial Systm",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 84,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 104,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 112,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 97,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 81,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 81,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 91,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 70,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 64,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 75,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 97,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 64,
+              "sharePercent": 1.9
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +665,356 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "elec-machal-prjts-pkged-air-condi",
+          "name": "Elec.Machal Prjts & Pkged Air-condi",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1704,
+              "sharePercent": 53.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1876,
+              "sharePercent": 48.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2233,
+              "sharePercent": 50.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2361,
+              "sharePercent": 50.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2748,
+              "sharePercent": 52.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2827,
+              "sharePercent": 52.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2219,
+              "sharePercent": 52
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3204,
+              "sharePercent": 52.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4016,
+              "sharePercent": 50.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4715,
+              "sharePercent": 48.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5998,
+              "sharePercent": 50.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 6763,
+              "sharePercent": 54.5
+            }
+          ]
+        },
+        {
+          "id": "unitary-products",
+          "name": "Unitary Products",
+          "values": [
+            {
+              "periodId": "FY18",
+              "revenue": 2089,
+              "sharePercent": 44.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2269,
+              "sharePercent": 43.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2301,
+              "sharePercent": 42.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1868,
+              "sharePercent": 43.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2612,
+              "sharePercent": 43.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3627,
+              "sharePercent": 45.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4592,
+              "sharePercent": 47.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5621,
+              "sharePercent": 47
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5332,
+              "sharePercent": 43
+            }
+          ]
+        },
+        {
+          "id": "pro-electrics-industrial-systm",
+          "name": "Pro. electrics & Industrial Systm",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 147,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 169,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 191,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 198,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 218,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 233,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 177,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 247,
+              "sharePercent": 4.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 335,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 378,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 349,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 307,
+              "sharePercent": 2.5
+            }
+          ]
+        },
+        {
+          "id": "cooling-products",
+          "name": "Cooling products",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1332,
+              "sharePercent": 41.8
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1580,
+              "sharePercent": 41.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1997,
+              "sharePercent": 45.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 212,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "LGEINDIA",
       "name": "LG Electronics",
-      "marketCapCrore": 113048.3
+      "marketCapCrore": 112499.7
     },
     {
       "symbol": "VOLTAS",
       "name": "Voltas",
-      "marketCapCrore": 41923.1
+      "marketCapCrore": 41405.28
     },
     {
       "symbol": "BLUESTARCO",
       "name": "Blue Star",
-      "marketCapCrore": 31008.77
+      "marketCapCrore": 30830.92
     },
     {
       "symbol": "AMBER",
       "name": "Amber Enterp.",
-      "marketCapCrore": 25600.87
+      "marketCapCrore": 25826.05
     },
     {
       "symbol": "CROMPTON",
       "name": "Crompton Gr. Con",
-      "marketCapCrore": 15872.5
+      "marketCapCrore": 15711.5
     },
     {
       "symbol": "VGUARD",
       "name": "V-Guard Industri",
-      "marketCapCrore": 15027.69
+      "marketCapCrore": 14617.01
     },
     {
       "symbol": "WHIRLPOOL",
       "name": "Whirlpool India",
-      "marketCapCrore": 9862.38
+      "marketCapCrore": 9738.08
     }
   ]
 }

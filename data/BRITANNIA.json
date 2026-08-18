@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BRITANNIA/consolidated/",
-    "fetchedAt": "2026-08-17T21:31:31.901Z",
+    "fetchedAt": "2026-08-18T08:38:12.652Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,45 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "NESTLEIND",
       "name": "Nestle India",
-      "marketCapCrore": 283462.21
+      "marketCapCrore": 281861.74
     },
     {
       "symbol": "BRITANNIA",
       "name": "Britannia Inds.",
-      "marketCapCrore": 132983.39
+      "marketCapCrore": 133565.05
     },
     {
       "symbol": "ZYDUSWELL",
       "name": "Zydus Wellness",
-      "marketCapCrore": 16230.97
+      "marketCapCrore": 15844.38
     },
     {
       "symbol": "BIKAJI",
       "name": "Bikaji Foods",
-      "marketCapCrore": 15387.69
+      "marketCapCrore": 15246.02
     },
     {
       "symbol": "BBTC",
       "name": "The Bombay Burmah",
-      "marketCapCrore": 10211.82
+      "marketCapCrore": 10284.72
     },
     {
       "symbol": "BECTORFOOD",
       "name": "Mrs Bectors",
-      "marketCapCrore": 7837.47
+      "marketCapCrore": 7885.04
     },
     {
       "symbol": "GOPAL",
       "name": "Gopal Snacks",
-      "marketCapCrore": 3375.36
+      "marketCapCrore": 3427.07
     }
   ]
 }

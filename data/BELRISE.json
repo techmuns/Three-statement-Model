@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BELRISE/consolidated/",
-    "fetchedAt": "2026-08-14T21:29:59.649Z",
+    "fetchedAt": "2026-08-18T08:35:52.930Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 2274,
-          "expenses": 1998,
-          "operatingProfit": 276,
-          "opmPercent": 12.14,
-          "otherIncome": 10,
-          "interest": 64,
-          "depreciation": 83,
-          "profitBeforeTax": 139,
-          "taxPercent": 20.86,
-          "netProfit": 110,
-          "eps": 1.69
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 25.29,
           "netProfit": 130,
           "eps": 1.46
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 2546,
+          "expenses": 2253,
+          "operatingProfit": 293,
+          "opmPercent": 11.51,
+          "otherIncome": 18,
+          "interest": 46,
+          "depreciation": 99,
+          "profitBeforeTax": 166,
+          "taxPercent": 26.51,
+          "netProfit": 122,
+          "eps": 1.37
         }
       ]
     },
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,50 +468,50 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "MOTHERSON",
       "name": "Samvardh. Mothe.",
-      "marketCapCrore": 177631.27
+      "marketCapCrore": 179478.26
     },
     {
       "symbol": "BOSCHLTD",
       "name": "Bosch",
-      "marketCapCrore": 138926.63
+      "marketCapCrore": 143645.98
     },
     {
       "symbol": "BHARATFORG",
       "name": "Bharat Forge",
-      "marketCapCrore": 98725.3
+      "marketCapCrore": 99872.73
     },
     {
       "symbol": "UNOMINDA",
       "name": "Uno Minda",
-      "marketCapCrore": 71605.93
+      "marketCapCrore": 73419.18
     },
     {
       "symbol": "SCHAEFFLER",
       "name": "Schaeffler India",
-      "marketCapCrore": 63196.7
+      "marketCapCrore": 63468.67
     },
     {
       "symbol": "TIINDIA",
       "name": "Tube Investments",
-      "marketCapCrore": 52912.99
+      "marketCapCrore": 57279.01
     },
     {
       "symbol": "SONACOMS",
       "name": "Sona BLW Precis.",
-      "marketCapCrore": 49689.77
+      "marketCapCrore": 51311.85
     },
     {
       "symbol": "BELRISE",
       "name": "Belrise Industri",
-      "marketCapCrore": 24703.02
+      "marketCapCrore": 22708.76
     }
   ]
 }

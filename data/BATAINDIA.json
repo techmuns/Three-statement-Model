@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BATAINDIA/consolidated/",
-    "fetchedAt": "2026-08-16T19:31:22.594Z",
+    "fetchedAt": "2026-08-18T08:35:09.244Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,88 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "footwear",
+          "name": "Footwear",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2712,
+              "sharePercent": 98.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2440,
+              "sharePercent": 98.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2550,
+              "sharePercent": 100
+            }
+          ]
+        },
+        {
+          "id": "surplus-of-property-develop",
+          "name": "Surplus of Property Develop",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 35,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 43,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "METROBRAND",
       "name": "Metro Brands",
-      "marketCapCrore": 25732.89
-    },
-    {
-      "symbol": "RELAXO",
-      "name": "Relaxo Footwear",
-      "marketCapCrore": 9864.19
+      "marketCapCrore": 25309.07
     },
     {
       "symbol": "BATAINDIA",
       "name": "Bata India",
-      "marketCapCrore": 9712.83
+      "marketCapCrore": 9690.96
+    },
+    {
+      "symbol": "RELAXO",
+      "name": "Relaxo Footwear",
+      "marketCapCrore": 9571.66
     },
     {
       "symbol": "REDTAPE",
       "name": "Redtape",
-      "marketCapCrore": 6754.76
+      "marketCapCrore": 6868.6
     },
     {
       "symbol": "CAMPUS",
       "name": "Campus Activewe.",
-      "marketCapCrore": 6676.05
+      "marketCapCrore": 6628.64
     },
     {
       "symbol": "SREEL",
       "name": "Sreeleathers",
-      "marketCapCrore": 557.62
+      "marketCapCrore": 588.81
     },
     {
       "symbol": "LIBERTSHOE",
       "name": "Liberty Shoes",
-      "marketCapCrore": 406.74
+      "marketCapCrore": 414.06
     }
   ]
 }

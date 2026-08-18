@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BIOCON/consolidated/",
-    "fetchedAt": "2026-08-17T21:30:12.097Z",
+    "fetchedAt": "2026-08-18T08:36:48.353Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,219 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "biosimilars",
+          "name": "Biosimilars",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1969,
+              "sharePercent": 55.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2483,
+              "sharePercent": 61.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2358,
+              "sharePercent": 59.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2083,
+              "sharePercent": 59
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2182,
+              "sharePercent": 59
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2289,
+              "sharePercent": 58.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2463,
+              "sharePercent": 54.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2458,
+              "sharePercent": 62
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2721,
+              "sharePercent": 61.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2497,
+              "sharePercent": 58.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2756,
+              "sharePercent": 60.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2856,
+              "sharePercent": 65.6
+            }
+          ]
+        },
+        {
+          "id": "generics",
+          "name": "Generics",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 676,
+              "sharePercent": 19
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 703,
+              "sharePercent": 17.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 718,
+              "sharePercent": 18
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 659,
+              "sharePercent": 18.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 624,
+              "sharePercent": 16.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 686,
+              "sharePercent": 17.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1048,
+              "sharePercent": 23.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 630,
+              "sharePercent": 15.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 774,
+              "sharePercent": 17.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 851,
+              "sharePercent": 20
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 776,
+              "sharePercent": 17
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 760,
+              "sharePercent": 17.5
+            }
+          ]
+        },
+        {
+          "id": "services",
+          "name": "Services",
+          "values": [
+            {
+              "periodId": "FY26Q1",
+              "revenue": 875,
+              "sharePercent": 22.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1037,
+              "sharePercent": 22.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 736,
+              "sharePercent": 16.9
+            }
+          ]
+        },
+        {
+          "id": "research-service",
+          "name": "Research service",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 910,
+              "sharePercent": 25.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 854,
+              "sharePercent": 21.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 917,
+              "sharePercent": 23
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 790,
+              "sharePercent": 22.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 891,
+              "sharePercent": 24.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 944,
+              "sharePercent": 24.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 911,
+              "sharePercent": 20.7
+            }
+          ]
+        },
+        {
+          "id": "crdmo",
+          "name": "CRDMO",
+          "values": [
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1018,
+              "sharePercent": 22.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 917,
+              "sharePercent": 21.5
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,9 +677,407 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "biosimilars",
+          "name": "Biosimilars",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 2315,
+              "sharePercent": 35.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2800,
+              "sharePercent": 38.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 5584,
+              "sharePercent": 48.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 8824,
+              "sharePercent": 58.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 9017,
+              "sharePercent": 57.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 10431,
+              "sharePercent": 61.2
+            }
+          ]
+        },
+        {
+          "id": "services",
+          "name": "Services",
+          "values": [
+            {
+              "periodId": "FY26",
+              "revenue": 3739,
+              "sharePercent": 21.9
+            }
+          ]
+        },
+        {
+          "id": "generics",
+          "name": "Generics",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 2207,
+              "sharePercent": 33.8
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2363,
+              "sharePercent": 32.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 2764,
+              "sharePercent": 23.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2799,
+              "sharePercent": 18.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3018,
+              "sharePercent": 19.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2875,
+              "sharePercent": 16.9
+            }
+          ]
+        },
+        {
+          "id": "contract-research-manufacturing",
+          "name": "Contract Research & Manufacturing",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 860,
+              "sharePercent": 27.6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "pharma",
+          "name": "Pharma",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2251,
+              "sharePercent": 72.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "biologics",
+          "name": "Biologics",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 530,
+              "sharePercent": 15
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 702,
+              "sharePercent": 17.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 770,
+              "sharePercent": 17.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1517,
+              "sharePercent": 26.3
+            }
+          ]
+        },
+        {
+          "id": "branded-formulations",
+          "name": "Branded Formulations",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 441,
+              "sharePercent": 12.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 549,
+              "sharePercent": 13.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 612,
+              "sharePercent": 14.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 656,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "research-service",
+          "name": "Research service",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 1107,
+              "sharePercent": 31.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1193,
+              "sharePercent": 29.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1423,
+              "sharePercent": 33
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1826,
+              "sharePercent": 31.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2012,
+              "sharePercent": 30.8
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2184,
+              "sharePercent": 29.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3193,
+              "sharePercent": 27.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 3489,
+              "sharePercent": 23.1
+            }
+          ]
+        },
+        {
+          "id": "small-molecules",
+          "name": "Small Molecules",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 1458,
+              "sharePercent": 41.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1641,
+              "sharePercent": 40.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1508,
+              "sharePercent": 35
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1773,
+              "sharePercent": 30.7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "novel-biologics",
+          "name": "Novel Biologics",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 11,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 19,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "crdmo",
+          "name": "CRDMO",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 3642,
+              "sharePercent": 23.2
+            }
+          ]
+        }
+      ]
     }
-  }
+  },
+  "peers": [
+    {
+      "symbol": "SUNPHARMA",
+      "name": "Sun Pharma.Inds.",
+      "marketCapCrore": 451170.92
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "Divi's Lab.",
+      "marketCapCrore": 227798.55
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "name": "Torrent Pharma.",
+      "marketCapCrore": 189651.46
+    },
+    {
+      "symbol": "CIPLA",
+      "name": "Cipla",
+      "marketCapCrore": 115878.46
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "name": "Zydus Lifesci.",
+      "marketCapCrore": 111740.39
+    },
+    {
+      "symbol": "LUPIN",
+      "name": "Lupin",
+      "marketCapCrore": 101745.7
+    },
+    {
+      "symbol": "DRREDDY",
+      "name": "Dr Reddy's Labs",
+      "marketCapCrore": 99030.11
+    },
+    {
+      "symbol": "BIOCON",
+      "name": "Biocon",
+      "marketCapCrore": 68430.83
+    }
+  ]
 }

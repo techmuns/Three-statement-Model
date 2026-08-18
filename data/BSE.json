@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BSE/consolidated/",
-    "fetchedAt": "2026-08-17T21:31:33.951Z",
+    "fetchedAt": "2026-08-18T08:38:16.271Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,26 +467,68 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "depository-activity",
+          "name": "Depository Activity",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 126,
+              "sharePercent": 21.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 160,
+              "sharePercent": 25.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 186,
+              "sharePercent": 24.8
+            }
+          ]
+        },
+        {
+          "id": "stock-exchange-activity",
+          "name": "Stock Exchange Activity",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 464,
+              "sharePercent": 78.6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 469,
+              "sharePercent": 74.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 564,
+              "sharePercent": 75.2
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "BSE",
       "name": "BSE",
-      "marketCapCrore": 135712.05
+      "marketCapCrore": 134885.23
     },
     {
       "symbol": "MCX",
       "name": "Multi Comm. Exc.",
-      "marketCapCrore": 74791.66
+      "marketCapCrore": 77688.47
     },
     {
       "symbol": "IEX",
       "name": "Indian Energy Ex",
-      "marketCapCrore": 11172.91
+      "marketCapCrore": 11079.28
     }
   ]
 }

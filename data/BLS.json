@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BLS/consolidated/",
-    "fetchedAt": "2026-08-17T21:30:45.945Z",
+    "fetchedAt": "2026-08-18T08:36:53.222Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,141 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "visa-passport-service",
+          "name": "Visa Passport Service",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 322,
+              "sharePercent": 78.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 364,
+              "sharePercent": 82.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 370,
+              "sharePercent": 81.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 414,
+              "sharePercent": 84
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 418,
+              "sharePercent": 83.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 376,
+              "sharePercent": 72.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 441,
+              "sharePercent": 63.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 461,
+              "sharePercent": 64.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 459,
+              "sharePercent": 62.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 449,
+              "sharePercent": 61
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 472,
+              "sharePercent": 57.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 560,
+              "sharePercent": 62.9
+            }
+          ]
+        },
+        {
+          "id": "digital-services",
+          "name": "Digital Services",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 90,
+              "sharePercent": 21.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 79,
+              "sharePercent": 17.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 82,
+              "sharePercent": 18.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 79,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 85,
+              "sharePercent": 16.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 145,
+              "sharePercent": 27.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 252,
+              "sharePercent": 36.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 250,
+              "sharePercent": 35.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 278,
+              "sharePercent": 37.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 287,
+              "sharePercent": 39
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 343,
+              "sharePercent": 42.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 330,
+              "sharePercent": 37.1
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +599,76 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "visa-passport-service",
+          "name": "Visa Passport Service",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 505,
+              "sharePercent": 100
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 758,
+              "sharePercent": 88.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1260,
+              "sharePercent": 83
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1362,
+              "sharePercent": 80.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1653,
+              "sharePercent": 75.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1840,
+              "sharePercent": 61.4
+            }
+          ]
+        },
+        {
+          "id": "digital-services",
+          "name": "Digital Services",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 95,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 258,
+              "sharePercent": 17
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 334,
+              "sharePercent": 19.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 540,
+              "sharePercent": 24.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1158,
+              "sharePercent": 38.6
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "IRCTC",
-      "name": "I R C T C",
-      "marketCapCrore": 39996
-    },
-    {
-      "symbol": "TBOTEK",
-      "name": "TBO Tek",
-      "marketCapCrore": 18490.49
-    },
-    {
-      "symbol": "BLS",
-      "name": "BLS Internat.",
-      "marketCapCrore": 11222.41
-    },
-    {
-      "symbol": "IXIGO",
-      "name": "Le Travenues",
-      "marketCapCrore": 7608.28
-    },
-    {
-      "symbol": "CORDELIA",
-      "name": "Waterways Leisur",
-      "marketCapCrore": 5961.66
-    },
-    {
-      "symbol": "THOMASCOOK",
-      "name": "Thomas Cook (I)",
-      "marketCapCrore": 4876.91
-    },
-    {
-      "symbol": "EASEMYTRIP",
-      "name": "Easy Trip Plann.",
-      "marketCapCrore": 2438.78
-    }
-  ]
+  }
 }

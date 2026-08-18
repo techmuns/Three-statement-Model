@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BHEL/consolidated/",
-    "fetchedAt": "2026-08-14T21:30:09.469Z",
+    "fetchedAt": "2026-08-18T08:36:41.542Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,141 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "power",
+          "name": "Power",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 3927,
+              "sharePercent": 79.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 4234,
+              "sharePercent": 76.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 6168,
+              "sharePercent": 74.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 4128,
+              "sharePercent": 75.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 5028,
+              "sharePercent": 76.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 5588,
+              "sharePercent": 76.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 6192,
+              "sharePercent": 68.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 3899,
+              "sharePercent": 71.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 5676,
+              "sharePercent": 75.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 6322,
+              "sharePercent": 74.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 9510,
+              "sharePercent": 77.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 5920,
+              "sharePercent": 76.9
+            }
+          ]
+        },
+        {
+          "id": "industry",
+          "name": "Industry",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1018,
+              "sharePercent": 20.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1270,
+              "sharePercent": 23.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2092,
+              "sharePercent": 25.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1357,
+              "sharePercent": 24.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1556,
+              "sharePercent": 23.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1689,
+              "sharePercent": 23.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2801,
+              "sharePercent": 31.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1588,
+              "sharePercent": 28.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1836,
+              "sharePercent": 24.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2151,
+              "sharePercent": 25.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2801,
+              "sharePercent": 22.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1778,
+              "sharePercent": 23.1
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +599,178 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "power",
+          "name": "Power",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 246,
+              "sharePercent": 77.8
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 20223,
+              "sharePercent": 77.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 22795,
+              "sharePercent": 79
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 22881,
+              "sharePercent": 82.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 23474,
+              "sharePercent": 79.7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 14960,
+              "sharePercent": 73
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 11386,
+              "sharePercent": 69.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 15361,
+              "sharePercent": 76.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 17499,
+              "sharePercent": 79.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 18436,
+              "sharePercent": 77.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 20937,
+              "sharePercent": 73.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 25407,
+              "sharePercent": 75.2
+            }
+          ]
+        },
+        {
+          "id": "industry",
+          "name": "Industry",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 70,
+              "sharePercent": 22.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 5867,
+              "sharePercent": 22.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 6077,
+              "sharePercent": 21
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 4984,
+              "sharePercent": 17.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 5968,
+              "sharePercent": 20.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 5534,
+              "sharePercent": 27
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 4910,
+              "sharePercent": 30.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 4792,
+              "sharePercent": 23.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4637,
+              "sharePercent": 20.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 5457,
+              "sharePercent": 22.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 7402,
+              "sharePercent": 26.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 8375,
+              "sharePercent": 24.8
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ABB",
       "name": "A B B",
-      "marketCapCrore": 162088.72
+      "marketCapCrore": 160626.54
     },
     {
       "symbol": "POWERINDIA",
       "name": "Hitachi Energy",
-      "marketCapCrore": 157961.86
+      "marketCapCrore": 157540.34
     },
     {
       "symbol": "BHEL",
       "name": "B H E L",
-      "marketCapCrore": 146838.61
+      "marketCapCrore": 148858.2
     },
     {
       "symbol": "SIEMENS",
       "name": "Siemens",
-      "marketCapCrore": 140311.48
+      "marketCapCrore": 141182.15
     },
     {
       "symbol": "CGPOWER",
       "name": "CG Power & Ind",
-      "marketCapCrore": 140238.69
+      "marketCapCrore": 140703.36
     },
     {
       "symbol": "ENRIN",
       "name": "Siemens Ener.Ind",
-      "marketCapCrore": 126136.78
+      "marketCapCrore": 127984.37
     },
     {
       "symbol": "GVT&D",
       "name": "GE Vernova T&D",
-      "marketCapCrore": 111381.75
+      "marketCapCrore": 107541
     }
   ]
 }

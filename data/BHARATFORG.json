@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BHARATFORG/consolidated/",
-    "fetchedAt": "2026-08-14T21:30:07.462Z",
+    "fetchedAt": "2026-08-18T08:36:05.263Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,207 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "forgings",
+          "name": "Forgings",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 3402,
+              "sharePercent": 87.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 3359,
+              "sharePercent": 84.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 3465,
+              "sharePercent": 81.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 3378,
+              "sharePercent": 79.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 3086,
+              "sharePercent": 80.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3061,
+              "sharePercent": 84.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 3436,
+              "sharePercent": 85.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 3558,
+              "sharePercent": 86.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 3356,
+              "sharePercent": 77.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 3367,
+              "sharePercent": 72.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3648,
+              "sharePercent": 76
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3831,
+              "sharePercent": 77.3
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 185,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 191,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 243,
+              "sharePercent": 5.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 213,
+              "sharePercent": 5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 234,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 220,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 285,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 279,
+              "sharePercent": 6.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 588,
+              "sharePercent": 13.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 570,
+              "sharePercent": 12.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 733,
+              "sharePercent": 15.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 628,
+              "sharePercent": 12.7
+            }
+          ]
+        },
+        {
+          "id": "defence",
+          "name": "Defence",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 306,
+              "sharePercent": 7.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 435,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 561,
+              "sharePercent": 13.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 642,
+              "sharePercent": 15.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 509,
+              "sharePercent": 13.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 337,
+              "sharePercent": 9.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 284,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 264,
+              "sharePercent": 6.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 395,
+              "sharePercent": 9.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 682,
+              "sharePercent": 14.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 416,
+              "sharePercent": 8.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 496,
+              "sharePercent": 10
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +665,294 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "forgings",
+          "name": "Forgings",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 7028,
+              "sharePercent": 92.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 6974,
+              "sharePercent": 88.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 6579,
+              "sharePercent": 95.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 8399,
+              "sharePercent": 99.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 9843,
+              "sharePercent": 96.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 7854,
+              "sharePercent": 97
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 6112,
+              "sharePercent": 95.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 10162,
+              "sharePercent": 96.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 12013,
+              "sharePercent": 91.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 13718,
+              "sharePercent": 85.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 12961,
+              "sharePercent": 82.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 13929,
+              "sharePercent": 78
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 42,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 26,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 15,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 312,
+              "sharePercent": 3.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 244,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 306,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 398,
+              "sharePercent": 3.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 584,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 818,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 952,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2170,
+              "sharePercent": 12.2
+            }
+          ]
+        },
+        {
+          "id": "defence",
+          "name": "Defence",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 410,
+              "sharePercent": 3.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1561,
+              "sharePercent": 9.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1772,
+              "sharePercent": 11.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1757,
+              "sharePercent": 9.8
+            }
+          ]
+        },
+        {
+          "id": "projects-capital-goods",
+          "name": "Projects (Capital Goods)",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 585,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 859,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY16",
+              "revenue": -874,
+              "sharePercent": -11.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 300,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": -2,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": -34,
+              "sharePercent": -0.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": -81,
+              "sharePercent": -1.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": -98,
+              "sharePercent": -0.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 78,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "MOTHERSON",
-      "name": "Samvardh. Mothe.",
-      "marketCapCrore": 177631.27
-    },
-    {
-      "symbol": "BOSCHLTD",
-      "name": "Bosch",
-      "marketCapCrore": 138926.63
-    },
-    {
-      "symbol": "BHARATFORG",
-      "name": "Bharat Forge",
-      "marketCapCrore": 98725.3
-    },
-    {
-      "symbol": "UNOMINDA",
-      "name": "Uno Minda",
-      "marketCapCrore": 71605.93
-    },
-    {
-      "symbol": "SCHAEFFLER",
-      "name": "Schaeffler India",
-      "marketCapCrore": 63196.7
-    },
-    {
-      "symbol": "TIINDIA",
-      "name": "Tube Investments",
-      "marketCapCrore": 52912.99
-    },
-    {
-      "symbol": "SONACOMS",
-      "name": "Sona BLW Precis.",
-      "marketCapCrore": 49689.77
-    }
-  ]
+  }
 }

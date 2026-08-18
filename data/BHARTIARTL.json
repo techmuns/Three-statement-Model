@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BHARTIARTL/consolidated/",
-    "fetchedAt": "2026-08-16T19:31:26.801Z",
+    "fetchedAt": "2026-08-18T08:36:38.324Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,532 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "mobile-services-india",
+          "name": "Mobile Services India",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 20952,
+              "sharePercent": 54.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 21639,
+              "sharePercent": 55
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 22066,
+              "sharePercent": 56.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 22527,
+              "sharePercent": 56.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 24837,
+              "sharePercent": 57.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 26269,
+              "sharePercent": 54.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 26617,
+              "sharePercent": 49.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 27397,
+              "sharePercent": 49.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 28117,
+              "sharePercent": 48.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 28652,
+              "sharePercent": 47.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 28831,
+              "sharePercent": 46.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 29929,
+              "sharePercent": 46.2
+            }
+          ]
+        },
+        {
+          "id": "mobile-service-africa",
+          "name": "Mobile Service Africa",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 10277,
+              "sharePercent": 26.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 10297,
+              "sharePercent": 26.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 9293,
+              "sharePercent": 23.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 9637,
+              "sharePercent": 24.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 10163,
+              "sharePercent": 23.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 10703,
+              "sharePercent": 22.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 11376,
+              "sharePercent": 21.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 12083,
+              "sharePercent": 21.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 13680,
+              "sharePercent": 23.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 15010,
+              "sharePercent": 25
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 16034,
+              "sharePercent": 26
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 17566,
+              "sharePercent": 27.1
+            }
+          ]
+        },
+        {
+          "id": "passive-infrastructure-services",
+          "name": "PAssive Infrastructure Services",
+          "values": [
+            {
+              "periodId": "FY24Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3529,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 7763,
+              "sharePercent": 14.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 8091,
+              "sharePercent": 14.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 8222,
+              "sharePercent": 14.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 8180,
+              "sharePercent": 13.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 8201,
+              "sharePercent": 13.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 8525,
+              "sharePercent": 13.1
+            }
+          ]
+        },
+        {
+          "id": "airtel-business",
+          "name": "Airtel Business",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 5110,
+              "sharePercent": 13.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 5195,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 5462,
+              "sharePercent": 14
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 5477,
+              "sharePercent": 13.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 5656,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 5646,
+              "sharePercent": 11.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 5316,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 5057,
+              "sharePercent": 9.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 5276,
+              "sharePercent": 9.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 5353,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 5490,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 5665,
+              "sharePercent": 8.7
+            }
+          ]
+        },
+        {
+          "id": "homes-service",
+          "name": "Homes Service",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1221,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1272,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1316,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1367,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1432,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1509,
+              "sharePercent": 3.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1596,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1718,
+              "sharePercent": 3.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1865,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2001,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2191,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2288,
+              "sharePercent": 3.5
+            }
+          ]
+        },
+        {
+          "id": "digital-tv-servies",
+          "name": "Digital TV Servies",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 752,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 784,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 769,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 777,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 759,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 761,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 764,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 763,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 753,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 755,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 747,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 773,
+              "sharePercent": 1.2
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 30,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 50,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 78,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 82,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 90,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 87,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 89,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 108,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 93,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 94,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 93,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 97,
+              "sharePercent": 0.1
+            }
+          ]
+        },
+        {
+          "id": "mobile-service-s-a",
+          "name": "Mobile Service S.A",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 93,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 95,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 96,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 94,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +990,647 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "mobile-services-india",
+          "name": "Mobile Services India",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 56064,
+              "sharePercent": 71.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 56551,
+              "sharePercent": 69.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 46264,
+              "sharePercent": 64.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 41554,
+              "sharePercent": 46.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 45966,
+              "sharePercent": 50
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 55568,
+              "sharePercent": 52.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 62915,
+              "sharePercent": 52.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 75925,
+              "sharePercent": 52.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 85049,
+              "sharePercent": 54.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 100250,
+              "sharePercent": 54.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 112995,
+              "sharePercent": 48.1
+            }
+          ]
+        },
+        {
+          "id": "mobile-service-africa",
+          "name": "Mobile Service Africa",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 26907,
+              "sharePercent": 27
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 21503,
+              "sharePercent": 24.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 24217,
+              "sharePercent": 26.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 28863,
+              "sharePercent": 27.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 35061,
+              "sharePercent": 29.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 42266,
+              "sharePercent": 29.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 41184,
+              "sharePercent": 26.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 41880,
+              "sharePercent": 22.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 56806,
+              "sharePercent": 24.2
+            }
+          ]
+        },
+        {
+          "id": "passive-infrastructure-services",
+          "name": "PAssive Infrastructure Services",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 5428,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 11292,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 32694,
+              "sharePercent": 13.9
+            }
+          ]
+        },
+        {
+          "id": "airtel-business",
+          "name": "Airtel Business",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 9699,
+              "sharePercent": 12.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 10943,
+              "sharePercent": 13.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 11357,
+              "sharePercent": 15.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 12454,
+              "sharePercent": 14
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 13233,
+              "sharePercent": 14.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 14408,
+              "sharePercent": 13.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 16070,
+              "sharePercent": 13.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 18593,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 20821,
+              "sharePercent": 13.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 22094,
+              "sharePercent": 11.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 21177,
+              "sharePercent": 9
+            }
+          ]
+        },
+        {
+          "id": "homes-service",
+          "name": "Homes Service",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 2507,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2752,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2527,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2239,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2245,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2334,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3039,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4047,
+              "sharePercent": 2.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4970,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5904,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 7775,
+              "sharePercent": 3.3
+            }
+          ]
+        },
+        {
+          "id": "digital-tv-servies",
+          "name": "Digital TV Servies",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 2918,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 3431,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 3757,
+              "sharePercent": 5.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 4100,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2924,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3056,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3154,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 2945,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 3045,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3061,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3018,
+              "sharePercent": 1.3
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 9480,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 345,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 374,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 401,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 116,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 5,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 12,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 36,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 86,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 188,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 348,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 388,
+              "sharePercent": 0.2
+            }
+          ]
+        },
+        {
+          "id": "mobile-service-ind-s-a",
+          "name": "Mobile Service Ind & S.A",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 53540,
+              "sharePercent": 53.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "telemedia-services",
+          "name": "Telemedia Services",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 4433,
+              "sharePercent": 4.4
+            }
+          ]
+        },
+        {
+          "id": "mobile-service-s-a",
+          "name": "Mobile Service S.A",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 1645,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1174,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 405,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 444,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 455,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 425,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 387,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 294,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 377,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 94,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "tower-infrastructure",
+          "name": "Tower Infrastructure",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 5559,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 6083,
+              "sharePercent": 7.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 6628,
+              "sharePercent": 9.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 6819,
+              "sharePercent": 7.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2863,
+              "sharePercent": 3.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1756,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "BHARTIARTL",
       "name": "Bharti Airtel",
-      "marketCapCrore": 1243078.51
+      "marketCapCrore": 1211535.13
     },
     {
       "symbol": "IDEA",
       "name": "Vodafone Idea",
-      "marketCapCrore": 152872.02
+      "marketCapCrore": 152005.33
     },
     {
       "symbol": "BHARTIHEXA",
       "name": "Bharti Hexacom",
-      "marketCapCrore": 81055
+      "marketCapCrore": 79965
     },
     {
       "symbol": "TATACOMM",
       "name": "Tata Comm",
-      "marketCapCrore": 48968.73
+      "marketCapCrore": 48387.31
     },
     {
       "symbol": "TTML",
       "name": "Tata Tele. Mah.",
-      "marketCapCrore": 7544.07
+      "marketCapCrore": 7409.25
     },
     {
       "symbol": "MTNL",
       "name": "M T N L",
-      "marketCapCrore": 1660.05
+      "marketCapCrore": 1707.93
     },
     {
       "symbol": "RCOM",
       "name": "Reliance Communi",
-      "marketCapCrore": 224.01
+      "marketCapCrore": 221.24
     }
   ]
 }

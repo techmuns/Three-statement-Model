@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BERGEPAINT/consolidated/",
-    "fetchedAt": "2026-08-14T21:30:03.713Z",
+    "fetchedAt": "2026-08-18T08:36:00.167Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,78 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 167,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 158,
+              "sharePercent": 3.4
+            }
+          ]
+        },
+        {
+          "id": "manufacturing-of-paints",
+          "name": "Manufacturing of Paints",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 4156,
+              "sharePercent": 96.1
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 4476,
+              "sharePercent": 96.6
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ASIANPAINT",
       "name": "Asian Paints",
-      "marketCapCrore": 258628.5
+      "marketCapCrore": 251823.01
     },
     {
       "symbol": "BERGEPAINT",
       "name": "Berger Paints",
-      "marketCapCrore": 63558.81
+      "marketCapCrore": 63273.14
     },
     {
       "symbol": "KANSAINER",
       "name": "Kansai Nerolac",
-      "marketCapCrore": 16559.75
+      "marketCapCrore": 16321.19
     },
     {
       "symbol": "JSWDULUX",
       "name": "JSW Dulux",
-      "marketCapCrore": 14424.44
+      "marketCapCrore": 14180.09
     },
     {
       "symbol": "INDIGOPNTS",
       "name": "Indigo Paints",
-      "marketCapCrore": 5480.87
+      "marketCapCrore": 5510.97
     },
     {
       "symbol": "SIRCA",
       "name": "Sirca Paints",
-      "marketCapCrore": 2424.48
+      "marketCapCrore": 2544.34
     },
     {
       "symbol": "SHALPAINTS",
       "name": "Shalimar Paints",
-      "marketCapCrore": 765.04
+      "marketCapCrore": 727.02
     }
   ]
 }

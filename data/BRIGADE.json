@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BRIGADE/consolidated/",
-    "fetchedAt": "2026-08-17T21:31:29.871Z",
+    "fetchedAt": "2026-08-18T08:37:39.614Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,207 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "real-estate",
+          "name": "Real Estate",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1034,
+              "sharePercent": 74.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 820,
+              "sharePercent": 69.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1337,
+              "sharePercent": 77.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 707,
+              "sharePercent": 65.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 665,
+              "sharePercent": 61.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1054,
+              "sharePercent": 71.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 977,
+              "sharePercent": 66.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 853,
+              "sharePercent": 66
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1020,
+              "sharePercent": 67.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1101,
+              "sharePercent": 69.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 995,
+              "sharePercent": 67.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 654,
+              "sharePercent": 58.2
+            }
+          ]
+        },
+        {
+          "id": "leasing",
+          "name": "Leasing",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 236,
+              "sharePercent": 17.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 244,
+              "sharePercent": 20.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 251,
+              "sharePercent": 14.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 259,
+              "sharePercent": 23.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 297,
+              "sharePercent": 27.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 278,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 346,
+              "sharePercent": 23.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 299,
+              "sharePercent": 23.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 343,
+              "sharePercent": 22.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 332,
+              "sharePercent": 20.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 323,
+              "sharePercent": 21.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 325,
+              "sharePercent": 28.9
+            }
+          ]
+        },
+        {
+          "id": "hospitality",
+          "name": "Hospitality",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 110,
+              "sharePercent": 8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 123,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 130,
+              "sharePercent": 7.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 118,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 125,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 143,
+              "sharePercent": 9.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 153,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 140,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 141,
+              "sharePercent": 9.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 159,
+              "sharePercent": 10
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 155,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 145,
+              "sharePercent": 12.9
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,51 +665,207 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "real-estate",
+          "name": "Real Estate",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 965,
+              "sharePercent": 73.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1650,
+              "sharePercent": 80.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1598,
+              "sharePercent": 77.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1389,
+              "sharePercent": 72.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2374,
+              "sharePercent": 78.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1957,
+              "sharePercent": 73.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1522,
+              "sharePercent": 76.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2265,
+              "sharePercent": 74.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 2329,
+              "sharePercent": 66.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 3536,
+              "sharePercent": 71.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3403,
+              "sharePercent": 66.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3970,
+              "sharePercent": 67.7
+            }
+          ]
+        },
+        {
+          "id": "leasing",
+          "name": "Leasing",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 187,
+              "sharePercent": 14.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 215,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 263,
+              "sharePercent": 12.8
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 297,
+              "sharePercent": 15.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 331,
+              "sharePercent": 11
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 376,
+              "sharePercent": 14.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 362,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 584,
+              "sharePercent": 19.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 768,
+              "sharePercent": 22
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 941,
+              "sharePercent": 19
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1181,
+              "sharePercent": 23.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1297,
+              "sharePercent": 22.1
+            }
+          ]
+        },
+        {
+          "id": "hospitality",
+          "name": "Hospitality",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 165,
+              "sharePercent": 12.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 183,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 195,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 232,
+              "sharePercent": 12.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 305,
+              "sharePercent": 10.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 334,
+              "sharePercent": 12.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 97,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 176,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 394,
+              "sharePercent": 11.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 468,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 539,
+              "sharePercent": 10.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 596,
+              "sharePercent": 10.2
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "DLF",
-      "name": "DLF",
-      "marketCapCrore": 166093.42
-    },
-    {
-      "symbol": "LODHA",
-      "name": "Lodha Developers",
-      "marketCapCrore": 125296.99
-    },
-    {
-      "symbol": "OBEROIRLTY",
-      "name": "Oberoi Realty",
-      "marketCapCrore": 70211.59
-    },
-    {
-      "symbol": "PHOENIXLTD",
-      "name": "Phoenix Mills",
-      "marketCapCrore": 69021.94
-    },
-    {
-      "symbol": "PRESTIGE",
-      "name": "Prestige Estates",
-      "marketCapCrore": 68567.95
-    },
-    {
-      "symbol": "GODREJPROP",
-      "name": "Godrej Propert.",
-      "marketCapCrore": 61871.92
-    },
-    {
-      "symbol": "ANANTRAJ",
-      "name": "Anant Raj",
-      "marketCapCrore": 22584.08
-    },
-    {
-      "symbol": "BRIGADE",
-      "name": "Brigade Enterpr.",
-      "marketCapCrore": 19370.01
-    }
-  ]
+  }
 }

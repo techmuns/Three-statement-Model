@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BEL/consolidated/",
-    "fetchedAt": "2026-08-16T19:31:24.786Z",
+    "fetchedAt": "2026-08-18T08:35:19.625Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
-  },
-  "peers": [
-    {
-      "symbol": "HAL",
-      "name": "Hind.Aeronautics",
-      "marketCapCrore": 336387.14
-    },
-    {
-      "symbol": "BEL",
-      "name": "Bharat Electron",
-      "marketCapCrore": 300285.71
-    },
-    {
-      "symbol": "BDL",
-      "name": "Bharat Dynamics",
-      "marketCapCrore": 51245.44
-    },
-    {
-      "symbol": "GRSE",
-      "name": "Garden Reach Sh.",
-      "marketCapCrore": 29996.59
-    },
-    {
-      "symbol": "DATAPATTNS",
-      "name": "Data Pattern",
-      "marketCapCrore": 24945.34
-    },
-    {
-      "symbol": "ZENTEC",
-      "name": "Zen Technologies",
-      "marketCapCrore": 16768.72
-    },
-    {
-      "symbol": "AEQUS",
-      "name": "Aequs",
-      "marketCapCrore": 16742.5
-    }
-  ]
+  }
 }

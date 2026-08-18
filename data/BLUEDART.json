@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/BLUEDART/consolidated/",
-    "fetchedAt": "2026-08-17T21:30:48.064Z",
+    "fetchedAt": "2026-08-18T08:37:26.263Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -468,45 +468,45 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "peers": [
     {
       "symbol": "CONCOR",
       "name": "Container Corpn.",
-      "marketCapCrore": 39946.86
+      "marketCapCrore": 39737.43
     },
     {
       "symbol": "DELHIVERY",
       "name": "Delhivery",
-      "marketCapCrore": 34214.11
+      "marketCapCrore": 33776.18
     },
     {
       "symbol": "SHADOWFAX",
       "name": "Shadowfax Technologies",
-      "marketCapCrore": 15140.16
+      "marketCapCrore": 15145.04
     },
     {
       "symbol": "BLUEDART",
       "name": "Blue Dart Expres",
-      "marketCapCrore": 12161.63
+      "marketCapCrore": 12066.71
     },
     {
       "symbol": "TCI",
       "name": "Transport Corp.",
-      "marketCapCrore": 6973.58
+      "marketCapCrore": 6944.78
     },
     {
       "symbol": "TVSSCS",
       "name": "TVS Supply",
-      "marketCapCrore": 5359.55
+      "marketCapCrore": 5385.13
     },
     {
       "symbol": "VRLLOG",
       "name": "VRL Logistics",
-      "marketCapCrore": 5181.63
+      "marketCapCrore": 5223.58
     }
   ]
 }
