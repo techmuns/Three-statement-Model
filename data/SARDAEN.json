@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/SARDAEN/consolidated/",
-    "fetchedAt": "2026-08-11T16:14:40.590Z",
+    "fetchedAt": "2026-08-18T08:45:36.850Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,273 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "power",
+          "name": "Power",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 280,
+              "sharePercent": 24.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 212,
+              "sharePercent": 19.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 162,
+              "sharePercent": 15.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 181,
+              "sharePercent": 17
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 391,
+              "sharePercent": 29.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 670,
+              "sharePercent": 44.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 642,
+              "sharePercent": 44.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 911,
+              "sharePercent": 50.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 826,
+              "sharePercent": 47.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 560,
+              "sharePercent": 38.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 549,
+              "sharePercent": 38.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 939,
+              "sharePercent": 53.3
+            }
+          ]
+        },
+        {
+          "id": "steel",
+          "name": "Steel",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 453,
+              "sharePercent": 39.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 510,
+              "sharePercent": 46.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 504,
+              "sharePercent": 48.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 522,
+              "sharePercent": 49
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 487,
+              "sharePercent": 37
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 522,
+              "sharePercent": 34.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 433,
+              "sharePercent": 30.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 514,
+              "sharePercent": 28.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 514,
+              "sharePercent": 29.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 449,
+              "sharePercent": 30.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 444,
+              "sharePercent": 31.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 447,
+              "sharePercent": 25.4
+            }
+          ]
+        },
+        {
+          "id": "ferro-alloys",
+          "name": "Ferro Alloys",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 413,
+              "sharePercent": 35.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 363,
+              "sharePercent": 33.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 367,
+              "sharePercent": 35.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 356,
+              "sharePercent": 33.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 432,
+              "sharePercent": 32.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 315,
+              "sharePercent": 20.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 356,
+              "sharePercent": 24.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 389,
+              "sharePercent": 21.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 396,
+              "sharePercent": 22.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 454,
+              "sharePercent": 30.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 418,
+              "sharePercent": 29.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 372,
+              "sharePercent": 21.1
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 6,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 4,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 8,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 7,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 5,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 6,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 7,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 5,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 4,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 4,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 7,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 5,
+              "sharePercent": 0.3
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +731,310 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "power",
+          "name": "Power",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 425,
+              "sharePercent": 22.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 469,
+              "sharePercent": 27.8
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 327,
+              "sharePercent": 19.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 403,
+              "sharePercent": 15.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 435,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 415,
+              "sharePercent": 17.8
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 427,
+              "sharePercent": 16.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 762,
+              "sharePercent": 17.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 877,
+              "sharePercent": 18
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 897,
+              "sharePercent": 19.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1884,
+              "sharePercent": 35.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2846,
+              "sharePercent": 44.2
+            }
+          ]
+        },
+        {
+          "id": "steel",
+          "name": "Steel",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 876,
+              "sharePercent": 45.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 660,
+              "sharePercent": 39.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 644,
+              "sharePercent": 38.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 911,
+              "sharePercent": 35.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1148,
+              "sharePercent": 43.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1032,
+              "sharePercent": 44.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1216,
+              "sharePercent": 47.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1935,
+              "sharePercent": 44.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 2257,
+              "sharePercent": 46.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2072,
+              "sharePercent": 45.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1964,
+              "sharePercent": 36.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1921,
+              "sharePercent": 29.8
+            }
+          ]
+        },
+        {
+          "id": "ferro-alloys",
+          "name": "Ferro Alloys",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 607,
+              "sharePercent": 31.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 552,
+              "sharePercent": 32.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 687,
+              "sharePercent": 41.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1212,
+              "sharePercent": 47.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1062,
+              "sharePercent": 40
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 873,
+              "sharePercent": 37.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 886,
+              "sharePercent": 34.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1676,
+              "sharePercent": 38.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1691,
+              "sharePercent": 34.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1528,
+              "sharePercent": 33.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1459,
+              "sharePercent": 27.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1656,
+              "sharePercent": 25.7
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 9,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 8,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 8,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 10,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 8,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 14,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 14,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 12,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 41,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 28,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 25,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 20,
+              "sharePercent": 0.3
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "JSWSTEEL",
       "name": "JSW Steel",
-      "marketCapCrore": 315302.57
+      "marketCapCrore": 311049.52
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Steel",
-      "marketCapCrore": 235237.34
+      "marketCapCrore": 230321.16
     },
     {
       "symbol": "JINDALSTEL",
       "name": "Jindal Steel",
-      "marketCapCrore": 111808.97
+      "marketCapCrore": 113020.62
     },
     {
       "symbol": "SAIL",
       "name": "S A I L",
-      "marketCapCrore": 71230.91
+      "marketCapCrore": 70735.18
     },
     {
       "symbol": "JSL",
       "name": "Jindal Stain.",
-      "marketCapCrore": 59729.76
+      "marketCapCrore": 60833.95
     },
     {
       "symbol": "SARDAEN",
       "name": "Sarda Energy",
-      "marketCapCrore": 17458.87
+      "marketCapCrore": 18292.1
     },
     {
       "symbol": "VISL",
       "name": "Vedanta Iron & Steel",
-      "marketCapCrore": 15168.01
+      "marketCapCrore": 14589.67
     }
   ]
 }

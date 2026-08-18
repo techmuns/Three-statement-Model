@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/SAIL/consolidated/",
-    "fetchedAt": "2026-08-11T16:14:36.207Z",
+    "fetchedAt": "2026-08-18T08:45:33.530Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,603 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "bhilai-steel-plant",
+          "name": "Bhilai Steel Plant",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 10064,
+              "sharePercent": 31.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 6500,
+              "sharePercent": 25.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 9700,
+              "sharePercent": 31.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 7935,
+              "sharePercent": 29.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 8575,
+              "sharePercent": 31.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 7828,
+              "sharePercent": 29.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 9095,
+              "sharePercent": 29.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 7449,
+              "sharePercent": 26.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 7723,
+              "sharePercent": 26.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 7933,
+              "sharePercent": 26.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 8767,
+              "sharePercent": 26.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 7485,
+              "sharePercent": 25.7
+            }
+          ]
+        },
+        {
+          "id": "rourkela-steel-plant",
+          "name": "Rourkela Steel Plant",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 7179,
+              "sharePercent": 22.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 5863,
+              "sharePercent": 23.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 6979,
+              "sharePercent": 22.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 6584,
+              "sharePercent": 24.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 5539,
+              "sharePercent": 20.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 5767,
+              "sharePercent": 21.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 6202,
+              "sharePercent": 19.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 5967,
+              "sharePercent": 21.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 6252,
+              "sharePercent": 21.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 6165,
+              "sharePercent": 20.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 7474,
+              "sharePercent": 22.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 7263,
+              "sharePercent": 25
+            }
+          ]
+        },
+        {
+          "id": "bokara-steel-plant",
+          "name": "Bokara Steel Plant",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 6877,
+              "sharePercent": 21.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 6004,
+              "sharePercent": 23.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 6529,
+              "sharePercent": 20.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 4923,
+              "sharePercent": 18.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 5374,
+              "sharePercent": 20
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 5992,
+              "sharePercent": 22.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 6357,
+              "sharePercent": 20.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 6315,
+              "sharePercent": 22.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 6147,
+              "sharePercent": 21.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 6427,
+              "sharePercent": 21.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 8518,
+              "sharePercent": 25.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 7205,
+              "sharePercent": 24.8
+            }
+          ]
+        },
+        {
+          "id": "iisco-steel-plant",
+          "name": "IISCO Steel Plant",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 3605,
+              "sharePercent": 11.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2907,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 3379,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 3069,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 3279,
+              "sharePercent": 12.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2578,
+              "sharePercent": 9.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 3665,
+              "sharePercent": 11.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2890,
+              "sharePercent": 10.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 3218,
+              "sharePercent": 11.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 3293,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3663,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2771,
+              "sharePercent": 9.5
+            }
+          ]
+        },
+        {
+          "id": "durgapur-steel-plant",
+          "name": "Durgapur Steel Plant",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 3202,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2903,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 3246,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 3150,
+              "sharePercent": 11.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2963,
+              "sharePercent": 11
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3012,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 3081,
+              "sharePercent": 9.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2657,
+              "sharePercent": 9.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2770,
+              "sharePercent": 9.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2903,
+              "sharePercent": 9.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3249,
+              "sharePercent": 9.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2731,
+              "sharePercent": 9.4
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 315,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 361,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 412,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 439,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 324,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 449,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2065,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2171,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1802,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2102,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 890,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 777,
+              "sharePercent": 2.7
+            }
+          ]
+        },
+        {
+          "id": "salem-steel-plant",
+          "name": "Salem Steel Plant",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 611,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 515,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 622,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 566,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 481,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 445,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 463,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 497,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 523,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 488,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 514,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 434,
+              "sharePercent": 1.5
+            }
+          ]
+        },
+        {
+          "id": "alloy-steel-plant",
+          "name": "Alloy Steel Plant",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 308,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 281,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 301,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 305,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 313,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 312,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 324,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 312,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 346,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 254,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 323,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 358,
+              "sharePercent": 1.2
+            }
+          ]
+        },
+        {
+          "id": "visvesvaraya-iron-steel-plant",
+          "name": "Visvesvaraya Iron Steel Plant",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 23,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 49,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 46,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 48,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 56,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 48,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 48,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 56,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 54,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 56,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 94,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 76,
+              "sharePercent": 0.3
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +1061,772 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "bhilai-steel-plant",
+          "name": "Bhilai Steel Plant",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 17336,
+              "sharePercent": 30.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 15512,
+              "sharePercent": 31.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 14927,
+              "sharePercent": 27.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 16498,
+              "sharePercent": 25.7
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 17018,
+              "sharePercent": 23
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 30516,
+              "sharePercent": 26.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 33298,
+              "sharePercent": 28.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 33433,
+              "sharePercent": 29.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 31873,
+              "sharePercent": 26.5
+            }
+          ]
+        },
+        {
+          "id": "bokara-steel-plant",
+          "name": "Bokara Steel Plant",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 26344,
+              "sharePercent": 23.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 25755,
+              "sharePercent": 22.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 22646,
+              "sharePercent": 20.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 27407,
+              "sharePercent": 22.8
+            }
+          ]
+        },
+        {
+          "id": "rourkela-steel-plant",
+          "name": "Rourkela Steel Plant",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 9384,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 7905,
+              "sharePercent": 16.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 10061,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 12531,
+              "sharePercent": 19.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 15605,
+              "sharePercent": 21.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 25600,
+              "sharePercent": 22.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 26269,
+              "sharePercent": 22.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 24091,
+              "sharePercent": 21.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 25859,
+              "sharePercent": 21.5
+            }
+          ]
+        },
+        {
+          "id": "iisco-steel-plant",
+          "name": "IISCO Steel Plant",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1128,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 3404,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 4779,
+              "sharePercent": 8.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 6900,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 7948,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 13521,
+              "sharePercent": 11.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 12699,
+              "sharePercent": 11
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 12591,
+              "sharePercent": 11.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 13065,
+              "sharePercent": 10.9
+            }
+          ]
+        },
+        {
+          "id": "durgapur-steel-plant",
+          "name": "Durgapur Steel Plant",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 7822,
+              "sharePercent": 13.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 6323,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 6448,
+              "sharePercent": 11.8
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 7427,
+              "sharePercent": 11.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 9099,
+              "sharePercent": 12.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 13250,
+              "sharePercent": 11.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 12445,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 12206,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 11580,
+              "sharePercent": 9.6
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 4042,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 3986,
+              "sharePercent": 8.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 3584,
+              "sharePercent": 6.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 4065,
+              "sharePercent": 6.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 5078,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 4737,
+              "sharePercent": 7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1229,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3324,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1445,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1435,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3277,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 6965,
+              "sharePercent": 5.8
+            }
+          ]
+        },
+        {
+          "id": "salem-steel-plant",
+          "name": "Salem Steel Plant",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2218,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1787,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2032,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1363,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1701,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1882,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2407,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1956,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2023,
+              "sharePercent": 1.7
+            }
+          ]
+        },
+        {
+          "id": "alloy-steel-plant",
+          "name": "Alloy Steel Plant",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 1001,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1190,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1253,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1235,
+              "sharePercent": 1
+            }
+          ]
+        },
+        {
+          "id": "visvesvaraya-iron-steel-plant",
+          "name": "Visvesvaraya Iron Steel Plant",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 311,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 162,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 200,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 259,
+              "sharePercent": 0.2
+            }
+          ]
+        },
+        {
+          "id": "alloy",
+          "name": "Alloy",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 714,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 553,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 897,
+              "sharePercent": 0.8
+            }
+          ]
+        },
+        {
+          "id": "bhilai",
+          "name": "Bhilai",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 19487,
+              "sharePercent": 28.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 19949,
+              "sharePercent": 25.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 27993,
+              "sharePercent": 24.4
+            }
+          ]
+        },
+        {
+          "id": "bokara",
+          "name": "Bokara",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 13412,
+              "sharePercent": 19.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 18628,
+              "sharePercent": 24.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 28532,
+              "sharePercent": 24.9
+            }
+          ]
+        },
+        {
+          "id": "durgapur",
+          "name": "Durgapur",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 7727,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 8788,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 11853,
+              "sharePercent": 10.3
+            }
+          ]
+        },
+        {
+          "id": "iisco",
+          "name": "IISCO",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 7752,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 8309,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 12201,
+              "sharePercent": 10.6
+            }
+          ]
+        },
+        {
+          "id": "power",
+          "name": "Power",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1275,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "rourkela",
+          "name": "Rourkela",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 12538,
+              "sharePercent": 18.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 17672,
+              "sharePercent": 22.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 26831,
+              "sharePercent": 23.4
+            }
+          ]
+        },
+        {
+          "id": "salem",
+          "name": "Salem",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 1574,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1713,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2658,
+              "sharePercent": 2.3
+            }
+          ]
+        },
+        {
+          "id": "visvesvaraya-iron",
+          "name": "Visvesvaraya Iron",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 101,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 168,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 377,
+              "sharePercent": 0.3
+            }
+          ]
+        },
+        {
+          "id": "alloy-steels-plant",
+          "name": "Alloy Steels Plant",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 753,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 601,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 617,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 655,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 821,
+              "sharePercent": 1.1
+            }
+          ]
+        },
+        {
+          "id": "bokaro-steel-plant",
+          "name": "Bokaro Steel Plant",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 13013,
+              "sharePercent": 22.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 9353,
+              "sharePercent": 19
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 12222,
+              "sharePercent": 22.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 14469,
+              "sharePercent": 22.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 16456,
+              "sharePercent": 22.3
+            }
+          ]
+        },
+        {
+          "id": "visvesvaraya-iron-steel-plant",
+          "name": "Visvesvaraya Iron & Steel Plant",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 279,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 259,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 197,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 164,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 180,
+              "sharePercent": 0.2
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "JSWSTEEL",
       "name": "JSW Steel",
-      "marketCapCrore": 315302.57
+      "marketCapCrore": 311049.52
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Steel",
-      "marketCapCrore": 235237.34
+      "marketCapCrore": 230446
     },
     {
       "symbol": "JINDALSTEL",
       "name": "Jindal Steel",
-      "marketCapCrore": 111808.97
+      "marketCapCrore": 113020.62
     },
     {
       "symbol": "SAIL",
       "name": "S A I L",
-      "marketCapCrore": 71230.91
+      "marketCapCrore": 70714.53
     },
     {
       "symbol": "JSL",
       "name": "Jindal Stain.",
-      "marketCapCrore": 59729.76
+      "marketCapCrore": 60833.95
     },
     {
       "symbol": "SARDAEN",
       "name": "Sarda Energy",
-      "marketCapCrore": 17458.87
+      "marketCapCrore": 18292.1
     },
     {
       "symbol": "VISL",
       "name": "Vedanta Iron & Steel",
-      "marketCapCrore": 15168.01
+      "marketCapCrore": 14605.31
     }
   ]
 }

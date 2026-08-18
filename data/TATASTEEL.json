@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/TATASTEEL/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:41.976Z",
+    "fetchedAt": "2026-08-18T08:46:28.758Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,563 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "tata-steel-india",
+          "name": "Tata Steel India",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 34185,
+              "sharePercent": 47.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 34686,
+              "sharePercent": 46.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 36540,
+              "sharePercent": 48.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 32958,
+              "sharePercent": 45.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 32399,
+              "sharePercent": 45.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 32760,
+              "sharePercent": 47.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 34399,
+              "sharePercent": 49.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 31014,
+              "sharePercent": 46.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 34680,
+              "sharePercent": 48.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 35578,
+              "sharePercent": 49.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 38448,
+              "sharePercent": 47
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 36897,
+              "sharePercent": 46
+            }
+          ]
+        },
+        {
+          "id": "tata-steel-netherlands-operations",
+          "name": "Tata Steel Netherlands Operations",
+          "values": [
+            {
+              "periodId": "FY25Q2",
+              "revenue": 14109,
+              "sharePercent": 19.8
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 13863,
+              "sharePercent": 20
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 14619,
+              "sharePercent": 21.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 15719,
+              "sharePercent": 21.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 14001,
+              "sharePercent": 19.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 17016,
+              "sharePercent": 20.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 15803,
+              "sharePercent": 19.7
+            }
+          ]
+        },
+        {
+          "id": "other-trade-related-operations",
+          "name": "Other Trade Related Operations",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 12377,
+              "sharePercent": 17.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 15351,
+              "sharePercent": 20.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 13654,
+              "sharePercent": 18
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 13170,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 12346,
+              "sharePercent": 17.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 10880,
+              "sharePercent": 15.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 9216,
+              "sharePercent": 13.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 9664,
+              "sharePercent": 14.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 8481,
+              "sharePercent": 11.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 9894,
+              "sharePercent": 13.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 11522,
+              "sharePercent": 14.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 12689,
+              "sharePercent": 15.8
+            }
+          ]
+        },
+        {
+          "id": "tata-steel-uk",
+          "name": "Tata Steel UK",
+          "values": [
+            {
+              "periodId": "FY25Q2",
+              "revenue": 6521,
+              "sharePercent": 9.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 5665,
+              "sharePercent": 8.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 6096,
+              "sharePercent": 9.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 5927,
+              "sharePercent": 8.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 5536,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 5774,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 6115,
+              "sharePercent": 7.6
+            }
+          ]
+        },
+        {
+          "id": "other-indian-operations",
+          "name": "Other Indian Operations",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2919,
+              "sharePercent": 4.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2559,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2818,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2548,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2377,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2480,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2861,
+              "sharePercent": 4.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2381,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2630,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2836,
+              "sharePercent": 4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 5097,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 4395,
+              "sharePercent": 5.5
+            }
+          ]
+        },
+        {
+          "id": "south-east-asian-operations",
+          "name": "South East Asian Operations",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1798,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1637,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1913,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1865,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1767,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1777,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2064,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2143,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2352,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1906,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2205,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2346,
+              "sharePercent": 2.9
+            }
+          ]
+        },
+        {
+          "id": "neelachal-ispat-nigam-limited",
+          "name": "Neelachal Ispat Nigam Limited",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1284,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1427,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1126,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1478,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1348,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1458,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1417,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 927,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1284,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1563,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1507,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1712,
+              "sharePercent": 2.1
+            }
+          ]
+        },
+        {
+          "id": "rest-of-the-world",
+          "name": "Rest of the World",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 528,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 497,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 34,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 398,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 494,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 355,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 175,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 415,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 729,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 385,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 266,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 340,
+              "sharePercent": 0.4
+            }
+          ]
+        },
+        {
+          "id": "tata-steel-europe",
+          "name": "Tata Steel Europe",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 18847,
+              "sharePercent": 26.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 18142,
+              "sharePercent": 24.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 19821,
+              "sharePercent": 26.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 19575,
+              "sharePercent": 27.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 19311,
+              "sharePercent": 27.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +1021,636 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "tata-steel-india",
+          "name": "Tata Steel India",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 70611,
+              "sharePercent": 35.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 60436,
+              "sharePercent": 33.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 84133,
+              "sharePercent": 43.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 129021,
+              "sharePercent": 40.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 142913,
+              "sharePercent": 43.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 140933,
+              "sharePercent": 46.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 132517,
+              "sharePercent": 46.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 139720,
+              "sharePercent": 47.8
+            }
+          ]
+        },
+        {
+          "id": "tata-steel-netherlands-operations",
+          "name": "Tata Steel Netherlands Operations",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 56889,
+              "sharePercent": 20
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 61355,
+              "sharePercent": 21
+            }
+          ]
+        },
+        {
+          "id": "other-trade-related-operations",
+          "name": "Other Trade Related Operations",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 33697,
+              "sharePercent": 16.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 31728,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 29344,
+              "sharePercent": 15
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 60124,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 73974,
+              "sharePercent": 22.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 56681,
+              "sharePercent": 18.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 45611,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 39562,
+              "sharePercent": 13.5
+            }
+          ]
+        },
+        {
+          "id": "tata-steel-uk",
+          "name": "Tata Steel UK",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 24990,
+              "sharePercent": 8.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 23333,
+              "sharePercent": 8
+            }
+          ]
+        },
+        {
+          "id": "other-indian-operations",
+          "name": "Other Indian Operations",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 11277,
+              "sharePercent": 5.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 9496,
+              "sharePercent": 5.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 10641,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 21275,
+              "sharePercent": 6.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 10922,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 10382,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 10266,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 12944,
+              "sharePercent": 4.4
+            }
+          ]
+        },
+        {
+          "id": "south-east-asian-operations",
+          "name": "South East Asian Operations",
+          "values": [
+            {
+              "periodId": "FY21",
+              "revenue": 9311,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 11482,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 8731,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 7228,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 7472,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 8605,
+              "sharePercent": 2.9
+            }
+          ]
+        },
+        {
+          "id": "neelachal-ispat-nigam-limited",
+          "name": "Neelachal Ispat Nigam Limited",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1646,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 5505,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5701,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5282,
+              "sharePercent": 1.8
+            }
+          ]
+        },
+        {
+          "id": "rest-of-the-world",
+          "name": "Rest of the World",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 784,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 415,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 802,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 739,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 649,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1330,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1422,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1795,
+              "sharePercent": 0.6
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 12420,
+              "sharePercent": 8.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "steel-business",
+          "name": "Steel Business",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 134407,
+              "sharePercent": 90.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "tata-steel-europe",
+          "name": "Tata Steel Europe",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 64777,
+              "sharePercent": 32.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 55939,
+              "sharePercent": 31.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 56051,
+              "sharePercent": 28.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 90023,
+              "sharePercent": 28.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 90300,
+              "sharePercent": 27.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 78144,
+              "sharePercent": 26
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "tata-steel-long-products",
+          "name": "Tata Steel Long Products",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 992,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3490,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 4750,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 6802,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "bamnipal-steel-including-tata-steel-bsl",
+          "name": "Bamnipal Steel (including Tata Steel BSL",
+          "values": [
+            {
+              "periodId": "FY20",
+              "revenue": 18199,
+              "sharePercent": 10.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "bamnipal-steel",
+          "name": "Bamnipal Steel",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 18376,
+              "sharePercent": 9.2
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1448,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "JSWSTEEL",
       "name": "JSW Steel",
-      "marketCapCrore": 318398.11
+      "marketCapCrore": 311049.52
     },
     {
       "symbol": "TATASTEEL",
       "name": "Tata Steel",
-      "marketCapCrore": 237486.62
+      "marketCapCrore": 230321.16
     },
     {
       "symbol": "JINDALSTEL",
       "name": "Jindal Steel",
-      "marketCapCrore": 114759.91
+      "marketCapCrore": 113020.62
     },
     {
       "symbol": "SAIL",
       "name": "S A I L",
-      "marketCapCrore": 71230.91
+      "marketCapCrore": 70735.18
     },
     {
       "symbol": "JSL",
       "name": "Jindal Stain.",
-      "marketCapCrore": 60409.35
+      "marketCapCrore": 60833.95
     },
     {
       "symbol": "SARDAEN",
       "name": "Sarda Energy",
-      "marketCapCrore": 17636.68
+      "marketCapCrore": 18292.1
     },
     {
       "symbol": "VISL",
       "name": "Vedanta Iron & Steel",
-      "marketCapCrore": 14456.7
+      "marketCapCrore": 14589.67
     }
   ]
 }

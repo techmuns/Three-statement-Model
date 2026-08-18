@@ -6,5 +6,166 @@
     "TCS",
     "INFY"
   ],
-  "peers": []
+  "peers": [
+    {
+      "id": "hcltech",
+      "name": "HCL Technologies",
+      "ticker": "HCLTECH",
+      "marketCapCrore": 351677.38,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 30.4
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "wipro",
+      "name": "Wipro",
+      "ticker": "WIPRO",
+      "marketCapCrore": 177291.18,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 17.84
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "techm",
+      "name": "Tech Mahindra",
+      "ticker": "TECHM",
+      "marketCapCrore": 155196.4,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 23.12
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ltm",
+      "name": "LTM",
+      "ticker": "LTM",
+      "marketCapCrore": 136579.24,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 29.6
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "persistent",
+      "name": "Persistent Systems",
+      "ticker": "PERSISTENT",
+      "marketCapCrore": 86499.02,
+      "kpis": [
+        {
+          "kpiId": "revenue-growth",
+          "value": null
+        },
+        {
+          "kpiId": "operating-margin",
+          "value": null
+        },
+        {
+          "kpiId": "net-profit-margin",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-equity",
+          "value": null
+        },
+        {
+          "kpiId": "return-on-capital-employed",
+          "value": 34.36
+        },
+        {
+          "kpiId": "debt-to-equity",
+          "value": null
+        }
+      ]
+    }
+  ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/ONGC/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:16.594Z",
+    "fetchedAt": "2026-08-18T08:44:52.111Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,405 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "refining-marketing",
+          "name": "Refining & Marketing",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 125569,
+              "sharePercent": 76.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 146905,
+              "sharePercent": 78.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 150896,
+              "sharePercent": 80.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 148334,
+              "sharePercent": 77.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 137127,
+              "sharePercent": 77.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 144728,
+              "sharePercent": 78.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 146160,
+              "sharePercent": 77.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 141256,
+              "sharePercent": 79
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 136440,
+              "sharePercent": 77.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 154395,
+              "sharePercent": 80.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 152255,
+              "sharePercent": 78.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 186884,
+              "sharePercent": 77.7
+            }
+          ]
+        },
+        {
+          "id": "offshore",
+          "name": "Offshore",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 23469,
+              "sharePercent": 14.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 23834,
+              "sharePercent": 12.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 23891,
+              "sharePercent": 12.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 24187,
+              "sharePercent": 12.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 23004,
+              "sharePercent": 13
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 23653,
+              "sharePercent": 12.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 24783,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 22086,
+              "sharePercent": 12.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 22898,
+              "sharePercent": 13.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 22081,
+              "sharePercent": 11.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 25341,
+              "sharePercent": 13
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 33337,
+              "sharePercent": 13.9
+            }
+          ]
+        },
+        {
+          "id": "onshore",
+          "name": "Onshore",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 11639,
+              "sharePercent": 7.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 10890,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 10667,
+              "sharePercent": 5.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 10996,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 10803,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 9977,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 10117,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 9843,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 10043,
+              "sharePercent": 5.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 9372,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 10520,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 13073,
+              "sharePercent": 5.4
+            }
+          ]
+        },
+        {
+          "id": "petrochemicals",
+          "name": "Petrochemicals",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 3851,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 3721,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 3664,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3693,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 3725,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 3349,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 3393,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 3045,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 4425,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3858,
+              "sharePercent": 1.6
+            }
+          ]
+        },
+        {
+          "id": "outside-india",
+          "name": "Outside India",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2668,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 2440,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2077,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 3409,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2350,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3184,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 3030,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2120,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2163,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1796,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2364,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3346,
+              "sharePercent": 1.4
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 38,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 34,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 38,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 38,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 35,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 47,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 57,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 146,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 164,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 85,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 99,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 147,
+              "sharePercent": 0.1
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -225,11 +621,11 @@
             "quarter": null,
             "endDate": "2025-03-31"
           },
-          "sales": 612065,
-          "expenses": 523205,
-          "operatingProfit": 88861,
+          "sales": 612064,
+          "expenses": 523207,
+          "operatingProfit": 88857,
           "opmPercent": 14.52,
-          "otherIncome": 13278,
+          "otherIncome": 13282,
           "interest": 14535,
           "depreciation": 35206,
           "profitBeforeTax": 52398,
@@ -247,11 +643,11 @@
             "quarter": null,
             "endDate": "2026-03-31"
           },
-          "sales": 662243,
-          "expenses": 559128,
-          "operatingProfit": 103116,
-          "opmPercent": 15.57,
-          "otherIncome": 14927,
+          "sales": 608663,
+          "expenses": 505543,
+          "operatingProfit": 103120,
+          "opmPercent": 16.94,
+          "otherIncome": 14923,
           "interest": 13029,
           "depreciation": 37391,
           "profitBeforeTax": 67623,
@@ -340,13 +736,13 @@
           "equityCapital": 6290,
           "reserves": 337150,
           "borrowings": 187817,
-          "otherLiabilities": 221398,
-          "totalLiabilities": 752656,
-          "fixedAssets": 336810,
-          "cwip": 115724,
+          "otherLiabilities": 221401,
+          "totalLiabilities": 752658,
+          "fixedAssets": 340175,
+          "cwip": 112614,
           "investments": 95617,
-          "otherAssets": 204504,
-          "totalAssets": 752656
+          "otherAssets": 204252,
+          "totalAssets": 752658
         },
         {
           "period": {
@@ -361,13 +757,13 @@
           "equityCapital": 6290,
           "reserves": 365478,
           "borrowings": 174316,
-          "otherLiabilities": 245821,
-          "totalLiabilities": 791905,
-          "fixedAssets": 369684,
-          "cwip": 91478,
+          "otherLiabilities": 239518,
+          "totalLiabilities": 785602,
+          "fixedAssets": 346073,
+          "cwip": 116272,
           "investments": 101084,
-          "otherAssets": 229659,
-          "totalAssets": 791905
+          "otherAssets": 222173,
+          "totalAssets": 785602
         }
       ]
     },
@@ -441,10 +837,10 @@
           "operatingProfitBeforeWorkingCapital": null,
           "workingCapitalChange": null,
           "taxPaid": null,
-          "cashFromOperating": 90868,
-          "cashFromInvesting": -42901,
+          "cashFromOperating": 90856,
+          "cashFromInvesting": -42879,
           "cashFromFinancing": -47908,
-          "netCashFlow": 59
+          "netCashFlow": 68
         },
         {
           "period": {
@@ -460,53 +856,352 @@
           "workingCapitalChange": null,
           "taxPaid": null,
           "cashFromOperating": 112719,
-          "cashFromInvesting": -57676,
+          "cashFromInvesting": -57419,
           "cashFromFinancing": -56331,
-          "netCashFlow": -1287
+          "netCashFlow": -1031
         }
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "refining-marketing",
+          "name": "Refining & Marketing",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 460456,
+              "sharePercent": 78.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 591523,
+              "sharePercent": 78
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 567460,
+              "sharePercent": 77.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 576326,
+              "sharePercent": 77.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 584346,
+              "sharePercent": 79
+            }
+          ]
+        },
+        {
+          "id": "offshore",
+          "name": "Offshore",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 71541,
+              "sharePercent": 12.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 104114,
+              "sharePercent": 13.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 94270,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 95627,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 92406,
+              "sharePercent": 12.5
+            }
+          ]
+        },
+        {
+          "id": "onshore",
+          "name": "Onshore",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 38569,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 51116,
+              "sharePercent": 6.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 43865,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 41894,
+              "sharePercent": 5.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 39778,
+              "sharePercent": 5.4
+            }
+          ]
+        },
+        {
+          "id": "petrochemicals",
+          "name": "Petrochemicals",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 14307,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 14808,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 14214,
+              "sharePercent": 1.9
+            }
+          ]
+        },
+        {
+          "id": "outside-india",
+          "name": "Outside India",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 18929,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 10080,
+              "sharePercent": 2.8
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 10418,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 17322,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 11676,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 9553,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 12995,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 8443,
+              "sharePercent": 1.1
+            }
+          ]
+        },
+        {
+          "id": "in-india-e-p-offshore",
+          "name": "In India - E&P Offshore",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 59470,
+              "sharePercent": 36
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 54381,
+              "sharePercent": 15
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 58179,
+              "sharePercent": 14.4
+            }
+          ]
+        },
+        {
+          "id": "in-india-e-p-onshore",
+          "name": "In India - E&P Onshore",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 23270,
+              "sharePercent": 14.1
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 21561,
+              "sharePercent": 26.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 23353,
+              "sharePercent": 6.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 26623,
+              "sharePercent": 6.6
+            }
+          ]
+        },
+        {
+          "id": "in-india-refining-marketing",
+          "name": "In India - Refining & Marketing",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 57529,
+              "sharePercent": 34.9
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 51085,
+              "sharePercent": 61.9
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 274452,
+              "sharePercent": 75.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 308152,
+              "sharePercent": 76.4
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 5873,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 9867,
+              "sharePercent": 12
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 128,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 131,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 103,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 142,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 150,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 177,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 493,
+              "sharePercent": 0.1
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "ONGC",
       "name": "O N G C",
-      "marketCapCrore": 301725.42
+      "marketCapCrore": 301675.09
     },
     {
       "symbol": "OIL",
       "name": "Oil India",
-      "marketCapCrore": 73685.33
+      "marketCapCrore": 78548.82
     },
     {
       "symbol": "VOGL",
       "name": "Vedanta Oil and Gas",
-      "marketCapCrore": 15535.97
+      "marketCapCrore": 14593.57
     },
     {
       "symbol": "ANTELOPUS",
       "name": "Antelopus Selan",
-      "marketCapCrore": 2785.21
-    },
-    {
-      "symbol": "HINDOILEXP",
-      "name": "Hind.Oil Explor.",
-      "marketCapCrore": 2166.67
+      "marketCapCrore": 3016.91
     },
     {
       "symbol": "PRABHA",
       "name": "Prabha Energy",
-      "marketCapCrore": 2157.08
+      "marketCapCrore": 2606
+    },
+    {
+      "symbol": "HINDOILEXP",
+      "name": "Hind.Oil Explor.",
+      "marketCapCrore": 2076.2
     },
     {
       "symbol": "GNRL",
       "name": "Guj.Nat.Resour.",
-      "marketCapCrore": 1569.31
+      "marketCapCrore": 1595.41
     }
   ]
 }

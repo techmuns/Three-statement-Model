@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/TMPV/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:38.409Z",
+    "fetchedAt": "2026-08-18T08:47:11.807Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -16,28 +16,6 @@
     "profitLoss": {
       "status": "available",
       "periods": [
-        {
-          "period": {
-            "id": "FY25Q4",
-            "label": "Q4 FY25",
-            "longLabel": "Quarter ended Mar 2025",
-            "cadence": "quarterly",
-            "fiscalYear": 2025,
-            "quarter": 4,
-            "endDate": "2025-03-31"
-          },
-          "sales": 98377,
-          "expenses": 83990,
-          "operatingProfit": 14387,
-          "opmPercent": 14.62,
-          "otherIncome": 2361,
-          "interest": 828,
-          "depreciation": 4717,
-          "profitBeforeTax": 11203,
-          "taxPercent": 23.63,
-          "netProfit": 8556,
-          "eps": 23.01
-        },
         {
           "period": {
             "id": "FY26Q1",
@@ -125,6 +103,28 @@
           "taxPercent": 19.22,
           "netProfit": 5878,
           "eps": 15.7
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 95799,
+          "expenses": 89623,
+          "operatingProfit": 6176,
+          "opmPercent": 6.45,
+          "otherIncome": 1113,
+          "interest": 835,
+          "depreciation": 4880,
+          "profitBeforeTax": 1574,
+          "taxPercent": 45.43,
+          "netProfit": 859,
+          "eps": 2.1
         }
       ]
     },
@@ -139,9 +139,456 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "automotive-and-related-activity-jaguar-and-land-rover",
+          "name": "Automotive and related activity-Jaguar and Land Rover",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 71787,
+              "sharePercent": 67.3
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 76655,
+              "sharePercent": 68.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 82988,
+              "sharePercent": 68.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 76899,
+              "sharePercent": 70.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 71100,
+              "sharePercent": 84.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 81263,
+              "sharePercent": 85.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 84957,
+              "sharePercent": 70.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 75952,
+              "sharePercent": 86.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 57877,
+              "sharePercent": 79.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 53849,
+              "sharePercent": 76.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 85625,
+              "sharePercent": 80.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 76705,
+              "sharePercent": 79.6
+            }
+          ]
+        },
+        {
+          "id": "automotive-and-related-activity-tata-and-other-brands-vehicle-passenger-vehicle",
+          "name": "Automotive and related activity-Tata and Other brands vehicle-Passenger vehicle",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 12174,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 12911,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 14431,
+              "sharePercent": 11.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 11847,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 11701,
+              "sharePercent": 13.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 12355,
+              "sharePercent": 13
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 12543,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 10877,
+              "sharePercent": 12.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 13529,
+              "sharePercent": 18.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 15317,
+              "sharePercent": 21.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 18742,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 17930,
+              "sharePercent": 18.6
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1452,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 181,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1526,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1468,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1292,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1320,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1250,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1325,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1366,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1572,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1668,
+              "sharePercent": 1.7
+            }
+          ]
+        },
+        {
+          "id": "corporate",
+          "name": "Corporate",
+          "values": [
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 54,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 56,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 53,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 74,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 13,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 14,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 22,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "automotive-and-related-activity-tata-and-other-brands-vehicle-commercial-vehicle",
+          "name": "Automotive and related activity-Tata and Other brands vehicle-commercial vehicle",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 20087,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 20123,
+              "sharePercent": 17.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 21591,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 17849,
+              "sharePercent": 16.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 21487,
+              "sharePercent": 17.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "automotive-and-related-activity-vehicle-financing",
+          "name": "Automotive and related activity-Vehicle Financing",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1054,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 997,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 986,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 968,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 13,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 149,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1527,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 151,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 150,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1523,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +914,489 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "automotive-and-related-activity-jaguar-and-land-rover",
+          "name": "Automotive and related activity-Jaguar and Land Rover",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 217828,
+              "sharePercent": 82.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 222823,
+              "sharePercent": 79.8
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 216389,
+              "sharePercent": 78.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 224831,
+              "sharePercent": 76.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 223514,
+              "sharePercent": 73.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 208040,
+              "sharePercent": 79.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 193823,
+              "sharePercent": 77.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 187697,
+              "sharePercent": 67
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 222860,
+              "sharePercent": 63.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 302825,
+              "sharePercent": 68.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 314220,
+              "sharePercent": 85.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 273303,
+              "sharePercent": 81
+            }
+          ]
+        },
+        {
+          "id": "automotive-and-related-activity-tata-and-other-brands-vehicle-passenger-vehicle",
+          "name": "Automotive and related activity-Tata and Other brands vehicle-Passenger vehicle",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 13342,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 14470,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 10482,
+              "sharePercent": 4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 16606,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 31515,
+              "sharePercent": 11.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 47868,
+              "sharePercent": 13.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 52353,
+              "sharePercent": 11.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 48451,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 58465,
+              "sharePercent": 17.3
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2748,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2954,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 3184,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 3252,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3626,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3047,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 2612,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3809,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4809,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 593,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5174,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5513,
+              "sharePercent": 1.6
+            }
+          ]
+        },
+        {
+          "id": "corporate",
+          "name": "Corporate",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 224,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 154,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "automotive-and-related-activity-tata-and-other-brands-vehicle-commercial-vehicle",
+          "name": "Automotive and related activity-Tata and Other brands vehicle-commercial vehicle",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 49374,
+              "sharePercent": 16.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 58137,
+              "sharePercent": 19.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 36329,
+              "sharePercent": 13.8
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 33104,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 52287,
+              "sharePercent": 18.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 70816,
+              "sharePercent": 20.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 78791,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "automotive-and-related-activity-vehicle-financing",
+          "name": "Automotive and related activity-Vehicle Financing",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2800,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3700,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 4295,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 4490,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 4585,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4595,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4099,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "automotive-and-related-activity-tata-and-other-brands-vehicles-and-financing-thereof",
+          "name": "Automotive and related activity-Tata and other brands vehicles and financing thereof",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 44118,
+              "sharePercent": 16.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 53463,
+              "sharePercent": 19.1
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 56449,
+              "sharePercent": 20.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 170,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 111,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 216,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 283,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 314,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 360,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 5875,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "MARUTI",
       "name": "Maruti Suzuki",
-      "marketCapCrore": 443213.31
+      "marketCapCrore": 432932.36
     },
     {
       "symbol": "M&M",
       "name": "M & M",
-      "marketCapCrore": 437349.09
+      "marketCapCrore": 426605.01
     },
     {
       "symbol": "HYUNDAI",
       "name": "Hyundai Motor I",
-      "marketCapCrore": 180627.89
+      "marketCapCrore": 179075.91
     },
     {
       "symbol": "TMPV",
       "name": "Tata Motors PVeh",
-      "marketCapCrore": 127833.17
+      "marketCapCrore": 119031.12
     },
     {
       "symbol": "FORCEMOT",
       "name": "Force Motors",
-      "marketCapCrore": 24112.56
+      "marketCapCrore": 23975.63
     },
     {
       "symbol": "OLECTRA",
       "name": "Olectra Greentec",
-      "marketCapCrore": 11231.11
+      "marketCapCrore": 10917.55
     },
     {
       "symbol": "MERCURYEV",
       "name": "Mercury EV-Tech",
-      "marketCapCrore": 657.31
+      "marketCapCrore": 671.17
     }
   ]
 }

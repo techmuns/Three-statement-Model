@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/TRENT/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:52.450Z",
+    "fetchedAt": "2026-08-18T08:47:15.120Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,78 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 15,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 21,
+              "sharePercent": 0.9
+            }
+          ]
+        },
+        {
+          "id": "retailing",
+          "name": "Retailing",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2282,
+              "sharePercent": 99.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2382,
+              "sharePercent": 99.1
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "TRENT",
       "name": "Trent",
-      "marketCapCrore": 161302.77
+      "marketCapCrore": 157724.87
     },
     {
       "symbol": "LENSKART",
       "name": "Lenskart Solut.",
-      "marketCapCrore": 101915.11
+      "marketCapCrore": 109515.42
     },
     {
       "symbol": "MANYAVAR",
       "name": "Vedant Fashions",
-      "marketCapCrore": 12753.93
+      "marketCapCrore": 13060.04
     },
     {
       "symbol": "ABLBL",
       "name": "A B Lifestyle",
-      "marketCapCrore": 11173.88
-    },
-    {
-      "symbol": "AVL",
-      "name": "Aditya Vision",
-      "marketCapCrore": 8062.09
+      "marketCapCrore": 10838.27
     },
     {
       "symbol": "V2RETAIL",
       "name": "V2 Retail",
-      "marketCapCrore": 7966.6
+      "marketCapCrore": 8016.57
+    },
+    {
+      "symbol": "AVL",
+      "name": "Aditya Vision",
+      "marketCapCrore": 7922.62
     },
     {
       "symbol": "ABFRL",
       "name": "Aditya Bir. Fas.",
-      "marketCapCrore": 7449.99
+      "marketCapCrore": 6712.8
     }
   ]
 }

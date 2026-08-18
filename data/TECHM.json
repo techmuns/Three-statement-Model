@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/TECHM/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:45.420Z",
+    "fetchedAt": "2026-08-18T08:46:35.417Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,141 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "it",
+          "name": "IT",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 10932,
+              "sharePercent": 85
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 11183,
+              "sharePercent": 85.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 10955,
+              "sharePercent": 85.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 10878,
+              "sharePercent": 83.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 11125,
+              "sharePercent": 83.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 11146,
+              "sharePercent": 83.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 11328,
+              "sharePercent": 84.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 11264,
+              "sharePercent": 84.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 11767,
+              "sharePercent": 84.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 12076,
+              "sharePercent": 83.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 12661,
+              "sharePercent": 84
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 13245,
+              "sharePercent": 84.3
+            }
+          ]
+        },
+        {
+          "id": "bps",
+          "name": "BPS",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1932,
+              "sharePercent": 15
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1918,
+              "sharePercent": 14.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1917,
+              "sharePercent": 14.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2128,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2189,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2139,
+              "sharePercent": 16.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2056,
+              "sharePercent": 15.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2088,
+              "sharePercent": 15.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2228,
+              "sharePercent": 15.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2318,
+              "sharePercent": 16.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2415,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2467,
+              "sharePercent": 15.7
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +599,147 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "it",
+          "name": "IT",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 20762,
+              "sharePercent": 91.8
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 24525,
+              "sharePercent": 92.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 27124,
+              "sharePercent": 93.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 28572,
+              "sharePercent": 92.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 31924,
+              "sharePercent": 91.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 33456,
+              "sharePercent": 90.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 34050,
+              "sharePercent": 89.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 39185,
+              "sharePercent": 87.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 46097,
+              "sharePercent": 86.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 44283,
+              "sharePercent": 85.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 44477,
+              "sharePercent": 83.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 47767,
+              "sharePercent": 84.1
+            }
+          ]
+        },
+        {
+          "id": "bps",
+          "name": "BPS",
+          "values": [
+            {
+              "periodId": "FY24",
+              "revenue": 7712,
+              "sharePercent": 14.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 8512,
+              "sharePercent": 16.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 9048,
+              "sharePercent": 15.9
+            }
+          ]
+        },
+        {
+          "id": "bpo",
+          "name": "BPO",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1859,
+              "sharePercent": 8.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1970,
+              "sharePercent": 7.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2017,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2201,
+              "sharePercent": 7.2
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2819,
+              "sharePercent": 8.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3411,
+              "sharePercent": 9.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3806,
+              "sharePercent": 10.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 5461,
+              "sharePercent": 12.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 7193,
+              "sharePercent": 13.5
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "TCS",
-      "name": "TCS",
-      "marketCapCrore": 877639.49
-    },
-    {
-      "symbol": "INFY",
-      "name": "Infosys",
-      "marketCapCrore": 480011.58
-    },
-    {
-      "symbol": "HCLTECH",
-      "name": "HCL Technologies",
-      "marketCapCrore": 368298.63
-    },
-    {
-      "symbol": "WIPRO",
-      "name": "Wipro",
-      "marketCapCrore": 183726.54
-    },
-    {
-      "symbol": "TECHM",
-      "name": "Tech Mahindra",
-      "marketCapCrore": 160733.91
-    },
-    {
-      "symbol": "LTM",
-      "name": "LTM",
-      "marketCapCrore": 142229.92
-    },
-    {
-      "symbol": "PERSISTENT",
-      "name": "Persistent Systems",
-      "marketCapCrore": 86352.35
-    }
-  ]
+  }
 }

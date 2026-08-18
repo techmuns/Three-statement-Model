@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/TITAN/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:48.854Z",
+    "fetchedAt": "2026-08-18T08:47:08.438Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,339 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "jewellery",
+          "name": "Jewellery",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 11081,
+              "sharePercent": 87.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 12742,
+              "sharePercent": 89.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 11005,
+              "sharePercent": 87
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 11808,
+              "sharePercent": 88.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 12771,
+              "sharePercent": 87.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 16134,
+              "sharePercent": 90.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 13253,
+              "sharePercent": 88.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 14647,
+              "sharePercent": 88.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 16522,
+              "sharePercent": 87.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 23492,
+              "sharePercent": 91.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 24999,
+              "sharePercent": 92.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 19002,
+              "sharePercent": 88.4
+            }
+          ]
+        },
+        {
+          "id": "watches-clocks",
+          "name": "Watches & Clocks",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1092,
+              "sharePercent": 8.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 986,
+              "sharePercent": 6.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 939,
+              "sharePercent": 7.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1023,
+              "sharePercent": 7.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1304,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1137,
+              "sharePercent": 6.4
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1134,
+              "sharePercent": 7.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1273,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1477,
+              "sharePercent": 7.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1295,
+              "sharePercent": 5.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1222,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1543,
+              "sharePercent": 7.2
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 218,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 313,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 470,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 277,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 301,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 312,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 385,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 415,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 557,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 457,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 577,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 566,
+              "sharePercent": 2.6
+            }
+          ]
+        },
+        {
+          "id": "eyewear",
+          "name": "eyewear",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 189,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 168,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 166,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 210,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 202,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 196,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 193,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 238,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 220,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 231,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 227,
+              "sharePercent": 0.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 289,
+              "sharePercent": 1.3
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 73,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 91,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 73,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 68,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 78,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 89,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 67,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 55,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 61,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 92,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 79,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 102,
+              "sharePercent": 0.5
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +797,376 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "jewellery",
+          "name": "Jewellery",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 9430,
+              "sharePercent": 78.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 8723,
+              "sharePercent": 76.6
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 10349,
+              "sharePercent": 78.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 13257,
+              "sharePercent": 81.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 16390,
+              "sharePercent": 82.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 17319,
+              "sharePercent": 81.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 19320,
+              "sharePercent": 88.5
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 25523,
+              "sharePercent": 87.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 35914,
+              "sharePercent": 87.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 45524,
+              "sharePercent": 88.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 53966,
+              "sharePercent": 88.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 79660,
+              "sharePercent": 90.4
+            }
+          ]
+        },
+        {
+          "id": "watches-clocks",
+          "name": "Watches & Clocks",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1921,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1974,
+              "sharePercent": 17.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2036,
+              "sharePercent": 15.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2132,
+              "sharePercent": 13.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2447,
+              "sharePercent": 12.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2622,
+              "sharePercent": 12.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1587,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2317,
+              "sharePercent": 8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3310,
+              "sharePercent": 8.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 3930,
+              "sharePercent": 7.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4598,
+              "sharePercent": 7.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5267,
+              "sharePercent": 6
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 242,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 260,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 334,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 372,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 483,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 635,
+              "sharePercent": 3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 457,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 545,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 805,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1138,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1275,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2006,
+              "sharePercent": 2.3
+            }
+          ]
+        },
+        {
+          "id": "eyewear",
+          "name": "eyewear",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 332,
+              "sharePercent": 2.8
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 375,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 406,
+              "sharePercent": 3.1
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 415,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 509,
+              "sharePercent": 2.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 544,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 375,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 517,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 689,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 726,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 801,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 916,
+              "sharePercent": 1
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 58,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 52,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 46,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 70,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 132,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 85,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 91,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 131,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 165,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 299,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 302,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 287,
+              "sharePercent": 0.3
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "TITAN",
       "name": "Titan Company",
-      "marketCapCrore": 451883.16
+      "marketCapCrore": 448536.19
     },
     {
       "symbol": "KALYANKJIL",
       "name": "Kalyan Jewellers",
-      "marketCapCrore": 61990.88
+      "marketCapCrore": 62553.7
     },
     {
       "symbol": "THANGAMAYL",
       "name": "Thangamayil Jew.",
-      "marketCapCrore": 16625.77
+      "marketCapCrore": 16840.27
     },
     {
       "symbol": "BLUESTONE",
       "name": "Bluestone Jewel",
-      "marketCapCrore": 12680.49
+      "marketCapCrore": 12600.28
     },
     {
       "symbol": "SKYGOLD",
       "name": "Sky Gold & Diam.",
-      "marketCapCrore": 12073.97
+      "marketCapCrore": 12146.77
     },
     {
       "symbol": "PCJEWELLER",
       "name": "PC Jeweller",
-      "marketCapCrore": 9576.6
+      "marketCapCrore": 9430.33
     },
     {
       "symbol": "PNGJL",
       "name": "P N Gadgil Jewe.",
-      "marketCapCrore": 9386.37
+      "marketCapCrore": 8929.31
     }
   ]
 }

@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/SHRIRAMFIN/consolidated/",
-    "fetchedAt": "2026-08-10T21:46:23.819Z",
+    "fetchedAt": "2026-08-18T08:45:43.522Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -140,8 +140,8 @@
     },
     "segmentMix": {
       "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "reason": "not-reported",
+      "note": "No product-segment split reported."
     }
   },
   "annual": {
@@ -467,46 +467,98 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "financing-activities",
+          "name": "Financing Activities",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 9114,
+              "sharePercent": 99.3
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 10293,
+              "sharePercent": 99.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 10829,
+              "sharePercent": 99.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 12202,
+              "sharePercent": 99.4
+            }
+          ]
+        },
+        {
+          "id": "service-division",
+          "name": "Service Division",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 65,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 69,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 76,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 78,
+              "sharePercent": 0.6
+            }
+          ]
+        }
+      ]
     }
   },
   "peers": [
     {
       "symbol": "BAJFINANCE",
       "name": "Bajaj Finance",
-      "marketCapCrore": 686224.68
+      "marketCapCrore": 680621.39
     },
     {
       "symbol": "SHRIRAMFIN",
       "name": "Shriram Finance",
-      "marketCapCrore": 267718.47
+      "marketCapCrore": 261887.03
     },
     {
       "symbol": "CHOLAFIN",
       "name": "Cholaman.Inv.&Fn",
-      "marketCapCrore": 163710.35
+      "marketCapCrore": 161136.61
     },
     {
       "symbol": "TATACAP",
       "name": "Tata Capital",
-      "marketCapCrore": 156147.51
+      "marketCapCrore": 153600.6
     },
     {
       "symbol": "MUTHOOTFIN",
       "name": "Muthoot Finance",
-      "marketCapCrore": 116666.74
+      "marketCapCrore": 117040.04
     },
     {
       "symbol": "LTF",
       "name": "L&T Finance Ltd",
-      "marketCapCrore": 78401.64
+      "marketCapCrore": 81120.68
     },
     {
       "symbol": "SBICARD",
       "name": "SBI Cards",
-      "marketCapCrore": 62332.58
+      "marketCapCrore": 58944.73
     }
   ]
 }

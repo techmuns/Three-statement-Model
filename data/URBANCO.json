@@ -8,7 +8,7 @@
   "source": {
     "provider": "screener",
     "url": "https://www.screener.in/company/URBANCO/consolidated/",
-    "fetchedAt": "2026-08-11T11:47:59.960Z",
+    "fetchedAt": "2026-08-18T08:47:24.033Z",
     "basis": "consolidated"
   },
   "quarterly": {
@@ -139,9 +139,193 @@
       "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "india-consumer-services",
+          "name": "India consumer services",
+          "values": [
+            {
+              "periodId": "FY25Q2",
+              "revenue": 212,
+              "sharePercent": 76.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 211,
+              "sharePercent": 73.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 228,
+              "sharePercent": 76.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 272,
+              "sharePercent": 73.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 262,
+              "sharePercent": 69.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 265,
+              "sharePercent": 69
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 288,
+              "sharePercent": 67.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 356,
+              "sharePercent": 67.6
+            }
+          ]
+        },
+        {
+          "id": "native",
+          "name": "Native",
+          "values": [
+            {
+              "periodId": "FY25Q2",
+              "revenue": 27,
+              "sharePercent": 9.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 31,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 40,
+              "sharePercent": 13.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 60,
+              "sharePercent": 16.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 75,
+              "sharePercent": 19.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 62,
+              "sharePercent": 16.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 70,
+              "sharePercent": 16.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 95,
+              "sharePercent": 18
+            }
+          ]
+        },
+        {
+          "id": "international-business",
+          "name": "International business",
+          "values": [
+            {
+              "periodId": "FY25Q2",
+              "revenue": 38,
+              "sharePercent": 13.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 46,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 31,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 36,
+              "sharePercent": 9.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 41,
+              "sharePercent": 10.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 50,
+              "sharePercent": 13
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 58,
+              "sharePercent": 13.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 65,
+              "sharePercent": 12.3
+            }
+          ]
+        },
+        {
+          "id": "lnstahelp",
+          "name": "lnstaHelp",
+          "values": [
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1,
+              "sharePercent": 0.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 7,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 9,
+              "sharePercent": 2.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 11,
+              "sharePercent": 2.1
+            }
+          ]
+        }
+      ]
     }
   },
   "annual": {
@@ -467,46 +651,73 @@
       ]
     },
     "segmentMix": {
-      "status": "unavailable",
-      "reason": "not-scraped",
-      "note": "Segment revenue is a separate disclosure and is not scraped from the Screener company page in this phase."
+      "status": "available",
+      "segments": [
+        {
+          "id": "india-consumer-services",
+          "name": "India consumer services",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 881,
+              "sharePercent": 77
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1087,
+              "sharePercent": 69.9
+            }
+          ]
+        },
+        {
+          "id": "native",
+          "name": "Native",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 116,
+              "sharePercent": 10.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 267,
+              "sharePercent": 17.2
+            }
+          ]
+        },
+        {
+          "id": "international-business",
+          "name": "International business",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 147,
+              "sharePercent": 12.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 185,
+              "sharePercent": 11.9
+            }
+          ]
+        },
+        {
+          "id": "lnstahelp",
+          "name": "lnstaHelp",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 17,
+              "sharePercent": 1.1
+            }
+          ]
+        }
+      ]
     }
-  },
-  "peers": [
-    {
-      "symbol": "ETERNAL",
-      "name": "Eternal",
-      "marketCapCrore": 306634.07
-    },
-    {
-      "symbol": "NYKAA",
-      "name": "FSN E-Commerce",
-      "marketCapCrore": 91396.38
-    },
-    {
-      "symbol": "MEESHO",
-      "name": "Meesho",
-      "marketCapCrore": 88028.55
-    },
-    {
-      "symbol": "SWIGGY",
-      "name": "Swiggy",
-      "marketCapCrore": 77191.63
-    },
-    {
-      "symbol": "URBANCO",
-      "name": "Urban Company",
-      "marketCapCrore": 21544.25
-    },
-    {
-      "symbol": "CARTRADE",
-      "name": "Cartrade Tech",
-      "marketCapCrore": 13413.1
-    },
-    {
-      "symbol": "FIRSTCRY",
-      "name": "Brainbees Solut.",
-      "marketCapCrore": 11175.81
-    }
-  ]
+  }
 }
