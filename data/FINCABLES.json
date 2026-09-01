@@ -1,0 +1,1032 @@
+{
+  "companyId": "FINCABLES",
+  "currency": "INR",
+  "unit": "crore",
+  "statementLayout": "standard",
+  "fiscalYearEndMonth": 3,
+  "sharesOutstandingCrore": 15,
+  "source": {
+    "provider": "screener",
+    "url": "https://www.screener.in/company/FINCABLES/consolidated/",
+    "fetchedAt": "2026-09-01T00:30:11.628Z",
+    "basis": "consolidated"
+  },
+  "quarterly": {
+    "cadence": "quarterly",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY26Q1",
+            "label": "Q1 FY26",
+            "longLabel": "Quarter ended Jun 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 1,
+            "endDate": "2025-06-30"
+          },
+          "sales": 1396,
+          "expenses": 1259,
+          "operatingProfit": 136,
+          "opmPercent": 9.74,
+          "otherIncome": 80,
+          "interest": 0,
+          "depreciation": 14,
+          "profitBeforeTax": 203,
+          "taxPercent": 19.7,
+          "netProfit": 163,
+          "eps": 10.63
+        },
+        {
+          "period": {
+            "id": "FY26Q2",
+            "label": "Q2 FY26",
+            "longLabel": "Quarter ended Sep 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 2,
+            "endDate": "2025-09-30"
+          },
+          "sales": 1376,
+          "expenses": 1231,
+          "operatingProfit": 145,
+          "opmPercent": 10.54,
+          "otherIncome": 76,
+          "interest": 0,
+          "depreciation": 14,
+          "profitBeforeTax": 206,
+          "taxPercent": 20.87,
+          "netProfit": 163,
+          "eps": 10.63
+        },
+        {
+          "period": {
+            "id": "FY26Q3",
+            "label": "Q3 FY26",
+            "longLabel": "Quarter ended Dec 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 3,
+            "endDate": "2025-12-31"
+          },
+          "sales": 1599,
+          "expenses": 1441,
+          "operatingProfit": 158,
+          "opmPercent": 9.88,
+          "otherIncome": 74,
+          "interest": 0,
+          "depreciation": 15,
+          "profitBeforeTax": 216,
+          "taxPercent": 24.07,
+          "netProfit": 164,
+          "eps": 10.73
+        },
+        {
+          "period": {
+            "id": "FY26Q4",
+            "label": "Q4 FY26",
+            "longLabel": "Quarter ended Mar 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 4,
+            "endDate": "2026-03-31"
+          },
+          "sales": 1951,
+          "expenses": 1771,
+          "operatingProfit": 180,
+          "opmPercent": 9.23,
+          "otherIncome": 140,
+          "interest": 0,
+          "depreciation": 17,
+          "profitBeforeTax": 303,
+          "taxPercent": 26.07,
+          "netProfit": 224,
+          "eps": 14.67
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 2013,
+          "expenses": 1769,
+          "operatingProfit": 244,
+          "opmPercent": 12.12,
+          "otherIncome": 92,
+          "interest": 0,
+          "depreciation": 22,
+          "profitBeforeTax": 314,
+          "taxPercent": 20.7,
+          "netProfit": 249,
+          "eps": 16.28
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "cashFlow": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "segmentMix": {
+      "status": "available",
+      "segments": [
+        {
+          "id": "electrical-cables",
+          "name": "Electrical Cables",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 989,
+              "sharePercent": 60.8
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1021,
+              "sharePercent": 62.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1201,
+              "sharePercent": 64.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1032,
+              "sharePercent": 63.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1104,
+              "sharePercent": 67
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 972,
+              "sharePercent": 60.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1391,
+              "sharePercent": 67.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1206,
+              "sharePercent": 67.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1188,
+              "sharePercent": 64.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1400,
+              "sharePercent": 61.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1696,
+              "sharePercent": 67.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1767,
+              "sharePercent": 87.8
+            }
+          ]
+        },
+        {
+          "id": "communication-cables",
+          "name": "Communication Cables",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 136,
+              "sharePercent": 8.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 130,
+              "sharePercent": 7.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 128,
+              "sharePercent": 6.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 119,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 135,
+              "sharePercent": 8.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 130,
+              "sharePercent": 8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 123,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 109,
+              "sharePercent": 6.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 106,
+              "sharePercent": 5.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 123,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 162,
+              "sharePercent": 6.5
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 176,
+              "sharePercent": 8.7
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 55,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 60,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 64,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 68,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 60,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 63,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 65,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 62,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 65,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 61,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 72,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 61,
+              "sharePercent": 3
+            }
+          ]
+        },
+        {
+          "id": "copper-rods",
+          "name": "Copper Rods",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 447,
+              "sharePercent": 27.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 433,
+              "sharePercent": 26.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 481,
+              "sharePercent": 25.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 403,
+              "sharePercent": 24.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 349,
+              "sharePercent": 21.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 451,
+              "sharePercent": 27.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 482,
+              "sharePercent": 23.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 403,
+              "sharePercent": 22.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 485,
+              "sharePercent": 26.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 678,
+              "sharePercent": 30
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 576,
+              "sharePercent": 23
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 8,
+              "sharePercent": 0.4
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "annual": {
+    "cadence": "annual",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "sales": 3768,
+          "expenses": 3339,
+          "operatingProfit": 429,
+          "opmPercent": 11.39,
+          "otherIncome": 398,
+          "interest": 2,
+          "depreciation": 39,
+          "profitBeforeTax": 787,
+          "taxPercent": 23.89,
+          "netProfit": 599,
+          "eps": 39.18
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "sales": 4481,
+          "expenses": 3972,
+          "operatingProfit": 509,
+          "opmPercent": 11.36,
+          "otherIncome": 188,
+          "interest": 1,
+          "depreciation": 46,
+          "profitBeforeTax": 649,
+          "taxPercent": 22.34,
+          "netProfit": 504,
+          "eps": 32.97
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "sales": 5014,
+          "expenses": 4426,
+          "operatingProfit": 588,
+          "opmPercent": 11.73,
+          "otherIncome": 321,
+          "interest": 2,
+          "depreciation": 44,
+          "profitBeforeTax": 864,
+          "taxPercent": 24.54,
+          "netProfit": 652,
+          "eps": 42.61
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "sales": 5319,
+          "expenses": 4776,
+          "operatingProfit": 543,
+          "opmPercent": 10.21,
+          "otherIncome": 428,
+          "interest": 2,
+          "depreciation": 47,
+          "profitBeforeTax": 922,
+          "taxPercent": 23.97,
+          "netProfit": 701,
+          "eps": 45.82
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "sales": 6321,
+          "expenses": 5702,
+          "operatingProfit": 620,
+          "opmPercent": 9.81,
+          "otherIncome": 370,
+          "interest": 2,
+          "depreciation": 59,
+          "profitBeforeTax": 929,
+          "taxPercent": 23.14,
+          "netProfit": 714,
+          "eps": 46.67
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "equityCapital": 31,
+          "reserves": 3891,
+          "borrowings": 9,
+          "otherLiabilities": 563,
+          "totalLiabilities": 4494,
+          "fixedAssets": 380,
+          "cwip": 87,
+          "investments": 2014,
+          "otherAssets": 2013,
+          "totalAssets": 4494
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "equityCapital": 31,
+          "reserves": 4340,
+          "borrowings": 14,
+          "otherLiabilities": 596,
+          "totalLiabilities": 4980,
+          "fixedAssets": 435,
+          "cwip": 21,
+          "investments": 2610,
+          "otherAssets": 1915,
+          "totalAssets": 4980
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "equityCapital": 31,
+          "reserves": 4915,
+          "borrowings": 18,
+          "otherLiabilities": 671,
+          "totalLiabilities": 5635,
+          "fixedAssets": 444,
+          "cwip": 168,
+          "investments": 3584,
+          "otherAssets": 1439,
+          "totalAssets": 5635
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "equityCapital": 31,
+          "reserves": 5465,
+          "borrowings": 20,
+          "otherLiabilities": 771,
+          "totalLiabilities": 6287,
+          "fixedAssets": 583,
+          "cwip": 210,
+          "investments": 3986,
+          "otherAssets": 1507,
+          "totalAssets": 6287
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "equityCapital": 31,
+          "reserves": 6055,
+          "borrowings": 19,
+          "otherLiabilities": 885,
+          "totalLiabilities": 6990,
+          "fixedAssets": 850,
+          "cwip": 105,
+          "investments": 4195,
+          "otherAssets": 1840,
+          "totalAssets": 6990
+        }
+      ]
+    },
+    "cashFlow": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 473,
+          "cashFromInvesting": -378,
+          "cashFromFinancing": -87,
+          "netCashFlow": 8
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 356,
+          "cashFromInvesting": -225,
+          "cashFromFinancing": -97,
+          "netCashFlow": 35
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 577,
+          "cashFromInvesting": -440,
+          "cashFromFinancing": -112,
+          "netCashFlow": 26
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 207,
+          "cashFromInvesting": -82,
+          "cashFromFinancing": -128,
+          "netCashFlow": -3
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 49,
+          "cashFromInvesting": 153,
+          "cashFromFinancing": -129,
+          "netCashFlow": 73
+        }
+      ]
+    },
+    "segmentMix": {
+      "status": "available",
+      "segments": [
+        {
+          "id": "electrical-cables",
+          "name": "Electrical Cables",
+          "values": [
+            {
+              "periodId": "FY21",
+              "revenue": 2310,
+              "sharePercent": 69.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3193,
+              "sharePercent": 72.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3684,
+              "sharePercent": 64.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4222,
+              "sharePercent": 62.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4499,
+              "sharePercent": 64.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 5490,
+              "sharePercent": 65.4
+            }
+          ]
+        },
+        {
+          "id": "copper-rods",
+          "name": "Copper Rods",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 542,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 514,
+              "sharePercent": 16.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 904,
+              "sharePercent": 24.1
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 940,
+              "sharePercent": 23.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 559,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 574,
+              "sharePercent": 17.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 682,
+              "sharePercent": 15.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1268,
+              "sharePercent": 22.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1744,
+              "sharePercent": 25.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1684,
+              "sharePercent": 24.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2143,
+              "sharePercent": 25.5
+            }
+          ]
+        },
+        {
+          "id": "communication-cables",
+          "name": "Communication Cables",
+          "values": [
+            {
+              "periodId": "FY21",
+              "revenue": 321,
+              "sharePercent": 9.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 380,
+              "sharePercent": 8.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 579,
+              "sharePercent": 10.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 531,
+              "sharePercent": 7.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 508,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 500,
+              "sharePercent": 6
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 39,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 41,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 60,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 71,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 88,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 114,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 176,
+              "sharePercent": 4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 195,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 225,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 256,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 262,
+              "sharePercent": 3.1
+            }
+          ]
+        },
+        {
+          "id": "communication-cable",
+          "name": "Communication Cable",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 388,
+              "sharePercent": 12.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 369,
+              "sharePercent": 11.9
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 477,
+              "sharePercent": 12.7
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 489,
+              "sharePercent": 12.2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 409,
+              "sharePercent": 12
+            }
+          ]
+        },
+        {
+          "id": "electrical-cable",
+          "name": "Electrical Cable",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 2094,
+              "sharePercent": 68.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2178,
+              "sharePercent": 70.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2306,
+              "sharePercent": 61.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 2494,
+              "sharePercent": 62.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2361,
+              "sharePercent": 69.1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "peers": [
+    {
+      "symbol": "POLYCAB",
+      "name": "Polycab India",
+      "marketCapCrore": 142314.07
+    },
+    {
+      "symbol": "KEI",
+      "name": "KEI Industries",
+      "marketCapCrore": 54877.61
+    },
+    {
+      "symbol": "RRKABEL",
+      "name": "R R Kabel",
+      "marketCapCrore": 33121.82
+    },
+    {
+      "symbol": "FINCABLES",
+      "name": "Finolex Cables",
+      "marketCapCrore": 19073.83
+    },
+    {
+      "symbol": "KSHINTL",
+      "name": "KSH Internationa",
+      "marketCapCrore": 6416.8
+    },
+    {
+      "symbol": "UNIVCABLES",
+      "name": "Universal Cables",
+      "marketCapCrore": 5718.49
+    },
+    {
+      "symbol": "VMARCIND",
+      "name": "V-Marc India",
+      "marketCapCrore": 5262.42
+    }
+  ]
+}
