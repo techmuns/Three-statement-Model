@@ -1,0 +1,1673 @@
+{
+  "companyId": "GICRE",
+  "currency": "INR",
+  "unit": "crore",
+  "statementLayout": "standard",
+  "fiscalYearEndMonth": 3,
+  "sharesOutstandingCrore": 175,
+  "source": {
+    "provider": "screener",
+    "url": "https://www.screener.in/company/GICRE/consolidated/",
+    "fetchedAt": "2026-09-02T23:10:28.539Z",
+    "basis": "consolidated"
+  },
+  "quarterly": {
+    "cadence": "quarterly",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY26Q1",
+            "label": "Q1 FY26",
+            "longLabel": "Quarter ended Jun 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 1,
+            "endDate": "2025-06-30"
+          },
+          "sales": 14623,
+          "expenses": 12018,
+          "operatingProfit": 2605,
+          "opmPercent": 17.81,
+          "otherIncome": 59,
+          "interest": 0,
+          "depreciation": 0,
+          "profitBeforeTax": 2664,
+          "taxPercent": 4.99,
+          "netProfit": 2531,
+          "eps": 14.42
+        },
+        {
+          "period": {
+            "id": "FY26Q2",
+            "label": "Q2 FY26",
+            "longLabel": "Quarter ended Sep 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 2,
+            "endDate": "2025-09-30"
+          },
+          "sales": 12755,
+          "expenses": 9993,
+          "operatingProfit": 2762,
+          "opmPercent": 21.65,
+          "otherIncome": 553,
+          "interest": 0,
+          "depreciation": 0,
+          "profitBeforeTax": 3315,
+          "taxPercent": 13.3,
+          "netProfit": 2874,
+          "eps": 16.38
+        },
+        {
+          "period": {
+            "id": "FY26Q3",
+            "label": "Q3 FY26",
+            "longLabel": "Quarter ended Dec 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 3,
+            "endDate": "2025-12-31"
+          },
+          "sales": 12589,
+          "expenses": 10223,
+          "operatingProfit": 2366,
+          "opmPercent": 18.79,
+          "otherIncome": 135,
+          "interest": 0,
+          "depreciation": 0,
+          "profitBeforeTax": 2501,
+          "taxPercent": 30.99,
+          "netProfit": 1726,
+          "eps": 9.84
+        },
+        {
+          "period": {
+            "id": "FY26Q4",
+            "label": "Q4 FY26",
+            "longLabel": "Quarter ended Mar 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 4,
+            "endDate": "2026-03-31"
+          },
+          "sales": 13018,
+          "expenses": 10556,
+          "operatingProfit": 2463,
+          "opmPercent": 18.92,
+          "otherIncome": 645,
+          "interest": 0,
+          "depreciation": 0,
+          "profitBeforeTax": 3108,
+          "taxPercent": 18.5,
+          "netProfit": 2533,
+          "eps": 14.44
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 14401,
+          "expenses": 12380,
+          "operatingProfit": 2021,
+          "opmPercent": 14.03,
+          "otherIncome": 171,
+          "interest": 0,
+          "depreciation": 0,
+          "profitBeforeTax": 2192,
+          "taxPercent": 20.44,
+          "netProfit": 1744,
+          "eps": 9.94
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "cashFlow": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "segmentMix": {
+      "status": "available",
+      "segments": [
+        {
+          "id": "fire",
+          "name": "Fire",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 3559,
+              "sharePercent": 28.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 3275,
+              "sharePercent": 32.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 2864,
+              "sharePercent": 36.1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 3290,
+              "sharePercent": 28.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2940,
+              "sharePercent": 29.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 3768,
+              "sharePercent": 33.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 4528,
+              "sharePercent": 35.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 3856,
+              "sharePercent": 27.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 3791,
+              "sharePercent": 28.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 4314,
+              "sharePercent": 34.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3751,
+              "sharePercent": 30.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3660,
+              "sharePercent": 24.5
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-health",
+          "name": "Miscellaneous - Health",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1863,
+              "sharePercent": 15.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1612,
+              "sharePercent": 15.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1995,
+              "sharePercent": 25.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2837,
+              "sharePercent": 24.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 2136,
+              "sharePercent": 21.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2339,
+              "sharePercent": 20.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2803,
+              "sharePercent": 22.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2711,
+              "sharePercent": 19.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2344,
+              "sharePercent": 17.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2340,
+              "sharePercent": 18.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2748,
+              "sharePercent": 22.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 3644,
+              "sharePercent": 24.4
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-motor",
+          "name": "Miscellaneous - Motor",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2449,
+              "sharePercent": 19.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1985,
+              "sharePercent": 19.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1267,
+              "sharePercent": 16
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1568,
+              "sharePercent": 13.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1935,
+              "sharePercent": 19.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 2112,
+              "sharePercent": 18.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2404,
+              "sharePercent": 19
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2345,
+              "sharePercent": 16.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 2256,
+              "sharePercent": 17
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 2359,
+              "sharePercent": 18.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 2675,
+              "sharePercent": 21.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2358,
+              "sharePercent": 15.8
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-agri-others-fl-cred",
+          "name": "Miscellaneous - Agri/Others/FL Cred",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 2352,
+              "sharePercent": 19.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1160,
+              "sharePercent": 11.5
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 627,
+              "sharePercent": 7.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 2230,
+              "sharePercent": 19.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1161,
+              "sharePercent": 11.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1083,
+              "sharePercent": 9.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 926,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 2962,
+              "sharePercent": 21
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1014,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1267,
+              "sharePercent": 10.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 773,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 2288,
+              "sharePercent": 15.3
+            }
+          ]
+        },
+        {
+          "id": "marine-cargo-hull-life",
+          "name": "Marine - Cargo/Hull/Life",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1065,
+              "sharePercent": 8.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1120,
+              "sharePercent": 11.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 375,
+              "sharePercent": 4.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 770,
+              "sharePercent": 6.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 842,
+              "sharePercent": 8.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 704,
+              "sharePercent": 6.3
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 973,
+              "sharePercent": 7.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1061,
+              "sharePercent": 7.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 906,
+              "sharePercent": 6.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 892,
+              "sharePercent": 7.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1236,
+              "sharePercent": 10
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1816,
+              "sharePercent": 12.2
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-engineering",
+          "name": "Miscellaneous - Engineering",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 474,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 569,
+              "sharePercent": 5.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 391,
+              "sharePercent": 4.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 452,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 386,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 618,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 555,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 594,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 519,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 678,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 585,
+              "sharePercent": 4.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 513,
+              "sharePercent": 3.4
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-personal-accident",
+          "name": "Miscellaneous - Personal Accident",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 190,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 57,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 78,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 146,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 202,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 174,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 133,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 220,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1962,
+              "sharePercent": 14.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 228,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 195,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 333,
+              "sharePercent": 2.2
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-liability",
+          "name": "Miscellaneous - Liability",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 141,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 140,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 192,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 157,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 202,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 227,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 211,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 263,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 264,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 232,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 271,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 256,
+              "sharePercent": 1.7
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-aviation",
+          "name": "Miscellaneous - Aviation",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 194,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 185,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 126,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 82,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 138,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 134,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 120,
+              "sharePercent": 0.9
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 70,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 175,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 149,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 157,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 48,
+              "sharePercent": 0.3
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-workmencompensation",
+          "name": "Miscellaneous - WorkmenCompensation",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 18,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 9,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 15,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 7,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 11,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 10,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 15,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 9,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 14,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 14,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 13,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 14,
+              "sharePercent": 0.1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "annual": {
+    "cadence": "annual",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "sales": 48967,
+          "expenses": 45816,
+          "operatingProfit": 3151,
+          "opmPercent": 6.43,
+          "otherIncome": 618,
+          "interest": 0,
+          "depreciation": 14,
+          "profitBeforeTax": 3755,
+          "taxPercent": 36.46,
+          "netProfit": 2386,
+          "eps": 13.6
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "sales": 46638,
+          "expenses": 39709,
+          "operatingProfit": 6929,
+          "opmPercent": 14.86,
+          "otherIncome": 1112,
+          "interest": 1,
+          "depreciation": 10,
+          "profitBeforeTax": 8031,
+          "taxPercent": 14,
+          "netProfit": 6907,
+          "eps": 39.37
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "sales": 45978,
+          "expenses": 38506,
+          "operatingProfit": 7472,
+          "opmPercent": 16.25,
+          "otherIncome": 465,
+          "interest": 1,
+          "depreciation": 12,
+          "profitBeforeTax": 7925,
+          "taxPercent": 15.63,
+          "netProfit": 6686,
+          "eps": 38.11
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "sales": 49617,
+          "expenses": 40820,
+          "operatingProfit": 8797,
+          "opmPercent": 17.73,
+          "otherIncome": 324,
+          "interest": 1,
+          "depreciation": 15,
+          "profitBeforeTax": 9105,
+          "taxPercent": 18.37,
+          "netProfit": 7432,
+          "eps": 42.36
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "sales": 52986,
+          "expenses": 42893,
+          "operatingProfit": 10092,
+          "opmPercent": 19.05,
+          "otherIncome": 1391,
+          "interest": 0,
+          "depreciation": 37,
+          "profitBeforeTax": 11447,
+          "taxPercent": 15.59,
+          "netProfit": 9662,
+          "eps": 55.08
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "equityCapital": 877,
+          "reserves": 35131,
+          "borrowings": 0,
+          "otherLiabilities": 115833,
+          "totalLiabilities": 151841,
+          "fixedAssets": 200,
+          "cwip": 0,
+          "investments": 104677,
+          "otherAssets": 46963,
+          "totalAssets": 151841
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "equityCapital": 877,
+          "reserves": 44308,
+          "borrowings": 0,
+          "otherLiabilities": 117546,
+          "totalLiabilities": 162731,
+          "fixedAssets": 324,
+          "cwip": 0,
+          "investments": 114738,
+          "otherAssets": 47669,
+          "totalAssets": 162731
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "equityCapital": 877,
+          "reserves": 54379,
+          "borrowings": 0,
+          "otherLiabilities": 129196,
+          "totalLiabilities": 184452,
+          "fixedAssets": 318,
+          "cwip": 0,
+          "investments": 135763,
+          "otherAssets": 48372,
+          "totalAssets": 184452
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "equityCapital": 877,
+          "reserves": 60622,
+          "borrowings": 0,
+          "otherLiabilities": 133268,
+          "totalLiabilities": 194768,
+          "fixedAssets": 327,
+          "cwip": 8,
+          "investments": 143280,
+          "otherAssets": 51153,
+          "totalAssets": 194768
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "equityCapital": 877,
+          "reserves": 69604,
+          "borrowings": 0,
+          "otherLiabilities": 135252,
+          "totalLiabilities": 205733,
+          "fixedAssets": 332,
+          "cwip": 0,
+          "investments": 148373,
+          "otherAssets": 57028,
+          "totalAssets": 205733
+        }
+      ]
+    },
+    "cashFlow": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 9051,
+          "cashFromInvesting": -6188,
+          "cashFromFinancing": 0,
+          "netCashFlow": 2863
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 11722,
+          "cashFromInvesting": -9076,
+          "cashFromFinancing": -395,
+          "netCashFlow": 2251
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -212,
+          "cashFromInvesting": 1749,
+          "cashFromFinancing": -1263,
+          "netCashFlow": 274
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 1976,
+          "cashFromInvesting": -275,
+          "cashFromFinancing": -1754,
+          "netCashFlow": -53
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 466,
+          "cashFromInvesting": -2075,
+          "cashFromFinancing": -1754,
+          "netCashFlow": -3363
+        }
+      ]
+    },
+    "segmentMix": {
+      "status": "available",
+      "segments": [
+        {
+          "id": "fire",
+          "name": "Fire",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 8228,
+              "sharePercent": 18.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 10282,
+              "sharePercent": 21.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 12037,
+              "sharePercent": 28.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 14017,
+              "sharePercent": 29.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 14608,
+              "sharePercent": 34.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 11186,
+              "sharePercent": 32.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 15256,
+              "sharePercent": 32.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 15713,
+              "sharePercent": 31.1
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-health",
+          "name": "Miscellaneous - Health",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 5120,
+              "sharePercent": 11.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 5556,
+              "sharePercent": 11.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 5448,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 5004,
+              "sharePercent": 10.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 5415,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 5529,
+              "sharePercent": 16.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 10275,
+              "sharePercent": 21.7
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 10142,
+              "sharePercent": 20.1
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-motor",
+          "name": "Miscellaneous - Motor",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 8457,
+              "sharePercent": 19.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 9471,
+              "sharePercent": 20.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 8730,
+              "sharePercent": 20.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 11896,
+              "sharePercent": 25.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 8092,
+              "sharePercent": 19.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 7141,
+              "sharePercent": 20.9
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 8479,
+              "sharePercent": 17.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 9635,
+              "sharePercent": 19.1
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-agri-others-fl-cred",
+          "name": "Miscellaneous - Agri/Others/FL Cred",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 12611,
+              "sharePercent": 28.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 15255,
+              "sharePercent": 32.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 9194,
+              "sharePercent": 21.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 8638,
+              "sharePercent": 18.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 6852,
+              "sharePercent": 16.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4362,
+              "sharePercent": 12.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 5661,
+              "sharePercent": 12
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 6033,
+              "sharePercent": 11.9
+            }
+          ]
+        },
+        {
+          "id": "marine-cargo-hull-life",
+          "name": "Marine - Cargo/Hull/Life",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 1944,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2582,
+              "sharePercent": 5.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3515,
+              "sharePercent": 8.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3673,
+              "sharePercent": 7.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3043,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2998,
+              "sharePercent": 8.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3435,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 4095,
+              "sharePercent": 8.1
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-engineering",
+          "name": "Miscellaneous - Engineering",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 885,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1104,
+              "sharePercent": 2.4
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1153,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1578,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1796,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1521,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 2116,
+              "sharePercent": 4.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2376,
+              "sharePercent": 4.7
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-liability",
+          "name": "Miscellaneous - Liability",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 471,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 588,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 702,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 878,
+              "sharePercent": 1.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 914,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 529,
+              "sharePercent": 1.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 834,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1030,
+              "sharePercent": 2
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-personal-accident",
+          "name": "Miscellaneous - Personal Accident",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 723,
+              "sharePercent": 1.6
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 797,
+              "sharePercent": 1.7
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 765,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 540,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 560,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 414,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 677,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 876,
+              "sharePercent": 1.7
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-aviation",
+          "name": "Miscellaneous - Aviation",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 903,
+              "sharePercent": 2
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1209,
+              "sharePercent": 2.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 757,
+              "sharePercent": 1.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 628,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 557,
+              "sharePercent": 1.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 422,
+              "sharePercent": 1.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 513,
+              "sharePercent": 1.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 551,
+              "sharePercent": 1.1
+            }
+          ]
+        },
+        {
+          "id": "miscellaneous-workmencompensation",
+          "name": "Miscellaneous - WorkmenCompensation",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 49,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 20,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 50,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 47,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 54,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 44,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 46,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 50,
+              "sharePercent": 0.1
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY19",
+              "revenue": 4872,
+              "sharePercent": 11
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "peers": [
+    {
+      "symbol": "ICICIGI",
+      "name": "ICICI Lombard",
+      "marketCapCrore": 76788.3
+    },
+    {
+      "symbol": "GICRE",
+      "name": "General Insuranc",
+      "marketCapCrore": 62360.15
+    },
+    {
+      "symbol": "STARHEALTH",
+      "name": "Star Health Insu",
+      "marketCapCrore": 33136.57
+    },
+    {
+      "symbol": "NIACL",
+      "name": "New India Assura",
+      "marketCapCrore": 32813.33
+    },
+    {
+      "symbol": "GODIGIT",
+      "name": "Go Digit General",
+      "marketCapCrore": 23891.74
+    },
+    {
+      "symbol": "NIVABUPA",
+      "name": "Niva Bupa Health",
+      "marketCapCrore": 14928.86
+    }
+  ]
+}
