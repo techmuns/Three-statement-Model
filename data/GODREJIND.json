@@ -1,0 +1,1693 @@
+{
+  "companyId": "GODREJIND",
+  "currency": "INR",
+  "unit": "crore",
+  "statementLayout": "standard",
+  "fiscalYearEndMonth": 3,
+  "sharesOutstandingCrore": 65,
+  "source": {
+    "provider": "screener",
+    "url": "https://www.screener.in/company/GODREJIND/consolidated/",
+    "fetchedAt": "2026-09-07T23:22:39.904Z",
+    "basis": "consolidated"
+  },
+  "quarterly": {
+    "cadence": "quarterly",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY26Q1",
+            "label": "Q1 FY26",
+            "longLabel": "Quarter ended Jun 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 1,
+            "endDate": "2025-06-30"
+          },
+          "sales": 4460,
+          "expenses": 4063,
+          "operatingProfit": 397,
+          "opmPercent": 8.9,
+          "otherIncome": 1352,
+          "interest": 576,
+          "depreciation": 114,
+          "profitBeforeTax": 1059,
+          "taxPercent": 31.54,
+          "netProfit": 725,
+          "eps": 10.37
+        },
+        {
+          "period": {
+            "id": "FY26Q2",
+            "label": "Q2 FY26",
+            "longLabel": "Quarter ended Sep 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 2,
+            "endDate": "2025-09-30"
+          },
+          "sales": 5032,
+          "expenses": 4898,
+          "operatingProfit": 134,
+          "opmPercent": 2.66,
+          "otherIncome": 1294,
+          "interest": 584,
+          "depreciation": 121,
+          "profitBeforeTax": 723,
+          "taxPercent": 31.81,
+          "netProfit": 493,
+          "eps": 7.2
+        },
+        {
+          "period": {
+            "id": "FY26Q3",
+            "label": "Q3 FY26",
+            "longLabel": "Quarter ended Dec 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 3,
+            "endDate": "2025-12-31"
+          },
+          "sales": 5051,
+          "expenses": 4507,
+          "operatingProfit": 544,
+          "opmPercent": 10.77,
+          "otherIncome": 694,
+          "interest": 626,
+          "depreciation": 126,
+          "profitBeforeTax": 486,
+          "taxPercent": 27.37,
+          "netProfit": 353,
+          "eps": 6.07
+        },
+        {
+          "period": {
+            "id": "FY26Q4",
+            "label": "Q4 FY26",
+            "longLabel": "Quarter ended Mar 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 4,
+            "endDate": "2026-03-31"
+          },
+          "sales": 7694,
+          "expenses": 6527,
+          "operatingProfit": 1167,
+          "opmPercent": 15.17,
+          "otherIncome": 784,
+          "interest": 684,
+          "depreciation": 141,
+          "profitBeforeTax": 1126,
+          "taxPercent": 25.31,
+          "netProfit": 841,
+          "eps": 13.19
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 5448,
+          "expenses": 4873,
+          "operatingProfit": 575,
+          "opmPercent": 10.55,
+          "otherIncome": 1036,
+          "interest": 745,
+          "depreciation": 133,
+          "profitBeforeTax": 732,
+          "taxPercent": 28.55,
+          "netProfit": 523,
+          "eps": 8.44
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "cashFlow": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "segmentMix": {
+      "status": "available",
+      "segments": [
+        {
+          "id": "estate-property-development",
+          "name": "Estate & Property Development",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 627,
+              "sharePercent": 13.9
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 551,
+              "sharePercent": 13.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1910,
+              "sharePercent": 36.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1698,
+              "sharePercent": 30.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1350,
+              "sharePercent": 24.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1233,
+              "sharePercent": 22.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 2675,
+              "sharePercent": 40.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1619,
+              "sharePercent": 27.1
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1950,
+              "sharePercent": 29.1
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1027,
+              "sharePercent": 17.2
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 3908,
+              "sharePercent": 45.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1335,
+              "sharePercent": 20.5
+            }
+          ]
+        },
+        {
+          "id": "animal-feed",
+          "name": "Animal Feed",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 1242,
+              "sharePercent": 27.5
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 1291,
+              "sharePercent": 31.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 1190,
+              "sharePercent": 22.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1155,
+              "sharePercent": 20.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 1205,
+              "sharePercent": 21.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 1274,
+              "sharePercent": 23.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 1146,
+              "sharePercent": 17.2
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 1156,
+              "sharePercent": 19.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1217,
+              "sharePercent": 18.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1298,
+              "sharePercent": 21.8
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1270,
+              "sharePercent": 14.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1302,
+              "sharePercent": 20
+            }
+          ]
+        },
+        {
+          "id": "chemicals",
+          "name": "Chemicals",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 683,
+              "sharePercent": 15.1
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 618,
+              "sharePercent": 15
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 670,
+              "sharePercent": 12.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 732,
+              "sharePercent": 13
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 819,
+              "sharePercent": 14.9
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 891,
+              "sharePercent": 16.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 951,
+              "sharePercent": 14.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 883,
+              "sharePercent": 14.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 1059,
+              "sharePercent": 15.8
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1092,
+              "sharePercent": 18.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1102,
+              "sharePercent": 12.9
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1161,
+              "sharePercent": 17.8
+            }
+          ]
+        },
+        {
+          "id": "finance-and-investments",
+          "name": "Finance and Investments",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 342,
+              "sharePercent": 7.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 371,
+              "sharePercent": 9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 309,
+              "sharePercent": 5.9
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 587,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 644,
+              "sharePercent": 11.7
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 574,
+              "sharePercent": 10.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 651,
+              "sharePercent": 9.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 672,
+              "sharePercent": 11.3
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 840,
+              "sharePercent": 12.5
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 859,
+              "sharePercent": 14.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 885,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 966,
+              "sharePercent": 14.8
+            }
+          ]
+        },
+        {
+          "id": "veg-oils",
+          "name": "Veg Oils",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 598,
+              "sharePercent": 13.2
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 422,
+              "sharePercent": 10.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 241,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 373,
+              "sharePercent": 6.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 529,
+              "sharePercent": 9.6
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 592,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 330,
+              "sharePercent": 5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 539,
+              "sharePercent": 9
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 776,
+              "sharePercent": 11.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 732,
+              "sharePercent": 12.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 325,
+              "sharePercent": 3.8
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 770,
+              "sharePercent": 11.8
+            }
+          ]
+        },
+        {
+          "id": "dairy",
+          "name": "Dairy",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 390,
+              "sharePercent": 8.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 366,
+              "sharePercent": 8.9
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 392,
+              "sharePercent": 7.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 429,
+              "sharePercent": 7.6
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 403,
+              "sharePercent": 7.3
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 370,
+              "sharePercent": 6.8
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 384,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 417,
+              "sharePercent": 7
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 393,
+              "sharePercent": 5.9
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 380,
+              "sharePercent": 6.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 399,
+              "sharePercent": 4.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 465,
+              "sharePercent": 7.1
+            }
+          ]
+        },
+        {
+          "id": "crop-protection",
+          "name": "Crop Protection",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 379,
+              "sharePercent": 8.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 222,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 254,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 365,
+              "sharePercent": 6.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 297,
+              "sharePercent": 5.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 193,
+              "sharePercent": 3.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 271,
+              "sharePercent": 4.1
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 403,
+              "sharePercent": 6.8
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 213,
+              "sharePercent": 3.2
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 260,
+              "sharePercent": 4.4
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 313,
+              "sharePercent": 3.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 349,
+              "sharePercent": 5.4
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 258,
+              "sharePercent": 5.7
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 254,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 248,
+              "sharePercent": 4.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 272,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 232,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 253,
+              "sharePercent": 4.7
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 220,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 251,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 220,
+              "sharePercent": 3.3
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 274,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 286,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 135,
+              "sharePercent": 2.1
+            }
+          ]
+        },
+        {
+          "id": "hospitality",
+          "name": "Hospitality",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 17,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 24,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 23,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 22,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 30,
+              "sharePercent": 0.6
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 32,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 28,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 26,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 32,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 34,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 30,
+              "sharePercent": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "annual": {
+    "cadence": "annual",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "sales": 14130,
+          "expenses": 13083,
+          "operatingProfit": 1047,
+          "opmPercent": 7.41,
+          "otherIncome": 1132,
+          "interest": 623,
+          "depreciation": 274,
+          "profitBeforeTax": 1282,
+          "taxPercent": 22.62,
+          "netProfit": 992,
+          "eps": 19.42
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "sales": 16740,
+          "expenses": 15230,
+          "operatingProfit": 1510,
+          "opmPercent": 9.02,
+          "otherIncome": 1418,
+          "interest": 943,
+          "depreciation": 305,
+          "profitBeforeTax": 1681,
+          "taxPercent": 15.47,
+          "netProfit": 1421,
+          "eps": 28.96
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "sales": 16601,
+          "expenses": 15406,
+          "operatingProfit": 1195,
+          "opmPercent": 7.2,
+          "otherIncome": 1493,
+          "interest": 1352,
+          "depreciation": 371,
+          "profitBeforeTax": 964,
+          "taxPercent": 38.28,
+          "netProfit": 595,
+          "eps": 1.78
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "sales": 19657,
+          "expenses": 17553,
+          "operatingProfit": 2104,
+          "opmPercent": 10.7,
+          "otherIncome": 2636,
+          "interest": 1957,
+          "depreciation": 430,
+          "profitBeforeTax": 2353,
+          "taxPercent": 21.04,
+          "netProfit": 1858,
+          "eps": 29.14
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "sales": 22237,
+          "expenses": 19995,
+          "operatingProfit": 2242,
+          "opmPercent": 10.08,
+          "otherIncome": 4123,
+          "interest": 2470,
+          "depreciation": 501,
+          "profitBeforeTax": 3393,
+          "taxPercent": 28.91,
+          "netProfit": 2412,
+          "eps": 36.83
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "equityCapital": 34,
+          "reserves": 7093,
+          "borrowings": 14506,
+          "otherLiabilities": 12202,
+          "totalLiabilities": 33835,
+          "fixedAssets": 4971,
+          "cwip": 483,
+          "investments": 9609,
+          "otherAssets": 18772,
+          "totalAssets": 33835
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "equityCapital": 34,
+          "reserves": 7951,
+          "borrowings": 19642,
+          "otherLiabilities": 16117,
+          "totalLiabilities": 43744,
+          "fixedAssets": 5269,
+          "cwip": 942,
+          "investments": 8009,
+          "otherAssets": 29525,
+          "totalAssets": 43744
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "equityCapital": 34,
+          "reserves": 7968,
+          "borrowings": 28996,
+          "otherLiabilities": 24331,
+          "totalLiabilities": 61329,
+          "fixedAssets": 6365,
+          "cwip": 462,
+          "investments": 8669,
+          "otherAssets": 45832,
+          "totalAssets": 61329
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "equityCapital": 34,
+          "reserves": 10118,
+          "borrowings": 38088,
+          "otherLiabilities": 39488,
+          "totalLiabilities": 87728,
+          "fixedAssets": 6954,
+          "cwip": 258,
+          "investments": 11165,
+          "otherAssets": 69350,
+          "totalAssets": 87728
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "equityCapital": 34,
+          "reserves": 11143,
+          "borrowings": 51564,
+          "otherLiabilities": 63160,
+          "totalLiabilities": 125901,
+          "fixedAssets": 7333,
+          "cwip": 432,
+          "investments": 11247,
+          "otherAssets": 106889,
+          "totalAssets": 125901
+        }
+      ]
+    },
+    "cashFlow": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -1756,
+          "cashFromInvesting": 46,
+          "cashFromFinancing": 1916,
+          "netCashFlow": 206
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -4409,
+          "cashFromInvesting": 1851,
+          "cashFromFinancing": 3535,
+          "netCashFlow": 977
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -4284,
+          "cashFromInvesting": -2646,
+          "cashFromFinancing": 7219,
+          "netCashFlow": 288
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -5151,
+          "cashFromInvesting": -4562,
+          "cashFromFinancing": 10689,
+          "netCashFlow": 976
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -8855,
+          "cashFromInvesting": 244,
+          "cashFromFinancing": 8056,
+          "netCashFlow": -555
+        }
+      ]
+    },
+    "segmentMix": {
+      "status": "available",
+      "segments": [
+        {
+          "id": "estate-property-development",
+          "name": "Estate & Property Development",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1976,
+              "sharePercent": 20.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2267,
+              "sharePercent": 28.5
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1741,
+              "sharePercent": 19.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2150,
+              "sharePercent": 21.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3298,
+              "sharePercent": 27.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3107,
+              "sharePercent": 24.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1395,
+              "sharePercent": 13.3
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2657,
+              "sharePercent": 16.9
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 3119,
+              "sharePercent": 16.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 4375,
+              "sharePercent": 23.1
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 6957,
+              "sharePercent": 30
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 8504,
+              "sharePercent": 31.3
+            }
+          ]
+        },
+        {
+          "id": "animal-feed",
+          "name": "Animal Feed",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2689,
+              "sharePercent": 27.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 2544,
+              "sharePercent": 32
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 2621,
+              "sharePercent": 29.5
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2576,
+              "sharePercent": 25.7
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3093,
+              "sharePercent": 26.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 3718,
+              "sharePercent": 29.3
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3093,
+              "sharePercent": 29.6
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 4350,
+              "sharePercent": 27.7
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4957,
+              "sharePercent": 26.7
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 5008,
+              "sharePercent": 26.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 4781,
+              "sharePercent": 20.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 4942,
+              "sharePercent": 18.2
+            }
+          ]
+        },
+        {
+          "id": "chemicals",
+          "name": "Chemicals",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1311,
+              "sharePercent": 13.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1227,
+              "sharePercent": 15.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1437,
+              "sharePercent": 16.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1666,
+              "sharePercent": 16.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1673,
+              "sharePercent": 14.1
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1604,
+              "sharePercent": 12.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1666,
+              "sharePercent": 15.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 3057,
+              "sharePercent": 19.5
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 4173,
+              "sharePercent": 22.5
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2697,
+              "sharePercent": 14.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 3393,
+              "sharePercent": 14.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 4135,
+              "sharePercent": 15.2
+            }
+          ]
+        },
+        {
+          "id": "finance-and-investments",
+          "name": "Finance and Investments",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 222,
+              "sharePercent": 1.4
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 525,
+              "sharePercent": 2.8
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1209,
+              "sharePercent": 6.4
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 2456,
+              "sharePercent": 10.6
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 3257,
+              "sharePercent": 12
+            }
+          ]
+        },
+        {
+          "id": "veg-oils",
+          "name": "Veg Oils",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 2140,
+              "sharePercent": 13.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1931,
+              "sharePercent": 10.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1676,
+              "sharePercent": 8.8
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1823,
+              "sharePercent": 7.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2372,
+              "sharePercent": 8.7
+            }
+          ]
+        },
+        {
+          "id": "dairy",
+          "name": "Dairy",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 273,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1010,
+              "sharePercent": 11.4
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 1158,
+              "sharePercent": 11.6
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1162,
+              "sharePercent": 9.8
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1204,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1033,
+              "sharePercent": 9.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 1175,
+              "sharePercent": 7.5
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1501,
+              "sharePercent": 8.1
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1573,
+              "sharePercent": 8.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1585,
+              "sharePercent": 6.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1589,
+              "sharePercent": 5.9
+            }
+          ]
+        },
+        {
+          "id": "crop-protection",
+          "name": "Crop Protection",
+          "values": [
+            {
+              "periodId": "FY22",
+              "revenue": 1197,
+              "sharePercent": 7.6
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1196,
+              "sharePercent": 6.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1238,
+              "sharePercent": 6.5
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1125,
+              "sharePercent": 4.8
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1188,
+              "sharePercent": 4.4
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 976,
+              "sharePercent": 10
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 340,
+              "sharePercent": 4.3
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 374,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 355,
+              "sharePercent": 3.5
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 49,
+              "sharePercent": 0.4
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 590,
+              "sharePercent": 4.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 673,
+              "sharePercent": 6.4
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 903,
+              "sharePercent": 5.8
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 1164,
+              "sharePercent": 6.3
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1129,
+              "sharePercent": 6
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 977,
+              "sharePercent": 4.2
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1031,
+              "sharePercent": 3.8
+            }
+          ]
+        },
+        {
+          "id": "hospitality",
+          "name": "Hospitality",
+          "values": [
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 41,
+              "sharePercent": 0.2
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 107,
+              "sharePercent": 0.5
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 120,
+              "sharePercent": 0.4
+            }
+          ]
+        },
+        {
+          "id": "finance-investment",
+          "name": "Finance & Investment",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 331,
+              "sharePercent": 3.4
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 211,
+              "sharePercent": 2.7
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 200,
+              "sharePercent": 2.3
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 293,
+              "sharePercent": 2.9
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 466,
+              "sharePercent": 3.9
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 284,
+              "sharePercent": 2.2
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 122,
+              "sharePercent": 1.2
+            }
+          ]
+        },
+        {
+          "id": "veg-oil",
+          "name": "Veg Oil",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 2493,
+              "sharePercent": 25.5
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 586,
+              "sharePercent": 7.4
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 728,
+              "sharePercent": 8.2
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 927,
+              "sharePercent": 9.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1124,
+              "sharePercent": 9.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1094,
+              "sharePercent": 8.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1338,
+              "sharePercent": 12.8
+            }
+          ]
+        },
+        {
+          "id": "agri",
+          "name": "Agri",
+          "values": [
+            {
+              "periodId": "FY16",
+              "revenue": 496,
+              "sharePercent": 6.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 765,
+              "sharePercent": 8.6
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 882,
+              "sharePercent": 8.8
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 988,
+              "sharePercent": 8.3
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 1096,
+              "sharePercent": 8.6
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1140,
+              "sharePercent": 10.9
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "peers": [
+    {
+      "symbol": "GODREJIND",
+      "name": "GODREJIND",
+      "marketCapCrore": 39067.99
+    },
+    {
+      "symbol": "3MINDIA",
+      "name": "3MINDIA",
+      "marketCapCrore": 37010.68
+    },
+    {
+      "symbol": "DCMSHRIRAM",
+      "name": "DCMSHRIRAM",
+      "marketCapCrore": 15768.88
+    },
+    {
+      "symbol": "BALMLAWRIE",
+      "name": "BALMLAWRIE",
+      "marketCapCrore": 3043.53
+    },
+    {
+      "symbol": "TTKHLTCARE",
+      "name": "TTKHLTCARE",
+      "marketCapCrore": 1541.76
+    },
+    {
+      "symbol": "EMPIND",
+      "name": "EMPIND",
+      "marketCapCrore": 715.26
+    },
+    {
+      "symbol": "MAHESHWARI",
+      "name": "MAHESHWARI",
+      "marketCapCrore": 210.29
+    }
+  ]
+}
