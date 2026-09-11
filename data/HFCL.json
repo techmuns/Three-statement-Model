@@ -1,0 +1,1021 @@
+{
+  "companyId": "HFCL",
+  "currency": "INR",
+  "unit": "crore",
+  "statementLayout": "standard",
+  "fiscalYearEndMonth": 3,
+  "sharesOutstandingCrore": 161,
+  "source": {
+    "provider": "screener",
+    "url": "https://www.screener.in/company/HFCL/consolidated/",
+    "fetchedAt": "2026-09-11T23:07:03.714Z",
+    "basis": "consolidated"
+  },
+  "quarterly": {
+    "cadence": "quarterly",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY26Q1",
+            "label": "Q1 FY26",
+            "longLabel": "Quarter ended Jun 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 1,
+            "endDate": "2025-06-30"
+          },
+          "sales": 871,
+          "expenses": 843,
+          "operatingProfit": 28,
+          "opmPercent": 3.21,
+          "otherIncome": 15,
+          "interest": 56,
+          "depreciation": 32,
+          "profitBeforeTax": -45,
+          "taxPercent": 35.56,
+          "netProfit": -29,
+          "eps": -0.22
+        },
+        {
+          "period": {
+            "id": "FY26Q2",
+            "label": "Q2 FY26",
+            "longLabel": "Quarter ended Sep 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 2,
+            "endDate": "2025-09-30"
+          },
+          "sales": 1043,
+          "expenses": 853,
+          "operatingProfit": 190,
+          "opmPercent": 18.22,
+          "otherIncome": 13,
+          "interest": 61,
+          "depreciation": 36,
+          "profitBeforeTax": 106,
+          "taxPercent": 32.08,
+          "netProfit": 72,
+          "eps": 0.47
+        },
+        {
+          "period": {
+            "id": "FY26Q3",
+            "label": "Q3 FY26",
+            "longLabel": "Quarter ended Dec 2025",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 3,
+            "endDate": "2025-12-31"
+          },
+          "sales": 1211,
+          "expenses": 983,
+          "operatingProfit": 228,
+          "opmPercent": 18.83,
+          "otherIncome": 17,
+          "interest": 63,
+          "depreciation": 44,
+          "profitBeforeTax": 138,
+          "taxPercent": 26.09,
+          "netProfit": 102,
+          "eps": 0.64
+        },
+        {
+          "period": {
+            "id": "FY26Q4",
+            "label": "Q4 FY26",
+            "longLabel": "Quarter ended Mar 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2026,
+            "quarter": 4,
+            "endDate": "2026-03-31"
+          },
+          "sales": 1824,
+          "expenses": 1510,
+          "operatingProfit": 314,
+          "opmPercent": 17.21,
+          "otherIncome": 22,
+          "interest": 63,
+          "depreciation": 45,
+          "profitBeforeTax": 228,
+          "taxPercent": 19.3,
+          "netProfit": 184,
+          "eps": 1.17
+        },
+        {
+          "period": {
+            "id": "FY27Q1",
+            "label": "Q1 FY27",
+            "longLabel": "Quarter ended Jun 2026",
+            "cadence": "quarterly",
+            "fiscalYear": 2027,
+            "quarter": 1,
+            "endDate": "2026-06-30"
+          },
+          "sales": 1915,
+          "expenses": 1501,
+          "operatingProfit": 414,
+          "opmPercent": 21.62,
+          "otherIncome": 31,
+          "interest": 62,
+          "depreciation": 51,
+          "profitBeforeTax": 332,
+          "taxPercent": 25.9,
+          "netProfit": 246,
+          "eps": 1.49
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "cashFlow": {
+      "status": "unavailable",
+      "reason": "not-reported",
+      "note": "Indian filers report the balance sheet and cash flow statement half-yearly at the earliest; Screener publishes annual columns only."
+    },
+    "segmentMix": {
+      "status": "available",
+      "segments": [
+        {
+          "id": "telecom-products",
+          "name": "Telecom Products",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 474,
+              "sharePercent": 42.6
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 364,
+              "sharePercent": 35.3
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 362,
+              "sharePercent": 27.3
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 711,
+              "sharePercent": 61.4
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 574,
+              "sharePercent": 52.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 582,
+              "sharePercent": 57.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 611,
+              "sharePercent": 76.3
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 578,
+              "sharePercent": 66.4
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 537,
+              "sharePercent": 51.4
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 722,
+              "sharePercent": 59.6
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 1206,
+              "sharePercent": 66.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 1590,
+              "sharePercent": 83
+            }
+          ]
+        },
+        {
+          "id": "turnkey-contracts-and-services",
+          "name": "Turnkey Contracts and Services",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 638,
+              "sharePercent": 57.4
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 668,
+              "sharePercent": 64.7
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 964,
+              "sharePercent": 72.7
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 446,
+              "sharePercent": 38.5
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 520,
+              "sharePercent": 47.5
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 430,
+              "sharePercent": 42.5
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 190,
+              "sharePercent": 23.7
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 293,
+              "sharePercent": 33.6
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 507,
+              "sharePercent": 48.6
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 488,
+              "sharePercent": 40.3
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 587,
+              "sharePercent": 32.2
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 280,
+              "sharePercent": 14.6
+            }
+          ]
+        },
+        {
+          "id": "defence-product-services",
+          "name": "Defence Product & Services",
+          "values": [
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 12,
+              "sharePercent": 0.7
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 24,
+              "sharePercent": 1.3
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 1,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 18,
+              "sharePercent": 1
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 21,
+              "sharePercent": 1.1
+            }
+          ]
+        },
+        {
+          "id": "unallocated",
+          "name": "Unallocated",
+          "values": [
+            {
+              "periodId": "FY24Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q1",
+              "revenue": 1,
+              "sharePercent": 0.1
+            },
+            {
+              "periodId": "FY25Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q2",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q3",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26Q4",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY27Q1",
+              "revenue": 0,
+              "sharePercent": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "annual": {
+    "cadence": "annual",
+    "profitLoss": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "sales": 4727,
+          "expenses": 4077,
+          "operatingProfit": 650,
+          "opmPercent": 13.75,
+          "otherIncome": 37,
+          "interest": 166,
+          "depreciation": 78,
+          "profitBeforeTax": 442,
+          "taxPercent": 26.24,
+          "netProfit": 326,
+          "eps": 2.27
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "sales": 4743,
+          "expenses": 4125,
+          "operatingProfit": 619,
+          "opmPercent": 13.05,
+          "otherIncome": 47,
+          "interest": 152,
+          "depreciation": 83,
+          "profitBeforeTax": 431,
+          "taxPercent": 26.22,
+          "netProfit": 318,
+          "eps": 2.18
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "sales": 4465,
+          "expenses": 3884,
+          "operatingProfit": 582,
+          "opmPercent": 13.03,
+          "otherIncome": 102,
+          "interest": 147,
+          "depreciation": 82,
+          "profitBeforeTax": 454,
+          "taxPercent": 25.55,
+          "netProfit": 338,
+          "eps": 2.29
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "sales": 4065,
+          "expenses": 3615,
+          "operatingProfit": 449,
+          "opmPercent": 11.05,
+          "otherIncome": 58,
+          "interest": 185,
+          "depreciation": 106,
+          "profitBeforeTax": 217,
+          "taxPercent": 20.28,
+          "netProfit": 173,
+          "eps": 1.23
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "sales": 4949,
+          "expenses": 4186,
+          "operatingProfit": 764,
+          "opmPercent": 15.44,
+          "otherIncome": 63,
+          "interest": 242,
+          "depreciation": 157,
+          "profitBeforeTax": 428,
+          "taxPercent": 23.13,
+          "netProfit": 329,
+          "eps": 2.04
+        }
+      ]
+    },
+    "balanceSheet": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "equityCapital": 137,
+          "reserves": 2661,
+          "borrowings": 783,
+          "otherLiabilities": 1590,
+          "totalLiabilities": 5171,
+          "fixedAssets": 528,
+          "cwip": 108,
+          "investments": 55,
+          "otherAssets": 4480,
+          "totalAssets": 5171
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "equityCapital": 138,
+          "reserves": 2970,
+          "borrowings": 936,
+          "otherLiabilities": 1429,
+          "totalLiabilities": 5473,
+          "fixedAssets": 548,
+          "cwip": 268,
+          "investments": 70,
+          "otherAssets": 4586,
+          "totalAssets": 5473
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "equityCapital": 144,
+          "reserves": 3812,
+          "borrowings": 991,
+          "otherLiabilities": 1540,
+          "totalLiabilities": 6487,
+          "fixedAssets": 652,
+          "cwip": 469,
+          "investments": 194,
+          "otherAssets": 5172,
+          "totalAssets": 6487
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "equityCapital": 144,
+          "reserves": 3935,
+          "borrowings": 1522,
+          "otherLiabilities": 1945,
+          "totalLiabilities": 7546,
+          "fixedAssets": 852,
+          "cwip": 602,
+          "investments": 158,
+          "otherAssets": 5935,
+          "totalAssets": 7546
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "equityCapital": 153,
+          "reserves": 4738,
+          "borrowings": 1896,
+          "otherLiabilities": 2080,
+          "totalLiabilities": 8868,
+          "fixedAssets": 1216,
+          "cwip": 486,
+          "investments": 135,
+          "otherAssets": 7031,
+          "totalAssets": 8868
+        }
+      ]
+    },
+    "cashFlow": {
+      "status": "available",
+      "periods": [
+        {
+          "period": {
+            "id": "FY22",
+            "label": "FY22",
+            "longLabel": "Year ended Mar 2022",
+            "cadence": "annual",
+            "fiscalYear": 2022,
+            "quarter": null,
+            "endDate": "2022-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 205,
+          "cashFromInvesting": -458,
+          "cashFromFinancing": 248,
+          "netCashFlow": -5
+        },
+        {
+          "period": {
+            "id": "FY23",
+            "label": "FY23",
+            "longLabel": "Year ended Mar 2023",
+            "cadence": "annual",
+            "fiscalYear": 2023,
+            "quarter": null,
+            "endDate": "2023-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 235,
+          "cashFromInvesting": -44,
+          "cashFromFinancing": -145,
+          "netCashFlow": 46
+        },
+        {
+          "period": {
+            "id": "FY24",
+            "label": "FY24",
+            "longLabel": "Year ended Mar 2024",
+            "cadence": "annual",
+            "fiscalYear": 2024,
+            "quarter": null,
+            "endDate": "2024-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -45,
+          "cashFromInvesting": -449,
+          "cashFromFinancing": 454,
+          "netCashFlow": -40
+        },
+        {
+          "period": {
+            "id": "FY25",
+            "label": "FY25",
+            "longLabel": "Year ended Mar 2025",
+            "cadence": "annual",
+            "fiscalYear": 2025,
+            "quarter": null,
+            "endDate": "2025-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": 396,
+          "cashFromInvesting": -518,
+          "cashFromFinancing": 170,
+          "netCashFlow": 47
+        },
+        {
+          "period": {
+            "id": "FY26",
+            "label": "FY26",
+            "longLabel": "Year ended Mar 2026",
+            "cadence": "annual",
+            "fiscalYear": 2026,
+            "quarter": null,
+            "endDate": "2026-03-31"
+          },
+          "operatingProfitBeforeWorkingCapital": null,
+          "workingCapitalChange": null,
+          "taxPaid": null,
+          "cashFromOperating": -378,
+          "cashFromInvesting": -324,
+          "cashFromFinancing": 669,
+          "netCashFlow": -33
+        }
+      ]
+    },
+    "segmentMix": {
+      "status": "available",
+      "segments": [
+        {
+          "id": "telecom-products",
+          "name": "Telecom Products",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 568,
+              "sharePercent": 22.2
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 663,
+              "sharePercent": 25.2
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 706,
+              "sharePercent": 32
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 866,
+              "sharePercent": 26.7
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 1352,
+              "sharePercent": 28.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 847,
+              "sharePercent": 22.1
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 1205,
+              "sharePercent": 27.2
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2055,
+              "sharePercent": 43.5
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 2638,
+              "sharePercent": 55.6
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 1862,
+              "sharePercent": 41.7
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 2475,
+              "sharePercent": 60.9
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 2931,
+              "sharePercent": 59.2
+            }
+          ]
+        },
+        {
+          "id": "turnkey-contracts-and-services",
+          "name": "Turnkey Contracts and Services",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 1985,
+              "sharePercent": 77.8
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 1965,
+              "sharePercent": 74.8
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 1497,
+              "sharePercent": 68
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 2383,
+              "sharePercent": 73.3
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 3386,
+              "sharePercent": 71.5
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 2992,
+              "sharePercent": 77.9
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 3218,
+              "sharePercent": 72.8
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 2672,
+              "sharePercent": 56.5
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 2104,
+              "sharePercent": 44.4
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 2603,
+              "sharePercent": 58.3
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1589,
+              "sharePercent": 39.1
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 1875,
+              "sharePercent": 37.9
+            }
+          ]
+        },
+        {
+          "id": "defence-product-services",
+          "name": "Defence Product & Services",
+          "values": [
+            {
+              "periodId": "FY25",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 77,
+              "sharePercent": 1.6
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "values": [
+            {
+              "periodId": "FY15",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY16",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY17",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY18",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY19",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY20",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY21",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY22",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY23",
+              "revenue": 2,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY24",
+              "revenue": 0,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY25",
+              "revenue": 1,
+              "sharePercent": 0
+            },
+            {
+              "periodId": "FY26",
+              "revenue": 67,
+              "sharePercent": 1.4
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "peers": [
+    {
+      "symbol": "INDUSTOWER",
+      "name": "Indus Towers",
+      "marketCapCrore": 102360.71
+    },
+    {
+      "symbol": "543225",
+      "name": "Altius Telecom",
+      "marketCapCrore": 53329.5
+    },
+    {
+      "symbol": "HFCL",
+      "name": "HFCL",
+      "marketCapCrore": 35768.65
+    },
+    {
+      "symbol": "PACEDIGITK",
+      "name": "Pace Digitek",
+      "marketCapCrore": 3417.57
+    },
+    {
+      "symbol": "543971",
+      "name": "Bondada Engineer",
+      "marketCapCrore": 3144.67
+    },
+    {
+      "symbol": "GTLINFRA",
+      "name": "GTL Infra.",
+      "marketCapCrore": 1485.89
+    },
+    {
+      "symbol": "SUYOG",
+      "name": "Suyog Telematics",
+      "marketCapCrore": 762.2
+    }
+  ]
+}
